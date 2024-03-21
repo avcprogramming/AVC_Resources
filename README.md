@@ -11,9 +11,8 @@ Some lines have wildcard characters {0}, {1}, {2}, and so on. All translations m
 
 Icons are stored as resources in PNG files. You cannot rename icons - this will lead to fatal crashes. But you can replace them with others with the same name and the same size. Please note that the library code contains only icons and pictures for dialog forms. Menu and ribbon icons are stored not in a DLL library, but in a CUIX file. You can open the CUIX file as a ZIP archive and replace the png files there. No recompilations are required there.
 
-RU
 ----------------------------------------------------------------------------
-
+# RU
 
 В данном проекте содержатся строки и иконки для плагинов AVC для AutoCAD и BricsCAD. Проект должен быть скомпилирован для .Net Framework 4.8 (хотя будет использоваться и под AutoCAD 2025 с Net 8.0). Готовую библиотеку следует поместить в папку с основными библиотеками плагина: C:\Users\<user>\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_<plugin>.bundle\Contents\Windows
 
