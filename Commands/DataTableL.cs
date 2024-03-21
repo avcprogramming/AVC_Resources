@@ -1,0 +1,391 @@
+﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
+namespace AVC
+{
+  public static class 
+  DataTableL
+  {
+    public static readonly string[,] DTStyleNames = { 
+/*0*/   { CommandL.DataTable[0], CommandL.DataTable[1], CommandL.DataTable[2], CommandL.DataTable[3], CommandL.DataTable[4] },
+/*1*/   { "Line Length Table", "Таблица длин линий", "Tabella delle lunghezze delle linee", "Zeilenlängentabelle", "线长表" },
+/*2*/   { "Object Area Table", "Таблица площади объектов", "Tabella area oggetto", "Objektbereichstabelle", "对象区域表" },
+/*3*/   { "Number of blocks", "Количество блоков", "Numero di blocchi", "Anzahl der Blöcke", "块数" },
+/*4*/   { "Component list", "Список компонентов", "Elenco dei componenti", "Komponentenliste", "组件列表" },
+/*5*/   { "Sawing Table", "Таблица напилки", "Segare", "Sägen", "锯床" },
+/*6*/   { "Point Coordinate Table", "Таблица координат точек", "Tabella coordinate punto", "Punktkoordinatentabelle", "点坐标表" },
+      };
+
+    public static readonly string[,] DrillTableStyleNames = {
+/*0*/   { CommandL.DrillTable[0], CommandL.DrillTable[1], CommandL.DrillTable[2], CommandL.DrillTable[3], CommandL.DrillTable[4]  },
+/*1*/   { CommandL.DrillTable[0], "Присадка", CommandL.DrillTable[2], CommandL.DrillTable[3], CommandL.DrillTable[4] },
+/*2*/   { "Drilling", "Сверления", "Foratura", "Bohren", "钻孔" },
+/*3*/   { "Drill Table to Excel", "Таблица сверлений в Excel", "Tabella di perforazione Excel", "Bohrtisch Excel", "钻取表到 Excel" },
+      };
+
+    public static readonly string[] DrillTableGroup = {
+      "Part %name%. Drilling %drill%",
+      "Поз.%name%. Сверление %drill%",
+      "Dettaglio %name%. Foratura %drill%",
+      "Detail %name%. Bohren %drill%",
+      "部分 %name%。钻孔 %drill%"};
+
+    public static readonly string[,] MatTableStyleNames = {
+/*0*/   { "Material Table", "Таблица материалов", "Tabella dei materiali", "Materialtabelle", "材料表" },
+/*1*/   { "Material Table", "Таблица материалов", "Tabella dei materiali", "Materialtabelle", "材料表"},
+/*2*/   { "Material Indexes", "Индексы материалов", "Indici materiali", "Materialindizes", "材料指标"},
+/*3*/   { "Cutting3 materials", "Cutting3 материалы", "Cutting3 materiali", "Cutting3 Material", "Cutting3 种材料" },
+/*4*/   { "OptiCut panels", "OptiCut панели", "OptiCut pannelli", "OptiCut Paneele", "OptiCut 面板" },
+/*5*/   { "OptiCut bars", "OptiCut бруски", "OptiCut barre", "OptiCut Riegel", "OptiCut 磨料" },
+      };
+
+  public static readonly string[,] SawStyleNames = {
+      { CommandL.Saw[0], CommandL.Saw[1], CommandL.Saw[2], CommandL.Saw[3], CommandL.Saw[4] },
+      { CommandL.Saw[0], CommandL.Saw[1], CommandL.Saw[2], CommandL.Saw[3], CommandL.Saw[4] },
+      { "Detailing Table", "Деталировка", "Tabella dei dettagli", "Detaillierung", "详细表" },
+      { "Rib cutting", "Погонажная нарезка", "Taglio delle costole", "Rippenschneiden", "切肋"},
+      { "Nesting in Cutting3", "Раскрой в Cutting3", "Taglio nel Cutting3", "Schneiden in Cutting3", "在 Cutting3 中嵌套"},
+      { "Panels for OptiCut", "Панели для OptiCut", "Pannelli per OptiCut", "Panels für OptiCut", "OptiCut 面板"},
+      { "Bars for OptiCut", "Бруски для OptiCut", "Barre per OptiCut", "Balken für OptiCut", "OptiCut 棒材"},
+      { "Details for Viyar", "Детали Вияр", "Dettagli per Viyar", "Details für Viyar", "Viyar 的详细信息"},
+      };
+
+    public static readonly string[] SortAZ = { 
+      "A-Z", 
+      "А-Я", 
+      "A-Z", 
+      "A-Z",
+      "升序"};
+    public static readonly string[] SortZA = { 
+      "Z-A", 
+      "Я-А", 
+      "Z-A", 
+      "Z-A",
+      "降序排列" };
+    public static readonly string[] SortSum = { 
+      "Sum", 
+      "Сумма", 
+      "Somma", 
+      "Summe",
+      "求和" };
+    public static readonly string[] SortSumTotal = { 
+      "Sum&Total", 
+      "Сумма+Итог", 
+      "Somma&Totale", 
+      "Summe&Total",
+      "总结和结果" };
+
+    // ===================================== Command Line =========================================
+    public static readonly string[]
+    Sorting = {
+      "  Row sorting...",
+      "  Сортировка строк...",
+      "  Ordinamento di righe...",
+      "  Zeilensortierung...",
+      "  行排序..."};
+    public static readonly string[]
+    ObjCount = {
+      "  Received {0} objects by {1}s",
+      "  Получено {0} объектов за {1}c",
+      "  Ha ricevuto {0} oggetti - {1}s",
+      "  Empfangene {0} Objekte - {1}s",
+      "  {1}s 收到了 {0} 个对象" };
+    public static readonly string[]
+    Extracting = {
+      "Data extraction",
+      "Извлечение данных",
+      "Estrazione dei dati",
+      "Datenextraktion",
+      "数据提取" };
+    public static readonly string[]
+    Grouping = {
+      "Row grouping",
+      "Группировка строк",
+      "Raggruppamento di righe",
+      "Zeilengruppierung",
+      "行分组"};
+    public static readonly string[]
+    HappenedRows = {
+      "  Happened {0} rows in {1} groups",
+      "  Получилось строк - {0}, групп - {1}",
+      "  Si è scoperto righe - {0}, gruppi - {1}",
+      "  Es sind {0} Zeilen passiert, Gruppen - {1}",
+      "  {1} 组中发生了 {0} 行" };
+    public static readonly string[]
+    Inserted = {
+      "  Inserted data rows {0}",
+      "  Вставлено строк данных {0}",
+      "  Le righe di dati inserite {0}",
+      "  Eingefügte Datenzeilen {0}",
+      "  插入的数据行 {0}" };
+    public static readonly string[]
+    TextLocation = {
+      "Specify the insertion point for the new text.",
+      "Укажите точку вставки нового текста",
+      "Specificare il punto di inserimento per il nuovo testo.",
+      "Geben Sie die Einfügemarke des neuen Textes an",
+      "指定新文本的插入点。" };
+    public static readonly string[]
+    Failed = {
+      "Failed to make a table.",
+      "Не удалось сделать таблицу",
+      "Impossibile creare una tabella.",
+      "Fehler beim Erstellen einer Tabelle.",
+      "无法制作表格。" };
+    public static readonly string[] 
+    Multiply = { 
+      "Multiply the amount by ",
+      "Умножить количество на ", 
+      "Moltiplicando questo numero per ", 
+      "Multipliziere die Anzahl mit ",
+      "将金额乘以"};
+    public static readonly string[] 
+    MultiplyIs = { 
+      "  The amount will be multiplied by {0}", 
+      "  Количество будет умножено на {0}", 
+      "  L'importo verrà moltiplicato per {0}", 
+      "  Der Betrag wird mit {0} multipliziert",
+      "  金额将乘以 {0}"};
+
+    public static readonly string[] SelectOptions = {
+      "  Choice way of use command with set of options #{0}",
+      "  Выберите действие с набором настроек №{0}",
+      "  Seleziona l'azione con il numero di preselezione #{0}",
+      "  Befehl zur Verwendung der Auswahl mit einer Reihe von Optionen #{0}",
+      "  使用带选项集的命令的选择方式 #{0}"};
+    public static readonly string[] ColumnsKW = { 
+      "TAbleColumns", 
+      "СТолбцы", 
+      "СOlonne", 
+      "Tabellenspalten",
+      "表列(TA)" };
+    public static readonly string[] MirrorKW = { 
+      "MIrror", 
+      "ЗЕркальные", 
+      "SPecchio", 
+      "SPiegeln",
+      "镜像的(MI)" };
+    public static readonly string[] GroupKW = { 
+      "GRoup", 
+      "ГРуппировка", 
+      "GRuppo", 
+      "Gruppe",
+      "分组(GR)" };
+    public static readonly string[] FormatKW = { 
+      "FOrmatOfDimension", 
+      "ФОрматРазмеров", 
+      "FOrmatoDiDimensioni", 
+      "FOrmatDerDimension",
+      "维度格式(FO)" };
+    public static readonly string[] NumberingKW = { 
+      "NUmbering", 
+      "НУмерация", 
+      "NUmerazione", 
+      "NUmmerierung",
+      "编号(NU)" };
+    public static readonly string[] MultiplierKW = { 
+      "MUltiplier", 
+      "Множитель", 
+      "MOltiplicatore", 
+      "Multiplikator",
+      "因素(MU)" };
+    public static readonly string[] ColumnsQuery = { 
+      "Enter a list of column through ;",
+      "Введите подстановки для столбцов через ;",
+      "Inserisci i nomi delle colonne desiderate facendo ;",
+      "Geben Sie die Namen der erforderlichen Spalten durch ;",
+      "通过 ; 输入列列表" };
+    public static readonly string[] MirroredQuery = {
+      "Lay mirrored solid separately (not group)?",
+      "Выкладывать зеркальные солиды отдельно (не группировать)?",
+      "Diffusione specchiata solidi separatamente (non di gruppo)?",
+      "Gespiegelte Teile separat verteilen (nicht gruppieren)?",
+      "单独放置镜像实体（不是组）？"};
+    public static readonly string[] GroupQuery = {
+      "Group the same (Lay the same parts only once and write their number in the header)?",
+      "Группировать одинаковые (Выкладывать одинаковые детали только один раз и писать в заголовке их количество) ?",
+      "Creare gruppi parti identiche? (verrà scritto il numero delle parti nel titolo)",
+      "Gleiche gruppieren (gleiche Teile nur einmal verteilen und deren Nummer in die Kopfzeile schreiben)?",
+      "分组相同（只放置一次相同的零件并在标题中写下它们的编号）？"};
+    public static readonly string[] FormatQuery = {
+      "Enter dimension format. 0 - digit or zero, # - digit or nothing" ,
+      "Введите формат для размеров. 0 - цифра или ноль, # - цифра или ничего, . - разделитель дробной части",
+      "Introduce il formato dimensione. 0 - cifre o pari a zero, # - cifre o niente",
+      "Geben Sie ein Format für die Größen ein. 0 - Ziffer oder Null, # - Ziffer oder nichts, . - Bruchteilabscheider",
+      "输入维度格式。 0 - 数字或零，# - 数字或无"};
+    public static readonly string[] NumberingQuery = {
+      "Numbering of solids",
+      "Нумерация солидов",
+      "Numerazione dei solidi",
+      "Nummerierung der Details",
+      "实体编号" };
+    public static readonly string[] MultiQuery = {
+      "Request multiplier every time",
+      "Запрашивать множитель каждый раз",
+      "Richiedere moltiplicatore ogni volta",
+      "Fordern Sie jedes Mal einen Multiplikator an.",
+      "每次请求乘数"  };
+
+
+    //============================= Dialog Box ===============================================
+
+    public static readonly string[] AddColumnText = {
+      "Add",
+      "Добавить",
+      "Inserisci",
+      "Hinzufügen",
+      "添加" };
+
+ public static readonly string[] AddColumnTip = {
+      "Add a column to the table. \r\n" +
+        "Choose one of the substitutions from the list.",
+      "Добавить колонку к таблице. \r\n" +
+        "Выберите одну из подстановок из списка.",
+      "Aggiungi una colonna alla tabella. \r\n" +
+        "Seleziona una delle sostituzioni da inserire in una nuova colonna.",
+      "Fügen Sie der Tabelle eine Spalte hinzu. \r\n" +
+        "Wählen Sie eine der Vertretungen aus der Liste aus.",
+      "向表中添加一列。 \r\n" +
+        "从列表中选择一种替换。" };
+    public static readonly string[] CopyLayText = {
+      "Copy from LAY",
+      "Копировать с LAY",
+      "Copia da LAY",
+      "Kopie von LAY",
+      "从 LAY 复制" };
+    public static readonly string[] CopyLayTip = {
+      "Copy all settings from the current LAY style",
+      "Копировать все настройки из текущего стиля Выкладки",
+      "Copia tutte le impostazioni dallo stile di comando LAY corrente",
+      "Alle Einstellungen aus dem aktuellen Layoutstil kopieren (LAY-Befehle)",
+      "从当前布局样式复制所有设置（LAY 命令）" };
+    public static readonly string[] CopySawText = {
+      "Copy from SAW",
+      "Копировать с SAW",
+      "Copia da SAW",
+      "Kopie von SAW",
+      "从 SAW 复制" };
+    public static readonly string[] CopySawTip = {
+      "Copy all settings from the current Sawing Table style",
+      "Копировать все настройки из текущего стиля Таблицы Напилки",
+      "Copia tutte le impostazioni dallo stile corrente di Tabelle Sega (comando SAW)",
+      "Kopieren Sie alle Einstellungen aus dem aktuellen Sägetischstil",
+      "复制当前锯床样式的所有设置" };
+    public static readonly string[] DelColumnText = {
+      "Delete",
+      "Удалить",
+      "Elimina",
+      "Löschen",
+      "删除" };
+    public static readonly string[] DelColumnTip = {
+      "Delete current column",
+      "Удалить текущую колонку",
+      "Elimina la colonna corrente",
+      "Aktuelle Spalte löschen",
+      "删除当前列" };
+    public static readonly string[] MoveLeftTip = {
+      "Move the column to the left, to the beginning of the table.",
+      "Передвинуть колонку влево, к началу таблицы.",
+      "Sposta la colonna corrente a sinistra",
+      "Verschieben Sie die Spalte nach links an den Anfang der Tabelle.",
+      "将列向左移动到表格的开头。" };
+    public static readonly string[] MoveRightTip = {
+      "Move the column to the right, to the end of the table.",
+      "Передвинуть колонку вправо, к концу таблицы.",
+      "Sposta la colonna corrente a destra",
+      "Verschieben Sie die Spalte nach rechts an das Ende der Tabelle.",
+      "将列向右移动到表的末尾。" };
+    public static readonly string[] HeaderText = {
+      "Header",
+      "Заголовок",
+      "Intestazione",
+      "Header",
+      "标题" };
+    public static readonly string[] HeaderTip = {
+      "Header for column of table",
+      "Заголовок для столбца таблицы",
+      "Intestazione per la colonna della tabella",
+      "Überschrift für Tabellenspalte",
+      "表格列的标题" };
+    public static readonly string[] MaskText = {
+      "Data substitutions",
+      "Подстановки данных",
+      "Sostituzioni di dati",
+      "Datenersetzungen",
+      "数据替换" };
+    public static readonly string[] MaskTip = {
+      "Data for column of table.\r\n" +
+        "String must contain substitutions of object properties.",
+      "Данные для ячеек таблицы. \r\n" +
+        "В строке должна быть одна или много подстановок свойств объектов.",
+      "Dati per la colonna della tabella. \r\n" +
+        "La stringa deve contenere sostituzioni di proprietà dell'oggetto.",
+      "Daten für Spalte der Tabelle. \r\n" +
+        "Zeichenfolge muss Ersetzungen von Objekteigenschaften enthalten.",
+      "表格列的数据。 \r\n" +
+        "字符串必须包含对象属性的替换。" };
+    public static readonly string[] SortText = {
+      "Sort",
+      "Сортировка",
+      "Ordinare",
+      "Sortierung",
+      "排序" };
+    public static readonly string[] SortTip = {
+      "A column can be sorted in ascending or descending order. \r\n" +
+        "Objects with the same properties from the sorted columns \r\n" +
+        "are considered the same and fall into the same row of the table. \r\n" +
+        "Unsorted columns will summarize the properties of all objects that fall into this row.\r\n" +
+        "For such total columns, you can calculate the total.",
+      "Столбец может быть отсортирован в порядке возрастания или убывания. \r\n" +
+        "Объекты с одинаковыми свойствами из отсортированных столбцов считаются одинаковыми \r\n" +
+        "и попадают в одну и ту же строку таблицы. \r\n" +
+        "Несортированные столбцы будут суммировать свойства всех объектов, попадающих в эту строку. \r\n" +
+        "Для таких суммарных столбцов можно вычислить итог.",
+      "Una colonna può essere ordinata in ordine crescente o decrescente. \r\n" +
+        "Gli oggetti con le stesse proprietà delle colonne ordinate sono considerati uguali \r\n" +
+        "e rientrano nella stessa riga della tabella. \r\n" +
+        "Le colonne non ordinate riassumono le proprietà di tutti gli oggetti che rientrano in questa riga. \r\n" +
+        "Per tali colonne totali, è possibile calcolare il totale.",
+      "Eine Spalte kann aufsteigend oder absteigend sortiert werden. \r\n" +
+        "Objekte mit denselben Eigenschaften aus den sortierten Spalten werden als gleich betrachtet \r\n" +
+        "und fallen in dieselbe Zeile der Tabelle. \r\n" +
+        "Unsortierte Spalten fassen die Eigenschaften aller Objekte zusammen, die in diese Zeile fallen. \r\n" +
+        "Für solche Summenspalten können Sie die Summe berechnen.",
+      "列可以按升序或降序排序。 \r\n" +
+        "排序列中具有相同属性的对象被认为是相同的并且属于表的同一行。 \r\n" +
+        "未排序的列将汇总所有落入该行的对象的属性。\r\n" +
+        "对于此类总计列，您可以计算总计。" };
+    public static readonly string[] GroupText = {
+      "Group",
+      "Группа",
+      "Gruppo",
+      "Gruppe",
+      "团体" };
+    public static readonly string[] GroupTip = {
+      "Substitution for group headings. \r\n" +
+        "If you do not need any grouping, then leave the field blank.",
+      "Подстановки для заголовка групп данных в таблице. \r\n" +
+        "Оставьте строку пустой, если не нужна никакая группировка.",
+      "Sostituzione delle intestazioni di gruppo. \r\n" +
+        "Se non è necessario alcun raggruppamento, lasciare il campo vuoto.",
+      "Ersatz für Gruppenüberschriften.\r\n" +
+        " Wenn Sie keine Gruppierung benötigen, lassen Sie das Feld leer.",
+      "替换组标题。 \r\n" +
+        "如果您不需要任何分组，则将该字段留空。" };
+    public static readonly string[] StyleNameTip = {
+      "Name of Data Table style. \r\n" +
+        "Can be used like title of table. \r\n" +
+        "The title may contain substitutions from the properties of the drawing or time.",
+      "Имя стиля Таблицы данных. \r\n" +
+        "Можно использовать как заголовок таблицы. \r\n" +
+        "В заголовке можно использовать подстановки свойств чертежа и времени.",
+      "Nome dello stile della tabella dei dati. \r\n" +
+        "Può essere usato come il titolo della tabella. \r\n" +
+        "Il titolo può contenere sostituzioni dalle proprietà del disegno o del tempo.",
+      "Name des Datentabellenstils. \r\n" +
+        "Kann als Tabellentitel verwendet werden. \r\n" +
+        "Der Titel kann Ersetzungen aus den Eigenschaften der Zeichnung oder Zeit enthalten.",
+      "数据表样式的名称。 \r\n" +
+        "可以用作表格的标题。 \r\n" +
+        "标题可能包含来自绘图或时间属性的替换。" };
+
+  }
+}

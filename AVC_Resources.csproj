@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F56B12B-545B-4A23-B2E2-2D3C49EA1CE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AVC</RootNamespace>
+    <AssemblyName>AVC_Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Users\avc72\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>preview</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Users\avc72\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>preview</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CadProcessL.cs" />
+    <Compile Include="CnsL.cs" />
+    <Compile Include="Commands\AssemblyL.cs" />
+    <Compile Include="Commands\AutoAnnL.cs" />
+    <Compile Include="Commands\AutoLngL.cs" />
+    <Compile Include="Commands\BlockMetricL.cs" />
+    <Compile Include="Commands\BUpdateL.cs" />
+    <Compile Include="Commands\ChopL.cs" />
+    <Compile Include="Commands\CncL.cs" />
+    <Compile Include="Commands\CrossPieceL.cs" />
+    <Compile Include="Commands\DadoJointL.cs" />
+    <Compile Include="Commands\DataTableL.cs" />
+    <Compile Include="Commands\DetailDrawingsL.cs" />
+    <Compile Include="Commands\DimDetailingL.cs" />
+    <Compile Include="Commands\DrillL.cs" />
+    <Compile Include="Commands\DwgTreeL.cs" />
+    <Compile Include="Commands\DxfExportL.cs" />
+    <Compile Include="Commands\EntityFilterL.cs" />
+    <Compile Include="Commands\ExportSettingsL.cs" />
+    <Compile Include="Commands\ExposeL.cs" />
+    <Compile Include="Commands\FilletL.cs" />
+    <Compile Include="Commands\FindNameL.cs" />
+    <Compile Include="Commands\FixtureL.cs" />
+    <Compile Include="Commands\FlatL.cs" />
+    <Compile Include="Commands\InvertL.cs" />
+    <Compile Include="Commands\LayL.cs" />
+    <Compile Include="Commands\MarkL.cs" />
+    <Compile Include="Commands\MeshCmdL.cs" />
+    <Compile Include="Commands\MultiSliceL.cs" />
+    <Compile Include="Commands\NumberingL.cs" />
+    <Compile Include="Commands\OffsetL.cs" />
+    <Compile Include="Commands\PageNoL.cs" />
+    <Compile Include="Commands\PasteToTableL.cs" />
+    <Compile Include="Commands\PlaceLeadersL.cs" />
+    <Compile Include="Commands\QCleaningL.cs" />
+    <Compile Include="Commands\ReduceWeightL.cs" />
+    <Compile Include="Commands\RemHolesL.cs" />
+    <Compile Include="Commands\SelectSameL.cs" />
+    <Compile Include="Commands\SmartLeaderL.cs" />
+    <Compile Include="Commands\StyleParentL.cs" />
+    <Compile Include="Commands\SumLenL.cs" />
+    <Compile Include="Commands\TabSlotL.cs" />
+    <Compile Include="Commands\TntL.cs" />
+    <Compile Include="Commands\UnpackL.cs" />
+    <Compile Include="Commands\ZoneL.cs" />
+    <Compile Include="Common.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DB\CommandL.cs" />
+    <Compile Include="DB\CommandTipL.cs" />
+    <Compile Include="DB\ConnectL.cs" />
+    <Compile Include="DB\LicL.cs" />
+    <Compile Include="DB\PasswordDlgL.cs" />
+    <Compile Include="DB\ServerL.cs" />
+    <Compile Include="Dialogs\AvcPaletteOptionsL.cs" />
+    <Compile Include="Dialogs\CommonOptionsL.cs" />
+    <Compile Include="Dialogs\DTFlagsL.cs" />
+    <Compile Include="Dialogs\LenStyleL.cs" />
+    <Compile Include="Dialogs\TableSelectL.cs" />
+    <Compile Include="EvalMathL.cs" />
+    <Compile Include="Extensions\AnnotateL.cs" />
+    <Compile Include="Extensions\BlockL.cs" />
+    <Compile Include="Extensions\CmdLineL.cs" />
+    <Compile Include="Extensions\CurveL.cs" />
+    <Compile Include="Extensions\LayerL.cs" />
+    <Compile Include="Extensions\RegAcadL.cs" />
+    <Compile Include="Extensions\SolidL.cs" />
+    <Compile Include="FileCopyL.cs" />
+    <Compile Include="FileL.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropL.cs" />
+    <Compile Include="RegL.cs" />
+    <Compile Include="SolidMetricL.cs" />
+    <Compile Include="SubstitutionL.cs" />
+    <Compile Include="UpdaterL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Common.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3DPoly32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3Ds32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotations32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arc32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Array32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrays32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASimp16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASimp32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmCreate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmCreate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmNew16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmNew32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assemblies32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assembly32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attribute32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autoann16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoAnn32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autolng16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoLng32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoOrtho16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoOrtho32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSnap16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSnap32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcMessage16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcMessage32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcNum16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcNum32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcOptions16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcOptions32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AVCUpdate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AVCUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockDyn32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockEditor32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockMetric16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockMetric32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockRef32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blocks32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUpdate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterMark32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chop16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chop32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChopEdge16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChopEdge32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cover32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPoly16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPoly32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrossPiece16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrossPiece32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curve32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curves32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DadoJoint16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DadoJoint32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DadoLoop16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DadoLoop32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datatable16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataTable32.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDraw16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDraw32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delails32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DimDet16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DimDet32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dimension32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DimOverall16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DimOverall32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drawing32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drill16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drill32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrillTable16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrillTable32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwgTree16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwgTree32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DXFExport16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DXFExport32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipsis32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entity32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expose16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expose32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\field16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fillet16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fillet32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindName16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindName32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fixture16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fixture32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flat16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flat32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAP16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAP32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hatch32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportAtt16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportAtt32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportDwgProp16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportDwgProp32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportMat16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportMat32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoPAlette16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoPalette32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsideCorner16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsideCorner32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instances32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invert16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invert32.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KindPalette16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KindPalette32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lay16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAY32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerFilter32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layers32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layouts32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leader32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeaderUpdate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeaderUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mark32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Materials32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mattable16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatTable32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mechanical32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesh32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshExplode16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshExplode32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meshtosolid16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshToSolid32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mill16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miter16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miter32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MNum16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MNum32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mSSO16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mSSO32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiSlice16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiSlice32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NamePalette16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NamePalette32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NCPrepare16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NCPrepare32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffsetMany16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffsetMany32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ole32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openfile16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Other32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Others32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutsideLoop16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutsideLoop32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageNo16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageNo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Palette16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Palette32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteToTable16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteToTable32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaceLeaders16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaceLeaders32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointCloud32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Polyline32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pro16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pro32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Products32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proxy32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ray32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReduceW16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReduceW32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\References32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Region32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemHoles16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemHoles32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RevCloud32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saw16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saw32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SawRed16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SawRed32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shop32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slice16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slice32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmartLeader16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmartLeader32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SNN16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SNN32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Solid32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidFace32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidMetric32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidMirror32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolSize16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolSize32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spline32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSO16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSO32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StairStep16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StairStep32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Substitution16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumArea16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumArea32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumLen16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SumLen32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Surface32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sweep32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableSplit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableSplit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabSlot16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabSlot32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextHeightUpdate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextHeightUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TNT16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TNT32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TNTUpdate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TNTUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unpack16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unpack32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateColor16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateColor32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Updater16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Updater32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Url32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Viewport32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wipeout32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xline32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zone16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zone32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Вопрос32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Штангенциркуль32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcOptions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASimp80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assembly80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoAnn80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoLng80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvcNum80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockMetric80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUpdate80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chop80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPoly80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrossPiece80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DadoJoint80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DadoLoop80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataTable80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDraw80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DimDet80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DimOverall80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drill80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrillTable80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwgTree80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DXFExport80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expose80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fillet80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindName80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fixture80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flat80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsideCorner80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invert80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lay80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mark80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatTable80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshToSolid80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miter80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MNum80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiSlice80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NCPrepare80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffsetMany80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnEnd80.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnFace80.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutsideLoop80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageNo80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Palette80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteToTable80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaceLeaders80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pro80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReduceW80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemHoles80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saw80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slice80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmartLeader80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSO80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabSlot80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextHeight80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TNT80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unpack80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zone80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileCopy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Updater.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Details32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Таблица16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
