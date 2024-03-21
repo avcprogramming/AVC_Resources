@@ -3,6 +3,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация программы автообновлений плагинов
+  /// </summary>
   public static class UpdaterL
   {
     public static readonly string[] UpdateQuery = {

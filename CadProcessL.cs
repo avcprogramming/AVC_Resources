@@ -3,6 +3,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация управления просессом acad.exe и служебными папками AutoCAD
+  /// </summary>
   public static class 
   CadProcessL
   {

@@ -2,6 +2,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация диалога замены пароля
+  /// </summary>
   public static class 
   PasswordDlgL
   {

@@ -2,6 +2,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация методов для работы с 2D обьектами, кривыми
+  /// </summary>
   public static class 
   CurveL
   {

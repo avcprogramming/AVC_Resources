@@ -2,6 +2,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация копмонента диалогов для настройки форматирования длин и размеров
+  /// </summary>
   public static class 
   LenStyleL
   {

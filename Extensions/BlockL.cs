@@ -2,6 +2,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация методов для работы с блоками
+  /// </summary>
   public static class 
   BlockL
   {

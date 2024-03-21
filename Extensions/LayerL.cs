@@ -1,6 +1,10 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
+  /// <summary>
+  /// Локализация методов для работы со слоями.
+  /// Нзвания слоев и типов линий. Важно, чтоб совпадали с названиями в соотвествующей локализации AutoCAD
+  /// </summary>
   public static class
   LayerL
   {

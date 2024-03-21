@@ -4,6 +4,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация методов для работы с реестром Windows в разделе AutoCAD
+  /// </summary>
   public static class 
   RegAcadL
   {

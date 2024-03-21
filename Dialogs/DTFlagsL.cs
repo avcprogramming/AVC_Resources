@@ -1,6 +1,9 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
+  /// <summary>
+  /// Локализация копмонента диалогов для настройки опций извлечения данных в таблицы
+  /// </summary>
   public static class 
   DTFlagsL
   {

@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Users\avc72\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
+    <OutputPath>..\..\..\Users\shurik\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>

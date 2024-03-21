@@ -1,6 +1,9 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
+  /// <summary>
+  /// Локализация системы подстановок свойств обьектов
+  /// </summary>
   public static class SubstitutionL
   {
     public static readonly string[] Substitutions = {

@@ -2,6 +2,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация методов для работы с солидами
+  /// </summary>
   public static class 
   SolidL
   {

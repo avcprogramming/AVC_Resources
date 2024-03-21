@@ -4,6 +4,9 @@
 
 namespace AVC
 {
+  /// <summary>
+  /// Локализация методов для работы с текстами и другими аннтациями
+  /// </summary>
   public static class 
   AnnotateL
   {

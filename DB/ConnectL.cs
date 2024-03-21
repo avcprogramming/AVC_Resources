@@ -1,6 +1,9 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
+  /// <summary>
+  /// Локализация процесса подключения к БД AVC
+  /// </summary>
   public static class 
   ConnectL
   {

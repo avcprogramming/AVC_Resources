@@ -8,7 +8,8 @@ using static System.String;
 namespace AVC
 {
   /// <summary>
-  /// Локализация сообщений сервера AVC
+  /// Локализация сообщений с сервера AVC.
+  /// Английские текст менять нельзя!!  Они зашиты в хранимки SQL 
   /// </summary>
   public static class 
   ServerL
