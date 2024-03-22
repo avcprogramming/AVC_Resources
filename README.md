@@ -11,9 +11,11 @@ Some lines have wildcard characters {0}, {1}, {2}, and so on. All translations m
 
 Icons are stored as resources in PNG files. You cannot rename icons - this will lead to fatal crashes. But you can replace them with others with the same name and the same size. Please note that the library code contains only icons and pictures for dialog forms. Menu and ribbon icons are stored not in a DLL library, but in a CUIX file. You can open the CUIX file as a ZIP archive and replace the png files there. No recompilations are required there.
 
+# Important note. 
+Do not attempt to run CAD and AVC plugins while Visual Studio or other debuggers are running. Conflicts are possible up to AutoCAD fatalities. Block AVC plugins from loading when you are debugging your plugins.
+
 ----------------------------------------------------------------------------
 # RU
-
 В данном проекте содержатся строки и иконки для плагинов AVC для AutoCAD и BricsCAD. Проект должен быть скомпилирован для .Net Framework 4.8 (хотя будет использоваться и под AutoCAD 2025 с Net 8.0). Готовую библиотеку следует поместить в папку с основными библиотеками плагина: C:\Users\<user>\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_<plugin>.bundle\Contents\Windows
 
 Строки содержатся не в ресурсах, а в коде на C#. Мне так удобнее делать перевод на несколько языков сразу. Строки сгруппированы по назначению в массивы C#. В каждом массиве столько строк, сколько языков используется в плагинах. Если вы добавляете свой язык вам надо во все абсолютно массивы добавить новую строку. Программа знает индекс языка в массивах. Индекс 0 – это всегда английский, индекс 1 – русский, и так далее. Если программа не найдет строки с нужным индексом, если массив окажется слишком коротким, или если какая-то строка окажется пустой, то будет выведена строка с индексом 0, то есть будет использован английский язык. Поэтому вы можете переводить не все массивы и файлы сразу, а делать эту работу постепенно. Но нельзя добавлять еще один язык, пока не закончен перевод на предыдущий, так как вы можете не заметить, что массив слишком короткий и ввести перевод не на тот индекс, не на тот язык.
@@ -25,3 +27,6 @@ Icons are stored as resources in PNG files. You cannot rename icons - this will 
 В некоторых строках есть символы подстановки данных {0}, {1}, {2} и так далее. Во всех переводах обязательно должны присутствовать все эти подстановки, иначе – фатал. 
 
 Иконки хранятся в ресурсах в файлах PNG. Нельзя переименовывать иконки – это приведет к фатальным сбоям. Но можно заменять на другие, с тем же именем и того же размера. Учтите, что в коде библиотеки присутствуют только иконки и картинки для форм диалога. Иконки меню и ленточных панелей хранятся не в DLL-библиотеке, а в CUIX-файле. CUIX файл вы можете открыть как ZIP-архив и заменить там png-файлы. Никаких перекомпиляций там не требуется.
+
+# Важное примечание. 
+Не пытайтесь запускать CAD и плагины AVC когда работает Visual Studio или другие отладчики. Возможну конфликты вплоть до фаталов AutoCAD. Заблокируйте загрузку плагинов AVC, когда отлаживаете свои плагины.
