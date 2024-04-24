@@ -4,7 +4,7 @@ namespace AVC
   /// <summary>
   /// Локализация диалога выбора таблицы для вставки данных, извлеченных из чертежа
   /// </summary>
-  public static class 
+  public static class
   TableSelectL
   {
     public static readonly string[] Part1 = {

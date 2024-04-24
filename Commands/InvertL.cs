@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   InvertL
   {
     public static readonly string[] ObjectIsolationMode = {

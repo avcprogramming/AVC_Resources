@@ -4,7 +4,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   QCleaningL
   {
     public static readonly string[] SelectOne = {
@@ -19,22 +19,22 @@ namespace AVC
       "Seleziona il campione per deselezionarlo",
       "Wählen Sie eine Probe aus, um die Auswahl aufzuheben",
       "选择要取消选择的样本" };
-    public static readonly string[] DeleteKW = { 
-      "Delete", 
-      "Удалить", 
-      "Elimina", 
+    public static readonly string[] DeleteKW = {
+      "Delete",
+      "Удалить",
+      "Elimina",
       "Löschen",
       "删除(D)" };
-    public static readonly string[] UnselectKW = { 
-      "Unselect", 
-      "Исключить", 
-      "Deseleziona", 
+    public static readonly string[] UnselectKW = {
+      "Unselect",
+      "Исключить",
+      "Deseleziona",
       "AuswahlAufheben",
       "取消选择(U)" };
-    public static readonly string[] ToleranceKW = { 
-      "Tolerance", 
-      "Точность", 
-      "Tolleranza", 
+    public static readonly string[] ToleranceKW = {
+      "Tolerance",
+      "Точность",
+      "Tolleranza",
       "Toleranz",
       "宽容(T)" };
     public static readonly string[] ToleranceQuery = {

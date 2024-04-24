@@ -5,7 +5,7 @@ namespace AVC
   /// <summary>
   /// Локализация методов для работы с блоками
   /// </summary>
-  public static class 
+  public static class
   BlockL
   {
     public static readonly string[] LayoutErr = {
@@ -68,10 +68,10 @@ namespace AVC
       "{0}\nImpossibile scrivere blocco nel file {1}. Forse il file è aperto in un'altra finestra?",
       "{0}\nFehler beim Schreiben des Blocks in die Datei {1}. Vielleicht ist die Datei in einem anderen Fenster geöffnet?",
       "{0}\n未能将块写入文件 {1}。 文件是否在另一个窗口中打开？" };
-    public static readonly string[] ParameterValueErr = { 
-      "The value {0} is not suitable for parameter {1}", 
-      "Значение {0} не подходит для параметра {1}", 
-      "Il valore {0} non è adatto per il parametro {1}.", 
+    public static readonly string[] ParameterValueErr = {
+      "The value {0} is not suitable for parameter {1}",
+      "Значение {0} не подходит для параметра {1}",
+      "Il valore {0} non è adatto per il parametro {1}.",
       "Der Wert {0} ist für Parameter {1} nicht geeignet.",
       "值 {0} 不适用于参数 {1}" };
 

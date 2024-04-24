@@ -68,12 +68,14 @@ namespace AVC
     /// <param name="languageNumber">Номер языка.  0 -> Английский (по умолчанию)</param>
     /// <returns>Двухбуквенный код языка</returns>
     public static string
-    Code(int languageNumber) => languageNumber switch { 
-      1 => "Ru", 
-      2 => "It", 
-      3 => "Ge", 
-      4 => "Zh", 
-      _ => "En" };
+    Code(int languageNumber) => languageNumber switch
+    {
+      1 => "Ru",
+      2 => "It",
+      3 => "Ge",
+      4 => "Zh",
+      _ => "En"
+    };
 
     /// <summary>
     /// LCID-код языка
@@ -81,12 +83,14 @@ namespace AVC
     /// <param name="languageNumber">Номер языка.  0 -> Английский (по умолчанию)</param>
     /// <returns>LCID</returns>
     public static int
-    Lcid(int languageNumber) => languageNumber switch {
+    Lcid(int languageNumber) => languageNumber switch
+    {
       1 => 1049,
       2 => 1040,
       3 => 1031,
-      4 => 2052, 
-      _ => 1033 };
+      4 => 2052,
+      _ => 1033
+    };
 
     /// <summary>
     /// Номер языка по его LCID.
@@ -95,12 +99,14 @@ namespace AVC
     /// <param name="lcid"></param>
     /// <returns>LCID</returns>
     public static int
-    Number(int lcid) => lcid switch {
+    Number(int lcid) => lcid switch
+    {
       1049 => 1,
       1040 => 2,
       1031 => 3,
-      2052 => 4, 
-      _ => 0 };
+      2052 => 4,
+      _ => 0
+    };
 
   }
 }

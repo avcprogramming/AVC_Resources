@@ -4,31 +4,31 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   DxfExportL
   {
     public static readonly string[,] DxfExportStyleNames = {
-        {         
+        {
         CommandL.DXF[0],
         CommandL.DXF[1],
         CommandL.DXF[2],
         CommandL.DXF[3],
         CommandL.DXF[4] } ,
-        { 
-        "Export 2D contours", 
-        "Экспорт контуров", 
-        "Esporta contorni 2D", 
-        "2D-Konturen exportieren", 
+        {
+        "Export 2D contours",
+        "Экспорт контуров",
+        "Esporta contorni 2D",
+        "2D-Konturen exportieren",
         "导出 2D 大纲" } ,
-        { 
-        "Export 3D solids", 
-        "Экспорт солидов", 
-        "Esporta solidi 3D", 
-        "3D-Volumenkörper exportieren", 
+        {
+        "Export 3D solids",
+        "Экспорт солидов",
+        "Esporta solidi 3D",
+        "3D-Volumenkörper exportieren",
         "导出 3D 实体" } ,
       };
 
-  public static readonly string[] TechErr = {
+    public static readonly string[] TechErr = {
       "  Perhaps all parts are discarded due to inappropriate manufacturing techniques.",
       "  Возможно все детали отброшены из-за неподходящих технологий изготовления",
       "  Forse tutte le parti vengono scartate a causa di tecniche di produzione inadeguate.",
@@ -107,35 +107,35 @@ namespace AVC
       "目录不存在或不可用"};
 
     // Опции командной строки
-    public static readonly string[] LayStyleKW = { 
-      "LAYstyle", 
-      "LAYcтиль", 
-      "LAYstile", 
-      "LAYstil", 
+    public static readonly string[] LayStyleKW = {
+      "LAYstyle",
+      "LAYcтиль",
+      "LAYstile",
+      "LAYstil",
       "LAY风格" };
-    public static readonly string[] CncStyleKW = { 
-      "CNCstyle", 
-      "CNCcтиль", 
-      "CNCstile", 
-      "CNCstil", 
+    public static readonly string[] CncStyleKW = {
+      "CNCstyle",
+      "CNCcтиль",
+      "CNCstile",
+      "CNCstil",
       "CNC风格" };
-    public static readonly string[] DimDetStyleKW = { 
-      "DIMDETstyle", 
+    public static readonly string[] DimDetStyleKW = {
+      "DIMDETstyle",
       "DIMDETcтиль",
-      "DIMDETstile", 
-      "DIMDETstil", 
+      "DIMDETstile",
+      "DIMDETstil",
       "DIMdet风格" };
-    public static readonly string[] DxfStyleKW = { 
-      "DXFstyle", 
-      "DXFcтиль", 
-      "DXFstile", 
-      "DXFstil", 
+    public static readonly string[] DxfStyleKW = {
+      "DXFstyle",
+      "DXFcтиль",
+      "DXFstile",
+      "DXFstil",
       "DXF风格" };
-    public static readonly string[] DDrawStyleKW = { 
-      "DDRAWstyle", 
-      "DDRAWcтиль", 
-      "DDRAWstile", 
-      "DDRAWstil", 
+    public static readonly string[] DDrawStyleKW = {
+      "DDRAWstyle",
+      "DDRAWcтиль",
+      "DDRAWstile",
+      "DDRAWstil",
       "DDRAW风格" };
 
     //============================== Options Box ==============================================

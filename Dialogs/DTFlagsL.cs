@@ -4,7 +4,7 @@ namespace AVC
   /// <summary>
   /// Локализация копмонента диалогов для настройки опций извлечения данных в таблицы
   /// </summary>
-  public static class 
+  public static class
   DTFlagsL
   {
     public static readonly string[] AppearanceSimilarity = {

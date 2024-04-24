@@ -5,7 +5,7 @@ namespace AVC
   /// <summary>
   /// Локализация методов для работы с солидами
   /// </summary>
-  public static class 
+  public static class
   SolidL
   {
     public static readonly string[] SelectSolids = {

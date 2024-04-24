@@ -3,7 +3,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   MarkL
   {
     public static readonly string[,] MarkStyleNames = {
@@ -38,22 +38,22 @@ namespace AVC
         "Zahlenblase",
         "泡泡与数字"},
       };
-  public static readonly string[] Select = {
+    public static readonly string[] Select = {
       "  Select details to mark and old marks. Or you can select a viewport ",
       "  Выберите объекты для маркировки и старые метки. Можно указать вьюпорт ",
       "  Seleziona i dettagli da Marcatura e i vecchi marchi. Oppure puoi selezionare una viewport ",
       "  Wählen Sie Details zum Markieren und alte Markierungen aus. Oder Sie können ein Viewport auswählen",
       "  选择要标记的细节和旧标记。 或者您可以选择一个视口"};
-    public static readonly string[] Creating = { 
-      "  Creating marks", 
-      "  Маркировка", 
-      "  Marcatura", 
+    public static readonly string[] Creating = {
+      "  Creating marks",
+      "  Маркировка",
+      "  Marcatura",
       "  Markierung",
       "  创建标记"};
-    public static readonly string[] NoBlock = { 
-      "  No block specified", 
-      "  Не задан блок", 
-      "  Nessun blocco specificato", 
+    public static readonly string[] NoBlock = {
+      "  No block specified",
+      "  Не задан блок",
+      "  Nessun blocco specificato",
       "  Kein Block angegeben",
       "  未指定块"};
     public static readonly string[] ErrBlock = {
@@ -134,7 +134,7 @@ namespace AVC
       "Elimina i vecchi",
       "Alte Markierungen löschen",
       "删除旧标记" };
-    public static readonly string[] DelOldTip   = {
+    public static readonly string[] DelOldTip = {
       "Delete all old marks with same style.\r\n" +
         "Delete only marks that are among the objects you have selected.\r\n" +
         "When you select a viewport, all marks visible in the model\r\n" +

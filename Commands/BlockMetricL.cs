@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   BlockMetricL
   {
     public static readonly string[,] BMStyleNames = {

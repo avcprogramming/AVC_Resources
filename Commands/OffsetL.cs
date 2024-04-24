@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   OffsetL
   {
     public static readonly string[] Offset = {
@@ -61,21 +61,21 @@ namespace AVC
     // It: F U I R T NT FP IP G AG E M P A AU SI SU O PUNTAMENTO PUNTA PU TT TU FIN MED CEN CE NOD QUA UNT EST INS PER TAN VIC APP PAR N ZVER ZMED ZCEN ZNOD ZPER ZVIC ZNES
     // Ge: F L K QUADER ALLE ZA FP KP G H E M V ZU AU EI SPUR SPU SP TT ENDP MIT M G PUN QUAD SCH HIL BAS LOT TAN NÄC ANP PAR KEI ZSC ZMIT ZZEN ZKNOT ZLOT ZNÄH ZKEI
 
-    public static readonly string[] 
+    public static readonly string[]
       Processed = {
       "Processed objects: {0}",
       "Обработано объектов: {0}",
       "Oggetti elaborati: {0}",
       "Verarbeitete Objekte: {0}",
       "已处理的对象：{0}"};
-    public static readonly string[] 
+    public static readonly string[]
       Errors = {
       "Errors: {0}",
       "Ошибок: {0}",
       "Errori: {0}",
       "Fehler: {0}",
       "错误：{0}" };
-    public static readonly string[] 
+    public static readonly string[]
       Search = {
       "Search for matching properties",
       "Поиск подходящих объектов",
@@ -86,14 +86,14 @@ namespace AVC
     //======================= Dialog Box =============================================================
 
 
-    public static readonly string[] 
+    public static readonly string[]
       DelSourceText = {
       "Delete Sources",
       "Удалить исходные",
       "Elimina fonte",
       "Quellen löschen",
       "删除来源" };
-    public static readonly string[] 
+    public static readonly string[]
       DelSourceTip = {
       "At the end of the command, all successfully processed source curves will be deleted.\r\n" +
         "If the offset failed, then the deletion will not be done.",
@@ -105,14 +105,14 @@ namespace AVC
          "Wenn der Offset fehlgeschlagen ist, wird die Löschung nicht durchgeführt.",
       "在命令结束时，所有成功处理的源曲线将被删除。\r\n" +
          "如果偏移失败，则删除不会完成。" };
-    public static readonly string[] 
+    public static readonly string[]
       DistanceQueryText = {
       "Distance Query",
       "Запрос дистанции",
       "Richiesta di distanza",
       "Entfernungsabfrage",
       "距离查询" };
-    public static readonly string[] 
+    public static readonly string[]
       DistanceQueryTip = {
       "Display offset distance request before selecting objects.\r\n" +
         "If you disable this option, the command will use the distance from the current style.",
@@ -124,14 +124,14 @@ namespace AVC
          "Wenn Sie diese Option deaktivieren, verwendet der Befehl den Abstand vom aktuellen Stil.",
       "选择对象前显示偏移距离请求。\r\n" +
          "如果禁用此选项，该命令将使用距当前样式的距离。" };
-    public static readonly string[] 
+    public static readonly string[]
       NCLayerText = {
       "By NC Layer",
       "По NC-слою",
       "Per NC layer",
       "Durch NC-Layer",
       "按 NC 层" };
-    public static readonly string[] 
+    public static readonly string[]
       NCLayerTip = {
       "The program will take into account the NC layers assigned by the OSL and NCP commands. \r\n" +
         "Inside contours (dadoes, windows, holes) will be offset in the opposite direction.",
@@ -143,28 +143,28 @@ namespace AVC
          "Innenkonturen (Dados, Fenster, Löcher) werden in die entgegengesetzte Richtung versetzt.",
       "该程序将考虑由 OSL 和 NCP 命令分配的 NC 层。 \r\n" +
          "内部轮廓（墙裙、窗户、洞）将向相反方向偏移。" };
-    public static readonly string[] 
+    public static readonly string[]
       NotAnnotationsText = {
       "Not Annotations",
       "Кроме аннотаций",
       "Oltre alle annotazioni",
       "Nicht Anmerkungen",
       "不是注解" };
-    public static readonly string[] 
+    public static readonly string[]
       NotAnnotationsTip = {
       "Ignore curves in the Annotations layer.",
       "Игнорировать кривые слоя Аннотации.",
       "Ignora le curve nel livello Annotazioni.	",
       "Ignorieren Sie Kurven in der Anmerkungsebene.",
       "忽略注释层中的曲线。" };
-    public static readonly string[] 
+    public static readonly string[]
       OpenedText = {
       "Open Curves",
       "Разомкнутые",
       "Сurve aperte",
       "Offene Kurven",
       "打开曲线" };
-    public static readonly string[] 
+    public static readonly string[]
       OpenedTip = {
       "Offset open curves. \r\n" +
         "Typically, a command only works with closed curves, while open ones are ignored.\r\n" +
@@ -182,14 +182,14 @@ namespace AVC
       "偏移开放曲线。\r\n" +
          "通常，命令仅适用于闭合曲线，而忽略开放曲线。\r\n" +
          "对于开放曲线，您需要指定偏移方向的点。" };
-    public static readonly string[] 
+    public static readonly string[]
       SelectErrorsText = {
       "Select Errors",
       "Выбрать ошибки",
       "Scegli errato",
       "Wählen Sie Fehler aus",
       "选择错误" };
-    public static readonly string[] 
+    public static readonly string[]
       SelectErrorsTip = {
       "After the work of the command, \r\n" +
         "all the curves that caused the offset errors will remain selected and highlighted.",
@@ -201,14 +201,14 @@ namespace AVC
          "Alle Kurven, die die Offset-Fehler verursacht haben, bleiben ausgewählt und hervorgehoben.",
       "命令生效后，\r\n" +
          "导致偏移错误的所有曲线将保持选中状态并突出显示。" };
-    public static readonly string[] 
+    public static readonly string[]
       SetLayerText = {
       "Set Layer",
       "На слой",
       "Assegna livello",
       "Ebene festlegen",
       "设置图层" };
-    public static readonly string[] 
+    public static readonly string[]
       SetLayerTip = {
       "Assign layer to all offseted curves. \r\n" +
         "If you enter the name of a nonexistent layer, the program will create a new layer.",
@@ -220,7 +220,7 @@ namespace AVC
          "Wenn Sie den Namen einer nicht vorhandenen Ebene eingeben, erstellt das Programm eine neue Ebene.",
       "将图层分配给所有偏移曲线。 \r\n" +
          "如果您输入一个不存在的层的名称，程序将创建一个新层。" };
-    public static readonly string[] 
+    public static readonly string[]
       LayerTip = {
       "You can enter layer name for new objects. \r\n" +
         "Layer will created if it not exists",
@@ -232,42 +232,42 @@ namespace AVC
          "Ebene wird erstellt, wenn sie nicht existiert",
       "您可以为新对象输入图层名称。 \r\n" +
          "层将创建，如果它不存在" };
-    public static readonly string[] 
+    public static readonly string[]
       RepeatTip = {
       "Offset for offseted contour again and again.",
       "Сделать офсет офсеченого контура еще раз и еще.",
       "Contorno sfalsato offset ancora e ancora.",
       "Offset für versetzte Kontur immer wieder.",
       "一次又一次地偏移偏移轮廓。" };
-    public static readonly string[] 
+    public static readonly string[]
       DirectionText = {
       "Direction",
       "Направление",
       "Direzione",
       "Richtung",
       "方向" };
-    public static readonly string[] 
+    public static readonly string[]
       DistanceText = {
       "Distance",
       "Дистанция",
       "Distanza",
       "Distanz",
       "距离" };
-    public static readonly string[] 
+    public static readonly string[]
       RepeatText = {
       "Repeat",
       "Повторять",
       "Ripetizione",
       "Wiederholen",
       "重复" };
-    public static readonly string[] 
+    public static readonly string[]
       BothText = {
       "Both",
       "Обе стороны",
       "In entrambe",
       "Wiederholen",
       "重复" };
-    public static readonly string[] 
+    public static readonly string[]
       BothTip = {
       "All curves (both closed and open) will be offseted in both directions. \r\n" +
         "A direction request (for open curves) will not be displayed.",
@@ -279,14 +279,14 @@ namespace AVC
          "Eine Richtungsabfrage (für offene Kurven) wird nicht angezeigt.",
       "所有曲线（闭合和开放）都将在两个方向上偏移。 \r\n" +
          "将不会显示方向请求（对于开放曲线）。" };
-    public static readonly string[] 
+    public static readonly string[]
       InsideText = {
       "Inward",
       "Внутрь",
       "Dentro",
       "Innere",
       "向内的" };
-    public static readonly string[] 
+    public static readonly string[]
       InsideTip = {
       "Offset all closed curves inward. \r\n" +
         "The setting does not apply to open curves.",
@@ -298,14 +298,14 @@ namespace AVC
          "Die Einstellung gilt nicht für offene Kurven.",
       "向内偏移所有闭合曲线。 \r\n" +
          "该设置不适用于开放曲线。" };
-    public static readonly string[] 
+    public static readonly string[]
       OutsideText = {
       "Outward",
       "Наружу",
       "Fuori",
       "Nach außen",
       "向外" };
-    public static readonly string[] 
+    public static readonly string[]
       OutsideTip = {
       "Offset all closed curves outward. \r\n" +
         "The setting does not apply to open curves.",
@@ -317,14 +317,14 @@ namespace AVC
          "Die Einstellung gilt nicht für offene Kurven.",
       "向外偏移所有闭合曲线。 \r\n" +
          "该设置不适用于开放曲线。" };
-    public static readonly string[] 
+    public static readonly string[]
       DistanceTip = {
       "The distance from the original curve at which the new curve will be drawn.",
       "Расстояние от исходной кривой, на котором будет сделана новая кривая.",
       "La distanza dalla curva originale alla quale verrà disegnata la nuova curva.",
       "Der Abstand von der ursprünglichen Kurve, bei dem die neue Kurve gezeichnet wird.",
       "绘制新曲线时与原始曲线的距离。" };
-    public static readonly string[] 
+    public static readonly string[]
       StileNameTip = {
       "The name for this style. \r\n" +
         "Not used in the program. Only for convenience of choice.",

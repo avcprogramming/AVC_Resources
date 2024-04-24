@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   MultiSliceL
   {
     public static readonly string[,] SliceStyleNames = {

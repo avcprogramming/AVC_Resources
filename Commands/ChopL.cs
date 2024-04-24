@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   ChopL
   {
     public static readonly string[,] ChopStyleNames = {

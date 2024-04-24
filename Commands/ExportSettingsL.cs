@@ -2,11 +2,11 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   ExportSettingsL
   {
     public static readonly string[] Exported = {
-      "Settings exported to file {0}", 
+      "Settings exported to file {0}",
       "Настройки экспортированы в файл {0}",
       "Impostazioni esportate nel file {0}",
       "Einstellungen in Datei {0} exportiert",
@@ -22,10 +22,10 @@ namespace AVC
         "Es gibt {1} Einträge in der Registrierung.",
       "从文件 {0} 导入的设置. \r\n" +
         "注册表中有 {1} 个条目。"};
-    public static readonly string[] Reseted = { 
-      "All settings are removed from the registry.", 
-      "Все настройки удалены из реестра.", 
-      "Tutte le impostazioni vengono rimosse dal registro.", 
+    public static readonly string[] Reseted = {
+      "All settings are removed from the registry.",
+      "Все настройки удалены из реестра.",
+      "Tutte le impostazioni vengono rimosse dal registro.",
       "Alle Einstellungen werden aus der Registrierung entfernt.",
       "所有设置都从注册表中删除。"};
     public static readonly string[] ExportHint =  {

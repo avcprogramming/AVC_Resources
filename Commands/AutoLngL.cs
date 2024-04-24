@@ -3,7 +3,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   AutoLngL
   {
     public static readonly string[] Switch = {
@@ -141,15 +141,15 @@ namespace AVC
       "Befehle",
       "命令(C)" };
     public static readonly string[] SystemKW = {
-      "System", 
-      "Системный", 
-      "Sistema", 
+      "System",
+      "Системный",
+      "Sistema",
       "System",
       "系统语言(S)" };
     public static readonly string[] AnotherKW = {
-      "Another", 
-      "Другой", 
-      "UnAltro", 
+      "Another",
+      "Другой",
+      "UnAltro",
       "EinWeiterer",
       "其他(A)" };
 

@@ -2,14 +2,14 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   RemHolesL
   {
     // ======================================== Command Line ======================================================
-    public static readonly string[] RemHoles = { 
-      "Removing holes", 
-      "Удаление отверстий", 
-      "Rimozione dei fori", 
+    public static readonly string[] RemHoles = {
+      "Removing holes",
+      "Удаление отверстий",
+      "Rimozione dei fori",
       "Löcher entfernen",
       "去除孔"};
     public static readonly string[] SelectAll = {
@@ -60,46 +60,46 @@ namespace AVC
       "Rimuovere i fori uno alla volta (lento)?",
       "Löcher einzeln entfernen (langsam)?",
       "一次去除一个孔（慢）？" };
-    public static readonly string[] Progress = { 
-      "Removing holes", 
-      "Удаляем отверстия", 
-      "Rimozione dei fori", 
+    public static readonly string[] Progress = {
+      "Removing holes",
+      "Удаляем отверстия",
+      "Rimozione dei fori",
       "Löcher entfernen",
       "去除孔" };
-    public static readonly string[] AllHolesKW = { 
-      "ALLHoles", 
-      "ВСЕ", 
-      "TUTTI", 
+    public static readonly string[] AllHolesKW = {
+      "ALLHoles",
+      "ВСЕ",
+      "TUTTI",
       "ALLELöcher",
       "删除所有孔(ALLH)" };
-    public static readonly string[] SmallHolesKW = { 
-      "SMALLHoles", 
-      "МАЛенькие", 
-      "PICcolo", 
+    public static readonly string[] SmallHolesKW = {
+      "SMALLHoles",
+      "МАЛенькие",
+      "PICcolo",
       "KLEIN",
       "去除小孔(SMALL)" };
-    public static readonly string[] CNCDrillHolesKW = { 
-      "DRILLS", 
-      "СВЕРЛА", 
-      "TRapano", 
+    public static readonly string[] CNCDrillHolesKW = {
+      "DRILLS",
+      "СВЕРЛА",
+      "TRapano",
       "BOHren",
       "钻头(DRI)" };
-    public static readonly string[] MaxDiamKW = { 
-      "MAXDiam", 
-      "МАКСДиаметр", 
-      "DIAMametroMax", 
+    public static readonly string[] MaxDiamKW = {
+      "MAXDiam",
+      "МАКСДиаметр",
+      "DIAMametroMax",
       "MAXDurchmesser",
       "最大直径(MAXD)" };
-    public static readonly string[] InBlockKW = { 
-      "INBlock", 
-      "ВБлоках", 
-      "INBlocco", 
+    public static readonly string[] InBlockKW = {
+      "INBlock",
+      "ВБлоках",
+      "INBlocco",
       "INBlock",
       "内部块(INB)" };
-    public static readonly string[] OneByOneKW = { 
-      "1By1", 
-      "1За1", 
-      "1Per1", 
+    public static readonly string[] OneByOneKW = {
+      "1By1",
+      "1За1",
+      "1Per1",
       "1Von1",
       "逐个(1)" };
     // En: W L C B ALL F WP CP G A R M P U AU SI TRACKING TRACK TK TT END MID CEN G NOD QUA INT EXT INS PER TAN NEA APP PAR NON ZVER ZMID ZCEN ZKNO ZPER ZNEA ZNON
@@ -180,7 +180,7 @@ namespace AVC
       "Meno di",
       "Less than",
       "少于"};
-  public static readonly string[] SmallTip = {
+    public static readonly string[] SmallTip = {
       "Only remove holes smaller than the specified diameter.",
       "Удалять только отверстия меньше, чем заданный диаметр.",
       "Rimuovere solo i fori più piccoli del diametro specificato.",

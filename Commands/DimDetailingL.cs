@@ -5,46 +5,47 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   DimDetailingL
   {
     public static readonly string[,] DimDetStyleNames = {
-/* 0 */ {         
+/* 0 */ {
         CommandL.DimDet[0],
         CommandL.DimDet[1],
         CommandL.DimDet[2],
         CommandL.DimDet[3],
         CommandL.DimDet[4] },
-/* 1 */ {         
+/* 1 */ {
         CommandL.DimDet[0],
         CommandL.DimDet[1],
         CommandL.DimDet[2],
         CommandL.DimDet[3],
         CommandL.DimDet[4] },
-/* 2 */ { 
-        "Dimensions for DXF", 
-        "Размеры для DXF", 
-        "Dimensioni per DXF", 
-        "Abmessungen für DXF", 
+/* 2 */ {
+        "Dimensions for DXF",
+        "Размеры для DXF",
+        "Dimensioni per DXF",
+        "Abmessungen für DXF",
         "DXF 尺寸" },
-/* 3 */ { 
-        "All Dimensions", 
-        "Все размеры", 
-        "Perché Dimensioni", 
-        "Also Abmessungen", 
+/* 3 */ {
+        "All Dimensions",
+        "Все размеры",
+        "Perché Dimensioni",
+        "Also Abmessungen",
         "所有尺寸" },
     };
 
     public static readonly string[] DefBlindHoleFormat = {
-      "%%c%diam%\\XDepth %depth%", 
-      "%%c%diam%\\XГл.%depth%", 
-      "%%c%diam%\\XPr.%depth%", 
-      "%%c%diam%\\XTiefe %depth%",
-      "%%c%diam%\\X深度 %depth%"};
+      "%%c%diam%\\XDepth %depth%%countersink: {0}%",
+      "%%c%diam%\\XГл.%depth%%countersink: {0}%",
+      "%%c%diam%\\XPr.%depth%%countersink: {0}%",
+      "%%c%diam%\\XTiefe %depth%%countersink: {0}%",
+      "%%c%diam%\\X深度 %depth%%countersink: {0}%"};
+
     public static readonly string[] DefDadoFormat = {
-      "W%diam%\\XDepth %depth%", 
-      "Ш%diam%\\XГл.%depth%", 
-      "Lar.%diam%\\XPr.%depth%", 
+      "W%diam%\\XDepth %depth%",
+      "Ш%diam%\\XГл.%depth%",
+      "Lar.%diam%\\XPr.%depth%",
       "B%diam%\\XTiefe %depth%",
       "宽度%diam%\\X深度 %depth%"};
 
@@ -238,7 +239,7 @@ namespace AVC
       "Выноски наклонов",
       "Direttrice su Inclinazione",
       "Neigung Führungslinie",
-      "坡度角引线"}; 
+      "坡度角引线"};
     public static readonly string[] SlopeLeadersTip = {
       "Create markings for the ends of the details made with the incline of the saw.\r\n" +
         "The accuracy of the angle designation depends on the current dimension style.",

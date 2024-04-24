@@ -6,7 +6,7 @@ namespace AVC
   /// <summary>
   /// Локализация диалога AvcPaletteOptionBox
   /// </summary>
-  public static class 
+  public static class
   AvcPaletteOptionsL
   {
     public static readonly string[] Tabs = {

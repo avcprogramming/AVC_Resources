@@ -3,7 +3,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   FileL
   {
     public static readonly string[] File = {

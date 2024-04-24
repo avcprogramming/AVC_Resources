@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   MeshCmdL
   {
     public static string[] Select = {
@@ -11,10 +11,10 @@ namespace AVC
       "\n Selezionare Mesh o PolyfaceMesh",
       "\n Wählen Sie ein beliebiges Netz",
       "\n 选择网格"};
-    public static string[] Converting = { 
-      "Converting", 
-      "Преобразование", 
-      "Conversione", 
+    public static string[] Converting = {
+      "Converting",
+      "Преобразование",
+      "Conversione",
       "Konvertieren",
       "转换" };
     public static string[] Converted = {

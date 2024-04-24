@@ -250,6 +250,9 @@
   <data name="BlockMetric80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\BlockMetric80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BlockPreview32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BlockPreview32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BlockRef32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\BlockRef32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -288,6 +291,9 @@
   </data>
   <data name="Circle32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Circle32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyCmd32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CopyCmd32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cover32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Cover32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,6 +406,9 @@
   <data name="DrillTable80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\DrillTable80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DropDown32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DropDown32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DwgTree16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\DwgTree16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -451,6 +460,9 @@
   <data name="Fillet80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Fillet80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Find32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Find32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FindName16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FindName16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -468,6 +480,39 @@
   </data>
   <data name="Fixture80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Fixture80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureConnection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureConnection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureHor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureHor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureInside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureInside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureOnEnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureOnEnd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureOnFace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureOnFace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureOutside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureOutside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixturePositions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixturePositions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureVert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureVert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureVertHor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureVertHor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixtureZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FixtureZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flat16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Flat16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -624,6 +669,9 @@
   </data>
   <data name="Line32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Line32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadBlock32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LoadBlock32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mark16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\mark16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -889,6 +937,9 @@
   <data name="Select16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Select16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Select32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Select32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SelectSame80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SSO80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -984,6 +1035,9 @@
   </data>
   <data name="Table32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Table32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableCreate32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TableCreate32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TableSplit16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\TableSplit16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

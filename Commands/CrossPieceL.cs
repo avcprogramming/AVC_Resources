@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   CrossPieceL
   {
     public static readonly string[] Select = {
@@ -77,10 +77,10 @@ namespace AVC
       "  Non sono state trovate facce lineari all'intersezione. Forse le parti non sono piatte?",
       "  An der Kreuzung wurden keine linearen Flächen gefunden. Vielleicht sind die Teile nicht flach?",
       "  未发现交叉点上的任何线性边缘。 可能不是扁平固体" };
-    public static readonly string[] Process = { 
-      "Make cross pieces", 
-      "Изготовление крестовин", 
-      "Fai dei pezzi incrociati", 
+    public static readonly string[] Process = {
+      "Make cross pieces",
+      "Изготовление крестовин",
+      "Fai dei pezzi incrociati",
       "Kreuzstücke machen",
       "制作交叉件" };
     public static readonly string[] DirErr ={
@@ -124,22 +124,22 @@ namespace AVC
       "  Impostazioni correnti: Liquidazione = {0}, Backlash = {1}, Inverti = {2}",
       "  Aktuelle Einstellungen: Spiel = {0}, Luft = {1}, Umkehren = {2}",
       "  当前设置：间隙 = {0}，凹槽 = {1}，反转 = {2}" };
-    public static readonly string[] InverseKW = { 
-      "INverse", 
-      "НАоборот", 
-      "INverti", 
+    public static readonly string[] InverseKW = {
+      "INverse",
+      "НАоборот",
+      "INverti",
       "UMkehren",
       "反之亦然(IN)" }; //select Options
-    public static readonly string[] OffInverseKW = { 
-      "OFfInverse", 
-      "ВЫключитьНаоборот", 
-      "SPEgniInverti", 
+    public static readonly string[] OffInverseKW = {
+      "OFfInverse",
+      "ВЫключитьНаоборот",
+      "SPEgniInverti",
       "AUSschaltenInverser",
       "禁用反向模式(OF)" }; //select Options
-    public static readonly string[] BacklashKW = { 
-      "BAcklash", 
-      "ЛЮФТ", 
-      "BAcklash", 
+    public static readonly string[] BacklashKW = {
+      "BAcklash",
+      "ЛЮФТ",
+      "BAcklash",
       "LUFT",
       "深化(BA)" };
     // En: W L C B ALL F WP CP G A R M P U AU SI TRACKING TRACK TK TT END MID CEN G NOD QUA INT EXT INS PER TAN NEA APP PAR NON ZVER ZMID ZCEN ZKNO ZPER ZNEA ZNON

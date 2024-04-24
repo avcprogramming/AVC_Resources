@@ -533,6 +533,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BlockPreview32 {
+            get {
+                object obj = ResourceManager.GetObject("BlockPreview32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BlockRef32 {
             get {
                 object obj = ResourceManager.GetObject("BlockRef32", resourceCulture);
@@ -656,6 +666,16 @@ namespace AVC {
         public static System.Drawing.Bitmap Circle32 {
             get {
                 object obj = ResourceManager.GetObject("Circle32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CopyCmd32 {
+            get {
+                object obj = ResourceManager.GetObject("CopyCmd32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1033,6 +1053,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DropDown32 {
+            get {
+                object obj = ResourceManager.GetObject("DropDown32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap DwgTree16 {
             get {
                 object obj = ResourceManager.GetObject("DwgTree16", resourceCulture);
@@ -1203,6 +1233,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Find32 {
+            get {
+                object obj = ResourceManager.GetObject("Find32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap FindName16 {
             get {
                 object obj = ResourceManager.GetObject("FindName16", resourceCulture);
@@ -1256,6 +1296,116 @@ namespace AVC {
         public static System.Drawing.Bitmap Fixture80 {
             get {
                 object obj = ResourceManager.GetObject("Fixture80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureAll {
+            get {
+                object obj = ResourceManager.GetObject("FixtureAll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureConnection {
+            get {
+                object obj = ResourceManager.GetObject("FixtureConnection", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureHor {
+            get {
+                object obj = ResourceManager.GetObject("FixtureHor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureInside {
+            get {
+                object obj = ResourceManager.GetObject("FixtureInside", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureOnEnd {
+            get {
+                object obj = ResourceManager.GetObject("FixtureOnEnd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureOnFace {
+            get {
+                object obj = ResourceManager.GetObject("FixtureOnFace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureOutside {
+            get {
+                object obj = ResourceManager.GetObject("FixtureOutside", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixturePositions {
+            get {
+                object obj = ResourceManager.GetObject("FixturePositions", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureVert {
+            get {
+                object obj = ResourceManager.GetObject("FixtureVert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureVertHor {
+            get {
+                object obj = ResourceManager.GetObject("FixtureVertHor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FixtureZ {
+            get {
+                object obj = ResourceManager.GetObject("FixtureZ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1776,6 +1926,16 @@ namespace AVC {
         public static System.Drawing.Bitmap Line32 {
             get {
                 object obj = ResourceManager.GetObject("Line32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap LoadBlock32 {
+            get {
+                object obj = ResourceManager.GetObject("LoadBlock32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2663,6 +2823,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Select32 {
+            get {
+                object obj = ResourceManager.GetObject("Select32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap SelectSame80 {
             get {
                 object obj = ResourceManager.GetObject("SelectSame80", resourceCulture);
@@ -2976,6 +3146,16 @@ namespace AVC {
         public static System.Drawing.Bitmap Table32 {
             get {
                 object obj = ResourceManager.GetObject("Table32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap TableCreate32 {
+            get {
+                object obj = ResourceManager.GetObject("TableCreate32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

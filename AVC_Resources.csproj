@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,8 @@
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>IDE0180;IDE0251;</NoWarn>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -31,8 +34,13 @@
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\AVC_Plugin\AVC_Plugin_Ac25\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
     <Compile Include="CadProcessL.cs" />
     <Compile Include="CnsL.cs" />
     <Compile Include="Commands\AssemblyL.cs" />
@@ -1111,6 +1119,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Table16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableCreate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropDown32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockPreview32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyCmd32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureConnection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureInside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureOnEnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureOnFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureOutside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixturePositions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureVertHor.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoadBlock32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureVertHor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

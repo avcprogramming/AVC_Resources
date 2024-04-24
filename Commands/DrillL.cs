@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   DrillL
   {
     public static readonly string[] SettingsInfo = {
@@ -126,13 +126,13 @@ namespace AVC
       "\nВведите имя слоя для солидов-отверстий или '?', чтоб вводить имя слоя каждый раз: ",
       "\nImmettere il nome del livello per i fori solidi o '?' per immettere il nome del livello ogni volta: ",
       "\nGeben Sie den Layer-Namen für feste Löcher oder „?“ ein, um den Layer-Namen jedes Mal einzugeben: ",
-      "\n 输入实体孔的图层名称或“？” 每次输入图层名称："}; 
+      "\n 输入实体孔的图层名称或“？” 每次输入图层名称："};
     public static readonly string[] GapQuery = {
       "  Enter gap value or zero",
       "  Введите значение зазора или ноль",
       "  Digitare un valore per il divario o lasciare zero",
       "  Geben Sie den Lückenwert oder Null ein",
-      "  输入间隙值或零"}; 
+      "  输入间隙值或零"};
     public static readonly string[] Query = { "<<Query>>", "<<Запрос>>", "<<Scegli>>", "<<Abfrage>>", "<<询问>>" };
     public static readonly string[] ZeroLayerWarning ={
       "Inadmissible to use a special layer '0' like the holes-layer",
@@ -294,10 +294,10 @@ namespace AVC
       "Seleziona il layer dei solidi del foro",
       "Wählen Sie die Ebene der subtrahierten KLocher-Volumenkörpers",
       "选择减体层（实心孔）" };
-    public static readonly string[] FindingDrills = { 
-      "  Finding drills", 
-      "  Поиск отверстий", 
-      "  Trovare buchi", 
+    public static readonly string[] FindingDrills = {
+      "  Finding drills",
+      "  Поиск отверстий",
+      "  Trovare buchi",
       "  Löcher finden",
       "  搜索演习"};
 

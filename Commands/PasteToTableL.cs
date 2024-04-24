@@ -6,65 +6,65 @@ namespace AVC
   /// <summary>
   /// Localization strings for PTT(Paste To Table), TableSplit commands. PasteToTableOptions dialog box
   /// </summary>
-  public static class 
+  public static class
   PasteToTableL
   {
     // ============================= Paste To Table style ===========================
-    public static readonly string[] DestinationTable = { 
-      "Dwg Table", 
-      "Dwg Таблица", 
-      "Dwg Tabella", 
+    public static readonly string[] DestinationTable = {
+      "Dwg Table",
+      "Dwg Таблица",
+      "Dwg Tabella",
       "Dwg Tabelle",
       "Dwg 表"};
-    public static readonly string[] DestinationMText = { 
-      "Dwg MText", 
-      "Dwg Текст", 
-      "Dwg Testo", 
+    public static readonly string[] DestinationMText = {
+      "Dwg MText",
+      "Dwg Текст",
+      "Dwg Testo",
       "Dwg Text",
       "Dwg 文本" };
     public static readonly string[] DestinationExcel = { "Excel" };
-    public static readonly string[] DestinationCSV = { 
-      "File CSV", 
-      "Файл CSV", 
-      "File CSV", 
+    public static readonly string[] DestinationCSV = {
+      "File CSV",
+      "Файл CSV",
+      "File CSV",
       "Datei CSV",
       "文件 CSV" };
-    public static readonly string[] DestinationXML = { 
-      "File XML", 
-      "Файл XML", 
-      "File XML", 
+    public static readonly string[] DestinationXML = {
+      "File XML",
+      "Файл XML",
+      "File XML",
       "Datei XML",
       "文件 XML" };
-    public static readonly string[] DestinationClipboard = { 
-      "Clipboard", 
-      "Буфер", 
-      "Appunti", 
+    public static readonly string[] DestinationClipboard = {
+      "Clipboard",
+      "Буфер",
+      "Appunti",
       "Zwischenablage",
       "剪贴板" };
 
     // =============================   Table Split ==================================
-    public static readonly string[] Split = { 
-      "Split table", 
-      "Разбиение таблицы", 
-      "Tavolo separato", 
+    public static readonly string[] Split = {
+      "Split table",
+      "Разбиение таблицы",
+      "Tavolo separato",
       "Split-Tabelle",
       "拆分表"};
-    public static readonly string[] NoSplit = { 
-      "Could not split the table", 
-      "Не получилось разделить таблицу", 
-      "Impossibile dividere la tabella", 
+    public static readonly string[] NoSplit = {
+      "Could not split the table",
+      "Не получилось разделить таблицу",
+      "Impossibile dividere la tabella",
       "Die Tabelle konnte nicht geteilt werden",
       "无法拆分表格" };
-    public static readonly string[] Divided = { 
-      "The table is divided into {0} layouts", 
-      "Таблица разделена на {0} листов", 
-      "La tabella è divisa in layout di {0}", 
+    public static readonly string[] Divided = {
+      "The table is divided into {0} layouts",
+      "Таблица разделена на {0} листов",
+      "La tabella è divisa in layout di {0}",
       "Die Tabelle ist in {0} Layouts unterteilt",
       "该表分为 {0} 个布局" };
-    public static readonly string[] Merge = { 
-      "Merge table", 
-      "Объединение таблицы", 
-      "Unisci tabella", 
+    public static readonly string[] Merge = {
+      "Merge table",
+      "Объединение таблицы",
+      "Unisci tabella",
       "Zusammenführungstabelle",
       "合并表" };
 
@@ -83,9 +83,9 @@ namespace AVC
       "  Ergebnisse in die Zwischenablage kopiert.",
       "  结果被复制到剪贴板"};
     public static readonly string[] Writing = {
-      "Writing to table", 
-      "Запись в таблицу", 
-      "Scrivere a tavola", 
+      "Writing to table",
+      "Запись в таблицу",
+      "Scrivere a tavola",
       "Auf den Tisch schreiben",
       "写到表" };
     public static readonly string[] SelectTable = {
@@ -118,10 +118,10 @@ namespace AVC
       "  Una tabella intitolata '{0}' è stata trovata nel disegno '{1}'. Sarà utilizzato per inserire nuovi dati.",
       "  Eine Tabelle mit dem Titel '{0}' wurde in der Zeichnung '{1}' gefunden. Es wird verwendet, um neue Daten einzufügen.",
       "  在绘图“{1}”中找到标题为“{0}”的表。 它将用于插入新数据。" };
-    public static readonly string[] NewKW = { 
-      "New", 
-      "НОвая", 
-      "NUovo", 
+    public static readonly string[] NewKW = {
+      "New",
+      "НОвая",
+      "NUovo",
       "Neu",
       "新的(N)" };
 
@@ -480,5 +480,5 @@ namespace AVC
 
 
 
-}
+  }
 }

@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   NumberingL
   {
     // ============================ Numberig Style ================================================================
@@ -12,7 +12,7 @@ namespace AVC
       { "Block numbering", "Нумерация по блокам", "Numerazione dei blocchi", "Blocknummerierung", "块编号" },
       { "From left to right", "С лева на право", "Da sinistra a destra", "Von links nach rechts", "从左到右" },
       };
-  public static readonly string[] PrefixPrompt =    {
+    public static readonly string[] PrefixPrompt =    {
       "\n  Enter Prefix for numbering: ",
       "\n  Введите Префикс для нумерации: ",
       "\n  Inserisci il prefisso per la numerazione: ",
@@ -37,9 +37,9 @@ namespace AVC
       { "Number block attribute", "Нумеровать атрибут блока", "Attributo del blocco numerico", "Nummernblockattribut", "编号块属性" },
       };
 
-  //============================== Numbering Command Line & Warnings ========================================
+    //============================== Numbering Command Line & Warnings ========================================
 
-  public static readonly string[] NoLicense = {
+    public static readonly string[] NoLicense = {
       "You are not licensed to use the Numbering command. The option will be disabled.",
       "У вас нет лицензии на использование команды Нумерация. Опция будет отключена.",
       "Non sei autorizzato a utilizzare il comando Numerazione. L'opzione sarà disabilitata.",

@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   PlaceLeadersL
   {
     public static readonly string[] PLStyle = {
@@ -75,7 +75,7 @@ namespace AVC
       "Die Abmessungen des Führungslinie-Platzierungsbereichs konnten nicht abgerufen werden",
       "获取多引线放置区域的尺寸失败"};
 
-    public static readonly string[] ObjectSizeErr  = {
+    public static readonly string[] ObjectSizeErr = {
       "Failed to get dimensions for {0}",
       "Не удалось получить габариты для {0}",
       "Impossibile ottenere le dimensioni per {0}",

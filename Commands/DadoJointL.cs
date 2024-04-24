@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   DadoJointL
   {
     public static readonly string[] Select = {
@@ -60,9 +60,9 @@ namespace AVC
       "Verbindungen herstellen",
       "制作关节" };
     public static readonly string[] ContinueQuery = {
-      "Error: {0}\nContinue?", 
-      "Ошибка: {0}\nПродолжать?", 
-      "Errore: {0}\nContinua?", 
+      "Error: {0}\nContinue?",
+      "Ошибка: {0}\nПродолжать?",
+      "Errore: {0}\nContinua?",
       "Fehler: {0}\nWeiter?",
       "错误：{0}。\n继续？" };
     public static readonly string[] JointErr = {
@@ -71,10 +71,10 @@ namespace AVC
       "Impossibile connettersi tra le parti {0} e {1}",
       "Verbindung zwischen den Teilen {0} und {1} fehlgeschlagen",
       "未能在 {0} 和 {1} 部分之间连接"};
-    public static readonly string[] MinAreaKW = { 
-      "MinArea", 
-      "МинПлощадь", 
-      "AreaMinima", 
+    public static readonly string[] MinAreaKW = {
+      "MinArea",
+      "МинПлощадь",
+      "AreaMinima",
       "MinFläche",
       "最小接触面积(M)" }; //Command line option
     public static readonly string[] MinAreaQuery = {

@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   FlatL
   {
     public static string[] Skipped = {

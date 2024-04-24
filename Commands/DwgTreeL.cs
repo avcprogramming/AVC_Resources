@@ -335,7 +335,7 @@ namespace AVC
       "根据对象的颜色更改树中对象名称的颜色。 对于实体，使用材质的颜色（如果材质不是全局的）。 \r\n" +
         "不应用接近背景的颜色，但着色仍然会损害名称的可读性" };
     public static readonly string[] Handle = {
-      "Show object number (Handle)", 
+      "Show object number (Handle)",
       "Показывать номер объекта (Хэндл)",
       "Mostra numero oggetto (Handle)",
       "Objektnummer anzeigen (Handle)",

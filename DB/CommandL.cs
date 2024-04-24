@@ -8,7 +8,7 @@ namespace AVC
   /// <summary>
   /// Локализация имен команд и программ
   /// </summary>
-  public static class 
+  public static class
   CommandL
   {
     public static readonly string[] Commands = {
@@ -245,7 +245,7 @@ namespace AVC
       "Выкладка",
       "Disposizione",
       "Layout",
-      "平铺"}; 
+      "平铺"};
     public static readonly string[] LeaderUpdate = {
       "Update Smart Leaders",
       "Обновить умные выноски",
@@ -489,9 +489,9 @@ namespace AVC
       "Invertiert anzeigen",
       "显示反转对象" };
     public static readonly string[] Unpack = {
-      "Unpack", 
-      "Распаковка", 
-      "Disimballaggio", 
+      "Unpack",
+      "Распаковка",
+      "Disimballaggio",
       "Auspacken",
       "拆箱" };
     public static readonly string[] Updater = {

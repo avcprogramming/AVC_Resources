@@ -11,7 +11,7 @@ namespace AVC
   /// Локализация сообщений с сервера AVC.
   /// Английские текст менять нельзя!!  Они зашиты в хранимки SQL 
   /// </summary>
-  public static class 
+  public static class
   ServerL
   {
     public static readonly string[] ReadonlyServer = {
@@ -135,21 +135,21 @@ namespace AVC
       "Kein Zugriff zum Entfernen der Aktivierung. Falsches Passwort.",
       "无权删除激活。 密码错误。" };
 
-    public static List<string[]> 
+    public static List<string[]>
     Messages = new();
 
-    static 
+    static
     ServerL()
     {
       Type th = typeof(ServerL);
       foreach (FieldInfo fi in th.GetFields(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
       {
         if (fi.FieldType == typeof(string[]))
-           Messages.Add((string[])fi.GetValue(null));
+          Messages.Add((string[])fi.GetValue(null));
       }
     }
 
-    public static string 
+    public static string
     Localize(string english, int languageNumber)
     {
       if (languageNumber <= 0) return english;

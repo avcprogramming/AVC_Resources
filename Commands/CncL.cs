@@ -4,310 +4,458 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   CncL
   {
     public static readonly string[,] CncStyleNames = {
-/* 0 */ { "CNC", "ЧПУ", "CNC", "CNC", "数控" },
-/* 1 */ { "Milling", "Фрезеровка", "Fresatura", "Fräsen", "铣削" },
-/* 2 */ { "Milling Through/Blind", "Фрезеровка Насквозь/Глухая", "Fresatura Passante/Сieco", "Fräsen Hindurch/Hohle", "铣削/盲铣" },
-/* 3 */ { "Milling Inlay", "Фрезеровка инкрустаций", "Fresatura Inlay", "Fräsen Inlay", "铣削 镶嵌"},
-/* 4 */ { "Milling Biesse CNI", "Фрезеровка Biesse CNI", "Fresatura Biesse CNI", "Fräsen Biesse CNI", "铣削 Biesse CNI" },
-/* 5 */ { "Milling BiesseWorks TCH", "Фрезеровка BiesseWorks TCH", "Fresatura BiesseWorks TCH", "Fräsen BiesseWorks TCH", "铣削 BiesseWorks TCH" },
-/* 6 */ { "Milling Homag WoodWOP En", "Фрезеровка Homag WoodWOP Английский", "Fresatura Homag WoodWOP En", "Fräsen Homag WoodWOP En", "铣削 Homag WoodWOP En" },
-/* 7 */ { "Milling Homag WoodWOP Ge", "Фрезеровка Homag WoodWOP Немецкий", "Fresatura Homag WoodWOP Ge", "Fräsen Homag WoodWOP Ge", "铣削 Homag WoodWOP Ge" },
-/* 8 */ { "Milling Thermwood", "Фрезеровка Thermwood ", "Fresatura Thermwood ", "Fräsen Thermwood ", "铣削 Thermwood" },
-/* 9 */ { "Laser", "Лазер", "Laser", "Laser", "激光"},
+/* 0 */ { "CNC",
+        "ЧПУ",
+        "CNC",
+        "CNC",
+        "数控" },
+/* 1 */ { "Milling",
+        "Фрезеровка",
+        "Fresatura",
+        "Fräsen",
+        "铣削" },
+/* 2 */ { "Milling Through/Blind",
+        "Фрезеровка Насквозь/Глухая",
+        "Fresatura Passante/Сieco",
+        "Fräsen Hindurch/Hohle",
+        "铣削/盲铣" },
+/* 3 */ { "Milling Inlay",
+        "Фрезеровка инкрустаций",
+        "Fresatura Inlay",
+        "Fräsen Inlay",
+        "铣削 镶嵌"},
+/* 4 */ { "Milling Biesse CNI",
+        "Фрезеровка Biesse CNI",
+        "Fresatura Biesse CNI",
+        "Fräsen Biesse CNI",
+        "铣削 Biesse CNI" },
+/* 5 */ { "Milling BiesseWorks TCH",
+        "Фрезеровка BiesseWorks TCH",
+        "Fresatura BiesseWorks TCH",
+        "Fräsen BiesseWorks TCH",
+        "铣削 BiesseWorks TCH" },
+/* 6 */ { "Milling Homag WoodWOP En",
+        "Фрезеровка Homag WoodWOP Английский",
+        "Fresatura Homag WoodWOP En",
+        "Fräsen Homag WoodWOP En",
+        "铣削 Homag WoodWOP En" },
+/* 7 */ { "Milling Homag WoodWOP Ge",
+        "Фрезеровка Homag WoodWOP Немецкий",
+        "Fresatura Homag WoodWOP Ge",
+        "Fräsen Homag WoodWOP Ge",
+        "铣削 Homag WoodWOP Ge" },
+/* 8 */ { "Milling Thermwood",
+        "Фрезеровка Thermwood ",
+        "Fresatura Thermwood ",
+        "Fräsen Thermwood ",
+        "铣削 Thermwood" },
+/* 9 */ { "Laser",
+        "Лазер",
+        "Laser",
+        "Laser",
+        "激光"},
     };
 
-  public static readonly string[] DefLayerMillOutside = {
-      "Mill Outside", "Фрезер Наружа", "Fresa Fuori", "Fräser Out", "铣削 外部" };
+    public static readonly string[] DefLayerMillOutside = {
+      "Mill Outside",
+      "Фрезер Наружа",
+      "Fresa Fuori",
+      "Fräser Out",
+      "铣削 外部" };
     public static readonly string[] DefLayerMillIsland = {
-      "Mill Island", "Фрезер Остров", "Fresa Isoletta", "Fräser Insel", "铣削 岛" };
+      "Mill Island",
+      "Фрезер Остров",
+      "Fresa Isoletta",
+      "Fräser Insel",
+      "铣削 岛" };
     public static readonly string[] DefLayerMillDado = {
-      "Mill Dado", "Фрезер Паз", "Fresa Gola", "Fräser Rillen", "铣削 槽" };
+      "Mill Dado",
+      "Фрезер Паз",
+      "Fresa Gola",
+      "Fräser Rillen",
+      "铣削 槽" };
     public static readonly string[] DefLayerMillWindow = {
-      "Mill Window", "Фрезер Окно", "Fresa Finestra", "Fräser Fenster", "铣削 窗口" };
+      "Mill Window",
+      "Фрезер Окно",
+      "Fresa Finestra",
+      "Fräser Fenster",
+      "铣削 窗口" };
     public static readonly string[] DefLayerMillPocket = {
-      "Mill Pocket", "Фрезер Выборка", "Fresa Tasca", "Fräser Tasche", "铣削 口袋" };
+      "Mill Pocket",
+      "Фрезер Выборка",
+      "Fresa Tasca",
+      "Fräser Tasche",
+      "铣削 口袋" };
     public static readonly string[] DefLayerMillUnder = {
-      "Mill Under", "Фрезер Снизу", "Fresa Basso", "Fräser Unten", "铣削 底部" };
+      "Mill Under",
+      "Фрезер Снизу",
+      "Fresa Basso",
+      "Fräser Unten",
+      "铣削 底部" };
     public static readonly string[] DefLayerMillSwivel = {
-      "Mill Swivel", "Фрезер Наклон", "Fresa Inclinata", "Fräser Schwenken", "铣削 倾斜" };
+      "Mill Swivel",
+      "Фрезер Наклон",
+      "Fresa Inclinata",
+      "Fräser Schwenken",
+      "铣削 倾斜" };
     public static readonly string[] DefLayerMillImpassable = {
-      "Mill Impassable", "Фрезер Непроходимый", "Fresa Impraticabile", "Fräser Unpassierbar", "铣削 不可逾越" };
+      "Mill Impassable",
+      "Фрезер Непроходимый",
+      "Fresa Impraticabile",
+      "Fräser Unpassierbar",
+      "铣削 不可逾越" };
 
     public static readonly string[] DefLayerDrillBlind = {
-      "Drill Blind", "Сверло Глухо", "Perforare Сieco", "Bohr Hohle", "钻孔 盲孔" };
+      "Drill Blind",
+      "Сверло Глухо",
+      "Perforare Сieco",
+      "Bohr Hohle",
+      "钻孔 盲孔" };
     public static readonly string[] DefLayerDrillThrough = {
-      "Drill Through", "Сверло Насквозь", "Perforare Passante", "Bohr Hindurch", "钻孔 通孔" };
+      "Drill Through",
+      "Сверло Насквозь",
+      "Perforare Passante",
+      "Bohr Hindurch",
+      "钻孔 通孔" };
     public static readonly string[] DefLayerDrillLateral = {
-      "Drill Lateral", "Сверло Торц", "Perforare Laterale", "Bohr Seitlich", "钻孔 侧" };
+      "Drill Lateral",
+      "Сверло Торц",
+      "Perforare Laterale",
+      "Bohr Seitlich",
+      "钻孔 侧" };
     public static readonly string[] DefLayerDrillUnder = {
-      "Drill Under", "Сверло Снизу", "Perforare Basso", "Bohr Unten", "钻孔 底部" };
+      "Drill Under",
+      "Сверло Снизу",
+      "Perforare Basso",
+      "Bohr Unten",
+      "钻孔 底部" };
     public static readonly string[] DefLayerDrillSwivel = {
-      "Drill Swivel", "Сверло Наклон", "Perforare Inclinata", "Bohr Schwenken", "钻孔 倾斜" };
+      "Drill Swivel",
+      "Сверло Наклон",
+      "Perforare Inclinata",
+      "Bohr Schwenken",
+      "钻孔 倾斜" };
 
     public static readonly string[] DefLayerSawDado = {
-      "Saw Dado", "Пила Паз", "Sega Gola", "Säge Rillen", "锯 槽" };
+      "Saw Dado",
+      "Пила Паз",
+      "Sega Gola",
+      "Säge Rillen",
+      "锯 槽" };
     public static readonly string[] DefLayerSawThrough = {
-      "Saw Through", "Пила Насквозь", "Sega Passante", "Säge Hindurch", "锯 锯通" };
+      "Saw Through",
+      "Пила Насквозь",
+      "Sega Passante",
+      "Säge Hindurch",
+      "锯 锯通" };
     public static readonly string[] DefLayerSawUnder = {
-      "Saw Under", "Пила Снизу", "Sega Basso", "Säge Unten", "锯 底部" };
+      "Saw Under",
+      "Пила Снизу",
+      "Sega Basso",
+      "Säge Unten",
+      "锯 底部" };
     public static readonly string[] DefLayerSawSwivelUp = {
-      "Saw Swivel Upward", "Пила Наклон вверх", "Sega Inclinata Rialzo", "Säge Schwenken Oben", "锯 向上旋转" };
+      "Saw Swivel Upward",
+      "Пила Наклон вверх",
+      "Sega Inclinata Rialzo",
+      "Säge Schwenken Oben",
+      "锯 向上旋转" };
     public static readonly string[] DefLayerSawSwivelDown = {
-      "Saw Swivel Downward", "Пила Наклон вниз", "Sega Inclinata Ribasso", "Säge Schwenken Abwärts", "锯 向下旋转" };
+      "Saw Swivel Downward",
+      "Пила Наклон вниз",
+      "Sega Inclinata Ribasso",
+      "Säge Schwenken Abwärts",
+      "锯 向下旋转" };
 
     public static readonly string[] DefLayerSizeRectangle = {
-      "Blank", "Заготовка", "Billetta", "Werkstk", "空白的" };
+      "Blank",
+      "Заготовка",
+      "Billetta",
+      "Werkstk",
+      "空白的" };
     public static readonly string[] DefLayerTop = {
-      "Top", "Верх", "Superiore", "Ober", "顶部" };
+      "Top",
+      "Верх",
+      "Superiore",
+      "Ober",
+      "顶部" };
     public static readonly string[] DefLayerBottom = {
-      "Bottom", "Низ", "Inferiore", "Niedriger", "底部" };
+      "Bottom",
+      "Низ",
+      "Inferiore",
+      "Niedriger",
+      "底部" };
     public static readonly string[] DefLayerHidden = {
-      "Hidden", "Невидимые", "Nascosta", "Verdeckt" , "隐"};
+      "Hidden",
+      "Невидимые",
+      "Nascosta",
+      "Verdeckt" ,
+      "隐"};
 
     public static readonly string[] DefLayerBlind = {
-      "Blind", "Глухая", "Сieco", "Hohle", "非切割加工" };
+      "Blind",
+      "Глухая",
+      "Сieco",
+      "Hohle",
+      "非切割加工" };
     public static readonly string[] DefLayerThrough = {
-      "Through", "Насквозь", "Passante", "Hindurch", "凿孔加工" };
+      "Through",
+      "Насквозь",
+      "Passante",
+      "Hindurch",
+      "凿孔加工" };
 
     public static readonly string[] InfoLayerMillOutside = {
-    "Milling the outside contour of a part through a part",
-    "Фрезеровка наружного контура детали насквозь детали",
-    "Fresatura del contorno esterno di una parte attraverso una parte",
-    "Fräsen der Außenkontur eines Teils durch ein Teil",
-    "通过零件铣削零件的外轮廓"};
+      "Milling the outside contour of a part through a part",
+      "Фрезеровка наружного контура детали насквозь детали",
+      "Fresatura del contorno esterno di una parte attraverso una parte",
+      "Fräsen der Außenkontur eines Teils durch ein Teil",
+      "通过零件铣削零件的外轮廓"};
     public static readonly string[] InfoLayerMillIsland = {
-    "Milling outside the contour, but not through the part.\r\n" +
-        "Protrusions inside dado",
-    "Фрезеровка снаружи контура, но не насквозь детали.\r\n" +
-        "Выступы внутри выборок",
-    "Fresatura all'esterno del contorno, ma non attraverso il pezzo.\r\n" +
-        "Sporgenze all'interno delle scanalature",
-    "Fräsen außerhalb der Kontur, aber nicht durch das Teil.\r\n" +
-        "Vorsprünge in den Rillen",
-    "在轮廓外铣削，但不穿过零件。\r\n" +
-         "选择内部的突起" };
+      "Milling outside the contour, but not through the part.\r\n" +
+          "Protrusions inside dado",
+      "Фрезеровка снаружи контура, но не насквозь детали.\r\n" +
+          "Выступы внутри выборок",
+      "Fresatura all'esterno del contorno, ma non attraverso il pezzo.\r\n" +
+          "Sporgenze all'interno delle scanalature",
+      "Fräsen außerhalb der Kontur, aber nicht durch das Teil.\r\n" +
+          "Vorsprünge in den Rillen",
+      "在轮廓外铣削，但不穿过零件。\r\n" +
+           "选择内部的突起" };
     public static readonly string[] InfoLayerMillDado = {
-    "Milling inside the contour. Not through the part. Dadoes, grooves",
-    "Фрезеровка внутри контура не насквозь. Пазы, четверти",
-    "Fresatura all'interno di un contorno non passante. Scanalature, gola, fessura",
-    "Fräsen innerhalb einer Kontur nicht durch (Rillen)",
-    "轮廓内的铣削未通过。" };
+      "Milling inside the contour. Not through the part. Dadoes, grooves",
+      "Фрезеровка внутри контура не насквозь. Пазы, четверти",
+      "Fresatura all'interno di un contorno non passante. Scanalature, gola, fessura",
+      "Fräsen innerhalb einer Kontur nicht durch (Rillen)",
+      "轮廓内的铣削未通过。" };
     public static readonly string[] InfoLayerMillWindow = {
-    "Milling inside a path through the part (Window)",
-    "Фрезеровка внутри контура насквозь детали (Окно)",
-    "Fresatura all'interno di un percorso in tutto e per tutto (Finestra)",
-    "Fräsen in einem Pfad durch und durch (Fenster)",
-    "在通过零件的路径内铣削（窗口）" };
+      "Milling inside a path through the part (Window)",
+      "Фрезеровка внутри контура насквозь детали (Окно)",
+      "Fresatura all'interno di un percorso in tutto e per tutto (Finestra)",
+      "Fräsen in einem Pfad durch und durch (Fenster)",
+      "在通过零件的路径内铣削（窗口）" };
     public static readonly string[] InfoLayerMillPocket = {
-    "Milling inside the contour is not through,\r\n" +
-        "in cases where the diameter of the cutter is not enough\r\n" +
-        "and it is necessary to finish the depression by scanning or in a spiral",
-    "Фрезеровка внутри контура не насквозь,\r\n" +
-        "в тех случаях когда диаметра фрезы недостаточно\r\n" +
-        "и требуется доделывать углубление сканированием или по спирали",
-    "La fresatura all'interno del contorno non è passante,\r\n" +
-        "nei casi in cui il diametro della fresa non è sufficiente ed è necessario\r\n" +
-        "terminare la depressione mediante scansione o in spirale",
-    "Das Fräsen innerhalb der Kontur erfolgt nicht durch,\r\n" +
-        "wenn der Durchmesser des Fräsers nicht ausreicht und die Vertiefung durch Scannen\r\n" +
-        "oder spiralförmig beendet werden muss",
-    "轮廓内铣不透，在刀具直径不够的情况下，\r\n" +
-        "需要通过扫描或螺旋来完成凹陷。" };
+      "Milling inside the contour is not through,\r\n" +
+          "in cases where the diameter of the cutter is not enough\r\n" +
+          "and it is necessary to finish the depression by scanning or in a spiral",
+      "Фрезеровка внутри контура не насквозь,\r\n" +
+          "в тех случаях когда диаметра фрезы недостаточно\r\n" +
+          "и требуется доделывать углубление сканированием или по спирали",
+      "La fresatura all'interno del contorno non è passante,\r\n" +
+          "nei casi in cui il diametro della fresa non è sufficiente ed è necessario\r\n" +
+          "terminare la depressione mediante scansione o in spirale",
+      "Das Fräsen innerhalb der Kontur erfolgt nicht durch,\r\n" +
+          "wenn der Durchmesser des Fräsers nicht ausreicht und die Vertiefung durch Scannen\r\n" +
+          "oder spiralförmig beendet werden muss",
+      "轮廓内铣不透，在刀具直径不够的情况下，\r\n" +
+          "需要通过扫描或螺旋来完成凹陷。" };
     public static readonly string[] InfoLayerMillUnder = {
-    "Milling from the bottom of the part.\r\n " +
-        "For vertical, non-through milling only.\r\n" +
-        "It implies stopping the machine to turn over the part\r\n" +
-        "with the continuation of processing",
-    "Фрезеровка снизу детали. Только для вертикальной не сквозной фрезеровки.\r\n" +
-        "Подразумевается остановка работы станка на переворот детали с продолжением обработки",
-    "Fresatura dal fondo del pezzo.\r\n " +
-        "Solo per fresatura verticale non passante.\r\n" +
-        "Implica l'arresto della macchina per girare il pezzo\r\n" +
-        "con il proseguimento della lavorazione",
-    "Fräsen von der Unterseite des Teils.\r\n " +
-        "Nur zum vertikalen Fräsen ohne Durchgang.\r\n" +
-        "Dies bedeutet, dass die Maschine angehalten wird,\r\n" +
-        "um das Teil bei fortgesetzter Verarbeitung zu drehen",
-    "从零件底部铣削。\r\n " +
-         "仅用于垂直、非贯穿铣削。\r\n" +
-         "这意味着在继续加工的情况下停止机器以翻转零件" };
+      "Milling from the bottom of the part.\r\n " +
+          "For vertical, non-through milling only.\r\n" +
+          "It implies stopping the machine to turn over the part\r\n" +
+          "with the continuation of processing",
+      "Фрезеровка снизу детали. Только для вертикальной не сквозной фрезеровки.\r\n" +
+          "Подразумевается остановка работы станка на переворот детали с продолжением обработки",
+      "Fresatura dal fondo del pezzo.\r\n " +
+          "Solo per fresatura verticale non passante.\r\n" +
+          "Implica l'arresto della macchina per girare il pezzo\r\n" +
+          "con il proseguimento della lavorazione",
+      "Fräsen von der Unterseite des Teils.\r\n " +
+          "Nur zum vertikalen Fräsen ohne Durchgang.\r\n" +
+          "Dies bedeutet, dass die Maschine angehalten wird,\r\n" +
+          "um das Teil bei fortgesetzter Verarbeitung zu drehen",
+      "从零件底部铣削。\r\n " +
+           "仅用于垂直、非贯穿铣削。\r\n" +
+           "这意味着在继续加工的情况下停止机器以翻转零件" };
     public static readonly string[] InfoLayerMillSwivel = {
-    "Milling a flat inclined surface on a 5-axis machine",
-    "Фрезеровка плоской наклонной поверхности на 5и-координатном станке",
-    "Fresatura di una superficie piana inclinata",
-    "Fräsen einer ebenen geneigten Fläche",
-    "在 5 轴机床上铣削一个平坦的斜面" };
+      "Milling a flat inclined surface on a 5-axis machine",
+      "Фрезеровка плоской наклонной поверхности на 5и-координатном станке",
+      "Fresatura di una superficie piana inclinata",
+      "Fräsen einer ebenen geneigten Fläche",
+      "在 5 轴机床上铣削一个平坦的斜面" };
     public static readonly string[] InfoLayerMillImpassable = {
-    "Milling the dado does not work - the contour has a narrow spot, thinner than the cutter",
-    "Фрезерование паза не получается - контур имеет узкое место, тоньше чем фреза",
-    "La fresatura della scanalatura non funziona: il contorno ha un punto stretto, più sottile della fresa",
-    "Das Fräsen der Nut funktioniert nicht - die Kontur hat eine schmale Stelle, die dünner als der Fräser ist",
-    "铣削墙裙不起作用 - 轮廓有一个窄点，比刀具更薄" };
+      "Milling the dado does not work - the contour has a narrow spot, thinner than the cutter",
+      "Фрезерование паза не получается - контур имеет узкое место, тоньше чем фреза",
+      "La fresatura della scanalatura non funziona: il contorno ha un punto stretto, più sottile della fresa",
+      "Das Fräsen der Nut funktioniert nicht - die Kontur hat eine schmale Stelle, die dünner als der Fräser ist",
+      "铣削墙裙不起作用 - 轮廓有一个窄点，比刀具更薄" };
 
     public static readonly string[] InfoLayerDrillBlind = {
-    "Blind hole drilling in Z axis",
-    "Сверление глухого отверстия по оси Z",
-    "Esecuzione di fori ciechi sull'asse Z.",
-    "Sacklochbohren in der Z-Achse",
-    "盲孔钻 Z 轴" };
+      "Blind hole drilling in Z axis",
+      "Сверление глухого отверстия по оси Z",
+      "Esecuzione di fori ciechi sull'asse Z.",
+      "Sacklochbohren in der Z-Achse",
+      "盲孔钻 Z 轴" };
     public static readonly string[] InfoLayerDrillThrough = {
-    "Drilling a through hole in the Z axis",
-    "Сверление сквозного отверстия по оси Z",
-    "Esecuzione di un foro passante sull'asse Z.",
-    "Bohren eines Durchgangslochs in der Z-Achse",
-    "沿 Z 轴钻一个通孔" };
+      "Drilling a through hole in the Z axis",
+      "Сверление сквозного отверстия по оси Z",
+      "Esecuzione di un foro passante sull'asse Z.",
+      "Bohren eines Durchgangslochs in der Z-Achse",
+      "沿 Z 轴钻一个通孔" };
     public static readonly string[] InfoLayerDrillLateral = {
-    "Drilling from the side of the part, to the end",
-    "Сверление сбоку детали, в торец",
-    "Foratura dal lato del pezzo, fino alla fine",
-    "Bohren von der Seite des Teils bis zum Ende",
-    "在零件的侧面钻孔，最后" };
+      "Drilling from the side of the part, to the end",
+      "Сверление сбоку детали, в торец",
+      "Foratura dal lato del pezzo, fino alla fine",
+      "Bohren von der Seite des Teils bis zum Ende",
+      "在零件的侧面钻孔，最后" };
     public static readonly string[] InfoLayerDrillUnder = {
-    "Drilling a blind hole from the bottom of the part along the Z axis.\r\n" +
-        "It is assumed that the machine stops working to turn the part over and continues machining.",
-    "Сверление глухого отверстия снизу детали по оси Z.\r\n" +
-        "Подразумевается остановка работы станка на переворот детали с продолжением обработки",
-    "Esecuzione di un foro cieco dal fondo del pezzo lungo l'asse Z.\r\n" +
-        "Si presume che la macchina smetta di lavorare per capovolgere il pezzo e continui la lavorazione.",
-    "Bohren eines Sacklochs von der Unterseite des Teils entlang der Z-Achse.\r\n" +
-        "Es wird davon ausgegangen, dass die Maschine nicht mehr arbeitet, um das Teil umzudrehen, und die Bearbeitung fortsetzt.",
-    "从零件底部沿 Z 轴钻一个盲孔。\r\n" +
-         "假设机器停止工作以翻转零件并继续加工。" };
+      "Drilling a blind hole from the bottom of the part along the Z axis.\r\n" +
+          "It is assumed that the machine stops working to turn the part over and continues machining.",
+      "Сверление глухого отверстия снизу детали по оси Z.\r\n" +
+          "Подразумевается остановка работы станка на переворот детали с продолжением обработки",
+      "Esecuzione di un foro cieco dal fondo del pezzo lungo l'asse Z.\r\n" +
+          "Si presume che la macchina smetta di lavorare per capovolgere il pezzo e continui la lavorazione.",
+      "Bohren eines Sacklochs von der Unterseite des Teils entlang der Z-Achse.\r\n" +
+          "Es wird davon ausgegangen, dass die Maschine nicht mehr arbeitet, um das Teil umzudrehen, und die Bearbeitung fortsetzt.",
+      "从零件底部沿 Z 轴钻一个盲孔。\r\n" +
+           "假设机器停止工作以翻转零件并继续加工。" };
     public static readonly string[] InfoLayerDrillSwivel = {
-    "Drilling at an angle to the vertical",
-    "Сверление под углом к вертикали на 5и-координатном станке",
-    "Foratura ad angolo rispetto alla verticale",
-    "Bohren in einem Winkel zur Vertikalen",
-    "在 5 轴机床上与垂直方向成一定角度钻孔" };
+      "Drilling at an angle to the vertical",
+      "Сверление под углом к вертикали на 5и-координатном станке",
+      "Foratura ad angolo rispetto alla verticale",
+      "Bohren in einem Winkel zur Vertikalen",
+      "在 5 轴机床上与垂直方向成一定角度钻孔" };
 
     public static readonly string[] InfoLayerSaw = {
-    "Sawing a straight slot|dado (not through).\r\n" +
-        "The program will search for straight grooves through the entire part with a width of 1 to 2 rim thicknesses.\r\n" +
-        "1 or two lines will be drawn along the axis of the disk.\r\n" +
-        "The milling contour of this slot will be deleted.",
-    "Пропиливание прямого паза (не насквозь).\r\n" +
-        "Программа будет искать прямые пазы через всю деталь шириной от 1 до двух толщин диска.\r\n" +
-        "Будут построены одна или две линии по оси диска.\r\nКонтур фрезерования этого паза будет удален",
-    "Segare una fessura diritta (non attraverso).\r\n" +
-        "Il programma cercherà le scanalature diritte attraverso l'intera parte con una larghezza da 1 a 2 spessori del cerchio.\r\n" +
-        "Una o due linee verranno tracciate lungo l'asse del disco.\r\nIl profilo di fresatura di questa cava verrà cancellato.",
-    "Sägen eines geraden Schlitzes (nicht durch).\r\n" +
-        "Das Programm sucht im gesamten Teil nach geraden Rillen mit einer Breite von 1 bis 2 Felgendicken.\r\n" +
-        "Ein oder zwei Linien werden entlang der Achse der Platte gezeichnet.\r\nDie Fräskontur dieses Schlitzes wird gelöscht.",
-    "锯直槽|dado（不通过）。\r\n" +
-         "程序将在整个零件中搜索宽度为 1 到 2 轮辋厚度的直槽。\r\n" +
-         "将沿着圆盘的轴绘制 1 或 2 条线。\r\n" +
-         "该槽的铣削轮廓将被删除。"};
+      "Sawing a straight slot|dado (not through).\r\n" +
+          "The program will search for straight grooves through the entire part with a width of 1 to 2 rim thicknesses.\r\n" +
+          "1 or two lines will be drawn along the axis of the disk.\r\n" +
+          "The milling contour of this slot will be deleted.",
+      "Пропиливание прямого паза (не насквозь).\r\n" +
+          "Программа будет искать прямые пазы через всю деталь шириной от 1 до двух толщин диска.\r\n" +
+          "Будут построены одна или две линии по оси диска.\r\nКонтур фрезерования этого паза будет удален",
+      "Segare una fessura diritta (non attraverso).\r\n" +
+          "Il programma cercherà le scanalature diritte attraverso l'intera parte con una larghezza da 1 a 2 spessori del cerchio.\r\n" +
+          "Una o due linee verranno tracciate lungo l'asse del disco.\r\nIl profilo di fresatura di questa cava verrà cancellato.",
+      "Sägen eines geraden Schlitzes (nicht durch).\r\n" +
+          "Das Programm sucht im gesamten Teil nach geraden Rillen mit einer Breite von 1 bis 2 Felgendicken.\r\n" +
+          "Ein oder zwei Linien werden entlang der Achse der Platte gezeichnet.\r\nDie Fräskontur dieses Schlitzes wird gelöscht.",
+      "锯直槽|dado（不通过）。\r\n" +
+           "程序将在整个零件中搜索宽度为 1 到 2 轮辋厚度的直槽。\r\n" +
+           "将沿着圆盘的轴绘制 1 或 2 条线。\r\n" +
+           "该槽的铣削轮廓将被删除。"};
     public static readonly string[] InfoLayerSawThrough = {
-    "Sawing through a part\r\n" +
-        "The program will search for linear ends around the perimeter of the part.\r\n" +
-        "One line will be created in the center of the disc.\r\n" +
-        "All milling contours are retained.",
-    "Пропиливание насквозь детали.\r\n" +
-        "Программа будет искать прямые торцы по периметру детали.\r\n" +
-        "Будет создана одна линия по центру диска.\r\n" +
-        "Все контуры фрезеровки сохранятся.",
-    "Segare una parte.\r\n" +
-        "Il programma cercherà le estremità dritte attorno al perimetro della parte.\r\n" +
-        "Verrà creata una linea al centro del disco.\r\n" +
-        "Tutti i profili di fresatura vengono mantenuti.",
-    "Durch ein Teil sägen.\r\n" +
-        "Das Programm sucht nach geraden Enden um den Umfang des Teils.\r\n" +
-        "In der Mitte der Disc wird eine Zeile erstellt.\r\n" +
-        "Alle Fräskonturen bleiben erhalten.",
-    "锯断零件\r\n" +
-         "程序将搜索零件周边的直线末端。\r\n" +
-         "将在圆盘中心创建一条线。\r\n" +
-         "保留所有铣削轮廓。" };
+      "Sawing through a part\r\n" +
+          "The program will search for linear ends around the perimeter of the part.\r\n" +
+          "One line will be created in the center of the disc.\r\n" +
+          "All milling contours are retained.",
+      "Пропиливание насквозь детали.\r\n" +
+          "Программа будет искать прямые торцы по периметру детали.\r\n" +
+          "Будет создана одна линия по центру диска.\r\n" +
+          "Все контуры фрезеровки сохранятся.",
+      "Segare una parte.\r\n" +
+          "Il programma cercherà le estremità dritte attorno al perimetro della parte.\r\n" +
+          "Verrà creata una linea al centro del disco.\r\n" +
+          "Tutti i profili di fresatura vengono mantenuti.",
+      "Durch ein Teil sägen.\r\n" +
+          "Das Programm sucht nach geraden Enden um den Umfang des Teils.\r\n" +
+          "In der Mitte der Disc wird eine Zeile erstellt.\r\n" +
+          "Alle Fräskonturen bleiben erhalten.",
+      "锯断零件\r\n" +
+           "程序将搜索零件周边的直线末端。\r\n" +
+           "将在圆盘中心创建一条线。\r\n" +
+           "保留所有铣削轮廓。" };
     public static readonly string[] InfoLayerSawUnder = {
-    "Sawing a straight groove (not through) from the bottom of the part.\r\n" +
-        "It is assumed that the machine stops working to turn over the part and continues machining",
-    "Пропиливание прямого паза (не насквозь) снизу детали.\r\n " +
-        "Подразумевается остановка работы станка на переворот детали с продолжением обработки",
-    "Segatura di una scanalatura diritta (non passante) dal fondo del pezzo.\r\n" +
-        "Si presume che la macchina smetta di funzionare per capovolgere il pezzo e continui la lavorazione",
-    "Sägen einer geraden Nut (nicht durch) von der Unterseite des Teils.\r\n" +
-        "Es wird davon ausgegangen, dass die Maschine nicht mehr arbeitet, um das Teil umzudrehen, und die Verarbeitung fortsetzt",
-    "从零件底部锯出一条直槽（不贯穿）。\r\n" +
-         "假设机器停止工作翻转零件并继续加工"};
+      "Sawing a straight groove (not through) from the bottom of the part.\r\n" +
+          "It is assumed that the machine stops working to turn over the part and continues machining",
+      "Пропиливание прямого паза (не насквозь) снизу детали.\r\n " +
+          "Подразумевается остановка работы станка на переворот детали с продолжением обработки",
+      "Segatura di una scanalatura diritta (non passante) dal fondo del pezzo.\r\n" +
+          "Si presume che la macchina smetta di funzionare per capovolgere il pezzo e continui la lavorazione",
+      "Sägen einer geraden Nut (nicht durch) von der Unterseite des Teils.\r\n" +
+          "Es wird davon ausgegangen, dass die Maschine nicht mehr arbeitet, um das Teil umzudrehen, und die Verarbeitung fortsetzt",
+      "从零件底部锯出一条直槽（不贯穿）。\r\n" +
+           "假设机器停止工作翻转零件并继续加工"};
     public static readonly string[] InfoLayerSawSwivelUp = {
-    "Sawing with the disc tilted to the vertical on a 5-axis rover.\r\n" +
-        "For surfaces inclined upwards.\r\n" +
-        "The saw line will be drawn without offset.\r\n" +
-        "Tool thickness correction required.\r\n" +
-        "All milling contours are retained.",
-    "Пропиливание с наклоном диска к вертикали на 5и-координатном ровере.\r\n" +
-        "Для поверхностей наклоненных вверх.\r\n" +
-        "Линия пила будет начерчена без сдвигов.\r\n" +
-        "Требуется коррекция толщины инструмента. Все контуры фрезеровки сохранятся.",
-    "Segare con il disco inclinato in verticale su un rover a 5 assi.\r\n" +
-        "Per superfici inclinate verso l'alto.\r\n" +
-        "La linea della sega verrà tracciata senza offset.\r\n" +
-        "È necessaria la correzione dello spessore dell'utensile.\r\n" +
-        "Tutti i profili di fresatura vengono mantenuti.",
-    "Sägen mit vertikal geneigter Scheibe auf einem 5-Achsen-Rover.\r\n" +
-        "Für nach oben geneigte Flächen.\r\n" +
-        "Die Sägelinie wird ohne Versatz gezeichnet.\r\n" +
-        "Korrektur der Werkzeugdicke erforderlich.\r\n" +
-        "Alle Fräskonturen bleiben erhalten.",
-    "在5轴上以垂直倾斜的圆盘锯片进行锯切。\r\n" +
-         "对于向上倾斜的表面。\r\n" +
-         "将绘制没有偏移的锯线。\r\n" +
-         "需要工具厚度校正。\r\n" +
-         "保留所有铣削轮廓。"};
+      "Sawing with the disc tilted to the vertical on a 5-axis rover.\r\n" +
+          "For surfaces inclined upwards.\r\n" +
+          "The saw line will be drawn without offset.\r\n" +
+          "Tool thickness correction required.\r\n" +
+          "All milling contours are retained.",
+      "Пропиливание с наклоном диска к вертикали на 5и-координатном ровере.\r\n" +
+          "Для поверхностей наклоненных вверх.\r\n" +
+          "Линия пила будет начерчена без сдвигов.\r\n" +
+          "Требуется коррекция толщины инструмента. Все контуры фрезеровки сохранятся.",
+      "Segare con il disco inclinato in verticale su un rover a 5 assi.\r\n" +
+          "Per superfici inclinate verso l'alto.\r\n" +
+          "La linea della sega verrà tracciata senza offset.\r\n" +
+          "È necessaria la correzione dello spessore dell'utensile.\r\n" +
+          "Tutti i profili di fresatura vengono mantenuti.",
+      "Sägen mit vertikal geneigter Scheibe auf einem 5-Achsen-Rover.\r\n" +
+          "Für nach oben geneigte Flächen.\r\n" +
+          "Die Sägelinie wird ohne Versatz gezeichnet.\r\n" +
+          "Korrektur der Werkzeugdicke erforderlich.\r\n" +
+          "Alle Fräskonturen bleiben erhalten.",
+      "在5轴上以垂直倾斜的圆盘锯片进行锯切。\r\n" +
+           "对于向上倾斜的表面。\r\n" +
+           "将绘制没有偏移的锯线。\r\n" +
+           "需要工具厚度校正。\r\n" +
+           "保留所有铣削轮廓。"};
     public static readonly string[] InfoLayerSawSwivelDown = {
-    "Sawing with the disc inclined to the vertical. \r\n" +
-        "For faces tilted downwards.",
-    "Пропиливание с наклоном диска к вертикали. \r\n" +
-        "Для поверхностей наклоненных вниз.",
-    "Segatura con il disco inclinato rispetto alla verticale.\r\n" +
-        "Per le superfici inclinate verso il basso.",
-    "Sägen mit der Neigung der Scheibe zur vertikalen.\r\n" +
-        "Für nach oben geneigte Flächen. Für nach unten geneigte Flächen.",
-    "锯片垂直倾斜。 \r\n" +
-         "对于向下倾斜的面。" };
+      "Sawing with the disc inclined to the vertical. \r\n" +
+          "For faces tilted downwards.",
+      "Пропиливание с наклоном диска к вертикали. \r\n" +
+          "Для поверхностей наклоненных вниз.",
+      "Segatura con il disco inclinato rispetto alla verticale.\r\n" +
+          "Per le superfici inclinate verso il basso.",
+      "Sägen mit der Neigung der Scheibe zur vertikalen.\r\n" +
+          "Für nach oben geneigte Flächen. Für nach unten geneigte Flächen.",
+      "锯片垂直倾斜。 \r\n" +
+           "对于向下倾斜的面。" };
 
     public static readonly string[] InfoLayerSizeRectangle = {
-    "Conditional rectangular contour of the workpiece to the size of the dimensions of the part",
-    "Условный прямоугольный контур заготовки в размер габаритов детали",
-    "Contorno rettangolare condizionale del pezzo in lavorazione alla dimensione delle dimensioni della parte",
-    "Bedingte rechteckige Kontur des Werkstücks auf die Größe der Abmessungen des Teils",
-    "有条件的工件矩形轮廓到零件尺寸的大小" };
+      "Conditional rectangular contour of the workpiece to the size of the dimensions of the part",
+      "Условный прямоугольный контур заготовки в размер габаритов детали",
+      "Contorno rettangolare condizionale del pezzo in lavorazione alla dimensione delle dimensioni della parte",
+      "Bedingte rechteckige Kontur des Werkstücks auf die Größe der Abmessungen des Teils",
+      "有条件的工件矩形轮廓到零件尺寸的大小" };
     public static readonly string[] InfoLayerTop = {
-    "Top plane contour of the top plane near the conical end or other complex surface. For 5-axis machining",
-    "Контур верхней плоскости около конического торца или другой сложной поверхности. Для пяти-координатной обработки",
-    "Contorno del piano superiore vicino all'estremità rastremata. Per la lavorazione a 5 assi",
-    "Kontur der oberen Ebene in der Nähe des sich verjüngenden Endes. Für 5-Achs-Bearbeitung",
-    "靠近圆锥端或其他复杂曲面的顶面轮廓。 用于5轴加工" };
+      "Top plane contour of the top plane near the conical end or other complex surface. For 5-axis machining",
+      "Контур верхней плоскости около конического торца или другой сложной поверхности. Для пяти-координатной обработки",
+      "Contorno del piano superiore vicino all'estremità rastremata. Per la lavorazione a 5 assi",
+      "Kontur der oberen Ebene in der Nähe des sich verjüngenden Endes. Für 5-Achs-Bearbeitung",
+      "靠近圆锥端或其他复杂曲面的顶面轮廓。 用于5轴加工" };
     public static readonly string[] InfoLayerBottom = {
-    "The contour of the bottom plane near the conical end or other complex surface. For 5-axis machining",
-    "Контур нижней плоскости около конического торца или другой сложной поверхности. Для пяти-координатной обработки",
-    "Il contorno del piano inferiore vicino all'estremità conica. Per la lavorazione a 5 assi",
-    "Die Kontur der unteren Ebene nahe dem konischen Ende. Für 5-Achs-Bearbeitung",
-    "靠近圆锥端或其他复杂曲面的底面轮廓。 用于5轴加工" };
+      "The contour of the bottom plane near the conical end or other complex surface. For 5-axis machining",
+      "Контур нижней плоскости около конического торца или другой сложной поверхности. Для пяти-координатной обработки",
+      "Il contorno del piano inferiore vicino all'estremità conica. Per la lavorazione a 5 assi",
+      "Die Kontur der unteren Ebene nahe dem konischen Ende. Für 5-Achs-Bearbeitung",
+      "靠近圆锥端或其他复杂曲面的底面轮廓。 用于5轴加工" };
     public static readonly string[] InfoLayerOther = {
-    "Other visible ribs and silhouettes of complex surfaces",
-    "Прочие видимые ребра и силуэты сложных поверхностей",
-    "Altre nervature visibili e sagome di superfici complesse",
-    "Andere sichtbare Rippen und Silhouetten komplexer Oberflächen",
-    "复杂表面的其他可见筋和轮廓" };
+      "Other visible ribs and silhouettes of complex surfaces",
+      "Прочие видимые ребра и силуэты сложных поверхностей",
+      "Altre nervature visibili e sagome di superfici complesse",
+      "Andere sichtbare Rippen und Silhouetten komplexer Oberflächen",
+      "复杂表面的其他可见筋和轮廓" };
     public static readonly string[] InfoLayerHidden = {
-    "Other invisible edges, impassable bottom dadoes and invisible silhouettes of complex surfaces",
-    "Прочие невидимые ребра, непроходимые выборки снизу и невидимые силуэты сложных поверхностей",
-    "Altre nervature invisibili, solchi impraticabili sotto e sagome invisibili di superfici complesse",
-    "Andere unsichtbare Rippen, undurchdringliche Rillen darunter und unsichtbare Silhouetten komplexer Oberflächen",
-    "其他不可见的边缘、无法通行的裙边和复杂表面的不可见轮廓" };
+      "Other invisible edges, impassable bottom dadoes and invisible silhouettes of complex surfaces",
+      "Прочие невидимые ребра, непроходимые выборки снизу и невидимые силуэты сложных поверхностей",
+      "Altre nervature invisibili, solchi impraticabili sotto e sagome invisibili di superfici complesse",
+      "Andere unsichtbare Rippen, undurchdringliche Rillen darunter und unsichtbare Silhouetten komplexer Oberflächen",
+      "其他不可见的边缘、无法通行的裙边和复杂表面的不可见轮廓" };
 
     public static readonly string[] CornerAsIs = {
-      "As is", "не делать", "Non fare niente", "Tu nichts", "原样" };
+      "As is",
+      "не делать",
+      "Non fare niente",
+      "Tu nichts",
+      "原样" };
     public static readonly string[] CornerIC = {
-      "Inside corner", "Заход в угол", "Angoli Interni", "Innere Ecke", "内角" };
+      "Inside corner",
+      "Заход в угол",
+      "Angoli Interni",
+      "Innere Ecke",
+      "内角" };
     public static readonly string[] CornerFillet = {
-      "Fillet", "Скругление", "Raccordo", "Abrunden", "四舍五入" };
+      "Fillet",
+      "Скругление",
+      "Raccordo",
+      "Abrunden",
+      "四舍五入" };
 
     public static readonly string[] DefDirTypes = {
       "Through;Above;Under;H_left;H_front;H_right;H_back;H_other;Swivel",
@@ -327,6 +475,12 @@ namespace AVC
       " dal basso",
       " von unten",
       " 向下"};
+    public static readonly string[] Countersink = {
+      "countersink",
+      "зенковать",
+      "svasatore",
+      "versenken",
+      "埋头孔" };
 
     public static readonly string[] GetDepth = {
       "Enter depth for layer name",
@@ -640,6 +794,22 @@ namespace AVC
       "将面钻孔轮廓闭合成一个矩形。 \r\n" +
         "通常，U 形轮廓就足够了。 \r\n" +
         "如果启用此选项，在 Pseudo-3d 模式下，面钻不会变成平面圆，而是保持矩形。" };
+    public static readonly string[] CircleSwivelDrill = {
+      "Replace the contours of swivel drilling with a circle",
+      "Заменять контуры наклонного сверления на окружность",
+      "Sostituisci i contorni della perforazione inclinata con un cerchio",
+      "Ersetzen Sie die Konturen des Schrägbohrens durch einen Kreis",
+      "将斜钻孔的轮廓替换为圆" };
+    public static readonly string[] CircleSwivelDrillTip = {
+      "A flatshot from a swivel (incline) drill looks like several ellipses.\r\n " +
+        "But Biesse bSolid requires that one circle be drawn.",
+      "Слепок с повернутого (наклонного) сверления выглядит как несколько эллипсов.\r\n " +
+        "Но Biesse bSolid требует, чтоб была начерчена одна окружность.",
+      "Un colpo piatto da un trapano girevole (inclinato) assomiglia a diverse ellissi.\r\n " +
+        "Ma Biesse bSolid richiede che venga disegnato un cerchio.",
+      "Ein Flachschuss einer Schwenkbohrmaschine (Schrägbohrmaschine) sieht aus wie mehrere Ellipsen.\r\n " +
+        "Biesse bSolid erfordert jedoch, dass ein Kreis gezeichnet wird.",
+      "旋转（倾斜）钻头的平钻看起来像几个椭圆形。但 Biesse bSolid 要求绘制一个圆。" };
     public static readonly string[] ConsiderDiam = {
       "Consider cutter diameter",
       "Учитывать диаметр",
@@ -1417,6 +1587,12 @@ namespace AVC
         "Alle Löcher mit anderen Durchmessern fallen in die Frässchicht.",
       "可用钻头直径列表。 用分号分隔列表。 \r\n" +
         "所有其他直径的孔都将落入铣削层。" };
+    public static readonly string[] CountersinkTip = {
+      "",
+      "Текст для подстановки %countersink% для отверстий с зенковкой.",
+      "",
+      "",
+      "" };
     public static readonly string[] FormatTip = {
       "Enter string for control the number of decimal places and insignificant zeros. \r\n" +
         "Symbol 0 - any digit or zero. \r\n" +

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace AVC
 {
-  public static class 
+  public static class
   PageNoL
   {
     public static readonly HashSet<string> PageNoAttributes = new() {
@@ -27,9 +27,9 @@ namespace AVC
       "标题", "姓名" };
 
     public static readonly string[] Numbering ={
-      "Layout numbering", 
-      "Нумерация листов", 
-      "Numerazione del layout", 
+      "Layout numbering",
+      "Нумерация листов",
+      "Numerazione del layout",
       "Layoutnummerierung",
       "布局编号"};
     public static readonly string[] NoBlock = {
@@ -56,16 +56,16 @@ namespace AVC
       "Nessuno dei blocchi modello-spazio ha l'attributo per la numerazione",
       "Keiner der Model-Space-Block hat Attribut für die Nummerierung",
       "模型空间块都没有编号属性" };
-    public static readonly string[] Content = { 
-      "Table of contents\n", 
-      "Содержание\n", 
-      "Sommario\n", 
+    public static readonly string[] Content = {
+      "Table of contents\n",
+      "Содержание\n",
+      "Sommario\n",
       "Inhaltsverzeichnis\n",
       "目录\n" };
-    public static readonly string[] PageName = { 
-      "Page\tName\n", 
-      "Лист\tНаименование\n", 
-      "Pagina\tNome\n", 
+    public static readonly string[] PageName = {
+      "Page\tName\n",
+      "Лист\tНаименование\n",
+      "Pagina\tNome\n",
       "Seite\tName\n",
       "页面\t名称\n" };
     public static readonly string[] ClipboardErr = {

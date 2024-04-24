@@ -6,34 +6,34 @@ namespace AVC
   /// <summary>
   /// Локализация лицензий и активаций
   /// </summary>
-  public static class 
+  public static class
   LicL
   {
 
     // =========================== license types ====================================================
-    public static readonly string[] LicenseTrial = { 
-      "Trial", 
-      "Пробная", 
-      "Prova", 
-      "Versuch", 
+    public static readonly string[] LicenseTrial = {
+      "Trial",
+      "Пробная",
+      "Prova",
+      "Versuch",
       "审判" };
-    public static readonly string[] LicenseAnnual = { 
-      "Annual", 
-      "На год", 
-      "Annuale", 
-      "Jährlich", 
+    public static readonly string[] LicenseAnnual = {
+      "Annual",
+      "На год",
+      "Annuale",
+      "Jährlich",
       "周年" };
-    public static readonly string[] LicenseUnlimit = { 
-      "Unlimit", 
-      "Навсегда", 
-      "Illimitata", 
-      "Unbegrenzte", 
+    public static readonly string[] LicenseUnlimit = {
+      "Unlimit",
+      "Навсегда",
+      "Illimitata",
+      "Unbegrenzte",
       "永永远远" };
-    public static readonly string[] LicenseFree = { 
-      "Free", 
-      "Бесплатная", 
-      "Gratuito", 
-      "Kostenlos", 
+    public static readonly string[] LicenseFree = {
+      "Free",
+      "Бесплатная",
+      "Gratuito",
+      "Kostenlos",
       "自由" };
 
     public static readonly string[] LicenseTrialTip = {
@@ -92,17 +92,17 @@ namespace AVC
         "可以取消激活并将其转移到另一台计算机。 激活您的家用电脑是免费的！"};
 
     // =========================== License and Activation ===========================================
-    public static readonly string[] RequestFile = { 
-      "Saving code to file", 
-      "Сохранение кода в файл", 
-      "Salvataggio del codice su file", 
+    public static readonly string[] RequestFile = {
+      "Saving code to file",
+      "Сохранение кода в файл",
+      "Salvataggio del codice su file",
       "Code in Datei speichern",
       "将代码保存到文件"};
-    public static readonly string[] Until = { 
-      "until", 
-      "до", 
-      "fino", 
-      "bis", 
+    public static readonly string[] Until = {
+      "until",
+      "до",
+      "fino",
+      "bis",
       "直到" };
     public static readonly string[] NoLicense = {
       "You do not have a license to use A>V>C> programs at the {0} workplace",

@@ -4,7 +4,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   AutoAnnL
   {
     public static readonly string[] AutoAnnInfo = {
@@ -13,70 +13,70 @@ namespace AVC
       "La commutazione automatica del layer di annotazione è ",
       "Die automatische Layer-Umschaltung zum Beschriften ist ",
       "'注释'层自动切换" };
-    public static readonly string[] AutoOrthoInfo = { 
-      "Auto-ORTHO ", 
-      "Автоматическое отключение ортогональности (ORTHO) ", 
-      "Automaticamente l'ortogonalità (Auto-ORTHO) ", 
+    public static readonly string[] AutoOrthoInfo = {
+      "Auto-ORTHO ",
+      "Автоматическое отключение ортогональности (ORTHO) ",
+      "Automaticamente l'ortogonalità (Auto-ORTHO) ",
       "Auto-ORTHO ist ",
       "自动禁用正交性 (ORTHO) " };
-    public static readonly string[] AutoSnapInfo = { 
-      "Auto-OSNAP ", 
-      "Автоматическое отключение привязок (OSNAP) ", 
-      "Auto-OSNAP Off è ora ", 
+    public static readonly string[] AutoSnapInfo = {
+      "Auto-OSNAP ",
+      "Автоматическое отключение привязок (OSNAP) ",
+      "Auto-OSNAP Off è ora ",
       "Auto-OSNAP ist ",
       "自动禁用捕捉 (OSNAP) " };
-    public static readonly string[] On = { 
-      "ON", 
-      "включено", 
-      "attivata", 
+    public static readonly string[] On = {
+      "ON",
+      "включено",
+      "attivata",
       "aktiviert",
       "包括" };
-    public static readonly string[] Off = { 
-      "OFF", 
-      "отключено", 
-      "disattivato", 
+    public static readonly string[] Off = {
+      "OFF",
+      "отключено",
+      "disattivato",
       "ausgeschaltet",
       "禁用" };
 
     // ========================= Command line ==============================================
-    public static readonly string[] AutoAnnQuery = { 
-      "\nUse 'Annotation' layer auto switch?", 
-      "\nВключить авто-переключатель слоя?", 
-      "\nUtilizzare il sensore di layer?", 
+    public static readonly string[] AutoAnnQuery = {
+      "\nUse 'Annotation' layer auto switch?",
+      "\nВключить авто-переключатель слоя?",
+      "\nUtilizzare il sensore di layer?",
       "\nLayer Auto Switcher verwenden?",
       "\n使用“注释”层自动切换？"};
-    public static readonly string[] CommandsKW = { 
-      "Commands", 
-      "Команды", 
-      "Comandi", 
+    public static readonly string[] CommandsKW = {
+      "Commands",
+      "Команды",
+      "Comandi",
       "Befehle",
       "命令(C)" };
-    public static readonly string[] AutoAnnCmdQuery = { 
-      "\nInput list of command for auto-switch: ", 
-      "\nВведите список команд для авто-переключения: ", 
+    public static readonly string[] AutoAnnCmdQuery = {
+      "\nInput list of command for auto-switch: ",
+      "\nВведите список команд для авто-переключения: ",
       "\nImmettere l'elenco di comandi per l'auto-commutazione:",
       "\nEingabeliste des Befehls für Autoswitch:",
       "\n自动切换命令输入列表：" };
-    public static readonly string[] AutoOrthoQuery = { 
-      "\nUse Auto-ORTHO switch?", 
-      "\nОтключать Орто ?", 
-      "\nUtilizzare l'opzione Auto-ORTHO?", 
+    public static readonly string[] AutoOrthoQuery = {
+      "\nUse Auto-ORTHO switch?",
+      "\nОтключать Орто ?",
+      "\nUtilizzare l'opzione Auto-ORTHO?",
       "\nAuto-ORTHO-Schalter verwenden?",
       "\n使用自动正交开关？" };
-    public static readonly string[] AutoOrthoCmdQuery = { 
-      "\nInput list of command for Auto-ORTHO: ", 
+    public static readonly string[] AutoOrthoCmdQuery = {
+      "\nInput list of command for Auto-ORTHO: ",
       "\nВведите список команд для Auto-ORTHO: ",
       "\nImmettere un elenco di comandi per Auto-ORTHO: ",
       "\nGeben Sie eine Befehlsliste fur Auto-ORTHO ein: ",
       "\nAuto-ORTHO 命令输入列表：" };
-    public static readonly string[] AutoSnapQuery = { 
-      "\nUse Auto-OSNAP switch?", 
-      "\nОтключать привязки ?", 
-      "\nUtilizzare l'opzione Auto-OSNAP?", 
+    public static readonly string[] AutoSnapQuery = {
+      "\nUse Auto-OSNAP switch?",
+      "\nОтключать привязки ?",
+      "\nUtilizzare l'opzione Auto-OSNAP?",
       "\nAuto-OSNAP-Schalter verwenden?",
       "\n自动禁用所有绑定 ?" };
-    public static readonly string[] AutoSnapCmdQuery = { 
-      "\nInput list of command for Auto-OSNAP: ", 
+    public static readonly string[] AutoSnapCmdQuery = {
+      "\nInput list of command for Auto-OSNAP: ",
       "\nВведите список команд для Auto-OSNAP: ",
       "\nImmettere un elenco di comandi per Auto-OSNAP:",
       "\nGeben Sie eine Befehlsliste fur Auto-OSNAP ein: ",
@@ -89,7 +89,7 @@ namespace AVC
       "Layer di annotazione ON",
       "Anmerkungsebene aktivieren",
       "激活注释层"};
-public static readonly string[] AutoAnnTip = {
+    public static readonly string[] AutoAnnTip = {
       "All new annotation objects (texts, MLeaders, dimensions) \r\n" +
         "will appear on one layer 'Annotation'",
       "Все новые объекты аннотаций (тексты, выноски, размеры) \r\n" +

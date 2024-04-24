@@ -1,29 +1,29 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
-  public static class 
+  public static class
   TabSlotL
   {
     public static readonly string[,] TabSlotStyleNames = { 
 /*0*/   { CommandL.TabSlot[0], CommandL.TabSlot[1], CommandL.TabSlot[2], CommandL.TabSlot[3], CommandL.TabSlot[4]  },
-/*1*/   { 
-          "Through", 
-          "Сквозной", 
-          "Attraverso", 
-          "Durch" , 
+/*1*/   {
+          "Through",
+          "Сквозной",
+          "Attraverso",
+          "Durch" ,
           "通过" },
-/*2*/   { 
-          "Blind slot", 
-          "Глухой паз", 
-          "Fessura cieca", 
-          "Blinder Schlitz" , 
+/*2*/   {
+          "Blind slot",
+          "Глухой паз",
+          "Fessura cieca",
+          "Blinder Schlitz" ,
           "盲槽" },
       };
 
 
-  //======================= Dialog Box =============================================================
+    //======================= Dialog Box =============================================================
 
-  public static readonly string[] StyleNameTip = {
+    public static readonly string[] StyleNameTip = {
       "The name for this TabSlot-style (set of settings). \r\n" +
         "Not used in the program. Only for convenience of choice.",
       "Название для этого стиля команды Шип-паз. \r\n" +

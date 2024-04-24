@@ -1,7 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
-  public static class 
+  public static class
   SumLenL
   {
     public static readonly string[] SelectCurve = {
@@ -28,10 +28,10 @@ namespace AVC
       "Sommando {0} oggetti. Area = {1}",
       "{0} Objekte summieren. Fläche = {1}",
       "对 {0} 个对象求和。 面积 = {1}"};
-    public static readonly string[] Conceded = { 
-      "Conceded {0} objects", 
-      "Пропущено {0} объектов", 
-      "{0} oggetti mancanti", 
+    public static readonly string[] Conceded = {
+      "Conceded {0} objects",
+      "Пропущено {0} объектов",
+      "{0} oggetti mancanti",
       "Fehlende {0} Objekte",
       "丢了 {0} 个对象"};
 

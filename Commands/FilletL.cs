@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   FilletL
   {
     public static readonly string[] NeedLinerEdge = {
@@ -219,15 +219,15 @@ namespace AVC
       "需要一段相同的折线" };
 
 
-    public static readonly string[] DiamKW = 
+    public static readonly string[] DiamKW =
       { "Diameter", "ДИаметр", "Diametro", "Durchmesser", "直径(D)" }; // selection option!!
-    public static readonly string[] SubOnKW = 
+    public static readonly string[] SubOnKW =
       { "subselectON", "частиВКЛ", "subselectACCESO", "UnterauswahlAN", "子选择开(ON)" }; // selection option!!
-    public static readonly string[] SubOffKW = 
+    public static readonly string[] SubOffKW =
       { "subselectOFF", "частиВЫК", "subselectSPENTO", "UnterauswahlAUS", "子选择关闭(OFF)" }; // selection option!!
-    public static readonly string[] MillSideKW = 
+    public static readonly string[] MillSideKW =
       { "MIllSide", "СТоронаФрезы", "FReseLaterali", "SEitenschneider", "侧切刀(MI)" }; // selection option!!
-    public static readonly string[] BothSideKW = 
+    public static readonly string[] BothSideKW =
       { "BOthSide", "ВСеУглы", "ENtrambiILati", "BEideSeiten", "从四面八方(BO)" }; // selection option!!
     // не добавлять стандартные ключевые слова 
     // En: W L C B ALL F WP CP G A R M P U AU SI TRACKING TRACK TK TT END MID CEN G NOD QUA INT EXT INS PER TAN NEA APP PAR NON ZVER ZMID ZCEN ZKNO ZPER ZNEA ZNON

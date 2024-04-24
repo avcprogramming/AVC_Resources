@@ -69,114 +69,114 @@ namespace AVC
     #region Названия слоев
     // Названия слоев должны соответствовать правилам именования объектов AutoCAD (без спецсимволов)
 
-    public static readonly string[] LayerCenter = { 
-      "Center", 
-      "Оси", 
-      "Assiale", 
-      "Achse", 
+    public static readonly string[] LayerCenter = {
+      "Center",
+      "Оси",
+      "Assiale",
+      "Achse",
       "中心线" };
-    public static readonly string[] LayerAnnotation = { 
-      "Annotation", 
-      "Аннотация", 
-      "Annotation", 
-      "Beschriftung", 
+    public static readonly string[] LayerAnnotation = {
+      "Annotation",
+      "Аннотация",
+      "Annotation",
+      "Beschriftung",
       "Annotation" };
-    public static readonly string[] LayerOther = { 
-      "Other", 
-      "Прочее", 
-      "Altro", 
-      "Andere", 
+    public static readonly string[] LayerOther = {
+      "Other",
+      "Прочее",
+      "Altro",
+      "Andere",
       "其他" };
-    public static readonly string[] LayerHoles = { 
-      "Holes", 
-      "Отверстия", 
-      "Tagliente", 
-      "Löcher", 
+    public static readonly string[] LayerHoles = {
+      "Holes",
+      "Отверстия",
+      "Tagliente",
+      "Löcher",
       "孔" };
-    public static readonly string[] LayerFixture = { 
-      "Fixture", 
-      "Крепеж", 
-      "Fissaggio", 
-      "Befestigungen", 
+    public static readonly string[] LayerFixture = {
+      "Fixture",
+      "Крепеж",
+      "Fissaggio",
+      "Befestigungen",
       "家具五金" };
-    public static readonly string[] LayerExcluding = { 
-      "Excluding", 
-      "Без учета", 
-      "Escludendo", 
-      "Ausschließlich", 
+    public static readonly string[] LayerExcluding = {
+      "Excluding",
+      "Без учета",
+      "Escludendo",
+      "Ausschließlich",
       "过滤" };
 
     // следующие названия слоев должны ТОЧНО соответствовать
     // названиям слоев Model Documentation в соответствующей локализации AutoCAD
-    public static readonly string[] LayerMDVisible = { 
-      "MD_Visible", 
-      "MD_Видимые", 
-      "MD_Visibile", 
-      "MD_Sichtbar", 
+    public static readonly string[] LayerMDVisible = {
+      "MD_Visible",
+      "MD_Видимые",
+      "MD_Visibile",
+      "MD_Sichtbar",
       "MD_可见" };
-    public static readonly string[] LayerMDHidden = { 
-      "MD_Hidden", 
-      "MD_Скрытие линий", 
-      "MD_Nascosta", 
-      "MD_Verdeckt", 
+    public static readonly string[] LayerMDHidden = {
+      "MD_Hidden",
+      "MD_Скрытие линий",
+      "MD_Nascosta",
+      "MD_Verdeckt",
       "MD_隐藏" };
-    public static readonly string[] LayerMDAnnotation = { 
-      "MD_Annotation", 
-      "MD_Аннотация", 
-      "MD _Annotation", 
-      "MD_Beschriftung", 
+    public static readonly string[] LayerMDAnnotation = {
+      "MD_Annotation",
+      "MD_Аннотация",
+      "MD _Annotation",
+      "MD_Beschriftung",
       "MD_Annotation" }; // В итальянском AutoCAD - с пробелом!!! В китайском не переведен
-    public static readonly string[] LayerMDHatching = { 
-      "MD_Hatching", 
-      "MD_Штриховка", 
-      "MD_Hatching", 
-      "MD_Schraffur", 
+    public static readonly string[] LayerMDHatching = {
+      "MD_Hatching",
+      "MD_Штриховка",
+      "MD_Hatching",
+      "MD_Schraffur",
       "MD_Hatching" }; // В итальянском и китайском не переведен
     #endregion
 
     #region названия типов линий
     // названия типов линий должны ТОЧНО совпадать с названиями этих типов линий в соответствующей локализации AutoCAD 
-    public static readonly string[] LinetypeBORDER = { 
-      "BORDER", 
-      "рант", 
-      "BORDO", 
-      "RAND", 
+    public static readonly string[] LinetypeBORDER = {
+      "BORDER",
+      "рант",
+      "BORDO",
+      "RAND",
       "BORDER" };
-    public static readonly string[] LinetypeCENTER = { 
-      "CENTER2", 
-      "осевая2", 
-      "CENTRO2", 
-      "MITTE2", 
+    public static readonly string[] LinetypeCENTER = {
+      "CENTER2",
+      "осевая2",
+      "CENTRO2",
+      "MITTE2",
       "CENTER2" };
-    public static readonly string[] LinetypeDASHED = { 
-      "DASHED2", 
-      "штриховая2", 
-      "TRATTEGGIATA2", 
-      "STRICHLINIE2", 
+    public static readonly string[] LinetypeDASHED = {
+      "DASHED2",
+      "штриховая2",
+      "TRATTEGGIATA2",
+      "STRICHLINIE2",
       "DASHED2" };
-    public static readonly string[] LinetypeDASHDOT = { 
-      "DASHDOT", 
-      "штрихпунктирная", 
-      "TRATTOPUNTO", 
-      "STRICHPUNKT", 
+    public static readonly string[] LinetypeDASHDOT = {
+      "DASHDOT",
+      "штрихпунктирная",
+      "TRATTOPUNTO",
+      "STRICHPUNKT",
       "DASHDOT" };
-    public static readonly string[] LinetypeDOT = { 
-      "DOT", 
-      "пунктирная", 
-      "PUNTO", 
-      "PUNKT", 
+    public static readonly string[] LinetypeDOT = {
+      "DOT",
+      "пунктирная",
+      "PUNTO",
+      "PUNKT",
       "DOT" };
-    public static readonly string[] LinetypeHIDDEN = { 
-      "HIDDEN2", 
-      "невидимая2", 
-      "NACOSTA2", 
-      "VERDECKT2", 
+    public static readonly string[] LinetypeHIDDEN = {
+      "HIDDEN2",
+      "невидимая2",
+      "NACOSTA2",
+      "VERDECKT2",
       "HIDDEN2" };
-    public static readonly string[] LinetypePHANTOM = { 
-      "PHANTOM", 
-      "фантом", 
-      "FANTASMA", 
-      "PHANTOM", 
+    public static readonly string[] LinetypePHANTOM = {
+      "PHANTOM",
+      "фантом",
+      "FANTASMA",
+      "PHANTOM",
       "PHANTOM" };
     #endregion
 

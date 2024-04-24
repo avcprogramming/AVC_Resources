@@ -13,37 +13,37 @@ namespace AVC
   /// Имена и описания для всех свойств объектов чертежа на всех языках
   /// </summary>
   [Obfuscation(Exclude = true, Feature = "renaming")]
-  public static class 
+  public static class
   PropL
   {
-    public static readonly string[] Meter = { 
-      "m", 
-      "м", 
-      "m", 
+    public static readonly string[] Meter = {
+      "m",
+      "м",
+      "m",
       "m",
       "米" };
-    public static readonly string[] Millimeter = { 
-      "mm", 
-      "мм", 
-      "mm", 
+    public static readonly string[] Millimeter = {
+      "mm",
+      "мм",
+      "mm",
       "mm",
       "毫米" };
-    public static readonly string[] Inch = { 
-      "in", 
-      "дюйм", 
-      "pollice", 
+    public static readonly string[] Inch = {
+      "in",
+      "дюйм",
+      "pollice",
       "zol",
       "英寸" };
-    public static readonly string[] Millimeters = { 
-      "Millimeters", 
-      "Миллиметры", 
-      "Millimetri", 
+    public static readonly string[] Millimeters = {
+      "Millimeters",
+      "Миллиметры",
+      "Millimetri",
       "Millimeter",
       "毫米" };
-    public static readonly string[] Inches = { 
-      "Inches", 
-      "Дюймы", 
-      "Pollici", 
+    public static readonly string[] Inches = {
+      "Inches",
+      "Дюймы",
+      "Pollici",
       "Zoll",
       "英寸" };
     public static readonly string[] Default = {
@@ -52,34 +52,34 @@ namespace AVC
       "Predefinito",
       "Standard",
       "默认" };
-    public static readonly string[] NoSelected = { 
-      "Nothing selected", 
-      "Ничего не выбрано", 
-      "Niente di selezionato", 
+    public static readonly string[] NoSelected = {
+      "Nothing selected",
+      "Ничего не выбрано",
+      "Niente di selezionato",
       "Nichts ausgewählt",
       "未选择任何内容" };
-    public static readonly string[] ArabicNumerals = { 
-      "Arabic Numerals", 
-      "Арабские цифры", 
-      "Numeri arabi", 
+    public static readonly string[] ArabicNumerals = {
+      "Arabic Numerals",
+      "Арабские цифры",
+      "Numeri arabi",
       "Numeri arabi",
       "阿拉伯数字" };
-    public static readonly string[] RomanNumerals = { 
-      "Roman Numerals", 
-      "Римские цифры", 
-      "Numeri romani", 
+    public static readonly string[] RomanNumerals = {
+      "Roman Numerals",
+      "Римские цифры",
+      "Numeri romani",
       "Römische Zahlen" ,
       "罗马数字"};
-    public static readonly string[] EnglishAlphabet = { 
-      "English Alphabet", 
-      "Английский алфавит", 
-      "Alfabeto inglese", 
+    public static readonly string[] EnglishAlphabet = {
+      "English Alphabet",
+      "Английский алфавит",
+      "Alfabeto inglese",
       "Englisches Alphabet",
       "英文字母" };
-    public static readonly string[] CyrillicAlphabet = { 
-      "Cyrillic Alphabet", 
-      "Кириллица", 
-      "Alfabeto cirillico", 
+    public static readonly string[] CyrillicAlphabet = {
+      "Cyrillic Alphabet",
+      "Кириллица",
+      "Alfabeto cirillico",
       "Kyrillisches Alphabet",
       "西里尔字母/俄语字母" };
     public static readonly string[] SavePrepare = {
@@ -88,10 +88,10 @@ namespace AVC
       "Verifica delle modifiche",
       "Änderungen überprüfen",
       "检查更改" };
-    public static readonly string[] Search = { 
-      "Search", 
-      "Поиск", 
-      "Ricerca", 
+    public static readonly string[] Search = {
+      "Search",
+      "Поиск",
+      "Ricerca",
       "Suche",
       "搜索" };
     public static readonly string[] FoundObjectsTip = {
@@ -160,16 +160,16 @@ namespace AVC
 
     // ================================================================================================
     // Object =====================================================================
-    public static readonly string[] Object = { 
-      "Object", 
-      "Объект", 
-      "Oggetto", 
+    public static readonly string[] Object = {
+      "Object",
+      "Объект",
+      "Oggetto",
       "Objekt",
       "对象"};
-    public static readonly string[] Objects = { 
+    public static readonly string[] Objects = {
       "Objects",
-      "Объекты", 
-      "Gli oggetti", 
+      "Объекты",
+      "Gli oggetti",
       "Die Objekte",
       "多个对象" };
     public static readonly string[] Id = { "ID" };
@@ -191,10 +191,10 @@ namespace AVC
         "Es ist unveränderlich, aber lokal, dh es kann in einer externen Referenz wiederholt werden.",
       "对象标识符。 \r\n" +
          "它是不可变的，但是是局部的，也就是说，它可以在外部引用中重复。" };
-    public static readonly string[] ObjectType = { 
-      "Object Type", 
-      "Тип объекта", 
-      "Tipo di oggetto", 
+    public static readonly string[] ObjectType = {
+      "Object Type",
+      "Тип объекта",
+      "Tipo di oggetto",
       "Objekttyp",
       "对象类型" };
     public static readonly string[] ObjectTypeTip = {
@@ -209,11 +209,11 @@ namespace AVC
       "xData ",
       "xData ",
       "xData "};
-    public static readonly string[] Name = { 
-      "Name", 
-      "Имя", 
-      "Nome", 
-      "Name", 
+    public static readonly string[] Name = {
+      "Name",
+      "Имя",
+      "Nome",
+      "Name",
       "姓名" };
     public static readonly string[] NameTip = {
       "The number or name for this object. \r\n" +
@@ -226,11 +226,11 @@ namespace AVC
         "Verwendung für Detailkopfzeilen in Plugins A>V>C> (LAY, Sägetabelle, Smart Leader)",
       "此对象的编号或名称。 \r\n" +
         "用于插件A>V>C>（LAY，Sawing Table，Smart Leader）中的详细标题"};
-    public static readonly string[] Kind = { 
-      "Kind", 
-      "Сорт", 
-      "Tipo", 
-      "Art", 
+    public static readonly string[] Kind = {
+      "Kind",
+      "Сорт",
+      "Tipo",
+      "Art",
       "种类" };
     public static readonly string[] KindTip = {
       "Kind, type of object. \r\n" +
@@ -243,11 +243,11 @@ namespace AVC
         "Kann für Notizen und Plug-Ins LAY, Sägetabelle, Smart Leader verwendet werden",
       "对象的种类和类型。 \r\n" +
         "用于插件 Lay(平铺), Sawing Table(数据表), Smart Leader(智能多重引线)"};
-    public static readonly string[] Info = { 
-      "Info", 
-      "Информация", 
-      "Informazioni", 
-      "Info", 
+    public static readonly string[] Info = {
+      "Info",
+      "Информация",
+      "Informazioni",
+      "Info",
       "信息" };
     public static readonly string[] InfoTip = {
       "Description of this object.\r\n" +
@@ -266,37 +266,37 @@ namespace AVC
         "können aber beim Extrahieren der Daten verwendet werden.",
       "此对象的描述说明。 你可以写任何文字。 您可以插入换行符。 \r\n" +
         "通常这些数据在绘图中是不可见的，但可以在提取数据时使用。"};
-    public static readonly string[] Named = { 
-      "Named", 
-      "Именованный", 
-      "Detto", 
+    public static readonly string[] Named = {
+      "Named",
+      "Именованный",
+      "Detto",
       "Benannt",
       "命名" };
-    public static readonly string[] Nameds = { 
-      "Named", 
-      "Именованные", 
-      "Detto", 
+    public static readonly string[] Nameds = {
+      "Named",
+      "Именованные",
+      "Detto",
       "Benannt",
       "命名" };
 
     // ============================================================================================
     // Entity =====================================================================================
-    public static readonly string[] Entity = { 
-      "Entity", 
-      "Примитив", 
-      "Entità", 
+    public static readonly string[] Entity = {
+      "Entity",
+      "Примитив",
+      "Entità",
       "Entität",
       "实体" };
-    public static readonly string[] Entities = { 
-      "Entities", 
-      "Примитивы", 
-      "Entità", 
+    public static readonly string[] Entities = {
+      "Entities",
+      "Примитивы",
+      "Entità",
       "Entitäten",
       "多个实体" };
-    public static readonly string[] Area = { 
-      "Area", 
-      "Площадь", 
-      "Area", 
+    public static readonly string[] Area = {
+      "Area",
+      "Площадь",
+      "Area",
       "Fläche",
       "面积" };
     public static readonly string[] AreaTip = {
@@ -310,28 +310,28 @@ namespace AVC
         "Bei einer Millimeterzeichnung wird die Fläche in Quadratmeter umgerechnet.",
       "实体正面的面积或曲线或曲面的面积。\r\n" +
          "在毫米单位图形中，面积将转换为平方米。" };
-    public static readonly string[] BasePoint = { 
-      "Base Point", 
-      "Базовая Точка", 
-      "Punto base", 
+    public static readonly string[] BasePoint = {
+      "Base Point",
+      "Базовая Точка",
+      "Punto base",
       "Basispunkt",
       "基点" };
-    public static readonly string[] BasePointX = { 
-      "Base Point X", 
-      "Базовая Точка X", 
-      "Punto base X", 
+    public static readonly string[] BasePointX = {
+      "Base Point X",
+      "Базовая Точка X",
+      "Punto base X",
       "Basispunkt X",
       "基点 X" };
-    public static readonly string[] BasePointY = { 
-      "Base Point Y", 
-      "Базовая Точка Y", 
-      "Punto base Y", 
+    public static readonly string[] BasePointY = {
+      "Base Point Y",
+      "Базовая Точка Y",
+      "Punto base Y",
       "Basispunkt Y",
       "基点 Y" };
-    public static readonly string[] BasePointZ = { 
-      "Base Point Z", 
-      "Базовая Точка Z", 
-      "Punto base Z", 
+    public static readonly string[] BasePointZ = {
+      "Base Point Z",
+      "Базовая Точка Z",
+      "Punto base Z",
       "Basispunkt Z",
       "基点 Z" };
     public static readonly string[] BasePointXTip = {
@@ -367,10 +367,10 @@ namespace AVC
         "Im aktuellen Benutzerkoordinatensystem (BKS)",
       "基点 Y 坐标 = 位置、插入点、第一个顶点。\r\n" +
          "在当前用户坐标系 (UCS)" };
-    public static readonly string[] ColorName = { 
-      "Color", 
-      "Цвет", 
-      "Colore", 
+    public static readonly string[] ColorName = {
+      "Color",
+      "Цвет",
+      "Colore",
       "Farbe",
       "颜色" };
     public static readonly string[] ColorNameTip = {
@@ -389,10 +389,10 @@ namespace AVC
       "您可以编写任何颜色名称。\r\n" +
          "程序将尝试识别它。\r\n" +
          "ByLayer 颜色将替换为图层颜色。" };
-    public static readonly string[] ColorKey = { 
-      "Color", 
-      "Цвет", 
-      "Colore", 
+    public static readonly string[] ColorKey = {
+      "Color",
+      "Цвет",
+      "Colore",
       "Farbe",
       "颜色" };
     public static readonly string[] ColorKeyTip = {
@@ -411,10 +411,10 @@ namespace AVC
       "不指定配色系统的颜色。 \r\n" +
          "如果颜色没有名称，则为数字颜色索引或 RGB 代码。\r\n" +
          "ByLayer 颜色被图层颜色替换。" };
-    public static readonly string[] ColorBook = { 
-      "Color Book", 
-      "Цветовая книга", 
-      "Libro a colori", 
+    public static readonly string[] ColorBook = {
+      "Color Book",
+      "Цветовая книга",
+      "Libro a colori",
       "Farbbuch",
       "颜色库" };
     public static readonly string[] ColorBookTip = {
@@ -503,10 +503,10 @@ namespace AVC
         "Diese Eigenschaft ist verfügbar, wenn die gesamte Zeichnung so konfiguriert ist, \r\n" +
         "dass sie nach Stil und nicht nach Farbe gedruckt wird.",
       "打印样式设置打印机上线条的颜色和粗细。 如果整个绘图配置为按样式而不是按颜色打印，则此属性可用。"};
-    public static readonly string[] ExtentsX = { 
-      "Extents X", 
-      "Габарит X", 
-      "Dimensioni X", 
+    public static readonly string[] ExtentsX = {
+      "Extents X",
+      "Габарит X",
+      "Dimensioni X",
       "Maße X",
       "范围 X" };
     public static readonly string[] Visible = {
@@ -537,10 +537,10 @@ namespace AVC
       "对象适合的尺寸框的X尺寸。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] ExtentsY = { 
-      "Extents Y", 
-      "Габарит Y", 
-      "Dimensioni Y", 
+    public static readonly string[] ExtentsY = {
+      "Extents Y",
+      "Габарит Y",
+      "Dimensioni Y",
       "Maße Y",
       "范围 Y" };
     public static readonly string[] ExtentsYTip = {
@@ -559,10 +559,10 @@ namespace AVC
       "对象适合的尺寸框的Y尺寸。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] ExtentsZ = { 
-      "Extents Z", 
-      "Габарит Z", 
-      "Dimensioni Z", 
+    public static readonly string[] ExtentsZ = {
+      "Extents Z",
+      "Габарит Z",
+      "Dimensioni Z",
       "Maße Z",
       "范围 Z" };
     public static readonly string[] ExtentsZTip = {
@@ -581,10 +581,10 @@ namespace AVC
       "对象适合的尺寸框的Z尺寸。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] Hyperlink = { 
-      "Hyperlink", 
-      "Гиперссылка", 
-      "Hyperlink", 
+    public static readonly string[] Hyperlink = {
+      "Hyperlink",
+      "Гиперссылка",
+      "Hyperlink",
       "Hyperlink",
       "超链接" };
     public static readonly string[] HyperlinkURL = {
@@ -623,11 +623,11 @@ namespace AVC
          "只写 URL 的结尾（网页的名称）。\r\n" +
          "如果将引用指定给实体和多段线，\r\n" +
          "那么您不能使用 CTRL 来选择子对象（面和线段）。" };
-    public static readonly string[] Layer = { 
-      "Layer", 
-      "Слой", 
-      "Layer", 
-      "Layer", 
+    public static readonly string[] Layer = {
+      "Layer",
+      "Слой",
+      "Layer",
+      "Layer",
       "图层"};
     public static readonly string[] Layers = {
       "Layers",
@@ -651,11 +651,11 @@ namespace AVC
       "您可以编写任何图层名称。\r\n" +
          "程序将在绘图或模板中查找图层。\r\n" +
          "或者创建一个新图层。"};
-    public static readonly string[] Length = { 
-      "Length", 
-      "Длина", 
-      "Lunghezza", 
-      "Länge", 
+    public static readonly string[] Length = {
+      "Length",
+      "Длина",
+      "Lunghezza",
+      "Länge",
       "长度" };
     public static readonly string[] LengthTip = {
       "The maximum of the overall dimensions of the solid or the length of the line.",
@@ -663,10 +663,10 @@ namespace AVC
       "Il massimo delle dimensioni complessive del solido o la lunghezza della linea.",
       "Das Maximum der Gesamtabmessungen des Volumenkörpers oder der Länge der Linie.",
       "三维实体整体尺寸的最大值或线的长度。"};
-    public static readonly string[] MinExtentsX = { 
-      "Minimum point of extents X", 
-      "Минимальная точка габаритов X", 
-      "Punto minimo delle dimensioni X", 
+    public static readonly string[] MinExtentsX = {
+      "Minimum point of extents X",
+      "Минимальная точка габаритов X",
+      "Punto minimo delle dimensioni X",
       "Mindestpunkt der Abmessungen X" ,
       "范围 X 的最小点"};
     public static readonly string[] MinExtentsXTip = {
@@ -685,10 +685,10 @@ namespace AVC
       "对象适合的边界框最小点的 X 坐标。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] MinExtentsY = { 
-      "Minimum point of extents Y", 
-      "Минимальная точка габаритов Y", 
-      "Punto minimo delle dimensioni Y", 
+    public static readonly string[] MinExtentsY = {
+      "Minimum point of extents Y",
+      "Минимальная точка габаритов Y",
+      "Punto minimo delle dimensioni Y",
       "Mindestpunkt der Abmessungen Y",
       "范围 Y 的最小点" };
     public static readonly string[] MinExtentsYTip = {
@@ -707,10 +707,10 @@ namespace AVC
       "对象适合的边界框最小点的 Y 坐标。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。"};
-    public static readonly string[] MinExtentsZ = { 
-      "Minimum point of extents Z", 
-      "Минимальная точка габаритов Z", 
-      "Punto minimo delle dimensioni Z", 
+    public static readonly string[] MinExtentsZ = {
+      "Minimum point of extents Z",
+      "Минимальная точка габаритов Z",
+      "Punto minimo delle dimensioni Z",
       "Mindestpunkt der Abmessungen Z",
       "范围 Z 的最小点" };
     public static readonly string[] MinExtentsZTip = {
@@ -729,10 +729,10 @@ namespace AVC
       "对象适合的边界框最小点的 Z 坐标。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] MaxExtentsX = { 
-      "Maximum point of extents X", 
-      "Максимальная точка габаритов X", 
-      "Punto massimo delle dimensioni X", 
+    public static readonly string[] MaxExtentsX = {
+      "Maximum point of extents X",
+      "Максимальная точка габаритов X",
+      "Punto massimo delle dimensioni X",
       "Maximaler Punkt der Abmessungen X",
       "范围 X 的最大点" };
     public static readonly string[] MaxExtentsXTip = {
@@ -751,10 +751,10 @@ namespace AVC
       "对象适合的边界框最大点的 X 坐标。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] MaxExtentsY = { 
-      "Maximum point of extents Y", 
-      "Максимальная точка габаритов Y", 
-      "Punto massimo delle dimensioni Y", 
+    public static readonly string[] MaxExtentsY = {
+      "Maximum point of extents Y",
+      "Максимальная точка габаритов Y",
+      "Punto massimo delle dimensioni Y",
       "Maximaler Punkt der Abmessungen Y",
       "范围 Y 的最大点" };
     public static readonly string[] MaxExtentsYTip = {
@@ -773,10 +773,10 @@ namespace AVC
       "对象适合的边界框最大点的 Y 坐标。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] MaxExtentsZ = { 
-      "Maximum point of extents Z", 
-      "Максимальная точка габаритов Z", 
-      "Punto massimo delle dimensioni Z", 
+    public static readonly string[] MaxExtentsZ = {
+      "Maximum point of extents Z",
+      "Максимальная точка габаритов Z",
+      "Punto massimo delle dimensioni Z",
       "Maximaler Punkt der Abmessungen Z",
       "范围 Z 的最大点" };
     public static readonly string[] MaxExtentsZTip = {
@@ -795,10 +795,10 @@ namespace AVC
       "对象适合的边界框最大点的 Z 坐标。 \r\n" +
          "在 WCS 世界坐标系或所有者块坐标系中。\r\n" +
          "不适用于块和一些辅助对象。" };
-    public static readonly string[] Perimeter = { 
-      "Perimeter", 
-      "Периметр", 
-      "Perimetro", 
+    public static readonly string[] Perimeter = {
+      "Perimeter",
+      "Периметр",
+      "Perimetro",
       "Umfang",
       "周长" };
     public static readonly string[] PerimeterTip = {
@@ -815,61 +815,61 @@ namespace AVC
 
     // =====================================================================
     // Arc Circle ==========================================================
-    public static readonly string[] Arc = { 
-      "Arc", 
-      "Дуга", 
-      "Arco", 
+    public static readonly string[] Arc = {
+      "Arc",
+      "Дуга",
+      "Arco",
       "Bogen",
       "弧" };
-    public static readonly string[] Circle = { 
-      "Circle", 
-      "Окружность", 
-      "Cerchio", 
+    public static readonly string[] Circle = {
+      "Circle",
+      "Окружность",
+      "Cerchio",
       "Kreis",
       "圆" };
-    public static readonly string[] Circles = { 
-      "Circles", 
-      "Окружности", 
-      "Cerchi", 
+    public static readonly string[] Circles = {
+      "Circles",
+      "Окружности",
+      "Cerchi",
       "Kreise",
       "圆圈" };
-    public static readonly string[] Angle = { 
-      "Angle", 
-      "Угол", 
-      "Angolo", 
+    public static readonly string[] Angle = {
+      "Angle",
+      "Угол",
+      "Angolo",
       "Winkel",
       "角度" };
-    public static readonly string[] Diameter = { 
+    public static readonly string[] Diameter = {
       "Diameter",
-      "Диаметр", 
-      "Diametro", 
+      "Диаметр",
+      "Diametro",
       "Durchmesser",
       "直径" };
-    public static readonly string[] Radius = { 
-      "Radius", 
-      "Радиус", 
-      "Raggio", 
+    public static readonly string[] Radius = {
+      "Radius",
+      "Радиус",
+      "Raggio",
       "Radius",
       "半径" };
 
     // ================================================================================================
     // Attribute ================================================================================================
-    public static readonly string[] Attribute = { 
-      "Attribute", 
-      "Атрибут", 
-      "Attributo", 
+    public static readonly string[] Attribute = {
+      "Attribute",
+      "Атрибут",
+      "Attributo",
       "Attribut",
       "属性" };
-    public static readonly string[] Attributes = { 
-      "Attributes", 
-      "Атрибуты", 
-      "Attributo", 
+    public static readonly string[] Attributes = {
+      "Attributes",
+      "Атрибуты",
+      "Attributo",
       "Attribut",
       "属性" };
-    public static readonly string[] Constant = { 
-      "Constant", 
-      "Константный", 
-      "Costante", 
+    public static readonly string[] Constant = {
+      "Constant",
+      "Константный",
+      "Costante",
       "Konstante",
       "持续的" };
     public static readonly string[] ConstantTip = {
@@ -883,10 +883,10 @@ namespace AVC
         "Der Wert des Attributs wird bei der Erstellung festgelegt und ist nicht mehr änderbar.",
       "该属性仅存储在块定义中，不存在于块引用中。\r\n" +
          "属性的值是在创建时设置的，不再是可变的。" };
-    public static readonly string[] Invisible = { 
-      "Invisible", 
-      "Невидимый", 
-      "Invisibile", 
+    public static readonly string[] Invisible = {
+      "Invisible",
+      "Невидимый",
+      "Invisibile",
       "Unsichtbar",
       "不可见" };
     public static readonly string[] InvisibleTip = {
@@ -903,16 +903,16 @@ namespace AVC
 
     // ================================================================================================
     // Block     // ================================================================================================
-    public static readonly string[] Block = { 
-      "Block", 
-      "Блок", 
-      "Blocco", 
+    public static readonly string[] Block = {
+      "Block",
+      "Блок",
+      "Blocco",
       "Block",
       "块"};
-    public static readonly string[] Blocks = { 
-      "Blocks", 
-      "Блоки", 
-      "Blocchi", 
+    public static readonly string[] Blocks = {
+      "Blocks",
+      "Блоки",
+      "Blocchi",
       "Mehrere Block",
       "块" };
     public static readonly string[] BlockDefinitions = {
@@ -939,22 +939,22 @@ namespace AVC
       "Serie",
       "Anordnung",
       "阵列" };
-    public static readonly string[] Assembly = { 
-      "Assembly", 
-      "Сборка", 
-      "Assemblee", 
+    public static readonly string[] Assembly = {
+      "Assembly",
+      "Сборка",
+      "Assemblee",
       "Montage",
       "集会" };
-    public static readonly string[] Assemblies = { 
-      "Assemblies", 
-      "Сборки", 
-      "Assemblea", 
+    public static readonly string[] Assemblies = {
+      "Assemblies",
+      "Сборки",
+      "Assemblea",
       "Montage",
       "装配体" };
-    public static readonly string[] BlockInstance = { 
-      "Block Instance", 
-      "Экземпляр блока", 
-      "Istanza di blocco", 
+    public static readonly string[] BlockInstance = {
+      "Block Instance",
+      "Экземпляр блока",
+      "Istanza di blocco",
       "Blockinstanz",
       "块实例" };
     public static readonly string[] BlockInstances = {
@@ -1014,10 +1014,10 @@ namespace AVC
          "在模型空间中，这些块可以根据打印设置自动缩放。\r\n" +
          "AVC 程序会忽略此类块，不会将它们视为程序集或购买的物品。" };
 
-    public static readonly string[] Explodable = { 
-      "Explodable", 
-      "Взрываемый", 
-      "Consenti Esplodi", 
+    public static readonly string[] Explodable = {
+      "Explodable",
+      "Взрываемый",
+      "Consenti Esplodi",
       "Explodieren zulassen",
       "可分解的" };
     public static readonly string[] ExplodableTip = {
@@ -1043,16 +1043,16 @@ namespace AVC
       "这个块可以分解成单独的零件。\r\n" +
          "在 AVC 程序中，此类块被视为组件，您可以在此类块内处理零件。\r\n" +
          "如果块是非爆炸性的，那么 AVC 程序会将其视为购买的产品，并且不会尝试使用其中的零件。" };
-    public static readonly string[] NonExplodable = { 
-      "Prohibit exploding", 
-      "Не взрываемый", 
-      "Proibire l'esplosione", 
+    public static readonly string[] NonExplodable = {
+      "Prohibit exploding",
+      "Не взрываемый",
+      "Proibire l'esplosione",
       "Explodieren verbieten",
       "非爆炸性" };
-    public static readonly string[] Units = { 
-      "Units", 
-      "Единицы", 
-      "Unità", 
+    public static readonly string[] Units = {
+      "Units",
+      "Единицы",
+      "Unità",
       "Einheiten",
       "单位" };
     public static readonly string[] UnitsTip = {
@@ -1066,10 +1066,10 @@ namespace AVC
         "Andernfalls treten Probleme mit dem Maßstab beim Einfügen von Blöcken in verschiedene Zeichnungen auf.",
       "正确设置绘图和块单位很重要。\r\n" +
          "否则，在不同的图纸中插入块的比例会出现问题。" };
-    public static readonly string[] Measure = { 
-      "Measure", 
-      "Обмерять", 
-      "Misurare", 
+    public static readonly string[] Measure = {
+      "Measure",
+      "Обмерять",
+      "Misurare",
       "Messen",
       "措施" };
     public static readonly string[] MeasureTip = {
@@ -1231,16 +1231,16 @@ namespace AVC
 
     // ================================================================================================
     // BlockRef =======================================================================================
-    public static readonly string[] BlockReference = { 
-      "Block Reference", 
-      "Ссылка на блок", 
-      "Riferimento di blocco", 
+    public static readonly string[] BlockReference = {
+      "Block Reference",
+      "Ссылка на блок",
+      "Riferimento di blocco",
       "Blockreferenz",
       "块参照" };
-    public static readonly string[] BlockReferences = { 
-      "Block References", 
-      "Ссылки на блоки", 
-      "Riferimenti a blocchi", 
+    public static readonly string[] BlockReferences = {
+      "Block References",
+      "Ссылки на блоки",
+      "Riferimenti a blocchi",
       "Verweise blockieren",
       "块参照" };
     public static readonly string[] BlockRefNameTip = {
@@ -1259,17 +1259,17 @@ namespace AVC
       "块名称。\r\n" +
          "使用块选项卡编辑名称\r\n" +
          "和其他不可变的块属性。" };
-    public static readonly string[] NonUniscale = { 
-      "Distorted", 
-      "Искажен", 
-      "Distorsione", 
+    public static readonly string[] NonUniscale = {
+      "Distorted",
+      "Искажен",
+      "Distorsione",
       "Verzerrt",
       "扭曲的" };
-    public static readonly string[] Scale = { 
-      "Scale", 
-      "Масштаб", 
-      "Scale", 
-      "Rahmen", 
+    public static readonly string[] Scale = {
+      "Scale",
+      "Масштаб",
+      "Scale",
+      "Rahmen",
       "比例" };
     public static readonly string[] ScaleTip = {
       "The scale for inserting the block into the model.\r\n" +
@@ -1282,16 +1282,16 @@ namespace AVC
         "Negative Skala (Spiegelung) wird in einer separaten Eigenschaft eingestellt.",
       "将块插入模型的比例。\r\n" +
          "如果不同轴上的比例不同，则为 0。负比例（镜像）在单独的属性中设置。" };
-    public static readonly string[] StandardScale = { 
-      "Standard Scale", 
-      "Стандартный Масштаб", 
-      "Scala standard", 
-      "Standard-Skala", 
+    public static readonly string[] StandardScale = {
+      "Standard Scale",
+      "Стандартный Масштаб",
+      "Scala standard",
+      "Standard-Skala",
       "标准比例" };
-    public static readonly string[] Mirror = { 
-      "Mirror", 
-      "Зеркальный", 
-      "Specchio", 
+    public static readonly string[] Mirror = {
+      "Mirror",
+      "Зеркальный",
+      "Specchio",
       "Spiegelbildlich",
       "镜像" };
     public static readonly string[] BlockMirrorTip = {
@@ -1305,10 +1305,10 @@ namespace AVC
         "Wenn diese Eigenschaft umgeschaltet wird, ändert das Programm das Vorzeichen der Skala entlang der X-Achse" ,
       "插入一个镜像块。\r\n" +
          "切换此属性时，程序沿X轴改变刻度的符号"};
-    public static readonly string[] Instance = { 
-      "Instance", 
-      "Экземпляр", 
-      "Esempio", 
+    public static readonly string[] Instance = {
+      "Instance",
+      "Экземпляр",
+      "Esempio",
       "Beispiel",
       "实例" };
     public static readonly string[] InstanceTip = {
@@ -1320,187 +1320,211 @@ namespace AVC
 
     // ================================================================================================
     // Curve     // ================================================================================================
-    public static readonly string[] Curve = { 
-      "Curve", 
-      "Кривая", 
-      "Curva", 
+    public static readonly string[] Curve = {
+      "Curve",
+      "Кривая",
+      "Curva",
       "Kurve",
       "曲线" };
-    public static readonly string[] Curves = { 
-      "Curves", 
-      "Кривые", 
-      "Curve", 
+    public static readonly string[] Curves = {
+      "Curves",
+      "Кривые",
+      "Curve",
       "Kurven" ,
       "曲线"};
-    public static readonly string[] Line = { 
-      "Line", 
-      "Линия", 
-      "Linea", 
+    public static readonly string[] Line = {
+      "Line",
+      "Линия",
+      "Linea",
       "Linie" ,
       "线"};
-    public static readonly string[] Ray = { 
-      "Ray", 
-      "Луч", 
-      "Raggio", 
+    public static readonly string[] Ray = {
+      "Ray",
+      "Луч",
+      "Raggio",
       "Strahl",
       "射线" };
     public static readonly string[] Spline = {
-      "Spline", 
-      "Сплайн", 
-      "Spline", 
+      "Spline",
+      "Сплайн",
+      "Spline",
       "Spline",
       "样条曲线" };
-    public static readonly string[] Ellipse = { 
-      "Ellipse", 
-      "Эллипс", 
-      "Ellisse", 
+    public static readonly string[] Ellipse = {
+      "Ellipse",
+      "Эллипс",
+      "Ellisse",
       "Ellipse",
       "椭圆" };
-    public static readonly string[] EndPointX = { 
-      "End Point X", 
-      "Конечная Точка X", 
-      "Punto finale X", 
+    public static readonly string[] EndPointX = {
+      "End Point X",
+      "Конечная Точка X",
+      "Punto finale X",
       "Endpunkt X",
       "终点 X" };
-    public static readonly string[] EndPointY = { 
-      "End Point Y", 
-      "Конечная Точка Y", 
-      "Punto finale Y", 
+    public static readonly string[] EndPointY = {
+      "End Point Y",
+      "Конечная Точка Y",
+      "Punto finale Y",
       "Endpunkt Y",
       "终点 Y" };
-    public static readonly string[] EndPointZ = { 
-      "End Point Z", 
-      "Конечная Точка Z", 
-      "Punto finale Z", 
+    public static readonly string[] EndPointZ = {
+      "End Point Z",
+      "Конечная Точка Z",
+      "Punto finale Z",
       "Endpunkt Z",
       "终点 Z" };
-    public static readonly string[] MidPointX = { 
-      "Mid Point X", 
-      "Средняя Точка X", 
-      "Punto medio X", 
+    public static readonly string[] MidPointX = {
+      "Mid Point X",
+      "Средняя Точка X",
+      "Punto medio X",
       "Mittelpunkt X",
       "中点 X" };
-    public static readonly string[] MidPointY = { 
-      "Mid Point Y", 
-      "Средняя Точка Y", 
-      "Punto medio Y", 
+    public static readonly string[] MidPointY = {
+      "Mid Point Y",
+      "Средняя Точка Y",
+      "Punto medio Y",
       "Mittelpunkt Y",
       "中点 Y" };
-    public static readonly string[] MidPointZ = { 
-      "Mid Point Z", 
-      "Средняя Точка Z", 
-      "Punto medio Z", 
+    public static readonly string[] MidPointZ = {
+      "Mid Point Z",
+      "Средняя Точка Z",
+      "Punto medio Z",
       "Mittelpunkt Z",
       "中点 Z" };
 
     // ================================================================================================
     // CNC Contours     // ================================================================================================
-    public static readonly string[] CNC = { 
-      "CNC", 
-      "ЧПУ", 
-      "CNC", 
-      "CNC", 
+    public static readonly string[] CNC = {
+      "CNC",
+      "ЧПУ",
+      "CNC",
+      "CNC",
       "数控" };
-    public static readonly string[] ZCoordinate = { 
-      "Z coordinate", 
-      "Координата Z", 
-      "Coordinata Z", 
+    public static readonly string[] ZCoordinate = {
+      "Z coordinate",
+      "Координата Z",
+      "Coordinata Z",
       "Z-Koordinate",
       "Z坐标" };
-    public static readonly string[] ZFromTop = { 
-      "Z from top", 
-      "Z от верха", 
-      "Z dall'alto", 
+    public static readonly string[] ZFromTop = {
+      "Z from top",
+      "Z от верха",
+      "Z dall'alto",
       "Z von oben",
       "从顶部开始的 Z 坐标" };
-    public static readonly string[] Depth = { 
-      "Depth", 
-      "Глубина", 
-      "Profondità", 
+    public static readonly string[] Depth = {
+      "Depth",
+      "Глубина",
+      "Profondità",
       "Tiefe",
       "深度" };
-    public static readonly string[] AngleFromVertical = { 
-      "Incline", 
-      "Наклон", 
-      "Inclinare", 
+    public static readonly string[] AngleFromVertical = {
+      "Incline",
+      "Наклон",
+      "Inclinare",
       "Neigung",
       "倾斜" };
-    public static readonly string[] AngleMinus = { 
-      "Incline. Inverted", 
-      "Наклон. Инверт.", 
-      "Inclinare. invertito", 
+    public static readonly string[] AngleMinus = {
+      "Incline. Inverted",
+      "Наклон. Инверт.",
+      "Inclinare. invertito",
       "Neigung. Invertiert",
       "倾斜。 倒" };
-    public static readonly string[] Rotation = { 
-      "Rotation", 
-      "Разворот", 
-      "Rotazione", 
+    public static readonly string[] Rotation = {
+      "Rotation",
+      "Разворот",
+      "Rotazione",
       "Drehung",
       "旋转" };
-    public static readonly string[] RotationMinus = { 
-      "Rotation from -X", 
-      "Вращение от -X", 
-      "Rotazione da -X", 
+    public static readonly string[] RotationMinus = {
+      "Rotation from -X",
+      "Вращение от -X",
+      "Rotazione da -X",
       "Drehung von -X.",
       "从 -X 轴旋转" };
-    public static readonly string[] Slope = { 
-      "Slope angle", 
-      "Угол уклона", 
-      "Pendio", 
+    public static readonly string[] Slope = {
+      "Slope angle",
+      "Угол уклона",
+      "Pendio",
       "Steigung",
       "坡度角" };
-    public static readonly string[] SlopeMinus = { 
-      "Slope angle. With sign change", 
-      "Угол уклона. С заменой знака", 
-      "Pendio. Con cambio di segno", 
+    public static readonly string[] SlopeMinus = {
+      "Slope angle. With sign change",
+      "Угол уклона. С заменой знака",
+      "Pendio. Con cambio di segno",
       "Steigung. Mit Vorzeichenwechsel",
       "坡度角。 随着符号变化" };
-    public static readonly string[] DrillDirection = { 
-      "Drilling Direction", 
-      "Направление сверления", 
-      "Direzione di perforazione", 
+    public static readonly string[] DrillDirection = {
+      "Drilling Direction",
+      "Направление сверления",
+      "Direzione di perforazione",
       "Bohrrichtung",
       "钻孔方向" };
-    public static readonly string[] DrillType = { 
-      "Drilling Type", 
-      "Тип сверления", 
-      "Tipo di perforazione", 
+    public static readonly string[] DrillType = {
+      "Drilling Type",
+      "Тип сверления",
+      "Tipo di perforazione",
       "Bohrertyp",
       "钻孔类型" };
-    public static readonly string[] DrillNumber = { 
-      "Drilling Number", 
-      "Номер сверления", 
-      "Numero di perforazione", 
+    public static readonly string[] Countersink = {
+      "Countersink",
+      "Зенковать",
+      "Svasatore",
+      "Versenken",
+      "埋头孔" };
+    public static readonly string[] CountersinkAngle = {
+      "Countersink Angle",
+      "Угол зенковки",
+      "Angolo di svasatura",
+      "Senkwinkel",
+      "埋头孔角度" };
+    public static readonly string[] CountersinkDiam = {
+      "Countersink Diameter",
+      "Диаметр зенковки",
+      "Diametro svasatore",
+      "Senkerdurchmesser",
+      "埋头孔直径" };
+    public static readonly string[] CountersinkDepth = {
+      "Countersink Depth",
+      "Глубина зенковки",
+      "Profondità svasatore",
+      "Senktiefe",
+      "埋头孔深度" };
+    public static readonly string[] DrillNumber = {
+      "Drilling Number",
+      "Номер сверления",
+      "Numero di perforazione",
       "Bohrnummer" ,
       "钻孔编号"};
-    public static readonly string[] EdgeLength = { 
-      "Edge length", 
-      "Длина торца", 
-      "Lunghezza", 
+    public static readonly string[] EdgeLength = {
+      "Edge length",
+      "Длина торца",
+      "Lunghezza",
       "Länge",
       "边长" };
-    public static readonly string[] CutterDiameter = { 
-      "Cutter diameter", 
-      "Диаметр фрезы", 
-      "Diametro fresa", 
+    public static readonly string[] CutterDiameter = {
+      "Cutter diameter",
+      "Диаметр фрезы",
+      "Diametro fresa",
       "Fräserdurchmesser",
       "刀具直径" };
-    public static readonly string[] SawDiameter = { 
-      "Saw blade diameter", 
-      "Диаметр диска пилы", 
-      "Diametro della lama della sega", 
+    public static readonly string[] SawDiameter = {
+      "Saw blade diameter",
+      "Диаметр диска пилы",
+      "Diametro della lama della sega",
       "Sägeblattdurchmesser",
       "锯片直径" };
-    public static readonly string[] SawThickness = { 
-      "Saw blade thickness", 
-      "Толщина диска пилы", 
-      "Spessore della lama della sega", 
+    public static readonly string[] SawThickness = {
+      "Saw blade thickness",
+      "Толщина диска пилы",
+      "Spessore della lama della sega",
       "Sägeblattdicke",
       "锯片厚度"};
-    public static readonly string[] MillTool = { 
-      "Milling cutter", 
-      "Фреза", 
-      "Fresa", 
+    public static readonly string[] MillTool = {
+      "Milling cutter",
+      "Фреза",
+      "Fresa",
       "Fräser",
       "铣刀" };
     public static readonly string[] MillToolTip = {
@@ -1524,10 +1548,10 @@ namespace AVC
          "此名称可用于所有 NC 图层名称中的 %milltool% 替换。\r\n" +
          "程序将从零件的材料属性中使用这个名称，\r\n" +
          "即使在 CNC 样式中指定了不同的刀具名称。" };
-    public static readonly string[] SawTool = { 
-      "Saw blade", 
-      "Диск пилы", 
-      "Lama d/sega", 
+    public static readonly string[] SawTool = {
+      "Saw blade",
+      "Диск пилы",
+      "Lama d/sega",
       "Sägeblatt",
       "锯片" };
     public static readonly string[] SawToolTip = {
@@ -1551,10 +1575,10 @@ namespace AVC
          "此名称可用于所有 NC 图层名称中的 %sawtool% 替换。\r\n" +
          "程序将从零件的材料属性中使用这个名称，\r\n" +
          "即使在 CNC 样式中指定了不同的刀具名称。" };
-    public static readonly string[] MillMode = { 
-      "Milling mode", 
-      "Режим фрезы", 
-      "Modalità di fres.", 
+    public static readonly string[] MillMode = {
+      "Milling mode",
+      "Режим фрезы",
+      "Modalità di fres.",
       "Fräsmodus",
       "铣削方式" };
     public static readonly string[] MillModeTip = {
@@ -1568,10 +1592,10 @@ namespace AVC
         "Dieser Text kann in der %millmode%-Ersetzung in allen NC-Layer-Namen verwendet werden.",
       "加工模式（铣削）。\r\n" +
          "此文本可用于所有 NC 图层名称中的 %millmode% 替换。" };
-    public static readonly string[] SawMode = { 
-      "Sawing mode", 
-      "Режим пиления", 
-      "Modalità segatura", 
+    public static readonly string[] SawMode = {
+      "Sawing mode",
+      "Режим пиления",
+      "Modalità segatura",
       "Sägemodus",
       "锯切方式" };
     public static readonly string[] SawModeTip = {
@@ -1585,28 +1609,28 @@ namespace AVC
         "Dieser Text kann in der %sawmode%-Ersetzung in allen NC-Layer-Namen verwendet werden.",
       "加工模式（锯切）。\r\n" +
          "此文本可用于所有 NC 图层名称中的 %sawmode% 替换。" };
-    public static readonly string[] Downward = { 
-      "Downward slope", 
-      "Наклон снизу", 
-      "Inclinazione inferiore", 
+    public static readonly string[] Downward = {
+      "Downward slope",
+      "Наклон снизу",
+      "Inclinazione inferiore",
       "Bodenneigung",
       "下坡" };
-    public static readonly string[] CenterX = { 
-      "Center X", 
-      "Центр X", 
-      "Centro X", 
+    public static readonly string[] CenterX = {
+      "Center X",
+      "Центр X",
+      "Centro X",
       "Center X",
       "中心 X" };
-    public static readonly string[] CenterY = { 
-      "Center Y", 
-      "Центр Y", 
-      "Centro Y", 
+    public static readonly string[] CenterY = {
+      "Center Y",
+      "Центр Y",
+      "Centro Y",
       "Center Y",
       "中心 Y" };
-    public static readonly string[] CenterZ = { 
-      "Center Z", 
-      "Центр Z", 
-      "Centro Z", 
+    public static readonly string[] CenterZ = {
+      "Center Z",
+      "Центр Z",
+      "Centro Z",
       "Center Z",
       "中心 Z" };
 
@@ -1620,22 +1644,22 @@ namespace AVC
       "Anmerkungen",
       "注释" };
 
-    public static readonly string[] Dimension = { 
-      "Dimension", 
-      "Размер", 
-      "Dimensione", 
+    public static readonly string[] Dimension = {
+      "Dimension",
+      "Размер",
+      "Dimensione",
       "Abmessungen",
       "尺寸" };
-    public static readonly string[] Dimensions = { 
-      "Dimensions", 
-      "Размеры", 
-      "Dimensioni", 
+    public static readonly string[] Dimensions = {
+      "Dimensions",
+      "Размеры",
+      "Dimensioni",
       "Abmessungen",
       "尺寸" };
-    public static readonly string[] Measurement = { 
-      "Measurement", 
-      "Измерено", 
-      "Misurazione", 
+    public static readonly string[] Measurement = {
+      "Measurement",
+      "Измерено",
+      "Misurazione",
       "Messung",
       "测量" };
     public static readonly string[] MeasurementTip = {
@@ -1644,10 +1668,10 @@ namespace AVC
       "Distanza misurata",
       "Gemessene Entfernung",
       "测量距离" };
-    public static readonly string[] Style = { 
-      "Style", 
-      "Стиль", 
-      "Stile", 
+    public static readonly string[] Style = {
+      "Style",
+      "Стиль",
+      "Stile",
       "Stil",
       "样式" };
     public static readonly string[] StyleTip = {
@@ -1670,10 +1694,10 @@ namespace AVC
 
     // ================================================================================================
     // DWG ============================================================================================
-    public static readonly string[] Author = { 
-      "Author", 
-      "Автор", 
-      "Autore", 
+    public static readonly string[] Author = {
+      "Author",
+      "Автор",
+      "Autore",
       "Autor",
       "作者" };
     public static readonly string[] AuthorTip = {
@@ -1688,10 +1712,10 @@ namespace AVC
       "Finestra di dialogo Selettore colore",
       "Dialogfeld „Farbauswahl“.",
       "颜色选择器对话框" };
-    public static readonly string[] Comments = { 
-      "Comments", 
-      "Комментарии", 
-      "Commenti", 
+    public static readonly string[] Comments = {
+      "Comments",
+      "Комментарии",
+      "Commenti",
       "Bemerkungen",
       "注释" };
     public static readonly string[] CommentsTip = {
@@ -1700,16 +1724,16 @@ namespace AVC
       "Qualsiasi informazione sul disegno, commenti da editori e revisori.",
       "Alle Informationen über die Zeichnung, Kommentare von Redakteuren und Rezensenten.",
       "有关绘图的任何信息、编辑和审稿人的评论。" };
-    public static readonly string[] Drawing = { 
-      "Drawing", 
-      "Чертеж", 
-      "Disegno", 
+    public static readonly string[] Drawing = {
+      "Drawing",
+      "Чертеж",
+      "Disegno",
       "Zeichnen",
       "文件属性" };
-    public static readonly string[] Drawings = { 
-      "Drawings", 
+    public static readonly string[] Drawings = {
+      "Drawings",
       "Чертежи",
-      "Disegni", 
+      "Disegni",
       "Zeichnungen",
       "文件属性" };
     public static readonly string[] DwgColorTip = {
@@ -1723,10 +1747,10 @@ namespace AVC
         "Sie können einen beliebigen Farbnamen eingeben, das Programm wird versuchen, ihn zu erkennen.",
       "新图形对象的颜色。\r\n" +
          "你可以写任何颜色名称，程序会尝试识别它。" };
-    public static readonly string[] DwgCreated = { 
-      "Dwg Created", 
-      "DWG создан", 
-      "Dwg creato", 
+    public static readonly string[] DwgCreated = {
+      "Dwg Created",
+      "DWG создан",
+      "Dwg creato",
       "Dwg erstellt",
       "创建的图纸" };
     public static readonly string[] DwgCreatedTip = {
@@ -1756,10 +1780,10 @@ namespace AVC
          "你可以写任何名字。\r\n" +
          "程序将在绘图或模板中查找图层。\r\n" +
          "如果没有找到，就会创建一个新层。" };
-    public static readonly string[] DwgUnits = { 
-      "Dwg Units", 
-      "Единицы Dwg", 
-      "Unità Dwg", 
+    public static readonly string[] DwgUnits = {
+      "Dwg Units",
+      "Единицы Dwg",
+      "Unità Dwg",
       "Dwg-Einheiten",
       "单位" };
     public static readonly string[] DwgUnitsTip = {
@@ -1793,10 +1817,10 @@ namespace AVC
          "另外插件 A>V>C> 选择默认值\r\n" +
          "基于绘图单位的所有设置。\r\n" +
          "选择英寸或毫米。" };
-    public static readonly string[] DwgUpdated = { 
-      "Dwg Updated", 
-      "DWG обновлен", 
-      "DWG aggiornato", 
+    public static readonly string[] DwgUpdated = {
+      "Dwg Updated",
+      "DWG обновлен",
+      "DWG aggiornato",
       "Dwg aktualisiert",
       "更新日期" };
     public static readonly string[] DwgUpdatedTip = {
@@ -1805,22 +1829,22 @@ namespace AVC
       "La data dell'ultimo salvataggio del disegno.",
       "Das Datum, an dem die Zeichnung zuletzt gespeichert wurde.",
       "上次修改图形文件的日期。" };
-    public static readonly string[] Filename = { 
-      "File Name", 
-      "Имя файла", 
-      "Nome del file", 
+    public static readonly string[] Filename = {
+      "File Name",
+      "Имя файла",
+      "Nome del file",
       "Dateiname",
       "文件名" };
-    public static readonly string[] FilenameTip = { 
-      "File Name", 
-      "Имя файла", 
-      "Nome del file", 
+    public static readonly string[] FilenameTip = {
+      "File Name",
+      "Имя файла",
+      "Nome del file",
       "Dateiname",
       "文件名" };
-    public static readonly string[] Folder = { 
-      "Folder", 
-      "Папка", 
-      "Cartella", 
+    public static readonly string[] Folder = {
+      "Folder",
+      "Папка",
+      "Cartella",
       "Ordner",
       "文件夹" };
     public static readonly string[] FolderTip = {
@@ -1840,10 +1864,10 @@ namespace AVC
         "Die URL einer Website im Internet oder die Adresse eines Ordners auf der Festplatte." ,
       "此图形中所有对象超链接的基地址。\r\n" +
         "Internet 上站点的 URL 或磁盘上文件夹的地址。"};
-    public static readonly string[] InDwg = { 
-      "In Dwg", 
-      "В чертеже", 
-      "In Dwg", 
+    public static readonly string[] InDwg = {
+      "In Dwg",
+      "В чертеже",
+      "In Dwg",
       "In Dwg",
       "编辑时长" };
     public static readonly string[] InDwgTip = {
@@ -1852,10 +1876,10 @@ namespace AVC
       "Da quanto tempo è stato modificato il disegno.",
       "Wie lange wurde die Zeichnung bearbeitet.",
       "绘图已编辑多长时间。" };
-    public static readonly string[] Keywords = { 
-      "Keywords", 
-      "Ключевые слова", 
-      "Parole", 
+    public static readonly string[] Keywords = {
+      "Keywords",
+      "Ключевые слова",
+      "Parole",
       "Schlüsselwörter",
       "关键词(标记)" };
     public static readonly string[] KeywordsTip = {
@@ -1864,10 +1888,10 @@ namespace AVC
       "Qualsiasi parola per la comodità di trovare un disegno",
       "Irgendwelche Worte für die Bequemlichkeit, eine Zeichnung zu finden",
       "关键字方便查找图形的任何单词,windows10中显示为标记列" };
-    public static readonly string[] LastSavedBy = { 
-      "Saved by", 
-      "Сохранил", 
-      "Salvato da", 
+    public static readonly string[] LastSavedBy = {
+      "Saved by",
+      "Сохранил",
+      "Salvato da",
       "Gemerkt von",
       "保存者" };
     public static readonly string[] LastSavedByTip = {
@@ -1876,10 +1900,10 @@ namespace AVC
       "Chi per ultimo ha salvato il disegno.",
       "Wer hat die Zeichnung zuletzt gespeichert?",
       "谁最后保存了绘图。" };
-    public static readonly string[] Multiplier = { 
-      "Multiplier", 
-      "Множитель", 
-      "Moltiplicatore", 
+    public static readonly string[] Multiplier = {
+      "Multiplier",
+      "Множитель",
+      "Moltiplicatore",
       "Multiplikator",
       "乘数" };
     public static readonly string[] MultiplierTip = {
@@ -1893,10 +1917,10 @@ namespace AVC
         "Wird verwendet, um die Anzahl der Teile in einer Serie zu berechnen.",
       "对象数量将乘以的数字。\r\n" +
          "用于计算批次中的零件数量。" };
-    public static readonly string[] NumberAssemblies = { 
-      "Number of Assemblies", 
-      "Количество сборок", 
-      "Numero di assemblee", 
+    public static readonly string[] NumberAssemblies = {
+      "Number of Assemblies",
+      "Количество сборок",
+      "Numero di assemblee",
       "Anzahl Baugruppen",
       "组件数量" };
     public static readonly string[] NumberAssembliesTip = {
@@ -1910,10 +1934,10 @@ namespace AVC
         "Die Nummerierung der Baugruppen wird ab dieser Nummer fortgesetzt.",
       "绘图中的装配块数。\r\n" +
          "组件的编号将从这个编号继续。" };
-    public static readonly string[] NumberDetails = { 
-      "Number of Details", 
-      "Количество деталей", 
-      "Numero di dettagli", 
+    public static readonly string[] NumberDetails = {
+      "Number of Details",
+      "Количество деталей",
+      "Numero di dettagli",
       "Anzahl der Details",
       "细节数量" };
     public static readonly string[] NumberDetailsTip = {
@@ -1927,10 +1951,10 @@ namespace AVC
         "Von dieser Figur aus kann die Nummerierung der Teile fortgesetzt werden.",
       "图形中的零件数。\r\n" +
          "根据此图，可以继续对部件进行编号。" };
-    public static readonly string[] Revision = { 
-      "Revision", 
-      "Ревизия", 
-      "Revisione", 
+    public static readonly string[] Revision = {
+      "Revision",
+      "Ревизия",
+      "Revisione",
       "Revision",
       "修订" };
     public static readonly string[] RevisionTip = {
@@ -1944,10 +1968,10 @@ namespace AVC
         "Das Feld verfügt über einen integrierten Taschenrechner zur Berechnung mathematischer Ausdrücke.",
       "图形当前版本的编号或索引更改。\r\n" +
          "该字段具有用于计算数学表达式的内置计算器。" };
-    public static readonly string[] Subject = { 
-      "Subject", 
-      "Тема", 
-      "Soggetto", 
+    public static readonly string[] Subject = {
+      "Subject",
+      "Тема",
+      "Soggetto",
       "Gegenstand",
       "主题" };
     public static readonly string[] SubjectTip = {
@@ -1956,10 +1980,10 @@ namespace AVC
       "Scopo del disegno. Puoi scrivere il nome del cliente.",
       "Zweck der Zeichnung. Sie können den Namen des Kunden aufschreiben.",
       "绘图的目的。 您可以写下客户的姓名。" };
-    public static readonly string[] Title = { 
-      "Title", 
-      "Заглавие", 
-      "Titolo", 
+    public static readonly string[] Title = {
+      "Title",
+      "Заглавие",
+      "Titolo",
       "Titel",
       "标题" };
     public static readonly string[] TitleTip = {
@@ -1968,10 +1992,10 @@ namespace AVC
       "Nome progetto, titolo",
       "Projektname, Titel",
       "项目名称、标题" };
-    public static readonly string[] UserTimer = { 
-      "User Timer", 
-      "Таймер пользователя", 
-      "Timer utente", 
+    public static readonly string[] UserTimer = {
+      "User Timer",
+      "Таймер пользователя",
+      "Timer utente",
       "Benutzer-Timer",
       "用户计时器" };
     public static readonly string[] UserTimerTip = {
@@ -1985,100 +2009,100 @@ namespace AVC
         "Dieser Zähler kann jederzeit mit dem Befehl _Time zurückgesetzt werden.",
       "编辑图形花费了多少时间。\r\n" +
          "此计时器可以随时使用 _Time 命令重置。" };
-    public static readonly string[] DrawingProperties = { 
-      "Drawing properties", 
-      "Свойства чертежа", 
-      "Proprietà del disegno", 
+    public static readonly string[] DrawingProperties = {
+      "Drawing properties",
+      "Свойства чертежа",
+      "Proprietà del disegno",
       "Zeichnungseigenschaften",
       "图纸属性" };
-    public static readonly string[] CustomProperties = { 
-      "Custom", 
-      "Пользовательские", 
-      "Personalizzate", 
+    public static readonly string[] CustomProperties = {
+      "Custom",
+      "Пользовательские",
+      "Personalizzate",
       "Benutzerspezifisch",
       "习惯" };
 
     // ========================================================================================================
     // DTPart  ================================================================================================
-    public static readonly string[] Part = { 
-      "Part", 
-      "Деталь", 
-      "Dettaglio", 
+    public static readonly string[] Part = {
+      "Part",
+      "Деталь",
+      "Dettaglio",
       "Detail",
       "部分" };
-    public static readonly string[] Details = { 
-      "Details", 
-      "Детали", 
-      "Dettagli", 
+    public static readonly string[] Details = {
+      "Details",
+      "Детали",
+      "Dettagli",
       "Einzelheiten",
       "细节数量"};
-    public static readonly string[] Row = { 
-      "#", 
-      "№", 
-      "#", 
+    public static readonly string[] Row = {
+      "#",
+      "№",
+      "#",
       "#",
       "#" };
-    public static readonly string[] Quantity = { 
-      "Quantity", 
-      "Количество", 
-      "Quantità", 
+    public static readonly string[] Quantity = {
+      "Quantity",
+      "Количество",
+      "Quantità",
       "Menge",
       "数量" };
-    public static readonly string[] RightQuantity = { 
-      "Right Quantity", 
-      "Кол-во прямых", 
-      "Numero di corretti", 
+    public static readonly string[] RightQuantity = {
+      "Right Quantity",
+      "Кол-во прямых",
+      "Numero di corretti",
       "Anzahl der Richtigen",
       "正确的数量" };
-    public static readonly string[] MirrorQuantity = { 
-      "Mirror Quantity", 
-      "Кол-во зеркальных", 
-      "Numero di specchio", 
+    public static readonly string[] MirrorQuantity = {
+      "Mirror Quantity",
+      "Кол-во зеркальных",
+      "Numero di specchio",
       "Anzahl der Gespiegelten",
       "镜像数量" };
-    public static readonly string[] QuantityPerAssembly = { 
-      "Quantity per assembly", 
-      "Кол-во в сборке", 
-      "Quantità per assemblaggio", 
+    public static readonly string[] QuantityPerAssembly = {
+      "Quantity per assembly",
+      "Кол-во в сборке",
+      "Quantità per assemblaggio",
       "Menge pro Baugruppe",
       "每个组件的数量" };
-    public static readonly string[] RightMirror = { 
-      "Right+Mirror", 
-      "Кол-во шт+Зеркальных", 
-      "Corretti+Specchio", 
+    public static readonly string[] RightMirror = {
+      "Right+Mirror",
+      "Кол-во шт+Зеркальных",
+      "Corretti+Specchio",
       "Richtige+Gespiegelte",
       "件+镜像" };
-    public static readonly string[] Pcs = { 
-      "pcs", 
-      "шт.", 
-      "pezzi", 
+    public static readonly string[] Pcs = {
+      "pcs",
+      "шт.",
+      "pezzi",
       "Stck",
       "件" };
-    public static readonly string[] MirrorPcs = { 
-      "mirror", 
-      "зерк.", 
-      "specchio", 
+    public static readonly string[] MirrorPcs = {
+      "mirror",
+      "зерк.",
+      "specchio",
       "Spiegel",
       "镜像" };
 
     // =======================================================================================================
     // Leader ================================================================================================
-    public static readonly string[] Leader = { 
-      "Leader", 
-      "Выноска", 
-      "Direttrice", 
+    public static readonly string[] Leader = {
+      "Leader",
+      "Выноска",
+      "Direttrice",
       "Führungslinie",
       "多重引线" };
-    public static readonly string[] Leaders = { 
-      "Leaders", 
-      "Выноски", 
-      "Direttrice", 
+    public static readonly string[] Leaders = {
+      "Leaders",
+      "Выноски",
+      "Direttrice",
       "Führungslinie",
       "多重引线" };
-    public static readonly string[] Format = { 
-      "Format", 
-      "Формат", 
-      "Formato", 
+    public static readonly string[] Format = {
+      "Format",
+      "Формат",
+      "Formato",
       "Format",
       "格式" };
     public static readonly string[] FormatTip = {
@@ -2105,17 +2129,17 @@ namespace AVC
 
     // ================================================================================================================
     // Material, CoverId ================================================================================================
-    public static readonly string[] Material = { 
-      "Material", 
-      "Материал", 
-      "Materiale", 
-      "Material", 
+    public static readonly string[] Material = {
+      "Material",
+      "Материал",
+      "Materiale",
+      "Material",
       "材料" };
-    public static readonly string[] Materials = { 
-      "Materials", 
-      "Материалы", 
-      "Materiale", 
-      "Material" , 
+    public static readonly string[] Materials = {
+      "Materials",
+      "Материалы",
+      "Materiale",
+      "Material" ,
       "材料" };
     public static readonly string[] MaterialTip = {
       "The name of the rendering material that AVC plugins use as the material from which the part is made.",
@@ -2123,40 +2147,40 @@ namespace AVC
       "Il nome del materiale di rendering utilizzato dai plugin AVC come materiale da cui è realizzata la parte.",
       "Der Name des Rendering-Materials, das AVC-Plugins als Material verwenden, aus dem das Teil erstellt wird.",
       "AVC 插件用作制作零件的材质的渲染材质的名称。" };
-    public static readonly string[] Cover = { 
-      "Cover", 
-      "Покрытие", 
-      "Rivestimento", 
-      "Belag", 
+    public static readonly string[] Cover = {
+      "Cover",
+      "Покрытие",
+      "Rivestimento",
+      "Belag",
       "覆盖" };
-    public static readonly string[] Covers = { 
-      "Covers", 
-      "Покрытия", 
-      "Rivestimenti", 
-      "Belag", 
+    public static readonly string[] Covers = {
+      "Covers",
+      "Покрытия",
+      "Rivestimenti",
+      "Belag",
       "覆盖" };
-    public static readonly string[] MaterialId = { 
+    public static readonly string[] MaterialId = {
       "Material ID",
-      "Материал - ID", 
-      "Materiale ID", 
-      "Material ID", 
+      "Материал - ID",
+      "Materiale ID",
+      "Material ID",
       "材料 ID" };
-    public static readonly string[] MaterialHandle = { 
-      "Material Handle", 
-      "Материал - Хэндл", 
-      "Materiale Handle", 
-      "Material Handle", 
+    public static readonly string[] MaterialHandle = {
+      "Material Handle",
+      "Материал - Хэндл",
+      "Materiale Handle",
+      "Material Handle",
       "材料 Handle" };
-    public static readonly string[] Article = { 
-      "Article", 
-      "Артикул", 
-      "Articolo", 
+    public static readonly string[] Article = {
+      "Article",
+      "Артикул",
+      "Articolo",
       "Code",
       "代码" };
-    public static readonly string[] MaterialArticle = { 
-      "Material Article", 
-      "Материал - Артикул", 
-      "Materiale - Articolo", 
+    public static readonly string[] MaterialArticle = {
+      "Material Article",
+      "Материал - Артикул",
+      "Materiale - Articolo",
       "Materialcode",
       "材料-代码" };
     public static readonly string[] ArticleTip = {
@@ -2185,10 +2209,10 @@ namespace AVC
          "对于所有图纸，代码必须是唯一的。\r\n" +
          "并且应该在不同的图纸中匹配相同的材料，\r\n" +
          "即使你对材料的名称有一点误解。" };
-    public static readonly string[] MaterialColor = { 
-      "Material Color", 
-      "Материал - Цвет", 
-      "Materiale - Colore", 
+    public static readonly string[] MaterialColor = {
+      "Material Color",
+      "Материал - Цвет",
+      "Materiale - Colore",
       "Materialfarbe" ,
       "材料-颜色"};
     public static readonly string[] MaterialColorTip = {
@@ -2223,16 +2247,16 @@ namespace AVC
          "如果不是继承自对象（不是 ByObject）。\r\n" +
          "更改材质时可以为实体和曲面分配相同的颜色（请参阅常规设置）\r\n" +
          "然后你会在任何视觉风格中看到这种颜色。" };
-    public static readonly string[] Density = { 
-      "Density", 
-      "Плотность", 
-      "Densità", 
+    public static readonly string[] Density = {
+      "Density",
+      "Плотность",
+      "Densità",
       "Dichte",
       "密度" };
-    public static readonly string[] MaterialDensity = { 
-      "Material Density", 
-      "Материал - Плотность", 
-      "Materiale - Densità", 
+    public static readonly string[] MaterialDensity = {
+      "Material Density",
+      "Материал - Плотность",
+      "Materiale - Densità",
       "Materialdichte",
       "材料-密度" };
     public static readonly string[] DensityTip = {
@@ -2261,22 +2285,22 @@ namespace AVC
          "在毫米单位图形中你需要设置一立方米材料的重量。\r\n" +
          "英寸，一立方英寸的重量。\r\n" +
          "此字段中内置了计算数学表达式的计算器。" };
-    public static readonly string[] MaterialDescription = { 
-      "Material Description", 
-      "Материал - Описание", 
-      "Materiale - Descrizione", 
+    public static readonly string[] MaterialDescription = {
+      "Material Description",
+      "Материал - Описание",
+      "Materiale - Descrizione",
       "Materialbeschreibung" ,
       "材料-描述"};
-    public static readonly string[] Index = { 
-      "Index", 
-      "Индекс", 
-      "Indice", 
+    public static readonly string[] Index = {
+      "Index",
+      "Индекс",
+      "Indice",
       "Index" ,
       "索引"};
-    public static readonly string[] MaterialIndex = { 
-      "Material #", 
-      "Материал №", 
-      "Materiale #", 
+    public static readonly string[] MaterialIndex = {
+      "Material #",
+      "Материал №",
+      "Materiale #",
       "Material #",
       "材料-#" };
     public static readonly string[] MaterialIndexTip = {
@@ -2295,16 +2319,16 @@ namespace AVC
       "引线和表格的简要名称或材料编号。\r\n" +
          "为避免混淆，索引不应在同一图形中重复。\r\n" +
          "程序本身可以提供材料索引。" };
-    public static readonly string[] Grain = { 
-      "Grain|Texture", 
+    public static readonly string[] Grain = {
+      "Grain|Texture",
       "Зернистость|Текстура",
       "Grano|Struttura",
       "Maserung|Textur",
       "粒度|质地" };
-    public static readonly string[] MaterialGrain = { 
-      "Material Grain", 
-      "Материал - С текстурой", 
-      "Materiale - Struttura", 
+    public static readonly string[] MaterialGrain = {
+      "Material Grain",
+      "Материал - С текстурой",
+      "Materiale - Struttura",
       "Material - hat Textur",
       "材料-粮食" };
     public static readonly string[] GrainTip = {
@@ -2318,10 +2342,10 @@ namespace AVC
         "und bei Teilen ist es wünschenswert, die Richtung dieser Textur anzugeben.",
       "该材料在某个方向（通常沿着板材）具有明显的表面图案（颗粒/纹理），\r\n" +
         "对于零件来说，需要指示该纹理的方向。"};
-    public static readonly string[] MaterialLength = { 
-      "Material Length", 
-      "Материал - Длина", 
-      "Materiale - Lunghezza", 
+    public static readonly string[] MaterialLength = {
+      "Material Length",
+      "Материал - Длина",
+      "Materiale - Lunghezza",
       "Materiallänge",
       "材料-长度" };
     public static readonly string[] MaterialLengthTip = {
@@ -2356,22 +2380,22 @@ namespace AVC
          "名称必须是唯一的。\r\n" +
          "名称中不允许出现以下字符\r\n" +
          ";,=\\|/:*?`\"<>" };
-    public static readonly string[] MaterialPiece = { 
-      "Material Piece", 
-      "Материал - Кусок", 
-      "Material - Pezzo", 
+    public static readonly string[] MaterialPiece = {
+      "Material Piece",
+      "Материал - Кусок",
+      "Material - Pezzo",
       "Material - Stück",
       "材料-片" };
-    public static readonly string[] Price = { 
-      "Price", 
-      "Цена", 
-      "Prezzo", 
+    public static readonly string[] Price = {
+      "Price",
+      "Цена",
+      "Prezzo",
       "Preis",
       "价格" };
-    public static readonly string[] MaterialPrice = { 
-      "Material Price", 
-      "Материал - Цена", 
-      "Materiale - Prezzo", 
+    public static readonly string[] MaterialPrice = {
+      "Material Price",
+      "Материал - Цена",
+      "Materiale - Prezzo",
       "Materialpreis",
       "材料-价格" };
     public static readonly string[] PriceTip = {
@@ -2405,17 +2429,17 @@ namespace AVC
          "以英寸为单位，一平方英寸的成本。\r\n" +
          "对于线性材料（棒）和封边 - 使用每线性米或线性英寸的成本。\r\n" +
          "该领域内置了用于计算数学表达式的计算器。" };
-    public static readonly string[] MaterialSize = { 
-      "Size: Length x Width x Thickness", 
-      "Размер: Длина х Ширина х Толщина", 
-      "Dimensioni: lunghezza x larghezza x spessore", 
+    public static readonly string[] MaterialSize = {
+      "Size: Length x Width x Thickness",
+      "Размер: Длина х Ширина х Толщина",
+      "Dimensioni: lunghezza x larghezza x spessore",
       "Größe: Länge x Breite x Dicke",
       "尺寸：长x宽x厚"};
-    public static readonly string[] MaterialThickness = { 
-      "Material Thickness", 
-      "Материал - Толщина", 
-      "Materiale - Spessore", 
-      "Materialstärke", 
+    public static readonly string[] MaterialThickness = {
+      "Material Thickness",
+      "Материал - Толщина",
+      "Materiale - Spessore",
+      "Materialstärke",
       "材料-厚度" };
     public static readonly string[] MaterialThicknessTip = {
       "Material thickness.\r\n" +
@@ -2428,22 +2452,22 @@ namespace AVC
         "Das Feld verfügt über einen integrierten Taschenrechner zur Berechnung mathematischer Ausdrücke.",
       "材料厚度。\r\n" +
          "该领域有一个用于计算数学表达式的内置计算器。"};
-    public static readonly string[] MaterialUnits = { 
-      "Material Units", 
-      "Материал - Единицы", 
-      "Materiale - Unità", 
+    public static readonly string[] MaterialUnits = {
+      "Material Units",
+      "Материал - Единицы",
+      "Materiale - Unità",
       "Material - Einheiten",
       "材料-单位" };
-    public static readonly string[] Use = { 
-      "Use", 
-      "Использование", 
-      "Utilizzare", 
-      "Verwenden", 
+    public static readonly string[] Use = {
+      "Use",
+      "Использование",
+      "Utilizzare",
+      "Verwenden",
       "用法" };
-    public static readonly string[] MaterialUse = { 
-      "Material Use", 
-      "Материал - Использование", 
-      "Materiale - Utilizzare", 
+    public static readonly string[] MaterialUse = {
+      "Material Use",
+      "Материал - Использование",
+      "Materiale - Utilizzare",
       "Material verwenden",
       "材料-用法" };
     public static readonly string[] UseTip = {
@@ -2452,10 +2476,10 @@ namespace AVC
       "Lo scopo di questo tipo di materiale",
       "Der Zweck dieser Art von Material",
       "此类材料的用途" };
-    public static readonly string[] MaterialWidth = { 
-      "Material Width", 
-      "Материал - Ширина", 
-      "Materiale - Larghezza", 
+    public static readonly string[] MaterialWidth = {
+      "Material Width",
+      "Материал - Ширина",
+      "Materiale - Larghezza",
       "Materialbreite",
       "材料-宽度" };
     public static readonly string[] MaterialWidthTip = {
@@ -2471,109 +2495,109 @@ namespace AVC
          "该领域有一个用于计算数学表达式的内置计算器。"};
 
     // MatUse
-    public static readonly string[] UseVolume = { 
-      "Volume", 
-      "Массив", 
-      "Volume", 
+    public static readonly string[] UseVolume = {
+      "Volume",
+      "Массив",
+      "Volume",
       "Volumen" ,
       "圈材"};
-    public static readonly string[] Sheet = { 
-      "Sheet", 
-      "Лист", 
-      "Foglio", 
+    public static readonly string[] Sheet = {
+      "Sheet",
+      "Лист",
+      "Foglio",
       "Blatt",
       "板材" };
-    public static readonly string[] Rod = { 
-      "Rod", 
-      "Погонаж", 
-      "Asta", 
+    public static readonly string[] Rod = {
+      "Rod",
+      "Погонаж",
+      "Asta",
       "Stange",
       "线材" };
-    public static readonly string[] Banding = { 
-      "Banding", 
+    public static readonly string[] Banding = {
+      "Banding",
       "Кромка",
-      "Bordo", 
+      "Bordo",
       "Kante",
       "封边" };
-    public static readonly string[] Unknown = { 
-      "Unknown", 
-      "Неизвестно", 
-      "Sconosciuto", 
+    public static readonly string[] Unknown = {
+      "Unknown",
+      "Неизвестно",
+      "Sconosciuto",
       "Unbekannt",
       "未知" };
 
     // ================================================================================================
     // MatQuantity  ================================================================================================
-    public static readonly string[] Cost = { 
-      "Cost", 
-      "Стоимость", 
-      "Costo", 
+    public static readonly string[] Cost = {
+      "Cost",
+      "Стоимость",
+      "Costo",
       "Kosten",
       "价格" };
-    public static readonly string[] Pieces = { 
-      "Pieces", 
-      "Кусков", 
-      "Pezzi", 
+    public static readonly string[] Pieces = {
+      "Pieces",
+      "Кусков",
+      "Pezzi",
       "Stücke",
       "件" };
-    public static readonly string[] Weight = { 
-      "Weight", 
-      "Вес", 
-      "Peso", 
+    public static readonly string[] Weight = {
+      "Weight",
+      "Вес",
+      "Peso",
       "Gewicht",
       "重量" };
 
     // ================================================================================================
     // Parameter   ================================================================================================
-    public static readonly string[] Parameter = { 
-      "Parameter", 
-      "Параметр", 
-      "Parametro", 
+    public static readonly string[] Parameter = {
+      "Parameter",
+      "Параметр",
+      "Parametro",
       "Parameter",
       "范围" };
-    public static readonly string[] Parameters = { 
-      "Parameters", 
-      "Параметры", 
-      "Parametri", 
+    public static readonly string[] Parameters = {
+      "Parameters",
+      "Параметры",
+      "Parametri",
       "Parameter",
       "范围" };
-    public static readonly string[] Value = { 
-      "Value", 
-      "Значение", 
-      "Valore", 
+    public static readonly string[] Value = {
+      "Value",
+      "Значение",
+      "Valore",
       "Wert",
       "价值" };
-    public static readonly string[] ReadOnly = { 
-      "Read Only", 
-      "Только чтение", 
-      "Sola lettura", 
+    public static readonly string[] ReadOnly = {
+      "Read Only",
+      "Только чтение",
+      "Sola lettura",
       "Nur lesen",
       "只读" };
-    public static readonly string[] DataType = { 
-      "Data Type", 
-      "Тип данных", 
-      "Tipo di dati", 
+    public static readonly string[] DataType = {
+      "Data Type",
+      "Тип данных",
+      "Tipo di dati",
       "Datentyp",
       "数据类型"};
 
     // ================================================================================================
     // Polyline   ================================================================================================
-    public static readonly string[] Polyline = { 
-      "Polyline", 
-      "Полилиния", 
-      "Polilinea", 
+    public static readonly string[] Polyline = {
+      "Polyline",
+      "Полилиния",
+      "Polilinea",
       "Polylinie",
       "多段线" };
-    public static readonly string[] Polylines = { 
-      "Polylines", 
-      "Полилинии", 
-      "Polilinee", 
+    public static readonly string[] Polylines = {
+      "Polylines",
+      "Полилинии",
+      "Polilinee",
       "Polylinien",
       "多段线" };
-    public static readonly string[] Bypass = { 
-      "Bypass", 
-      "Обход", 
-      "Circonvallazione", 
+    public static readonly string[] Bypass = {
+      "Bypass",
+      "Обход",
+      "Circonvallazione",
       "Bypass",
       "旁路" };
     public static readonly string[] BypassTip = {
@@ -2582,22 +2606,22 @@ namespace AVC
       "Direzione ad anello chiuso",
       "Closed-Loop-Richtung",
       "闭合方向" };
-    public static readonly string[] CW = { 
-      "Clockwise", 
-      "По часовой", 
-      "Senso orario", 
+    public static readonly string[] CW = {
+      "Clockwise",
+      "По часовой",
+      "Senso orario",
       "Im Uhrzeigersinn",
       "顺时针" };
-    public static readonly string[] CCW = { 
-      "Counter-clockwise", 
-      "Против часовой", 
-      "Antiorario", 
+    public static readonly string[] CCW = {
+      "Counter-clockwise",
+      "Против часовой",
+      "Antiorario",
       "Gegen den Uhrzeigersinn",
       "逆时针" };
-    public static readonly string[] Closed = { 
-      "Closed", 
-      "Замкнута", 
-      "Chiuso", 
+    public static readonly string[] Closed = {
+      "Closed",
+      "Замкнута",
+      "Chiuso",
       "Geschlossen",
       "关闭" };
     public static readonly string[] ClosedTip = {
@@ -2606,37 +2630,37 @@ namespace AVC
       "L'inizio e la fine sono gli stessi e viene impostata un'etichetta chiusa",
       "Anfang und Ende sind gleich und es wird ein geschlossenes Label gesetzt" ,
       "开始和结束相同，并且设置了“关闭”标志"};
-    public static readonly string[] NumberOfSegments = { 
-      "Segments", 
-      "Сегментов", 
-      "Segmenti", 
+    public static readonly string[] NumberOfSegments = {
+      "Segments",
+      "Сегментов",
+      "Segmenti",
       "Segmente" ,
       "分段"};
-    public static readonly string[] NumberOfSegmentsTip = { 
-      "Number of segments", 
-      "Число сегментов", 
-      "Numero di segmenti", 
+    public static readonly string[] NumberOfSegmentsTip = {
+      "Number of segments",
+      "Число сегментов",
+      "Numero di segmenti",
       "Anzahl der Segmente",
       "段数" };
 
     // ================================================================================================
     // Solid, Solid     // ================================================================================================
-    public static readonly string[] Solid = { 
-      "Solid", 
-      "3D-тело", 
-      "Solido 3D", 
+    public static readonly string[] Solid = {
+      "Solid",
+      "3D-тело",
+      "Solido 3D",
       "Volumenkörper",
       "三维实体" };
-    public static readonly string[] Solids = { 
-      "Solids", 
-      "3D-тела", 
-      "Solidi 3D", 
+    public static readonly string[] Solids = {
+      "Solids",
+      "3D-тела",
+      "Solidi 3D",
       "Volumenkörper",
       "三维实体" };
-    public static readonly string[] Metric = { 
-      "Metric", 
-      "Метрика", 
-      "Metrico", 
+    public static readonly string[] Metric = {
+      "Metric",
+      "Метрика",
+      "Metrico",
       "Metrisch" ,
       "公制"};
     //public static readonly string[] Calculations = {
@@ -2644,22 +2668,22 @@ namespace AVC
     //"Вычислено",
     //"Calcolato",
     //"Berechnungen" };
-    public static readonly string[] MeteredSolid = { 
-      "Metered Solid", 
-      "Обмеренный солид", 
-      "Solido misurato", 
+    public static readonly string[] MeteredSolid = {
+      "Metered Solid",
+      "Обмеренный солид",
+      "Solido misurato",
       "Volumenkörper dosiert",
       "三维实体数据" };
-    public static readonly string[] MeteredSolids = { 
-      "Metered Solids", 
-      "Обмеренные солиды", 
-      "Solido misurato", 
+    public static readonly string[] MeteredSolids = {
+      "Metered Solids",
+      "Обмеренные солиды",
+      "Solido misurato",
       "Volumenkörper dosiert",
       "三维实体数据" };
-    public static readonly string[] Asymmetry = { 
-      "Asymmetry", 
-      "Асимметрия", 
-      "Asimmetria", 
+    public static readonly string[] Asymmetry = {
+      "Asymmetry",
+      "Асимметрия",
+      "Asimmetria",
       "Asymmetrie",
       "不对称" };
     public static readonly string[] AsymmetryTip = {
@@ -2674,10 +2698,10 @@ namespace AVC
         "und andere Unterschiede von Körpern mit demselben Volumen zu identifizieren.",
       "指示不对称：中心到质心的距离。\r\n" +
          "它允许您识别偏移孔等。" };
-    public static readonly string[] AsymVector = { 
-      "Asym.Vector", 
-      "Асим.Вектор", 
-      "Asim.Vettore", 
+    public static readonly string[] AsymVector = {
+      "Asym.Vector",
+      "Асим.Вектор",
+      "Asim.Vettore",
       "Asym.Vektor",
       "不对称向量" };
     public static readonly string[] AsymVectorTip = {
@@ -2696,16 +2720,16 @@ namespace AVC
       "不对称向量。\r\n" +
          "显示重心沿三个轴移动的方向。\r\n" +
          "用于计算零件之间的镜面反射度。" };
-    public static readonly string[] Bandings = { 
-      "Edge Bandings", 
-      "Кромки на торцы", 
-      "Materiale del bordo", 
+    public static readonly string[] Bandings = {
+      "Edge Bandings",
+      "Кромки на торцы",
+      "Materiale del bordo",
       "Kantenanleimungen",
       "封边条" };
-    public static readonly string[] Box = { 
-      "Box ", 
-      "Бокс ", 
-      "Parallelepipedo ", 
+    public static readonly string[] Box = {
+      "Box ",
+      "Бокс ",
+      "Parallelepipedo ",
       "Quader ",
       "盒子 " };
     public static readonly string[] CostTip = {
@@ -2719,22 +2743,22 @@ namespace AVC
         "Außerdem werden die Kosten für Beschichtungen und Kanten zum Preis hinzugerechnet.",
       "材料成本明细。\r\n" +
          "此外，价格中还会增加面和封边条的成本。" };
-    public static readonly string[] Edge = { 
-      "Edge", 
-      "Торец", 
-      "Bordo", 
+    public static readonly string[] Edge = {
+      "Edge",
+      "Торец",
+      "Bordo",
       "Kante",
       "边" };
-    public static readonly string[] Face = { 
-      "Face", 
-      "Грань", 
-      "Faccia", 
+    public static readonly string[] Face = {
+      "Face",
+      "Грань",
+      "Faccia",
       "Fläche",
       "面" };
-    public static readonly string[] FaceCount = { 
-      "Faces", 
-      "Граней", 
-      "Facce", 
+    public static readonly string[] FaceCount = {
+      "Faces",
+      "Граней",
+      "Facce",
       "Gesichter",
       "面" };
     public static readonly string[] FaceCountTip = {
@@ -2743,11 +2767,11 @@ namespace AVC
       "Numero di facce solide",
       "Die Anzahl der Flächen des Volumenkörpers.",
       "三维实体的面数" };
-    public static readonly string[] LengthMM = { 
-      "Length,mm", 
-      "Длина,мм", 
-      "Lunghezza,mm", 
-      "Länge,mm", 
+    public static readonly string[] LengthMM = {
+      "Length,mm",
+      "Длина,мм",
+      "Lunghezza,mm",
+      "Länge,mm",
       "长度 mm",
       "长度，毫米" };
     public static readonly string[] SolidMaterialTip = {
@@ -2766,10 +2790,10 @@ namespace AVC
       "制造零件的材料。\r\n" +
          "您可以写任何材料的名称。程序会在图纸或模板中找到它。\r\n" +
          "或创建新材料。输入新材料后按回车键。" };
-    public static readonly string[] MeasurementProcess = { 
-      "Measure", 
-      "Обмер", 
-      "Misurati", 
+    public static readonly string[] MeasurementProcess = {
+      "Measure",
+      "Обмер",
+      "Misurati",
       "Messung",
       "措施" };
     //public static readonly string[] MetricBlocked = { 
@@ -2817,16 +2841,16 @@ namespace AVC
          "通过将 Mirror = YES 属性设置为它们。\r\n" +
          "那么LAY命令就可以在part header中分别写入'right'和'mirror'部分的个数了。\r\n" +
          "您可以配置程序，以便单独布置镜像详细信息。" };
-    public static readonly string[] NotBox = { 
-      "Not box ", 
-      "Не бокс ", 
+    public static readonly string[] NotBox = {
+      "Not box ",
+      "Не бокс ",
       "Nessun parallelepipedo ",
       "Nicht Quader ",
       "不是盒子 " };
-    public static readonly string[] Technology = { 
-      "Technology", 
-      "Технология", 
-      "Tecnologia", 
+    public static readonly string[] Technology = {
+      "Technology",
+      "Технология",
+      "Tecnologia",
       "Technologie",
       "工艺" };
     public static readonly string[] TechnologyTip = {
@@ -2835,11 +2859,11 @@ namespace AVC
       "Tecnologia, metodo di fabbricazione di una parte.",
       "Technologie, Verfahren zur Herstellung eines Teils.",
       "零件制造方法" };
-    public static readonly string[] Thickness = { 
-      "Thickness", 
-      "Толщина", 
-      "Spessore", 
-      "Dicke", 
+    public static readonly string[] Thickness = {
+      "Thickness",
+      "Толщина",
+      "Spessore",
+      "Dicke",
       "厚度" };
     public static readonly string[] ThicknessTip = {
       "Thickness = minimum of the three overall dimensions",
@@ -2847,23 +2871,23 @@ namespace AVC
       "La più piccola delle tre dimensioni complessive della scatola in cui si inserisce il solido.",
       "Die kleinste der drei Gesamtabmessungen der Kiste, in die der Volumenkörper passt.",
       "厚度 = 三个整体尺寸中的最小值"};
-    public static readonly string[] ThicknessMM = { 
-      "Thickness,mm", 
-      "Толщина,мм", 
-      "Spessore,mm", 
-      "Dicke,mm", 
+    public static readonly string[] ThicknessMM = {
+      "Thickness,mm",
+      "Толщина,мм",
+      "Spessore,mm",
+      "Dicke,mm",
       "厚度 mm" };
-    public static readonly string[] TwoSideProcessing = { 
-      "Double-sided processing ", 
-      "Двусторонняя обработка ", 
-      "lavorazione su due lati ", 
+    public static readonly string[] TwoSideProcessing = {
+      "Double-sided processing ",
+      "Двусторонняя обработка ",
+      "lavorazione su due lati ",
       "Doppelseitige Bearbeitung ",
       "双面加工"};
-    public static readonly string[] Volume = { 
-      "Volume", 
-      "Объем", 
-      "Volume", 
-      "Volumen", 
+    public static readonly string[] Volume = {
+      "Volume",
+      "Объем",
+      "Volume",
+      "Volumen",
       "体积" };
     public static readonly string[] VolumeTip = {
       "Real volume of solid. Not product dimensions",
@@ -2882,11 +2906,11 @@ namespace AVC
         "dann berechnet das Programm das Gewicht als Produkt aus Dichte und Volumen.",
       "如果为零件分配了材料并为该材料设置了密度，\r\n" +
          "程序会将重量计算为密度和体积的乘积"};
-    public static readonly string[] Width = { 
-      "Width", 
-      "Ширина", 
-      "Larghezza", 
-      "Breite", 
+    public static readonly string[] Width = {
+      "Width",
+      "Ширина",
+      "Larghezza",
+      "Breite",
       "宽度" };
     public static readonly string[] WidthTip = {
       "The second (average) of the three overall dimensions of the box into which the solid fits",
@@ -2894,22 +2918,22 @@ namespace AVC
       "La media delle tre dimensioni complessive della scatola in cui si inserisce il solido",
       "Der Durchschnitt der drei Gesamtabmessungen des Kastens, in den der Volumenkörper passt",
       "三维实体包围盒的三个整体尺寸中的第二个（平均值）"};
-    public static readonly string[] WidthMM = { 
-      "Width,mm", 
-      "Ширина,мм", 
-      "Larghezza,mm", 
-      "Breite,mm", 
+    public static readonly string[] WidthMM = {
+      "Width,mm",
+      "Ширина,мм",
+      "Larghezza,mm",
+      "Breite,mm",
       "宽度 mm" };
-    public static readonly string[] Slopes = { 
-      "Slope ends", 
-      "Наклоны торцев", 
-      "La pendenza delle estremità", 
+    public static readonly string[] Slopes = {
+      "Slope ends",
+      "Наклоны торцев",
+      "La pendenza delle estremità",
       "Neigung der Enden",
       "斜坡末端" };
-    public static readonly string[] Sweep = { 
-      "Sweep", 
-      "Развертка", 
-      "Scansione", 
+    public static readonly string[] Sweep = {
+      "Sweep",
+      "Развертка",
+      "Scansione",
       "Sweep",
       "扫掠" };
     public static readonly string[] SweepTip = {
@@ -2936,10 +2960,10 @@ namespace AVC
          "就好像它是由一个细长的矩形制成的，并且在一个平面上平滑地（没有断裂）弯曲。\r\n" +
          "这种测量适用于在圆柱体上拉伸的皮肤\r\n" +
          "或组合的圆柱面和平面没有断裂。" };
-    public static readonly string[] Texture = { 
-      "Texture", 
-      "Текстура", 
-      "Struttura", 
+    public static readonly string[] Texture = {
+      "Texture",
+      "Текстура",
+      "Struttura",
       "Textur",
       "纹理方向" };
     public static readonly string[] TextureTip = {
@@ -2961,61 +2985,61 @@ namespace AVC
          "当木纹方向在长度时 - 使用值Along。\r\n" +
          "当木纹方向在宽度时– 使用值Across。\r\n" +
          "目前，这个设置是纯虚拟的，不影响材质的渲染。" };
-    public static readonly string[] Texture1 = { 
-      "Texture 1", 
-      "Есть текстура", 
-      "Struttura 1", 
+    public static readonly string[] Texture1 = {
+      "Texture 1",
+      "Есть текстура",
+      "Struttura 1",
       "Textur 1",
       "纹理 1" };
-    public static readonly string[] Texture2 = { 
-      "Texture 2", 
-      "Текстура 2", 
-      "Struttura 2", 
+    public static readonly string[] Texture2 = {
+      "Texture 2",
+      "Текстура 2",
+      "Struttura 2",
       "Textur 2",
       "纹理 2" };
-    public static readonly string[] TextureStar = { 
-      "Texture *", 
-      "Текстура *", 
-      "Struttura *", 
+    public static readonly string[] TextureStar = {
+      "Texture *",
+      "Текстура *",
+      "Struttura *",
       "Textur *",
       "纹理 *" };
-    public static readonly string[] Letter = { 
-      "Letter", 
-      "Символ", 
-      "Lettera", 
-      "Buchstabe", 
+    public static readonly string[] Letter = {
+      "Letter",
+      "Символ",
+      "Lettera",
+      "Buchstabe",
       "信" };
 
     // ================================================================================================
     // Solid Face  ================================================================================================
-    public static readonly string[] Solid_Face = { 
-      "Solid & Face", 
-      "Солид и Поверхность", 
-      "Solido e Faccia", 
+    public static readonly string[] Solid_Face = {
+      "Solid & Face",
+      "Солид и Поверхность",
+      "Solido e Faccia",
       "Volumenkörper & Fläche",
       "实体和面" };
-    public static readonly string[] Solids_Faces = { 
-      "Solids & Faces", 
-      "Солиды и Поверхности", 
-      "Solido e Facce", 
+    public static readonly string[] Solids_Faces = {
+      "Solids & Faces",
+      "Солиды и Поверхности",
+      "Solido e Facce",
       "Volumenkörper & Flächen",
       "实体和面" };
-    public static readonly string[] SelectedFace = { 
-      "Selected Face", 
-      "Выбранная поверхность", 
-      "Faccia selezionata", 
+    public static readonly string[] SelectedFace = {
+      "Selected Face",
+      "Выбранная поверхность",
+      "Faccia selezionata",
       "Ausgewählte Fläche",
       "选定的面" };
-    public static readonly string[] All = { 
-      "All", 
-      "Все", 
-      "Tutti", 
+    public static readonly string[] All = {
+      "All",
+      "Все",
+      "Tutti",
       "Alle",
       "全部" };
-    public static readonly string[] FaceIntId = { 
-      "Id", 
+    public static readonly string[] FaceIntId = {
+      "Id",
       "№",
-      "ID", 
+      "ID",
       "Ausweis",
       "Id" };
     public static readonly string[] FaceIntIdTip = {
@@ -3046,60 +3070,60 @@ namespace AVC
       "涂层表面材料。\r\n" +
          "油漆、胶片、层压板。\r\n" +
          "输入任何文本。程序可以创建新材料。" };
-    public static readonly string[] Front = { 
-      "Front", 
-      "Фасад", 
-      "Facciata", 
-      "Fassade", 
+    public static readonly string[] Front = {
+      "Front",
+      "Фасад",
+      "Facciata",
+      "Fassade",
       "正面" };
-    public static readonly string[] Rear = { 
-      "Rear", 
-      "Тыл", 
-      "Posteriore", 
-      "Hinten", 
+    public static readonly string[] Rear = {
+      "Rear",
+      "Тыл",
+      "Posteriore",
+      "Hinten",
       "反面" };
-    public static readonly string[] LeftLetter = { 
-      "L", 
-      "Л", 
-      "S", 
-      "li", 
+    public static readonly string[] LeftLetter = {
+      "L",
+      "Л",
+      "S",
+      "li",
       "左" };
-    public static readonly string[] TopLetter = { 
-      "T", 
-      "В", 
-      "A", 
-      "hi", 
+    public static readonly string[] TopLetter = {
+      "T",
+      "В",
+      "A",
+      "hi",
       "上" };
-    public static readonly string[] RightLetter = { 
-      "R", 
-      "П", 
-      "D", 
-      "re", 
+    public static readonly string[] RightLetter = {
+      "R",
+      "П",
+      "D",
+      "re",
       "右" };
-    public static readonly string[] BottomLetter = { 
-      "B", 
-      "Н", 
-      "B", 
-      "vo", 
+    public static readonly string[] BottomLetter = {
+      "B",
+      "Н",
+      "B",
+      "vo",
       "下" };
-    public static readonly string[] LengthLetter = { 
-      "Len", 
-      "Д", 
-      "Lun", 
-      "lä", 
+    public static readonly string[] LengthLetter = {
+      "Len",
+      "Д",
+      "Lun",
+      "lä",
       "长" };
     public static readonly string[] WidthLetter = {
-      "W", 
-      "Ш", 
+      "W",
+      "Ш",
       "Lar",
       "br",
       "宽" };
 
-    public static readonly string[] FaceShape = { 
-      "Shape", 
-      "Форма", 
-      "Forma", 
-      "Gestalten", 
+    public static readonly string[] FaceShape = {
+      "Shape",
+      "Форма",
+      "Forma",
+      "Gestalten",
       "形状" };
     public static readonly string[] FaceShapeTip = {
       "The geometric shape of the solid surface. Only planes can be used as front side",
@@ -3107,10 +3131,10 @@ namespace AVC
       "La forma geometrica della superficie solida. Solo gli aerei possono essere utilizzati come lato anteriore",
       "Die geometrische Form der festen Oberfläche. Als Vorderseite können nur Ebenen verwendet werden",
       "三维实体表面的几何形状。 只有平面可以用作正面" };
-    public static readonly string[] FaceFrontColorMark = { 
-      "Marked as front", 
-      "Метка фасада", 
-      "Facciata", 
+    public static readonly string[] FaceFrontColorMark = {
+      "Marked as front",
+      "Метка фасада",
+      "Facciata",
       "Fassade",
       "标记为正面" };
     public static readonly string[] FaceFrontColorMarkTip = {
@@ -3124,16 +3148,16 @@ namespace AVC
         "Die Farbmarke kann vom Programm zum Messen und Anordnen von Volumenkörpern verwendet werden.",
       "边缘的颜色对应正面的标记。\r\n" +
          "程序可以使用颜色标记来测量和布局实体。" };
-    public static readonly string[] FaceColor = { 
-      "Face color", 
-      "Цвет грани", 
-      "Colore di faccia", 
+    public static readonly string[] FaceColor = {
+      "Face color",
+      "Цвет грани",
+      "Colore di faccia",
       "Gesichtsfarbe",
       "边缘颜色"};
-    public static readonly string[] FaceMaterial = { 
-      "Face material", 
-      "Материал грани", 
-      "Materiale di faccia", 
+    public static readonly string[] FaceMaterial = {
+      "Face material",
+      "Материал грани",
+      "Materiale di faccia",
       "Gesichtsmaterial",
       "面材" };
 
@@ -3198,10 +3222,10 @@ namespace AVC
         "输入任何文本。 " +
         "该程序可以创建新材料。 " +
         "输入新材料后按 Enter。" };
-    public static readonly string[] CoversOther = { 
-      "All other", 
-      "Все прочие", 
-      "Tutti gli altri", 
+    public static readonly string[] CoversOther = {
+      "All other",
+      "Все прочие",
+      "Tutti gli altri",
       "Alles andere",
       "所有其他" };
     public static readonly string[] CoversOtherTip = {
@@ -3269,10 +3293,10 @@ namespace AVC
 
     // ================================================================================================
     // Table   ================================================================================================
-    public static readonly string[] Section = { 
-      "Section", 
-      "Раздел", 
-      "Sezione", 
+    public static readonly string[] Section = {
+      "Section",
+      "Раздел",
+      "Sezione",
       "Abschnitt",
       "部分" };
     public static readonly string[] SectionTip = {
@@ -3281,16 +3305,16 @@ namespace AVC
       "Parte di una tabella divisa in più fogli con il comando Dividi tabella.",
       "Teil einer Tabelle, die mit dem Befehl TableSplit in mehrere Blätter aufgeteilt wurde.",
       "使用 TableSplit 命令将表格的一部分拆分为多个工作表。" };
-    public static readonly string[] Table = { 
-      "Table", 
-      "Таблица", 
-      "Tabella", 
+    public static readonly string[] Table = {
+      "Table",
+      "Таблица",
+      "Tabella",
       "Tabelle",
       "表" };
-    public static readonly string[] Tables = { 
-      "Tables", 
-      "Таблицы", 
-      "Tabelle", 
+    public static readonly string[] Tables = {
+      "Tables",
+      "Таблицы",
+      "Tabelle",
       "Tabellen",
       "表" };
     public static readonly string[] TableNameTip = {
@@ -3302,10 +3326,10 @@ namespace AVC
 
     // ================================================================================================
     // Text  ================================================================================================
-    public static readonly string[] Text = { 
-      "Text", 
-      "Текст", 
-      "Testo", 
+    public static readonly string[] Text = {
+      "Text",
+      "Текст",
+      "Testo",
       "Text",
       "文本" };
     public static readonly string[] Contents = {
@@ -3320,16 +3344,16 @@ namespace AVC
       "Contenuto visualizzato nel disegno",
       "In der Zeichnung angezeigter Inhalt",
       "图形上显示的内容" };
-    public static readonly string[] Texts = { 
-      "Texts", 
-      "Тексты", 
-      "Testi", 
+    public static readonly string[] Texts = {
+      "Texts",
+      "Тексты",
+      "Testi",
       "Texte",
       "文本" };
-    public static readonly string[] TextHeight = { 
-      "Text Height", 
-      "Размер текста", 
-      "Altezza del testo", 
+    public static readonly string[] TextHeight = {
+      "Text Height",
+      "Размер текста",
+      "Altezza del testo",
       "Textgröße",
       "文字高度" };
     public static readonly string[] TextHeightTip = {
@@ -3338,10 +3362,10 @@ namespace AVC
       "Dimensione del font",
       "Schriftgröße",
       "字体大小" };
-    public static readonly string[] TextFrame = { 
-      "Text frame", 
-      "Рамка текста", 
-      "Cornice di testo", 
+    public static readonly string[] TextFrame = {
+      "Text frame",
+      "Рамка текста",
+      "Cornice di testo",
       "Textrahmen",
       "文本框" };
     public static readonly string[] TextFrameTip = {
@@ -3353,10 +3377,10 @@ namespace AVC
 
     // ================================================================================================
     // Time  ==================================================================================
-    public static readonly string[] Time = { 
-      "Time", 
-      "Время", 
-      "Tempo", 
+    public static readonly string[] Time = {
+      "Time",
+      "Время",
+      "Tempo",
       "Zeit",
       "时间" };
     public static readonly string[] TimeTip = {
@@ -3365,10 +3389,10 @@ namespace AVC
       "Questo momento. Senza data",
       "Dieser Zeitpunkt. Ohne Datum",
       "这个时间点。 无日期" };
-    public static readonly string[] Today = { 
-      "Today", 
-      "Сегодня", 
-      "Oggi", 
+    public static readonly string[] Today = {
+      "Today",
+      "Сегодня",
+      "Oggi",
       "Heute",
       "今天" };
     public static readonly string[] TodayTip = {
@@ -3377,10 +3401,10 @@ namespace AVC
       "Oggi è il giorno del calendario. Senza tempo.",
       "Heute ist der Kalendertag. Ohne Zeit.",
       "今天是日历中的日子。 没有时间。" };
-    public static readonly string[] Now = { 
-      "Now", 
-      "Сейчас", 
-      "Momento", 
+    public static readonly string[] Now = {
+      "Now",
+      "Сейчас",
+      "Momento",
       "Jetzt" ,
       "现在"};
     public static readonly string[] NowTip = {
@@ -3389,10 +3413,10 @@ namespace AVC
       "Questo momento. Ora e data.",
       "Dieser Zeitpunkt. Zeit und Datum.",
       "这个时间点。 时间和日期。" };
-    public static readonly string[] TimeStamp = { 
-      "Time Stamp", 
-      "Метка времени", 
-      "Data e ora", 
+    public static readonly string[] TimeStamp = {
+      "Time Stamp",
+      "Метка времени",
+      "Data e ora",
       "Zeitstempel",
       "时间戳" };
     public static readonly string[] TimeStampTip = {
@@ -3405,22 +3429,22 @@ namespace AVC
 
     // ================================================================================================
     // Viewport, LAY view     // ================================================================================================
-    public static readonly string[] Viewport = { 
-      "Viewport", 
-      "Вид", 
-      "Viewport", 
-      "Viewport", 
+    public static readonly string[] Viewport = {
+      "Viewport",
+      "Вид",
+      "Viewport",
+      "Viewport",
       "视口 Viewport" };
-    public static readonly string[] Viewports = { 
+    public static readonly string[] Viewports = {
       "Viewports",
-      "Виды", 
-      "Viewports", 
-      "Viewports", 
+      "Виды",
+      "Viewports",
+      "Viewports",
       "视口 Viewports" };
-    public static readonly string[] Locked = { 
-      "Locked", 
-      "Заблокирован", 
-      "Bloccato", 
+    public static readonly string[] Locked = {
+      "Locked",
+      "Заблокирован",
+      "Bloccato",
       "Gesperrt",
       "锁定"};
     public static readonly string[] LockedTip = {
@@ -3441,21 +3465,21 @@ namespace AVC
       "Fattore di scala: il rapporto tra le dimensioni nel modello e le dimensioni sulla carta.",
       "Skalierungsfaktor: Das Verhältnis der Abmessungen im Modell zu den Abmessungen auf dem Papier.",
       "比例因子：模型中的尺寸与纸上的尺寸之比。" };
-    public static readonly string[] ViewName = { 
-      "View Name", 
-      "Имя вида", 
-      "Visualizza nome", 
+    public static readonly string[] ViewName = {
+      "View Name",
+      "Имя вида",
+      "Visualizza nome",
       "Name anzeigen",
       "视图名称" };
-    public static readonly string[] FrontView = { 
-      "FRONT VIEW", 
-      "ВИД СПЕРЕДИ", 
+    public static readonly string[] FrontView = {
+      "FRONT VIEW",
+      "ВИД СПЕРЕДИ",
       "VISTA FRONTALE",
       "VORNE",
       "正视图" };
-    public static readonly string[] RearView = { 
-      "REAR VIEW", 
-      "ВИД СЗАДИ", 
+    public static readonly string[] RearView = {
+      "REAR VIEW",
+      "ВИД СЗАДИ",
       "VISTA POSTERIORE",
       "HINTEN",
       "后视图" };
@@ -3524,11 +3548,11 @@ namespace AVC
     // =======================================================================================================
     // Layout 
     // =======================================================================================================
-    public static readonly string[] Layout = { 
-      "Layout", 
-      "Лист", 
-      "Layout", 
-      "Layout", 
+    public static readonly string[] Layout = {
+      "Layout",
+      "Лист",
+      "Layout",
+      "Layout",
       "布局" };
     public static readonly string[] Layouts = {
       "Layouts",
@@ -3536,17 +3560,17 @@ namespace AVC
       "Layout",
       "Layout",
       "布局" };
-    public static readonly string[] TabOrder = { 
-      "Tab order", 
-      "Номер закладки", 
-      "Ordine delle schede", 
-      "Tab-Reihenfolge", 
+    public static readonly string[] TabOrder = {
+      "Tab order",
+      "Номер закладки",
+      "Ordine delle schede",
+      "Tab-Reihenfolge",
       "标签顺序" };
-    public static readonly string[] VPCount = { 
-      "Number of viewports ", 
-      "Количество вьюпортов", 
-      "Numero di finestre", 
-      "Anzahl der Ansichtsfenster", 
+    public static readonly string[] VPCount = {
+      "Number of viewports ",
+      "Количество вьюпортов",
+      "Numero di finestre",
+      "Anzahl der Ansichtsfenster",
       "视口数量" };
 
     // =======================================================================================================
@@ -3727,34 +3751,34 @@ namespace AVC
     // ======================================================================================================
     // Other objects     
     // ======================================================================================================
-    public static readonly string[] Mesh = { 
-      "Mesh", 
-      "Сеть", 
-      "Mesh", 
+    public static readonly string[] Mesh = {
+      "Mesh",
+      "Сеть",
+      "Mesh",
       "Netz",
       "网格"};
-    public static readonly string[] Point = { 
-      "Point", 
-      "Точка", 
-      "Punto", 
+    public static readonly string[] Point = {
+      "Point",
+      "Точка",
+      "Punto",
       "Punkt",
       "点" };
-    public static readonly string[] Region = { 
-      "Region", 
-      "Регион", 
-      "Regione", 
+    public static readonly string[] Region = {
+      "Region",
+      "Регион",
+      "Regione",
       "Region",
       "区域" };
-    public static readonly string[] Surface = { 
-      "Surface", 
-      "Поверхность", 
-      "Superficie", 
+    public static readonly string[] Surface = {
+      "Surface",
+      "Поверхность",
+      "Superficie",
       "Fläche",
       "表面" };
-    public static readonly string[] Other = { 
-      "Other", 
-      "Прочее", 
-      "Altro", 
+    public static readonly string[] Other = {
+      "Other",
+      "Прочее",
+      "Altro",
       "Andere",
       "其他" };
     public static readonly string[] Height = {
@@ -3767,13 +3791,13 @@ namespace AVC
     //=============================================================================================================================
     //============================================================================================================================
 
-    public static Dictionary<string, string[]> 
+    public static Dictionary<string, string[]>
     PropNames = new(StringComparer.OrdinalIgnoreCase);
 
-    public static Dictionary<string, string[]> 
+    public static Dictionary<string, string[]>
     PropTips = new(StringComparer.OrdinalIgnoreCase);
 
-    static 
+    static
     PropL()
     {
       Type th = typeof(PropL);

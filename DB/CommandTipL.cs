@@ -8,7 +8,7 @@ namespace AVC
   /// <summary>
   /// Локализация описаний команд и программ, встроенного магазина программ
   /// </summary>
-  public static class 
+  public static class
   CommandTipL
   {
 
@@ -1082,14 +1082,14 @@ namespace AVC
     //=================================================================================
     // Ошибки =========================================================================
 
-    public static string[] MeshTooHardErr = {
+    public static readonly string[] MeshTooHardErr = {
       "  Mesh is too hard (more {0} faces)",
       "  Сеть слишком сложная (более {0} граней)",
       "  Mesh è troppo difficile (più di {0} facce)",
       "  Das Netz ist zu komplex (mehr als {0} Gesichter)",
       "  网格太复杂（超过 {0} 个面）"};
 
-    public static string[] SolidTooHardErr = {
+    public static readonly string[] SolidTooHardErr = {
       "  The solid has too many faces (more than {0}). Coatings and colors will not be processed.",
       "  У солида слишком много граней (более {0}). Покрытия и расцветка не будут обрабатываться.",
       "  Il solido ha troppe facce (più di {0}). Non verranno elaborati rivestimenti e colori.",

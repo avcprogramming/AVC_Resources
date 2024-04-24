@@ -5,7 +5,7 @@ namespace AVC
   /// <summary>
   /// Локализация диалога замены пароля
   /// </summary>
-  public static class 
+  public static class
   PasswordDlgL
   {
     public static readonly string[] PasswordTitle = {

@@ -5,7 +5,7 @@ namespace AVC
   /// <summary>
   /// Локализация копмонента диалогов для настройки форматирования длин и размеров
   /// </summary>
-  public static class 
+  public static class
   LenStyleL
   {
     public static readonly string[] AllowSymbols = {

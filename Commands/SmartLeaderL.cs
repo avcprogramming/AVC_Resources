@@ -3,7 +3,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   SmartLeaderL
   {
     //==================================== Command Line ===========================================================

@@ -4,7 +4,7 @@ namespace AVC
   /// <summary>
   /// Локализация процесса подключения к БД AVC
   /// </summary>
-  public static class 
+  public static class
   ConnectL
   {
     public static readonly string[] SelectServer = {

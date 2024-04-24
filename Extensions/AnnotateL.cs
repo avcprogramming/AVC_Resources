@@ -7,7 +7,7 @@ namespace AVC
   /// <summary>
   /// Локализация методов для работы с текстами и другими аннтациями
   /// </summary>
-  public static class 
+  public static class
   AnnotateL
   {
     // ===================================  布局 = layout ====================================================================
@@ -55,10 +55,10 @@ namespace AVC
 
     // ============================= Multi Leader =================================================
 
-    public static readonly string[] LeaderText = { 
-      "Leader text", 
-      "Текст выноски", 
-      "Testo", 
+    public static readonly string[] LeaderText = {
+      "Leader text",
+      "Текст выноски",
+      "Testo",
       "Text",
       "标注文字"};
 
@@ -69,10 +69,10 @@ namespace AVC
       "Lo stile di testo '{0}' non esiste. Userò lo stile attuale",
       "Der Textstil '{0}' ist nicht vorhanden. Verwendet den aktuellen Stil",
       "文本样式“{0}”不存在。 将使用当前样式"};
-    public static string[] UpdatedTexts =  { 
-      "Updated {0} texts.", 
-      "Обновлено {0} текстов.", 
-      "Aggiornato {0} testo.", 
+    public static string[] UpdatedTexts =  {
+      "Updated {0} texts.",
+      "Обновлено {0} текстов.",
+      "Aggiornato {0} testo.",
       "{0} Texte wurden aktualisiert",
       "更新了 {0} 个文本。"};
     public static string[] NoTextInView = {

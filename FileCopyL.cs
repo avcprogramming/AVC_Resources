@@ -1,7 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
-  public static class 
+  public static class
   FileCopyL
   {
     public static readonly string[] Count = {

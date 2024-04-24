@@ -7,7 +7,7 @@ namespace AVC
   /// <summary>
   /// Локализация диалога Общих Настроек плагинов AVC
   /// </summary>
-  public static class 
+  public static class
   CommonOptionsL
   {
 

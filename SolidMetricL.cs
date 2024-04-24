@@ -106,22 +106,22 @@ namespace AVC
       " Valore matrice di rotazione Zero",
       " Eine leere Rotationsmatrix.",
       " 空旋转矩阵。"};
-    public static readonly string[] PlaneErr = { 
-      "The item is not in the XY plane", 
-      "Деталь находится не в плоскости XY", 
-      "Dettaglio non è nel piano XY", 
+    public static readonly string[] PlaneErr = {
+      "The item is not in the XY plane",
+      "Деталь находится не в плоскости XY",
+      "Dettaglio non è nel piano XY",
       "Das Teil befindet sich nicht in der XY-Ebene",
       "零件不在 XY 平面内" };
-    public static readonly string[] BlockNotCreated = { 
-      "Block '{0}' not created ", 
-      "Блок '{0}' не создан ", 
-      "Blocco non creato '{0}'", 
+    public static readonly string[] BlockNotCreated = {
+      "Block '{0}' not created ",
+      "Блок '{0}' не создан ",
+      "Blocco non creato '{0}'",
       "Block nicht erstellt '{0}'",
       "未创建块“{0}” " };
-    public static readonly string[] ColorErr = { 
-      "Can't get color of Face.", 
-      "Не удалось получить цвет грани.", 
-      "Impossibile ottenere il colore di Surface.", 
+    public static readonly string[] ColorErr = {
+      "Can't get color of Face.",
+      "Не удалось получить цвет грани.",
+      "Impossibile ottenere il colore di Surface.",
       "Die Farbe der Oberfläche kann nicht ermittelt werden.",
       "获取边缘颜色失败。" };
     public static readonly string[,] DefTechno = {    
@@ -155,9 +155,9 @@ namespace AVC
       "Volumenkörper auswählen: {0} x {1} x {2}",
       "扫描尺寸： {0} x {1} x {2}" };
     public static readonly string[] NothingMeasure = {
-      "  Nothing to measure", 
-      "  Нечего обмерять", 
-      "  Niente da misurare", 
+      "  Nothing to measure",
+      "  Нечего обмерять",
+      "  Niente da misurare",
       "  Nichts zu messen",
       "  没有什么可衡量的"};
     public static readonly string[] NoRequireUpdating ={
@@ -173,15 +173,15 @@ namespace AVC
       "Volumenkörper mit Fehlern in der Struktur!",
       "结构错误的固体！" };
     public static readonly string[] UpdateColor = {
-      "Color update", 
-      "Обновление цвета", 
-      "Aggiornamento del colore", 
+      "Color update",
+      "Обновление цвета",
+      "Aggiornamento del colore",
       "Farbaktualisierung",
       "颜色更新"};
     public static readonly string[] FindSolids = {
-      "Finding objects ...", 
-      "Поиск объектов...", 
-      "Ricerca di oggetti ...", 
+      "Finding objects ...",
+      "Поиск объектов...",
+      "Ricerca di oggetti ...",
       "Objekte finden ...",
       "寻找对象..." };
 

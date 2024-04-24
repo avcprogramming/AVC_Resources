@@ -3,21 +3,21 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   AssemblyL
   {
     public static readonly string[,] AsmStyleNames = {
 /* 0 */ { PropL.Assembly[0], PropL.Assembly[1], PropL.Assembly[2], PropL.Assembly[3], PropL.Assembly[4] },
 /* 1 */ { PropL.Assembly[0], PropL.Assembly[1], PropL.Assembly[2], PropL.Assembly[3], PropL.Assembly[4] },
-/* 2 */ { "Product", 
-          "Изделие", 
-          "Product", 
-          "Produkt", 
+/* 2 */ { "Product",
+          "Изделие",
+          "Product",
+          "Produkt",
           "产品" },
-/* 3 */ { "Renaming", 
-          "Переименование", 
-          "Ridenominazione", 
-          "Umbenennung", 
+/* 3 */ { "Renaming",
+          "Переименование",
+          "Ridenominazione",
+          "Umbenennung",
           "重命名" },
         };
     public static readonly string[] DefNameTemplate = {

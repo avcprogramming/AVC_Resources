@@ -56,20 +56,20 @@ namespace AVC
     public static readonly string[] DestinationKindKW = {
       "Kind",
       "Сорт",
-      "Tipo", 
-      "Art", 
+      "Tipo",
+      "Art",
       "种类(K)" };
     public static readonly string[] DestinationInfoKW = {
-      "Info", 
-      "ИНФО", 
-      "Info", 
-      "Info", 
+      "Info",
+      "ИНФО",
+      "Info",
+      "Info",
       "信息(I)" };
     public static readonly string[] DestinationLayerKW = {
-      "Layer", 
-      "Слой", 
-      "Layer", 
-      "Layer", 
+      "Layer",
+      "Слой",
+      "Layer",
+      "Layer",
       "图层(L)" };
 
   }

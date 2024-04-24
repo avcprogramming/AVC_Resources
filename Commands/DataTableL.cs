@@ -1,24 +1,73 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
-  public static class 
+  public static class
   DataTableL
   {
     public static readonly string[,] DTStyleNames = { 
-/*0*/   { CommandL.DataTable[0], CommandL.DataTable[1], CommandL.DataTable[2], CommandL.DataTable[3], CommandL.DataTable[4] },
-/*1*/   { "Line Length Table", "Таблица длин линий", "Tabella delle lunghezze delle linee", "Zeilenlängentabelle", "线长表" },
-/*2*/   { "Object Area Table", "Таблица площади объектов", "Tabella area oggetto", "Objektbereichstabelle", "对象区域表" },
-/*3*/   { "Number of blocks", "Количество блоков", "Numero di blocchi", "Anzahl der Blöcke", "块数" },
-/*4*/   { "Component list", "Список компонентов", "Elenco dei componenti", "Komponentenliste", "组件列表" },
-/*5*/   { "Sawing Table", "Таблица напилки", "Segare", "Sägen", "锯床" },
-/*6*/   { "Point Coordinate Table", "Таблица координат точек", "Tabella coordinate punto", "Punktkoordinatentabelle", "点坐标表" },
+/*0*/   { CommandL.DataTable[0], 
+          CommandL.DataTable[1], 
+          CommandL.DataTable[2], 
+          CommandL.DataTable[3], 
+          CommandL.DataTable[4] },
+/*1*/   { "Line Length Table", 
+          "Таблица длин линий", 
+          "Tabella delle lunghezze delle linee", 
+          "Zeilenlängentabelle", 
+          "线长表" },
+/*2*/   { "Object Area Table", 
+          "Таблица площади объектов", 
+          "Tabella area oggetto", 
+          "Objektbereichstabelle", 
+          "对象区域表" },
+/*3*/   { "Number of blocks", 
+          "Количество блоков", 
+          "Numero di blocchi", 
+          "Anzahl der Blöcke", 
+          "块数" },
+/*4*/   { "Component list", 
+          "Список компонентов", 
+          "Elenco dei componenti", 
+          "Komponentenliste", 
+          "组件列表" },
+/*5*/   { "Sawing Table", 
+          "Таблица напилки", 
+          "Segare", 
+          "Sägen", 
+          "锯床" },
+/*6*/   { "Point Coordinate Table", 
+          "Таблица координат точек", 
+          "Tabella coordinate punto", 
+          "Punktkoordinatentabelle", 
+          "点坐标表" },
       };
 
     public static readonly string[,] DrillTableStyleNames = {
-/*0*/   { CommandL.DrillTable[0], CommandL.DrillTable[1], CommandL.DrillTable[2], CommandL.DrillTable[3], CommandL.DrillTable[4]  },
-/*1*/   { CommandL.DrillTable[0], "Присадка", CommandL.DrillTable[2], CommandL.DrillTable[3], CommandL.DrillTable[4] },
-/*2*/   { "Drilling", "Сверления", "Foratura", "Bohren", "钻孔" },
-/*3*/   { "Drill Table to Excel", "Таблица сверлений в Excel", "Tabella di perforazione Excel", "Bohrtisch Excel", "钻取表到 Excel" },
+/*0*/   { CommandL.DrillTable[0], 
+          CommandL.DrillTable[1], 
+          CommandL.DrillTable[2], 
+          CommandL.DrillTable[3], 
+          CommandL.DrillTable[4]  },
+/*1*/   { CommandL.DrillTable[0], 
+          "Присадка", 
+          CommandL.DrillTable[2],
+          CommandL.DrillTable[3], 
+          CommandL.DrillTable[4] },
+/*2*/   { "Drilling", 
+          "Сверления", 
+          "Foratura", 
+          "Bohren", 
+          "钻孔" },
+/*3*/   { "Drill Table to Excel", 
+          "Таблица сверлений в Excel", 
+          "Tabella di perforazione Excel", 
+          "Bohrtisch Excel", 
+          "钻取表到 Excel" },
+/*4*/   { "Drill Table with countersink",
+          "Таблица сверлений с зенковкой",
+          "Tavolo per trapano con svasatore",
+          "Bohrtisch mit Senker",
+          "带埋头孔的钻台" },
       };
 
     public static readonly string[] DrillTableGroup = {
@@ -29,47 +78,103 @@ namespace AVC
       "部分 %name%。钻孔 %drill%"};
 
     public static readonly string[,] MatTableStyleNames = {
-/*0*/   { "Material Table", "Таблица материалов", "Tabella dei materiali", "Materialtabelle", "材料表" },
-/*1*/   { "Material Table", "Таблица материалов", "Tabella dei materiali", "Materialtabelle", "材料表"},
-/*2*/   { "Material Indexes", "Индексы материалов", "Indici materiali", "Materialindizes", "材料指标"},
-/*3*/   { "Cutting3 materials", "Cutting3 материалы", "Cutting3 materiali", "Cutting3 Material", "Cutting3 种材料" },
-/*4*/   { "OptiCut panels", "OptiCut панели", "OptiCut pannelli", "OptiCut Paneele", "OptiCut 面板" },
-/*5*/   { "OptiCut bars", "OptiCut бруски", "OptiCut barre", "OptiCut Riegel", "OptiCut 磨料" },
+/*0*/   { "Material Table", 
+          "Таблица материалов",
+          "Tabella dei materiali", 
+          "Materialtabelle", 
+          "材料表" },
+/*1*/   { "Material Table", 
+          "Таблица материалов", 
+          "Tabella dei materiali",
+          "Materialtabelle", 
+          "材料表"},
+/*2*/   { "Material Indexes", 
+          "Индексы материалов", 
+          "Indici materiali", 
+          "Materialindizes", 
+          "材料指标"},
+/*3*/   { "Cutting3 materials", 
+          "Cutting3 материалы", 
+          "Cutting3 materiali", 
+          "Cutting3 Material", 
+          "Cutting3 种材料" },
+/*4*/   { "OptiCut panels", 
+          "OptiCut панели", 
+          "OptiCut pannelli", 
+          "OptiCut Paneele", 
+          "OptiCut 面板" },
+/*5*/   { "OptiCut bars", 
+          "OptiCut бруски", 
+          "OptiCut barre", 
+          "OptiCut Riegel", 
+          "OptiCut 磨料" },
       };
 
-  public static readonly string[,] SawStyleNames = {
-      { CommandL.Saw[0], CommandL.Saw[1], CommandL.Saw[2], CommandL.Saw[3], CommandL.Saw[4] },
-      { CommandL.Saw[0], CommandL.Saw[1], CommandL.Saw[2], CommandL.Saw[3], CommandL.Saw[4] },
-      { "Detailing Table", "Деталировка", "Tabella dei dettagli", "Detaillierung", "详细表" },
-      { "Rib cutting", "Погонажная нарезка", "Taglio delle costole", "Rippenschneiden", "切肋"},
-      { "Nesting in Cutting3", "Раскрой в Cutting3", "Taglio nel Cutting3", "Schneiden in Cutting3", "在 Cutting3 中嵌套"},
-      { "Panels for OptiCut", "Панели для OptiCut", "Pannelli per OptiCut", "Panels für OptiCut", "OptiCut 面板"},
-      { "Bars for OptiCut", "Бруски для OptiCut", "Barre per OptiCut", "Balken für OptiCut", "OptiCut 棒材"},
-      { "Details for Viyar", "Детали Вияр", "Dettagli per Viyar", "Details für Viyar", "Viyar 的详细信息"},
+    public static readonly string[,] SawStyleNames = {
+      { CommandL.Saw[0], 
+        CommandL.Saw[1], 
+        CommandL.Saw[2], 
+        CommandL.Saw[3], 
+        CommandL.Saw[4] },
+      { CommandL.Saw[0], 
+        CommandL.Saw[1], 
+        CommandL.Saw[2], 
+        CommandL.Saw[3],
+        CommandL.Saw[4] },
+      { "Detailing Table", 
+        "Деталировка", 
+        "Tabella dei dettagli", 
+        "Detaillierung", 
+        "详细表" },
+      { "Rib cutting", 
+        "Погонажная нарезка", 
+        "Taglio delle costole", 
+        "Rippenschneiden", 
+        "切肋"},
+      { "Nesting in Cutting3", 
+        "Раскрой в Cutting3", 
+        "Taglio nel Cutting3", 
+        "Schneiden in Cutting3", 
+        "在 Cutting3 中嵌套"},
+      { "Panels for OptiCut", 
+        "Панели для OptiCut", 
+        "Pannelli per OptiCut", 
+        "Panels für OptiCut",
+        "OptiCut 面板"},
+      { "Bars for OptiCut", 
+        "Бруски для OptiCut", 
+        "Barre per OptiCut", 
+        "Balken für OptiCut", 
+        "OptiCut 棒材"},
+      { "Details for Viyar", 
+        "Детали Вияр", 
+        "Dettagli per Viyar", 
+        "Details für Viyar", 
+        "Viyar 的详细信息"},
       };
 
-    public static readonly string[] SortAZ = { 
-      "A-Z", 
-      "А-Я", 
-      "A-Z", 
+    public static readonly string[] SortAZ = {
+      "A-Z",
+      "А-Я",
+      "A-Z",
       "A-Z",
       "升序"};
-    public static readonly string[] SortZA = { 
-      "Z-A", 
-      "Я-А", 
-      "Z-A", 
+    public static readonly string[] SortZA = {
+      "Z-A",
+      "Я-А",
+      "Z-A",
       "Z-A",
       "降序排列" };
-    public static readonly string[] SortSum = { 
-      "Sum", 
-      "Сумма", 
-      "Somma", 
+    public static readonly string[] SortSum = {
+      "Sum",
+      "Сумма",
+      "Somma",
       "Summe",
       "求和" };
-    public static readonly string[] SortSumTotal = { 
-      "Sum&Total", 
-      "Сумма+Итог", 
-      "Somma&Totale", 
+    public static readonly string[] SortSumTotal = {
+      "Sum&Total",
+      "Сумма+Итог",
+      "Somma&Totale",
       "Summe&Total",
       "总结和结果" };
 
@@ -130,18 +235,18 @@ namespace AVC
       "Impossibile creare una tabella.",
       "Fehler beim Erstellen einer Tabelle.",
       "无法制作表格。" };
-    public static readonly string[] 
-    Multiply = { 
+    public static readonly string[]
+    Multiply = {
       "Multiply the amount by ",
-      "Умножить количество на ", 
-      "Moltiplicando questo numero per ", 
+      "Умножить количество на ",
+      "Moltiplicando questo numero per ",
       "Multipliziere die Anzahl mit ",
       "将金额乘以"};
-    public static readonly string[] 
-    MultiplyIs = { 
-      "  The amount will be multiplied by {0}", 
-      "  Количество будет умножено на {0}", 
-      "  L'importo verrà moltiplicato per {0}", 
+    public static readonly string[]
+    MultiplyIs = {
+      "  The amount will be multiplied by {0}",
+      "  Количество будет умножено на {0}",
+      "  L'importo verrà moltiplicato per {0}",
       "  Der Betrag wird mit {0} multipliziert",
       "  金额将乘以 {0}"};
 
@@ -151,43 +256,43 @@ namespace AVC
       "  Seleziona l'azione con il numero di preselezione #{0}",
       "  Befehl zur Verwendung der Auswahl mit einer Reihe von Optionen #{0}",
       "  使用带选项集的命令的选择方式 #{0}"};
-    public static readonly string[] ColumnsKW = { 
-      "TAbleColumns", 
-      "СТолбцы", 
-      "СOlonne", 
+    public static readonly string[] ColumnsKW = {
+      "TAbleColumns",
+      "СТолбцы",
+      "СOlonne",
       "Tabellenspalten",
       "表列(TA)" };
-    public static readonly string[] MirrorKW = { 
-      "MIrror", 
-      "ЗЕркальные", 
-      "SPecchio", 
+    public static readonly string[] MirrorKW = {
+      "MIrror",
+      "ЗЕркальные",
+      "SPecchio",
       "SPiegeln",
       "镜像的(MI)" };
-    public static readonly string[] GroupKW = { 
-      "GRoup", 
-      "ГРуппировка", 
-      "GRuppo", 
+    public static readonly string[] GroupKW = {
+      "GRoup",
+      "ГРуппировка",
+      "GRuppo",
       "Gruppe",
       "分组(GR)" };
-    public static readonly string[] FormatKW = { 
-      "FOrmatOfDimension", 
-      "ФОрматРазмеров", 
-      "FOrmatoDiDimensioni", 
+    public static readonly string[] FormatKW = {
+      "FOrmatOfDimension",
+      "ФОрматРазмеров",
+      "FOrmatoDiDimensioni",
       "FOrmatDerDimension",
       "维度格式(FO)" };
-    public static readonly string[] NumberingKW = { 
-      "NUmbering", 
-      "НУмерация", 
-      "NUmerazione", 
+    public static readonly string[] NumberingKW = {
+      "NUmbering",
+      "НУмерация",
+      "NUmerazione",
       "NUmmerierung",
       "编号(NU)" };
-    public static readonly string[] MultiplierKW = { 
-      "MUltiplier", 
-      "Множитель", 
-      "MOltiplicatore", 
+    public static readonly string[] MultiplierKW = {
+      "MUltiplier",
+      "Множитель",
+      "MOltiplicatore",
       "Multiplikator",
       "因素(MU)" };
-    public static readonly string[] ColumnsQuery = { 
+    public static readonly string[] ColumnsQuery = {
       "Enter a list of column through ;",
       "Введите подстановки для столбцов через ;",
       "Inserisci i nomi delle colonne desiderate facendo ;",
@@ -234,7 +339,7 @@ namespace AVC
       "Hinzufügen",
       "添加" };
 
- public static readonly string[] AddColumnTip = {
+    public static readonly string[] AddColumnTip = {
       "Add a column to the table. \r\n" +
         "Choose one of the substitutions from the list.",
       "Добавить колонку к таблице. \r\n" +

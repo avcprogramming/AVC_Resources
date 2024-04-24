@@ -1,31 +1,31 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 namespace AVC
 {
-  public static class 
+  public static class
   ReduceWeightL
   {
     public static readonly string[,] RWStyleNames = { 
-/*0*/   { 
+/*0*/   {
         CommandL.ReduceW[0],
         CommandL.ReduceW[1],
         CommandL.ReduceW[2],
         CommandL.ReduceW[3],
         CommandL.ReduceW[4]  },
-/*1*/   { 
-        "Window", 
-        "Окно", 
-        "Finestra", 
-        "Fenster" , 
+/*1*/   {
+        "Window",
+        "Окно",
+        "Finestra",
+        "Fenster" ,
         "窗户" },
-/*2*/   { 
-        "Pocket", 
-        "Выборка", 
-        "Tasca", 
-        "Tasche" , 
+/*2*/   {
+        "Pocket",
+        "Выборка",
+        "Tasca",
+        "Tasche" ,
         "口袋" },
       };
 
-  public static readonly string[] Select = {
+    public static readonly string[] Select = {
       "  Select the parts that need to be reduced in weight",
       "  Выберите детали, которые надо облегчить",
       "  Seleziona le parti che devono essere ridotte di peso",
@@ -33,7 +33,7 @@ namespace AVC
       "  选择需要减轻重量的部件"};
 
     public static readonly string[] SolidErr = {
-      "Failed to get solid for editing", 
+      "Failed to get solid for editing",
       "Не удалось получить солид для редактирования",
       "Impossibile ottenere il solido per la modifica",
       "Solid zum Bearbeiten konnte nicht abgerufen werden",

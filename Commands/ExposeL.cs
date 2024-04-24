@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   ExposeL
   {
     public static readonly string[,] ExposeStyleNames = {

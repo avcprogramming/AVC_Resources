@@ -2,7 +2,7 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   FindNameL
   {
 
@@ -12,16 +12,16 @@ namespace AVC
       "  Oggetti controllato: {0} / Dopo il filtro {1} / Gli oggetti trovati: {2}",
       "  Getestete Objekte: {0} / Nach dem Filter {1} / Gefundene Objekte: {2}",
       "  测试对象：{0} / 过滤后 {1} / 找到的对象：{2}"};
-    public static readonly string[] LoadOther = { 
-      "<< Load the rest >>", 
-      "<< Загрузить остальные >>", 
-      "<< Carica il resto >>", 
+    public static readonly string[] LoadOther = {
+      "<< Load the rest >>",
+      "<< Загрузить остальные >>",
+      "<< Carica il resto >>",
       "<< Noch >>",
       "<< 加载其余 >>"};
-    public static readonly string[] Title = { 
-      "Search terms", 
-      "Условия поиска", 
-      "Termini di ricerca", 
+    public static readonly string[] Title = {
+      "Search terms",
+      "Условия поиска",
+      "Termini di ricerca",
       "Suchbegriffe",
       "搜索词" };
     public static readonly string[] ResetTip = {

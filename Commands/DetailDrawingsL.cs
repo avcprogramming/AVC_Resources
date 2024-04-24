@@ -2,11 +2,11 @@
 
 namespace AVC
 {
-  public static class 
+  public static class
   DetailDrawingsL
   {
     public static readonly string[,] DDrawStyleNames = {
-/* 0 */ { 
+/* 0 */ {
         CommandL.DDraw[0],
         CommandL.DDraw[1],
         CommandL.DDraw[2],

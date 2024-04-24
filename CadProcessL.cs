@@ -6,7 +6,7 @@ namespace AVC
   /// <summary>
   /// Локализация управления просессом acad.exe и служебными папками AutoCAD
   /// </summary>
-  public static class 
+  public static class
   CadProcessL
   {
     public static readonly string[] AutocadIsRunning = {
