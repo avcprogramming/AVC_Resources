@@ -342,6 +342,19 @@ namespace AVC
       "Belassen Sie das Blockkoordinatensystem unverändert, ohne Drehungen, \r\n" +
         "wie es im Weltkoordinatensystem (WCS) ist.",
       "保持块坐标系不变，不进行旋转，就像在世界坐标系 (WCS) 中一样。"};
+    public static readonly string[] Invisible = {
+      "Save invisible objects",
+      "Сохранить невидимые объекты",
+      "Salva oggetti invisibili",
+      "Speichern Sie unsichtbare Objekte",
+      "保存不可见的物体" };
+    public static readonly string[] InvisibleTip = {
+      "If there were invisible objects in the old block (disabled by the visibility parameter), then save them to the new block.",
+      "Если в старом блоке были невидимые объекты (отключенные параметром видимости), то сохранить их в новый блок.",
+      "Se nel vecchio blocco erano presenti oggetti invisibili (disabilitati dal parametro visibilità), salvali nel nuovo blocco.",
+      "Wenn im alten Block unsichtbare Objekte vorhanden waren (durch den Sichtbarkeitsparameter deaktiviert), \r\n" +
+        "speichern Sie sie im neuen Block.",
+      "如果旧块中有不可见的对象（被可见性参数禁用），则将它们保存到新块中。" };
     public static readonly string[] LabelOnFront = {
       "Label on Front",
       "Метка на фасаде",
@@ -376,6 +389,23 @@ namespace AVC
         "Positionieren Sie diesen Text über dem Block in der XY-Ebene des Koordinatensystems des Blocks.",
       "使用块的名称在块内创建文本。 \r\n" +
         "在块坐标系的 XY 平面中将此文本定位在块上方。"};
+    public static readonly string[] LabelTurnOver = {
+      "Flip front mark",
+      "Перевернуть фасадную метку",
+      "Capovolgi il segno anteriore",
+      "Vordere Markierung umdrehen",
+      "翻盖正面标记"};
+    public static readonly string[] LabelTurnOverTip = {
+      "Place the front mark on the back side upside down.\r\n" +
+        "An option has been made to convert dynamic wall blocks modeled in a lying position.",
+      "Разместить переднюю метку на задней стороне вверх ногами. \r\n" +
+        "Опция сделана для преобразования динамических блоков стен, смоделированных в лежачем положении.",
+      "Posiziona il segno anteriore sul lato posteriore capovolto. \r\n" +
+        "È stata fatta un'opzione per convertire i blocchi murali dinamici modellati in posizione sdraiata.",
+      "Platzieren Sie die vordere Markierung verkehrt herum auf der Rückseite. \r\n" +
+        "Es besteht die Möglichkeit, dynamische Wandblöcke, die in liegender Position modelliert wurden, umzuwandeln.",
+      "将正面标记倒置在背面。\r\n" +
+        "可以选择转换以平躺位置建模的动态墙块。"};
     public static readonly string[] LabelField = {
       "Use Field for block name",
       "Поле для имени блока",
@@ -437,6 +467,18 @@ namespace AVC
         "kann das Programm sie alle auflösen, einschließlich verschachtelter Blöcke.",
       "如果您计划将其他块或数组组合成一个程序集，\r\n" +
         "程序可以将它们全部分解，包括嵌套块。" };
+    public static readonly string[] MeshToSolid = {
+      "Convert mesh to solid",
+      "Конвертировать сети в солиды",
+      "Converti la mesh in solido",
+      "Netz in Volumen umwandeln",
+      "将网格转换为实体" };
+    public static readonly string[] MeshToSolidTip = {
+      "Call the MeshToSolid command to try to convert all SubDMesh and PolyfaceMesh into solids.",
+      "Вызвать команду MeshToSolid, чтоб попытаться конвертировать все полигональные сети SubDMesh и PolyfaceMesh в солиды.",
+      "Chiama il comando MeshToSolid per provare a convertire tutte le mesh SubDMesh e PolyfaceMesh in solidi.",
+      "Rufen Sie den Befehl MeshToSolid auf, um zu versuchen, alle SubDMesh- und PolyfaceMesh-Netze in Volumenkörper umzuwandeln.",
+      "调用 MeshToSolid 命令尝试将所有 SubDMesh 和 PolyfaceMesh 网格转换为实体。" };
     public static readonly string[] Layer0Text = {
       "Assign '0' layer",
       "Назначить слой '0'",

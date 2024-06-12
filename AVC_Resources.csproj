@@ -47,6 +47,7 @@
     <Compile Include="Commands\AutoAnnL.cs" />
     <Compile Include="Commands\AutoLngL.cs" />
     <Compile Include="Commands\BlockMetricL.cs" />
+    <Compile Include="Commands\BoxFromTableL.cs" />
     <Compile Include="Commands\BUpdateL.cs" />
     <Compile Include="Commands\ChopL.cs" />
     <Compile Include="Commands\CncL.cs" />
@@ -323,9 +324,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DDraw32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Delails32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DimDet16.png" />
@@ -709,9 +707,6 @@
     <None Include="Resources\Save16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Save32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\saw16.png" />
   </ItemGroup>
   <ItemGroup>
@@ -847,9 +842,6 @@
     <None Include="Resources\Undo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Undo32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Unpack16.png" />
   </ItemGroup>
   <ItemGroup>
@@ -890,12 +882,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Zone32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Вопрос32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Штангенциркуль32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AvcOptions.ico" />
@@ -1000,9 +986,6 @@
     <None Include="Resources\Kit80.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Kit180.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Lay80.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1100,9 +1083,6 @@
     <None Include="Resources\Donate.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Help32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Cancel16.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1113,9 +1093,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Details32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Таблица16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Table16.png" />
@@ -1176,6 +1153,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FixtureVertHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

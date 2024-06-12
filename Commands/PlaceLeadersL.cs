@@ -40,13 +40,6 @@ namespace AVC
       "Führungslinie erstellen",
       "标注创建" };
 
-    public static readonly string[] DataSubstitution = {
-      "Data substitution",
-      "Подстановка данных",
-      "Sostituzione dei dati",
-      "Datenersetzung",
-      "数据替换" };
-
     public static readonly string[] RemoveCount = {
       "  Removed {0} old leaders.",
       "  Удалено {0} старых выносок.",
@@ -81,6 +74,20 @@ namespace AVC
       "Impossibile ottenere le dimensioni per {0}",
       "Abmessungen für '{0}' konnten nicht abgerufen werden",
       "未能获取 '{0}' 的维度"};
+
+    public static readonly string[] FindInViewport = {
+      "  Searching for objects in the viewport...",
+      "  Поиск объектов во вьюпорте...",
+      "  Ricerca di oggetti nella finestra...",
+      "  Suche nach Objekten im Ansichtsfenster...",
+      "  在视口中搜索对象..." };
+
+    public static readonly string[] FoundInViewport = {
+      "  Objects found in viewport {0}",
+      "  Найдено объектов во вьюпорте {0}",
+      "  Oggetti trovati nella finestra {0}",
+      "  Objekte im Ansichtsfenster {0} gefunden",
+      "  在视口 {0} 中找到对象" };
 
     //========================================== Dialog Box =================================================================
 

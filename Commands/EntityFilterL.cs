@@ -39,13 +39,13 @@ namespace AVC
         "The number of parts to be machined will be multiplied by this number of assembly blocks.\r\n" +
         "It doesn't matter how many blocks you select - all blocks of the model will be used for the calculation. \r\n" +
         "Solids in mirror blocks will be mirrored.\r\n" +
-        "You can exclude some of the blocks from the count using ignored layers.\r\n" +
+        "You can exclude some of the blocks from the count using ignored layers. Blocks of the 'Excluding' layer are always ignored.\r\n" +
         "This option is useful for compiling tables by assembly view when only 1 block is visible in the viewport.",
       "Подсчитать и учесть, сколько блоков вы вставили в пространство модели.\r\n" +
         "Количество обрабатываемых деталей будет помножено на это количество блоков-сборок.\r\n" +
         "Не имеет значения сколько блоков вы выбрали - для расчета будут использованы все блоки модели.\r\n" +
         "Детали-солиды в зеркальных блоках будут отзеркалены.\r\n" +
-        "Вы можете исключить из подсчета часть блоков используя игнорируемые слои.\r\n" +
+        "Вы можете исключить из подсчета часть блоков используя игнорируемые слои. Блоки слоя 'Без учета' игнорируются всегда.\r\n" +
         "Данная опция полезна для составления таблиц по сборочному виду, когда во вьюпорте виден только 1 блок.",
       "Conta e tieni conto di quanti blocchi hai inserito nello spazio modello.\r\n" +
         "Il numero di pezzi da lavorare sarà moltiplicato per questo numero di blocchi di montaggio.\r\n" +

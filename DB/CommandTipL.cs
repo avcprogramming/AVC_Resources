@@ -139,6 +139,18 @@ namespace AVC
       "块尺寸的计算，所有曲线长度的总和，" +
          "固体的面积和体积，零件的重量和价格。" +
          "将结果写入块属性。"};
+    public static readonly string[] BoxToWallTip = {
+      "Create a section of a wooden partition (wall) according to the dimensions of a given solid box",
+      "Создать секцию деревянной перегородки (стены) по размерам заданного солида-бокса",
+      "Creare una sezione di una parete divisoria in legno (muro) in base alle dimensioni di una determinata scatola solida",
+      "Erstellen Sie einen Abschnitt einer hölzernen Trennwand (Wand) entsprechend den Abmessungen eines bestimmten festen Kastens",
+      "根据给定实心盒子的尺寸创建木隔板（墙）的一部分" };
+    public static readonly string[] BoxFromTableTip = {
+      "Create solid-boxes using data from an Excel table",
+      "Создать солиды-боксы по данным из таблицы Excel",
+      "Crea scatole solide utilizzando i dati di una tabella Excel",
+      "Erstellen Sie ausgefüllte Kästchen mit Daten aus einer Excel-Tabelle",
+      "使用 Excel 表格中的数据创建实心框" };
     public static readonly string[] BUpdateTip = {
       "Replace selected blocks with blocks of the same name from another drawing.",
       "Заменить выбранные блоки на одноименные блоки из другого чертежа." ,
@@ -146,8 +158,7 @@ namespace AVC
       "Ersetzen Sie ausgewählte Blöcke durch gleichnamige Blöcke aus einer anderen Zeichnung.",
       "用另一个图形中的同名块替换选定的块。"};
     public static readonly string[] ChopTip = {
-      "Chop a 3d-solid into many pieces. " +
-        "Make ribs and stair-step.",
+      "Chop a 3d-solid into many pieces. Make ribs and stair-step.",
       "Нарезка твердых тел на равные дольки. " +
         "Ступенчатое заполнение сложных форм. Расстановка ребер." ,
       "Tagliare i solidi a fette uguali. " +
@@ -157,8 +168,7 @@ namespace AVC
       "将固体切成许多块。 " +
          "做肋骨和楼梯。"};
     public static readonly string[] ChopEdgeTip = {
-      "Chop a 3d-solid into many pieces along a curved edge. " +
-        "Make ribs and stair-step.",
+      "Chop a 3d-solid into many pieces along a curved edge. Make ribs and stair-step.",
       "Нарезка твердых тел на равные дольки вдоль криволинейного ребра. " +
         "Ступенчатое заполнение сложных форм. Расстановка ребер." ,
       "Affettare i solidi in fette uguali lungo un bordo curvo. " +
@@ -185,8 +195,7 @@ namespace AVC
       "Machen Sie Nuten in sich kreuzenden Teilen (Volumenkörper) für die Querverbindung.",
       "使相交零件（实体）中的槽口交叉连接。"};
     public static readonly string[] DadoJointTip = {
-      "Formation of dado joinery between 2 contacting solids. " +
-        "Automatic creation dadoes, grooves, pockets, cutouts.",
+      "Formation of dado joinery between 2 contacting solids. Automatic creation dadoes, grooves, pockets, cutouts.",
       "Формирование соединения типа 'паз-шип' на двух соприкасающихся деталях. " +
         "Автоматически делает пазы, канавки, четверти, выборки." ,
       "Formazione di una connessione maschio-femmina su due parti di contatto. " +
@@ -245,8 +254,7 @@ namespace AVC
       "1 Klick - 1000 Löcher! Plugin zum gleichzeitigen Erstellen mehrerer Löcher in vielen Volumenkörpern.",
       "1 次点击 - 1000 个孔！ 在许多 3D 实体中快速钻孔的命令。"};
     public static readonly string[] DrillTableTip = {
-      "List of cylindrical holes in solids. " +
-        "Drilling coordinates and direction. Output to a table or Excel.",
+      "List of cylindrical holes in solids. Drilling coordinates and direction. Output to a table or Excel.",
       "Таблица присадки. Список цилиндрических отверстий в солидах. " +
         "Координаты и направление сверления. Вывод в таблицу или в Excel." ,
       "Elenco dei fori cilindrici nei solidi. " +
@@ -288,8 +296,7 @@ namespace AVC
       "Stellen Sie alle Blöcke-Assemblys in einer Reihe ein. Unterzeichnen Sie den Namen und die Anzahl der Blöcke.",
       "将所有块 - 分配连续设置。 签名名称和块数。"};
     public static readonly string[] FindNameTip =  {
-      "Search for parts and blocks by name, kind and description. " +
-        "Search by mask. Invert the visibility of found objects.",
+      "Search for parts and blocks by name, kind and description. Search by mask. Invert the visibility of found objects.",
       "Поиск деталей и блоков по имени, типу и описанию. " +
         "Поиск по маске. Инверсия видимости найденных объектов.",
       "Cerca parti e blocchi per nome, tipo e descrizione. " +
@@ -305,8 +312,7 @@ namespace AVC
       "Verrunden Sie alle Ecken der Polylinie.",
       "打断多段线的所有角并用平滑弧连接边。 能够配合弧段"};
     public static readonly string[] FixtureTip = {
-      "Arrangement of fixtures along joints of solids. " +
-        "RTA fittings, Fasteners, Furniture hinges, Shelf holders, Hardware",
+      "Arrangement of fixtures along joints of solids. RTA fittings, Fasteners, Furniture hinges, Shelf holders, Hardware",
       "Расстановка крепежей на стыке двух деталей: " +
         "эксцентрики, конфирматы, рафиксы, мебельные петли, полкодержатели…" ,
       "Disposizione degli elementi di fissaggio alla giunzione di due parti: " +
@@ -614,8 +620,7 @@ namespace AVC
       "无需查询即可搜索类似对象。" +
          "正在使用上次调用 SelectSame 命令的搜索参数。"};
     public static readonly string[] SliceTip = {
-      "Quick and smart similar SLICE command. " +
-        "Delamination (peeling) flat and curved faces of solid.",
+      "Quick and smart similar SLICE command. Delamination (peeling) flat and curved faces of solid.",
       "Быстрый и умный аналог команды Slice (Разрез). " +
         "Отслоение плоских и криволинейных поверхностей твердого тела." ,
       "Una controparte rapida e intelligente del comando Slice." +
@@ -752,6 +757,25 @@ namespace AVC
     // ============================================================================================================
     // Button Tips ================================================================================================
 
+    public static readonly string[] HelpTip = {
+      "Show documentation page in browser",
+      "Показать страницу документации в браузере",
+      "Mostra la pagina della documentazione nel browser",
+      "Dokumentationsseite im Browser anzeigen",
+      "在浏览器中显示文档页面"};
+    public static readonly string[] SaveTip = {
+      "Save all settings changes. \r\n" +
+        "You don't have to use this button since changes are saved automatically when you change the input field",
+      "Сохранить все изменения настроек. \r\n" +
+        "Вы можете не использовать данную кнопку так как изменения сохраняются автоматически при смене поля ввода",
+      "Salva tutte le modifiche alle impostazioni. \r\n" +
+        "Non è necessario utilizzare questo pulsante \r\n" +
+        "poiché le modifiche vengono salvate automaticamente quando si modifica il campo di input",
+      "Speichern Sie alle Einstellungsänderungen. \r\n" +
+        "Sie müssen diese Schaltfläche nicht verwenden, \r\n" +
+        "da Änderungen automatisch gespeichert werden, wenn Sie das Eingabefeld ändern",
+      "保存所有设置更改。\r\n" +
+        "您不必使用此按钮，因为当您更改输入字段时，更改会自动保存"};
     public static readonly string[] RestoreSettingsTip = {
       "Restore initial settings",
       "Восстановить начальные настройки",

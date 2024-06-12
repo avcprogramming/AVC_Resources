@@ -106,12 +106,17 @@ namespace AVC
       " Valore matrice di rotazione Zero",
       " Eine leere Rotationsmatrix.",
       " 空旋转矩阵。"};
-    public static readonly string[] PlaneErr = {
-      "The item is not in the XY plane",
-      "Деталь находится не в плоскости XY",
-      "Dettaglio non è nel piano XY",
-      "Das Teil befindet sich nicht in der XY-Ebene",
-      "零件不在 XY 平面内" };
+    public static readonly string[] NoBottom = {
+      "The part '{0}' has no reference plane found (which lies in the XY plane). \r\n" +
+        "The shape of the part is too complex to analyze.",
+      "У детали '{0}' не найдена базовая плоскость (лежащая в плоскости XY). \r\n" +
+        "Форма детали слишком сложная для анализа.",
+      "Per la parte '{0}' non è stato trovato alcun piano di riferimento (che si trova nel piano XY). \r\n" +
+        "La forma della parte '{0}' è troppo complessa per essere analizzata.",
+      "Die Referenzebene (die in der XY-Ebene liegt) wurde für Teil „{0}“ nicht gefunden. \r\n" +
+        "Die Form des Teils ist zu komplex für eine Analyse.",
+      "未找到零件「{0}」的參考平面（位於 XY 平面）\r\n" +
+        "零件的形狀太複雜，無法分析。" };
     public static readonly string[] BlockNotCreated = {
       "Block '{0}' not created ",
       "Блок '{0}' не создан ",

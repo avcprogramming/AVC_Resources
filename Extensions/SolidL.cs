@@ -1,5 +1,8 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
+
+// Ignore Spelling: Subentity
+
 namespace AVC
 {
   /// <summary>
@@ -194,5 +197,12 @@ namespace AVC
       "\nSelezione errata. È stato selezionato '{0}' ed era necessario '{1}'.\n",
       "\nIhre Auswahl ist falsch. Wurde '{0}' ausgewählt und war '{1}' notwendig.\n",
       "\n选择错误。 已选择“{0}”需要“{1}”。\n"};
+    public static readonly string[] SetSubentityPropertyErr = {
+      "Error in assigning solid surface properties: {0}",
+      "Ошибка назначения свойства поверхности солида: {0}",
+      "Errore nell'assegnazione delle proprietà della superficie solida: {0}",
+      "Fehler beim Zuweisen von Solid-Surface-Eigenschaften:Fehler beim Zuweisen von Solid-Surface-Eigenschaften: {0}",
+      "指定实体表面属性时出错：{0}"
+    };
   }
 }

@@ -1394,7 +1394,8 @@ namespace AVC
       "中点 Z" };
 
     // ================================================================================================
-    // CNC Contours     // ================================================================================================
+    // CNC Contours     
+    // ================================================================================================
     public static readonly string[] CNC = {
       "CNC",
       "ЧПУ",
@@ -1419,6 +1420,18 @@ namespace AVC
       "Profondità",
       "Tiefe",
       "深度" };
+    public static readonly string[] Passage = {
+      "Passage",
+      "Проход",
+      "Passaggio",
+      "Passage",
+      "頻道" };
+    public static readonly string[] Number = {
+      "Drilling Number",
+      "Номер сверления",
+      "Numero del trapano",
+      "Bohrernummer",
+      "鑽頭數量" };
     public static readonly string[] AngleFromVertical = {
       "Incline",
       "Наклон",

@@ -340,13 +340,7 @@ namespace AVC
          "但对于四边形零件，您可以随意重新排列末端。" +
          "写一个从 1 到 4 的四个数字的列表，用逗号分隔。" +
          "此顺序仅在属性面板中有效，对替换无效。" };
-    public static readonly string[] LineStyle = {
-      "Line Style",
-      "Стиль линий",
-      "Stile linea",
-      "Linienstil",
-      "线条样式" };
-    public static readonly string[] LineStyleTip = {
+    public static readonly string[] LineTypeTip = {
       "Show Line Type, Line Scale, and Line Weight for all curves. \r\n" +
         "On the Layer tab, these properties will be shown in any case.",
       "Показывать у всех кривых тип линий, масштаб линий и вес линий. \r\n" +

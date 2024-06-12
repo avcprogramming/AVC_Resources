@@ -43,21 +43,21 @@ namespace AVC
       "%%c%diam%\\X深度 %depth%%countersink: {0}%"};
 
     public static readonly string[] DefDadoFormat = {
-      "W%diam%\\XDepth %depth%",
-      "Ш%diam%\\XГл.%depth%",
-      "Lar.%diam%\\XPr.%depth%",
-      "B%diam%\\XTiefe %depth%",
-      "宽度%diam%\\X深度 %depth%"};
+      "Dado %passage% Depth %depth%",
+      "Паз %passage% Гл.%depth%",
+      "Sc.%passage% Pr.%depth%",
+      "Rille %passage% Tiefe %depth%",
+      "槽%passage% 深度%depth%"};
 
     // ======================================== Dialog Box ===========================================================
 
-    public static readonly string[] BandingAllLeaders = {
+    public static readonly string[] BandingLeadersEvenAllSame = {
       "Even if everyone is the same",
       "Даже если все одинаковые",
       "Anche se tutti sono uguali",
       "Auch wenn alle gleich sind",
       "即使每个人都一样"};
-    public static readonly string[] BandingAllLeadersTip = {
+    public static readonly string[] BandingLeadersEvenAllSameTip = {
       "Make leaders with edge materials even if all edges are covered with the same material. \r\n" +
         "Usually, the coating of the edges is indicated in the description of the part \r\n" +
         "and it makes no sense to repeat it on the leaders at all edges. \r\n" +
@@ -86,13 +86,13 @@ namespace AVC
         "通常，边缘的涂层会在零件描述中注明，在所有边缘的引线上重复它是没有意义的。 \r\n" +
         "该设置仅适用于零件外侧的末端（封边条）。 \r\n" +
         "其余的覆盖物无论如何都会显示出来。"};
-    public static readonly string[] BandingLeaders = {
+    public static readonly string[] CoverLeaders = {
       "Cover Leaders",
       "Выноски покрытий",
       "Leader della bordatura",
       "Führungslinie der Kante",
       "磨边的领导者"};
-    public static readonly string[] BandingLeadersTip = {
+    public static readonly string[] CoverLeadersTip = {
       "Coating symbols for all surfaces of the part on the leaders. \r\n" +
         "For painting, laminating and edge bandings." ,
       "Обозначения покрытий всех поверхностей детали на выносках. \r\n" +
@@ -103,6 +103,34 @@ namespace AVC
         "Zum Lackieren, Kaschieren und Kantenanleimen.",
       "引线上零件所有表面的涂层符号。 \r\n" +
         "用于喷漆、层压和封边。"};
+    public static readonly string[] Leader45gr = {
+      "Place leaders at 45 degrees",
+      "Выносить выноски под 45 градусов",
+      "Posiziona i leader a 45 gradi",
+      "Platzieren Sie die Vorfächer im 45-Grad-Winkel",
+      "將引線放置在 45 度角"};
+    public static readonly string[] Leader45grTip = {
+      "Place the leader text not directly opposite the arrow,  \r\n" +
+        "but move it to the side so that the arrow has an angle of 45 degrees to the horizontal.",
+      "Размещать текст выноски не прямо напротив стрелки, а сдвигать в сторону,  \r\n" +
+        "чтоб стрелка имела угол 45 градусов к горизонтали.",
+      "Posiziona il testo del leader non direttamente di fronte alla freccia,  \r\n" +
+        "ma spostalo di lato in modo che la freccia abbia un angolo di 45 gradi rispetto all'orizzontale.",
+      "Platzieren Sie den Leader-Text nicht direkt gegenüber dem Pfeil,  \r\n" +
+        "sondern verschieben Sie ihn zur Seite, sodass der Pfeil einen Winkel von 45 Grad zur Horizontalen hat.",
+      "將標註文字放置在不直接與箭頭相對的位置， \r\n" +
+        "而是將其移至一側，使箭頭與水平線成 45 度角。"};
+    public static readonly string[] ArrowToDotTip = {
+      "For leaders from the center of the face, which do not come from the contour line of the part,  \r\n" +
+        "but from an empty space inside the part, replace the arrow with a circle",
+      "Для выносок от центра поверхности, которые идут не от линии контура детали, \r\n" +
+        "а от пустого места внутри детали, заменять стрелку на кружочек",
+      "Per i richiami dal centro della superficie che non provengono dalla linea di contorno della parte,  \r\n" +
+        "ma da uno spazio vuoto all'interno della parte, sostituire la freccia con un cerchio",
+      "Für Beschriftungen von der Mitte der Oberfläche, die nicht von der Konturlinie des Teils,  \r\n" +
+        "sondern von einem leeren Raum innerhalb des Teils stammen, ersetzen Sie den Pfeil durch einen Kreis",
+      "對於來自曲面中心的標註 \r\n" +
+        "（不是來自零件的輪廓線，而是來自零件內部的空白空間），請將箭頭替換為圓圈"};
     public static readonly string[] DimStyleTip = {
       "Dimension style for overall dimensions. \r\n" +
         "Leave blank to use the current style." ,
@@ -251,6 +279,18 @@ namespace AVC
         "Die Genauigkeit der Winkelbezeichnung hängt vom aktuellen Bemaßungsstil ab.",
       "用锯子的斜面为细节的末端创建标记。\r\n" +
         "角度指定的准确性取决于当前的标注样式。"};
+    public static readonly string[] DadoLeaders = {
+      "Dado Leaders",
+      "Выноски выборок и пазов",
+      "Vorfächer für Ausschnitte und Nuten",
+      "Leader per ritagli e scanalature",
+      "用於切口和凹槽的引線" };
+    public static readonly string[] DadoLeadersTip = {
+      "Mark the depth of the dadoes and grooves on the leaders from their center.",
+      "Обозначить глубину выборок и пазов на выносках из их центра.",
+      "Segna la profondità dei dado e delle scanalature sui leader dal loro centro.",
+      "Markieren Sie die Tiefe der Vorsprünge und Rillen auf den Vorfächern von der Mitte aus.",
+      "從中心標記出導槽和凹槽的深度。" };
     public static readonly string[] TextHeightUpdate = {
       "Height of MTexts for a viewport",
       "Размер текстов под вьюпорт",
@@ -308,6 +348,12 @@ namespace AVC
       "Modello",
       "Format",
       "格式"};
+    public static readonly string[] DadoLeaderFormat = {
+      "Format",
+      "Шаблон",
+      "Modello",
+      "Format",
+      "格式"};
     public static readonly string[] MaxDrillWidth = {
       "Width of drilling machine",
       "Ширина сверлильного станка",
@@ -320,18 +366,64 @@ namespace AVC
       "Modello passante",
       "Durchgangslochformat",
       "通孔格式"};
-    public static readonly string[] Tilt = {
+    public static readonly string[] SlopeLeadersFormat = {
       "Format",
       "Шаблон",
       "Modello",
       "Format",
       "格式"};
-    public static readonly string[] TiltBelow = {
+    public static readonly string[] SlopeDownward = {
       "Downward",
       "Текст 'снизу'",
       "'dal basso'",
       "'Nach unten'",
       "向下"};
+    public static readonly string[] DadoLeaderFormatTip = {
+      "Use any face property substitutions" ,
+      "Используйте любые подстановки свойств поверхности.",
+      "Utilizzare qualsiasi sostituzione delle proprietà della superficie.",
+      "Verwenden Sie alle Oberflächeneigenschaftssubstitutionen",
+      "使用任何表面特性替代"};
+    public static readonly string[] DrillNumberTip = {
+      "Place text with a number next to the drillings. \r\n" +
+        "Numbers are given by diameter and location from left to right. \r\n" +
+        "Use the %number% substitution in the Drilling Table." ,
+      "Поставить текст с номером рядом со сверлениями. \r\n" +
+        "Номера даются по диаметрам и расположению слева на право. \r\n" +
+        "Используйте подстановку %number% в Таблице Сверлений.",
+      "Posiziona il testo con un numero accanto alle forature. \r\n" +
+        "I numeri sono dati dal diametro e dalla posizione da sinistra a destra. \r\n" +
+        "Utilizzare la sostituzione %number% nella tabella di perforazione.",
+      "Platzieren Sie neben den Bohrungen einen Text mit einer Nummer. \r\n" +
+        "Die Zahlen werden nach Durchmesser und Position von links nach rechts angegeben. \r\n" +
+        "Verwenden Sie die %number%-Ersetzung in der Bohrtabelle.",
+      "在鑽孔旁邊放置帶有數字的文字。\r\n" +
+        "數字按直徑和位置從左到右給出。\r\n" +
+        "在鑽取表中使用%number% 替換。" };
+    public static readonly string[] DrillNumberFormat = {
+      "Format",
+      "Шаблон",
+      "Modello",
+      "Format",
+      "格式"};
+    public static readonly string[] DrillNumberFormatTip = {
+      "Use the %number% substitution or any drill property substitutions and any text.",
+      "Используйте подстановку %number% или любые подстановки свойств сверления и любой текст.",
+      "Utilizzare la sostituzione %number% o qualsiasi sostituzione di proprietà drill e qualsiasi testo.",
+      "Verwenden Sie die %number%-Ersetzung oder beliebige Drill-Eigenschafts-Ersetzungen und beliebigen Text.",
+      "使用%number% 替換或任何鑽取屬性替換和任何文字。"};
+    public static readonly string[] TextStyleTip = {
+      "Drilling number text style. \r\n" +
+        "Styles specify the font and text size. \r\n" +
+        "Leave blank to use the current text style.",
+      "Стиль текста номеров сверлений. В стилях задается шрифт и размер текста. \r\n" +
+        "Оставьте пустым, чтоб использовать текущий стиль текста.",
+      "Forare lo stile del testo del numero. Gli stili specificano il carattere e la dimensione del testo. \r\n" +
+        "Lascia vuoto per utilizzare lo stile di testo corrente.",
+      "Drill-Nummerntextstil. Stile geben die Schriftart und Textgröße an. \r\n" +
+        "Lassen Sie das Feld leer, um den aktuellen Textstil zu verwenden.",
+      "鑽號文字樣式。樣式指定字體和文字大小。\r\n" +
+        "留空以使用目前文字樣式。"};
     public static readonly string[] CoverLeaderFormatTip = {
       "Use any surface property substitutions, \r\n" +
         "including properties of its coating material. \r\n" +
@@ -354,7 +446,7 @@ namespace AVC
         "%depth% - depth" ,
       "Текст на размерной линии для глухих отверстий. \r\n" +
         "Можно использовать любые подстановки свойств детали и контуров, такие как: \r\n" +
-        "%diam% - диаметер \r\n" +
+        "%diam% - диаметр \r\n" +
         "%depth% - глубина.",      "",
       "Testo della linea di quotatura per fori ciechi. \r\n" +
         "È possibile utilizzare qualsiasi sostituzione di proprietà di parte e contorno, ad esempio: \r\n" +
@@ -445,7 +537,7 @@ namespace AVC
         "您可以使用任何零件和轮廓属性替换，例如：\r\n" +
         "%diam% - 直径 \r\n" +
         "%depth% - 深度"};
-    public static readonly string[] TiltTip = {
+    public static readonly string[] SlopeLeadersFormatTip = {
       "Leader text template. \r\n" +
         "Any substitutions can be used in the text, including: \r\n" +
         "%angle% - tilt angle \r\n" +
@@ -490,6 +582,22 @@ namespace AVC
         "Belassen Sie den Wert 0, damit das Programm die halbe Schrifthöhe einrückt.",
       "从零件或引线到尺寸线的距离。 \r\n" +
         "保留值 0，以便程序缩进一半的字体高度。"};
+    public static readonly string[] BasePointTip = {
+      "Place a bold dot at the origin of the part coordinates. \r\n" +
+        "The dimensions in the Drilling Table are measured from this point. \r\n" +
+        "The dot is always in the lower left corner of the part dimensions.",
+      "Поставить жирную точку в начале координат детали. \r\n" +
+        "От этой точки отсчитываются размеры в Таблице Сверлений. \r\n" +
+        "Точка всегда в нижнем левом углу габаритов детали.",
+      "Posiziona un punto in grassetto all'origine delle coordinate della parte. \r\n" +
+        "Le dimensioni nella tabella di foratura vengono misurate da questo punto. \r\n" +
+        "Il punto si trova sempre nell'angolo inferiore sinistro delle quote della parte.",
+      "Platzieren Sie einen fetten Punkt am Ursprung der Teilekoordinaten. \r\n" +
+        "Die Maße in der Bohrtabelle werden von diesem Punkt aus gemessen. \r\n" +
+        "Der Punkt befindet sich immer in der unteren linken Ecke der Teilabmessungen.",
+      "在零件座標的原點放置一個粗體點。\r\n" +
+        "鑽孔表中的尺寸是從該點開始測量的。\r\n" +
+        "該點始終位於零件尺寸的左下角。"};
 
   }
 }

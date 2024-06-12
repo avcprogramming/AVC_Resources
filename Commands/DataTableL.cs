@@ -48,11 +48,13 @@ namespace AVC
           CommandL.DrillTable[2], 
           CommandL.DrillTable[3], 
           CommandL.DrillTable[4]  },
+
 /*1*/   { CommandL.DrillTable[0], 
           "Присадка", 
           CommandL.DrillTable[2],
           CommandL.DrillTable[3], 
           CommandL.DrillTable[4] },
+
 /*2*/   { "Drilling", 
           "Сверления", 
           "Foratura", 

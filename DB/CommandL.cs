@@ -87,6 +87,18 @@ namespace AVC
       "Metrica del blocco",
       "Blockmetrik",
       "块指标" };
+    public static readonly string[] BoxToWall = {
+      "Box To Wall",
+      "Стена из бокса",
+      "Scatola da murare",
+      "Box zur Wand",
+      "盒子到墙" };
+    public static readonly string[] BoxFromTable = {
+      "Box From Table",
+      "Боксы по таблице",
+      "Scatola Dalla Tabella",
+      "Box aus Tabelle",
+      "来自表格的框" };
     public static readonly string[] BUpdate = {
       "Block Update",
       "Обновить Блок",
@@ -276,18 +288,6 @@ namespace AVC
       "Esplodi mesh",
       "Explosionsnetz",
       "炸网" };
-    public static readonly string[] MeshToSolidOptimize = {
-      "MeshToSolid Optimize",
-      "Оптимизация Сеть в солид",
-      "MeshToSolid Ottimizza",
-      "MeshToSolid Optimize",
-      "将网络转换为实体后的优化" };
-    public static readonly string[] MeshToSolidMaxFaces = {
-      "MeshToSolid Max Faces",
-      "Максимальная сеть для Сеть в солид",
-      "MeshToSolid Max Faces",
-      "MeshToSolid Max Gesichter",
-      "最大网络" };
     public static readonly string[] Miter = {
       "Miter Joint",
       "Соединение Под ус",
