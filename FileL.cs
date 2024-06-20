@@ -36,6 +36,12 @@ namespace AVC
       "File non specificato.",
       "Datei nicht angegeben.",
       "未指定文件"    };
+    public static readonly string[] ExtensionError ={
+      "Invalid file type '{0}'",
+      "Недопустимый тип файла '{0}'",
+      "Tipo di file '{0}' non valido",
+      "Ungültiger Dateityp „{0}“",
+      "檔案類型「{0}」無效" };
     public static readonly string[] FileNotExist ={
       "File '{0}' does not exist",
       "Не существует файл '{0}'",
@@ -72,6 +78,12 @@ namespace AVC
       "Copia del file '{0}' nella cartella '{1}'.",
       "Kopieren der Datei '{0}' in den Ordner '{1}'." ,
       "正在将文件“{0}”复制到文件夹“{1}”。"   };
+    public static readonly string[] ReadingFile =    {
+      "Reading file '{0}'",
+      "Чтение файла '{0}'",
+      "Lettura del file '{0}'",
+      "Datei „{0}“ wird gelesen" ,
+      "正在读取文件“{0}”"   };
     public static readonly string[] FileCopied ={
       "Successfully copied '{0}' \tto '{1}'",
       "Скопирован файл '{0}' \tв папку '{1}'",

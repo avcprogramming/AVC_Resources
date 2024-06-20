@@ -259,6 +259,27 @@
   <data name="Blocks32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Blocks32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BoxFromTable16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxFromTable16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoxFromTable32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxFromTable32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoxFromTable80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxFromTable80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoxToVector16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxToVector16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoxToVector32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxToVector32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoxToWall16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxToWall16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoxToWall32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BoxToWall32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BUpdate16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\BUpdate16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

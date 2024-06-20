@@ -74,6 +74,12 @@ namespace AVC
       "Il valore {0} non è adatto per il parametro {1}.",
       "Der Wert {0} ist für Parameter {1} nicht geeignet.",
       "值 {0} 不适用于参数 {1}" };
+    public static readonly string[] BlockNotFound = {
+      "Block '{0}' not found ",
+      "Блок '{0}' не найден",
+      "Blocco '{0}' non trovato",
+      "Block „{0}“ nicht gefunden",
+      "未找到块“{0}”" };
 
   }
 }

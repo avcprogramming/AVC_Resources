@@ -145,6 +145,14 @@ namespace AVC
       "Creare una sezione di una parete divisoria in legno (muro) in base alle dimensioni di una determinata scatola solida",
       "Erstellen Sie einen Abschnitt einer hölzernen Trennwand (Wand) entsprechend den Abmessungen eines bestimmten festen Kastens",
       "根据给定实心盒子的尺寸创建木隔板（墙）的一部分" };
+    public static readonly string[] BoxToVectorTip = {
+      "Create a flat drawing of a wooden partition (wall) according to the dimensions of a given solid-box or block",
+      "Создать плоский чертеж деревянной перегородки (стены) по размерам заданного солида-бокса или блока",
+      "Crea un disegno piatto di una partizione in legno (muro) " +
+        "in base alle dimensioni di una determinata scatola o blocco solido",
+      "Erstellen Sie eine flache Zeichnung einer hölzernen Trennwand (Wand) " +
+        "entsprechend den Abmessungen eines bestimmten massiven Kastens oder Blocks",
+      "根據給定的實心盒子或塊的尺寸創建木質隔間（牆）的平面圖" };
     public static readonly string[] BoxFromTableTip = {
       "Create solid-boxes using data from an Excel table",
       "Создать солиды-боксы по данным из таблицы Excel",

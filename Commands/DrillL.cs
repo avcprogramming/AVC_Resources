@@ -12,11 +12,11 @@ namespace AVC
       "  Aktuelle Einstellungen: SPIEL = {0:0.####}",
       "  当前设置：间隙 = {0:0.####}"};
     public static readonly string[] NoSub = {
-      "  Nothing to subtract. Command canceled",
-      "  Нечего вычитать. Команда отменена.",
-      "  Non c’è niente da sottrarre. Comando annullato",
-      "  Nichts abzuziehen. Der Befehl wird abgebrochen.",
-      "  没有什么可减去的。 命令已取消" };
+      "  Nothing to subtract. Drill command canceled",
+      "  Нечего вычитать. Сверление отменено.",
+      "  Non c’è niente da sottrarre. Comando di perforazione annullato",
+      "  Nichts abzuziehen. Bohrbefehl abgebrochen",
+      "  没有什么可减去的。 演习命令取消" };
     public static readonly string[] NoIntersections = {
       "  The holes do not intersect any detail.",
       "  Отверстия не пересекли ни одной детали.",
@@ -30,11 +30,11 @@ namespace AVC
       "  Anzahl der Details: {0}. Anzahl der Löcher: {1}. Anzahl der Blöcke: {2}",
       "  详细信息计数：{0}。 孔数量：{1}。 块数量：{2}" };
     public static readonly string[] NoHoles = {
-      "  No solids in hole layer '{0}'. Command canceled",
-      "  Нет ни одного солида в слое отверстий '{0}'. Команда отменена.",
-      "  Non ci sono solidi sul layer tagliente '{0}'. Comando annullato",
-      "  Keine Feststoffe in der LÖcherLayer '{0}'. Befehl abgebrochen",
-      "  孔图层“{0}”中没有三维实体。 命令已取消" };
+      "  No solids in hole layer '{0}'. Drill command canceled.",
+      "  Нет ни одного солида в слое отверстий '{0}'. Команда сверления отменена.",
+      "  Non ci sono solidi sul layer tagliente '{0}'. Comando di perforazione annullato.",
+      "  Keine Feststoffe in der LÖcherLayer '{0}'. Bohrbefehl abgebrochen.",
+      "  孔图层“{0}”中没有三维实体。 演习命令取消" };
     public static readonly string[] MadeHoles = {
       "  Drills performed: {0}",
       "  Выполнено сверлений: {0}",
@@ -109,6 +109,12 @@ namespace AVC
         "um eine andere Ebene für Subtrahend-Volumenkörper auszuwählen.",
       "  未找到孔图层 {0}。\n " +
          "创建孔图层或使用选项  孔图层(HoleLayer) 选择其它图层。"};
+    public static readonly string[] LayerNotSpecified = {
+      "The hole layer is not specified in the Drilling command settings",
+      "В настройках команды Сверление не задан слой отверстий",
+      "Lo strato del foro non è specificato nelle impostazioni del comando di foratura",
+      "Die Lochebene ist in den Bohrbefehlseinstellungen nicht angegeben",
+      "钻孔命令设置中未指定孔层" };
     public static readonly string[] AllInOne = {
       "  All solids on one layer. You need to replace the layer at hole-solids.",
       "  Все солиды на одном слое. Вы должны заменить слой у солидов-отверстий.",

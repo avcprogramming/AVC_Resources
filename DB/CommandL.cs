@@ -93,6 +93,12 @@ namespace AVC
       "Scatola da murare",
       "Box zur Wand",
       "盒子到墙" };
+    public static readonly string[] BoxToVector = {
+      "Box To Vector",
+      "Векторы из бокса",
+      "Casella al vettore",
+      "Box zu Vektor",
+      "框到向量" };
     public static readonly string[] BoxFromTable = {
       "Box From Table",
       "Боксы по таблице",

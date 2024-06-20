@@ -117,12 +117,6 @@ namespace AVC
         "Die Form des Teils ist zu komplex für eine Analyse.",
       "未找到零件「{0}」的參考平面（位於 XY 平面）\r\n" +
         "零件的形狀太複雜，無法分析。" };
-    public static readonly string[] BlockNotCreated = {
-      "Block '{0}' not created ",
-      "Блок '{0}' не создан ",
-      "Blocco non creato '{0}'",
-      "Block nicht erstellt '{0}'",
-      "未创建块“{0}” " };
     public static readonly string[] ColorErr = {
       "Can't get color of Face.",
       "Не удалось получить цвет грани.",

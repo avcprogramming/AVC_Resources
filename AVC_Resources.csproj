@@ -1163,5 +1163,26 @@
   <ItemGroup>
     <None Include="Resources\Undo32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxFromTable16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxFromTable32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxFromTable80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxToVector16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxToVector32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxToWall16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxToWall32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
