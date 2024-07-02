@@ -154,11 +154,11 @@ namespace AVC
         "entsprechend den Abmessungen eines bestimmten massiven Kastens oder Blocks",
       "根據給定的實心盒子或塊的尺寸創建木質隔間（牆）的平面圖" };
     public static readonly string[] BoxFromTableTip = {
-      "Create solid-boxes using data from an Excel table",
-      "Создать солиды-боксы по данным из таблицы Excel",
-      "Crea scatole solide utilizzando i dati di una tabella Excel",
-      "Erstellen Sie ausgefüllte Kästchen mit Daten aus einer Excel-Tabelle",
-      "使用 Excel 表格中的数据创建实心框" };
+      "Create solid boxes and insert blocks based on data from an Excel table",
+      "Создать солиды-боксы и расставить блоки по данным из таблицы Excel",
+      "Crea scatole solide e disponi i blocchi in base ai dati di una tabella Excel",
+      "Erstellen Sie feste Kästchen und ordnen Sie die Blöcke entsprechend den Daten aus einer Excel-Tabelle an.",
+      "创建实心框并根据 Excel 表格中的数据排列块。" };
     public static readonly string[] BUpdateTip = {
       "Replace selected blocks with blocks of the same name from another drawing.",
       "Заменить выбранные блоки на одноименные блоки из другого чертежа." ,
@@ -755,6 +755,12 @@ namespace AVC
         "Explosion dieser Blöcke. Übertragen des Namens und der Attribute des Blocks auf das Teil.",
       "搜索仅包含一个部分的块（实心、折线...）。"+
          "这些块的爆炸。将块的名称和属性转移到细节中。"};
+    public static readonly string[] UserPaletteTip = {
+      "Open or close individual palettes to edit each custom (user) property",
+      "Открыть или закрыть отдельные палитры для редактирования каждого заказного пользовательского свойства",
+      "Apri o chiudi singole tavolozze per modificare ciascuna proprietà personalizzata",
+      "Öffnen oder schließen Sie einzelne Paletten, um jede benutzerdefinierte Eigenschaft zu bearbeiten",
+      "打开或关闭各个调色板以编辑每个自定义属性"};
     public static readonly string[] ZoneTip = {
       "Create a closed loop around a curve at a specified distance. Merge several such contours.",
       "Начертить единую замкнутую полилинию вокруг множества линий и кривых на заданном удалении.",

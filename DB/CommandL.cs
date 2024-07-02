@@ -500,6 +500,12 @@ namespace AVC
       "Disimballaggio",
       "Auspacken",
       "拆箱" };
+    public static readonly string[] UserPalette = {
+      "User Property Palette",
+      "Палитра пользовательских свойств",
+      "Tavolozza proprietà personalizzate",
+      "Benutzerdefinierte Eigenschaftenpalette",
+      "自定义属性面板" };
     public static readonly string[] Updater = {
       "Update programs",
       "Обновление программ",

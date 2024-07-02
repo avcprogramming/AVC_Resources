@@ -1581,6 +1581,16 @@ namespace AVC {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon I {
+            get {
+                object obj = ResourceManager.GetObject("I", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap Image32 {
@@ -1647,16 +1657,6 @@ namespace AVC {
             get {
                 object obj = ResourceManager.GetObject("ImportMat32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
-        /// </summary>
-        public static System.Drawing.Icon Info {
-            get {
-                object obj = ResourceManager.GetObject("Info", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -1751,6 +1751,16 @@ namespace AVC {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon K {
+            get {
+                object obj = ResourceManager.GetObject("K", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap Key16 {
@@ -1767,16 +1777,6 @@ namespace AVC {
             get {
                 object obj = ResourceManager.GetObject("Key32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
-        /// </summary>
-        public static System.Drawing.Icon Kind {
-            get {
-                object obj = ResourceManager.GetObject("Kind", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -2293,9 +2293,9 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
         /// </summary>
-        public static System.Drawing.Icon Name {
+        public static System.Drawing.Icon N {
             get {
-                object obj = ResourceManager.GetObject("Name", resourceCulture);
+                object obj = ResourceManager.GetObject("N", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -3481,6 +3481,16 @@ namespace AVC {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon User {
+            get {
+                object obj = ResourceManager.GetObject("User", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap User16 {
@@ -3496,6 +3506,26 @@ namespace AVC {
         public static System.Drawing.Bitmap User32 {
             get {
                 object obj = ResourceManager.GetObject("User32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap UserPalette16 {
+            get {
+                object obj = ResourceManager.GetObject("UserPalette16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap UserPalette32 {
+            get {
+                object obj = ResourceManager.GetObject("UserPalette32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

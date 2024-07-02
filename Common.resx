@@ -565,6 +565,9 @@
   <data name="Help32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Help32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="I" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\i.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Image32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Image32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -585,9 +588,6 @@
   </data>
   <data name="ImportMat32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ImportMat32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\i.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="InfoPalette16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\InfoPAlette16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -616,14 +616,14 @@
   <data name="Invert80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Invert80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="K" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\k.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Key16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Key16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Key32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Key32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\k.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KindPalette16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\KindPalette16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -778,7 +778,7 @@
   <data name="MultiSlice80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MultiSlice80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="N" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\n.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NamePalette16" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -1135,11 +1135,20 @@
   <data name="Url32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Url32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\U.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="User16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\user16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="User32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\user32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserPalette16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UserPalette16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserPalette32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UserPalette32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Viewport32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Viewport32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

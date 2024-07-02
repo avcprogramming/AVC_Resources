@@ -1184,5 +1184,14 @@
   <ItemGroup>
     <None Include="Resources\BoxToWall32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserPalette16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserPalette32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

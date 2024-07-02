@@ -386,5 +386,51 @@ namespace AVC
         "Wenn die Option deaktiviert ist, wird die erste verfügbare Registerkarte geöffnet.",
       "保存切换调色板选项卡的历史记录，以向用户显示最近使用的选项卡。 \r\n" +
         "如果禁用该选项，将打开第一个可用选项卡。" };
+    public static readonly string[] VirtualAttributes = {
+      "Virtual block attributes",
+      "Виртуальные атрибуты блоков",
+      "Attributi del blocco virtuale",
+      "Virtuelle Blockattribute",
+      "虚拟块属性" };
+    public static readonly string[] VirtualConstAttributes = {
+      "Virtual constant block attributes",
+      "Виртуальные константные атрибуты блоков",
+      "Attributi del blocco costante virtuale",
+      "Blockattribute virtueller Konstanten",
+      "虚拟常量块属性" };
+    public static readonly string[] VirtualAttributesTip = {
+      "Always show virtual attributes in block properties, even if the block does not have them. \r\n" +
+        "Write a list of one attribute per line.\r\n" +
+        "You can also write the default attribute value. Write it after the equal sign, without spaces.\r\n" +
+        "Not for annotative blocks.",
+      "Всегда показывать в свойствах блока виртуальные атрибуты, даже если у блока их нет.\r\n" +
+        "Напишите список по одному атрибуту в строке.\r\n" +
+        "Можно написать так же значение атрибута по умолчанию. Пишите его после знака равно, без пробелов. \r\n" +
+        "Не для аннотативных блоков.",
+      "Mostra sempre gli attributi virtuali nelle proprietà del blocco, anche se il blocco non li possiede. \r\n" +
+        "Scrivi un elenco di un attributo per riga.\r\n" +
+        "Puoi anche scrivere il valore dell'attributo predefinito. Scrivilo dopo il segno uguale, senza spazi.\r\n" +
+        "Non per i blocchi annotativi.",
+      "Zeigen Sie virtuelle Attribute immer in den Blockeigenschaften an, auch wenn der Block sie nicht hat. \r\n" +
+        "Schreiben Sie eine Liste mit einem Attribut pro Zeile.\r\n" +
+        "Sie können auch den Standardattributwert schreiben. \r\n" +
+        "Schreiben Sie es nach dem Gleichheitszeichen, ohne Leerzeichen.\r\n" +
+        "Nicht für Anmerkungsblöcke.",
+      "始终在块属性中显示虚拟属性，即使该块没有虚拟属性。\r\n" +
+        "不适用于注释性块。\r\n" +
+        "编写每行一个属性的列表。\r\n" +
+        "您还可以编写默认属性值。写在等号后面，不要有空格。"};
+    public static readonly string[] VirtualConstAttributesTip = {
+      "Always show virtual constant attributes in block definition properties, even if the block does not have them. " +
+        "Not for annotative blocks.",
+      "Всегда показывать в свойствах определения блока виртуальные константные атрибуты, даже если у блока их нет. " +
+        "Не для аннотативных блоков.",
+      "Mostra sempre gli attributi costanti virtuali nelle proprietà di definizione del blocco, anche se il blocco non li dispone. " +
+        "Non per i blocchi annotativi.",
+      "Zeigen Sie virtuelle Konstantenattribute immer in den Blockdefinitionseigenschaften an, auch wenn der Block sie nicht hat. " +
+        "Nicht für Anmerkungsblöcke.",
+      "始终在块定义属性中显示虚拟常量属性，即使该块没有这些属性。" +
+        "不适用于注释性块。"};
+
   }
 }

@@ -482,6 +482,18 @@ namespace AVC
       "Ruota le parti con il lato lungo lungo l'asse Y. La texture verrà anche ruotata verticalmente.",
       "Drehen Sie die Teile mit der langen Seite entlang der Y-Achse. Die Textur wird auch vertikal gedreht.",
       "纹理或长边,沿 Y 轴旋转，"};
+    public static readonly string[] UpsideDown = {
+      "Flip",
+      "Перевернуть",
+      "Flip",
+      "Umdrehen",
+      "翻动"};
+    public static readonly string[] UpsideDownTip = {
+      "Rotate the part around Z 180 degrees so that the best angle and the best edge are at the top of the drawing.",
+      "Развернуть деталь вокруг Z на 180 градусов, чтоб лучший угол и лучшее ребро были сверху чертежа",
+      "Ruota la parte attorno a Z di 180 gradi in modo che l'angolo e il bordo migliori si trovino nella parte superiore del disegno.",
+      "Drehen Sie das Teil um 180 Grad um Z, sodass der beste Winkel und die beste Kante oben in der Zeichnung liegen.",
+      "Ruota la parte attorno a Z di 180 gradi in modo che l'angolo e il bordo migliori si trovino nella parte superiore del disegno."};
     public static readonly string[] MarkTexture = {
       "Mark texture",
       "Пометка текстуры",

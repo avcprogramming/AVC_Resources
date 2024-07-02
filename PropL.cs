@@ -112,6 +112,12 @@ namespace AVC
       "Il nome {0} è già stato usato.",
       "Der Name {0} wurde bereits verwendet.",
       "名称 {0} 已被使用。" };
+    public static readonly string[] ExternalDataSizeExceeded = {
+      "Too much data for one object. The xData size limit has been exceeded.",
+      "Слишком много данных для одного объекта. Превышено ограничение на размер xData.",
+      "Troppi dati per un oggetto. Il limite della dimensione xData è stato superato.",
+      "Zu viele Daten für ein Objekt. Die Größenbeschränkung für xData wurde überschritten.",
+      "一个对象的数据过多。已超出 xData 大小限制。"};
     public static readonly string[] AddPropertyTip = {
       "Add a property/attribute to this list.",
       "Добавить свойство/атрибут к этому списку.",
@@ -130,6 +136,17 @@ namespace AVC
       "  Lettura di oggetti di disegno",
       "  Zeichnungsobjekte lesen",
       "  读取绘图对象的属性"};
+    public static readonly string[] NoUserProperty =  {
+      "You do not have any custom properties set. " +
+        "To purchase a special version with the custom properties you need, write to AVC technical support.",
+      "У вас не установлены никакие пользовательские свойства. " +
+        "Для покупки специальной версии с нужными вам пользовательскими свойствами напишите в техподдержку AVC.",
+      "Non hai impostato alcuna proprietà personalizzata. " +
+        "Per acquistare una versione speciale con le proprietà personalizzate di cui hai bisogno, scrivi al supporto tecnico AVC.",
+      "Sie haben keine benutzerdefinierten Eigenschaften festgelegt. " +
+        "Um eine spezielle Version mit den von Ihnen benötigten benutzerdefinierten Eigenschaften zu erwerben, " +
+        "schreiben Sie an den technischen Support von AVC.",
+      "您没有设置任何自定义属性。要购买具有所需自定义属性的特殊版本，请写信给 AVC 技术支持。"};
     public static readonly string[] Properties = {
       "Properties",
       "Свойства",
@@ -266,6 +283,12 @@ namespace AVC
         "können aber beim Extrahieren der Daten verwendet werden.",
       "此对象的描述说明。 你可以写任何文字。 您可以插入换行符。 \r\n" +
         "通常这些数据在绘图中是不可见的，但可以在提取数据时使用。"};
+    public static readonly string[] CustomPropertyTip = {
+      "Additional custom property for storing any text.",
+      "Дополнительное пользовательское свойство для хранения любого текста.",
+      "Proprietà personalizzata aggiuntiva per la memorizzazione di qualsiasi testo.",
+      "Zusätzliche benutzerdefinierte Eigenschaft zum Speichern von beliebigem Text.",
+      "用于存储任何文本的附加自定义属性。"};
     public static readonly string[] Named = {
       "Named",
       "Именованный",
