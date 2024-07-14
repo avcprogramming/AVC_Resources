@@ -192,15 +192,15 @@ namespace AVC
       "Entfernen Löcher",
       "删除孔" };
     public static readonly string[] DeleteHolesTip = {
-      "Select whether to remove solid-holes at the end of the program.\r\n" +
-         "Solids inside the blocks will remain in any case.",
-      "Выбелите удалять ли солиды-отверстия в конце работы программы.\r\n" +
-        "Солиды внутри блоков в любом случае сохранятся.",
-      "Seleziona se rimuovere i taglienti alla fine del programma.\r\n" +
-         "I solidi all'interno dei blocchi rimarranno comunque.",
-      "Wählen Sie aus, ob Löcher am Ende des Programms entfernt werden sollen.\r\n" +
-         "Volumenkörpers in den Blöcken bleiben auf jeden Fall zurück.",
-      "选择是否在程序结束时删除实体孔。无论如何设置，块内的孔实体都会保留下来。" };
+      "Select whether to remove solid-holes at the end of the Drill program.\r\n" +
+         "Solids inside the blocks will remain in any case. The GAP command always preserves subtracted solids.",
+      "Выбелите удалять ли солиды-отверстия в конце работы программы сверления DRI.\r\n" +
+        "Солиды внутри блоков в любом случае сохранятся. Команда GAP всегда сохраняет вычитаемые солиды.",
+      "Seleziona se rimuovere i taglienti alla fine del DRI programma.\r\n" +
+         "I solidi all'interno dei blocchi rimarranno comunque. Il comando GAP preserva sempre i solidi sottratti.",
+      "Wählen Sie aus, ob Löcher am Ende des DRI Programms entfernt werden sollen.\r\n" +
+         "Volumenkörpers in den Blöcken bleiben auf jeden Fall zurück. Der GAP-Befehl behält subtrahierte Volumenkörper immer bei.",
+      "选择是否在程序结束时删除实体孔 DRI。无论如何设置，块内的孔实体都会保留下来。GAP 命令始终保留减去的实体。" };
     public static readonly string[] DrillBlocks = {
       "Drill inside block-assemblies",
       "Сверлить внутри блоков-сборок",

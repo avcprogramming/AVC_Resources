@@ -64,6 +64,12 @@ namespace AVC
       "Impossibile creare il disegno {0}: impossibile creare alcun oggetto",
       "Zeichnung {0} konnte nicht erstellt werden – es konnten keine Objekte erstellt werden",
       "未能建立繪圖 {0} - 未能建立任何對象"};
+    public static readonly string[] ColumnReadError = {
+      "Failed to read data in column {0}",
+      "Не удалось прочитать данные в столбце {0}",
+      "Impossibile leggere i dati nella colonna {0}",
+      "Daten in Spalte {0} konnten nicht gelesen werden",
+      "无法读取第 {0} 列中的数据"};
     public static readonly string[] BoxToWallResult = {
       "Managed to create walls {0}",
       "Удалось создать стен {0}",
@@ -149,11 +155,11 @@ namespace AVC
       "Ich versuche, einen Block ohne Namen zu erstellen",
       "尝试创建一个没有名称的块" };
     public static readonly string[] TableRowCount = {
-      "A table of {0} rows has been read. Objects received {1}.",
-      "Прочитана таблицы из {0} строк. Получено объектов {1}.",
-      "Visualizza tabelle a partire da {0} pagina. {1} oggetti ricevuti.",
-      "Eine Tabelle mit {0} Zeilen wurde gelesen. {1} Objekte empfangen.",
-      "已讀取包含 {0} 行的表。收到 {1} 个对象。" };
+      "  A table of {0} rows has been read. Objects received {1}.",
+      "  Прочитана таблицы из {0} строк. Получено объектов {1}.",
+      "  Visualizza tabelle a partire da {0} pagina. {1} oggetti ricevuti.",
+      "  Eine Tabelle mit {0} Zeilen wurde gelesen. {1} Objekte empfangen.",
+      "  已讀取包含 {0} 行的表。收到 {1} 个对象。" };
     public static readonly string[] SelectFile = {
       "Specify the file with 3d-solid table",
       "Укажите файл с таблицей солидов",
@@ -200,11 +206,8 @@ namespace AVC
         "  ·Owner - the name of the group or new assembly block for this part.\r\n" +
         "  ·Name, Kind, Info - additional properties of the solid.\r\n" +
         "\r\n" +
-        "Instead of creating a solid, you can insert an existing block into the drawing. Then the columns mean:\r\n" +
-        "  ·Shape = Block.\r\n" +
-        "  ·SizeX, SizeY, SizeZ - block insertion scale. Preferably 1. Less than zero - mirror block.\r\n" +
-        "  ·Owner - the name of the old block where the specified block or Model should be inserted\r\n" +
-        "  ·Name - the name of an existing block to insert or the name of a block from a dwt template.",
+        "Instead of creating a solid, you can insert a block, text, or 2D curve into the drawing. Then the columns change their purpose. \r\n" +
+        "See the documentation for details.",
       "До вызова команды BoxFromTable создайте таблицу Excel или CSV со столбцами:\r\n" +
         " ·Shape - форма солида: Box, Cone, Cylinder, Pyramid, Sphere. Другое слово - строка игнорируется.\r\n" +
         " ·X, Y, Z - координаты вставки минимальной точки бокса или центра основания других фигур.\r\n" +
@@ -214,10 +217,8 @@ namespace AVC
         " ·Owner - имя группы или нового блока-сборки для данной детали.\r\n" +
         " ·Name, Kind, Info - дополнительные свойства солида.\r\n" +
         "\r\n" +
-        "Вместо создания солида можно вставить в чертеж существующий блок. Тогда столбцы означают:\r\n" +
-        " ·Shape = Block.\r\nSizeX, SizeY, SizeZ - масштаб вставки блока. Желательно 1. Меньше ноля - зеркальный блок.\r\n" +
-        " ·Owner - имя старого блок, куда надо вставить заданный блок или Model\r\n" +
-        " ·Name - имя существующего блока для вставки или имя блока из dwt-шаблона. ",
+        "Вместо создания солида можно вставить в чертеж блок, текст, 2D фигуру. Тогда столбцы меняют свое назначение.\r\n" +
+        "Подробности смотрите в документации.",
       "Prima di chiamare il comando BoxFromTable, crea una tabella Excel o CSV con colonne:\r\n" +
         "  ·Forma - forma solida: Box, Cone, Cylinder, Pyramid, Sphere. Un'altra parola è che la linea viene ignorata.\r\n" +
         "  ·X, Y, Z - coordinate di inserimento del punto minimo della scatola o del centro della base di altre forme.\r\n" +
@@ -227,11 +228,8 @@ namespace AVC
         "  ·Owner: il nome del gruppo o del nuovo blocco di assieme per questa parte.\r\n" +
         "  ·Name, Kind, Info: proprietà aggiuntive del solido.\r\n" +
         "\r\n" +
-        "Invece di creare un solido, è possibile inserire un blocco esistente nel disegno. Quindi le colonne significano:\r\n" +
-        "  ·Shape = Block.\r\n" +
-        "  ·SizeX, SizeY, SizeZ - scala di inserimento del blocco. Preferibilmente 1. Meno di zero - blocco specchio.\r\n" +
-        "  ·Owner: il nome del vecchio blocco in cui deve essere inserito il blocco o il modello specificato\r\n" +
-        "  ·Name: il nome di un blocco esistente da inserire o il nome di un blocco da un modello dwt.",
+        "Invece di creare un solido, puoi inserire un blocco, un testo o una forma 2D nel disegno. Quindi le colonne cambiano il loro scopo. \r\n" +
+        "Guarda la documentazione per dettagli.",
       "Erstellen Sie vor dem Aufruf des Befehls BoxFromTable eine Excel- oder CSV-Tabelle mit Spalten:\r\n" +
         "  ·Shape – feste Form: Box, Cone, Cylinder, Pyramid, Sphere. Ein anderes Wort ist, dass die Zeile ignoriert wird.\r\n" +
         "  ·X, Y, Z – Einfügekoordinaten des Mindestpunkts des Kastens oder der Mitte der Basis anderer Formen.\r\n" +
@@ -241,12 +239,8 @@ namespace AVC
         "  ·Owner – der Name der Gruppe oder des neuen Baugruppenblocks für dieses Teil.\r\n" +
         "  ·Name, Kind, Info – zusätzliche Eigenschaften des Volumenkörpers.\r\n" +
         "\r\n" +
-        "Anstatt einen Volumenkörper zu erstellen, können Sie einen vorhandenen Block in die Zeichnung einfügen. \r\n" +
-        "Dann bedeuten die Spalten:\r\n" +
-        "  ·Shape = Block.\r\n" +
-        "  ·SizeX, SizeY, SizeZ – Blockeinfügungsskala. Vorzugsweise 1. Kleiner als Null – Spiegelblock.\r\n" +
-        "  ·Owner – der Name des alten Blocks, in den der angegebene Block oder das angegebene Modell eingefügt werden soll\r\n" +
-        "  ·Name – der Name eines vorhandenen Blocks, der eingefügt werden soll, oder der Name eines Blocks aus einer DWT-Vorlage.",
+        "Anstatt einen Volumenkörper zu erstellen, können Sie einen Block, Text oder eine 2D-Form in die Zeichnung einfügen. \r\n" +
+        "Dann ändern die Säulen ihren Zweck. Einzelheiten finden Sie in der Dokumentation.",
       "在调用 BoxFromTable 命令之前，请创建一个包含列的 Excel 或 CSV 表：\r\n" +
         "  ·Shape - 实体形状：Box, Cone, Cylinder, Pyramid, Sphere。另一个词是该行被忽略。\r\n" +
         "  ·X、Y、Z - 盒子最小点或其他形状底部中心的插入坐标。\r\n" +
@@ -256,11 +250,7 @@ namespace AVC
         "  ·Owner - 该零件的组或新装配块的名称。\r\n" +
         "  ·Name, Kind, Info - 实体的附加属性。\r\n" +
         "\r\n" +
-        "您可以将现有块插入到图形中，而不是创建实体。那么各列的含义是：\r\n" +
-        "  ·Shape = Block。\r\n" +
-        "  ·SizeX、SizeY、SizeZ - 块插入比例。优选1.小于零镜块。\r\n" +
-        "  ·Owner - 应插入指定块或模型的旧块的名称\r\n" +
-        "  ·Name - 要插入的现有块的名称或 dwt 模板中的块的名称。" };
+        "您可以将块、文本或 2D 形状插入到绘图中，而不是创建实体。然后专栏改变了它们的目的。 有关详细信息，请参阅文档。" };
     public static readonly string[] Drill = {
       "Make Drilling",
       "Выполнить сверловку",
@@ -347,12 +337,19 @@ namespace AVC
       "Baugruppen verfügbar machen",
       "暴露程序集" };
     public static readonly string[] ExposeTip = {
-      "Call the Expose command to insert all created assemblies in a row in an empty space of the model",
-      "Вызвать команду Expose для вставки всех созданных сборок в ряд в свободном месте модели",
-      "Chiama il comando Esponi per inserire tutti gli assiemi creati in una riga in uno spazio vuoto del modello",
+      "Call the Expose command to insert all created assemblies in a row in an empty space of the model.\r\n" +
+        "The quantity will always be indicated as 1, even if the table is set to insert new blocks into the drawing.",
+      "Вызвать команду Expose для вставки всех созданных сборок в ряд в свободном месте модели.\r\n" +
+        "Количество всегда будет указано 1, даже если в таблице задана вставка новых блоков в чертеж.",
+      "Chiama il comando Esponi per inserire tutti gli assiemi creati in una riga in uno spazio vuoto del modello.\r\n" +
+        "La quantità verrà sempre indicata come 1, \r\n" +
+        "anche se la tabella è predisposta per inserire nuovi blocchi nel disegno.",
       "Rufen Sie den Befehl „Expose“ auf, \r\n" +
-        "um alle erstellten Baugruppen in einer Reihe in einen leeren Bereich des Modells einzufügen",
-      "调用 Expose 命令将所有创建的组件插入到模型空白区域的一行中" };
+        "um alle erstellten Baugruppen in einer Reihe in einen leeren Bereich des Modells einzufügen.\r\n" +
+        "Die Menge wird immer als 1 angegeben, auch wenn die Tabelle so eingestellt ist, \r\n" +
+        "dass neue Blöcke in die Zeichnung eingefügt werden.",
+      "调用 Expose 命令将所有创建的组件插入到模型空白区域的一行中.\r\n" +
+        "即使表设置为将新块插入到图形中，数量也将始终指示为 1。" };
     public static readonly string[] Page = {
       "Excel page",
       "Страница Excel",

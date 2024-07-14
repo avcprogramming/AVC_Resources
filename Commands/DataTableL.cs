@@ -10,11 +10,11 @@ namespace AVC
           CommandL.DataTable[2], 
           CommandL.DataTable[3], 
           CommandL.DataTable[4] },
-/*1*/   { "Line Length Table", 
-          "Таблица длин линий", 
-          "Tabella delle lunghezze delle linee", 
-          "Zeilenlängentabelle", 
-          "线长表" },
+/*1*/   { "Bill of Material",
+          "Спецификация",
+          "Distinta base",
+          "Stückliste",
+          "物料清单" },
 /*2*/   { "Object Area Table", 
           "Таблица площади объектов", 
           "Tabella area oggetto", 
@@ -25,11 +25,11 @@ namespace AVC
           "Numero di blocchi", 
           "Anzahl der Blöcke", 
           "块数" },
-/*4*/   { "Component list", 
-          "Список компонентов", 
-          "Elenco dei componenti", 
-          "Komponentenliste", 
-          "组件列表" },
+/*4*/   { "Line Length Table",
+          "Таблица длин линий",
+          "Tabella delle lunghezze delle linee",
+          "Zeilenlängentabelle",
+          "线长表" },
 /*5*/   { "Sawing Table", 
           "Таблица напилки", 
           "Segare", 
@@ -204,11 +204,11 @@ namespace AVC
       "数据提取" };
     public static readonly string[]
     Grouping = {
-      "Row grouping",
-      "Группировка строк",
-      "Raggruppamento di righe",
-      "Zeilengruppierung",
-      "行分组"};
+      "  Row grouping",
+      "  Группировка строк",
+      "  Raggruppamento di righe",
+      "  Zeilengruppierung",
+      "  行分组"};
     public static readonly string[]
     HappenedRows = {
       "  Happened {0} rows in {1} groups",

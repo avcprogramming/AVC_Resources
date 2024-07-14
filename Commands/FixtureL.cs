@@ -387,6 +387,21 @@ namespace AVC
       "Usa il livello corrente per i blocchi invece del livello Fixture standard",
       "Verwenden Sie den aktuellen Layer für die Blöcke anstelle des Standard-Fixture-Layers",
       "使用当前层到块而不是标准的 Fixture 层"};
+    public static readonly string[] IgnoreUCSText = {
+      "Ignore UCS",
+      "Игнорировать ПСК (UCS)",
+      "Ignora l'UCS",
+      "UCS ignorieren",
+      "忽略 UCS"};
+    public static readonly string[] IgnoreUCSTip = {
+      "Check the directions of the joints and the top of the part not in the current user coordinate system, \r\n" +
+        "but in the world one.",
+      "Проверять направления стыков и верх детали не в текущей пользовательской системе координат, а в мировой.",
+      "Controlla le direzioni dei giunti e della parte superiore della parte \r\n" +
+        "non nel sistema di coordinate utente corrente, ma in quello mondiale.",
+      "Überprüfen Sie die Richtungen der Verbindungen und der Oberseite des Teils \r\n" +
+        "nicht im aktuellen Benutzerkoordinatensystem, sondern im Weltkoordinatensystem.",
+      "检查关节和零件顶部的方向不是在当前用户坐标系中，而是在世界坐标系中。"};
     public static readonly string[] FileText = {
       "Block library file",
       "Файл с библиотекой блоков",

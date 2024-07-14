@@ -1108,6 +1108,12 @@
   <data name="Undo32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Undo32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UnfoldRect16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UnfoldRect16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnfoldRect32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UnfoldRect32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Unpack16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Unpack16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

@@ -694,7 +694,54 @@ namespace AVC
          "有关程序和操作系统版本的信息。\r\n" +
          "这封信不会包含任何关于许可 AutoCAD、BricsCAD、Windows 纯度的数据。\r\n" +
          "（推荐，如果你不是偏执狂的话）"};
-
+    public static readonly string[] SweepMeasure = {
+      "Sweep Measurement Mode",
+      "Способ обмера разверток",
+      "Modalità di misurazione a scansione",
+      "Sweep-Messmodus",
+      "Modalità di misurazione a scansione"};
+      public static readonly string[] LongerSide = {
+      "Longer side",
+      "Длинная сторона",
+      "Lato più lungo",
+      "Längere Seite",
+      "较长的一边"};
+      public static readonly string[] LongerSideTip = {
+      "The longer one is selected from the two sides of the bent part.",
+      "Из двух сторон согнутой детали выбирается более длинная",
+      "Tra i due lati della parte piegata si sceglie quello più lungo.",
+      "Aus den beiden Seiten des gebogenen Teils wird die längere ausgewählt.",
+      "从弯曲部分的两侧选择较长的一个。"};
+      public static readonly string[] LongerSegments = {
+      "Longer segments",
+      "Длинные сегменты",
+      "Segmenti più lunghi",
+      "Längere Segmente",
+      "较长的段"};
+      public static readonly string[] LongerSegmentsTip = {
+      "For parts with many bends in different directions, \r\n" +
+        "the longer side is selected on each part segment and the sum of the segment lengths is calculated.",
+      "Для деталей с множеством изгибов в разные стороны, \r\n" +
+        "на каждом сегменте детали выбирается более длинная сторона и вычисляется сумма длин сегментов.",
+      "Per le parti con molte pieghe in direzioni diverse, \r\n" +
+        "viene selezionato il lato più lungo su ciascun segmento della parte \r\n" +
+        "e viene calcolata la somma delle lunghezze dei segmenti.",
+      "Bei Teilen mit vielen Biegungen in verschiedene Richtungen wird für jedes \r\n" +
+        "Teilsegment die längere Seite ausgewählt und die Summe der Segmentlängen berechnet.",
+      "对于在不同方向上有多个折弯的零件，\r\n" +
+        "在每个零件段上选择较长的一侧，并计算段长度的总和。"};
+      public static readonly string[] MiddleLine = {
+      "Middle line",
+      "Средняя линия",
+      "Linea di mezzo",
+      "Mittellinie",
+      "中线"};
+      public static readonly string[] MiddleLineTip = {
+      "The average value between the lengths of both sides of the part is used",
+      "Используется среднее значение между длинами обоих сторон детали",
+      "Usiamo il valore medio tra le lunghezze di entrambi i lati della parte",
+      "Wir verwenden den Durchschnittswert zwischen den Längen beider Seiten des Teils",
+      "我们使用零件两侧长度之间的平均值"};
   }
 }
 

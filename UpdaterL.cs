@@ -224,7 +224,7 @@ namespace AVC
       "Nachrichtenprotokoll",
       "消息日志" };
     public static readonly string[] LoadingPercent = {
-      "Loading data... Complited {0}%",
+      "Loading data... Completed {0}%",
       "Загрузка данных... Выполнено {0}%",
       "Caricamento dati in corso... {0}% completato",
       "Daten werden geladen... {0}% abgeschlossen",

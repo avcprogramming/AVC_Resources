@@ -744,6 +744,12 @@ namespace AVC
       "使所有绘图对象可见 - " +
          "使用反转命令隐藏的那些，以及使用通常命令隐藏的那些" +
          "_IsolateObjects 和 _HideObjects。"};
+    public static readonly string[] UnfoldRectTip = {
+      "Create a rectangle based on the overall dimensions or on the unfolded dimensions of the solid, if it is marked as Sweep.",
+      "Создать прямоугольник по габаритам или по развернутым размерам солида, если он помечен как Развертка.",
+      "Creare un rettangolo in base alle quote complessive o alle quote spiegate del solido, se è contrassegnato come Sweep",
+      "Erstellt ein Rechteck basierend auf den Gesamtmaßen oder den entfalteten Maßen des Körpers, wenn dieser als Sweep markiert ist.",
+      "根据整体尺寸或实体的展开尺寸（如果标记为“扫掠”）创建一个矩形" };
     public static readonly string[] UnpackTip = {
       "Search for blocks in which only one part is packed (solid, polyline...). " +
         "Explosion of these blocks. Transferring the name and attributes of the block to the part.",
@@ -814,10 +820,14 @@ namespace AVC
         "序号自动分配1 到 9 的数字,并用于命令行快速切换样式。\r\n"+
         "您可以修改名称。"};
     public static readonly string[] StyleAddTip = {
-      "Add another style.\r\nThere can be 9 styles in total.\r\nThe current style settings will be copied.",
-      "Добавить еще один стиль.\r\nВсего может быть 9 стилей.\r\nНастройки текущего стиля будут скопированы.",
-      "Aggiungi un altro stile.\r\nCi possono essere 9 stili in totale.\r\nLe impostazioni di stile correnti verranno copiate.",
-      "Fügen Sie einen anderen Stil hinzu.\r\nEs kann insgesamt 9 Stile geben.\r\nDie aktuellen Stileinstellungen werden kopiert.",
+      "Add another style.\r\nThere can be 9 styles in total.\r\n" +
+        "The current style settings will be copied.",
+      "Добавить еще один стиль.\r\nВсего может быть 9 стилей.\r\n" +
+        "Настройки текущего стиля будут скопированы.",
+      "Aggiungi un altro stile.\r\nCi possono essere 9 stili in totale.\r\n" +
+        "Le impostazioni di stile correnti verranno copiate.",
+      "Fügen Sie einen anderen Stil hinzu.\r\nEs kann insgesamt 9 Stile geben.\r\n" +
+        "Die aktuellen Stileinstellungen werden kopiert.",
       "添加样式。 最多可以放置9个样式，点添加会复制当前样式为新样式。"};
     public static readonly string[] StyleDelTip = {
       "Remove this style",

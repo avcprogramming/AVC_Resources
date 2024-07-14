@@ -159,7 +159,7 @@ namespace AVC
       "Wählen Sie einen Ordner zum Speichern von DXF-Dateien.",
       "选择用于保存 dxf 文件的文件夹。"};
     public static readonly string[] Annotate = {
-      "Create dimentions",
+      "Create dimensions",
       "Создать размеры",
       "Crea dimensioni",
       "Dimensionen erstellen",

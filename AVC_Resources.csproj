@@ -85,6 +85,7 @@
     <Compile Include="Commands\SumLenL.cs" />
     <Compile Include="Commands\TabSlotL.cs" />
     <Compile Include="Commands\TntL.cs" />
+    <Compile Include="Commands\UnfoldRectL.cs" />
     <Compile Include="Commands\UnpackL.cs" />
     <Compile Include="Commands\ZoneL.cs" />
     <Compile Include="Common.Designer.cs">
@@ -1192,6 +1193,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\U.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnfoldRect16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnfoldRect32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

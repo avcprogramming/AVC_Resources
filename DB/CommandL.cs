@@ -494,6 +494,12 @@ namespace AVC
       "Scopri invertito",
       "Invertiert anzeigen",
       "显示反转对象" };
+    public static readonly string[] UnfoldRect = {
+      "Unfold Rectangle",
+      "Прямоугольник развертки",
+      "Aprire il rettangolo",
+      "Rechteck entfalten",
+      "展开矩形" };
     public static readonly string[] Unpack = {
       "Unpack",
       "Распаковка",

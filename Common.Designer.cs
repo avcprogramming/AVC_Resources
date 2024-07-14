@@ -3393,6 +3393,26 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap UnfoldRect16 {
+            get {
+                object obj = ResourceManager.GetObject("UnfoldRect16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap UnfoldRect32 {
+            get {
+                object obj = ResourceManager.GetObject("UnfoldRect32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Unpack16 {
             get {
                 object obj = ResourceManager.GetObject("Unpack16", resourceCulture);
