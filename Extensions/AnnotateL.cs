@@ -120,7 +120,10 @@ namespace AVC
       "Tabellenstil {0} existiert nicht. Der aktuelle Tabellenstil wird verwendet.",
       "表格样式 {0} 不存在。 将使用当前表格样式。" };
     public static readonly string[] SelectTable = {
-      "Select Table", "Выберите таблицу", "Seleziona tabella", "Wählen Sie Tabelle" ,
+      "Select Table", 
+      "Выберите таблицу", 
+      "Seleziona tabella", 
+      "Wählen Sie Tabelle" ,
       "选择表"};
     public static readonly string[] EraseData = {
       ". All data will be overwritten",

@@ -353,11 +353,11 @@ namespace AVC
       "将多引线 (MLeader) 和多行文本 (MText) 分成单独的行和行。 \r\n" +
         "此选项将帮助您将 dxf 导出到 AlphaCAM。"};
     public static readonly string[] ProhibitSpaces = {
-      "Prohibit spaces",
-      "Запретить пробелы",
-      "Proibire spazi",
-      "Leerzeichen verbieten",
-      "禁止空格"};
+      "Prohibit spaces in file name",
+      "Запретить пробелы в имени файла",
+      "Sopprimi gli spazi nel nome del file",
+      "Leerzeichen im Dateinamen unterdrücken",
+      "抑制文件名中的空格"};
     public static readonly string[] ProhibitSpacesTip = {
       "Replace all spaces in DXF file name with _ character",
       "Заменять все пробелы в имени DXF-файла на символ _",

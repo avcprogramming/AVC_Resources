@@ -134,7 +134,7 @@ namespace AVC
     };
 
     public static string[,] DefTexture = {
-/* 0 */ {"", "", "", "", "" },// {"no_texture", "нет_текстуры", "no_texture", "keine_textur" },
+/* 0 */ {"", "", "", "", "" },// {"no_texture", "нет_текстуры", "no_texture", "keine_textur", "" },
 /* 1 */ {"along", "вдоль", "lungo", "entlang", "长向" }, //
 /* 2 */ {"across", "поперек", "traverso", "über", "宽向" },
     };

@@ -1200,5 +1200,11 @@
   <ItemGroup>
     <None Include="Resources\UnfoldRect32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableUpdate16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableUpdate32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

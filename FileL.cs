@@ -36,54 +36,72 @@ namespace AVC
       "File non specificato.",
       "Datei nicht angegeben.",
       "未指定文件"    };
-    public static readonly string[] ExtensionError ={
+    public static readonly string[] ExtensionError = {
       "Invalid file type '{0}'",
       "Недопустимый тип файла '{0}'",
       "Tipo di file '{0}' non valido",
       "Ungültiger Dateityp „{0}“",
       "檔案類型「{0}」無效" };
-    public static readonly string[] FileNotExist ={
+    public static readonly string[] FileNotExist = {
       "File '{0}' does not exist",
       "Не существует файл '{0}'",
       "Il file '{0}' non esiste.",
       "Datei '{0}' existiert nicht.",
       "文件“{0}”不存在" };
-    public static readonly string[] FailedReadFile ={
+    public static readonly string[] FailedReadFile = {
       "Failed to read file '{0}'\n\t{1}",
       "Не удалось прочитать файл '{0}'.\n\t{1}",
       "Impossibile leggere il file '{0}'.\n\t{1}",
       "Fehler beim Lesen der Datei '{0}'.\n\t{1}" ,
       "未能读取文件“{0}”\n\t{1}"   };
-    public static readonly string[] FailedWriteFile ={
+    public static readonly string[] FailedWriteFile = {
       "Failed to write file '{0}'.\n\t{1}",
       "Не удалось записать файл '{0}'.\n\t{1}",
       "Impossibile scrivere il file '{0}'.\n\t{1}",
       "Fehler beim Schreiben der Datei '{0}'.\n\t{1}",
       "无法写入文件“{0}”\n\t{1}"    };
-    public static readonly string[] CopyError ={
+    public static readonly string[] CopyError = {
       "Failed to copy file '{0}'.\n\t{1}",
       "Не удалось скопировать файл '{0}'.\n\t{1}",
       "Impossibile copiare il file '{0}'.\n\t{1}",
       "Fehler beim Kopieren der Datei '{0}'.\n\t{1}" ,
       "无法复制文件“{0}”。\n\t{1}"   };
-    public static readonly string[] NotRequireUpdating =    {
+    public static readonly string[] NotRequireUpdating = {
       "Doesn't require updating file '{0}'.",
       "Не требует обновлять файл '{0}'.",
       "Non richiede l'aggiornamento del file '{0}'.",
       "Die Datei '{0}' muss nicht aktualisiert werden." ,
       "不需要更新文件“{0}”。"   };
-    public static readonly string[] CopyingFile =    {
+    public static readonly string[] CopyingFile = {
       "Copying file '{0}' to folder '{1}'.",
       "Копирование файла '{0}' в папку '{1}'.",
       "Copia del file '{0}' nella cartella '{1}'.",
       "Kopieren der Datei '{0}' in den Ordner '{1}'." ,
       "正在将文件“{0}”复制到文件夹“{1}”。"   };
-    public static readonly string[] ReadingFile =    {
-      "Reading file '{0}'",
-      "Чтение файла '{0}'",
-      "Lettura del file '{0}'",
-      "Datei „{0}“ wird gelesen" ,
-      "正在读取文件“{0}”"   };
+    public static readonly string[] ReadingFile = {
+      "  Reading file '{0}'",
+      "  Чтение файла '{0}'",
+      "  Lettura del file '{0}'",
+      "  Datei „{0}“ wird gelesen" ,
+      "  正在读取文件“{0}”"   };
+    public static readonly string[] SavingFile = {
+      "  Saving file '{0}'",
+      "  Сохранение файла '{0}'",
+      "  Salvataggio del file '{0}'",
+      "  Datei '{0}' wird gespeichert" ,
+      "  正在保存文件 {0}。"   };
+    public static readonly string[] SavingFiles = {
+      "Saving files",
+      "Сохранение файлов",
+      "Salvataggio di file",
+      "Dateien speichern" ,
+      "保存文件"   };
+    public static readonly string[] DeletingFiles = {
+      "  Deleting file '{0}'",
+      "  Удаление файла '{0}'",
+      "  Eliminazione del file '{0}'",
+      "  Datei „{0}“ wird gelöscht" ,
+      "  正在删除文件“{0}”"   };
     public static readonly string[] FileCopied ={
       "Successfully copied '{0}' \tto '{1}'",
       "Скопирован файл '{0}' \tв папку '{1}'",

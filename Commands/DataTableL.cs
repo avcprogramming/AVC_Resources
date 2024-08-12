@@ -1,69 +1,72 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
+
+// Ignore Spelling: Viewports
+
 namespace AVC
 {
   public static class
   DataTableL
   {
     public static readonly string[,] DTStyleNames = { 
-/*0*/   { CommandL.DataTable[0], 
-          CommandL.DataTable[1], 
-          CommandL.DataTable[2], 
-          CommandL.DataTable[3], 
+/*0*/   { CommandL.DataTable[0],
+          CommandL.DataTable[1],
+          CommandL.DataTable[2],
+          CommandL.DataTable[3],
           CommandL.DataTable[4] },
 /*1*/   { "Bill of Material",
           "Спецификация",
           "Distinta base",
           "Stückliste",
           "物料清单" },
-/*2*/   { "Object Area Table", 
-          "Таблица площади объектов", 
-          "Tabella area oggetto", 
-          "Objektbereichstabelle", 
+/*2*/   { "Object Area Table",
+          "Таблица площади объектов",
+          "Tabella area oggetto",
+          "Objektbereichstabelle",
           "对象区域表" },
-/*3*/   { "Number of blocks", 
-          "Количество блоков", 
-          "Numero di blocchi", 
-          "Anzahl der Blöcke", 
+/*3*/   { "Number of blocks",
+          "Количество блоков",
+          "Numero di blocchi",
+          "Anzahl der Blöcke",
           "块数" },
 /*4*/   { "Line Length Table",
           "Таблица длин линий",
           "Tabella delle lunghezze delle linee",
           "Zeilenlängentabelle",
           "线长表" },
-/*5*/   { "Sawing Table", 
-          "Таблица напилки", 
-          "Segare", 
-          "Sägen", 
+/*5*/   { "Sawing Table",
+          "Таблица напилки",
+          "Segare",
+          "Sägen",
           "锯床" },
-/*6*/   { "Point Coordinate Table", 
-          "Таблица координат точек", 
-          "Tabella coordinate punto", 
-          "Punktkoordinatentabelle", 
+/*6*/   { "Point Coordinate Table",
+          "Таблица координат точек",
+          "Tabella coordinate punto",
+          "Punktkoordinatentabelle",
           "点坐标表" },
       };
 
     public static readonly string[,] DrillTableStyleNames = {
-/*0*/   { CommandL.DrillTable[0], 
-          CommandL.DrillTable[1], 
-          CommandL.DrillTable[2], 
-          CommandL.DrillTable[3], 
+/*0*/   { CommandL.DrillTable[0],
+          CommandL.DrillTable[1],
+          CommandL.DrillTable[2],
+          CommandL.DrillTable[3],
           CommandL.DrillTable[4]  },
 
-/*1*/   { CommandL.DrillTable[0], 
-          "Присадка", 
+/*1*/   { CommandL.DrillTable[0],
+          "Присадка",
           CommandL.DrillTable[2],
-          CommandL.DrillTable[3], 
+          CommandL.DrillTable[3],
           CommandL.DrillTable[4] },
 
-/*2*/   { "Drilling", 
-          "Сверления", 
-          "Foratura", 
-          "Bohren", 
+/*2*/   { "Drilling",
+          "Сверления",
+          "Foratura",
+          "Bohren",
           "钻孔" },
-/*3*/   { "Drill Table to Excel", 
-          "Таблица сверлений в Excel", 
-          "Tabella di perforazione Excel", 
-          "Bohrtisch Excel", 
+/*3*/   { "Drill Table to Excel",
+          "Таблица сверлений в Excel",
+          "Tabella di perforazione Excel",
+          "Bohrtisch Excel",
           "钻取表到 Excel" },
 /*4*/   { "Drill Table with countersink",
           "Таблица сверлений с зенковкой",
@@ -80,78 +83,78 @@ namespace AVC
       "部分 %name%。钻孔 %drill%"};
 
     public static readonly string[,] MatTableStyleNames = {
-/*0*/   { "Material Table", 
+/*0*/   { "Material Table",
           "Таблица материалов",
-          "Tabella dei materiali", 
-          "Materialtabelle", 
-          "材料表" },
-/*1*/   { "Material Table", 
-          "Таблица материалов", 
           "Tabella dei materiali",
-          "Materialtabelle", 
+          "Materialtabelle",
+          "材料表" },
+/*1*/   { "Material Table",
+          "Таблица материалов",
+          "Tabella dei materiali",
+          "Materialtabelle",
           "材料表"},
-/*2*/   { "Material Indexes", 
-          "Индексы материалов", 
-          "Indici materiali", 
-          "Materialindizes", 
+/*2*/   { "Material Indexes",
+          "Индексы материалов",
+          "Indici materiali",
+          "Materialindizes",
           "材料指标"},
-/*3*/   { "Cutting3 materials", 
-          "Cutting3 материалы", 
-          "Cutting3 materiali", 
-          "Cutting3 Material", 
+/*3*/   { "Cutting3 materials",
+          "Cutting3 материалы",
+          "Cutting3 materiali",
+          "Cutting3 Material",
           "Cutting3 种材料" },
-/*4*/   { "OptiCut panels", 
-          "OptiCut панели", 
-          "OptiCut pannelli", 
-          "OptiCut Paneele", 
+/*4*/   { "OptiCut panels",
+          "OptiCut панели",
+          "OptiCut pannelli",
+          "OptiCut Paneele",
           "OptiCut 面板" },
-/*5*/   { "OptiCut bars", 
-          "OptiCut бруски", 
-          "OptiCut barre", 
-          "OptiCut Riegel", 
+/*5*/   { "OptiCut bars",
+          "OptiCut бруски",
+          "OptiCut barre",
+          "OptiCut Riegel",
           "OptiCut 磨料" },
       };
 
     public static readonly string[,] SawStyleNames = {
-      { CommandL.Saw[0], 
-        CommandL.Saw[1], 
-        CommandL.Saw[2], 
-        CommandL.Saw[3], 
-        CommandL.Saw[4] },
-      { CommandL.Saw[0], 
-        CommandL.Saw[1], 
-        CommandL.Saw[2], 
+      { CommandL.Saw[0],
+        CommandL.Saw[1],
+        CommandL.Saw[2],
         CommandL.Saw[3],
         CommandL.Saw[4] },
-      { "Detailing Table", 
-        "Деталировка", 
-        "Tabella dei dettagli", 
-        "Detaillierung", 
+      { CommandL.Saw[0],
+        CommandL.Saw[1],
+        CommandL.Saw[2],
+        CommandL.Saw[3],
+        CommandL.Saw[4] },
+      { "Detailing Table",
+        "Деталировка",
+        "Tabella dei dettagli",
+        "Detaillierung",
         "详细表" },
-      { "Rib cutting", 
-        "Погонажная нарезка", 
-        "Taglio delle costole", 
-        "Rippenschneiden", 
+      { "Rib cutting",
+        "Погонажная нарезка",
+        "Taglio delle costole",
+        "Rippenschneiden",
         "切肋"},
-      { "Nesting in Cutting3", 
-        "Раскрой в Cutting3", 
-        "Taglio nel Cutting3", 
-        "Schneiden in Cutting3", 
+      { "Nesting in Cutting3",
+        "Раскрой в Cutting3",
+        "Taglio nel Cutting3",
+        "Schneiden in Cutting3",
         "在 Cutting3 中嵌套"},
-      { "Panels for OptiCut", 
-        "Панели для OptiCut", 
-        "Pannelli per OptiCut", 
+      { "Panels for OptiCut",
+        "Панели для OptiCut",
+        "Pannelli per OptiCut",
         "Panels für OptiCut",
         "OptiCut 面板"},
-      { "Bars for OptiCut", 
-        "Бруски для OptiCut", 
-        "Barre per OptiCut", 
-        "Balken für OptiCut", 
+      { "Bars for OptiCut",
+        "Бруски для OptiCut",
+        "Barre per OptiCut",
+        "Balken für OptiCut",
         "OptiCut 棒材"},
-      { "Details for Viyar", 
-        "Детали Вияр", 
-        "Dettagli per Viyar", 
-        "Details für Viyar", 
+      { "Details for Viyar",
+        "Детали Вияр",
+        "Dettagli per Viyar",
+        "Details für Viyar",
         "Viyar 的详细信息"},
       };
 
@@ -204,11 +207,18 @@ namespace AVC
       "数据提取" };
     public static readonly string[]
     Grouping = {
-      "  Row grouping",
-      "  Группировка строк",
-      "  Raggruppamento di righe",
-      "  Zeilengruppierung",
-      "  行分组"};
+      "Row grouping",
+      "Группировка строк",
+      "Raggruppamento di righe",
+      "Zeilengruppierung",
+      "行分组"};
+    public static readonly string[]
+    Creating = {
+      "Creating a table",
+      "Создание таблицы",
+      "Creazione di una tabella",
+      "Eine Tabelle erstellen",
+      "创建表"};
     public static readonly string[]
     HappenedRows = {
       "  Happened {0} rows in {1} groups",
@@ -238,6 +248,13 @@ namespace AVC
       "Fehler beim Erstellen einer Tabelle.",
       "无法制作表格。" };
     public static readonly string[]
+    FailedToWrite = {
+      "Failed to write extracted data to {0}",
+      "Не удалось записать извлеченные данные в {0}",
+      "Impossibile scrivere i dati estratti su {0}",
+      "Extrahierte Daten konnten nicht nach {0} geschrieben werden.",
+      "无法将表写入 {0}" };
+    public static readonly string[]
     Multiply = {
       "Multiply the amount by ",
       "Умножить количество на ",
@@ -251,7 +268,6 @@ namespace AVC
       "  L'importo verrà moltiplicato per {0}",
       "  Der Betrag wird mit {0} multipliziert",
       "  金额将乘以 {0}"};
-
     public static readonly string[] SelectOptions = {
       "  Choice way of use command with set of options #{0}",
       "  Выберите действие с набором настроек №{0}",
@@ -294,6 +310,12 @@ namespace AVC
       "MOltiplicatore",
       "Multiplikator",
       "因素(MU)" };
+    public static readonly string[] AllTablesKW = {
+      "allTABLES",
+      "всеТАБЛИЦЫ",
+      "tuttiTAVOLI",
+      "alleTISCHE",
+      "所有桌子(TABLES)" };
     public static readonly string[] ColumnsQuery = {
       "Enter a list of column through ;",
       "Введите подстановки для столбцов через ;",
@@ -330,7 +352,30 @@ namespace AVC
       "Richiedere moltiplicatore ogni volta",
       "Fordern Sie jedes Mal einen Multiplikator an.",
       "每次请求乘数"  };
-
+    public static readonly string[] NoViewport =    {
+      "There are no viewports on layout {0}.",
+      "Нет ни одного вьюпорта на листе {0}.",
+      "Non sono presenti finestre nel layout {0}.",
+      "Es gibt keine Ansichtsfenster im Layout {0}.",
+      "布局 {0} 上没有视口。"    };
+    public static readonly string[] TableUpdatedCount = {
+      "Updated tables: {0}",
+      "Обновлено таблиц: {0}",
+      "Tabelle aggiornate: {0}",
+      "Aktualisierte Tabellen: {0}",
+      "更新的表格：{0}"};
+    public static readonly string[] StyleErr = {
+      "Style '{0}' not found",
+      "Стиль '{0}' не найден",
+      "Stile '{0}' non trovato",
+      "Stil „{0}“ nicht gefunden",
+      "未找到样式“{0}”" };
+    public static readonly string[] TableUpdate = {
+      "Updating table {0}, '{1}' style",
+      "Обновление таблицы {0}, стиль “{1}”",
+      "Tavolo di rifornimento {0}. Stile: '{1}'",
+      "Tabelle {0} wird aufgefüllt. Stil: „{1}“",
+      "重新填充表{0}。样式“{1}”" };
 
     //============================= Dialog Box ===============================================
 
@@ -493,6 +538,71 @@ namespace AVC
       "数据表样式的名称。 \r\n" +
         "可以用作表格的标题。 \r\n" +
         "标题可能包含来自绘图或时间属性的替换。" };
+    public static readonly string[] Source = {
+      "Data Source",
+      "Источник данных",
+      "Fonte di dati",
+      "Datenquelle",
+      "資料來源"};
+    public static readonly string[] Select = {
+      "Select objects",
+      "Выбрать объекты",
+      "Seleziona oggetti",
+      "Wählen Sie Objekte aus",
+      "選擇對象"};
+    public static readonly string[] SelectTip = {
+      "Specify drawing objects from which information for the table will be retrieved.",
+      "Указать объекты чертежа, из которых будет извлекаться информация для таблицы.",
+      "Specificare gli oggetti della Carta da cui verranno recuperate le informazioni per la tabella.",
+      "Geben Sie Zeichnungsobjekte an, aus denen Informationen für die Tabelle abgerufen werden.",
+      "指定將從中檢索表格資訊的圖形物件。"};
+    public static readonly string[] Model = {
+      "All model objects",
+      "Все объекты модели",
+      "Tutti gli oggetti del modello",
+      "Alle Modellobjekte",
+      "所有模型對象"};
+    public static readonly string[] ModelTip = {
+      "Extract data from all model objects that match the filtering conditions.",
+      "Извлечь данные из всех объектов модели, которые подходят под условия фильтрации.",
+      "Estrai i dati da tutti gli oggetti del modello che corrispondono alle condizioni di filtro.",
+      "Extrahieren Sie Daten aus allen Modellobjekten, die den Filterbedingungen entsprechen.",
+      "從所有符合篩選條件的模型物件中擷取資料。"};
+    public static readonly string[] Viewports = {
+      "Layout Viewports",
+      "Вьюпорты листа",
+      "Viste di layout",
+      "Layout-Ansichtsfenster",
+      "佈局視窗"};
+    public static readonly string[] ViewportsTip = {
+      "Extract data into a table from all objects that are at least slightly visible in any viewport of the current sheet. \r\n" +
+        "When called from a model, all model objects.",
+      "Извлечь данные в таблицу из всех объектов, которые хоть немного видны в любом вьюпорте текущего листа. \r\n" +
+        "При вызове из модели - все объекты модели.",
+      "Estrai i dati in una tabella da tutti gli oggetti che sono almeno leggermente visibili in qualsiasi finestra \r\n" +
+        "del foglio corrente. Quando chiamati da un modello, tutti gli oggetti del modello.",
+      "Extrahieren Sie Daten aus allen Objekten, die in einem beliebigen Ansichtsfenster des aktuellen Blatts zumindest \r\n" +
+        "leicht sichtbar sind, in eine Tabelle. Bei Aufruf aus einem Modell alle Modellobjekte.",
+      "从当前工作表的任何视口中至少稍微可见的所有对象中将数据提取到表中。\r\n" +
+        "当从模型调用时，所有模型对象。"};
+    public static readonly string[] Files = {
+      "DWG Files",
+      "DWG-Файлы",
+      "File DWG",
+      "DWG-Dateien",
+      "DWG 文件"};
+    public static readonly string[] FilesTip = {
+      "Extract data into a table from all objects of all models from multiple drawings. \r\n" +
+        "The program will prompt you to select DWG or DXF files.",
+      "Извлечь данные в таблицу из всех объектов всех моделей из нескольких чертежей. \r\n" +
+        "Программа предложит выбрать DWG или DXF файлы.",
+      "Estrai i dati in una tabella da tutti gli oggetti di tutti i modelli da più disegni. \r\n" +
+        "Il programma ti chiederà di selezionare file DWG o DXF.",
+      "Extrahieren Sie Daten aus allen Objekten aller Modelle aus mehreren Zeichnungen in eine Tabelle. \r\n" +
+        "Das Programm fordert Sie auf, DWG- oder DXF-Dateien auszuwählen.",
+      "将多个图纸中所有模型的所有对象的数据提取到表中。\r\n" +
+        "程序将提示您选择 DWG 或 DXF 文件。"};
+
 
   }
 }

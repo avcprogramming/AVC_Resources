@@ -3046,7 +3046,7 @@ namespace AVC
       "Buchstabe",
       "信" };
 
-    // ================================================================================================
+    // ============================================================================================================
     // Solid Face  ================================================================================================
     public static readonly string[] Solid_Face = {
       "Solid & Face",
@@ -3359,6 +3359,18 @@ namespace AVC
       "Prima riga della tabella",
       "Erste Zeile der Tabelle",
       "表格的第一行" };
+    public static readonly string[] Sources = {
+      "Sources",
+      "Источники",
+      "Fonti",
+      "Quellen",
+      "来源" };
+    public static readonly string[] SourcesTip = {
+      "The AVC program that populated this table and the data sources",
+      "Программа AVC, заполнившая эту таблицу и источники данных",
+      "Programma AVC che ha popolato questa tabella e origini dati",
+      "AVC-Programm, das diese Tabelle und Datenquellen gefüllt hat",
+      "填充此表和数据源的 AVC 程序" };
 
     // ================================================================================================
     // Text  ================================================================================================

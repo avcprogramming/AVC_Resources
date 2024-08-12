@@ -909,6 +909,22 @@ namespace AVC
         "Die Bögen des Austritts des Fräsers zur Außenseite des Teils werden ebenfalls hergestellt.",
       "如果刀具未通过，则将零件（四分之一）边缘上的切口轮廓向外扩展。 \r\n" +
         "刀具出口到零件外部的圆弧也将被制作出来。" };
+    public static readonly string[] ExpandDadoEdge = {
+      "Entire outer contour",
+      "Весь наружный контур",
+      "Tutto il contorno esterno",
+      "Gesamte Außenkontur",
+      "整个外轮廓" };
+    public static readonly string[] ExpandDadoEdgeTip = {
+      "The entire contour of the dado along the edge of the part must be moved outward by half the diameter of the cutter \r\n" +
+        "so that the cutter does not fray the material.",
+      "Весь контур четверти по краю детали надо отодвинуть наружу на пол диаметра фрезы, \r\n" +
+        "чтоб фреза не лохматила материал.",
+      "L'intero contorno del dado lungo il bordo del pezzo deve essere spostato verso l'esterno di metà del diametro della fresa, \r\n" +
+        "in modo che quest'ultima non sfilacci il materiale.",
+      "Die gesamte Kontur der Nut entlang der Teilekante muss um den halben Fräserdurchmesser nach außen verschoben werden, \r\n" +
+        "damit der Fräser das Material nicht ausfranst.",
+      "沿零件边缘的榫眼的整个轮廓必须向外移动刀具直径的一半，以使刀具不会磨损材料。" };
     public static readonly string[] FilletBothSides = {
       "Fillet on both sides",
       "С двух сторон",

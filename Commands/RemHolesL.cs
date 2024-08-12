@@ -109,35 +109,35 @@ namespace AVC
 
     // ======================================== Options Dialog ====================================================
     public static readonly string[] OneBy1Text = {
-      "1 by 1",
+      "Delete 1 by 1",
       "Удалять по одному",
-      "1 per 1",
-      "1 wäre 1",
-      "逐个"};
+      "Elimina uno per uno",
+      "Nacheinander löschen",
+      "一一删除"};
     public static readonly string[] OneBy1Tip = {
-      "Call a separate surface removal command for each hole." +
-        "This will significantly increase the running time of the program." +
-        "But in some cases, this will avoid the destruction of the solid" +
-        "and the appearance of unnecessary surfaces due to glitches in AutoCAD." +
+      "Call a separate surface removal command for each hole.\r\n" +
+        "This will significantly increase the running time of the program.\r\n" +
+        "But in some cases, this will avoid the destruction of the solid\r\n" +
+        "and the appearance of unnecessary surfaces due to glitches in AutoCAD.\r\n" +
         "This option is meaningless in BricsCAD.",
-      "Вызывать отдельную команду удаления поверхности для каждого отверстия. " +
-        "Это значительно увеличит время работы программы." +
-        "Но, в некоторых случаях, это позволит избежать разрушения солида" +
-        "и появления лишних поверхностей из-за глюков в AutoCAD." +
+      "Вызывать отдельную команду удаления поверхности для каждого отверстия. \r\n" +
+        "Это значительно увеличит время работы программы.\r\n" +
+        "Но, в некоторых случаях, это позволит избежать разрушения солида\r\n" +
+        "и появления лишних поверхностей из-за глюков в AutoCAD.\r\n" +
         "В BricsCAD эта опция не имеет смысла.",
-      "Chiamare un comando di rimozione della superficie separato per ogni foro. " +
-        "Ciò aumenterà notevolmente il tempo di esecuzione del programma." +
-        "Ma in alcuni casi, ciò eviterà la distruzione del solido" +
-        "e la comparsa di superfici non necessarie a causa di problemi tecnici in AutoCAD." +
+      "Chiamare un comando di rimozione della superficie separato per ogni foro. \r\n" +
+        "Ciò aumenterà notevolmente il tempo di esecuzione del programma.\r\n" +
+        "Ma in alcuni casi, ciò eviterà la distruzione del solido\r\n" +
+        "e la comparsa di superfici non necessarie a causa di problemi tecnici in AutoCAD.\r\n" +
         "Questa opzione non ha senso in BricsCAD.",
-      "Rufen Sie für jedes Loch einen separaten Oberflächenentfernungsbefehl auf." +
-        "Dadurch wird die Laufzeit des Programms deutlich erhöht." +
-        "Aber in einigen Fällen wird dies die Zerstörung des Volumenkörpers " +
-        "und das Auftreten unnötiger Oberflächen aufgrund von Störungen in AutoCAD vermeiden." +
+      "Rufen Sie für jedes Loch einen separaten Oberflächenentfernungsbefehl auf.\r\n" +
+        "Dadurch wird die Laufzeit des Programms deutlich erhöht.\r\n" +
+        "Aber in einigen Fällen wird dies die Zerstörung des Volumenkörpers \r\n" +
+        "und das Auftreten unnötiger Oberflächen aufgrund von Störungen in AutoCAD vermeiden.\r\n" +
         "Diese Option ist in BricsCAD bedeutungslos.",
-      "为每个孔调用一个单独的表面去除命令。" +
-         "这将显着增加程序的运行时间。" +
-         "但在某些情况下，这将避免由于 AutoCAD 中的故障而破坏实体和出现不必要的曲面。" +
+      "为每个孔调用一个单独的表面去除命令。\r\n" +
+         "这将显着增加程序的运行时间。\r\n" +
+         "但在某些情况下，这将避免由于 AutoCAD 中的故障而破坏实体和出现不必要的曲面。\r\n" +
          "此选项在 BricsCAD 中没有意义。"};
     public static readonly string[] OptionsText = {
       "Hole selection options",
@@ -164,15 +164,15 @@ namespace AVC
       "Bohrer",
       "演习"};
     public static readonly string[] DrillsTip = {
-      "Only remove holes that are suitable for the drilling technology. " +
+      "Only remove holes that are suitable for the drilling technology. \r\n" +
         "Customize the diameters of the drills available in the CNC style.",
-      "Удалять только отверстия, которые подходят под технологию сверления. " +
+      "Удалять только отверстия, которые подходят под технологию сверления. \r\n" +
         "Диаметры имеющихся свёрел настраивайте в стиле  ЧПУ.",
-      "Rimuovere solo i fori adatti alla tecnologia di foratura. " +
+      "Rimuovere solo i fori adatti alla tecnologia di foratura. \r\n" +
         "Personalizza i diametri delle punte disponibili in stile CNC.",
-      "Entfernen Sie nur Löcher, die für die Bohrtechnik geeignet sind. "+
+      "Entfernen Sie nur Löcher, die für die Bohrtechnik geeignet sind. \r\n" +
         "Passen Sie die Durchmesser der im CNC-Stil verfügbaren Bohrer an.",
-      "只去除适合钻孔技术的孔。 " +
+      "只去除适合钻孔技术的孔。 \r\n" +
         "自定义 CNC 样式可用的钻头直径。"};
     public static readonly string[] SmallText = {
       "Less than",

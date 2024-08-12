@@ -231,6 +231,12 @@ namespace AVC
       "Sottrazione con Gap",
       "Subtraktion mit Lücke",
       "带间隙减法"};
+    public static readonly string[] HideAvc = {
+      "Hide AVC Palettes",
+      "Скрыть палитры AVC",
+      "Nascondi tavolozze AVC",
+      "AVC-Paletten ausblenden",
+      "隐藏 AVC 调色板"};
     public static readonly string[] IC = {
       "Inside Corner",
       "Внутренний угол",
@@ -336,6 +342,12 @@ namespace AVC
       "Offset di molti oggetti",
       "Versetz vieler Objekte",
       "许多对象的偏移" };
+    public static readonly string[] OpenAvc = {
+      "Open AVC Palettes",
+      "Открыть палитры AVC",
+      "Apri le tavolozze AVC",
+      "Öffnen Sie AVC-Paletten",
+      "打开 AVC 调色板"};
     public static readonly string[] OSL = {
       "Outside Loop",
       "Внешний контур",
@@ -464,6 +476,12 @@ namespace AVC
       "Tabella divisa",
       "Geteilte Tabelle",
       "拆分表" };
+    public static readonly string[] TableUpdate = {
+      "Update Tables",
+      "Обновить таблицы",
+      "Aggiorna tabelle",
+      "Tabellen aktualisieren",
+      "更新表" };
     public static readonly string[] TabSlot = {
       "Tab-Slot Joint",
       "Шип-паз",

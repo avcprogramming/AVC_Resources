@@ -191,7 +191,7 @@ namespace AVC
       "Impossibile tagliare il solido",
       "Teil konnte nicht mit der Gehrung geschnitten werden",
       "无法切割三维实体"};
-    public static readonly string[] SelectionWrong ={
+    public static readonly string[] SelectionWrong = {
       "\nYour selection is wrong. Was selected '{0}' and was necessary '{1}'.\n",
       "\nВыбрано не то: '{0}', а надо было выбрать '{1}'.\n",
       "\nSelezione errata. È stato selezionato '{0}' ed era necessario '{1}'.\n",
@@ -202,7 +202,13 @@ namespace AVC
       "Ошибка назначения свойства поверхности солида: {0}",
       "Errore nell'assegnazione delle proprietà della superficie solida: {0}",
       "Fehler beim Zuweisen von Solid-Surface-Eigenschaften:Fehler beim Zuweisen von Solid-Surface-Eigenschaften: {0}",
-      "指定实体表面属性时出错：{0}"
-    };
+      "指定实体表面属性时出错：{0}" };
+    public static readonly string[] MaterialErr = {
+      "Failed to assign material to solid {0}",
+      "Не удалось присвоить солиду материал {0}",
+      "Impossibile assegnare il materiale al solido {0}",
+      "Das Material konnte dem Volumenkörper {0} nicht zugewiesen werden.",
+      "无法将材料分配给实体 {0}" };
+
   }
 }

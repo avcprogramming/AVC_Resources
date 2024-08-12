@@ -202,8 +202,8 @@ namespace AVC
         "  ·X, Y, Z - insertion coordinates of the minimum point of the box or the center of the base of other shapes.\r\n" +
         "  ·SizeX, SizeY, SizeZ - dimensions of the solid along three axes.\r\n" +
         "  ·RotateX, Y, Z - rotation of the solid around three axes relative to the insertion point. Degrees.\r\n" +
-        "  ·Layer, Color, Material - solid properties.\r\n" +
         "  ·Owner - the name of the group or new assembly block for this part.\r\n" +
+        "  ·Layer, Color, Material, Texture - solid properties.\r\n" +
         "  ·Name, Kind, Info - additional properties of the solid.\r\n" +
         "\r\n" +
         "Instead of creating a solid, you can insert a block, text, or 2D curve into the drawing. Then the columns change their purpose. \r\n" +
@@ -213,8 +213,8 @@ namespace AVC
         " ·X, Y, Z - координаты вставки минимальной точки бокса или центра основания других фигур.\r\n" +
         " ·SizeX, SizeY, SizeZ - размеры солида по трем осям.\r\n" +
         " ·RotateX, Y, Z - вращение солида вокруг трех осей относительно точки вставки. Градусы.\r\n" +
-        " ·Layer, Color, Material - свойства солида.\r\n" +
         " ·Owner - имя группы или нового блока-сборки для данной детали.\r\n" +
+        " ·Layer, Color, Material, Texture - свойства солида.\r\n" +
         " ·Name, Kind, Info - дополнительные свойства солида.\r\n" +
         "\r\n" +
         "Вместо создания солида можно вставить в чертеж блок, текст, 2D фигуру. Тогда столбцы меняют свое назначение.\r\n" +
@@ -224,8 +224,8 @@ namespace AVC
         "  ·X, Y, Z - coordinate di inserimento del punto minimo della scatola o del centro della base di altre forme.\r\n" +
         "  ·SizeX, SizeY, SizeZ - dimensioni del solido lungo tre assi.\r\n" +
         "  ·RotateX, Y, Z: rotazione del solido attorno a tre assi rispetto al punto di inserimento. Gradi.\r\n" +
-        "  ·Layer, Color, Material: proprietà del solido.\r\n" +
         "  ·Owner: il nome del gruppo o del nuovo blocco di assieme per questa parte.\r\n" +
+        "  ·Layer, Color, Material, Texture: proprietà del solido.\r\n" +
         "  ·Name, Kind, Info: proprietà aggiuntive del solido.\r\n" +
         "\r\n" +
         "Invece di creare un solido, puoi inserire un blocco, un testo o una forma 2D nel disegno. Quindi le colonne cambiano il loro scopo. \r\n" +
@@ -235,8 +235,8 @@ namespace AVC
         "  ·X, Y, Z – Einfügekoordinaten des Mindestpunkts des Kastens oder der Mitte der Basis anderer Formen.\r\n" +
         "  ·SizeX, SizeY, SizeZ – Abmessungen des Volumenkörpers entlang dreier Achsen.\r\n" +
         "  ·RotateX, Y, Z – Drehung des Volumenkörpers um drei Achsen relativ zum Einfügepunkt. Abschlüsse.\r\n" +
-        "  ·Layer, Color, Material – feste Eigenschaften.\r\n" +
         "  ·Owner – der Name der Gruppe oder des neuen Baugruppenblocks für dieses Teil.\r\n" +
+        "  ·Layer, Color, Material, Texture – feste Eigenschaften.\r\n" +
         "  ·Name, Kind, Info – zusätzliche Eigenschaften des Volumenkörpers.\r\n" +
         "\r\n" +
         "Anstatt einen Volumenkörper zu erstellen, können Sie einen Block, Text oder eine 2D-Form in die Zeichnung einfügen. \r\n" +
@@ -246,8 +246,8 @@ namespace AVC
         "  ·X、Y、Z - 盒子最小点或其他形状底部中心的插入坐标。\r\n" +
         "  ·SizeX、SizeY、SizeZ - 实体沿三个轴的尺寸。\r\n" +
         "  ·RotateX、Y、Z - 实体相对于插入点绕三个轴旋转。度。\r\n" +
-        "  ·Layer, Color, Material - 实体属性。\r\n" +
         "  ·Owner - 该零件的组或新装配块的名称。\r\n" +
+        "  ·Layer, Color, Material, Texture - 实体属性。\r\n" +
         "  ·Name, Kind, Info - 实体的附加属性。\r\n" +
         "\r\n" +
         "您可以将块、文本或 2D 形状插入到绘图中，而不是创建实体。然后专栏改变了它们的目的。 有关详细信息，请参阅文档。" };

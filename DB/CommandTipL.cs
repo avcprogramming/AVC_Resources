@@ -336,6 +336,12 @@ namespace AVC
       "Holen Sie sich eine flache Zeichnung von einem beliebigen AutoCAD-Objekt. " +
         "Projizieren Sie alles auf die XY-Ebene",
       "从任何 AutoCAD 对象生成平面图。 全部在 XY 上投影"};
+    public static readonly string[] HideAvcTip = {
+      "Hide AVC palettes from the screen by list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Скрыть с экрана палитры AVC по списку. В списке через запятую можно указать: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Nascondi le tavolozze AVC dallo schermo tramite elenco. In un elenco separato da virgole è possibile specificare: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Blenden Sie AVC-Paletten nach Liste auf dem Bildschirm aus. In einer durch Kommas getrennten Liste können Sie Folgendes angeben: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "按列表隐藏屏幕上的 AVC 调色板。在逗号分隔的列表中，您可以指定： AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List"};
     public static readonly string[] ICTip = {
       "Contours for milling approach in the inside corners",
       "Контуры для захода фрезы во внутренние углы" ,
@@ -501,6 +507,12 @@ namespace AVC
         "Wiederholter und zweiseitiger Versetz. Layer-wechseln. Original entfernen.",
       "数以千计的偏移轮廓一键点击。 "+
          "重复和双面偏移。图层更改。删除原始。"};
+    public static readonly string[] OpenAvcTip = {
+      "Open AVC palettes from the list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Открыть палитры AVC по списку. В списке через запятую можно указать: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Apri le tavolozze AVC per elenco. In un elenco separato da virgole è possibile specificare: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Öffnen Sie AVC-Paletten nach Liste. In einer durch Kommas getrennten Liste können Sie Folgendes angeben: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "按列表打开 AVC 调色板。在逗号分隔的列表中，您可以指定： AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List"};
     public static readonly string[] OSLTip = {
       "Join segments to closed polyline. " +
         "Convert any curves to polylines. Approximation of splines with a given tolerance. Contour optimization.",
@@ -700,6 +712,12 @@ namespace AVC
       "Suddivisione di lunghe tabelle dwg in layout.",
       "Aufteilen langer dwg-Tabellen in Layouts.",
       "将长 dwg 表拆分为工作表（布局）。"};
+    public static readonly string[] TableUpdateTip = {
+      "Refill the drawing tables with the old settings, extracting data from the same objects.",
+      "Заполнить таблицы чертежа заново со старыми настройками, извлекая данные из тех же объектов." ,
+      "Ripopolare le tabelle di disegno con le vecchie impostazioni, estraendo i dati dagli stessi oggetti.",
+      "Füllen Sie die Zeichnungstabellen erneut mit den alten Einstellungen und extrahieren Sie Daten aus denselben Objekten.",
+      "使用旧设置重新填充绘图表，从相同对象中提取数据。"};
     public static readonly string[] TabSlotTip = {
       "Modeling the connection of two parts using a series of tabs(pins) at the end of one part " +
         "and a series of slots(dadoes) on the plane of another part.",
