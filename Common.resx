@@ -313,6 +313,15 @@
   <data name="Circle32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Circle32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CNum16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CNum16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CNum32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CNum32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CNum80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CNum80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CopyCmd32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\CopyCmd32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -934,6 +943,9 @@
   <data name="RevCloud32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\RevCloud32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rod32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rod32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Save16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Save16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -975,6 +987,12 @@
   </data>
   <data name="Shop32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Shop32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SimpInFiles16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SimpInFiles16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SimpInFiles32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SimpInFiles32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Slice16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Slice16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

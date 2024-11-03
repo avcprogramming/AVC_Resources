@@ -561,18 +561,18 @@ namespace AVC
       "纹理名称列表：无纹理,沿着,穿过。\r\n" +
          "该列表应严格包含三个用分号分隔的选项。"};
     public static readonly string[] TechnoTip = {
-      "List of technology names: Box,Sweep,Saw,Milling,Double-side,3D Milling,Unknown.\r\n" +
-        "The list should have strictly 7 variants separated by semicolons without extra spaces.",
+      "List of technology names: Box;Sweep;Saw;Milling;Double-side;3D Milling;Cut Pipe;Processed Pipe;Unknown.\r\n" +
+        "The list should have strictly 9 variants separated by semicolons without extra spaces.",
       "Список названий технологий:\r\n" +
-        "Бокс,Развертка,Напилка,Фрезеровка,Двусторонняя,3D Фрезеровка,Нераспознано\r\n" +
-        "В списке должно быть строго 7 вариантов, разделенных точкой с запятой без лишних пробелов.",
+        "Бокс;Развертка;Напилка;Фрезеровка;Двусторонняя;3D Фрезеровка;Резка трубы;Обработка трубы;Не распознано\r\n" +
+        "В списке должно быть строго 9 вариантов, разделенных точкой с запятой без лишних пробелов.",
       "Elenco dei nomi delle tecnologie:\r\n" +
-        "Parallelepipedo,Scansione,Sega,Fresatura,Due lati,3D Fresatura,Sconosciuto\r\n" +
-        "L'elenco dovrebbe avere rigorosamente 7 varianti separate da punto e virgola senza spazi aggiuntivi.",
-      "Liste der Technologienamen: Box,Fegen,Sah,Mahlen,Doppelseitig,3D-Fräsen,Unbekannt.\r\n" +
-         "Die Liste sollte streng 7 Varianten haben, die durch Semikolons ohne zusätzliche Leerzeichen getrennt sind.",
-      "技术名称列表：盒子,扫,锯,铣削,双面,3D 铣削,未知。\r\n" +
-         "该列表应该有严格的 7 个变体，用分号分隔，没有多余的空格。"};
+        "Parallelepipedo;Scansione;Sega;Fresatura;Due lati;3D Fresatura;Tagliare il tubo;Tubo lavorato;Sconosciuto\r\n" +
+        "L'elenco dovrebbe avere rigorosamente 9 varianti separate da punto e virgola senza spazi aggiuntivi.",
+      "Liste der Technologienamen: Box;Fegen;Sah;Mahlen;Doppelseitig;3D-Fräsen;Rohr abschneiden;Bearbeitetes Rohr;Unbekannt.\r\n" +
+         "Die Liste sollte streng 9 Varianten haben, die durch Semikolons ohne zusätzliche Leerzeichen getrennt sind.",
+      "技术名称列表：盒子;扫;锯;铣削;双面;3D 铣削;切管;加工管材;未知。\r\n" +
+         "该列表应该有严格的 9 个变体，用分号分隔，没有多余的空格。"};
     public static readonly string[] ResetDialogs = {
       "Reset Dialogs",
       "Сбросить Диалоги",

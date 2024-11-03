@@ -4,7 +4,8 @@ namespace AVC
   /// <summary>
   /// Локализация модулей обмера и анализа солидов
   /// </summary>
-  public static class SolidMetricL
+  public static class 
+  SolidMetricL
   {
     public static readonly string[] BrepErr = {
       "Failed to get solid geometry description (bRep).\r\n{0}",
@@ -95,17 +96,17 @@ namespace AVC
       "Für die Volumenkörpermessung wurde keine Referenzebene gefunden. Der fehlerhafte Volumenkörper ist rot markiert.",
       "未找到用于实体测量的基准平面。 失败的实体以红色突出显示。"};
     public static readonly string[] LayErr = {
-      "Can't lay solid to XY.\n{0}",
-      "Не удалось выложить солид в XY.\n{0}",
-      "Non è possibile porre il solido XY.\n{0}",
-      "Volumenkörper konnte nicht in XY gelegt werden.\n{0}",
-      "未能在 XY 中放置实体。\n{0}" };
+      "  Can't lay solid to XY. {0}",
+      "  Не удалось выложить солид в XY. {0}",
+      "  Non è possibile porre il solido XY. {0}",
+      "  Volumenkörper konnte nicht in XY gelegt werden. {0}",
+      "  未能在 XY 中放置实体。 {0}" };
     public static readonly string[] ZeroMatrix = {
-      " Zero rotation matrix.",
-      " Пустая матрица поворота.",
-      " Valore matrice di rotazione Zero",
-      " Eine leere Rotationsmatrix.",
-      " 空旋转矩阵。"};
+      "Zero rotation matrix.",
+      "Пустая матрица поворота.",
+      "Valore matrice di rotazione Zero",
+      "Eine leere Rotationsmatrix.",
+      "空旋转矩阵。"};
     public static readonly string[] NoBottom = {
       "The part '{0}' has no reference plane found (which lies in the XY plane). \r\n" +
         "The shape of the part is too complex to analyze.",
@@ -124,13 +125,15 @@ namespace AVC
       "Die Farbe der Oberfläche kann nicht ermittelt werden.",
       "获取边缘颜色失败。" };
     public static readonly string[,] DefTechno = {    
-/* 0 */{"Box", "Бокс", "Parallelepipedo", "Quader","盒子" },
+/* 0 */{"Box", "Бокс", "Parallelepipedo", "Quader", "盒子" },
 /* 1 */{"Sweep","Развертка","Scansione", "Sweep","扫" },
 /* 2 */{"Saw","Напилка","Sega", "Säge","锯" },
 /* 3 */{"Milling","Фрезеровка","Fresatura", "Fräsen","铣削" },
 /* 4 */{"Double-side", "Двусторонняя", "Due lati", "Doppelseitige","双面" },
 /* 5 */{"3D Milling", "3D Фрезеровка","3D Fresatura", "3D Fräsen","3D 铣削" },
-/* 6 */{"Unknown", "Не распознано" , "Sconosciuto", "Unbekannte","未知"},
+/* 6 */{"Cut pipe","Резка трубы","Tagliare il tubo","Rohr abschneiden","切管" },
+/* 7 */{"Processed pipe","Обработка трубы","Tubo lavorato","Bearbeitetes Rohr","加工管材" },
+/* 8 */{"Unknown", "Не распознано" , "Sconosciuto", "Unbekannte","未知"},
     };
 
     public static string[,] DefTexture = {

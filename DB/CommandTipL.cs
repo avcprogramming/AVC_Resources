@@ -185,6 +185,12 @@ namespace AVC
         "Schrittweises Ausfüllen komplexer Formulare. Anordnung der Rippen.",
       "沿着弯曲的边缘将 3d-solid 切成许多块。 " +
          "做肋骨和楼梯。"};
+    public static readonly string[] CNumTip = {
+      "Numbering of objects by location along a curve, polyline, or spline.",
+      "Нумерация объектов по расположению вдоль кривой, полилинии, сплайна." ,
+      "Numerazione degli oggetti in base alla posizione all'interno di una curva, polilinea, spline.",
+      "Nummerierung von Objekten nach Position innerhalb einer Kurve, Polylinie, Spline.",
+      "按曲线、折线、样条线内的位置对对象进行编号。"};
     public static readonly string[] CPolyTip = {
       "Convert any curves to polylines. Approximation of splines with a given tolerance. " +
         "Projecting 3d curves onto a plane.",
@@ -202,6 +208,12 @@ namespace AVC
       "Creare scanalature nelle parti intersecanti (solidi) per la connessione incrociata.",
       "Machen Sie Nuten in sich kreuzenden Teilen (Volumenkörper) für die Querverbindung.",
       "使相交零件（实体）中的槽口交叉连接。"};
+    public static readonly string[] CurveSubTip = {
+      "Subtraction of closed polylines and curves as regions. Cutting with open curves.",
+      "Вычитание замкнутых полилиний и кривых как регионов. Разрезание разомкнутыми кривыми.",
+      "Sottrazione di polilinee e curve chiuse come regioni. Taglio con curve aperte.",
+      "Geschlossene Polylinien und Kurven als Regionen subtrahieren. Schneiden mit offenen Kurven.",
+      "减去闭合多段线和曲线作为区域。使用开放曲线进行切割。" };
     public static readonly string[] DadoJointTip = {
       "Formation of dado joinery between 2 contacting solids. Automatic creation dadoes, grooves, pockets, cutouts.",
       "Формирование соединения типа 'паз-шип' на двух соприкасающихся деталях. " +
@@ -639,6 +651,12 @@ namespace AVC
         "Es werden die Suchparameter vom letzten Aufruf des SelectSame-Befehls verwendet.",
       "无需查询即可搜索类似对象。" +
          "正在使用上次调用 SelectSame 命令的搜索参数。"};
+    public static readonly string[] SimpInFilesTip = {
+      "Simplify polylines and other curves in many drawings at once.",
+      "Упрощение полилиний и других кривых во многих чертежах сразу.",
+      "Semplifica polilinee e altre curve in più disegni contemporaneamente.",
+      "Vereinfachen Sie Polylinien und andere Kurven in vielen Zeichnungen gleichzeitig.",
+      "一次简化多段线和其他图形中的曲线。" };
     public static readonly string[] SliceTip = {
       "Quick and smart similar SLICE command. Delamination (peeling) flat and curved faces of solid.",
       "Быстрый и умный аналог команды Slice (Разрез). " +

@@ -69,7 +69,7 @@ namespace AVC
       "Lingua automatica",
       "Auto-Sprache",
       "自动语言切换" };
-    public static string[] AvcOptions = { // изменяем в VARS
+    public static string[] AvcOptions = { // не readonly! изменяем в VARS
       "A>V>C> Options",
       "Настройки A>V>C>",
       "Impostazioni A>V>C>",
@@ -123,6 +123,12 @@ namespace AVC
       "Tritare di un bordo",
       "Kante hacken",
       "沿着肋骨切片" };
+    public static readonly string[] CNum = {
+      "Numbering on Curve",
+      "Нумерация по кривой",
+      "Numerazione sulla curva",
+      "Nummerierung auf Kurve",
+      "沿曲线编号" };
     public static readonly string[] CPoly = {
       "Curve to Polyline",
       "Кривые в полилинии",
@@ -135,6 +141,12 @@ namespace AVC
       "Traversa",
       "Kreuzstück",
       "叉" };
+    public static readonly string[] CurveSub = {
+      "Curve Subtract",
+      "Вычитание кривых",
+      "Sottrarre le curve",
+      "Kurven subtrahieren",
+      "减去曲线" };
     public static readonly string[] DataTable = {
       "Data Table",
       "Таблица Данных",
@@ -428,6 +440,12 @@ namespace AVC
       "Seleziona lo stesso. Ripetere",
       "Wählen Sie Gleich. Wiederholen",
       "查找相似的重复" };
+    public static readonly string[] SimpInFiles = {
+      "Simplifying contours in files",
+      "Упрощение контуров в файлах",
+      "Semplificazione dei contorni nei file",
+      "Vereinfachen von Umrissen in Dateien",
+      "简化文件中的轮廓" };
     public static readonly string[] SmartLeader = {
       "Smart Leader",
       "Умные Выноски",

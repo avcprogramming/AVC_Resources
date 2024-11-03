@@ -1,5 +1,5 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
-// Ignore Spelling: Dwg
+// Ignore Spelling: Dwg Perim
 
 namespace AVC
 {
@@ -320,27 +320,33 @@ namespace AVC
       "Randreihenfolge",
       "边缘顺序" };
     public static readonly string[] EdgeOrderTip = {
-      "Typically, the end list starts at the bottom left corner of the part and goes clockwise." +
-         "But for quad parts, you can rearrange the ends however you like." +
-         "Write a list of four numbers from 1 to 4 separated by commas." +
+      "Typically, the end list starts at the bottom left corner of the part and goes clockwise.\r\n" +
+         "But for quad parts, you can rearrange the ends however you like.\r\n" +
+         "Write a list of four numbers from 1 to 4 separated by commas.\r\n" +
          "This order only works in the Properties Palette and has no effect on substitutions.",
-      "Обычно список торцев начинается с левого нижнего угла детали и далее по часовой стрелке." +
-        "Но для четырехугольных деталей вы можете переставить торцы как вам нравится." +
-        "Напишите список из четырех чисел от 1 до 4 через запятую." +
+      "Обычно список торцев начинается с левого нижнего угла детали и далее по часовой стрелке.\r\n" +
+        "Но для четырехугольных деталей вы можете переставить торцы как вам нравится.\r\n" +
+        "Напишите список из четырех чисел от 1 до 4 через запятую.\r\n" +
         "Данный порядок работает только в Палитре Свойств и никак не влияет на подстановки.",
-      "In genere, l'elenco finale inizia nell'angolo inferiore sinistro della parte e va in senso orario." +
-         "Ma per le parti quad, puoi riorganizzare le estremità come preferisci." +
-         "Scrivi un elenco di quattro numeri da 1 a 4 separati da virgole." +
+      "In genere, l'elenco finale inizia nell'angolo inferiore sinistro della parte e va in senso orario.\r\n" +
+         "Ma per le parti quad, puoi riorganizzare le estremità come preferisci.\r\n" +
+         "Scrivi un elenco di quattro numeri da 1 a 4 separati da virgole.\r\n" +
          "Questo ordine funziona solo nella tavolozza delle proprietà e non ha effetto sulle sostituzioni.",
-      "Normalerweise beginnt die Endliste in der unteren linken Ecke des Teils und geht im Uhrzeigersinn." +
-         "Aber bei Quad-Teilen können Sie die Enden nach Belieben neu anordnen." +
-         "Schreiben Sie eine Liste mit vier Zahlen von 1 bis 4, die durch Kommas getrennt sind." +
+      "Normalerweise beginnt die Endliste in der unteren linken Ecke des Teils und geht im Uhrzeigersinn.\r\n" +
+         "Aber bei Quad-Teilen können Sie die Enden nach Belieben neu anordnen.\r\n" +
+         "Schreiben Sie eine Liste mit vier Zahlen von 1 bis 4, die durch Kommas getrennt sind.\r\n" +
          "Diese Reihenfolge funktioniert nur in der Eigenschaftenpalette und hat keine Auswirkung auf Ersetzungen.",
-      "通常，结束列表从零件的左下角开始，顺时针方向。" +
-         "但对于四边形零件，您可以随意重新排列末端。" +
-         "写一个从 1 到 4 的四个数字的列表，用逗号分隔。" +
+      "通常，结束列表从零件的左下角开始，顺时针方向。\r\n" +
+         "但对于四边形零件，您可以随意重新排列末端。\r\n" +
+         "写一个从 1 到 4 的四个数字的列表，用逗号分隔。\r\n" +
          "此顺序仅在属性面板中有效，对替换无效。" };
-    public static readonly string[] LineTypeTip = {
+    public static readonly string[] LineStyle = {
+      "Line Style",
+      "Стиль линий",
+      "Stile della linea",
+      "Linienstil",
+      "线条样式"};
+    public static readonly string[] LineStyleTip = {
       "Show Line Type, Line Scale, and Line Weight for all curves. \r\n" +
         "On the Layer tab, these properties will be shown in any case.",
       "Показывать у всех кривых тип линий, масштаб линий и вес линий. \r\n" +
@@ -351,6 +357,101 @@ namespace AVC
         "Auf der Registerkarte Layer werden diese Eigenschaften in jedem Fall angezeigt.",
       "显示所有曲线的线型、线比例和线宽。 \r\n" +
         "在“图层”选项卡上，这些属性在任何情况下都会显示。" };
+    public static readonly string[] AreaPerim = {
+      "Area and perimeter",
+      "Площадь и периметр",
+      "Area e perimetro",
+      "Fläche und Umfang",
+      "面积和周长"};
+    public static readonly string[] AreaPerimTip = {
+      "If possible, show area and perimeter (or length). \r\n" +
+        "Also enables area and length columns in the lists of solid Covers and Edges Bandings. \r\n" +
+        "In the solid metric, these properties are not disabled.",
+      "По возможности показывать площадь и периметр (или длину).\r\n " +
+        "Так же включаются столбцы площади и длины в списках покрытий и кромок солида.\r\n" +
+        "В метрике солида эти свойства не отключаются.",
+      "Mostra l'area e il perimetro (o la lunghezza) quando possibile. \r\n" +
+        "Abilita inoltre le colonne di area e lunghezza negli elenchi di Coperture solide e Bande di bordi.\r\n" +
+        "Nella metrica solida, queste proprietà non sono disabilitate.",
+      "Zeigen Sie nach Möglichkeit Fläche und Umfang (oder Länge) an. \r\n" +
+        "Aktiviert außerdem Flächen- und Längenspalten in den Listen mit festen Abdeckungen und Kantenbändern.\r\n" +
+        "In der soliden Metrik sind diese Eigenschaften nicht deaktiviert.",
+      "尽可能显示面积和周长（或长度）。\r\n" +
+        "还可以在实体覆盖和边缘带列表中启用面积和长度列。\r\n" +
+        "在实体度量中，这些属性不会被禁用。"};
+    public static readonly string[] LayerTip = {
+      "Show drawing object layer.",
+      "Показывать слой объектов чертежа.",
+      "Mostra il layer degli oggetti di disegno.",
+      "Zeichenobjektebene anzeigen.",
+      "显示绘图对象层。"};
+    public static readonly string[] ColorTip = {
+      "Show color of drawing objects.",
+      "Показывать цвет объектов чертежа.",
+      "Mostra il colore degli oggetti del disegno.",
+      "Zeigen Sie die Farbe von Zeichenobjekten an.",
+      "显示绘图对象的颜色。"};
+    public static readonly string[] MaterialTip = {
+      "Show material for all drawing objects",
+      "Показывать материал у всех объектов чертежа",
+      "Mostra il materiale per tutti gli oggetti di disegno",
+      "Material für alle Zeichenobjekte anzeigen",
+      "显示所有绘图对象的材质"};
+    public static readonly string[] VisibleTip = {
+      "Show visibility checkbox for all drawing objects",
+      "Показывать галочку видимости у всех объектов чертежа",
+      "Mostra casella di controllo visibilità per tutti gli oggetti di disegno",
+      "Kontrollkästchen Sichtbarkeit für alle Zeichnungsobjekte anzeigen",
+      "显示所有绘图对象的可见性复选框"};
+    public static readonly string[] OrdinaryProperties = {
+      "Ordinary properties",
+      "Обычные свойства",
+      "Proprietà comuni",
+      "Gemeinsame Eigenschaften",
+      "共同属性"};
+    public static readonly string[] OrdinaryPropertiesTip = {
+      "Show all common properties that all objects in the drawing have. \r\n" +
+          "If you disable this option, only specific properties of individual objects and AVC properties will remain in the palette.",
+      "Показывать все обычные свойства, которые есть у всех объектов чертежа. \r\n" +
+          "При отключении этой опции в палитре останутся только специфические свойства отдельных объектов и свойства AVC.",
+      "Mostra tutte le solite proprietà di tutti gli oggetti di disegno.\r\n" +
+          "Se disabiliti questa opzione, nella tavolozza rimarranno solo le proprietà specifiche dei singoli oggetti e le proprietà AVC.",
+      "Zeigt alle üblichen Eigenschaften an, die alle Zeichnungsobjekte haben. \r\n" +
+          "Wenn Sie diese Option deaktivieren, bleiben nur die spezifischen Eigenschaften einzelner Objekte und AVC-Eigenschaften in der Palette.",
+      "显示所有绘图对象具有的所有常用属性。\r\n" +
+          "如果禁用此选项，则调色板中将仅保留单个对象的特定属性和 AVC 属性。"};
+    public static readonly string[] ObjectTypeTip = {
+      "Show the object type in the drawing on tabs that can show different types of objects.",
+      "Показывать тип объекта чертеже на вкладках, которые могут показывать разнотипные объекты.",
+      "Mostra il tipo di oggetto nel disegno nelle schede che possono mostrare diversi tipi di oggetti.",
+      "Zeigen Sie den Objekttyp in der Zeichnung auf Registerkarten an, auf denen verschiedene Objekttypen angezeigt werden können.",
+      "在可以显示不同类型对象的选项卡上显示图形中的对象类型。"};
+    public static readonly string[] CoversTip = {
+      "Show a list of solid surfaces that have a coating material assigned to them \r\n" +
+          "(if the solid has a metric created by the SolSize command)",
+      "Показывать список поверхностей солида, \r\n" +
+          "которым назначен материал покрытия (если солид имеет метрику, созданную командой SolSize)",
+      "Mostra un elenco di superfici solide a cui è assegnato un materiale di rivestimento \r\n" +
+          "(se il solido ha una metrica creata dal comando SolSize)",
+      "Zeigt eine Liste von Volumenkörperoberflächen an, denen ein Beschichtungsmaterial zugewiesen ist \r\n" +
+          "(wenn der Körper über eine durch den Befehl „SolSize“ erstellte Metrik verfügt).",
+      "显示分配了涂层材料的实体表面列表（如果实体具有由 SolSize 命令创建的公制）"};
+    public static readonly string[] BandingsTip = {
+    "Create and display a list of coatings on the ends of the part (Edge Bandings). \r\n" +
+        "If you disable this option, the solid metric creation program will not search for end surfaces \r\n" +
+        "and you will not see them not only in the AVC Properties Palette, but also in tables and MLeaders.",
+    "Создавать и показывать список покрытий на торцах детали (кромки). \r\n" +
+        "При отключении этой опции программа создания метрики солида не будет искать торцевые поверхности \r\n" +
+        "и вы не увидите их не только в Палитре Свойств, но и в таблицах и на выносках.",
+    "Creare e visualizzare un elenco di rivestimenti sulle estremità di una parte. \r\n" +
+        "Se disabiliti questa opzione, il programma di creazione metrica solida non cercherà le superfici finali \r\n" +
+        "e non le vedrai solo nella tavolozza Proprietà, ma anche nelle tabelle e nei richiami.",
+    "Erstellen Sie eine Liste der Beschichtungen an den Enden eines Teils und zeigen Sie sie an. \r\n" +
+        "Wenn Sie diese Option deaktivieren, sucht das Programm zur Erstellung von Volumenmetriken nicht nach Endflächen \r\n" +
+        "und Sie werden diese nicht nur in der Eigenschaftenpalette, sondern auch in Tabellen und Beschriftungen sehen.",
+    "创建并显示零件末端的涂层列表。\r\n" +
+        "如果禁用此选项，实体公制创建程序将不会搜索端面，\r\n" +
+        "您不仅在属性选项板中看不到它们，而且在表和标注中也看不到它们。"};
     public static readonly string[] TransparencyTip = {
       "Show the Transparency property for all drawing primitives",
       "Показывать свойство Прозрачность у всех примитивов чертежа",
@@ -431,6 +532,26 @@ namespace AVC
         "Nicht für Anmerkungsblöcke.",
       "始终在块定义属性中显示虚拟常量属性，即使该块没有这些属性。" +
         "不适用于注释性块。"};
-
+    public static readonly string[] UserProperties = {
+      "User properties",
+      "Пользовательские свойства",
+      "Proprietà personalizzate",
+      "Benutzerdefinierte Eigenschaften",
+      "自定义属性" };
+    public static readonly string[] UserPropertiesTip = {
+      "Show additional properties of parts and save them in xData of drawing objects. \r\n" +
+        "Write a list of one property per line. \r\n" +
+        "You can also write the default property value. Write it after the equal sign, without spaces.",
+      "Показывать дополнительные свойства деталей и сохранять их в xData объектов чертежа.\r\n" +
+        "Напишите список по одному свойству в строке.\r\n" +
+        "Можно написать так же значение свойства по умолчанию. Пишите его после знака равно, без пробелов.",
+      "Mostra proprietà aggiuntive delle parti e salvale in xData degli oggetti di disegno. \r\n" +
+        "Scrivi un elenco di una proprietà per riga. Puoi anche scrivere il valore della proprietà predefinito. \r\n" +
+        "Scrivilo dopo il segno uguale, senza spazi.",
+      "Zeigen Sie zusätzliche Eigenschaften von Teilen an und speichern Sie sie in xData von Zeichnungsobjekten. \r\n" +
+        "Schreiben Sie eine Liste mit einer Eigenschaft pro Zeile. Sie können auch den Standardeigenschaftswert schreiben. \r\n" +
+        "Schreiben Sie es nach dem Gleichheitszeichen, ohne Leerzeichen.",
+      "显示零件的附加属性并将其保存在绘图对象的 xData 中。\r\n" +
+        "每行写一个属性的列表。您还可以编写默认属性值。写在等号后面，不要有空格。" };
   }
 }

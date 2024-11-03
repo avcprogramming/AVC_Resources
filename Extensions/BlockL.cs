@@ -80,6 +80,12 @@ namespace AVC
       "Blocco '{0}' non trovato",
       "Block „{0}“ nicht gefunden",
       "未找到块“{0}”" };
+    public static readonly string[] ComponentsReading = {
+      "Reading all objects in space {0}",
+      "Считывание всех объектов пространства {0}",
+      "Lettura di tutti gli oggetti nello spazio {0}",
+      "Alle Objekte im Weltraum lesen {0}",
+      "读取空间 {0} 中的所有对象"    };
 
   }
 }

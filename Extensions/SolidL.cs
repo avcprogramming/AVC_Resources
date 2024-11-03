@@ -113,18 +113,6 @@ namespace AVC
       "\r\nUno dei solidi contiene errori di modellazione. Questo potrebbe essere il motivo del fallimento. Potrebbe essere un errore di importazione. Si consiglia di rimodellare il solido.",
       "\r\nEiner der Volumenkörper enthält Modellierungsfehler. Dies könnte der Grund für den Fehler sein. Es kann ein Importfehler sein. Empfohlener Umbau.",
       "\r\n其中一个三维实体包含建模错误。 这可能是失败的原因。 这可能是导入错误。 建议重塑三维实体"};
-    public static readonly string[] LayErr = {
-      "Can't lay solid to XY.",
-      "Не удалось выложить солид в XY.",
-      "Non è possibile porre il solido XY.",
-      "Kann nicht Körpervolumen zu XY liegen.",
-      "无法平铺三维实体到 XY平面上。" };
-    public static readonly string[] MatrixErr = {
-      " Zero rotation matrix.",
-      " Пустая матрица поворота.",
-      " Valore matrice di rotazione Zero",
-      " Eine leere Rotationsmatrix.",
-      " 零旋转矩阵。"};
     public static readonly string[] BrepErr = {
       "Can't get BRep from solid.",
       "Не удалось снять BRep с солида.",

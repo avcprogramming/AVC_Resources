@@ -12,11 +12,11 @@ namespace AVC
       "  Aktuelle Einstellungen: SPIEL = {0:0.####}",
       "  当前设置：间隙 = {0:0.####}"};
     public static readonly string[] NoSub = {
-      "  Nothing to subtract. Drill command canceled",
-      "  Нечего вычитать. Сверление отменено.",
-      "  Non c’è niente da sottrarre. Comando di perforazione annullato",
-      "  Nichts abzuziehen. Bohrbefehl abgebrochen",
-      "  没有什么可减去的。 演习命令取消" };
+      "  Nothing to subtract. The subtraction procedure has been cancelled.",
+      "  Нечего вычитать. Процедура вычитания отменена.",
+      "  Non c’è niente da sottrarre. La procedura di sottrazione è stata annullata.",
+      "  Nichts abzuziehen. Der Subtraktionsvorgang wurde abgebrochen.",
+      "  没有什么可减去的。 减法程序已被取消。" };
     public static readonly string[] NoIntersections = {
       "  The holes do not intersect any detail.",
       "  Отверстия не пересекли ни одной детали.",
@@ -267,7 +267,7 @@ namespace AVC
         "在命令 钻孔(DRI) 和 间隙(GAP) 中使用。" +
         "默认为 0。" };
     public static readonly string[] SaveGap = {
-      "Save Gap",
+      "Save gap",
       "Сохранять зазор",
       "Salva divario",
       "Spiel speichern",
@@ -289,8 +289,8 @@ namespace AVC
         "如果禁用此选项，则只能使用命令行选项输入间隙，\r\n" +
         "并在执行命令后立即将其重置为 0。" };
     public static readonly string[] HoleLayerSelection = {
-      "Hole Layer Selection",
-      "Выбор слоя",
+      "Hole layer selection",
+      "Выбор слоя отверстий",
       "Selezione del Layer",
       "Schichtauswahl",
       "孔层选择" };

@@ -217,6 +217,12 @@ namespace AVC
       "Selezionare terzo punto sul piano",
       "Wählen Sie den dritten Punkt der Ebene.",
       "选择平面上的第三个点"};
+    public static string[] SelectFile = {
+      "Select drawing",
+      "Выберите чертеж",
+      "Seleziona il disegno",
+      "Zeichnung auswählen",
+      "选择图纸" };
     public static readonly string[]
       NoMaterial = {
       "No material",
@@ -231,13 +237,6 @@ namespace AVC
       "Specificare il punto di inserimento",
       "Geben Sie die Einfügemarke der Kopie an",
       "输入复制插入点"};
-    public static readonly string[]
-      FileAccessErr = {
-      "Someone has already opened the file and now it's impossible to read it: {0}",
-      "Кто-то уже открыл файл и теперь его невозможно прочитать: {0}",
-      "Qualcuno ha già aperto il file e ora è impossibile leggerlo: {0}",
-      "Jemand hat die Datei bereits geöffnet und jetzt ist es unmöglich, sie zu lesen: {0}",
-      "有人已经打开了文件，现在无法阅读：{0}"};
     public static readonly string[]
       FileOpenErr = {
       "Can't read drawing file: {0}",

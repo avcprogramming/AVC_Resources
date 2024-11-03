@@ -743,6 +743,36 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap CNum16 {
+            get {
+                object obj = ResourceManager.GetObject("CNum16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CNum32 {
+            get {
+                object obj = ResourceManager.GetObject("CNum32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CNum80 {
+            get {
+                object obj = ResourceManager.GetObject("CNum80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap CopyCmd32 {
             get {
                 object obj = ResourceManager.GetObject("CopyCmd32", resourceCulture);
@@ -2813,6 +2843,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Rod32 {
+            get {
+                object obj = ResourceManager.GetObject("Rod32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Save16 {
             get {
                 object obj = ResourceManager.GetObject("Save16", resourceCulture);
@@ -2946,6 +2986,26 @@ namespace AVC {
         public static System.Drawing.Bitmap Shop32 {
             get {
                 object obj = ResourceManager.GetObject("Shop32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SimpInFiles16 {
+            get {
+                object obj = ResourceManager.GetObject("SimpInFiles16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SimpInFiles32 {
+            get {
+                object obj = ResourceManager.GetObject("SimpInFiles32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

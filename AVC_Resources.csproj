@@ -52,6 +52,7 @@
     <Compile Include="Commands\ChopL.cs" />
     <Compile Include="Commands\CncL.cs" />
     <Compile Include="Commands\CrossPieceL.cs" />
+    <Compile Include="Commands\CurveSubL.cs" />
     <Compile Include="Commands\DadoJointL.cs" />
     <Compile Include="Commands\DataTableL.cs" />
     <Compile Include="Commands\DetailDrawingsL.cs" />
@@ -126,6 +127,7 @@
     <EmbeddedResource Include="Common.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Common.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -577,12 +579,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Miter32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MNum16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MNum32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mSSO16.png" />
@@ -1205,6 +1201,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TableUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rod32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MNum16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MNum32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CNum16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CNum32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CNum80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SimpInFiles16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SimpInFiles32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

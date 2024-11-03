@@ -474,11 +474,13 @@ namespace AVC
       "Netz in Volumen umwandeln",
       "将网格转换为实体" };
     public static readonly string[] MeshToSolidTip = {
-      "Call the MeshToSolid command to try to convert all SubDMesh and PolyfaceMesh into solids.",
-      "Вызвать команду MeshToSolid, чтоб попытаться конвертировать все полигональные сети SubDMesh и PolyfaceMesh в солиды.",
-      "Chiama il comando MeshToSolid per provare a convertire tutte le mesh SubDMesh e PolyfaceMesh in solidi.",
-      "Rufen Sie den Befehl MeshToSolid auf, um zu versuchen, alle SubDMesh- und PolyfaceMesh-Netze in Volumenkörper umzuwandeln.",
-      "调用 MeshToSolid 命令尝试将所有 SubDMesh 和 PolyfaceMesh 网格转换为实体。" };
+      "Call the MeshToSolid command to attempt to convert any meshes, 3D-faces, and pseudo-3D curves into 3D solids.",
+      "Вызвать команду MeshToSolid, чтоб попытаться конвертировать любые сети, \r\n" +
+        "3D-грани и псевдотрехмерные кривые в 3D-солиды.",
+      "Chiamare il comando MeshToSolid per tentare di convertire qualsiasi mesh, faccia 3D e curve pseudo-3D in solidi 3D.",
+      "Rufen Sie den Befehl „MeshToSolid“ auf, um zu versuchen, alle Netze, \r\n" +
+        "3D-Flächen und Pseudo-3D-Kurven in 3D-Volumenkörper umzuwandeln.",
+      "调用 MeshToSolid 命令尝试将任何网格、3D 面和伪 3D 曲线转换为 3D 实体。" };
     public static readonly string[] Layer0Text = {
       "Assign '0' layer",
       "Назначить слой '0'",

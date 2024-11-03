@@ -255,6 +255,13 @@ namespace AVC
       "  Verarbeitete {0} Teile in {1} Sekunden",
       "  在 {1} 秒内处理了 {0} 个对象" };
     public static readonly string[]
+    ProcessedObjects = {
+      "  Processed {0} objects in {1}s",
+      "  Обработано {0} объектов за {1}с",
+      "  {0} oggetti elaborati in {1} s",
+      "  Verarbeitete {0} Objekte in {1}s",
+      "  在 {1} 秒内处理了 {0} 个对象" };
+    public static readonly string[]
     CreatedObjects = {
       "  {0} objects created in {1}s",
       "  Создано {0} объектов(а) за {1}с",

@@ -24,6 +24,12 @@ namespace AVC
       "Creazione di una directory '{0}'",
       "Verzeichnis wird erstellt '{0}'",
       "创建目录“{0}”"};
+    public static string[] FileDialogTitle = {
+      "Open file",
+      "Открыть файла",
+      "Apri il file",
+      "Datei öffnen",
+      "打开文件" };
     public static readonly string[] PathNotExists = {
       "The path does not exist or is not available '{0}'",
       "Не существует или недоступен путь '{0}'",
@@ -42,6 +48,12 @@ namespace AVC
       "Tipo di file '{0}' non valido",
       "Ungültiger Dateityp „{0}“",
       "檔案類型「{0}」無效" };
+    public static readonly string[] FileAccessErr = {
+      "Someone has already opened the file and now it's impossible to read it: {0}",
+      "Кто-то уже открыл файл и теперь его невозможно прочитать: {0}",
+      "Qualcuno ha già aperto il file e ora è impossibile leggerlo: {0}",
+      "Jemand hat die Datei bereits geöffnet und jetzt ist es unmöglich, sie zu lesen: {0}",
+      "有人已经打开了文件，现在无法阅读：{0}"};
     public static readonly string[] FileNotExist = {
       "File '{0}' does not exist",
       "Не существует файл '{0}'",
@@ -180,5 +192,17 @@ namespace AVC
       "Impossibile creare il collegamento",
       "Verknüpfung konnte nicht erstellt werden",
       "创建快捷方式失败" };
+    public static readonly string[] FilesProcessed = {
+      "Files are being processed",
+      "Обрабатываются файлы",
+      "File in fase di elaborazione",
+      "Dateien werden verarbeitet",
+      "正在处理的文件" };
+    public static readonly string[] ProcessedFiles = {
+      "  Processed {0} files in {1}s",
+      "  Обработано {0} файлов за {1}с",
+      "  Elaborati {0} file in {1}s",
+      "  {0} Dateien in {1}s verarbeitet",
+      "  已处理 {0} 个文件（耗时 {1} 秒）" };
   }
 }

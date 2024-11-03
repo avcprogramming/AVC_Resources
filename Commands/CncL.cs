@@ -682,6 +682,12 @@ namespace AVC
       "Temporaneamente attivato l'elaborazione degli angoli su tutti i contorni",
       "Eckenbearbeitung für alle Konturen vorübergehend aktiviert",
       "暂时打开所有轮廓的拐角处理" };
+    public static readonly string[] SelectFile = {
+      "Select drawing files with 2D outlines",
+      "Выберите файлы чертежей с 2D-контурами",
+      "Selezionare quadri con contorni 2D",
+      "Wählen Sie Zeichnungsdateien mit 2D-Konturen aus",
+      "选择具有 2D 轮廓的工程图文件"};
 
     //========================================== Dialogs ==========================================================
     //public static readonly string[] LayerTemplates = {

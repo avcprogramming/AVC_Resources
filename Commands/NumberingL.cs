@@ -5,12 +5,51 @@ namespace AVC
   public static class
   NumberingL
   {
-    // ============================ Numberig Style ================================================================
+    // ============================ Numbering Style ================================================================
     public static readonly string[,] NumCmdStyleNames = {
-      { "Numbering", "Нумерация", "Numerazione", "Nummerierung", "编号" },
-      { "Continuous numbering", "Сквозная нумерация", "Numerazione continua", "Fortlaufende Nummerierung", "连续编号" },
-      { "Block numbering", "Нумерация по блокам", "Numerazione dei blocchi", "Blocknummerierung", "块编号" },
-      { "From left to right", "С лева на право", "Da sinistra a destra", "Von links nach rechts", "从左到右" },
+      { CommandL.Numbering[0], CommandL.Numbering[1], CommandL.Numbering[2], CommandL.Numbering[3], CommandL.Numbering[4] },
+      { "Continuous numbering", 
+        "Сквозная нумерация", 
+        "Numerazione continua", 
+        "Fortlaufende Nummerierung", 
+        "连续编号" },
+      { "Block numbering", 
+        "Нумерация по блокам", 
+        "Numerazione dei blocchi", 
+        "Blocknummerierung", 
+        "块编号" },
+      { "Texts from left to right", 
+        "Тексты с лева на право", 
+        "Texts. Da sinistra a destra", 
+        "Texte. Von links nach rechts", 
+        "文本.从左到右" },
+      };
+    public static readonly string[,] MNumStyleNames = {
+      { CommandL.MNum[0], CommandL.MNum[1], CommandL.MNum[2], CommandL.MNum[3], CommandL.MNum[4] },
+      { "Number name or content",
+        "Нумеровать имя или контент",
+        "Nome del numero o contenuto",
+        "Nummernname oder Inhalt",
+        "号码名称或内容" },
+      { "Number block attribute",
+        "Нумеровать атрибут блока",
+        "Attributo del blocco numerico",
+        "Nummernblockattribut",
+        "编号块属性" },
+      };
+    public static readonly string[,] CNumStyleNames = {
+      { CommandL.CNum[0], CommandL.CNum[1], CommandL.CNum[2], CommandL.CNum[3], CommandL.CNum[4] },
+      { "Number name or content",
+        "Нумеровать имя или контент",
+        "Nome del numero o contenuto",
+        "Nummernname oder Inhalt",
+        "号码名称或内容" },
+      { "Number block attribute",
+        "Нумеровать атрибут блока",
+        "Attributo del blocco numerico",
+        "Nummernblockattribut",
+        "编号块属性" },
+      { PropL.Texts[0], PropL.Texts[1], PropL.Texts[2], PropL.Texts[3], PropL.Texts[4] },
       };
     public static readonly string[] PrefixPrompt =    {
       "\n  Enter Prefix for numbering: ",
@@ -30,12 +69,12 @@ namespace AVC
       "Detail number",
       "Detailnummer",
       "零件号"};
-
-    public static readonly string[,] MNStyleNames = {
-      { CommandL.MNum[0], CommandL.MNum[1], CommandL.MNum[2], CommandL.MNum[3], CommandL.MNum[4] },
-      { "Number name or content", "Нумеровать имя или контент", "Nome del numero o contenuto", "Nummernname oder Inhalt", "号码名称或内容" },
-      { "Number block attribute", "Нумеровать атрибут блока", "Attributo del blocco numerico", "Nummernblockattribut", "编号块属性" },
-      };
+    public static readonly string[] SelectObjects = {
+      "Select objects to number",
+      "Выберите объекты для нумерации",
+      "Seleziona gli oggetti da numerare",
+      "Wählen Sie die zu nummerierenden Objekte aus",
+      "选择要编号的对象"};
 
     //============================== Numbering Command Line & Warnings ========================================
 
@@ -87,6 +126,24 @@ namespace AVC
       "Oggetti trovati: {0}",
       "Gefundene Objekte: {0}",
       "找到的对象：{0}" };
+    public static readonly string[] BlockNotForTextNumbering = {
+      "Block '{0}' does not contain a single visible non-constant attribute and will therefore not be numbered.",
+      "Блок '{0}' не содержит единственного видимого не-константного атрибута и поэтому не будет пронумерован",
+      "Il blocco '{0}' non contiene un singolo attributo visibile non const e pertanto non verrà numerato",
+      "Der Block „{0}“ enthält kein einziges sichtbares nicht-konstantes Attribut und wird daher nicht nummeriert",
+      "块“{0}”不包含单个可见的非常量属性，因此不会被编号" };
+    public static readonly string[] BlockHasNoAttribute = {
+      "Block '{0}' does not contain the non-constant attribute {1} and therefore will not be numbered",
+      "Блок '{0}' не содержит не-константного атрибута {1} и поэтому не будет пронумерован",
+      "Il blocco '{0}' non contiene l'attributo non const {1} e pertanto non verrà numerato",
+      "Der Block „{0}“ enthält nicht das nicht konstante Attribut {1} und wird daher nicht nummeriert",
+      "块“{0}”不包含非常量属性 {1}，因此不会编号" };
+    public static readonly string[] NotNumber = {
+      "The old object name '{0}' does not look like a number and therefore object '{1}' will not be renumbered.",
+      "Старое имя объекта '{0}' не похоже на цифру и поэтому объект '{1}' не будет перенумерован.",
+      "Il vecchio nome dell'oggetto '{0}' non sembra un numero e pertanto l'oggetto '{1}' non verrà rinumerato.",
+      "Der alte Objektname „{0}“ sieht nicht wie eine Zahl aus und daher wird das Objekt „{1}“ nicht neu nummeriert.",
+      "旧对象名称“{0}”与数字不同，因此对象“{1}”不会被重新编号。" };
 
     //=============================== Manual Numbering =========================================================
     //=============================== Command Line & Warnings ==================================================
@@ -122,10 +179,10 @@ namespace AVC
       "Fehler beim Lesen der Daten zu Objekt {0}",
       "无法读取有关对象 {0} 的数据"};
     public static readonly string[] PropErr = {
-      "Object {0} cannot be substituted with a number in property {1}",
-      "Объекту {0} невозможно подставить номер в свойство {1}",
-      "L'oggetto {0} non può essere sostituito con un numero nella proprietà {1}",
-      "Objekt {0} kann in Eigenschaft {1} nicht durch eine Zahl ersetzt werden",
+      "Object '{0}' cannot be substituted with a number in property {1}",
+      "Объекту '{0}' невозможно подставить номер в свойство {1}",
+      "L'oggetto '{0}' non può essere sostituito con un numero nella proprietà {1}",
+      "Objekt '{0}' kann in Eigenschaft {1} nicht durch eine Zahl ersetzt werden",
       "对象 {0} 不能用属性 {1} 中的数字代替"};
     public static readonly string[] SameName = {
       "Block {0} will retain its old name",
@@ -139,6 +196,22 @@ namespace AVC
       "RIPETERE",
       "Wiederholen",
       "重复(R)"};
+
+    //=============================== Curve Numbering =========================================================
+    //=============================== Command Line & Warnings ==================================================
+
+    public static readonly string[] FindInterceptions = {
+      "Finding intersections of all drawing objects with a given curve",
+      "Поиск пересечений всех объектов чертежа с заданной кривой",
+      "Trovare le intersezioni di tutti gli oggetti del disegno con una determinata curva",
+      "Schnittpunkte aller Zeichnungsobjekte mit einer bestimmten Kurve finden",
+      "查找所有绘图对象与给定曲线的交点" };
+    public static readonly string[] NotOnCurve = {
+      "Unable to get position of object '{0}' on curve. Object is not numbered.",
+      "Не удалось получить положение объекта '{0}' на кривой. Объект не пронумерован.",
+      "Impossibile ottenere la posizione dell'oggetto '{0}' sulla curva. L'oggetto non è numerato.",
+      "Die Position des Objekts „{0}“ auf der Kurve konnte nicht ermittelt werden. Das Objekt ist nicht nummeriert.",
+      "无法获取曲线上对象“{0}”的位置。该对象没有编号。" };
 
     //=============================== Numbering options ========================================================
 
@@ -348,6 +421,12 @@ namespace AVC
         "Dies verlangsamt die Arbeit erheblich, garantiert jedoch die korrekten Abmessungen der Teile.",
       "强制测量那些已经有度量标准的部分。 \r\n" +
         "这将大大减慢工作速度，但可以保证零件的正确尺寸。" };
+    public static readonly string[] SelectCurve =    {
+      "Select the curve along which the numbering will be performed",
+      "Выберите кривую вдоль которой будет производится нумерация",
+      "Selezionare la curva lungo la quale verrà effettuata la numerazione",
+      "Wählen Sie die Kurve aus, entlang derer die Nummerierung erfolgen soll",
+      "选择将沿其进行编号的曲线"};
 
 
     //================================ Manual Numbering Options Box ============================================
@@ -361,6 +440,17 @@ namespace AVC
       "Der Name für diesen manuellen Nummerierungsstil.\r\n" +
         "Wird im Programm nicht verwendet. Nur für die Bequemlichkeit der Wahl.",
       "此手动编号样式的名称。 " +
+        "程序中未使用。 只为方便选择。"};
+    public static readonly string[] CNumStyleNameTip = {
+      "The name for this numbering style.\r\n" +
+        "Not used in the program. Only for convenience of choice.",
+      "Имя стиля нумерации.\r\n" +
+        "Не используется в программе, только для удобства выбора.",
+      "Il nome per questo stile di numerazione.\r\n" +
+        "Non utilizzato nel programma. Solo per comodità di scelta.",
+      "Der Name für diesen Nummerierungsstil.\r\n" +
+        "Wird im Programm nicht verwendet. Nur für die Bequemlichkeit der Wahl.",
+      "此编号样式的名称。" +
         "程序中未使用。 只为方便选择。"};
     public static readonly string[] Hide = {
       "Hide numbered object",
@@ -384,5 +474,23 @@ namespace AVC
       "编号后，已编号的对象将暂时从图形中消失，以避免重新编号。 \r\n" +
         "该对象没有被破坏，它只是变得不可见。 \r\n" +
         "命令结束后，所有隐藏的对象将再次出现在图形中。" };
+    public static readonly string[] ObjectsQuery = {
+      "Select Objects",
+      "Выбирать объекты",
+      "Seleziona oggetti",
+      "Wählen Sie Objekte aus",
+      "选择对象" };
+    public static readonly string[] ObjectsQueryTip = {
+      "Prompt to select objects for numbering. \r\n" +
+        "If you disable this option, all objects intersecting with the curve will be numbered.",
+      "Запрашивать выбор объектов для нумерации. \r\n" +
+        "Если отключить опцию, то будут пронумерованы все объекты, пересекающиеся с кривой",
+      "Richiedere la selezione degli oggetti per la numerazione. \r\n" +
+        "Se disabiliti l'opzione, tutti gli oggetti che si intersecano con la curva verranno numerati.",
+      "Fordern Sie die Auswahl von Objekten zur Nummerierung an. \r\n" +
+        "Wenn Sie die Option deaktivieren, werden alle Objekte, die die Kurve schneiden, nummeriert.",
+      "请求选择要编号的对象。 \r\n" +
+        "如果禁用该选项，所有与曲线相交的对象都将被编号。" };
+
   }
 }

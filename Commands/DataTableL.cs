@@ -358,6 +358,18 @@ namespace AVC
       "Non sono presenti finestre nel layout {0}.",
       "Es gibt keine Ansichtsfenster im Layout {0}.",
       "布局 {0} 上没有视口。"    };
+    public static readonly string[] NoViewportAtPoint =    {
+      "No visible view or viewport found below the given point.",
+      "Не найден видимый вид или вьюпорт под заданной точкой.",
+      "Non è stata trovata alcuna vista o finestra visibile nel punto specificato.",
+      "Unter dem angegebenen Punkt wurde keine sichtbare Ansicht oder kein sichtbares Ansichtsfenster gefunden.",
+      "在指定点下未找到可见视图或视口。"    };
+    public static readonly string[] ViewBorderPointQuery = {
+      "Click anywhere above the ModelDoc view or viewport",
+      "Кликните по любой точке над видом ModelDoc или вьюпортом",
+      "Fare clic in un punto qualsiasi sopra la vista o il viewport ModelDoc",
+      "Klicken Sie auf eine beliebige Stelle oberhalb der ModelDoc-Ansicht oder des Ansichtsfensters",
+      "单击 ModelDoc 视图或视口上方的任意位置"  };
     public static readonly string[] TableUpdatedCount = {
       "Updated tables: {0}",
       "Обновлено таблиц: {0}",
@@ -376,6 +388,27 @@ namespace AVC
       "Tavolo di rifornimento {0}. Stile: '{1}'",
       "Tabelle {0} wird aufgefüllt. Stil: „{1}“",
       "重新填充表{0}。样式“{1}”" };
+    public static readonly string[] ModelObjectsInfo = {
+      "  The command is set to process all objects in the model. Pre-selected objects will be ignored!",
+      "  Команда настроена на обработку всех объектов модели. Предварительно выбранные объекты будут проигнорированы!",
+      "  Il comando è configurato per elaborare tutti gli oggetti del modello. Gli oggetti preselezionati verranno ignorati!",
+      "  Der Befehl ist so konfiguriert, dass er alle Modellobjekte verarbeitet. Vorab ausgewählte Objekte werden ignoriert!",
+      "  该命令配置为处理所有模型对象。预先选择的对象将被忽略！" };
+    public static readonly string[] ViewportObjectsInfo = {
+      "  The command is set to process all visible objects from all viewports. Pre-selected objects will be ignored!",
+      "  Команда настроена на обработку всех видимых объектов из всех вьюпортов. \r\n" +
+        "  Предварительно выбранные объекты будут проигнорированы!",
+      "  Il comando è configurato per elaborare tutti gli oggetti visibili da tutte le finestre. \r\n" +
+        "  Gli oggetti preselezionati verranno ignorati!",
+      "  Der Befehl ist so konfiguriert, dass er alle sichtbaren Objekte aus allen Ansichtsfenstern verarbeitet. \r\n" +
+        "  Vorab ausgewählte Objekte werden ignoriert!",
+      "  该命令配置为处理所有视口中的所有可见对象。预先选择的对象将被忽略！" };
+    public static readonly string[] SelectFile = {
+      "Select drawings to extract data from model objects",
+      "Выберите чертежи для извлечения данных из объектов модели",
+      "Seleziona i disegni per estrarre i dati dagli oggetti del modello",
+      "Wählen Sie Zeichnungen aus, um Daten aus Modellobjekten zu extrahieren",
+      "选择图形以从模型对象中提取数据"};
 
     //============================= Dialog Box ===============================================
 
@@ -556,6 +589,23 @@ namespace AVC
       "Specificare gli oggetti della Carta da cui verranno recuperate le informazioni per la tabella.",
       "Geben Sie Zeichnungsobjekte an, aus denen Informationen für die Tabelle abgerufen werden.",
       "指定將從中檢索表格資訊的圖形物件。"};
+    public static readonly string[] SelectView = {
+      "Select view or viewport",
+      "Выбрать вид или вьюпорт",
+      "Seleziona vista o viewport",
+      "Ansicht oder Ansichtsfenster auswählen",
+      "选择视图或视口"};
+    public static readonly string[] SelectViewTip = {
+      "Process all objects that are visible in one view ModelDoc=ViewBase or in one viewport. \r\n" +
+        "When called from the model - request a selection of objects.",
+      "Обрабатывать все объекты, которые видны на одном виде ModelDoc=ВидБаз или в одном вьюпорте. \r\n" +
+        "При вызове из модели - запросить выбор объектов.",
+      "Elabora tutti gli oggetti visibili in una vista ModelDoc=ViewBase o in una finestra. \r\n" +
+        "Quando viene chiamato da un modello, richiede una selezione di oggetti.",
+      "Verarbeiten Sie alle Objekte, die in einer ModelDoc=ViewBase-Ansicht oder in einem Ansichtsfenster sichtbar sind. \r\n" +
+        "Fordern Sie beim Aufruf von einem Modell eine Auswahl von Objekten an.",
+      "处理在一个 ModelDoc=ViewBase 视图或一个视口中可见的所有对象。\r\n" +
+        "当从模型调用时，请求选择对象。"};
     public static readonly string[] Model = {
       "All model objects",
       "Все объекты модели",

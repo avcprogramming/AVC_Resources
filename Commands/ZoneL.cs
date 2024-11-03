@@ -45,27 +45,6 @@ namespace AVC
       "Creazione di zone",
       "Zonen erstellen",
       "创建区域"};
-    public static readonly string[]
-    UnionProcess = {
-      "Consolidation of zones",
-      "Объединение зон",
-      "Consolidamento delle zone",
-      "Konsolidierung von Zonen",
-      "区域整合"};
-    public static readonly string[]
-    ConnectProcess = {
-      "Building closed polylines",
-      "Построение замкнутых полилиний",
-      "Costruire polilinee chiuse",
-      "Erstellen geschlossener Polylinien",
-      "构建闭合折线"};
-    public static readonly string[]
-    OffsetErr = {
-      "Failed to offset",
-      "Не удалось сделать офсет",
-      "Impossibile compensare",
-      "Der Ausgleich ist fehlgeschlagen",
-      "抵消失败" };
     //public static readonly string[]
     //ArcErr = {
     //  "Failed to construct arc of radius {0}",
@@ -94,13 +73,6 @@ namespace AVC
       "Strano risultato di offset",
       "Seltsames Offset-Ergebnis",
       "奇怪的偏移结果" };
-    public static readonly string[]
-    ExplodeErr = {
-      "Failed to explode the region on the lines. Error {0}",
-      "Не удалось взорвать регион на линии. Ошибка {0}",
-      "Impossibile far saltare in aria la regione sulla linea. Errore {0}",
-      "Der Bereich auf der Leitung konnte nicht gesprengt werden. Fehler {0}",
-      "未能炸毁线上区域。 错误{0}" };
     public static readonly string[]
     ReverseOffset = {
       "Reverse offset",
@@ -250,24 +222,12 @@ namespace AVC
       "将图层分配给新曲线。 \r\n" +
         "如果该图层不在绘图中，则会创建该图层。 \r\n" +
         "将该字段留空以使用默认图层。" };
-    public static readonly string[] CreateRegion = {
-      "Create a Region",
-      "Создать регион",
-      "Crea una regione",
-      "Erstellen Sie eine Region",
-      "创建区域 (Region)" };
     public static readonly string[] CreateRegionTip = {
       "Create a zone as a Region object rather than a polyline or spline",
       "Создать зону в виде объекта типа Region, а не полилинию или сплайн",
       "Crea una zona come oggetto Regione anziché come polilinea o spline",
       "Erstellen Sie eine Zone als Regionsobjekt und nicht als Polylinie oder Spline ",
       "创建区域作为区域对象而不是折线或样条线" };
-    public static readonly string[] DeleteSources = {
-      "Delete Sources",
-      "Удалить исходные",
-      "Elimina fonti",
-      "Quellen löschen",
-      "删除来源" };
     public static readonly string[] DeleteSourcesTip = {
       "Delete all original lines and curves around which it was possible to construct a zone",
       "Удалить все исходные линии и кривые, вокруг которых удалось построить зону",

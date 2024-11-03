@@ -431,18 +431,6 @@ namespace AVC
       "Quando si espande un ramo di un albero con il pulsante '+', tutti gli altri rami espansi verranno automaticamente compressi.",
       "Wenn Sie einen Baumzweig mit der Schaltfläche „+“ erweitern, werden alle anderen erweiterten Zweige automatisch ausgeblendet.",
       "当使用“+”按钮展开树枝时，所有其他展开的分支将自动折叠。" };
-    public static string[] SelectFile = {
-      "Select drawing",
-      "Выберите чертеж",
-      "Seleziona il disegno",
-      "Zeichnung auswählen",
-      "选择图纸" };
-    public static string[] FileDialogTitle = {
-      "Open file",
-      "Открыть файла",
-      "Apri il file",
-      "Datei öffnen",
-      "打开文件" };
     public static string[] LayerFiltersTip = {
       "You can enable this option so that the list of drawing layers is divided into filters and groups, \r\n" +
         "as configured in the layer manager window. \r\n" +
