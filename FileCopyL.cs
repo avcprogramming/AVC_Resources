@@ -4,6 +4,7 @@ namespace AVC
   public static class
   FileCopyL
   {
+
     public static readonly string[] Count = {
       "Failed to copy {0} files. Next try in {1} minutes.",
       "Не удалось скопировать {0} файлов. Следующая попытка через {1} минут.",
