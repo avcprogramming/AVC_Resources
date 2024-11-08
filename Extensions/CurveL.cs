@@ -32,6 +32,12 @@ namespace AVC
       "Impossibile compensare",
       "Der Ausgleich ist fehlgeschlagen",
       "抵消失败" };
+    public static readonly string[] CutCurveErr = {
+      "Could not cut curve.",
+      "Невозможно разрезать кривую.",
+      "Impossibile tagliare la curva.",
+      "Kurve kann nicht geschnitten werden.",
+      "无法切割曲线。" };
     public static readonly string[] ConvertErr = {
       "Impossible convert to curve",
       "Недопустимо преобразование к кривой",

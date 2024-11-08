@@ -42,16 +42,20 @@ namespace AVC
     //============================ CurveSubOptionsBox ==============================================
 
     public static readonly string[] StyleNameTip = {
-      "The name for this curve subtraction style (set of settings). Not used in the program. Only for convenience of choice.",
-      "Название для этого стиля вычитания кривых. Не используется в работе программы. Только для удобства выбора.",
-      "Nome per questo stile di sottrazione delle curve (set di impostazioni). Non utilizzato nel programma. Solo per comodità di scelta.",
-      "Bezeichnung für diese Art der Subtraktion von Kurven (Satz von Einstellungen). Wird im Programm nicht verwendet.\r\n" +
+      "The name for this curve subtraction style (set of settings). \r\n" +
+        "Not used in the program. Only for convenience of choice.",
+      "Название для этого стиля вычитания кривых. Не используется в работе программы. \r\n" +
+        "Только для удобства выбора.",
+      "Nome per questo stile di sottrazione delle curve (set di impostazioni). \r\n" +
+        "Non utilizzato nel programma. Solo per comodità di scelta.",
+      "Bezeichnung für diese Art der Subtraktion von Kurven (Satz von Einstellungen). \r\n" +
+        "Wird im Programm nicht verwendet.\r\n" +
         "Nur zur Bequemlichkeit der Wahl.",
       "这种减法曲线风格的名称。 程序中没有使用。 只为方便选择。"};
     public static readonly string[] GapTip = {
       "The program may create a gap between the contours.\r\n" +
         "If you assign a gap greater than 0, \r\n" +
-        "the subtracted contour will be shifted outward by this amount.\r\n" +
+        "the subtracted contour will be offseted outward by this amount.\r\n" +
         "Default 0.",
       "Можно создать зазор между контурами.\r\n" +
         "Если назначить зазор больше 0, \r\n" +
@@ -76,35 +80,48 @@ namespace AVC
       "Ergebnisebene",
       "结果层"    };
     public static readonly string[] ResultLayerTip = {
-      "",
-      "Заменять слой у удачно обработанных объектов. При необходимости программа создаст новый слой.",
-      "",
-      "",
-      ""    };
+      "Replace the layer of successfully processed objects. \r\n" +
+        "If necessary, the program will create a new layer.",
+      "Заменять слой у удачно обработанных объектов. \r\n" +
+        "При необходимости программа создаст новый слой.",
+      "Sostituisci il layer degli oggetti elaborati correttamente. \r\n" +
+        "Se necessario, il programma creerà un nuovo livello.",
+      "Ersetzen Sie die Ebene erfolgreich verarbeiteter Objekte. \r\n" +
+        "Bei Bedarf erstellt das Programm eine neue Ebene.",
+      "替换成功处理对象的图层。如有必要，程序将创建一个新层。"    };
     public static readonly string[] SubtrahendLayerTip = {
-      "",
+      "Layer for automatic assignment of subtracted objects among all selected ones.",
       "Слой для автоматического назначения вычитаемых объектов среди всех выбранных.",
-      "",
-      "",
-      ""    };
+      "Layer per l'assegnazione automatica degli oggetti sottratti \r\n" +
+        "tra tutti quelli selezionati.",
+      "Ebene zur automatischen Zuordnung subtrahierter Objekte zu allen ausgewählten Objekten.",
+      "用于在所有选定对象之间自动分配减去的对象的图层。"    };
     public static readonly string[] SelectByLayer = {
       "Select subtractables by layer",
       "Выбирать вычитаемые по слою",
       "Seleziona sottratto dal layer",
       "Wählen Sie ihre Ebene subtrahiert aus",
-      "选择减去其图层"    };
+      "选择减去其图层" };
     public static readonly string[] SelectByLayerTip = {
-      "",
-      "Выбирать исходные и вычитаемые объекты одним запросов. Вычитаемые объекты будут назначены по их слою.",
-      "",
-      "",
-      ""    };
+      "Select source and subtracted objects with one query. \r\n" +
+        "Subtracted objects will be assigned by their layer.",
+      "Выбирать исходные и вычитаемые объекты одним запросов. \r\n" +
+        "Вычитаемые объекты будут назначены по их слою.",
+      "Seleziona gli oggetti sorgente e sottratti in una query. \r\n" +
+        "Gli oggetti sottratti verranno assegnati in base al loro layer.",
+      "Wählen Sie Quell- und subtrahierte Objekte in einer Abfrage aus. \r\n" +
+        "Subtrahierte Objekte werden anhand ihrer Ebene zugeordnet.",
+      "在一个查询中选择源对象和减去的对象。减去的对象将按其图层进行分配。" };
     public static readonly string[] SaveStubTip = {
-      "",
-      "Сохранять отрезанную часть исходного контура, то есть область пересечения контуров.",
-      "",
-      "",
-      ""    };
+      "Keep the cut off part of the original contour, \r\n" +
+        "that is, the area of ​​intersection of the contours.",
+      "Сохранять отрезанную часть исходного контура, \r\n" +
+        "то есть область пересечения контуров.",
+      "Conserva la parte tagliata del contorno originale, \r\n" +
+        "ovvero l'area in cui i contorni si intersecano.",
+      "Behalten Sie den abgeschnittenen Teil der ursprünglichen Kontur bei, \r\n" +
+        "also den Bereich, in dem sich die Konturen schneiden.",
+      "保留原来轮廓被剪掉的部分，即轮廓相交的区域。"    };
     public static readonly string[] WorkWithOpen = {
       "Work with open",
       "Работать с разомкнутыми",
@@ -112,11 +129,15 @@ namespace AVC
       "Arbeiten Sie mit offen",
       "使用开放曲线"    };
     public static readonly string[] WorkWithOpenTip = {
-      "",
-      "Использовать разомкнутые кривые для разрезания контуров. Если не включить эту опцию , то разомкнутые кривые будут проигнорированы.",
-      "",
-      "",
-      ""    };
+      "Use open curves to cut contours. \r\n" +
+        "If you do not enable this option, open curves will be ignored.",
+      "Использовать разомкнутые кривые для разрезания контуров. \r\n" +
+        "Если не включить эту опцию , то разомкнутые кривые будут проигнорированы.",
+      "Utilizzare curve aperte per tagliare i contorni. \r\n" +
+        "Se non si abilita questa opzione, le curve aperte verranno ignorate.",
+      "Verwenden Sie offene Kurven, um Konturen zu schneiden. \r\n" +
+        "Wenn Sie diese Option nicht aktivieren, werden offene Kurven ignoriert.",
+      "使用开放曲线来切割轮廓。如果不启用此选项，则开放曲线将被忽略。" };
     public static readonly string[] DeleteSubtrahend = {
       "Delete subtrahend",
       "Удалить вычитаемое",

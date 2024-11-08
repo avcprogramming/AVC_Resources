@@ -214,12 +214,6 @@ namespace AVC
       "  Non c'è niente da tagliare in questo posto.",
       "  An dieser Stelle gibt es nichts zu schneiden.",
       "  这里没有东西可以切割。" };
-    public static readonly string[] CutCurveErr = {
-      "Could not cut curve.",
-      "Невозможно разрезать кривую.",
-      "Impossibile tagliare la curva.",
-      "Kurve kann nicht geschnitten werden.",
-      "无法切割曲线。" };
     public static readonly string[] StubErr = {
       "Could not calculate stub. {0}",
       "Невозможно вычислить обрезки. {0}",

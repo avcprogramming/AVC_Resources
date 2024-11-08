@@ -1226,5 +1226,26 @@
   <ItemGroup>
     <None Include="Resources\SimpInFiles32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveInt16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveInt32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveSub16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveSub32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveSub80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveUnion16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveUnion32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

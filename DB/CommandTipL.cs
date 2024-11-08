@@ -165,6 +165,12 @@ namespace AVC
       "Sostituisci i blocchi selezionati con blocchi con lo stesso nome di un altro disegno.",
       "Ersetzen Sie ausgewählte Blöcke durch gleichnamige Blöcke aus einer anderen Zeichnung.",
       "用另一个图形中的同名块替换选定的块。"};
+    public static readonly string[] CurveIntTip = {
+      "Intersection of closed polylines and curves as regions.",
+      "Пересечение замкнутых полилиний и кривых как регионов.",
+      "Intersezione di polilinee chiuse e curve come regioni.",
+      "Schnittpunkt geschlossener Polylinien und Kurven als Regionen.",
+      "作为区域的闭合折线和曲线的交点。" };
     public static readonly string[] ChopTip = {
       "Chop a 3d-solid into many pieces. Make ribs and stair-step.",
       "Нарезка твердых тел на равные дольки. " +
@@ -214,6 +220,12 @@ namespace AVC
       "Sottrazione di polilinee e curve chiuse come regioni. Taglio con curve aperte.",
       "Geschlossene Polylinien und Kurven als Regionen subtrahieren. Schneiden mit offenen Kurven.",
       "减去闭合多段线和曲线作为区域。使用开放曲线进行切割。" };
+    public static readonly string[] CurveUnionTip = {
+      "Union closed polylines and curves as regions. Join open curves.",
+      "Объединение замкнутых полилиний и кривых как регионов. Стыковка разомкнутых кривых.",
+      "Combinazione di polilinee e curve chiuse come regioni. Unione di curve aperte.",
+      "Geschlossene Polylinien und Kurven als Regionen kombinieren. Offene Kurven verbinden.",
+      "将闭合多段线和曲线组合为区域。连接开放曲线。" };
     public static readonly string[] DadoJointTip = {
       "Formation of dado joinery between 2 contacting solids. Automatic creation dadoes, grooves, pockets, cutouts.",
       "Формирование соединения типа 'паз-шип' на двух соприкасающихся деталях. " +

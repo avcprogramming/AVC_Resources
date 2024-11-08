@@ -111,6 +111,12 @@ namespace AVC
       "Aggiorna blocco",
       "Block aktualisieren",
       "更新块" };
+    public static readonly string[] CurveInt = {
+      "Curve Intersect",
+      "Пересечение кривых",
+      "Intersezione di curve",
+      "Schnittpunkt von Kurven",
+      "曲线相交" };
     public static readonly string[] CH = {
       "Chop",
       "Нарезка",
@@ -147,6 +153,12 @@ namespace AVC
       "Sottrarre le curve",
       "Kurven subtrahieren",
       "减去曲线" };
+    public static readonly string[] CurveUnion = {
+      "Curve Union",
+      "Объединение кривых",
+      "Combinazione di curve",
+      "Kurven kombinieren",
+      "组合曲线" };
     public static readonly string[] DataTable = {
       "Data Table",
       "Таблица Данных",
