@@ -19,15 +19,15 @@ namespace AVC
     /// <summary>
     /// Код языка Windows
     /// </summary>
-    public static int
-    WinLCID => CultureInfo.InstalledUICulture.LCID;
+    public static string
+    WindowsLanguage => CultureInfo.InstalledUICulture.TwoLetterISOLanguageName; // LCID использовать нельзя потому что он может быть неизвестен для некоторых комбинаций язык-регион
 
     /// <summary>
     /// Номер языка Windows: 
     /// 0 - английский, 1 - русский, 2 - итальянский, 3 - немецкий, 4 - китайский
     /// </summary>
     public static readonly int
-    WinNum = Number(WinLCID);
+    WinNum = Number(WindowsLanguage);
 
     /// <summary>
     /// Названия языков написанное на этих языках (для переключения языков)
@@ -93,18 +93,33 @@ namespace AVC
     };
 
     /// <summary>
-    /// Номер языка по его LCID.
-    /// Номера (от 0) задают порядок языков во всех массивах строк
+    /// Номер языка по его LCID независимо от региона.
     /// </summary>
     /// <param name="lcid"></param>
-    /// <returns>LCID</returns>
+    /// <returns>Номера (от 0) задают порядок языков во всех массивах строк</returns>
     public static int
     Number(int lcid) => lcid switch
     {
-      1049 => 1,
-      1040 => 2,
-      1031 => 3,
-      2052 => 4,
+      25 or 1049 or 2073 => 1,
+      16 or 1040 or 2064 => 2,
+      7 or 1031 or 2055 or 3079 or 4103 or 5127 => 3, 
+      4 or 2052 or 30724 or 31748 => 4, // упрощенный китайский
+      1028 or 4100 or 3076 or 5124 => 4, // традиционный китайский. 1028=Тайвань - точно традиционный. остальные вероятно традиционный, но может и упрощенный
+      _ => 0
+    };
+
+    /// <summary>
+    /// Номер языка по его двухбуквенному обозначению (CultureInfo.TwoLetterISOLanguageName).
+    /// </summary>
+    /// <param name="langID"></param>
+    /// <returns>Номера (от 0) задают порядок языков во всех массивах строк</returns>
+    public static int
+    Number(string langID) => langID switch
+    {
+      "ru" => 1,
+      "it" => 2,
+      "ge" => 3,
+      "zh" => 4,
       _ => 0
     };
 

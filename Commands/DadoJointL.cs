@@ -96,10 +96,10 @@ namespace AVC
       "  Verbindungen hergestellt: {0}",
       "  制作接头：{0}"};
     public static readonly string[] SettingsInfo = {
-      "  Current settings: Depth = {0}, MinArea = {1}, Gap = {2}",
-      "  Текущие настройки: Глубина = {0}, МинПлощадь = {1}, Зазор = {2}",
-      "  Impostazioni correnti: Profondità = {0}, AreaMinima = {1}, Liquidazione = {2}",
-      "  Aktuelle Einstellungen: Tiefe = {0}, Mindestfläche = {1}, Spiel = {2}",
-      "  当前设置：深度 = {0}，最小接触面积 = {1}，间隙 = {2}" };
+      "  Current settings: Depth = {0}, MinArea = {1}, Gap = {2}, Backlash = {3}",
+      "  Текущие настройки: Глубина = {0}, МинПлощадь = {1}, Зазор = {2}, Люфт = {3}",
+      "  Impostazioni correnti: Profondità = {0}, AreaMinima = {1}, Liquidazione = {2}, Gioco = {3}",
+      "  Aktuelle Einstellungen: Tiefe = {0}, Mindestfläche = {1}, Spiel = {2}, Gegenreaktion = {3}",
+      "  当前设置：深度 = {0}，最小接触面积 = {1}，各个方向的间隙 = {2}, 深度反弹 = {3}" };
   }
 }

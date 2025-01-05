@@ -3,7 +3,7 @@
 namespace AVC
 {
   /// <summary>
-  /// Локализация методов для работы с 2D обьектами, кривыми
+  /// Локализация методов для работы с 2D объектами, кривыми
   /// </summary>
   public static class
   CurveL
@@ -38,12 +38,24 @@ namespace AVC
       "Impossibile tagliare la curva.",
       "Kurve kann nicht geschnitten werden.",
       "无法切割曲线。" };
+    public static readonly string[] JoinCurveErr = {
+      "Failed to connect the curves.",
+      "Не получилось соединить кривые.",
+      "Impossibile collegare le curve.",
+      "Die Kurven konnten nicht verbunden werden.",
+      "无法连接曲线。" };
     public static readonly string[] ConvertErr = {
       "Impossible convert to curve",
       "Недопустимо преобразование к кривой",
       "Converti impossibile in curva",
       "Ungültige Konvertierung in Kurve",
       "不可能转换成曲线" };
+    public static readonly string[] CurveExtentsErr = {
+      "Failed to get curve dimensions",
+      "Не удалось получить габариты кривой",
+      "Impossibile ottenere le dimensioni della curva",
+      "Kurvenabmessungen konnten nicht abgerufen werden",
+      "无法获取曲线尺寸"};
     public static readonly string[] Required3point = {
       "At least 3 points required",
       "Требуется хотя бы 3 точки",
@@ -68,12 +80,6 @@ namespace AVC
       "Il programma necessita di una curva finale ed è selezionato {0}",
       "Das Programm benötigt eine Endkurve und {0} ist ausgewählt",
       "程序需要最终曲线并选择 {0}"};
-    public static readonly string[] CurveExtentsErr = {
-      "Failed to get curve dimensions",
-      "Не удалось получить габариты кривой",
-      "Impossibile ottenere le dimensioni della curva",
-      "Kurvenabmessungen konnten nicht abgerufen werden",
-      "无法获取曲线尺寸"};
     public static readonly string[] SelectCurves ={
       "Select polylines or other curves ",
       "Выберите полилинии или другие кривые ",
@@ -98,6 +104,12 @@ namespace AVC
       "La sottrazione della regione non è riuscita.",
       "Die Regionssubtraktion ist fehlgeschlagen.",
       "区域减法失败。" };
+    public static readonly string[] RegUnionError = {
+      "Failed to union regions.",
+      "Не удалось выполнить объединение регионов.",
+      "Unione delle regioni non riuscita.",
+      "Die Zusammenführung der Region ist fehlgeschlagen.",
+      "区域合并失败。" };
     public static readonly string[] RegSliceError = {
       "Failed to cut region with open curve.",
       "Не удалось разрезать регион незамкнутой кривой.",
@@ -105,11 +117,11 @@ namespace AVC
       "Bereich mit offener Kurve konnte nicht geschnitten werden.",
       "无法切割具有开放曲线的区域。" };
     public static readonly string[] CreateRegionFail = {
-      "It was not possible to build a region along a curve",
+      "Error creating region by curve",
       "Не получилось построить регион по кривой",
-      "Non era possibile costruire una regione lungo una curva",
-      "Es war nicht möglich, eine Region entlang einer Kurve aufzubauen",
-      "不可能沿着曲线建立一个区域" };
+      "Errore durante la creazione di una regione lungo una curva",
+      "Fehler beim Erstellen einer Region entlang einer Kurve",
+      "沿曲线创建区域时出错" };
     public static readonly string[] ConnectProcess = {
       "Building closed polylines",
       "Построение замкнутых полилиний",
@@ -137,9 +149,15 @@ namespace AVC
     public static readonly string[] DeleteSources = {
       "Delete sources",
       "Удалить исходные",
-      "Elimina fonti",
+      "Elimina originale",
       "Quellen löschen",
-      "删除来源" };
+      "删除原始曲线" };
+    public static readonly string[] SaveSources = {
+      "Save sources",
+      "Сохранять исходные",
+      "Mantieni l'originale",
+      "Original aufbewahren",
+      "保持原有曲线" };
     public static readonly string[] DeleteSourcesTip = {
       "Delete all original lines and curves that were processed.",
       "Удалить все исходные линии и кривые, которые удалось обработать.",

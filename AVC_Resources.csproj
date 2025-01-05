@@ -77,6 +77,7 @@
     <Compile Include="Commands\PageNoL.cs" />
     <Compile Include="Commands\PasteToTableL.cs" />
     <Compile Include="Commands\PlaceLeadersL.cs" />
+    <Compile Include="Commands\PLineDirL.cs" />
     <Compile Include="Commands\QCleaningL.cs" />
     <Compile Include="Commands\ReduceWeightL.cs" />
     <Compile Include="Commands\RemHolesL.cs" />
@@ -1116,9 +1117,6 @@
     <None Include="Resources\FixtureAll.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FixtureConnection.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\FixtureHor.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1227,13 +1225,7 @@
     <None Include="Resources\SimpInFiles32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CurveInt16.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\CurveInt32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CurveSub16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CurveSub32.png" />
@@ -1246,6 +1238,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CurveUnion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveInt16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveSub16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureConnection.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

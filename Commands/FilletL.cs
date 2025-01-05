@@ -71,7 +71,19 @@ namespace AVC
       "Non è stata trovata l'intersezione dell'arco con un segmento.",
       "Der Schnittpunkt des Bogenschneiders mit einem Segment wurde nicht gefunden.",
       "未找到刀具弧与线段的交点。" };
+    public static readonly string[] ICLoop = {
+      "The external corner program is stuck in a loop - processing corners creates new corners.",
+      "Программа внешний угол зациклилась - обработка углов создает новые углы.",
+      "Il programma degli angoli esterni è in loop: la lavorazione degli angoli crea nuovi angoli.",
+      "Das Außeneckenprogramm befindet sich in einer Schleife – durch die Bearbeitung von Ecken entstehen neue Ecken.",
+      "外角程序处于循环状态 - 处理角点会创建新的角点。" };
     public static readonly string[] CutFailed = {
+      "Corner processing failed.",
+      "Процедура обработки углов не удалась.",
+      "Elaborazione dell'angolo non riuscita.",
+      "Eckenverarbeitung fehlgeschlagen.",
+      "边角处理失败" };
+    public static readonly string[] CutFailedReason = {
       "Corner processing failed. Reason: {0}",
       "Процедура обработки углов не удалась. Причина: {0}",
       "Elaborazione dell'angolo non riuscita. Motivo: {0}",

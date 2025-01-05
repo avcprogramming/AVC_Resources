@@ -13,11 +13,17 @@ namespace AVC
         CommandL.CurveSub[3],
         CommandL.CurveSub[4]  },
 /* 1 */ {
-        CommandL.CurveSub[0],
-        CommandL.CurveSub[1],
-        CommandL.CurveSub[2],
-        CommandL.CurveSub[3],
-        CommandL.CurveSub[4]  },
+        "Curve Operations",
+        "Операции с кривыми",
+        "Operazioni sulle curve",
+        "Kurvenoperationen",
+        "曲线运算"  },
+/* 2 */ {
+        CurveL.SaveSources[0],
+        CurveL.SaveSources[1],
+        CurveL.SaveSources[2],
+        CurveL.SaveSources[3],
+        CurveL.SaveSources[4]  },
     };
 
     public static readonly string[] Process = {

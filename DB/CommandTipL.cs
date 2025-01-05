@@ -1,7 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
 
-// Ignore Spelling: Dwg Ortho Poly Simp Snn Unhide Det
+// Ignore Spelling: Dwg Ortho Poly Simp Snn Unhide Det CNC
 
 namespace AVC
 {
@@ -165,12 +165,6 @@ namespace AVC
       "Sostituisci i blocchi selezionati con blocchi con lo stesso nome di un altro disegno.",
       "Ersetzen Sie ausgewählte Blöcke durch gleichnamige Blöcke aus einer anderen Zeichnung.",
       "用另一个图形中的同名块替换选定的块。"};
-    public static readonly string[] CurveIntTip = {
-      "Intersection of closed polylines and curves as regions.",
-      "Пересечение замкнутых полилиний и кривых как регионов.",
-      "Intersezione di polilinee chiuse e curve come regioni.",
-      "Schnittpunkt geschlossener Polylinien und Kurven als Regionen.",
-      "作为区域的闭合折线和曲线的交点。" };
     public static readonly string[] ChopTip = {
       "Chop a 3d-solid into many pieces. Make ribs and stair-step.",
       "Нарезка твердых тел на равные дольки. " +
@@ -214,6 +208,12 @@ namespace AVC
       "Creare scanalature nelle parti intersecanti (solidi) per la connessione incrociata.",
       "Machen Sie Nuten in sich kreuzenden Teilen (Volumenkörper) für die Querverbindung.",
       "使相交零件（实体）中的槽口交叉连接。"};
+    public static readonly string[] CurveIntTip = {
+      "Intersection of closed polylines and curves as regions.",
+      "Пересечение замкнутых полилиний и кривых как регионов.",
+      "Intersezione di polilinee chiuse e curve come regioni.",
+      "Schnittpunkt geschlossener Polylinien und Kurven als Regionen.",
+      "作为区域的闭合折线和曲线的交点。" };
     public static readonly string[] CurveSubTip = {
       "Subtraction of closed polylines and curves as regions. Cutting with open curves.",
       "Вычитание замкнутых полилиний и кривых как регионов. Разрезание разомкнутыми кривыми.",
@@ -581,6 +581,12 @@ namespace AVC
       "Crea multidirettrici con i nomi di ogni oggetto selezionato o per tutti gli oggetti della finestra",
       "Erstellen Sie Multi-Führungslinien mit den Namen jedes ausgewählten Objekts oder für alle Ansichtsfensterobjekte",
       "使用每个选定对象或所有视口对象的名称创建多重引线"};
+    public static readonly string[] PLineDirTip = {
+      "Change the direction of multiple polylines and other curves. Select the starting points of the polylines.",
+      "Поменять направление у множества полилиний и других кривых. Выбрать начальные точки полилиний.",
+      "Cambiare la direzione di più polilinee e altre curve. Selezionare i punti iniziali delle polilinee.",
+      "Ändern Sie die Richtung mehrerer Polylinien und anderer Kurven. Wählen Sie die Startpunkte der Polylinien aus.",
+      "更改多个多段线和其他曲线的方向。选择多段线的起点。"};
     public static readonly string[] ProTip = {
       "A complete set of all A>V>C> programs: " +
         "Modeling commands, utilities, commands for working with contours, preparing drawings for CNC, " +

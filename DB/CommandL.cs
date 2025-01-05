@@ -1,7 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
 
-// Ignore Spelling: Ortho Poly Simp Unhide Dwg Det
+// Ignore Spelling: Ortho Poly Simp Unhide Dwg Det CRS NCP OSL SNN StSt TNT DDL DDJ DRI DXF MSL CNC Linetype
 
 namespace AVC
 {
@@ -111,12 +111,6 @@ namespace AVC
       "Aggiorna blocco",
       "Block aktualisieren",
       "更新块" };
-    public static readonly string[] CurveInt = {
-      "Curve Intersect",
-      "Пересечение кривых",
-      "Intersezione di curve",
-      "Schnittpunkt von Kurven",
-      "曲线相交" };
     public static readonly string[] CH = {
       "Chop",
       "Нарезка",
@@ -147,6 +141,12 @@ namespace AVC
       "Traversa",
       "Kreuzstück",
       "叉" };
+    public static readonly string[] CurveInt = {
+      "Curve Intersect",
+      "Пересечение кривых",
+      "Intersezione di curve",
+      "Schnittpunkt von Kurven",
+      "曲线相交" };
     public static readonly string[] CurveSub = {
       "Curve Subtract",
       "Вычитание кривых",
@@ -286,8 +286,8 @@ namespace AVC
       "Art Palette",
       "调色板类型" };
     public static readonly string[] Kit = {
-      "A>V>C> Kit",
-      "Инструменты A>V>C>" };
+      "A>V>C> 3D-kit",
+      "3D-инструменты A>V>C>" };
     public static readonly string[] Lay = {
       "Lay",
       "Выкладка",
@@ -402,6 +402,12 @@ namespace AVC
       "Posiziona i Leader",
       "Führungslinie platzieren",
       "放置多重引线" };
+    public static readonly string[] PLineDir = {
+      "Polyline Direction",
+      "Направление полилинии",
+      "Direzione polilinea",
+      "Polylinienrichtung",
+      "折线方向" };
     public static readonly string[] ReduceW = {
       "Reduce Weight",
       "Уменьшить вес",

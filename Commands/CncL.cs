@@ -457,6 +457,25 @@ namespace AVC
       "Abrunden",
       "四舍五入" };
 
+    public static readonly string[] Bisector = {
+      "bisector",
+      "биссектриса",
+      "bisettrice",
+      "Halbierende",
+      "平分线" };
+    public static readonly string[] LongSide = {
+      "long side",
+      "длинная сторона",
+      "lato lungo",
+      "Längsseite",
+      "长边" };
+    public static readonly string[] ShortSide = {
+      "short side",
+      "короткая сторона",
+      "lato corto",
+      "kurze Seite",
+      "短边" };
+
     public static readonly string[] DefDirTypes = {
       "Through;Above;Under;H_left;H_front;H_right;H_back;H_other;Swivel",
       "скв.;лиц.;тыл;торц.;торц.;торц.;торц.;торц.;накл.",
@@ -822,6 +841,28 @@ namespace AVC
       "Considerare diametro",
       "Durchmesser berücksichtigen",
       "考虑直径" };
+    public static readonly string[] ICDirection = {
+      "Direction",
+      "Направление",
+      "Direzione",
+      "Richtung",
+      "方向" };
+    public static readonly string[] ICDirectionTip = {
+      "Usually the cutter entry into the inner corner is done along the angle bisector. \r\n" +
+        "But you can choose the direction along one of the sides of the corner. \r\n" +
+        "For equal sides, the X-axis direction is used instead of the long one.",
+      "Обычно вход фрезы во внутренний угол делается по биссектрисе угла. \r\n" +
+        "Но вы можете выбрать направление вдоль одной из сторон угла. \r\n" +
+        "При равных сторонах вместо длинной используется направление оси X ",
+      "Tipicamente, la fresa entra nell'angolo interno lungo la bisettrice dell'angolo. \r\n" +
+        "Ma puoi scegliere una direzione lungo uno dei lati dell'angolo. \r\n" +
+        "Per i lati uguali, viene utilizzata la direzione dell'asse X anziché il lato lungo",
+      "Typischerweise dringt der Fräser entlang der Winkelhalbierenden in die Innenecke ein. \r\n" +
+        "Sie können jedoch eine Richtung entlang einer der Seiten der Ecke wählen. \r\n" +
+        "Bei gleichen Seiten wird die X-Achsenrichtung anstelle der langen Seite verwendet",
+      "通常，刀具沿着角的平分线进入内角。\r\n" +
+        "但您可以选择沿着角的一侧的方向。\r\n" +
+        "对于等边，使用X轴方向而不是长边" };
     public static readonly string[] ConsiderDiamTip = {
       "The cutter diameter is taken into account.\r\n" +
         "The specified fillet or cornering will be made.\r\n" +
@@ -854,19 +895,25 @@ namespace AVC
         "oder dem ursprünglichen Volumenkörper überlagert.",
       "删除原始对象（曲线、多段线、实体）。 \r\n" +
         "如果禁用该选项，则处理后的多段线将叠加在原始曲线或原始实体上。" };
-    public static readonly string[] DepthToThickness = {
+    public static readonly string[] Pseudo3d = {
       "Pseudo 3d",
       "Псевдо 3D",
       "Pseudo 3d",
       "Pseudo-3D",
       "伪 3D" };
-    public static readonly string[] DepthToThicknessTip = {
+    public static readonly string[] Pseudo3dAbove = {
+      "Above XY",
+      "Выше XY",
+      "Sopra XY",
+      "Über XY",
+      "高于 XY" };
+    public static readonly string[] Pseudo3dTip = {
       "Write the depth to the polyline|circle property Thickness.\r\n" +
         "Draw lateral holes as rotated circles (if Close Lateral is not checked).\r\n" +
         "Move down the dadoes and drills from below.",
       "Записать глубину фрезеровки в свойство полилинии Толщина (Thickness). \r\n" +
         "Начертить торцевые отверстия, как развернутые окружности (если только не включено замыкание их в прямоугольник) \r\n" +
-        "Сдвинуть вниз пазы и сверления снизу детали.",
+        "Сдвинуть по Z пазы и сверления.",
       "Scrive la profondità di fresatura sulla proprietà della polilinea Spessore (Thickness) \r\n" +
         "Disegna i fori laterali come cerchi aperti. \r\n" +
         "Spostare le scanalature e i trapani verso il basso.",
@@ -875,6 +922,25 @@ namespace AVC
         "Bewegen Sie die Schlitze und Bohrer von der Unterseite des Teils nach unten.",
       "将铣削深度写入折线的厚度属性。 \r\n" +
         "将端孔绘制为扩展圆（除非启用封闭到矩形） 向下移动槽并从零件底部钻孔。" };
+    public static readonly string[] Pseudo3dAboveTip = {
+      "Create pseudo-3D outlines above the XY plane, with positive 'Thickness' values. \r\n" +
+        "Usually negative thicknesses are created and the part appears to be placed below the XY plane. \r\n" +
+        "This setting also changes the Z offset direction of the slot and drill outlines.",
+      "Создать псевдо-3D контуры выше плоскости XY, с положительными значениями 'Толщины'. \r\n" +
+        "Обычно создаются отрицательные толщины и деталь выглядит размещенной ниже плоскости XY. \r\n" +
+        "Эта настройка так же меняет направление сдвига контуров пазов и сверлений по Z.",
+      "Crea contorni pseudo-3D sopra il piano XY, con valori di 'Spessore' positivi.\r\n " +
+        "In genere, vengono creati spessori negativi e la parte sembra posizionata sotto il piano XY. \r\n" +
+        "Questa impostazione modifica anche la direzione di spostamento dei contorni \r\n" +
+        "delle scanalature e delle forature lungo Z.",
+      "Erstellen Sie Pseudo-3D-Konturen über der XY-Ebene mit positiven „Dicke“-Werten. \r\n" +
+        "Normalerweise werden negative Dicken erzeugt \r\n" +
+        "und das Teil scheint unterhalb der XY-Ebene platziert zu sein. \r\n" +
+        "Diese Einstellung ändert auch die Richtung \r\n" +
+        "der Verschiebung der Konturen der Nuten und Bohrungen entlang Z.",
+      "在 XY 平面上方创建具有正“厚度”值的伪 3D 轮廓。\r\n" +
+        "通常，会创建负厚度，并且零件看起来放置在 XY 平面下方。\r\n" +
+        "此设置还会改变凹槽和钻孔轮廓沿 Z 轴的移动方向。" };
     public static readonly string[] DotTip = {
       "Replace the decimal point in the depth and diameter of this symbol.\r\n" +
         "You can use a comma, dot, or any letter.",
@@ -1065,7 +1131,8 @@ namespace AVC
         "The problem with circles is that they have no traversing direction and the position of the cutter can be wrong. \r\n" +
         "It is recommended to disable this option and then the program will draw a polyline of two arcs \r\n" +
         "and keep the correct milling direction.",
-      "Создавать окружности для круглых внешних и внутренних контуров, даже когда диаметр отсутствует в списке свёрел. \r\n" +
+      "Создавать окружности для круглых внешних и внутренних контуров, \r\n" +
+        "даже когда диаметр отсутствует в списке свёрел. \r\n" +
         "Проблема окружностей в том, что у них нет направления обхода, \r\n" +
         "и положение фрезы может быть ошибочным. \r\n" +
         "Рекомендуется отключать эту опцию и тогда программа нарисует полилинию из двух дуг \r\n" +
@@ -1090,15 +1157,27 @@ namespace AVC
       "Machen Sie einen Bogen des Fräsereintritts in eine Ecke oder runden Sie die Ecken an der Außenkontur eines Teils ab.",
       "使刀具进入角的圆弧或在零件的外轮廓上圆角。" };
     public static readonly string[] PocketCornersTip = {
-      "Cut Inside Corners or make a Fillet on all blind internal contours of the detail \r\n" +
-        "(dadoes, blind holes, pockets).",
-      "Делать дугу захода фрезы в угол или делать скругление углов на всех внутренних глухих контурах \r\n" +
-        "(выборках, четвертях и пазах)",
-      "Taglia Angoli Interni o crea un Raccordo su tutti i contorni interni ciechi del dettaglio \r\n" +
-        "(fori ciechi, tasche).",
-      "An allen inneren Blindkonturen (Proben, Viertel und Nuten) \r\n" +
-        "einen bogenförmigen Fräsereintritt in eine Ecke ausführen oder Ecken verrunden",
-      "在拐角处切入圆弧或在所有内部盲轮廓（样品、四分之一和凹槽）上圆角" };
+      "Corner processing on internal blind contours of parts (dadoes / pockets / grooves). \r\n" +
+        "When working with 3D solids, the Inside Corner (IC) command will process all internal contours, both blind and through windows.",
+      "Обработка углов на всех внутренних глухих контурах (выборках, четвертях и пазах). \r\n" +
+        "При работе с 3d-солидами команда Внутренний Угол (IC) будет обрабатывать все внутренние контуры, как глухие, так и сквозные окна.",
+      "Elaborazione degli angoli su tutti i contorni ciechi interni (dado/tasche/scanalature). \r\n" +
+        "Quando si lavora con solidi 3D, il comando Angolo interno (IC) elaborerà tutti i contorni interni, sia ciechi che passanti.",
+      "Eckenbearbeitung an allen inneren Blindkonturen (Nuten/Taschen/Rillen). \r\n" +
+        "Beim Arbeiten mit 3D-Vollkörpern bearbeitet der Befehl „Innenecke“ (IC) alle inneren Konturen, sowohl Blind- als auch Durchgangsfenster.",
+      "对所有内部盲轮廓（榫眼/凹槽/凹槽）进行角处理。\r\n" +
+        "处理 3D 实体时，内角 (IC) 命令将处理所有内部轮廓，包括盲窗和通孔。" };
+    public static readonly string[] WindowCornersTip = {
+      "Corner processing on internal through contours of parts (through holes, windows).\r\n" +
+        "When working with 3D solids, the Inside Corner (IC) command will process all internal contours, both blind and through windows.",
+      "Обработка углов на внутренних сквозных контурах деталей (сквозных пропилах, окнах). \r\n" +
+        "При работе с 3d-солидами команда Внутренний Угол (IC) будет обрабатывать все внутренние контуры, как глухие, так и сквозные окна.",
+      "Lavorazione degli angoli sui contorni interni passanti delle parti (tagli passanti, finestre).\r\n" +
+        "Quando si lavora con solidi 3D, il comando Angolo interno (IC) elaborerà tutti i contorni interni, sia ciechi che passanti.",
+      "Bearbeitung von Ecken an inneren Durchgangskonturen von Teilen (Durchschnitte, Fenster).\r\n" +
+        "Beim Arbeiten mit 3D-Vollkörpern bearbeitet der Befehl „Innenecke“ (IC) alle inneren Konturen, sowohl Blind- als auch Durchgangsfenster.",
+      "通过零件轮廓加工内部角（通过切口、窗口）。\r\n" +
+        "处理 3D 实体时，内角 (IC) 命令将处理所有内部轮廓，包括盲窗和通孔。" };
     public static readonly string[] ReplaceNonVertDrill = {
       "Other drilling blocks",
       "Блоки др. сверлений:",
@@ -1189,6 +1268,22 @@ namespace AVC
         "Abhängig von der Toleranz kann das Programm solche Winkel ignorieren.",
       "如果角度太钝，则加工轮廓可能几乎与原始轮廓重合。 \r\n" +
         "程序可能会根据公差忽略这些角度。" };
+    public static readonly string[] ICAcute = {
+      "Acute angles",
+      "Заход в острые",
+      "Angoli acuti",
+      "Spitze Winkel",
+      "进入尖角" };
+    public static readonly string[] ICAcuteTip = {
+      "The Inside Corner command will make long slots to bring the cutter to the end of a sharp corner. \r\n" +
+        "If the option is disabled, only obtuse and right angles are machined.",
+      "Команда Заход в Угол будет делать длинные пазы, чтоб довести фрезу до конца острого угла. \r\n" +
+        "Если опция отключена, то обрабатываются только тупые и прямые углы.",
+      "Il comando Angolo interno creerà lunghe asole per portare la taglierina all'estremità di un angolo acuto. \r\n" +
+        "Se l'opzione è disabilitata, verranno elaborati solo gli angoli ottusi e retti.",
+      "Der Befehl „Innenecke“ erzeugt lange Schlitze, um den Fräser an das Ende einer scharfen Ecke zu bringen. \r\n" +
+        "Wenn die Option deaktiviert ist, werden nur stumpfe und rechte Winkel verarbeitet.",
+      "内角命令将制作长槽，将刀具带到尖角的末端。如果禁用该选项，则仅处理钝角和直角。" };
     public static readonly string[] SplineToLine = {
       "Approximation spline to lines",
       "Сплайн в линию",
@@ -1206,16 +1301,6 @@ namespace AVC
          "Die Systemvariable PLINECONVERTMODE wird verwendet.",
       "逼近样条曲线时禁用圆弧（仅线）。\r\n" +
          "正在使用 PLINECONVERTMODE 系统变量。" };
-    public static readonly string[] WindowCornersTip = {
-      "Cut Inside Corners or make a Fillet on all through internal contours of the detail \r\n" +
-        "(through holes, windows).",
-      "Делать дугу захода фрезы в угол или делать скругление углов на всех внутренних сквозных контурах деталей \r\n" +
-        "(сквозных пропилах, окнах).",
-      "Taglia Angoli Interni o crea un Raccordo su tutti i contorni interni del dettaglio \r\n" +
-        "(attraverso fori, finestre).",
-      "Schneiden Sie Innenecken oder machen Sie eine Verrundung an allen Innenkonturen des Details \r\n" +
-        "(Durchgangslöcher, Fenster).",
-      "切割内部角落或在细节的所有内部轮廓（通孔，窗户）上制作圆角。" };
     public static readonly string[] Corners = {
       "Corners milling",
       "Фрезеровка углов",
@@ -1538,7 +1623,7 @@ namespace AVC
         "写入 -1 以请求每个命令调用的深度。" };
     public static readonly string[] DirTypesTip = {
       "Drilling direction names for the drilling table. \r\n" +
-        "Used in the% drill% substitution. \r\n" +
+        "Used in the %drill% substitution. \r\n" +
         "The list should contain 9 names separated by semicolons: \r\n" +
         "1 - vertical through drilling, \r\n" +
         "2 - blind vertical drilling from the facade, \r\n" +

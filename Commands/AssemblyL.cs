@@ -1,5 +1,5 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
-// Ignore Spelling: Unexplodable
+// Ignore Spelling: Unexplodable Ucs
 
 namespace AVC
 {

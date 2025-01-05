@@ -78,6 +78,40 @@ namespace AVC
         "这将使榫头可以毫不费力插入凹槽中。\r\n" +
         "默认为 0。" };
 
+    public static readonly string[] Backlash = {
+      "Backlash",
+      "Люфт",
+      "Gioco",
+      "Luft",
+      "间隙"};
+
+    public static readonly string[] BacklashTip = {
+      "Backlash in the depth of the slot.\r\n" +
+        "If you specify a value greater than 0, the cut slot will be deepened. \r\n" +
+        "This will allow for a tight fit of the parts, even if there are chips left in the slot.\r\n" +
+        "The program does not sum Backlash and Gap, but the larger value is chosen.\r\n" +
+        "Default 0.",
+      "Люфт по глубине паза.\r\n" +
+        "Если вы укажете значение больше 0, то вырезаемый паз будет увеличен в глубину. \r\n" +
+        "Это позволит плотно стыковать детали, даже если в пазу остались опилки.\r\n" +
+        "Программа не суммирует Люфт и Зазор, а выбирается большее значение.\r\n" +
+        "По умолчанию 0.",
+      "Gioco nella profondità della fessura.\r\n" +
+        "Se si specifica un valore maggiore di 0, la fessura di taglio verrà approfondita. \r\n" +
+        "Ciò consentirà un adattamento stretto delle parti, anche se ci sono trucioli rimasti nella fessura.\r\n" +
+        "Il programma non somma Gioco e Divario, ma viene scelto il valore maggiore.\r\n" +
+        "Predefinito 0.",
+      "Luft in der Tiefe des Schlitzes.\r\n" +
+        "Wenn Sie einen Wert größer als 0 angeben, wird der Schnittschlitz vertieft. \r\n" +
+        "Dies ermöglicht eine enge Passung der Teile, auch wenn sich Späne im Schlitz befinden.\r\n" +
+        "Das Programm summiert nicht Luft und Spiel, sondern wählt den größeren Wert.\r\n" +
+        "Standard 0.",
+      "槽深度的间隙。\r\n" +
+        "如果你指定一个大于 0 的值，切割槽会加深。\r\n" +
+        "这将允许零件紧密配合，即使槽中有残留的碎屑。\r\n" +
+        "程序不会将深度差距和各个方向的差距相加，而是选择一个较大的值。\r\n" +
+        "默认为 0。"};
+
     public static readonly string[] MaxStep = {
       "Max step",
       "Максимальный шаг",

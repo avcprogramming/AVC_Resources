@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Viewports Nameds Dwg Bandings Asymmetry Uniscale Asym
+// Ignore Spelling: Viewports Nameds Dwg Bandings Asymmetry Uniscale Asym CNC CCW Plottable
 
 using System;
 using System.Collections.Generic;
@@ -2763,11 +2763,11 @@ namespace AVC
       "Kantenanleimungen",
       "封边条" };
     public static readonly string[] Box = {
-      "Box ",
-      "Бокс ",
-      "Parallelepipedo ",
-      "Quader ",
-      "盒子 " };
+      "Box",
+      "Бокс",
+      "Parallelepipedo",
+      "Quader",
+      "盒子" };
     public static readonly string[] CostTip = {
       "Cost of material details.\r\n" +
         "Also, the cost of covers and edge-bandings will be added to the price.",
@@ -2878,11 +2878,11 @@ namespace AVC
          "那么LAY命令就可以在part header中分别写入'right'和'mirror'部分的个数了。\r\n" +
          "您可以配置程序，以便单独布置镜像详细信息。" };
     public static readonly string[] NotBox = {
-      "Not box ",
-      "Не бокс ",
-      "Nessun parallelepipedo ",
-      "Nicht Quader ",
-      "不是盒子 " };
+      "Not box",
+      "Не бокс",
+      "Nessun parallelepipedo",
+      "Nicht Quader",
+      "不是盒子" };
     public static readonly string[] Technology = {
       "Technology",
       "Технология",
