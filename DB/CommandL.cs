@@ -1,7 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
 
-// Ignore Spelling: Ortho Poly Simp Unhide Dwg Det CRS NCP OSL SNN StSt TNT DDL DDJ DRI DXF MSL CNC Linetype
+// Ignore Spelling: Ortho Poly Simp Unhide Dwg Det CRS NCP OSL SNN StSt TNT DDL DDJ DRI DXFExport MSL CNC Linetype
 
 namespace AVC
 {
@@ -77,7 +77,7 @@ namespace AVC
       "A>V>C> 设置面板" };
     public static readonly string[] AvcUpdate = {
       "A>V>C> Update",
-      "Обновить A>V>C> ",
+      "Обновить A>V>C>",
       "Aggiorna A>V>C>",
       "A>V>C> aktualisieren",
       "更新 A>V>C> 插件" };
@@ -213,7 +213,7 @@ namespace AVC
       "Albero del progetto",
       "Blaupausenbaum",
       "蓝图树" };
-    public static readonly string[] DXF = {
+    public static readonly string[] DXFExport = {
       "DXF Export",
       "Экспорт DXF",
       "Esportazione DXF",
@@ -285,9 +285,18 @@ namespace AVC
       "Tavolozza Kind",
       "Art Palette",
       "调色板类型" };
-    public static readonly string[] Kit = {
-      "A>V>C> 3D-kit",
-      "3D-инструменты A>V>C>" };
+    public static readonly string[] Kit3d = {
+      "A>V>C> 3D kit",
+      "3D-инструменты A>V>C>",
+      "A>V>C> Strumenti 3D",
+      "A>V>C> 3D-Werkzeuge",
+      "A>V>C> 3D 工具"};
+    public static readonly string[] Kit2d = {
+      "A>V>C> 2D kit",
+      "2D-инструменты A>V>C>",
+      "A>V>C> Strumenti 2D",
+      "A>V>C> 2D-Werkzeuge",
+      "A>V>C> 2D 工具" };
     public static readonly string[] Lay = {
       "Lay",
       "Выкладка",
@@ -390,12 +399,6 @@ namespace AVC
       "A>V>C> Tavolozza delle proprietà",
       "A>V>C> Eigenschaftenpalette",
       "A>V>C> 属性面板" };
-    public static readonly string[] PIntersect = {
-      "Polylines Intersect",
-      "Пересечение полилиний",
-      "Polilinee intersecanti",
-      "Sich überschneidende Polylinien",
-      "折线交点" };
     public static readonly string[] PlaceLeaders = {
       "Place Leaders",
       "Разместить выноски",
@@ -594,6 +597,5 @@ namespace AVC
       "Esegui comando {0}",
       "Befehl {0} ausführen",
       "运行命令 {0}" };
-
   }
 }

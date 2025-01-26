@@ -409,6 +409,12 @@ namespace AVC
       "Seleziona i disegni per estrarre i dati dagli oggetti del modello",
       "Wählen Sie Zeichnungen aus, um Daten aus Modellobjekten zu extrahieren",
       "选择图形以从模型对象中提取数据"};
+    public static readonly string[] SetLayoutErr = {
+      "Failed to set current layout {0}",
+      "Не удалось назначить текущий лист {0}",
+      "Impossibile impostare il layout corrente {0}",
+      "Aktuelles Layout konnte nicht festgelegt werden {0}",
+      "无法设置当前布局 {0}" };
 
     //============================= Dialog Box ===============================================
 

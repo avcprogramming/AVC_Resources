@@ -664,17 +664,14 @@
   <data name="Kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Kit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kit120" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Kit120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Kit16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Kit16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\kit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kit2d80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kit2d80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kit80" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Kit80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kit3d80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kit3d80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lay16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\lay16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -906,6 +903,15 @@
   </data>
   <data name="PlaceLeaders80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\PlaceLeaders80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PLineDir16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PLineDir16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PLineDir32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PLineDir32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PLineDir80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PLineDir80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Point32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Point32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

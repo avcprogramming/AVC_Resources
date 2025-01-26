@@ -127,14 +127,14 @@ namespace AVC
       "Calculation of block dimensions, the sum of the lengths of all curves, " +
         "area and volume of solids, weight and price of parts. " +
         "Write results to block attributes.",
-      "Вычисление габаритов блока, суммы длин всех кривых,\r\n" +
-        "площади и объема солидов, веса и цены деталей.\r\n" +
+      "Вычисление габаритов блока, суммы длин всех кривых, " +
+        "площади и объема солидов, веса и цены деталей." +
         "Запись результатов в атрибуты блока.",
-      "Calcolo delle dimensioni del blocco, somma delle lunghezze di tutte le curve,\r\n" +
-        "area e volume dei solidi, peso e prezzo delle parti.\r\n" +
+      "Calcolo delle dimensioni del blocco, somma delle lunghezze di tutte le curve, " +
+        "area e volume dei solidi, peso e prezzo delle parti." +
         "Scrivi i risultati per bloccare gli attributi.",
-      "Berechnung der Blockabmessungen, der Summe der Längen aller Kurven,\r\n" +
-        "Fläche und Volumen der Feststoffe, Gewicht und Preis der Teile.\r\n" +
+      "Berechnung der Blockabmessungen, der Summe der Längen aller Kurven, " +
+        "Fläche und Volumen der Feststoffe, Gewicht und Preis der Teile." +
         "Ergebnisse in Blockattribute schreiben." ,
       "块尺寸的计算，所有曲线长度的总和，" +
          "固体的面积和体积，零件的重量和价格。" +
@@ -315,7 +315,7 @@ namespace AVC
       "具有树状绘图对象列表的面板。 " +
         "排序列表中的所有零件、曲线、块、图层和材质。 " +
         "自定义分组和着色。 缩放并突出显示绘图中的对象。"};
-    public static readonly string[] DXFTip = {
+    public static readonly string[] DXFExportTip = {
       "Lay details (solids 3d), obtaining flat contours for milling/sawing/drilling on CNC and export of contours in dxf.",
       "Выкладка деталей-солидов, получение контуров для 2d-фрезеровки и экспорт контуров в dxf." ,
       "Disposizione di parti solide, ottenimento di contorni per fresatura 2D ed esportazione di contorni in dxf.",
@@ -339,7 +339,7 @@ namespace AVC
          "按掩码搜索。反转已找到对象的可见性。"};
     public static readonly string[] FilletTip = {
       "Breaks all corners of a polyline and connects the sides with a smooth arc. Able to mate arc segments",
-      "Скругление всех углов полилинии" ,
+      "Скругление всех углов полилинии." ,
       "Raccorda tutti gli angoli della polilinea.",
       "Verrunden Sie alle Ecken der Polylinie.",
       "打断多段线的所有角并用平滑弧连接边。 能够配合弧段"};
@@ -355,11 +355,11 @@ namespace AVC
          "RTA 配件、紧固件、家具铰链、搁板架、五金"};
     public static readonly string[] FlatTip = {
       "Generate flat drawing from any AutoCAD objects. Project all on XY",
-      "Получить плоский чертеж с любого объекта Автокада. Проецировать все на плоскость XY" ,
-      "Ottieni un disegno piatto da qualsiasi oggetto AutoCAD. Proietta tutto sull'aereo XY",
+      "Получить плоский чертеж с любого объекта Автокада. Проецировать все на плоскость XY." ,
+      "Ottieni un disegno piatto da qualsiasi oggetto AutoCAD. Proietta tutto sull'aereo XY.",
       "Holen Sie sich eine flache Zeichnung von einem beliebigen AutoCAD-Objekt. " +
-        "Projizieren Sie alles auf die XY-Ebene",
-      "从任何 AutoCAD 对象生成平面图。 全部在 XY 上投影"};
+        "Projizieren Sie alles auf die XY-Ebene.",
+      "从任何 AutoCAD 对象生成平面图。 全部在 XY 上投影."};
     public static readonly string[] HideAvcTip = {
       "Hide AVC palettes from the screen by list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Скрыть с экрана палитры AVC по списку. В списке через запятую можно указать: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
@@ -368,10 +368,10 @@ namespace AVC
       "按列表隐藏屏幕上的 AVC 调色板。在逗号分隔的列表中，您可以指定： AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List"};
     public static readonly string[] ICTip = {
       "Contours for milling approach in the inside corners",
-      "Контуры для захода фрезы во внутренние углы" ,
-      "Contorni per l'ingresso della fresa negli angoli interni",
-      "Konturen für den Einstieg des Fräsers in Innenecken",
-      "在内角铣削加工的轮廓"};
+      "Контуры для захода фрезы во внутренние углы." ,
+      "Contorni per l'ingresso della fresa negli angoli interni.",
+      "Konturen für den Einstieg des Fräsers in Innenecken.",
+      "在内角铣削加工的轮廓."};
     public static readonly string[] InfoPaletteTip = {
       "Panel for editing the Info (Description) property for all objects.",
       "Панель для редактирования свойства Инфо(Описание) у всех объектов." ,
@@ -390,7 +390,7 @@ namespace AVC
       "Sottrazione di solidi con uno spazio vuoto e senza rimuovere il sottratto.",
       "Subtraktion von Volumenkörpers mit einer Lücke und ohne Entfernen des Subtrahierten.",
       "减去有间隙的实体，但不删除减去的部分。"};
-    public static readonly string[] KitTip = {
+    public static readonly string[] Kit3dTip = {
       "Software suite for 3d modeling and utilities to speed up work. " +
         "This collection does NOT include work with 2d contours and tables",
       "Комплект программ для 3d-моделирования и утилиты для ускорения работы. " +
@@ -401,6 +401,17 @@ namespace AVC
         "Diese Sammlung enthält KEINE Arbeiten mit 2D-Konturen und -Tabellen",
       "用于 3D 建模和实用程序的软件套件，可加快工作速度。 " +
          "这个集合不包括使用 2d 轮廓和表格的工作"};
+    public static readonly string[] Kit2dTip = {
+      "A set of programs for working with polylines and other curves, contour optimization for CNC and utilities for speeding up work." +
+        "This collection does NOT include work with 3d solids, tables, and annotations.",
+      "Комплект программ для работы с полилиниями и другими кривыми, оптимизации контуров для ЧПУ и утилиты для ускорения работы. " +
+        "В это сборник НЕ входит работа с солидами, таблицами, аннотациями.",
+      "Un set di programmi per lavorare con polilinee e altre curve, ottimizzazione dei contorni per CNC e utilità per velocizzare il lavoro." +
+        "Questa raccolta NON include il lavoro con solidi 3D, tabelle e annotazioni.",
+      "Eine Reihe von Programmen zum Arbeiten mit Polylinien und anderen Kurven, Konturoptimierung für CNC und Dienstprogramme zur Beschleunigung der Arbeit. " +
+        "Diese Sammlung enthält KEINE Arbeiten mit 3D-Volumenkörpern, Tabellen und Anmerkungen.",
+      "一组用于处理折线和其他曲线、CNC轮廓优化和加速工作实用程序的程序。" +
+        "这个集合不包括使用 3d 实体、表格和注释的工作。" };
     public static readonly string[] LayTip = {
       "Lay 3D-solids to XY plane. Group and sort list of details. Creating headers.",
       "Выкладка 3D-деталей в плоскость XY. Группировка и сортировка деталей. Создание заголовков." ,
@@ -599,7 +610,7 @@ namespace AVC
       "Ein vollständiger Satz aller A>V>C>-Programme: " +
         "Modellierungsbefehle, Dienstprogramme, Befehle zum Arbeiten mit Konturen, " +
         "Erstellen von Zeichnungen für die CNC, Vorbereiten von Tabellen",
-      "全套所有程序 A>V>C>:" +
+      "全套所有程序 A>V>C>: " +
          "建模命令、实用程序、用于处理轮廓的命令、为 CNC 准备图纸、准备表格"};
     public static readonly string[] PTTTip = {
       "Insert text table from the Windows clipboard into the DWG-table. " +
@@ -1197,6 +1208,6 @@ namespace AVC
       "  Il solido ha troppe facce (più di {0}). Non verranno elaborati rivestimenti e colori.",
       "  Der Volumenkörper hat zu viele Flächen (mehr als {0}). Lacke und Farben werden nicht verarbeitet.",
       "  实体的面太多（超过 {0} 个）。 不会处理涂层和颜色。"};
-
+    
   }
 }

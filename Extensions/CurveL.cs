@@ -164,6 +164,5 @@ namespace AVC
       "Elimina tutte le linee e le curve originali che sono state elaborate.",
       "Löschen Sie alle ursprünglich verarbeiteten Linien und Kurven.",
       "删除所有已处理的原始直线和曲线。" };
-
   }
 }

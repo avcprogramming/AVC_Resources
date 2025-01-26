@@ -232,7 +232,7 @@ namespace AVC
          "将列表留空以使用所有实体。"};
 
     public static readonly string[] PlanarOnly = {
-      "Planar Only",
+      "Planar only",
       "Только плоские",
       "Solo planare",
       "Nur planar",

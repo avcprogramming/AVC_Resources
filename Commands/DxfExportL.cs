@@ -9,11 +9,11 @@ namespace AVC
   {
     public static readonly string[,] DxfExportStyleNames = {
         {
-        CommandL.DXF[0],
-        CommandL.DXF[1],
-        CommandL.DXF[2],
-        CommandL.DXF[3],
-        CommandL.DXF[4] } ,
+        CommandL.DXFExport[0],
+        CommandL.DXFExport[1],
+        CommandL.DXFExport[2],
+        CommandL.DXFExport[3],
+        CommandL.DXFExport[4] } ,
         {
         "Export 2D contours",
         "Экспорт контуров",
@@ -365,7 +365,7 @@ namespace AVC
       "Ersetzen Sie alle Leerzeichen im DXF-Dateinamen durch das Zeichen _",
       "将 DXF 文件名中的所有空格替换为 _ 字符"};
 
-    //======================================  DXF File List ===============================================
+    //======================================  DXFExport File List ===============================================
     public static readonly string[] DXFFileList = {
       "DXF File List",
       "Список файлов DXF",

@@ -1248,5 +1248,20 @@
   <ItemGroup>
     <None Include="Resources\FixtureConnection.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLineDir16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLineDir80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLineDir32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit3d80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit2d80.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

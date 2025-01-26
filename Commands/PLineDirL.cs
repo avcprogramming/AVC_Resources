@@ -52,25 +52,25 @@ namespace AVC
       "设定起点(ST)"};
 
     public static readonly string[] AllStartAtMidKw = {
-      "MID",
-      "СЕРЕДИНА",
-      "MEZZO",
-      "MITTE",
-      "中点(MID)"};
+      "MIDLongest",
+      "СЕРЕДИНАДлинной",
+      "MEZZOLungo",
+      "MITTELängsten",
+      "中点(MIDL)"};
 
     public static readonly string[] AllStartAtMinKw = {
-      "MIN",
-      "МИНИМУМ",
-      "MINIMO",
-      "MINIMUM",
-      "最低点(MIN)"};
+      "MINPoint",
+      "МИНТочка",
+      "MINPunto",
+      "MINPunkt",
+      "最低点(MINP)"};
 
     public static readonly string[] AllStartAtMaxKw = {
-      "MAX",
-      "МАКСИМУМ",
-      "MASSIMO",
-      "MAXIMAL",
-      "最大点(MAX)"};
+      "MAXPoint",
+      "МАКСТочка",
+      "MASPunto",
+      "MAXPunkt",
+      "最大点(MAXP)"};
 
     public static readonly string[] ClickForReverseQuery = {
       "Click on the curves that need to be reversed",
@@ -120,6 +120,55 @@ namespace AVC
       "Seleziona le curve di cui spostare il punto di inizio al nodo di coordinata massima",
       "Wählen Sie Kurven, deren Startpunkt auf den Knoten mit den maximalen Koordinaten verschoben werden soll",
       "选择需要将起点移动到最大坐标节点的曲线" };
+
+    public static readonly string[] ChangeStartError = {
+      "Failed to change the starting point of the curve {0}",
+      "Не удалось заменить стартовую точку у кривой {0}",
+      "Impossibile sostituire il punto di inizio della curva {0}",
+      "Der Startpunkt der Kurve {0} konnte nicht ersetzt werden",
+      "无法替换曲线 {0} 的起点" };
+
+    public static readonly string[] MidPointError = {
+      "Failed to select the best midpoint for the curve {0}",
+      "Не удалось выбрать лучшую среднюю точку у кривой {0}",
+      "Impossibile selezionare il miglior punto medio per la curva {0}",
+      "Der beste Mittelpunkt für die Kurve {0} konnte nicht ausgewählt werden",
+      "无法选择曲线 {0} 的最佳中点" };
+
+    public static readonly string[] ExtentsError = {
+      "Failed to get the extents of the curve {0}",
+      "Не удалось получить габариты кривой {0}",
+      "Impossibile ottenere le dimensioni della curva {0}",
+      "Die Abmessungen der Kurve {0} konnten nicht ermittelt werden",
+      "无法获取曲线 {0} 的范围" };
+
+    public static readonly string[] DirectionError = {
+      "Failed to determine the direction of the curve {0}",
+      "Не удалось определить направление кривой {0}",
+      "Impossibile determinare la direzione della curva {0}",
+      "Die Richtung der Kurve {0} konnte nicht bestimmt werden",
+      "无法确定曲线 {0} 的方向" };
+
+    public static readonly string[] PointError = {
+      "No curve found at the specified point",
+      "Не найдена кривая под заданной точкой",
+      "Nessuna curva trovata nel punto specificato",
+      "Keine Kurve an der angegebenen Stelle gefunden",
+      "在指定点处未找到曲线" };
+
+    public static readonly string[] ShowDirection = {
+      "Show direction",
+      "Показ направлений",
+      "Mostra direzione",
+      "Richtung anzeigen",
+      "显示方向" };
+
+    public static readonly string[] Processing = {
+      "Processing",
+      "Обработка",
+      "Elaborazione",
+      "Verarbeitung",
+      "处理" };
 
     //=================================================== для диалога настройки ===================================================
 
@@ -238,29 +287,129 @@ namespace AVC
         "样条曲线、弧线、椭圆和未闭合的曲线将被忽略。" };
 
     public static readonly string[] AllStartAtMinTip = {
-      "The program will prompt you to select multiple curves and will set the start of each at the node with the minimum UCS coordinates. \r\n" +
-        "Open curves are ignored.",
-      "Программа будет запрашивать выбор нескольких кривых, и всем им назначит старт в узле с минимальными координатами UCS.\r\n" +
-        "Незамкнутые кривые игнорируются.",
-      "Il programma ti chiederà di selezionare più curve e imposterà l'inizio di ciascuna al nodo con le coordinate UCS minime.\r\n" +
-        "Le curve aperte sono ignorate.",
-      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den minimalen UCS-Koordinaten.\r\n" +
-        "Offene Kurven werden ignoriert.",
-      "程序将提示您选择多条曲线，并将每条曲线的起点设置在具有最小UCS坐标的节点。\r\n" +
-        "未闭合的曲线将被忽略。" };
+      "The program will prompt you to select multiple curves and will set the start of each at the node with the minimum UCS coordinates.",
+      "Программа будет запрашивать выбор нескольких кривых, и всем им назначит старт в узле с минимальными координатами UCS.",
+      "Il programma ti chiederà di selezionare più curve e imposterà l'inizio di ciascuna al nodo con le coordinate UCS minime.",
+      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den minimalen UCS-Koordinaten.",
+      "程序将提示您选择多条曲线，并将每条曲线的起点设置在具有最小UCS坐标的节点。"};
 
     public static readonly string[] AllStartAtMaxTip = {
-      "The program will prompt you to select multiple curves and will set the start of each at the node with the maximum UCS coordinates." +
-        " Open curves are ignored.",
-      "Программа будет запрашивать выбор нескольких кривых, и всем им назначит старт в узле с максимальными координатами UCS." +
-        " Незамкнутые кривые игнорируются.",
-      "Il programma ti chiederà di selezionare più curve e imposterà l'inizio di ciascuna al nodo con le coordinate UCS massime." +
-        " Le curve aperte sono ignorate.",
-      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den maximalen UCS-Koordinaten." +
-        " Offene Kurven werden ignoriert.",
-      "程序将提示您选择多条曲线，并将每条曲线的起点设置在具有最大UCS坐标的节点。" +
-        " 未闭合的曲线将被忽略。" };
+      "The program will prompt you to select multiple curves and will set the start of each at the node with the maximum UCS coordinates.",
+      "Программа будет запрашивать выбор нескольких кривых, и всем им назначит старт в узле с максимальными координатами UCS.",
+      "Il programma ti chiederà di selezionare più curve e imposterà l'inizio di ciascuna al nodo con le coordinate UCS massime.",
+      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den maximalen UCS-Koordinaten.",
+      "程序将提示您选择多条曲线，并将每条曲线的起点设置在具有最大UCS坐标的节点。" };
 
+    public static readonly string[] Mode = {
+      "Mode of operation",
+      "Режим работы команды",
+      "Modalità di funzionamento",
+      "Betriebsmodus",
+      "操作模式"    };
+    public static readonly string[] StyleNameTip = {
+      "Style name for command settings. Does not affect the operation of the command.",
+      "Название для стиля настроек команды. Не влияет на работу команды.",
+      "Nome dello stile per le impostazioni del comando. Non influisce sul funzionamento del comando.",
+      "Stilname für Befehls-Einstellungen. Beeinflusst nicht den Betrieb des Befehls.",
+      "命令设置的样式名称。 不影响命令的操作。"    };
+    public static readonly string[] UseColor = {
+      "Show direction with color",
+      "Показать направление цветом",
+      "Mostra direzione con colore",
+      "Richtung mit Farbe anzeigen",
+      "用颜色显示方向"    };
+    public static readonly string[] UseColorTip = {
+      "Change the color of all curves during the command. The original color will be restored after the command ends. \r\n" +
+        "Flat closed curves with clockwise direction - green. \r\n" +
+        "Flat closed curves with counterclockwise direction - purple. \r\n" +
+        "Circles or non-flat or non-closed - yellow.",
+      "На время работы команды менять цвет всех кривых. После окончания команды будет возвращен исходный цвет. \r\n" +
+        "Плоские замкнутые кривые с обходом по часовой стрелке - зеленые. \r\n" +
+        "Плоские замкнутые кривые с обходом против часовой стрелки - фиолетовые. \r\n" +
+        "Окружности или не плоские или не замкнутые - желтый.",
+      "Cambia il colore di tutte le curve durante il comando. Il colore originale verrà ripristinato al termine del comando. \r\n" +
+        "Curve chiuse piatte con direzione oraria - verde. \r\n" +
+        "Curve chiuse piatte con direzione antioraria - viola. \r\n" +
+        "Cerchi o non piatti o non chiusi - giallo.",
+      "Ändern Sie die Farbe aller Kurven während des Befehls. Die ursprüngliche Farbe wird nach dem Ende des Befehls wiederhergestellt. \r\n" +
+        "Flache geschlossene Kurven mit Uhrzeigersinn - grün. \r\n" +
+        "Flache geschlossene Kurven gegen den Uhrzeigersinn - lila. \r\n" +
+        "Kreise oder nicht flach oder nicht geschlossen - gelb.",
+      "在命令期间更改所有曲线的颜色。 命令结束后将恢复原始颜色。 \r\n" +
+        "顺时针方向的平面闭合曲线 - 绿色。 \r\n" +
+        "逆时针方向的平面闭合曲线 - 紫色。 \r\n" +
+        "圆形或非平面或非闭合 - 黄色。"    };
+
+    public static readonly string[] SelectQuery = {
+      "Request for highlighting",
+      "Запрашивать для подсветки",
+      "Richiesta di evidenziazione",
+      "Anfrage zur Hervorhebung",
+      "请求突出显示"    };
+    public static readonly string[] SelectQueryTip = {
+      "Usually, the command changes the color and draws arrows for all curves in the visible part of the screen. \r\n" +
+        "But you can set a request to select the curves to indicate the direction.",
+      "Обычно команда меняет цвет и рисует стрелки у всех кривых в видимой части экрана. \r\n" +
+        "Но вы можете настроить запрос на выбор кривых, которым надо обозначить направление.",
+      "Di solito, il comando cambia il colore e disegna frecce per tutte le curve nella parte visibile dello schermo. \r\n" +
+        "Ma puoi impostare una richiesta per selezionare le curve per indicare la direzione.",
+      "Normalerweise ändert der Befehl die Farbe und zeichnet Pfeile für alle Kurven im sichtbaren Teil des Bildschirms. \r\n" +
+        "Aber Sie können eine Anfrage stellen, um die Kurven auszuwählen, um die Richtung anzuzeigen.",
+      "通常，命令会更改屏幕可见部分中所有曲线的颜色并绘制箭头。 \r\n" +
+        "但您可以设置请求以选择要指示方向的曲线。"    };
+    public static readonly string[] DrawPoint = {
+      "Starting point",
+      "Стартовая точка",
+      "Punto di partenza",
+      "Startpunkt",
+      "起点"  };
+    public static readonly string[] DrawPointTip = {
+      "A cross will be drawn at the starting point of all curves.",
+      "У всех кривых будет нарисован крестик в точке старта.",
+      "Un croce sarà disegnata nel punto di partenza di tutte le curve.",
+      "Ein Kreuz wird am Startpunkt aller Kurven gezeichnet.",
+      "所有曲线的起点将绘制一个十字。"  };
+    public static readonly string[] DrawStartArrow = {
+      "Arrow from the start",
+      "Стрелка в начале",
+      "Freccia all'inizio",
+      "Pfeil am Anfang",
+      "起点的箭头"  };
+    public static readonly string[] DrawStartArrowTip = {
+      "An arrow will be drawn from the starting point in the direction of the curve.",
+      "У всех кривых будет нарисована стрелка из стартовой точке в направлении обхода кривой",
+      "Una freccia sarà disegnata dal punto di partenza nella direzione della curva.",
+      "Ein Pfeil wird vom Startpunkt in Richtung der Kurve gezeichnet.",
+      "将从起点沿曲线方向绘制一个箭头。" };
+    public static readonly string[] DrawEndArrow = {
+      "Arrow to the end",
+      "Стрелка в конце",
+      "Freccia alla fine",
+      "Pfeil am Ende",
+      "终点的箭头" };
+    public static readonly string[] DrawEndArrowTip = {
+      "An arrow will be drawn to the end point of all curves.",
+      "У всех кривых будет нарисована стрелка к конечной точке",
+      "Una freccia sarà disegnata al punto finale di tutte le curve.",
+      "Ein Pfeil wird zum Endpunkt aller Kurven gezeichnet.",
+      "将绘制一个箭头到所有曲线的终点。" };
+    public static readonly string[] ArrowColor = {
+      "Arrow color",
+      "Цвет стрелок",
+      "Colore della freccia",
+      "Pfeilfarbe",
+      "箭头颜色" };
+    public static readonly string[] ArrowColorTip = {
+      "Color of temporary crosses and arrows. \r\n" +
+        "Choose one of the standard indexed colors from 1 to 255. 1 is red.",
+      "Цвет временных крестиков и стрелок. \r\n" +
+        "Выберите один из стандартных индексированных цветов от 1 до 255. 1 - это красный цвет.",
+      "Colore delle croci e delle frecce temporanee. \r\n" +
+        "Scegli uno dei colori indicizzati standard da 1 a 255. 1 è rosso.",
+      "Farbe der temporären Kreuze und Pfeile. \r\n" +
+        "Wählen Sie eine der standardmäßigen indizierten Farben von 1 bis 255. 1 ist rot.",
+      "临时十字和箭头的颜色。 \r\n" +
+        "选择1到255之间的标准索引颜色之一。 1是红色。"};
 
   }
 }

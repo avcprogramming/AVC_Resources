@@ -1913,16 +1913,6 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Kit120 {
-            get {
-                object obj = ResourceManager.GetObject("Kit120", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap Kit16 {
             get {
                 object obj = ResourceManager.GetObject("Kit16", resourceCulture);
@@ -1933,9 +1923,9 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Kit32 {
+        public static System.Drawing.Bitmap Kit2d80 {
             get {
-                object obj = ResourceManager.GetObject("Kit32", resourceCulture);
+                object obj = ResourceManager.GetObject("Kit2d80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1943,9 +1933,9 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Kit80 {
+        public static System.Drawing.Bitmap Kit3d80 {
             get {
-                object obj = ResourceManager.GetObject("Kit80", resourceCulture);
+                object obj = ResourceManager.GetObject("Kit3d80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2716,6 +2706,36 @@ namespace AVC {
         public static System.Drawing.Bitmap PlaceLeaders80 {
             get {
                 object obj = ResourceManager.GetObject("PlaceLeaders80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PLineDir16 {
+            get {
+                object obj = ResourceManager.GetObject("PLineDir16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PLineDir32 {
+            get {
+                object obj = ResourceManager.GetObject("PLineDir32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PLineDir80 {
+            get {
+                object obj = ResourceManager.GetObject("PLineDir80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
