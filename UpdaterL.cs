@@ -1,14 +1,20 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
-// Ignore Spelling: Exe
+// Ignore Spelling: Exe Ver
 
 namespace AVC
 {
   /// <summary>
-  /// Локализация программы автообновлений плагинов
+  /// Локализация программы автообновлений плагинов Updater
   /// </summary>
   public static class UpdaterL
   {
-    public static readonly string[] UpdateQuery = {
+    public static readonly string[] UpdaterVer = {
+      "The A>V>C> plugin automatic update program is running: {0}. Version {1}",
+      "Работает программа автоматических обновлений плагинов A>V>C>: {0}. Версия {1}",
+      "Il programma di aggiornamento automatico dei plugin A>V>C> è in esecuzione: {0}. Versione {1}",
+      "Das automatische Update-Programm für A>V>C>-Plugins läuft: {0}. Version {1}",
+      "A>V>C> 插件的自动更新程序正在运行：{0}。版本 {1}" };
+     public static readonly string[] UpdateQuery = {
       "There is a new version of {0} {1}.\r\n" +
         "The program can download the update in the background without interfering with your work.\r\n" +
         "Download the update now?",
@@ -169,12 +175,18 @@ namespace AVC
       "Ultima versione",
       "Letzte Version",
       "最新版本"};
-    public static readonly string[] Installed = {
-      "Installed version",
-      "Работает версия",
-      "Versione in esecuzione",
-      "Laufende Version",
-      "运行版本"};
+    public static readonly string[] UpdaterVersion = {
+      "Updater version",
+      "Версия Updater",
+      "Versione 'Updater'",
+      "Updater-Version",
+      "更新程序版本"};
+    public static readonly string[] PluginVersion = {
+      "Plugin version",
+      "Версия плагина",
+      "Versione del plugin",
+      "Plugin-Version",
+      "插件版本"};
     public static readonly string[] Mode = {
       "Auto-Update Mode",
       "Режим обновлений",
@@ -247,6 +259,11 @@ namespace AVC
       "Scrivi archivio su file {0}...",
       "Archiv in Datei {0} schreiben...",
       "将存档写入文件 {0}..." };
-
+    public static readonly string[] TimerTick = {
+      "{0}. Timer check for updates...",
+      "{0}. Проверка обновлений по таймеру...",
+      "{0}. Controllo aggiornamenti tramite timer...",
+      "{0}. Timer-Überprüfung auf Updates...",
+      "{0}. 定时检查更新..." };
   }
 }

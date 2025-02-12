@@ -273,6 +273,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap AssemblyMirror32 {
+            get {
+                object obj = ResourceManager.GetObject("AssemblyMirror32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Attribute32 {
             get {
                 object obj = ResourceManager.GetObject("Attribute32", resourceCulture);
@@ -3196,6 +3206,16 @@ namespace AVC {
         public static System.Drawing.Bitmap SolidMetric32 {
             get {
                 object obj = ResourceManager.GetObject("SolidMetric32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidMetricMirror32 {
+            get {
+                object obj = ResourceManager.GetObject("SolidMetricMirror32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

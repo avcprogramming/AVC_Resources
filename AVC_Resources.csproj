@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Users\shurik\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
+    <OutputPath>C:\Users\shurik\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>
@@ -1262,6 +1262,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Kit2d80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssemblyMirror32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidMetricMirror32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
