@@ -162,6 +162,27 @@ namespace AVC
       "Impostazioni del sommario",
       "Inhaltsverzeichnis Einstellungen",
       "目录设置" };
-
+    public static readonly string[] StartNoQuery = {
+      "Enter the number for the first page",
+      "Введите номер для первой страницы",
+      "Inserisci il numero per la prima pagina",
+      "Geben Sie die Nummer für die erste Seite ein",
+      "输入第一页的编号" };
+    public static string[] StartQuery = {
+      "Request number",
+      "Запрашивать номер",
+      "Richiedi il numero",
+      "Fordern Sie eine Nummer an.",
+      "请求第一页的编号" };
+    public static string[] StartQueryTip = {
+      "Request the starting number each time the command is called. \r\n" +
+        "Useful if you always have different starting numbers.",
+      "При каждом вызове команды запрашивать стартовый номер. \r\n" +
+        "Полезно, если у вас всегда разные стартовые номера.",
+      "Richiedi il numero iniziale ogni volta che viene chiamato il comando. \r\n" +
+        "Utile se hai sempre numeri iniziali diversi.",
+      "Fordern Sie die Startnummer jedes Mal an, wenn der Befehl aufgerufen wird. \r\n" +
+        "Nützlich, wenn Sie immer unterschiedliche Startnummern haben.",
+      "每次调用命令时请求起始编号。 如果您总是有不同的起始编号，这很有用。" };
   }
 }

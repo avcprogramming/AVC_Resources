@@ -395,5 +395,17 @@ namespace AVC
       "Punto e virgola",
       "Punkt mit Komma",
       "分号" };
+    public static readonly string[] BlockLayer = {
+      "Block layer",
+      "Слой блоков",
+      "Strato di blocchi",
+      "Blockebene",
+      "块层" };
+    public static readonly string[] BlockLayerTip = {
+      "The layer on which the wall blocks will be inserted in the BoxToWall command. If not specified, the current layer is used.",
+      "Слой, на котором будут вставлены блоки стен в команде BoxToWall. Если не указан, используется текущий слой.",
+      "Il livello su cui verranno inseriti i blocchi delle pareti nel comando BoxToWall. Se non specificato, viene utilizzato il livello corrente.",
+      "Die Ebene, auf der die Wandblöcke im Befehl BoxToWall eingefügt werden. Wenn nicht angegeben, wird die aktuelle Ebene verwendet.",
+      "在 BoxToWall 命令中插入墙块的图层。如果未指定，则使用当前图层。" };
   }
 }

@@ -25,6 +25,13 @@ namespace AVC
       "Zu viele Dinge...",
       "过多的物品..."};
 
+    public static readonly string[] TooManyObjects = {
+      "Too many objects selected ({0}). The Drawing Tree will not display the selected objects.",
+      "Слишком много объектов выбрано ({0}). Дерево чертежа не будет показывать выбранные объекты.",
+      "Troppi oggetti selezionati ({0}). L'albero del disegno non visualizzerà gli oggetti selezionati.",
+      "Zu viele Objekte ausgewählt ({0}). Der Zeichnungsbaum wird die ausgewählten Objekte nicht anzeigen.",
+      "选择的对象太多 ({0})。 绘图树将不显示所选对象。"};
+
     public static readonly string[] SelectionErr = {
       "Error! Objects cannot be selected",
       "Ошибка! Объекты не могут быть выбраны",
@@ -33,7 +40,7 @@ namespace AVC
       "错误！ 无法选择对象"};
 
     public static readonly string[] FindSelectedErr = {
-      "Error! Object {0} not found in drawing tree",
+      "Error! Object {0} not found in Drawing Tree",
       "Ошибка! В дереве чертежа не найден объект {0}",
       "Errore! Oggetto {0} non trovato nell'albero del disegno",
       "Fehler! Objekt {0} wurde im Zeichnungsbaum nicht gefunden",
