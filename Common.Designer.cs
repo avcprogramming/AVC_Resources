@@ -391,6 +391,26 @@ namespace AVC {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon AVC {
+            get {
+                object obj = ResourceManager.GetObject("AVC", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AVC16 {
+            get {
+                object obj = ResourceManager.GetObject("AVC16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap AvcMessage16 {
@@ -1906,26 +1926,6 @@ namespace AVC {
         public static System.Drawing.Bitmap KindPalette32 {
             get {
                 object obj = ResourceManager.GetObject("KindPalette32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
-        /// </summary>
-        public static System.Drawing.Icon Kit {
-            get {
-                object obj = ResourceManager.GetObject("Kit", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Kit16 {
-            get {
-                object obj = ResourceManager.GetObject("Kit16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

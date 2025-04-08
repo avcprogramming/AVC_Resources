@@ -143,7 +143,7 @@ namespace AVC
       "窗口被切割后留在零件边缘周围的材料条的宽度。 \r\n" +
         "跳线使用相同的宽度。"};
 
-    public static readonly string[] Depth = {
+    public static readonly string[] PocketDepth = {
       "Pocket Depth",
       "Глубина выборки",
       "Profondità tascabile",

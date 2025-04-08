@@ -208,6 +208,12 @@
   <data name="AutoSnap32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AutoSnap32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AVC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AVC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AVC16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AVC16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AvcMessage16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AvcMessage16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -663,12 +669,6 @@
   </data>
   <data name="KindPalette32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\KindPalette32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Kit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kit16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Kit16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kit2d80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Kit2d80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

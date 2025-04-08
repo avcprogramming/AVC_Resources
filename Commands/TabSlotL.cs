@@ -35,12 +35,19 @@ namespace AVC
       "此处只作为备注使用的名称。 \r\n" +
          "在程序中没有使用。只是为了方便阅读。"};
 
+    public static readonly string[] Depth = {
+      "Depth",
+      "Глубина",
+      "Profondità",
+      "Standardtiefe",
+      "默认深度" };
+
     public static readonly string[] DepthTip = {
-      "The parameter sets the tenon height and slot depth.\r\n" +
+      "The parameter sets the dado (slot) depth.\r\n" +
         "If you set it to 0, then the program will cut through the window instead of the slot. \r\n" +
         "A negative value specifies the remaining material thickness after slot milling,\r\n" +
         "and the depth will be calculated for each part as Part Thickness - |Depth|.\r\n",
-      "Параметр задает длину шипа и глубину паза.\r\n" +
+      "Параметр задает глубину паза.\r\n" +
         "Если задать 0, то программа вырежет сквозное окно вместо паза. \r\n" +
         "Отрицательное значение задает оставшуюся толщину материала после фрезерования паза, \r\n" +
         "а глубина будет вычислена для каждой детали, как Толщина детали - |Глубина|.",
@@ -87,27 +94,27 @@ namespace AVC
 
     public static readonly string[] BacklashTip = {
       "Backlash in the depth of the slot.\r\n" +
-        "If you specify a value greater than 0, the cut slot will be deepened. \r\n" +
+        "If you specify a value greater than 0, the tenon will be shortened. \r\n" +
         "This will allow for a tight fit of the parts, even if there are chips left in the slot.\r\n" +
         "The program does not sum Backlash and Gap, but the larger value is chosen.\r\n" +
         "Default 0.",
       "Люфт по глубине паза.\r\n" +
-        "Если вы укажете значение больше 0, то вырезаемый паз будет увеличен в глубину. \r\n" +
+        "Если вы укажете значение больше 0, то шип будет укорочен. \r\n" +
         "Это позволит плотно стыковать детали, даже если в пазу остались опилки.\r\n" +
         "Программа не суммирует Люфт и Зазор, а выбирается большее значение.\r\n" +
         "По умолчанию 0.",
       "Gioco nella profondità della fessura.\r\n" +
-        "Se si specifica un valore maggiore di 0, la fessura di taglio verrà approfondita. \r\n" +
+        "Se si specifica un valore maggiore di 0, il tenone verrà accorciato. \r\n" +
         "Ciò consentirà un adattamento stretto delle parti, anche se ci sono trucioli rimasti nella fessura.\r\n" +
         "Il programma non somma Gioco e Divario, ma viene scelto il valore maggiore.\r\n" +
         "Predefinito 0.",
       "Luft in der Tiefe des Schlitzes.\r\n" +
-        "Wenn Sie einen Wert größer als 0 angeben, wird der Schnittschlitz vertieft. \r\n" +
+        "Wenn Sie einen Wert größer 0 angeben, wird der Zapfen gekürzt. \r\n" +
         "Dies ermöglicht eine enge Passung der Teile, auch wenn sich Späne im Schlitz befinden.\r\n" +
         "Das Programm summiert nicht Luft und Spiel, sondern wählt den größeren Wert.\r\n" +
         "Standard 0.",
       "槽深度的间隙。\r\n" +
-        "如果你指定一个大于 0 的值，切割槽会加深。\r\n" +
+        "如果指定大于 0 的值，榫头将会缩短。\r\n" +
         "这将允许零件紧密配合，即使槽中有残留的碎屑。\r\n" +
         "程序不会将深度差距和各个方向的差距相加，而是选择一个较大的值。\r\n" +
         "默认为 0。"};
@@ -120,21 +127,29 @@ namespace AVC
       "最大步长"};
 
     public static readonly string[] MaxStepTip = {
-      "The program always divides the joint into equal parts. \r\n" +
-        "You can't set the exact tenon length - it is calculated individually for each joint.\r\n" +
-        "But the length of each slot and stop should not exceed this value.",
-      "Программа всегда делит стык на равные части. \r\n" +
-        "Вы не можете задать точную длину шипа - она вычисляется индивидуально для каждого стыка.\r\n" +
-        "Но длина каждого шипа и упора не должна превышать это значение.",
-      "Il programma divide sempre il giunto in parti uguali. \r\n" +
-        "Non è possibile impostare la lunghezza esatta del tenone: viene calcolata individualmente per ogni giunzione.\r\n" +
-        "Ma la lunghezza di ogni picco e stop non deve superare questo valore.",
-      "Das Programm teilt die Fuge immer in gleiche Teile. \r\n" +
-        "Die exakte Zapfenlänge kann man nicht einstellen - sie wird für jedes Gelenk individuell berechnet.\r\n" +
-        "Aber die Länge jeder Spitze und jedes Stopps sollte diesen Wert nicht überschreiten.",
-      "程序总是将榫头分成相等的尺寸。 \r\n" +
-        "您无法设置确切的榫齿尺寸 - 因为它是根据板长度独立计算的。\r\n" +
-        "每个榫齿的尺寸不会超过此值。"};
+      "Maximum allowable length of the gap (stop) between the tabs (tenons). \r\n" +
+        "If the tab length is not specified, the tab will be exactly the same.\r\n" +
+        "The entire joint (excluding the end stops) will be divided into equal steps.\r\n" +
+        "If the joint is shorter than this value, one tab will be made for the entire joint, \r\n" +
+        "ignoring the tab length setting.",
+      "Максимально допустимая длина пробела (упора) между шипами. \r\n" +
+        "Если не задана длина шипа, то шип буде точно такой же.\r\n" +
+        "Весь стык (за исключением крайних упоров) будет разделен на равные шаги.\r\n" +
+        "Если стык короче этого значения, то будет сделан один шип во весь стык, игнорируя настройку длины шипа.",
+      "Lunghezza massima consentita dello spazio (fermo) tra i tenoni. \r\n" +
+        "Se non viene specificata la lunghezza del tenone, il tenone sarà esattamente lo stesso.\r\n" +
+        "L'intera giunzione (esclusi i fermi finali) sarà divisa in passi uguali.\r\n" +
+        "Se la giunzione è più corta di questo valore, verrà realizzato un solo tenone per l'intera giunzione, \r\n" +
+        "ignorando l'impostazione della lunghezza del tenone.",
+      "Maximal zulässige Länge des Spalts (Anschlags) zwischen den Zapfen. \r\n" +
+        "Wenn keine Zapfenlänge angegeben ist, ist der Zapfen genau gleich.\r\n" +
+        "Die gesamte Verbindung (außer den Endanschlägen) wird in gleiche Schritte unterteilt.\r\n" +
+        "Wenn die Verbindung kürzer als dieser Wert ist, wird ein Zapfen für die gesamte Verbindung hergestellt, \r\n" +
+        "wobei die Zapfenlängeneinstellung ignoriert wird.",
+      "榫头之间允许的最大间隙（止动）。\r\n" +
+        "如果未指定榫头长度，则榫头长度相同。\r\n" +
+        "整个接头（不包括末端止动）将被分成相等的步长。\r\n" +
+        "如果接头短于此值，则将制作一个榫头以覆盖整个接头，忽略榫头长度设置。"};
 
     public static readonly string[] MinStepNum = {
       "Minimum number of steps",
@@ -144,11 +159,80 @@ namespace AVC
       "最小步长"};
 
     public static readonly string[] MinStepNumTip = {
-      "Prevent the program from taking too few steps on short joint.",
-      "Запретить программе делать слишком мало шагов на коротких стыках.",
-      "Impedire al programma di fare pochi passi sulle cuciture corte.",
-      "Verhindern Sie, dass das Programm bei kurzen Nähten zu wenige Schritte macht.",
-      "防止接头上齿数偏少。"};
+      "Prevent the program from taking too few steps on short joints.\r\n" +
+        "Both tabs and gaps between them (stops) are counted. End stops are not counted.\r\n" +
+        "1 step will mean a solid tab for the entire joint.",
+      "Запретить программе делать слишком мало шагов на коротких стыках.\r\n" +
+        "Считаются и шипы, и пробелы между ними (упоры). Упоры по краям не считаются.\r\n" +
+        "1 шаг будет означать цельный шип во весь стык.",
+      "Impedire al programma di fare pochi passi sulle giunzioni corte.\r\n" +
+        "Sia i tenoni che gli spazi tra di essi (fermi) sono conteggiati. I fermi finali non sono conteggiati.\r\n" +
+        "1 passo significherà un tenone solido per l'intera giunzione.",
+      "Verhindern Sie, dass das Programm bei kurzen Verbindungen zu wenige Schritte macht.\r\n" +
+        "Sowohl die Zapfen als auch die Lücken zwischen ihnen (Anschläge) werden gezählt. \r\n" +
+        "Endanschläge werden nicht gezählt.\r\n" +
+        "1 Schritt bedeutet einen durchgehenden Zapfen für die gesamte Verbindung.",
+      "防止程序在短接头上执行太少的步骤。\r\n" +
+        "计算榫头和它们之间的间隙（止动）。末端止动不计算在内。\r\n" +
+        "1 步将意味着整个接头的实心榫头。" };
+
+    public static readonly string[] TabLength = {
+      "Tab length",
+      "Длина шипа",
+      "Lunghezza del tenone",
+      "Zapfenlänge",
+      "榫头长度"};
+
+    public static readonly string[] TabLengthTip = {
+      "Fixed tab length. The slot will be larger by the gap. \r\n" +
+        "If set to 0, the tab will be equal to the space (stop) and will vary on different joints, \r\n" +
+        "but not longer than the maximum step.",
+      "Фиксированная длина шипа. Паз будет больше на зазор. \r\n" +
+        "Если назначить 0, то шип будет равен пробелу (упору) и будет меняться на разных стыках, \r\n" +
+        "но не длиннее максимального шага.",
+      "Lunghezza fissa del tenone. La fessura sarà più grande dello spazio. \r\n" +
+        "Se impostato su 0, il tenone sarà uguale allo spazio (fermo) e varierà su giunzioni diverse, \r\n" +
+        "ma non più lungo del passo massimo.",
+      "Feste Zapfenlänge. Der Schlitz wird um den Spalt größer. \r\n" +
+        "Wenn auf 0 gesetzt, ist der Zapfen gleich dem Spalt (Anschlag) und variiert bei verschiedenen Verbindungen, \r\n" +
+        "aber nicht länger als der maximale Schritt.",
+      "固定榫头长度。槽将因间隙而变大。\r\n" +
+        "如果设置为 0，榫头将等于间隙（止动），并在不同的接头上变化，\r\n" +
+        "但不超过最大步长。"};
+
+    public static readonly string[] Start = {
+      "Start pad",
+      "Упоры по краям",
+      "Fermi iniziali",
+      "Anfangsanschläge",
+      "起始垫片" };
+
+    public static readonly string[] StartTip = {
+      "Indent a fixed distance from both ends of the joint. \r\n" +
+        "If set to more than 0, there will be a stop at the edge of all joints, not a tab/slot connection. \r\n" +
+        "And this stop will not be the same size as the other spaces between the tabs. \r\n" +
+        "The indent is made even if the connection starts with a space, \r\n" +
+        "that is, the first space is simply increased to the tab.",
+      "Отступить от обоих концов стыка фиксированное расстояние. \r\n" +
+        "Если назначить больше 0, то на всех стыках с краю будет упор, а не соединение шип/паз. \r\n" +
+        "И этот упор будет не такого размера как остальные пробелы между шипами. \r\n" +
+        "Отступ делается даже если соединение начинается с пробела, \r\n" +
+        "то есть просто увеличивается первый пробел до шипа.",
+      "Indentare una distanza fissa da entrambe le estremità della giunzione. \r\n" +
+        "Se impostato su più di 0, ci sarà un fermo al bordo di tutte le giunzioni, non una connessione maschio/femmina. \r\n" +
+        "E questo fermo non sarà della stessa dimensione degli altri spazi tra i tenoni. \r\n" +
+        "L'indentazione viene eseguita anche se la connessione inizia con uno spazio, \r\n" +
+        "cioè il primo spazio viene semplicemente aumentato fino al tenone.",
+      "Einen festen Abstand von beiden Enden der Verbindung einrücken. \r\n" +
+        "Wenn auf mehr als 0 gesetzt, gibt es einen Anschlag am Rand aller Verbindungen, keine Zapfen/Nut-Verbindung. \r\n" +
+        "Und dieser Anschlag wird nicht die gleiche Größe wie die anderen Lücken zwischen den Zapfen haben. \r\n" +
+        "Der Einzug wird auch gemacht, wenn die Verbindung mit einer Lücke beginnt, \r\n" +
+        "das heißt, die erste Lücke wird einfach auf den Zapfen vergrößert.",
+      "从接头的两端缩进固定距离。\r\n" +
+        "如果设置为大于 0，则在所有接头的边缘都会有一个止动，而不是榫/槽连接。\r\n" +
+        "并且这个止动的尺寸不会与榫头之间的其他间隙相同。\r\n" +
+        "即使连接从间隙开始，也会进行缩进，\r\n" +
+        "即第一个间隙只是增加到榫头。"};
 
     public static readonly string[] MinArea = {
       "Minimum area",
@@ -177,20 +261,15 @@ namespace AVC
 
     public static readonly string[] StartFromTabTip = {
       "The first step is to make a tab and slot. \r\n" +
-        "If the option is disabled, then the stop pad remains at the first step. \r\n" +
-        "The setting is meaningless if the joint is divided into an even number of steps.",
+        "If the option is disabled, then the stop pad remains at the first step.",
       "На первом шаге делать шип и паз. \r\n" +
-        "Если опция выключена, то на первом шаге остается упорная площадка. \r\n" +
-        "Настройка не имеет смысла, если стык разделен на четное число шагов.",
+        "Если опция выключена, то на первом шаге остается упорная площадка (пробел).",
       "Il primo passo è creare un maschio e femmina. \r\n" +
-        "Se l'opzione è disabilitata, il pad di arresto rimane al primo passaggio. \r\n" +
-        "L'impostazione non ha senso se la cucitura è divisa in un numero pari di passaggi.",
+        "Se l'opzione è disabilitata, il pad di arresto rimane al primo passaggio.",
       "Der erste Schritt besteht darin, eine Nut und Feder zu machen. \r\n" +
-        "Wenn die Option deaktiviert ist, bleibt das Stopp-Pad beim ersten Schritt. \r\n" +
-        "Die Einstellung ist ohne Bedeutung, wenn die Naht in eine gerade Anzahl von Schritten unterteilt ist.",
+        "Wenn die Option deaktiviert ist, bleibt das Stopp-Pad beim ersten Schritt.",
       "第一步是盖板制作榫槽。 \r\n" +
-        "如果该选项被禁用，则短板第一步是制作榫槽。 \r\n" +
-        "如果榫齿数量被指定为偶数，此设置没有意义。"};
+        "如果该选项被禁用，则短板第一步是制作榫槽。"};
 
     public static readonly string[] Odd = {
       "Odd number of steps",
@@ -205,7 +284,7 @@ namespace AVC
         "And if 'Start with tab' is set, then tenons and slot will be made at both ends.",
       "Всегда делить стык на нечетное число шагов. \r\n" +
         "Тогда с обоих концов стыка останутся две упорные площадки. \r\n" +
-        "А если настроено 'Начинать с шипа', то с обоих концов будут сделаны шипы и пазы.",
+        "А если настроено 'Начинать с шипа', то с обоих концов будет сделаны шипы и пазы.",
       "Dividi sempre la cucitura in un numero dispari di passaggi. \r\n" +
         "Quindi due cuscinetti di spinta rimarranno su entrambe le estremità del giunto. \r\n" +
         "E se è impostato 'Inizia con tenone', i tenoni e le scanalature verranno eseguiti su entrambe le estremità.",
@@ -215,7 +294,5 @@ namespace AVC
       "始终将榫齿分成奇数个。 \r\n" +
         "两个榫齿将保留在接头的两端。 \r\n" +
         "如果设置了“从盖板开始”，则在盖板和短板之间切换凹槽和榫齿的顺序。"};
-
-
   }
 }

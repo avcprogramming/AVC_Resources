@@ -39,13 +39,19 @@ namespace AVC
       "Fehler! Objekte können nicht ausgewählt werden",
       "错误！ 无法选择对象"};
 
-    public static readonly string[] FindSelectedErr = {
-      "Error! Object {0} not found in Drawing Tree",
-      "Ошибка! В дереве чертежа не найден объект {0}",
-      "Errore! Oggetto {0} non trovato nell'albero del disegno",
-      "Fehler! Objekt {0} wurde im Zeichnungsbaum nicht gefunden",
-      "错误！ 在绘图树中找不到对象 {0}"};
+    //public static readonly string[] FindSelectedErr = {
+    //  "Error! Object {0} not found in Drawing Tree",
+    //  "Ошибка! В дереве чертежа не найден объект {0}",
+    //  "Errore! Oggetto {0} non trovato nell'albero del disegno",
+    //  "Fehler! Objekt {0} wurde im Zeichnungsbaum nicht gefunden",
+    //  "错误！ 在绘图树中找不到对象 {0}"};
 
+    public static readonly string[] FindSelectedErrCount = {
+      "Error! Objects not found in Drawing Tree - {0}",
+      "Ошибка! В дереве чертежа не найдено объектов - {0}",
+      "Errore! Oggetti non trovati nell'albero del disegno - {0}",
+      "Fehler! Objekte wurden im Zeichnungsbaum nicht gefunden - {0}",
+      "错误！ 在绘图树中找不到对象 - {0}"};
 
     //==========================================================================================================================================================================
     public static readonly string[] StyleNameTip = {

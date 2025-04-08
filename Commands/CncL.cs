@@ -1481,7 +1481,7 @@ namespace AVC
       "Finestra",
       "Fenster",
       "视窗" };
-    public static readonly string[] Depth = {
+    public static readonly string[] DefaultDepth = {
       "Default depth",
       "Глубина",
       "Profondità",

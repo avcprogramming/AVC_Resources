@@ -127,8 +127,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Common.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Common.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Common.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -484,9 +484,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\KindPalette32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Kit120.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Kit16.png" />
@@ -897,9 +894,6 @@
     <None Include="Resources\palette16.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Kit.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ASimp80.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1268,6 +1262,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SolidMetricMirror32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AVC16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AVC.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

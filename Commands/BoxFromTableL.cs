@@ -112,6 +112,12 @@ namespace AVC
       "Impossibile riconoscere il colore {0}",
       "Farbe {0} konnte nicht erkannt werden",
       "無法辨識顏色{0}"};
+    public static readonly string[] DimScaleErr = {
+      "Failed to set dimension scale {0}",
+      "Не удалось настроить масштаб размера {0}",
+      "Impossibile impostare la scala delle dimensioni {0}",
+      "Größenskala konnte nicht festgelegt werden {0}",
+      "无法设置尺寸比例 {0}"};
     public static readonly string[] PLineConversionErr = {
       "It was not possible to construct a polyline from the given points",
       "Не удалось построить полилинию по заданным точкам",
