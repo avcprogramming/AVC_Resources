@@ -197,6 +197,53 @@ namespace AVC
       "Impossibile assegnare il materiale al solido {0}",
       "Das Material konnte dem Volumenkörper {0} nicht zugewiesen werden.",
       "无法将材料分配给实体 {0}" };
-
+    public static readonly string[] SeparateErr = {
+      "Failed to split multisolids into separate bodies. Error: {0}",
+      "Не удалось разделить мультисолид на отдельные тела. Ошибка: {0}",
+      "Impossibile dividere i multisolidi in corpi separati. Errore: {0}",
+      "Multisolids konnten nicht in separate Körper aufgeteilt werden. Fehler: {0}",
+      "无法将多实体分割成单独的部分。错误：{0}" };
+    public static readonly string[] SubErr = {
+      "Failed to perform subtraction. Error: {0}",
+      "Не удалось выполнить вычитание. Ошибка: {0}",
+      "Impossibile eseguire la sottrazione. Errore: {0}",
+      "Subtraktion konnte nicht durchgeführt werden. Fehler: {0}",
+      "无法执行减法。错误：{0}"    };
+    public static readonly string[] IntErr = {
+      "Failed to perform intersection. Error: {0}",
+      "Не удалось выполнить пересечение. Ошибка: {0}",
+      "Impossibile eseguire l'intersezione. Errore: {0}",
+      "Schnitt konnte nicht durchgeführt werden. Fehler: {0}",
+      "无法执行交集。错误：{0}"    };
+    public static readonly string[] UnionErr = {
+      "Failed to perform union. Error: {0}",
+      "Не удалось выполнить объединение. Ошибка: {0}",
+      "Impossibile eseguire l'unione. Errore: {0}",
+      "Vereinigung konnte nicht durchgeführt werden. Fehler: {0}",
+      "无法执行联合操作。错误：{0}"    };
+    public static readonly string[] OffsetBodyErr = {
+      "Failed to expand solid. Error: {0}",
+      "Не удалось расширить солид. Ошибка: {0}",
+      "Impossibile espandere il solido. Errore: {0}",
+      "Die Volumenkörpererweiterung ist fehlgeschlagen. Fehler: {0}",
+      "未能扩展实体。。错误：{0}"    };
+    public static readonly string[] EmptySolidErr = {
+      "Failed to check for an empty object. {0}",
+      "Сбой при проверке на объект-пустышку. {0}",
+      "Errore durante il controllo di un solido vuoto. {0}",
+      "Fehler bei der Überprüfung auf einen leeren Volumenkörper. {0}",
+      "检查空实体失败。错误：{0}"  };
+    public static readonly string[] SizeErr = {
+      "Failed to calculate the size of the object. {0}",
+      "Сбой при вычислении размера объекта. {0}",
+      "Errore durante il calcolo delle dimensioni dell'oggetto. {0}",
+      "Fehler bei der Berechnung der Objektgröße. {0}",
+      "计算对象大小失败。错误：{0}" };
+    public static readonly string[] CheckInterferenceErr = {
+      "Error checking solid intersections. {0}",
+      "Сбой при проверке пересечений солидов. {0}",
+      "Errore durante il controllo delle intersezioni continue. {0}",
+      "Fehler beim Prüfen von festen Schnittpunkten. {0}",
+      "检查实体交叉点时出错。错误：{0}" };
   }
 }

@@ -908,6 +908,21 @@ namespace AVC
         "但是您可以切换程序以与脸部对齐。\r\n" +
         "在固定步骤模式下，此选项决定程序将尝试使哪一部分对称。\r\n" +
         "该选项仅对连接偏移零件有意义。" };
-
+    public static readonly string[] LayerTip = {
+      "The name of the layer where the block will be inserted. \r\n" +
+        "If the layer is not specified, the Fixture layer will be used. \r\n" +
+        "If the layer does not exist, it will be created.",
+      "Имя слоя, куда будет вставлен блок. \r\n " +
+        "Если слой не указан, то будет использован слой Крепеж \r\n" +
+        "Если слоя нет, он будет создан.",
+      "Il nome del layer in cui verrà inserito il blocco. \r\n" +
+        "Se il layer non è specificato, verrà utilizzato il layer Fissaggio. \r\n" +
+        "Se il layer non esiste, verrà creato.",
+      "Der Name der Ebene, in die der Block eingefügt wird. \r\n" +
+        "Wenn die Ebene nicht angegeben ist, wird die Ebene Befestigungen verwendet. \r\n" +
+        "Wenn die Ebene nicht vorhanden ist, wird sie erstellt.",
+      "将块插入的图层的名称。 \r\n" +
+        "如果未指定图层，则将使用夹具图层。 \r\n" +
+        "如果图层不存在，则会创建它。" };
   }
 }

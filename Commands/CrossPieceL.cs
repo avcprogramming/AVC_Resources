@@ -29,6 +29,12 @@ namespace AVC
       "  I dettagli non si intersecano",
       "  Details überschneiden sich nicht",
       "  实体不交叉"};
+    public static readonly string[] SliceErr = {
+      "  Failed to slice solid",
+      "  Не удалось разрезать солид",
+      "  Impossibile tagliare il solido",
+      "  3D-Solid konnte nicht geschnitten werden",
+      "  无法切片 3d 实体"};
     public static readonly string[] Need2 = {
       "  Need 2 crossed solids or more",
       "  Программе нужны 2 пересекающихся твердых тела (или больше)",

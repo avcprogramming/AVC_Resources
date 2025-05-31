@@ -1816,6 +1816,28 @@ namespace AVC
          "你可以写任何名字。\r\n" +
          "程序将在绘图或模板中查找图层。\r\n" +
          "如果没有找到，就会创建一个新层。" };
+    public static readonly string[] DwgMaterialTip = {
+        "Material for new drawing objects.\r\n" +
+            "You can write any name.\r\n" +
+            "The program will find the material in the drawing or template.\r\n" +
+            "And if it doesn't find it, a new material will be created.",
+        "Материал для новых объектов чертежа.\r\n" +
+            "Вы можете написать любое название.\r\n" +
+            "Программа найдет материал в чертеже или в шаблоне.\r\n" +
+            "А если не найдет - будет создан новый материал.",
+        "Materiale per i nuovi oggetti di disegno.\r\n" +
+            "Puoi scrivere qualsiasi nome.\r\n" +
+            "Il programma troverà il materiale nel disegno o nel modello.\r\n" +
+            "E se non lo trova, verrà creato un nuovo materiale.",
+        "Material für neue Zeichnungsobjekte.\r\n" +
+            "Sie können einen beliebigen Namen schreiben.\r\n" +
+            "Das Programm findet das Material in der Zeichnung oder Vorlage.\r\n" +
+            "Und wenn es es nicht findet, wird ein neues Material erstellt.",
+        "新绘图对象的材料。\r\n" +
+            "您可以写任何名称。\r\n" +
+            "程序会在图纸或模板中找到材料。\r\n" +
+            "如果没有找到，将创建一个新材料。"
+    };
     public static readonly string[] DwgUnits = {
       "Dwg Units",
       "Единицы Dwg",
@@ -2378,6 +2400,18 @@ namespace AVC
         "und bei Teilen ist es wünschenswert, die Richtung dieser Textur anzugeben.",
       "该材料在某个方向（通常沿着板材）具有明显的表面图案（颗粒/纹理），\r\n" +
         "对于零件来说，需要指示该纹理的方向。"};
+    public static readonly string[] MaterialSweep = {
+      "Material for bending",
+      "Материал для гибки",
+      "Materiale per piegatura",
+      "Material für Biegung",
+      "材料-弯曲" };
+    public static readonly string[] MaterialSweepTip = {
+      "All parts from this material will be marked for measurement as Sweep.",
+      "Все детали из этого материала будут помечены для обмера как Развертка.",
+      "Tutti i pezzi realizzati con questo materiale saranno contrassegnati per la misurazione come Scansione.",
+      "Alle Teile aus diesem Material werden für die Messung als Sweep markiert.",
+      "所有使用此材料制成的零件都将标记为展开测量。" };
     public static readonly string[] MaterialLength = {
       "Material Length",
       "Материал - Длина",
@@ -3045,6 +3079,19 @@ namespace AVC
       "Lettera",
       "Buchstabe",
       "信" };
+    public static readonly string[] OuterId = {
+      "ID",
+      "Код",
+      "ID",
+      "ID",
+      "外部编号" };
+    public static readonly string[] OuterIdTip = {
+      "Part ID in external database, IMOS or Microvellum.",
+      "Идентификатор детали во внешней базе данных, в IMOS или Microvellum.",
+      "ID parte in database esterno, IMOS o Microvellum",
+      "Teile-ID in externer Datenbank, IMOS oder Microvellum",
+      "外部数据库、IMOS 或 Microvellum 中的零件 ID" };
+
 
     // ============================================================================================================
     // Solid Face  ================================================================================================

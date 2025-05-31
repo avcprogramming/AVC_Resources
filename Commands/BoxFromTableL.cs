@@ -211,6 +211,7 @@ namespace AVC
         "  ·Owner - the name of the group or new assembly block for this part.\r\n" +
         "  ·Layer, Color, Material, Texture - solid properties.\r\n" +
         "  ·Name, Kind, Info - additional properties of the solid.\r\n" +
+        "  ·Commands - a list of commands that need to be called for this solid.\r\n" +
         "\r\n" +
         "Instead of creating a solid, you can insert a block, text, or 2D curve into the drawing. Then the columns change their purpose. \r\n" +
         "See the documentation for details.",
@@ -222,6 +223,7 @@ namespace AVC
         " ·Owner - имя группы или нового блока-сборки для данной детали.\r\n" +
         " ·Layer, Color, Material, Texture - свойства солида.\r\n" +
         " ·Name, Kind, Info - дополнительные свойства солида.\r\n" +
+        " ·Commands - список команд, которые надо вызвать для этого солида.\r\n" +
         "\r\n" +
         "Вместо создания солида можно вставить в чертеж блок, текст, 2D фигуру. Тогда столбцы меняют свое назначение.\r\n" +
         "Подробности смотрите в документации.",
@@ -233,6 +235,7 @@ namespace AVC
         "  ·Owner: il nome del gruppo o del nuovo blocco di assieme per questa parte.\r\n" +
         "  ·Layer, Color, Material, Texture: proprietà del solido.\r\n" +
         "  ·Name, Kind, Info: proprietà aggiuntive del solido.\r\n" +
+        "  ·Comandi: un elenco di comandi che devono essere chiamati per questo solido.\r\n" +
         "\r\n" +
         "Invece di creare un solido, puoi inserire un blocco, un testo o una forma 2D nel disegno. Quindi le colonne cambiano il loro scopo. \r\n" +
         "Guarda la documentazione per dettagli.",
@@ -244,6 +247,7 @@ namespace AVC
         "  ·Owner – der Name der Gruppe oder des neuen Baugruppenblocks für dieses Teil.\r\n" +
         "  ·Layer, Color, Material, Texture – feste Eigenschaften.\r\n" +
         "  ·Name, Kind, Info – zusätzliche Eigenschaften des Volumenkörpers.\r\n" +
+        "  ·Commands - eine Liste der Befehle, die für diesen Solid aufgerufen werden müssen.\r\n" +
         "\r\n" +
         "Anstatt einen Volumenkörper zu erstellen, können Sie einen Block, Text oder eine 2D-Form in die Zeichnung einfügen. \r\n" +
         "Dann ändern die Säulen ihren Zweck. Einzelheiten finden Sie in der Dokumentation.",
@@ -255,6 +259,7 @@ namespace AVC
         "  ·Owner - 该零件的组或新装配块的名称。\r\n" +
         "  ·Layer, Color, Material, Texture - 实体属性。\r\n" +
         "  ·Name, Kind, Info - 实体的附加属性。\r\n" +
+        "  ·Commands - 需要为此实体调用的命令列表。\r\n"+
         "\r\n" +
         "您可以将块、文本或 2D 形状插入到绘图中，而不是创建实体。然后专栏改变了它们的目的。 有关详细信息，请参阅文档。" };
     public static readonly string[] Drill = {
@@ -413,5 +418,18 @@ namespace AVC
       "Il livello su cui verranno inseriti i blocchi delle pareti nel comando BoxToWall. Se non specificato, viene utilizzato il livello corrente.",
       "Die Ebene, auf der die Wandblöcke im Befehl BoxToWall eingefügt werden. Wenn nicht angegeben, wird die aktuelle Ebene verwendet.",
       "在 BoxToWall 命令中插入墙块的图层。如果未指定，则使用当前图层。" };
+    public static readonly string[] UnknownCommand = {
+      "Unknown command '{0}'",
+      "Неизвестная команда '{0}'",
+      "Comando sconosciuto '{0}'",
+      "Unbekannter Befehl „{0}“",
+      "未知命令“{0}”" };
+    public static readonly string[] NotImplementedCommand = {
+      "The command {0} is not available for calling yet. However, you can request that the program be modified to call this command.",
+      "Команда {0} пока не доступна для вызова. Но вы можете запросить доработку программы для вызова этой команды.",
+      "Il comando {0} non è ancora disponibile per essere richiamato. Tuttavia, è possibile richiedere che il programma venga modificato per richiamare questo comando.",
+      "Der Befehl {0} kann noch nicht aufgerufen werden. Sie können jedoch eine Programmänderung anfordern, um diesen Befehl aufrufen zu können.",
+      "命令 {0} 尚不可调用。但是，您可以请求修改程序以调用此命令。" };
+
   }
 }

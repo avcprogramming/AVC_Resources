@@ -83,6 +83,7 @@
     <Compile Include="Commands\RemHolesL.cs" />
     <Compile Include="Commands\SelectSameL.cs" />
     <Compile Include="Commands\SmartLeaderL.cs" />
+    <Compile Include="Commands\SolidSubL.cs" />
     <Compile Include="Commands\StyleParentL.cs" />
     <Compile Include="Commands\SumLenL.cs" />
     <Compile Include="Commands\TabSlotL.cs" />
@@ -415,12 +416,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Folder32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GAP16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GAP32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group32.png" />
@@ -942,9 +937,6 @@
     <None Include="Resources\DimOverall80.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Drill80.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\DrillTable80.png" />
   </ItemGroup>
   <ItemGroup>
@@ -976,9 +968,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Kit80.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lay80.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mark80.png" />
@@ -1076,9 +1065,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cancel16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\OK16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Settings32.png" />
@@ -1268,6 +1254,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AVC.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gap16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gap32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidInt16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidInt32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidSub16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidSub32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidUnion16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidUnion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidSub80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drill80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lay80.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

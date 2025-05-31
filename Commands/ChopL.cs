@@ -632,18 +632,22 @@ namespace AVC
       "切片层"};
     public static readonly string[] PieceLayerTip = {
       "You can enter layer name for piece or rib. \r\n" +
+        "When assigning a layer, all properties will be reset to ByLayer, and the face coloring will be cleared. \r\n" +
         "Layer will created if it not exists.",
       "Слой, который будет назначен долькам/ребрам. \r\n" +
         "Можно оставить поле пустым. \r\n" +
         "Программа сама создаст слой при необходимости.",
       "Il livello da assegnare alle fette / costole.\r\n" +
+        "Quando si assegna un layer, tutte le proprietà verranno reimpostate su ByLayer e la colorazione delle facce verrà cancellata.\r\n"+
         "Puoi lasciare il campo vuoto.\r\n" +
         "Se necessario, il programma creerà il livello stesso.",
       "Die Schicht, die den Scheiben/Rippen zugewiesen werden soll.\r\n" +
+        "Beim Zuweisen einer Ebene werden alle Eigenschaften auf „Nach Ebene“ zurückgesetzt und die Flächenfärbung gelöscht. \r\n" +
         "Sie können das Feld leer lassen.\r\n" +
-         "Das Programm erstellt die Ebene bei Bedarf selbst.",
+        "Das Programm erstellt die Ebene bei Bedarf selbst.",
       "要分配给切片/肋骨的层。 您可以将该字段留空。\r\n" +
-         "如有必要，程序将自行创建图层。"};
+        "当指定图层时，所有属性将重置为ByLayer，并且面颜色将被清除。\r\n" +
+        "如有必要，程序将自行创建图层。"};
     public static readonly string[] Specify = {
       "Specify",
       "Указать",
@@ -749,18 +753,23 @@ namespace AVC
       "残余层"};
     public static readonly string[] StubLayerTip = {
       "You can enter layer name for stub-solids. \r\n" +
+        "When assigning a layer, all properties will be reset to ByLayer, and the face coloring will be cleared. \r\n" +
         "Leave the field blank so that the clippings remain in the original layer.\r\n" +
         "Layer will created if it not exists.",
       "Можно назначить отдельный слой обрезкам.\r\n" +
+        "При назначении слоя все свойства будут сброшены на ПоСлою, раскраска граней очищена.\r\n" +
         "Оставьте поле пустым, чтоб обрезки остались в исходном слое.\r\n" +
         "Программа сама создаст слой при необходимости.",
       "È possibile assegnare un livello separato agli scarti.\r\n" +
+        "Quando si assegna un layer, tutte le proprietà verranno reimpostate su ByLayer e la colorazione delle facce verrà cancellata. \r\n" +
         "Lascia il campo vuoto per mantenere i ritagli nel livello originale.\r\n" +
         "Se necessario, il programma creerà il livello stesso.",
       "Sie können den Ausschnitten eine separate Ebene zuweisen. \r\n" +
+        "Beim Zuweisen einer Ebene werden alle Eigenschaften auf „Nach Ebene“ zurückgesetzt und die Flächenfärbung gelöscht. \r\n" +
         "Lassen Sie das Feld leer, damit die Ausschnitte in der ursprünglichen Ebene verbleiben.\r\n" +
         "Das Programm erstellt die Ebene bei Bedarf selbst.",
       "您可以为残余分配一个单独的图层。将该字段留空，以便残余实体保留在原图层中。\r\n" +
+        "当指定图层时，所有属性将重置为ByLayer，并且面颜色将被清除。\r\n" +
         "如果层不存在，将创建该层。"};
     public static readonly string[] Gap = {
       "Gap",

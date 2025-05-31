@@ -1,7 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
 
-// Ignore Spelling: Dwg Ortho Poly Simp Snn Unhide Det CNC
+// Ignore Spelling: Dwg Ortho Poly Simp Snn Unhide Det CNC Prg
 
 namespace AVC
 {
@@ -385,22 +385,22 @@ namespace AVC
       "Isolieren Sie ausgewählte Objekte zusammen mit den zuvor ausgeblendeten.",
       "将选定对象与之前隐藏的对象隔离开来。"};
     public static readonly string[] GapTip = {
-      "Subtraction of solids with a gap and without removing the subtracted.",
-      "Вычитание твердых тел с зазором и без удаления вычитаемого." ,
-      "Sottrazione di solidi con uno spazio vuoto e senza rimuovere il sottratto.",
-      "Subtraktion von Volumenkörpers mit einer Lücke und ohne Entfernen des Subtrahierten.",
-      "减去有间隙的实体，但不删除减去的部分。"};
+      "Subtraction of solids with a gap.",
+      "Вычитание твердых тел с зазором." ,
+      "Sottrazione di solidi con uno spazio vuoto.",
+      "Subtraktion von Volumenkörpers mit einer Lücke.",
+      "减去有间隙的实体。"};
     public static readonly string[] Kit3dTip = {
       "Software suite for 3d modeling and utilities to speed up work. " +
-        "This collection does NOT include work with 2d contours and tables",
-      "Комплект программ для 3d-моделирования и утилиты для ускорения работы. " +
-        "В это сборник НЕ входит работа с контурами 2d и таблицами" ,
-      "Suite software per modellazione 3d e utilità per velocizzare il lavoro. " +
+        "This collection does NOT include work with 2D contours and tables",
+      "Комплект программ для 3D-моделирования и утилиты для ускорения работы. " +
+        "В это сборник НЕ входит работа с контурами 2D и таблицами" ,
+      "Suite software per modellazione 3D e utilità per velocizzare il lavoro. " +
         "Questa raccolta NON include il lavoro con contorni 2D e tabelle",
       "Software-Suite für 3D-Modellierung und Dienstprogramme zur Beschleunigung der Arbeit. " +
         "Diese Sammlung enthält KEINE Arbeiten mit 2D-Konturen und -Tabellen",
       "用于 3D 建模和实用程序的软件套件，可加快工作速度。 " +
-         "这个集合不包括使用 2d 轮廓和表格的工作"};
+         "这个集合不包括使用 2D 轮廓和表格的工作"};
     public static readonly string[] Kit2dTip = {
       "A set of programs for working with polylines and other curves, contour optimization for CNC and utilities for speeding up work." +
         "This collection does NOT include work with 3d solids, tables, and annotations.",
@@ -719,6 +719,30 @@ namespace AVC
         "Die resultierenden Abmessungen werden an die Befehlszeile ausgegeben.",
       "无论在空间中的位置如何，都可以测量刚体。" +
          "生成的尺寸将输出到命令行。"};
+    public static readonly string[] SolidSubTip = {
+      "Subtraction of solids without a gap, preserving face coloring, preserving the subtrahend.",
+      "Вычитание твердых тел без зазора, сохранение расцветки граней, сохранение вычитаемого.",
+      "Sottrazione di solidi senza spazio, mantenendo la colorazione delle facce, preservando il sottraendo.",
+      "Subtraktion von Volumenkörpern ohne Lücke, Erhaltung der Flächenfärbung, Erhaltung des Subtrahenden.",
+      "无间隙减去实体，保留面着色，保留被减数。"    };
+    public static readonly string[] SolidSubPrgTip = {
+      "Subtraction, intersection, and union of solids. With or without a gap. Preserving material and face coloring. Preserving source objects and the subtrahend.",
+      "Вычитание, пересечение и объединение твердых тел. С зазором или без. Сохранение материала и расцветки граней. Сохранение исходников и вычитаемого.",
+      "Sottrazione, intersezione e unione di solidi. Con o senza spazio. Mantenimento della colorazione delle facce. Conservazione degli oggetti sorgente e del sottraendo.",
+      "Subtraktion, Schnittmenge und Vereinigung von Volumenkörpern. Mit oder ohne Lücke. Erhaltung der Flächenfärbung. Erhaltung der Quelldatenobjekte und des Subtrahenden.",
+      "实体的减法、交集和并集。有间隙或无间隙。保留面部着色。保留源对象和被减数。"    };
+    public static readonly string[] SolidIntTip = {
+      "Intersection of solids, preserving face coloring, preserving the source objects.",
+      "Пересечение твердых тел, сохранение расцветки граней, сохранение исходников.",
+      "Intersezione di solidi, mantenendo la colorazione delle facce, conservando gli oggetti sorgente.",
+      "Schnittmenge von Volumenkörpern, Erhaltung der Flächenfärbung, Erhaltung der Quelldatenobjekte.",
+      "实体的交集，保留面部着色，保留源对象。"    };
+    public static readonly string[] SolidUnionTip = {
+      "Union of solids, preserving face coloring, preserving the source objects.",
+      "Объединение твердых тел, сохранение расцветки граней, сохранение исходников.",
+      "Unione di solidi, mantenendo la colorazione delle facce, conservando gli oggetti sorgente.",
+      "Vereinigung von Volumenkörpern, Erhaltung der Flächenfärbung, Erhaltung der Quelldatenobjekte.",
+      "实体的并集，保留面部着色，保留源对象。"    };
     public static readonly string[] StStTip = {
       "Makes a flat solid rung, that is, makes the side faces orthogonal to the front face.",
       "Делает ступеньку из плоского твердого тела, то есть делает боковые грани ортогональными к лицевой грани." ,

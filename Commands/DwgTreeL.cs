@@ -444,6 +444,23 @@ namespace AVC
       "Quando si espande un ramo di un albero con il pulsante '+', tutti gli altri rami espansi verranno automaticamente compressi.",
       "Wenn Sie einen Baumzweig mit der Schaltfläche „+“ erweitern, werden alle anderen erweiterten Zweige automatisch ausgeblendet.",
       "当使用“+”按钮展开树枝时，所有其他展开的分支将自动折叠。" };
+    public static readonly string[] ExpandBranches = {
+      "Expand branches with selected",
+      "Разворачивать ветви с выбранными",
+      "Espandi i rami",
+      "Zweige erweitern",
+      "展开包含选定对象的分支"    };
+    public static readonly string[] ExpandBranchesTip = {
+      "When selecting objects in the drawing, expand tree branches to show all selected objects. \r\n" +
+          "Disable this option to prevent the tree from changing its view without your input.",
+      "При выборе объектов в чертеже, разворачивать ветви дерева, чтоб показать все выбранные объекты. \r\n" +
+          "Отключите опцию, чтоб дерево не меняло свой вид без вашего участия.",
+      "Quando si selezionano oggetti nel disegno, espandere i rami dell'albero per mostrare tutti gli oggetti selezionati. \r\n" +
+          "Disabilitare questa opzione per impedire che l'albero cambi aspetto senza il tuo intervento.",
+      "Beim Auswählen von Objekten in der Zeichnung die Baumzweige erweitern, um alle ausgewählten Objekte anzuzeigen. \r\n" +
+          "Deaktivieren Sie diese Option, damit der Baum seine Ansicht nicht ohne Ihre Eingabe ändert.",
+      "在图形中选择对象时，展开树分支以显示所有选定的对象。 \r\n" +
+          "禁用此选项可防止树在没有您输入的情况下更改其视图。"    };
     public static string[] LayerFiltersTip = {
       "You can enable this option so that the list of drawing layers is divided into filters and groups, \r\n" +
         "as configured in the layer manager window. \r\n" +

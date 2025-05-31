@@ -143,6 +143,12 @@ namespace AVC
       "Errore durante l'avvio del programma di aggiornamento: {0}",
       "Fehler beim Starten des Updaters: {0}",
       "启动更新程序时出错：{0}" };
+    public static readonly string[] PluginInstalledErr = {
+      "'{0}' plugin is not installed yet.",
+      "Плагин '{0}' еще не установлен.",
+      "Il plugin '{0}' non è ancora installato.",
+      "Das Plugin '{0}' ist noch nicht installiert.",
+      "插件 '{0}' 尚未安装。" };
 
     // ====================================== Updater Dialog Box ================================================
     public static readonly string[] UpdaterTip = {

@@ -213,6 +213,13 @@ namespace AVC
       "Ich kann keine Nachricht an den Programmentwickler senden." ,
       "无法向程序员发送消息。"};
     public static readonly string[]
+    ParseLengthErr = {
+      "The string cannot be recognized as a size",
+      "Строку не получается распознать как размер",
+      "La stringa non può essere riconosciuta come una dimensione",
+      "Die Zeichenfolge kann nicht als Größe erkannt werden",
+      "字符串无法识别为大小" };
+    public static readonly string[]
     CommandCancel = {
       "\r\n  Command canceled",
       "\r\n  Команда отменена",
@@ -247,6 +254,12 @@ namespace AVC
       "Niente è riuscito",
       "Nichts war erfolgreich",
       "没有成功" };
+    public static readonly string[] Process = {
+      "Processing",
+      "Обработка",
+      "Elaborazione",
+      "Verarbeitung",
+      "加工"};
     public static readonly string[]
     ProcessedParts = {
       "  Processed {0} parts in {1}s",
@@ -296,5 +309,6 @@ namespace AVC
       "Linguaggio",
       "Sprache",
       "语言"};
+
   }
 }

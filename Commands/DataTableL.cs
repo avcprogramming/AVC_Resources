@@ -658,7 +658,18 @@ namespace AVC
         "Das Programm fordert Sie auf, DWG- oder DXF-Dateien auszuwählen.",
       "将多个图纸中所有模型的所有对象的数据提取到表中。\r\n" +
         "程序将提示您选择 DWG 或 DXF 文件。"};
-
+    public static readonly string[] NoDrilling = {
+      "There is not a single drilling in solids.",
+      "В солидах нет ни одного сверления.",
+      "Non è stata effettuata alcuna perforazione nei solidi.",
+      "Es erfolgt keine einzige Bohrung im Vollmaterial.",
+      "固体中没有一个钻孔。"};
+    public static readonly string[] NoMaterial = {
+      "No materials or coatings assigned.",
+      "Не назначено ни одного материала или покрытия.",
+      "Nessun materiale o rivestimento assegnato.",
+      "Keine Materialien oder Beschichtungen zugewiesen.",
+      "未指定材料或涂层。"};
 
   }
 }

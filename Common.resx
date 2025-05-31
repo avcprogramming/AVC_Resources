@@ -841,6 +841,9 @@
   <data name="OK16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\OK16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OK32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OK32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ole32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Ole32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1051,6 +1054,12 @@
   <data name="SolidFace32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SolidFace32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SolidInt16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidInt16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolidInt32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidInt32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SolidMetric32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SolidMetric32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1059,6 +1068,21 @@
   </data>
   <data name="SolidMirror32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SolidMirror32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolidSub16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidSub16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolidSub32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidSub32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolidSub80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidSub80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolidUnion16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidUnion16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolidUnion32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SolidUnion32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SolSize16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SolSize16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

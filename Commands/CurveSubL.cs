@@ -26,12 +26,6 @@ namespace AVC
         CurveL.SaveSources[4]  },
     };
 
-    public static readonly string[] Process = {
-      "Processing",
-      "Обработка",
-      "Elaborazione",
-      "Verarbeitung",
-      "加工"};
     public static readonly string[] SelectSubtrahendCurves ={
       "Select polylines or other curves to subtract ",
       "Выберите вычитаемые полилинии или другие кривые ",
@@ -87,14 +81,20 @@ namespace AVC
       "结果层"    };
     public static readonly string[] ResultLayerTip = {
       "Replace the layer of successfully processed objects. \r\n" +
+        "When assigning a layer, all properties will be reset to ByLayer. \r\n" +
         "If necessary, the program will create a new layer.",
       "Заменять слой у удачно обработанных объектов. \r\n" +
+        "При назначении слоя все свойства будут сброшены на ПоСлою.\r\n" +
         "При необходимости программа создаст новый слой.",
       "Sostituisci il layer degli oggetti elaborati correttamente. \r\n" +
+        "Quando si assegna un layer, tutte le proprietà verranno reimpostate su ByLayer. \r\n" +
         "Se necessario, il programma creerà un nuovo livello.",
       "Ersetzen Sie die Ebene erfolgreich verarbeiteter Objekte. \r\n" +
+        "Beim Zuweisen einer Ebene werden alle Eigenschaften auf „Nach Ebene“ zurückgesetzt. \r\n" +
         "Bei Bedarf erstellt das Programm eine neue Ebene.",
-      "替换成功处理对象的图层。如有必要，程序将创建一个新层。"    };
+      "替换成功处理对象的图层。\r\n" +
+        "分配图层时，所有属性将重置为 ByLayer。\r\n" +
+        "如有必要，程序将创建一个新层。"    };
     public static readonly string[] SubtrahendLayerTip = {
       "Layer for automatic assignment of subtracted objects among all selected ones.",
       "Слой для автоматического назначения вычитаемых объектов среди всех выбранных.",
@@ -111,7 +111,7 @@ namespace AVC
     public static readonly string[] SelectByLayerTip = {
       "Select source and subtracted objects with one query. \r\n" +
         "Subtracted objects will be assigned by their layer.",
-      "Выбирать исходные и вычитаемые объекты одним запросов. \r\n" +
+      "Выбирать исходные и вычитаемые объекты одним запросом. \r\n" +
         "Вычитаемые объекты будут назначены по их слою.",
       "Seleziona gli oggetti sorgente e sottratti in una query. \r\n" +
         "Gli oggetti sottratti verranno assegnati in base al loro layer.",

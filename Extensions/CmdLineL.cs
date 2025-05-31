@@ -99,6 +99,13 @@ namespace AVC
       "Fehlende Volumenkörper: {0}",
       "无法加工的零件数量： {0}"};
     public static readonly string[]
+      ErrorCount = {
+      "FAILURE: {0}",
+      "СБОЕВ: {0}",
+      "FALLIMENTO: {0}",
+      "VERSAGEN: {0}",
+      "失败： {0}"};
+    public static readonly string[]
       ModelDoc = {
       "ModelDoc(ViewBase) views not supported",
       "Виды ModelDoc(ВидБаз) не поддерживаются",

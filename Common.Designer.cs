@@ -2503,6 +2503,16 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap OK32 {
+            get {
+                object obj = ResourceManager.GetObject("OK32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Ole32 {
             get {
                 object obj = ResourceManager.GetObject("Ole32", resourceCulture);
@@ -3203,6 +3213,26 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap SolidInt16 {
+            get {
+                object obj = ResourceManager.GetObject("SolidInt16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidInt32 {
+            get {
+                object obj = ResourceManager.GetObject("SolidInt32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap SolidMetric32 {
             get {
                 object obj = ResourceManager.GetObject("SolidMetric32", resourceCulture);
@@ -3226,6 +3256,56 @@ namespace AVC {
         public static System.Drawing.Bitmap SolidMirror32 {
             get {
                 object obj = ResourceManager.GetObject("SolidMirror32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidSub16 {
+            get {
+                object obj = ResourceManager.GetObject("SolidSub16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidSub32 {
+            get {
+                object obj = ResourceManager.GetObject("SolidSub32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidSub80 {
+            get {
+                object obj = ResourceManager.GetObject("SolidSub80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidUnion16 {
+            get {
+                object obj = ResourceManager.GetObject("SolidUnion16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SolidUnion32 {
+            get {
+                object obj = ResourceManager.GetObject("SolidUnion32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

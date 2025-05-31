@@ -1313,6 +1313,12 @@ namespace AVC
       "Perforazione",
       "Bohren",
       "钻孔" };
+    public static readonly string[] DrillTip = {
+      "Search for cylindrical holes of suitable diameters. Assignment of drilling layers.",
+      "Поиск цилиндрических отверстий подходящих диаметров. Назначение слоев сверления.",
+      "Cercare fori cilindrici di diametro adatto. Assegnazione degli strati di perforazione.",
+      "Suchen Sie nach zylindrischen Löchern mit geeigneten Durchmessern. Zuordnung der Bohrebenen.",
+      "寻找合适直径的圆柱孔。钻孔层的分配。" };
     public static readonly string[] LayerName = {
       "Layer Naming",
       "Имена слоев",
@@ -1331,6 +1337,12 @@ namespace AVC
       "Segare",
       "Sägen",
       "锯切" };
+    public static readonly string[] SawTip = {
+      "Finding straight lines on the outer contour and straight grooves. Assigning layers for filing on a circular saw.",
+      "Поиск прямых линий на внешнем контуре и прямых пазов. назначение слоев для напилки на циркулярной пиле.",
+      "Cercare linee rette sul contorno esterno e scanalature dritte. Assegnazione dei livelli per il taglio con una sega circolare.",
+      "Achten Sie auf gerade Linien an der Außenkontur und gerade Rillen. Zuweisen von Ebenen zum Schneiden auf einer Kreissäge.",
+      "寻找外轮廓上的直线和直凹槽。分配圆锯切割的层。" };
     public static readonly string[] Tolerance = {
       "Permissible variation",
       "Допустимое отклонение",

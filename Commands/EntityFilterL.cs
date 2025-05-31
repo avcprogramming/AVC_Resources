@@ -256,10 +256,10 @@ namespace AVC
       "Verwerfen Sie sehr kurze Kurven. Die zulässige Länge wird in den allgemeinen Optionen mit dem Parameter Lineare Toleranz konfiguriert.",
       "放弃非常短的曲线。 允许的长度在公共选项中使用线性公差参数进行配置。" };
     public static readonly string[] BlockDistorted = {
-      "Distorted block",
-      "Искаженный блок",
-      "Blocco distorto",
-      "Verzerrter Block",
+      "Distorted blocks",
+      "Искаженные блоки",
+      "Blocchi distorti",
+      "Verzerrte Blöcke",
       "扭曲的方块"};
     public static readonly string[] BlockDistortedTip = {
       "Process distorted blocks stretched in different directions with different scale factors.",
@@ -268,10 +268,10 @@ namespace AVC
       "Verarbeiten Sie verzerrte Blöcke, die in verschiedene Richtungen mit unterschiedlichen Skalierungsfaktoren gestreckt sind.",
       "使用不同的比例因子处理在不同方向拉伸的扭曲块。"};
     public static readonly string[] BlockDynamic = {
-      "Dynamic block",
-      "Динамический блок",
-      "Blocco dinamico",
-      "Dynamischer Block",
+      "Dynamic blocks",
+      "Динамические блоки",
+      "Blocchi dinamici",
+      "Dynamische Blöcke",
       "动态块"};
     public static readonly string[] BlockDynamicTip = {
       "Process dynamic blocks and parametric components.",
@@ -280,7 +280,7 @@ namespace AVC
       "Verarbeiten Sie dynamische Blöcke und parametrische Komponenten.",
       "处理动态块和参数组件。"};
     public static readonly string[] BlockScaled = {
-      "Scaled block",
+      "Scaled blocks",
       "Масштабированные блоки",
       "Blocchi scalati",
       "Skalierte Blöcke",
@@ -291,6 +291,34 @@ namespace AVC
       "Elabora blocchi scalati",
       "Prozessskalierte Blöcke",
       "处理缩放块"};
+    public static readonly string[] BlockNamed = {
+      "Named blocks only",
+      "Только именованные блоки",
+      "Solo blocchi nominati",
+      "Nur benannte Blöcke",
+      "仅命名块"    };
+    public static readonly string[] BlockNamedTip = {
+      "Process only named blocks. \r\n" +
+        "Unnamed arrays, instances of dynamic blocks, center marks will be ignored. \r\n" +
+        "But if working inside assemblies is configured, \r\n" +
+        "then objects from arrays will be processed regardless of this setting.",
+      "Обрабатывать только именованные блоки. \r\n" +
+        "Безымянные массивы, экземпляры динамических блоков, метки центра будут проигнорированы. \r\n" +
+        "Но если настроена работа внутри сборок, \r\n" +
+        "то объекты из массивов будут обрабатываться независимо от этой настройки.",
+      "Elabora solo blocchi denominati. \r\n" +
+        "Array senza nome, istanze di blocchi dinamici, segni centrali verranno ignorati. \r\n" +
+        "Ma se è configurato il lavoro all'interno degli assiemi, \r\n" +
+        "gli oggetti dagli array verranno elaborati indipendentemente da questa impostazione.",
+      "Verarbeiten Sie nur benannte Blöcke. \r\n" +
+        "Unbenannte Arrays, Instanzen dynamischer Blöcke, Mittelmarken werden ignoriert. \r\n" +
+        "Wenn jedoch die Arbeit innerhalb von Baugruppen konfiguriert ist, \r\n" +
+        "werden Objekte aus Arrays unabhängig von dieser Einstellung verarbeitet.",
+      "仅处理命名块。\r\n" +
+        "将忽略未命名的数组、动态块的实例、中心标记。\r\n" +
+        "但是如果配置了在装配体内工作，\r\n" +
+        "那么无论此设置如何，都将处理数组中的对象。"    };
+
     public static readonly string[] AllFiltered =  {
       "All objects are filtered. Change the selection conditions.",
       "Все объекты отфильтрованы. Смените условия отбора.",

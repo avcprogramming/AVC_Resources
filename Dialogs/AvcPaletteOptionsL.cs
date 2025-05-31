@@ -165,33 +165,48 @@ namespace AVC
       "Textur nach Material",
       "材质纹理" };
     public static readonly string[] TextureByMaterialTip = {
-      "Replace the Texture property of a solid when assigning a new material." +
-        "If a material is marked as Grain|Texture, then the solid is assigned Texture = Along." +
-        "And if the material does not have a Grain|Texture, then the solid is assigned Texture = No." +
-        "Please note that this setting also affects the behavior of the AvcUpdate command and the color change button on the Material tab." +
-        "They will also change the texture of the solids.",
-      "Заменять свойство Текстура у солида при присвоении нового материала." +
-        "Если материал помечен как имеющий Зернистость|Текстура, то солиду назначается Текстура = Вдоль." +
-        "А если у материала нет текстуры, то солиду назначается Текстура = Нет." +
-        "Обратите внимание, что эта настройка влияет так же на поведение команды AvcUpdate и кнопки замены цвета на вкладке Материал." +
-        "Они тоже будут менять текстуру солидов.",
-      "Sostituisci la proprietà Texture di un solido quando assegni un nuovo materiale. " +
-        "Se un materiale è contrassegnato come dotato di Grano|Struttura, al solido viene assegnato Texture = Lungo. " +
-        "E se il materiale non ha Grano|Struttura, al solido viene assegnato Texture = Nessuna. " +
-        "Tieni presente che questa impostazione influisce anche sul comportamento del comando AvcUpdate " +
-        "e del pulsante di sostituzione del colore nella scheda Materiale. " +
-        "Cambieranno anche la consistenza dei solidi.",
-      "Ersetzen Sie die Textureigenschaft eines Volumenkörpers, wenn Sie ein neues Material zuweisen. " +
-        "Wenn ein Material als „Maserung|Textur“ gekennzeichnet ist, wird dem Volumenkörper „Textur = Entlang“ zugewiesen. " +
-        "Und wenn das Material keine Maserung|Textur aufweist, wird dem Volumenkörper Textur = None zugewiesen. " +
-        "Bitte beachten Sie, dass diese Einstellung auch das Verhalten des AvcUpdate-Befehls " +
-        "und der Schaltfläche zum Ersetzen von Farben auf der Registerkarte „Material“ beeinflusst. " +
-        "Sie verändern auch die Textur der Feststoffe.",
-      "分配新材质时替换实体的纹理属性。 " +
-        "如果材质被标记为具有颗粒，则实体将被指定为纹理 = 沿。 " +
-        "如果材质没有 “Grain”（颗粒），则实体将被指定为 “Texture”（纹理）= “None”（无）。 " +
-        "请注意，此设置还会影响 AvcUpdate 命令和“材质”选项卡上的颜色替换按钮的行为。 " +
-        "它们还会改变固体的质地。" };
+      "Replace Texture and Sweep property of a solid when assigning a new material. \r\n" +
+        "If a material is marked as Grain|Texture, then the solid is assigned Texture = Along. \r\n" +
+        "And if the material does not have a Grain|Texture, then the solid is assigned Texture = No. \r\n" +
+        "If the material is marked as Sweep, the same check mark will appear on the parts. \r\n" +
+        "Please note that this setting also affects the behavior of the AvcUpdate command and the color change button on the Material tab. \r\n" +
+        "They will also change the solid properties Texture and Sweep.",
+      "Заменять свойства Текстура и Развертка у солида при присвоении нового материала.\r\n" +
+        "Если материал помечен как имеющий Зернистость|Текстура, то солиду назначается Текстура = Вдоль.\r\n" +
+        "А если у материала нет текстуры, то солиду назначается Текстура = Нет.\r\n" +
+        "Если материал помечен как Развертка, то такая же галочка появится и у деталей.\r\n" +
+        "Обратите внимание, что эта настройка влияет так же на поведение команды AvcUpdate и кнопки замены цвета на вкладке Материал.\r\n" +
+        "Они тоже будут менять у солидов свойства Текстура и Развертка. ",
+      "Sostituisci le proprietà Texture e Sweep di un solido quando assegni un nuovo materiale. \r\n" +
+        "Se un materiale è contrassegnato come Grana|Texture, al solido viene assegnata Texture = Lungo. \r\n" +
+        "Se il materiale non ha una Grana|Texture, al solido viene assegnata Texture = No. \r\n" +
+        "Se il materiale è contrassegnato come Sweep, lo stesso segno di spunta apparirà sulle parti. \r\n" +
+        "Si noti che questa impostazione influisce anche sul comportamento del comando AvcUpdate e sul pulsante di cambio colore nella scheda Materiale. \r\n" +
+        "Modificheranno anche le proprietà Texture e Sweep del solido.",
+      "Ersetzen Sie die Textur- und Sweep-Eigenschaften eines Volumenkörpers beim Zuweisen eines neuen Materials. \r\n" +
+        "Ist ein Material als Körnung/Textur gekennzeichnet, erhält der Volumenkörper die Textur „Längs“. \r\n" +
+        "Ist das Material nicht als Körnung/Textur gekennzeichnet, erhält der Volumenkörper die Textur „Nein“. \r\n" +
+        "Ist das Material als Sweep gekennzeichnet, erscheint das gleiche Häkchen auf den Teilen. \r\n" +
+        "Beachten Sie, dass diese Einstellung auch das Verhalten des Befehls „AvcUpdate“ und der Schaltfläche „Farbänderung“ auf der Registerkarte „Material“ beeinflusst. \r\n" +
+        "Sie ändern auch die Volumenkörpereigenschaften „Textur“ und „Sweep“.",
+      "分配新材质时，替换实体的“纹理”和“扫掠”属性。\r\n" +
+        "如果材质标记为“纹理”，则实体的“纹理”属性将被指定为“沿”。\r\n" +
+        "如果材质没有“纹理”，则实体的“纹理”属性将被指定为“否”。\r\n" +
+        "如果材质标记为“扫掠”，则零件上将显示相同的复选标记。\r\n" +
+        "请注意，此设置还会影响 AvcUpdate 命令的行为以及“材质”选项卡上的颜色更改按钮。\r\n" +
+        "它们还会更改实体的“纹理”和“扫掠”属性。" };
+    public static readonly string[] SetByLayer = {
+      "Set ByLayer",
+      "Назначать ПоСлою",
+      "Imposta DaLayer",
+      "Nach VonLayer einstellen",
+      "按图层设置 ByLayer" };
+    public static readonly string[] SetByLayerTip = {
+      "Assign color, line type, line weight, and material ByLayer when assigning a layer.",
+      "Назначать цвет, тип и вес линий, материал ПоСлою, когда назначается слой",
+      "Assegna colore, tipo di linea, spessore della linea e materiale DaLayer quando si assegna un layer.",
+      "Weisen Sie Farbe, Linientyp, Liniengewicht und Material Nach VonLayer zu, wenn Sie eine Layer zuweisen.",
+      "分配图层时，按图层分配颜色、线型、线宽和材质。" };
     public static readonly string[] CreateIndex = {
       "Create Index",
       "Создавать индекс",
@@ -553,5 +568,15 @@ namespace AVC
         "Schreiben Sie es nach dem Gleichheitszeichen, ohne Leerzeichen.",
       "显示零件的附加属性并将其保存在绘图对象的 xData 中。\r\n" +
         "每行写一个属性的列表。您还可以编写默认属性值。写在等号后面，不要有空格。" };
+
+    public static readonly string[] DwgMaterialErr = {
+      "Failed to assign default material {0}",
+      "Не удалось назначить материал по-умолчанию {0}",
+      "Impossibile assegnare il materiale predefinito {0}",
+      "Fehler beim Zuweisen des Standardmaterials {0}.",
+      "无法分配默认材质 {0}" };
+
+
+
   }
 }

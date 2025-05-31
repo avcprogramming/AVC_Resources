@@ -12,7 +12,7 @@ namespace AVC
       "  Aktuelle Einstellungen: SPIEL = {0:0.####}",
       "  当前设置：间隙 = {0:0.####}"};
     public static readonly string[] NoSub = {
-      "  Nothing to subtract. The subtraction procedure has been cancelled.",
+      "  Nothing to subtract. The subtraction procedure has been canceled.",
       "  Нечего вычитать. Процедура вычитания отменена.",
       "  Non c’è niente da sottrarre. La procedura di sottrazione è stata annullata.",
       "  Nichts abzuziehen. Der Subtraktionsvorgang wurde abgebrochen.",
@@ -241,7 +241,7 @@ namespace AVC
       "Gap",
       "Зазор",
       "Divario",
-      "Spiel",
+      "Lücke",
       "间隙" };
     public static readonly string[] GapTip = {
       "Gap between details.\r\n" +
@@ -270,22 +270,22 @@ namespace AVC
       "Save gap",
       "Сохранять зазор",
       "Salva divario",
-      "Spiel speichern",
+      "Lücke speichern",
       "保持间隙" };
     public static readonly string[] SaveGapTip = {
-      "Maintain clearance for subsequent invocations of the command. \r\n" +
+      "Save the gap setting for subsequent command calls. \r\n" +
         "If you disable this option, then the gap can only be entered using the command line option, \r\n" +
         "and immediately after the command is executed, it will be reset to 0.",
-      "Сохранять зазор для последующих вызовов команды. \r\n" +
+      "Сохранять настройку зазора для последующих вызовов команды. \r\n" +
         "Если отключить эту опцию, то зазор можно ввести только с помощью опции командной строки, \r\n" +
         "и сразу после выполнения команды он будет сброшен на 0.",
-      "Mantenere l'autorizzazione per le successive invocazioni del comando. \r\n" +
+      "Salvare l'impostazione dell'intervallo per le chiamate di comando successive. \r\n" +
         "Se disabiliti questa opzione, il gap può essere inserito solo utilizzando l'opzione della riga di comando e, \r\n" +
         "immediatamente dopo l'esecuzione del comando, verrà reimpostato su 0.",
-      "Halten Sie die Freigabe für nachfolgende Aufrufe des Befehls aufrecht. \r\n" +
+      "Speichern Sie die Abstandseinstellung für nachfolgende Befehlsaufrufe. \r\n" +
         "Wenn Sie diese Option deaktivieren, kann die Lücke nur über die Befehlszeilenoption eingegeben werden \r\n" +
         "und wird sofort nach Ausführung des Befehls auf 0 zurückgesetzt.",
-      "为命令的后续调用保持许可。 \r\n" +
+      "保存间隙设置以供后续命令调用。 \r\n" +
         "如果禁用此选项，则只能使用命令行选项输入间隙，\r\n" +
         "并在执行命令后立即将其重置为 0。" };
     public static readonly string[] HoleLayerSelection = {
@@ -306,7 +306,11 @@ namespace AVC
       "  Trovare buchi",
       "  Löcher finden",
       "  搜索演习"};
-
-
+    public static readonly string[] TooSmallGapErr =    {
+      "Too Small Gap",
+      "Слишком маленький зазор",
+      "",
+      "",
+      ""    };
   }
 }

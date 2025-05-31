@@ -473,6 +473,24 @@ namespace AVC
       "Leader Intelligente",
       "Intelligenter Führungslinie",
       "聪明的多重引线" };
+    public static readonly string[] SolidSub = {
+      "Solid Subtract",
+      "Вычитание солидов",
+      "Sottrazione di solidi",
+      "Volumenkörper subtrahieren",
+      "减去实体" };
+    public static readonly string[] SolidUnion = {
+      "Solid Union",
+      "Объединение солидов",
+      "Unione di solidi",
+      "Volumenkörper vereinigen",
+      "组合实体" };
+    public static readonly string[] SolidInt = {
+      "Solid Intersect",
+      "Пересечение солидов",
+      "Intersezione di solidi",
+      "Volumenkörper schneiden",
+      "实体相交" };
     public static readonly string[] SolSize = {
       "Size of Solid",
       "Размер солида",

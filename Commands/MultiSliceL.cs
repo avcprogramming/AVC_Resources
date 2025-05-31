@@ -509,11 +509,11 @@ namespace AVC
       "Auswahl der automatischen Oberfläche",
       "自动曲面选择"};
     public static readonly string[] SelectTip ={
-      "Automatically select solid surfaces for slicing.",
-      "Автоматически выбирать поверхности солидов для отслоения.",
-      "Seleziona automaticamente le superfici solide da affettare.",
-      "Wählen Sie automatisch feste Oberflächen zum Schneiden aus.",
-      "自动选择实体曲面进行切片。"};
+      "Automatically select solid surfaces for multi-slicing.",
+      "Автоматически выбирать поверхности солидов для мульти-отслоения.",
+      "Seleziona automaticamente le superfici solide per il multi-slicing.",
+      "Wählen Sie automatisch feste Oberflächen für das Multi-Slicing aus.",
+      "自动选择实体表面进行多重切片。"};
     public static readonly string[] CutShell ={
       "All = Shell",
       "Все = Оболочка",
@@ -619,11 +619,11 @@ namespace AVC
       "Slice-Verarbeitung",
       "切片处理"};
     public static readonly string[] ProcessingTip ={
-      "What to do with slices after cutting.",
-      "Что надо сделать с дольками после отслоения.",
-      "Cosa si deve fare con le fette dopo averle sbucciate.",
-      "Was ist mit den Scheiben nach dem Schälen zu tun?",
-      "剥皮后的切片应该怎么做。"};
+      "What to do with slices after multi-slicing.",
+      "Что надо сделать с дольками после мульти-отслоения.",
+      "Cosa fare con le fette dopo averle tagliate più volte.",
+      "Was ist mit Slices nach dem Multi-Slicing zu tun?",
+      "多重切片后如何处理切片。。"};
     public static readonly string[] Unite ={
         "Unite",
         "Склеить",
@@ -692,14 +692,19 @@ namespace AVC
       "切片属性"};
     public static readonly string[] LayerTip ={
       "The program can assign this layer to the cut slices. \r\n" +
+        "When assigning a layer, all the properties of the slices will be reset to ByLayer, the coloring of the faces will be cleared. \r\n" +
         "Leave this field empty to make the slices a layer of the original solid.",
       "Программа может назначить этот слой отрезанным долькам. \r\n" +
+        "При назначении слоя все свойства долек будут сброшены на ПоСлою, раскраска граней очищена. \r\n" +
         "Оставьте поле пустым, чтоб дольки получили слой исходного солида.",
       "Il programma può assegnare questo livello alle fette tagliate.\r\n" +
+        "Quando si assegna un layer, tutte le proprietà delle sezioni verranno reimpostate su ByLayer e la colorazione delle facce verrà cancellata. \r\n" +
         "Lascia vuoto questo campo per rendere le fette uno strato del solido originale.",
       "Diese Schicht kann das Programm den geschnittenen Scheiben zuweisen.\r\n" +
+        "Beim Zuweisen einer Ebene werden alle Eigenschaften der Slices auf „Nach Ebene“ zurückgesetzt und die Farbgebung der Flächen gelöscht. \r\n" +
         "Lassen Sie dieses Feld leer, um die Scheiben zu einer Schicht des ursprünglichen Volumenkörpers zu machen.",
       "程序可以将此层分配给切割切片。\r\n" +
+        "当指定图层时，切片的所有属性将被重置为ByLayer，面的颜色将被清除。 \r\n" +
         "将此字段留空以使切片成为原始实体的一层。"};
     public static readonly string[] MaterialTip ={
       "The program can assign this material to the cut slices. \r\n" +

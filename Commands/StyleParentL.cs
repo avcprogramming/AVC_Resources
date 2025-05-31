@@ -5,10 +5,10 @@ namespace AVC
   StyleParentL
   {
     public static readonly string[] SelectStyle = {
-      "  Select number Style",
+      "  Select which style number to use",
       "  Выберите какой использовать номер стиля",
-      "  Seleziona il numero di Stile",
-      "  Wählen Sie die Nummer",
+      "  Seleziona quale numero di stile utilizzare",
+      "  Wählen Sie die zu verwendende Stilnummer aus",
       "  选择要使用的样式编号"};
     public static readonly string[] Selected = {
       "  Selected style '{0}'",
