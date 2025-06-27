@@ -1,5 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
-// Ignore Spelling: Dwg Perim
+
+// Ignore Spelling: Dwg Perim Cim
 
 namespace AVC
 {
@@ -316,6 +317,18 @@ namespace AVC
         "在绘图树的设置中，您可以启用实体的背景测量。 \r\n" +
         "读取发生在程序空闲时间的小部分，但轻微的制动是可能的。 \r\n" +
         "测量实体有时会导致 AutoCAD 崩溃。" };
+    public static readonly string[] CimNames = {
+      "Router-CIM Part Names",
+      "Имена деталей Router-CIM",
+      "Nomi delle parti Router-CIM",
+      "Router-CIM-Teilenamen",
+      "部件名称“Router-CIM”" };
+    public static readonly string[] CimNamesTip = {
+      "Read and write to XData part names used by the Router-CIM plugin",
+      "Считывать и записывать в XData имена деталей, используемые плагином Router-CIM",
+      "Leggi e scrivi in XData i nomi delle parti utilizzati dal plug-in Router-CIM", 
+      "Lese und schreibe in XData die von Router-CIM verwendeten Teilenamen",
+      "读取和写入 XData 中 Router-CIM 插件使用的部件名称" };
     public static readonly string[] NewMaterial = {
       "New material",
       "Новый материал",

@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Users\shurik\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
+    <OutputPath>C:\Users\avc72\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>C:\Users\shurik\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
+    <OutputPath>C:\Users\avc72\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>
@@ -48,6 +48,7 @@
     <Compile Include="Commands\AutoLngL.cs" />
     <Compile Include="Commands\BlockMetricL.cs" />
     <Compile Include="Commands\BoxFromTableL.cs" />
+    <Compile Include="Commands\BubenL.cs" />
     <Compile Include="Commands\BUpdateL.cs" />
     <Compile Include="Commands\ChopL.cs" />
     <Compile Include="Commands\CncL.cs" />
@@ -1293,6 +1294,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Lay80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Views32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buben16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buben32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buben80.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,10 +1,4 @@
-Z:\Users\avc72\AppData\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\AVC_Resources.dll
-Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.AssemblyReference.cache
-Z:\DB\.Net\AVC_Resources\obj\Release\AVC.Common.resources
-Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.GenerateResource.cache
-Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.CoreCompileInputs.cache
-Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.dll
-C:\Users\shurik\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\AVC_Resources.dll
+C:\Users\avc72\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\AVC_Resources.dll
 C:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.AssemblyReference.cache
 C:\DB\.Net\AVC_Resources\obj\Release\AVC.Common.resources
 C:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.GenerateResource.cache

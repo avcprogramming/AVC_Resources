@@ -663,6 +663,36 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Buben16 {
+            get {
+                object obj = ResourceManager.GetObject("Buben16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Buben32 {
+            get {
+                object obj = ResourceManager.GetObject("Buben32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Buben80 {
+            get {
+                object obj = ResourceManager.GetObject("Buben80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BUpdate16 {
             get {
                 object obj = ResourceManager.GetObject("BUpdate16", resourceCulture);
@@ -3826,6 +3856,16 @@ namespace AVC {
         public static System.Drawing.Bitmap Viewport32 {
             get {
                 object obj = ResourceManager.GetObject("Viewport32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Views32 {
+            get {
+                object obj = ResourceManager.GetObject("Views32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

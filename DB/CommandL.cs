@@ -111,6 +111,12 @@ namespace AVC
       "Aggiorna blocco",
       "Block aktualisieren",
       "更新块" };
+    public static readonly string[] Buben = {
+      "Buben",
+      "Бубен",
+      "Buben",
+      "Buben",
+      "Buben" };
     public static readonly string[] CH = {
       "Chop",
       "Нарезка",

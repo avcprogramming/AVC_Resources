@@ -289,6 +289,15 @@
   <data name="BoxToWall32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\BoxToWall32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Buben16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Buben16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buben32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Buben32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buben80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Buben80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BUpdate16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\BUpdate16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1239,6 +1248,9 @@
   </data>
   <data name="Viewport32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Viewport32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Views32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Views32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wipeout32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Wipeout32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

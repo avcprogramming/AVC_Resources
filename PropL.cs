@@ -3536,6 +3536,12 @@ namespace AVC
       "Viewports",
       "Viewports",
       "视口 Viewports" };
+    public static readonly string[] Views = {
+      "Views",
+      "Виды",
+      "Visualizzazioni",
+      "Ansichten",
+      "视图" };
     public static readonly string[] Locked = {
       "Locked",
       "Заблокирован",

@@ -165,6 +165,12 @@ namespace AVC
       "Sostituisci i blocchi selezionati con blocchi con lo stesso nome di un altro disegno.",
       "Ersetzen Sie ausgewählte Blöcke durch gleichnamige Blöcke aus einer anderen Zeichnung.",
       "用另一个图形中的同名块替换选定的块。"};
+    public static readonly string[] BubenTip = {
+      "Try to restore ModelDoc views (created by ViewBase command)",
+      "Попытаться восстановить виды ModelDoc (созданные командой ViewBase = ВидБаз)" ,
+      "Prova a ripristinare le viste ModelDoc (create dal comando ViewBase)",
+      "Versuchen Sie, ModelDoc-Ansichten wiederherzustellen (erstellt durch den Befehl ViewBase).",
+      "尝试恢复 ModelDoc 视图（由 ViewBase 命令创建）"};
     public static readonly string[] ChopTip = {
       "Chop a 3d-solid into many pieces. Make ribs and stair-step.",
       "Нарезка твердых тел на равные дольки. " +
