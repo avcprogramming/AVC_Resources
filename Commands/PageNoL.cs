@@ -168,6 +168,7 @@ namespace AVC
       "Inserisci il numero per la prima pagina",
       "Geben Sie die Nummer für die erste Seite ein",
       "输入第一页的编号" };
+
     public static string[] StartQuery = {
       "Request number",
       "Запрашивать номер",
@@ -184,5 +185,103 @@ namespace AVC
       "Fordern Sie die Startnummer jedes Mal an, wenn der Befehl aufgerufen wird. \r\n" +
         "Nützlich, wenn Sie immer unterschiedliche Startnummern haben.",
       "每次调用命令时请求起始编号。 如果您总是有不同的起始编号，这很有用。" };
+    public static readonly string[] AllBlocks = {
+      "Fill in all the blocks of the sheet",
+      "Заполнять все блоки листа",
+      "Compila tutti i blocchi del layout",
+      "Füllen Sie alle Blöcke des Layouts aus",
+      "填写布局的所有块" };
+    public static readonly string[] AllBlocksTip = {
+      "Search for and fill all blocks on the sheet. \r\n" +
+        "If the option is disabled, the program will stop working with the sheet \r\n" +
+        "as soon as it finds one block with the PageNumber attribute. \r\n" +
+        "The option only works in layouts.",
+      "Искать и заполнять все блоки на листе. \r\n" +
+        "Если опция отключена, то программа перестанет работать с листом, \r\n"+
+        "как только найдет один блок с атрибутом номера листа.\r\n" +
+        "Опция работает только на листах (layout)",
+      "Cerca e compila tutti i blocchi del layout. \r\n" +
+        "Se l'opzione è disabilitata, il programma smetterà di lavorare con il layout \r\n" +
+        "non appena trova un blocco con l'attributo PageNumber. \r\n" +
+        "L'opzione funziona solo nei layout.",
+      "Suchen und füllen Sie alle Blöcke des Layouts aus. \r\n" +
+        "Wenn die Option deaktiviert ist, hört das Programm auf, mit dem Layout zu arbeiten, \r\n" +
+        "sobald es einen Block mit dem Attribut Seitenzahl findet. \r\n" +
+        "Die Option funktioniert nur in Layouts.",
+      "在工作表上搜索并填写所有块。 \r\n" +
+        "如果禁用此选项，则程序将在找到一个带有 PageNumber 属性的块后停止处理工作表。 \r\n" +
+        "此选项仅适用于布局。" };
+    public static readonly string[] AllAttributes = {
+      "Fill all block attributes",
+      "Заполнять все атрибуты блока",
+      "Compila tutti gli attributi del blocco",
+      "Füllen Sie alle Attribute des Blocks aus",
+      "填写块的所有属性" };
+    public static readonly string[] AllAttributesTip = {
+      "Search for all attributes of the same name (tag) in the block, rather than stopping at the first one that comes up. \r\n" +
+        "The option only works in blocks on layout",
+      "Искать в блоке все одноименные атрибуты, а не останавливаться на первом попавшемся. \r\n" +
+        "Опция работает только в блоках на листах (layout)",
+      "Cerca tutti gli attributi con lo stesso nome nel blocco, invece di fermarsi al primo trovato. \r\n" +
+        "L'opzione funziona solo nei blocchi dei layout",
+      "Suchen Sie im Block nach allen gleichnamigen Attributen, anstatt beim ersten gefundenen zu stoppen. \r\n" +
+        "Die Option funktioniert nur in Blöcken auf Layouts",
+      "在块中查找所有同名属性，而不是在第一个找到的属性上停止。 \r\n" +
+        "此选项仅适用于布局中的块" };
+    public static readonly string[] LayoutRename = {
+      "Rename layout",
+      "Переименовать вкладку листа",
+      "Rinomina il layout",
+      "Layout umbenennen",
+      "重命名布局" };
+    public static readonly string[] LayoutRenameTip = {
+      "Take the drawing name from the PageName block attribute and rename the layout tab.",
+      "Взять имя чертежа из атрибута блока и переименовать вкладку листа (layout).",
+      "Prendi il nome del disegno dall'attributo del blocco e rinomina la scheda del layout.",
+      "Nehmen Sie den Namen der Zeichnung aus dem Attribut des Blocks und benennen Sie die Layout-Registerkarte um.",
+      "从块属性中获取图纸名称并重命名布局选项卡。" };
+    public static readonly string[] LayoutNumbering = {
+      "Layout Tab Numbering",
+      "Нумерация вкладок листов",
+      "Numerazione del layout",
+      "Layoutnummerierung",
+      "工作表标签编号" };
+    public static readonly string[] LayoutNumberingTip = {
+      "Numbering layout tabs with the number of the sheet.",
+      "Нумеровать вкладки листов (layout) по порядку их расположения",
+      "Numerare le schede dei layout in base all'ordine in cui sono posizionate",
+      "Nummerieren Sie die Layout-Tabs in der Reihenfolge, in der sie angeordnet sind",
+      "按其位置顺序对布局选项卡进行编号" };
+    public static readonly string[] SaveLayoutName = {
+      "Keep old layout name when numbering",
+      "Сохранять старое имя листа при нумерации",
+      "Salva il nome del layout",
+      "Layoutnamen speichern",
+      "编号时保留旧图纸名称" };
+    public static readonly string[] SaveLayoutNameTip = {
+      "When numbering layout tabs, program should write the number at the end of the old tab name.\r\n" +
+        "If there is a number at the end of the name, it will be replaced with the layout number.",
+      "При нумерации вкладок листов следует записывать номер в конец старого имени вкладки. \r\n" +
+        "При этом, если в конце имени найдется цифра, то она будет заменена на номер листа.",
+      "Durante la numerazione delle schede dei layout, il numero deve essere scritto alla fine del vecchio nome della scheda. \r\n" +
+        "In questo caso, se alla fine del nome viene trovato un numero, esso verrà sostituito con il numero del foglio.",
+      "Beim Nummerieren der Layout-Tabs sollte die Nummer an das Ende des alten Tab-Namens geschrieben werden. \r\n" +
+        "In diesem Fall wird, wenn am Ende des Namens eine Zahl gefunden wird, diese durch die Blattnummer ersetzt.",
+      "在对布局选项卡进行编号时，应将编号写在旧选项卡名称的末尾。 \r\n" +
+        "在这种情况下，如果在名称末尾找到数字，则将其替换为页数。" };
+    public static readonly string[] ContentsList = {
+      "Table of contents",
+      "Создать Оглавление",
+      "Elenco sommario",
+      "Inhaltsverzeichnis",
+      "目录列表" };
+    public static readonly string[] ContentsListTip = {
+      "Create a list of page numbers and sheet names and paste them into the clipboard or table of contents.",
+      "Создать список номеров страниц и наименований листов и вставить в буфере обмена или в таблицу оглавления.",
+      "Crea un elenco di numeri di pagina e nomi di fogli e li inserisce negli appunti o nella tabella dei contenuti.",
+      "Erstellt eine Liste von Seitennummern und Blattnamen \r\n" +
+        "und fügt sie in die Zwischenablage oder in das Inhaltsverzeichnis ein.",
+      "创建页码和工作表名称列表，并将其插入到剪贴板或目录表中。" };
+
   }
 }

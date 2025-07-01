@@ -16,26 +16,25 @@ namespace AVC
       "Пробная",
       "Prova",
       "Versuch",
-      "审判" };
+      "试用" };
     public static readonly string[] LicenseAnnual = {
       "Annual",
       "На год",
       "Annuale",
       "Jährlich",
-      "周年" };
+      "1年" };
     public static readonly string[] LicenseUnlimit = {
       "Unlimit",
       "Навсегда",
       "Illimitata",
       "Unbegrenzte",
-      "永永远远" };
+      "永久" };
     public static readonly string[] LicenseFree = {
       "Free",
       "Бесплатная",
       "Gratuito",
       "Kostenlos",
-      "自由" };
-
+      "免费" };
     public static readonly string[] LicenseTrialTip = {
       "Free use of the program {0} days. " +
         "You can use this type of license only once and cannot be canceled. " +
