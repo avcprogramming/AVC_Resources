@@ -588,8 +588,23 @@ namespace AVC
       "Impossibile assegnare il materiale predefinito {0}",
       "Fehler beim Zuweisen des Standardmaterials {0}.",
       "无法分配默认材质 {0}" };
-
-
-
+    public static readonly string[] Thickness3dTip = {
+      "Show 3D thickness field for all curves and polylines.",
+      "Показывать поле 3д-толщины у всех кривых и полилиний.",
+      "Mostra il campo dello spessore 3D per tutte le curve e le polilinee.",
+      "Zeigen Sie das 3D-Dicke-Feld für alle Kurven und Polylinien an.",
+      "显示所有曲线和多段线的 3D 厚度字段。" };
+    public static readonly string[] PolylineWidth = {
+      "Polyline Width",
+      "Ширина полилинии",
+      "Larghezza polilinea",
+      "Polylinienbreite",
+      "多段线宽度" };
+    public static readonly string[] PolylineWidthTip = {
+      "Show Global Width field (analogous to line weight) for polylines and 2D polylines." ,
+      "Показывать поле Глобальной Ширины (аналог веса линий) у полилиний и 2D-полилиний." ,
+      "Mostra il campo Larghezza globale (analogo allo spessore della linea) per polilinee e polilinee 2D." ,
+      "Zeigt das Feld „Globale Breite“ (analog zur Linienstärke) für Polylinien und 2D-Polylinien an." ,
+      "显示折线和二维折线的全局宽度字段（类似于线宽）。" };
   }
 }

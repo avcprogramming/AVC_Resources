@@ -157,7 +157,7 @@ namespace AVC
       foreach (string[] s in Messages)
         if (languageNumber < s.Length && english.Contains(s[0]))
           return english.Replace(s[0], s[languageNumber]);
-      Debug.Print($"!! Не найден перевод для серверной строки {english}");
+      Debug.WriteLine($"!! Не найден перевод для серверной строки {english}");
       return english;
     }
 

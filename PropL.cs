@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Viewports Nameds Dwg Bandings Asymmetry Uniscale Asym CNC CCW Plottable
+// Ignore Spelling: Viewports Nameds Dwg Bandings Asymmetry Uniscale Asym CNC CCW Plottable Linetype
 
 using System;
 using System.Collections.Generic;
@@ -131,7 +131,7 @@ namespace AVC
       "Fehler beim Parsen von Feld '{0}' : {1}",
       "解析字段“{0}”时出错：{1}" };
     public static readonly string[] ReadingProperties = {
-      "  Reading drawing object proreties",
+      "  Reading drawing object properties",
       "  Чтение свойств объектов чертежа",
       "  Lettura di oggetti di disegno",
       "  Zeichnungsobjekte lesen",
@@ -622,18 +622,18 @@ namespace AVC
         "To do this, write the site into the Link property of the drawing, and for objects,\r\n" +
         "write only the end of the URL (the name of the web page).\r\n" +
         "If you assign references to solids and polylines,\r\n" +
-        "then you cannot use CTRL to select subobjects (faces and segments).",
+        "then you cannot use CTRL to select sub-objects (faces and segments).",
       "Гиперссылка на любой сайт.\r\n" +
         "Начало ссылки (адрес сайта) может быть общим у всех объектов чертежа.\r\n" +
         "Для этого запишите сайт в свойство Ссылка чертежа, а у объектов записывайте только конец URL (имя web-страницы).\r\n" +
-        "Если вы присвоите ссыли солидам и полилиниям,\r\n" +
+        "Если вы присвоите ссылки солидам и полилиниям,\r\n" +
         "то вы не сможете использовать CTRL для выбора подобъектов (граней и сегментов).",
       "Collegamento ipertestuale a qualsiasi sito.\r\n" +
         "L'inizio del collegamento (indirizzo del sito) può essere comune a tutti gli oggetti nel disegno.\r\n" +
         "Per fare ciò, scrivi il sito nella proprietà Link del disegno e, \r\n" +
         "per gli oggetti, scrivi solo la fine dell'URL (il nome della pagina web).\r\n" +
         "Se assegni riferimenti a solidi e polilinee,\r\n" +
-        "quindi non è possibile utilizzare CTRL per selezionare i suboggetti (facce e segmenti).",
+        "quindi non è possibile utilizzare CTRL per selezionare i sub-oggetti (facce e segmenti).",
       "Hyperlink zu einer beliebigen Site.\r\n" +
         "Der Anfang des Links (Site-Adresse) kann für alle Objekte in der Zeichnung gleich sein.\r\n" +
         "Schreiben Sie dazu die Site in die Link-Eigenschaft der Zeichnung \r\n" +
@@ -1342,7 +1342,8 @@ namespace AVC
       "动态块或机械组件的实例名称，一组参数" };
 
     // ================================================================================================
-    // Curve     // ================================================================================================
+    // Curve     
+    // ================================================================================================
     public static readonly string[] Curve = {
       "Curve",
       "Кривая",
@@ -1379,6 +1380,25 @@ namespace AVC
       "Ellisse",
       "Ellipse",
       "椭圆" };
+    public static readonly string[] Thickness3d = {
+      "Thickness 3D",
+      "3D толщина",
+      "Spessore 3D",
+      "Dicke 3D",
+      "厚度 3D" };
+    public static readonly string[] Thickness3dTip = {
+      "Pseudo-3D curve height in the Z-axis direction. A curve with thickness looks like a surface.\r\n" +
+        "Can be set to less than zero. Used to set the milling depth on some CNCs.",
+      "Псевдо-3D высота кривой в направлении оси Z. Кривая с толщиной выглядит как поверхность.\r\n" +
+        "Можно задать меньше ноля. Используется для задания глубины фрезерования на некоторых ЧПУ.",
+      "Altezza pseudo-3D della curva lungo l'asse Z. Una curva con spessore appare come una superficie.\r\n" +
+        "Puoi impostare un valore inferiore a zero. \r\n" +
+        "Viene utilizzato per specificare la profondità di fresatura su alcuni CNC.",
+      "Pseudo-3D-Höhe der Kurve in Richtung der Z-Achse. Eine Kurve mit Dicke sieht aus wie eine Oberfläche.\r\n" +
+        "Sie können einen Wert kleiner als Null angeben. \r\n" +
+        "Wird zum Festlegen der Frästiefe auf einigen CNCs verwendet.",
+      "曲线在 Z 轴方向上的伪 3D 高度。具有厚度的曲线看起来像一个表面。\r\n" +
+         "可以设置小于零的值。用于在某些 CNC 上指定铣削深度。" };
     public static readonly string[] EndPointX = {
       "End Point X",
       "Конечная Точка X",
@@ -2712,9 +2732,26 @@ namespace AVC
       "Numero di segmenti",
       "Anzahl der Segmente",
       "段数" };
+    public static readonly string[] PolylineWidth = {
+      "Width",
+      "Ширина",
+      "Larghezza",
+      "Breite",
+      "宽度" };
+    public static readonly string[] PolylineWidthTip = {
+      "Global width of the polyline across all segments. \r\n" +
+        "Same as line weight, but you can set any values.",
+      "Глобальная ширина полилинии по всем сегментам. \r\n" +
+        "Тоже самое, что и вес линий, но можно задать любые значения.",
+      "Larghezza globale della polilinea su tutti i segmenti. \r\n" +
+        "Come per lo spessore della linea, ma è possibile impostare qualsiasi valore.",
+      "Globale Breite der Polylinie über alle Segmente. \r\n" +
+        "Entspricht der Linienstärke, Sie können jedoch beliebige Werte festlegen.",
+      "折线所有线段的全局宽度。与线宽相同，但您可以设置任意值。"};
 
     // ================================================================================================
-    // Solid, Solid     // ================================================================================================
+    // Solid, Метрика
+    // ================================================================================================
     public static readonly string[] Solid = {
       "Solid",
       "3D-тело",
@@ -2779,7 +2816,7 @@ namespace AVC
         "Shows the direction of the shift of the center of gravity along three axes.\r\n" +
         "Used to calculate the specularity of parts to each other.",
       "Вектор асимметрии.\r\n" +
-        "Направление от центра бокса к цетру масс по трем координатам XYZ.\r\n" +
+        "Направление от центра бокса к центру масс по трем координатам XYZ.\r\n" +
         "Отличается у зеркальных деталей",
       "Vettore di asimmetria.\r\n" +
         "Direzione dal centro della scatola al centro di massa in tre coordinate XYZ.\r\n" +
@@ -3552,7 +3589,7 @@ namespace AVC
       "Lock model view and scale from accidental shift",
       "Заблокировать вид модели и масштаб от случайного сдвига",
       "Blocca la visualizzazione e la scala del modello da spostamenti accidentali",
-      "Sperren Sie die Modellansicht und skalieren Sie sie gegen versehentliches Verschieben",
+      "Sperren Sie die Modellansicht und den Maßstab, damit diese nicht versehentlich verschoben werden.",
       "锁定模型视图和比例以防止意外移位"};
     public static readonly string[] CustomScale = {
       "Scale",

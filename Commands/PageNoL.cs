@@ -20,12 +20,17 @@ namespace AVC
       "BLATTZÄHLUNG","SEITEN","VON",
       "页数"};
     public static readonly HashSet<string> PageNameAttributes = new() {
-      "TITLE", "SHEETNAME", "SHEETTITLE", "PAGENAME", "DRAWINGNAME", "NAME",
-      "ЗАГОЛОВОК", "НАИМЕНОВАНИЕЛИСТА", "ЧЕРТЕЖ", "НАИМЕНОВАНИЕ", "НАЗВАНИЕ",
+      "TITLE", "SHEETNAME", "SHEETTITLE", "PAGENAME", "DRAWING", "DRAWINGNAME", "NAME",
+      "ЗАГОЛОВОК", "НАИМЕНОВАНИЕЛИСТА", "ЧЕРТЕЖ", "ЧЕРТЁЖ", "НАИМЕНОВАНИЕ", "НАЗВАНИЕ", "ЧАСТЬ_СТЕНДА",
       "TESTATA", "NOMEDELFOGLIO", "NOMEDELLOSCHEDA", "NOME",
       "TITEL", "BLATTNAME", "BLATTTITEL", "SEITENNAME", "ZEICHNUNGSNAME",
       "标题", "姓名" };
-
+    public static readonly HashSet<string> ScaleAttributes = new () {
+      "SCALE", "SCALING", "RATIO",
+      "МАСШТАБ",
+      "SCALA", "SCALATURA", "RAPPORTO",
+      "SKALA", "MAßSTAB", "VERHÄLTNIS",
+      "规模", "比例", "缩放", "比率"};
     public static readonly string[] Numbering ={
       "Layout numbering",
       "Нумерация листов",
@@ -157,7 +162,7 @@ namespace AVC
         "(Title or Name or 标题 or 姓名)" };
 
     public static readonly string[] PasteTablePartText = {
-      "Table of contents settings",
+      "Table of Contents settings",
       "Настройки таблицы оглавления",
       "Impostazioni del sommario",
       "Inhaltsverzeichnis Einstellungen",
@@ -254,7 +259,7 @@ namespace AVC
       "按其位置顺序对布局选项卡进行编号" };
     public static readonly string[] SaveLayoutName = {
       "Keep old layout name when numbering",
-      "Сохранять старое имя листа при нумерации",
+      "Сохранять старое имя при нумерации",
       "Salva il nome del layout",
       "Layoutnamen speichern",
       "编号时保留旧图纸名称" };
@@ -270,7 +275,7 @@ namespace AVC
       "在对布局选项卡进行编号时，应将编号写在旧选项卡名称的末尾。 \r\n" +
         "在这种情况下，如果在名称末尾找到数字，则将其替换为页数。" };
     public static readonly string[] ContentsList = {
-      "Table of contents",
+      "Create Table of Contents",
       "Создать Оглавление",
       "Elenco sommario",
       "Inhaltsverzeichnis",
@@ -282,6 +287,88 @@ namespace AVC
       "Erstellt eine Liste von Seitennummern und Blattnamen \r\n" +
         "und fügt sie in die Zwischenablage oder in das Inhaltsverzeichnis ein.",
       "创建页码和工作表名称列表，并将其插入到剪贴板或目录表中。" };
-
+    public static readonly string[] OtherAttributes = {
+      "Other attributes",
+      "Другие атрибуты",
+      "Altri attributi",
+      "Andere Attribute",
+      "其他属性" };
+    public static readonly string[] OtherAttributesTip = {
+      "List of attributes to fill. \r\n" +
+        "Each line of the list must contain a tag (name) of the attribute, the = sign and the attribute value. \r\n" +
+        "Fields that refer to drawing properties can be specified as the attribute value. \r\n" +
+        "The program will fill both variable and constant attributes. \r\n" +
+        "Only blocks that have a page number attribute are processed.",
+      "Список атрибутов для заполнения. \r\n" +
+        "В каждой строке списка должен быть тег (имя) атрибута, знак = и значение атрибута. \r\n" +
+        "В качестве значения атрибута можно указывать поля, ссылающиеся на свойства чертежа. \r\n" +
+        "Программа заполнит как переменные, так и константные атрибуты. \r\n" +
+        "Обрабатываются только блоки, у которых найден атрибут номера страницы.",
+      "Elenco degli attributi da compilare. \r\n" + 
+        "In ogni riga dell'elenco deve essere presente un tag (nome) dell'attributo, il segno = e il valore dell'attributo. \r\n" +
+        "Come valore dell'attributo è possibile specificare i campi che fanno riferimento alle proprietà del disegno. \r\n" +
+        "Il programma compilerà sia gli attributi variabili che quelli costanti. \r\n" +
+        "Solo i blocchi con l'attributo PageNumber vengono elaborati.",
+      "Liste der Attribute zum Ausfüllen. \r\n" +
+        "In jeder Zeile der Liste muss ein Tag (Name) des Attributs, das Zeichen = und der Wert des Attributs vorhanden sein. \r\n" +
+        "Als Attributwert können Felder angegeben werden, die auf die Eigenschaften der Zeichnung verweisen. \r\n" +
+        "Das Programm füllt sowohl variable als auch konstante Attribute aus. \r\n" +
+        "Es werden nur Blöcke verarbeitet, bei denen das Attribut Seitenzahl gefunden wurde.",
+      "要填写的属性列表。 \r\n" +
+        "列表中的每一行都必须有一个标签（属性名称）、等号和属性值。 \r\n" +
+        "属性值可以是引用图纸属性的字段。 \r\n" +
+        "程序将填写变量和常量属性。 \r\n" +
+        "仅处理找到页码属性的块。" };
+    public static readonly string[] DetermineScale = {
+      "Determine and write the scale",
+      "Определить и записать масштаб",
+      "Determina e scrivi scala",
+      "Skala bestimmen und schreiben",
+      "确定并写入比例" };
+    public static readonly string[] DetermineScaleTip = {
+      "Define the scale of the drawing and write it to the Scale attribute. \r\n" +
+        "The program will find all viewports and ModelDoc views on the sheet and take the minimum scale. \r\n" +
+        "Thus, enlarged detail views will be ignored. \r\n" +
+        "The option works only on sheets (layout).",
+      "Определить масштаб чертежа и записать его в атрибут Масштаб. \r\n" +
+        "Программа найдет все вьюпорты и виды ModelDoc на листе и возьмет минимальный масштаб. \r\n" +
+        "Таким образом увеличенные выносные виды будут проигнорированы. \r\n" +
+        "Опция работает только на листах (layout).",
+      "Definisci la scala del disegno e scrivila nell'attributo Scala. \r\n" +
+        "Il programma troverà tutte le finestre di visualizzazione e le viste ModelDoc sul layout e prenderà la scala minima. \r\n" +
+        "In questo modo verranno ignorate le viste dei dettagli ingrandite. \r\n" +
+        "L'opzione funziona solo nei layout.",
+      "Bestimmen Sie die Skala der Zeichnung und schreiben Sie sie in das Attribut Skala. \r\n" +
+        "Das Programm findet alle Ansichtsfenster und ModelDoc-Ansichten auf dem Layout und nimmt die kleinste Skala. \r\n" +
+        "So werden vergrößerte Detailansichten ignoriert. \r\n" +
+        "Die Option funktioniert nur auf Layouts.",
+      "定义图纸的比例并将其写入 Scale 属性。 \r\n" +
+        "程序将在工作表上找到所有视口和 ModelDoc 视图，并采用最小比例。 \r\n" +
+        "因此，将忽略放大的细节视图。 \r\n" +
+        "此选项仅适用于工作表（布局）。" };
+    public static readonly string[] ScaleAttr = {
+      "Scale attribute",
+      "Атрибут масштаба",
+      "Attributo scala",
+      "Skala Attribut",
+      "比例属性" };
+    public static readonly string[] ScaleAttrTip =
+    {
+      "Tag of attribute with scale of sheet. \r\n" +
+        "Set space for using default tags\r\n" +
+        "(Scale or Ratio)",
+      "Тег атрибута, в который будет записан масштаб листа. \r\n" +
+        "Оставьте поле пустым, чтоб использовать атрибут по-умолчанию\r\n" +
+        "(Масштаб или Scale)",
+      "Tag di attributo su cui verrà scritto il numero della scala del foglio. \r\n" +
+        "Lascia vuoto per utilizzare l'attributo predefinito\r\n" +
+        "(SCALA o RAPPORTO)",
+      "Tag des Attributs mit dem Maßstab des Blattes.\r\n" +
+         "Platz für die Verwendung von Standard-Tags festlegen\r\n" +
+         "(SKALA oder VERHÄLTNIS)",
+      "带有工作表比例的属性标签。\r\n" +
+         "设置使用默认标签的空间\r\n" +
+         "(Scale 或 比例)"
+    };
   }
 }

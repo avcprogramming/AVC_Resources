@@ -379,6 +379,12 @@ namespace AVC
       "Attivazioni",
       "Aktivierungen",
       "激活" };
+    public static readonly string[] LicAndActivations = {
+      "Licenses and Activations",
+      "Лицензии и Активации",
+      "Licenze e attivazioni",
+      "Lizenzen und Aktivierungen",
+      "许可证和激活" };
     public static readonly string[] ActivationsTip = {
       "Your activated programs and workplaces. \r\n" +
         "Program / License type and expiration - Activated Computer/User",
