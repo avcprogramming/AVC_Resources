@@ -4,3 +4,8 @@ C:\DB\.Net\AVC_Resources\obj\Release\AVC.Common.resources
 C:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.GenerateResource.cache
 C:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.CoreCompileInputs.cache
 C:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.dll
+Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.AssemblyReference.cache
+Z:\DB\.Net\AVC_Resources\obj\Release\AVC.Common.resources
+Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.GenerateResource.cache
+Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.csproj.CoreCompileInputs.cache
+Z:\DB\.Net\AVC_Resources\obj\Release\AVC_Resources.dll

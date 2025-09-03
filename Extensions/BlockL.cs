@@ -86,6 +86,12 @@ namespace AVC
       "Lettura di tutti gli oggetti nello spazio {0}",
       "Alle Objekte im Weltraum lesen {0}",
       "读取空间 {0} 中的所有对象"    };
+    public static readonly string[] BlockNotInserted = {
+      "Block '{0}' was not inserted into the drawing",
+      "Блок '{0}' не был вставлен в чертеж",
+      "Il blocco '{0}' non è stato inserito nel disegno",
+      "Block „{0}“ wurde nicht in die Zeichnung eingefügt",
+      "块“{0}”未插入到图形中" };
 
   }
 }

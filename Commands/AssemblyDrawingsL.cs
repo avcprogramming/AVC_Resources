@@ -1,0 +1,606 @@
+﻿namespace AVC
+{
+  public class
+  AssemblyDrawingsL
+  {
+
+    public static readonly string[,] AsmDrawStyleNames = {
+/* 0 */ {
+        CommandL.AsmDraw[0],
+        CommandL.AsmDraw[1],
+        CommandL.AsmDraw[2],
+        CommandL.AsmDraw[3],
+        CommandL.AsmDraw[4]  },
+/* 1 */ {
+        CommandL.AsmDraw[0],
+        CommandL.AsmDraw[1],
+        CommandL.AsmDraw[2],
+        CommandL.AsmDraw[3],
+        CommandL.AsmDraw[4]  },
+    };
+
+    public static string[] DefaultLayoutName = {
+      "Asm%viewtargetname%",
+      "СБ%viewtargetname%",
+      "Asm%viewtargetname%",
+      "Asm%viewtargetname%",
+      "集会%viewtargetname%"};
+
+    public static readonly string[] AsmStyle = {
+      "  Assembly drawing style will be used: {0}",
+      "  Будет использован стиль сборочных чертежей: {0}",
+      "  Verrà utilizzato lo stile di disegno dell'assemblaggio: {0}",
+      "  Es wird folgender Montagezeichnungsstil verwendet: {0}",
+      "  将使用装配绘图样式：{0}" };
+
+    public static readonly string[] AsmNumberErr = {
+      "Too many assemblies({0}). There can only be 255 sheets in one drawing.",
+      "Слишком много сборок({0}). В одном чертеже может быть только 255 листов.",
+      "Troppi assembly ({0}). Possono esserci solo 255 fogli in un disegno.",
+      "Zu viele Assemblys ({0}). Eine Zeichnung darf nur 255 Blätter enthalten.",
+      "程序集过多（{0}）。 一个dwg文件中只能有 255 个布局(图纸)。"};
+
+    public static readonly string[] AsmDrawStyleKW = {
+      "ASMDRAWstyle",
+      "ASMDRAWcтиль",
+      "ASMDRAWstile",
+      "ASMDRAWstil",
+      "ASMDRAW风格" };
+    public static readonly string[] ExposeStyleKW = {
+      "EXPOSEstyle",
+      "EXPOSEcтиль",
+      "EXPOSEstile",
+      "EXPOSEstil",
+      "EXPOSE风格" };
+    public static readonly string[] PlaceLeaderStyleKW = {
+      "PLACEstyle",
+      "PLACEcтиль",
+      "PLACEstile",
+      "PLACEstil",
+      "PLACE风格" };
+    public static readonly string[] DefLayoutAttributes = {
+      "DRAWING=%viewtargetname%\r\n" +
+        "SCALE=%viewstandardscale%\r\n" +
+        "DETAILER=%<\\AcVar Author>%\r\n"+
+        "TECHLEAD=\r\n" +
+        "PROJECT=%<\\AcVar Filename \\f \"%fn2\">%\r\n" +
+        "CLIENT=%<\\AcVar Subject>%",
+      "ЧЕРТЕЖ=%viewtargetname%\r\n" +
+        "МАСШТАБ=%viewstandardscale%\r\n" +
+        "РАЗРАБ=%<\\AcVar Author>%\r\n"+
+        "ПРОВЕРИЛ=\r\n" +
+        "ПРОЕКТ=%<\\AcVar Filename \\f \"%fn2\">%\r\n" +
+        "ЗАКАЗЧИК=%<\\AcVar Subject>%" };
+    public static readonly string[] CreatingViewports = {
+      "There are no viewports on sheet {0}. The program will create viewports to accommodate {1} assemblies.",
+      "На листе {0} нет ни одного вьюпорта (видового экрана). Программа создаст вьюпорты для размещения {1} сборок.",
+      "Non ci sono finestre di visualizzazione sul foglio {0}. Il programma creerà finestre di visualizzazione per ospitare gli assiemi {1}.",
+      "Auf Blatt {0} sind keine Ansichtsfenster vorhanden. Das Programm erstellt Ansichtsfenster für {1} Baugruppen.",
+      "图纸 {0} 上没有视口。程序将创建视口以容纳 {1} 个组件。"};
+    public static readonly string[] ChangeViewports = {
+      "The number of viewports on the sheet {0} does not match the program settings: there is {1}, we need {2}. " +
+        "The program will recreate all viewports again.",
+      "Количество вьюпортов на листе {0} не соответствует настройке программы: есть {1}, надо {2}. " +
+        "Программа пересоздаст все вьюпорты заново.",
+      "Il numero di finestre di visualizzazione sul foglio {0} non corrisponde alle impostazioni del programma: ce n'è {1}, ne servono {2}. " +
+        "Il programma ricreerà tutte le finestre di visualizzazione.",
+      "Die Anzahl der Ansichtsfenster auf dem Blatt {0} entspricht nicht den Programmeinstellungen: Es gibt {1}, wir benötigen {2}. " +
+        "Das Programm erstellt alle Ansichtsfenster erneut.",
+      "图纸 {0} 上的视口数量与程序设置不符：有 {1}，需要 {2}。程序将重新创建所有视口。" };
+    public static readonly string[] VisualStyleNotFound = {
+      "Visual style '{0}' not found. The program will use the default visual style. ",
+      "Визуальный стиль '{0}' не найден. Программа будет использовать стандартный визуальный стиль.",
+      "Stile visivo '{0}' non trovato. Il programma utilizzerà lo stile visivo predefinito.",
+      "Der Visualisierungsstil '{0}' wurde nicht gefunden. Das Programm verwendet den Standard-Visualisierungsstil.",
+      "未找到视觉样式“{0}”。程序将使用默认的视觉样式。"};
+
+    public static readonly string[] NoFileTemplate = {
+      "The drawing template from which to retrieve the sheet template has not been specified. The program will use the current drawing as a template.",
+      "Не задан шаблон чертежа, из которого следует извлекать шаблон листа. Программа будет использовать текущий чертеж как шаблон.",
+      "Non è stato specificato il modello di disegno da cui recuperare il modello di foglio. Il programma utilizzerà il disegno corrente come modello.",
+      "Die Zeichnungsvorlage, aus der die Blattvorlage abgerufen werden soll, wurde nicht angegeben. Das Programm verwendet die aktuelle Zeichnung als Vorlage.",
+      "未检索图形样板的布局。该程序将使用当前绘图作为模板。"};
+
+    public static readonly string[] NoLayoutTemplate = {
+      "The name of the template sheet (layout) for creating new sheets is not specified. The program will use the first sheet with viewports it encounters.",
+      "Не задано имя листа-шаблона для создания новых листов. Программа будет использовать первый попавшийся лист с вьюпортами.",
+      "Il nome del foglio modello per la creazione di nuovi fogli non è specificato. Il programma utilizzerà il primo foglio con viewport che incontra.",
+      "Der Name des Vorlagenblatts zum Erstellen neuer Blätter ist nicht angegeben. Das Programm verwendet das erste Blatt mit Ansichtsfenstern, das es findet.",
+      "未指定用于创建新图纸的模板图纸名称。程序将使用遇到的第一个带有视口的图纸。" };
+
+    public static readonly string[] LayoutNotFound = {
+      "The sheet (layout) with the name '{0}' was not found in template '{1}'. The program will use the first sheet with viewports it encounters.",
+      "Лист с именем '{0}' не найден в шаблоне '{1}'. Программа будет использовать первый попавшийся лист с вьюпортами.",
+      "Il foglio (layout) con il nome '{0}' non è stato trovato nel modello '{1}'. Il programma utilizzerà il primo foglio con viewport che incontra.",
+      "Das Blatt (Layout) mit dem Namen '{0}' wurde in der Vorlage '{1}' nicht gefunden. Das Programm verwendet das erste Blatt mit Ansichtsfenstern, das es findet.",
+      "未找到名称为“{0}”的图纸（布局）在模板 '{1}' 中。程序将使用遇到的第一个带有视口的图纸。"  };
+    public static readonly string[] PartsWOLeader = {
+      "Failed to place all MLeader for assembly '{0}' : {1}",
+      "Не удалось разместить все выноски для сборки '{0}' : {1}",
+      "Impossibile posizionare tutte le chiamate per l'assembly '{0}': {1}",
+      "Es konnten nicht alle Callouts für die Baugruppe „{0}“ platziert werden: {1}",
+      "无法放置程序集“{0}”的所有标注：{1}"};
+    public static readonly string[] Process =    {
+      "Creating viewports and annotations",
+      "Создание видов и аннотаций",
+      "Creazione di viste e annotazioni",
+      "Erstellen von Ansichtsfenstern und Anmerkungen",
+      "创建视口和注释" };
+    public static readonly string[] BlockExtentsErr = {
+      "Unable to measure the dimensions of block '{0}'. The block will be overlaid on the drawing.",
+      "Не удалось измерить размеры блока '{0}'. Блок будет наложен на чертеж.",
+      "Impossibile misurare le dimensioni del blocco '{0}'. Il blocco verrà sovrapposto al disegno.",
+      "Die Abmessungen des Blocks '{0}' konnten nicht gemessen werden. Der Block wird auf die Zeichnung gelegt.",
+      "无法测量块“{0}”的尺寸。该块将覆盖在图纸上。" }; 
+    public static readonly string[] BlockAttrErr = {
+      "There is no attribute '{1}' in the view name block '{0}'.",
+      "В блоке названия вида '{0}' нет атрибута '{1}'.",
+      "Non esiste l'attributo '{1}' nel blocco del nome della vista '{0}'.",
+      "Im Ansichtsname-Block '{0}' ist kein Attribut '{1}' vorhanden.",
+      "视图名称块“{0}”中没有属性“{1}”。"    };
+    public static readonly string[] NoAttributesErr = {
+      "The view name block '{0}' does not have any attributes to fill. \r\n" +
+        "Reconfigure the attribute list.",
+      "В блоке названия вида '{0}' нет ни одного атрибута для заполнения. \r\n" +
+        "Перенастройте список атрибутов.",
+      "Il blocco del nome della vista '{0}' non dispone di attributi da compilare. \r\n" +
+        "Riconfigurare l'elenco degli attributi.",
+      "Im Ansichtsname-Block '{0}' sind keine Attribute zum Ausfüllen vorhanden. \r\n" +
+        "Konfigurieren Sie die Attributliste neu.",
+      "视图名称块“{0}”没有任何要填写的属性。重新配置属性列表。" };
+
+    //=============================================== AsmDrawOptionsBox ================================================
+    public static readonly string[] DialogTitle = {
+      "Assembly Drawings command options",
+      "Настройки команды Сборочные Чертежи",
+      "Opzioni di comando Disegni di assemblaggio",
+      "Befehlsoptionen für Montagezeichnungen",
+      "装配图命令选项" };
+    //public static readonly string[] StyleHint = {
+    //  "The command uses the current Expose style to arrange assemblies in the model. \r\n" +
+    //    "The PalceLeaders command style is used to create MLeders from parts. \r\n" +
+    //    "The Dimension Detailing (DimDet) command style will be used for overall dimensions.",
+    //  "Команда использует текущий стиль Выставки Сборок (Expose) для расстановки сборок в модели. \r\n" +
+    //    "Для создания выносок с деталей используется стиль команды Расстановка Выносок (PalceLeaders). \r\n" +
+    //    "Для габаритных размеров будет использован стиль команды Размеры Для Деталировки (DimDet).",
+    //  "Il comando utilizza lo stile di comando Expose corrente per disporre gli assiemi nel modello.\r\n" +
+    //    "Lo stile di comando PalceLeaders viene utilizzato per creare didascalie dalle parti. \r\n" +
+    //    "Lo stile di comando Dimension Detailing (DimDet) verrà utilizzato per le quote complessive.",
+    //  "Der Befehl verwendet den aktuellen Expose-Stil, um Baugruppen im Modell anzuordnen. \r\n" +
+    //    "Der Befehlsstil „PalceLeaders“ wird zum Erstellen von Beschriftungen aus Bauteilen verwendet. \r\n" +
+    //    "Der Befehlsstil „Dimension Detailing“ (DimDet) wird für Gesamtbemaßungen verwendet.",
+    //  "该命令使用当前的 Expose 样式在模型中排列装配体。\r\n" +
+    //    "PalceLeaders 命令样式用于从零件创建标注。\r\n" +
+    //    "尺寸详图 (DimDet) 命令样式将用于整体尺寸。",};
+    public static readonly string[] StyleNameTip = {
+      "The name for this Assembly Drawing style. Not used in the program. Only for convenience of choice.",
+      "Название для этого стиля Сборочных Чертежей. Не используется в программе. Только для удобства выбора.",
+      "Il nome per questo stile Disegni di assemblaggio. Non utilizzato nel programma. Solo per comodità di scelta.",
+      "Der Name für diesen Montagezeichnungen-Stil. Wird im Programm nicht verwendet. Nur aus Bequemlichkeit.",
+      "此装配图样式的名称。程序中未使用。仅为方便选择。" };
+    public static readonly string[] ExposeTip = {
+      "Run the Expose Assemblies command to arrange assemblies in the model.\r\n"+
+        "If this option is disabled, the program will not make copies of assemblies, \r\n" +
+        "the selected blocks will be used, as they are located in the model.\r\n" +
+        "It is possible that assemblies will block each other in viewports.",
+      "Запускать команду Выставка Сборок (Expose) для расстановки сборок в модели.\r\n" +
+        "Если опция выключена, то программа не будет делать копии сборок, \r\n" +
+        "будут использованы выбранные блоки, так как они расположены в модели.\r\n" +
+        "При этом возможно, что сборки будут перегораживать друг друга во вьюпортах.",
+      "Esegui il comando Expose Assemblies per disporre gli assiemi nel modello.\r\n" +
+        "Se questa opzione è disabilitata, il programma non copierà gli assiemi, \r\n" +
+        "verranno utilizzati i blocchi selezionati, così come sono posizionati nel modello.\r\n" +
+        "È possibile che gli assiemi si blocchino a vicenda nelle finestre di visualizzazione.",
+      "Führen Sie den Befehl Expose Assemblies aus, um Baugruppen im Modell anzuordnen.\r\n" +
+        "Wenn diese Option deaktiviert ist, erstellt das Programm keine Kopien von Baugruppen, \r\n" +
+        "es werden die ausgewählten Blöcke verwendet, so wie sie im Modell positioniert sind.\r\n" +
+        "Es ist möglich, dass sich Baugruppen in Ansichtsfenstern gegenseitig blockieren.",
+      "运行 Expose Assemblies 命令以在模型中排列组件。\r\n" +
+        "如果禁用此选项，程序将不会复制组件，\r\n" +
+        "将使用所选块，就像它们在模型中定位一样。\r\n" +
+        "组件可能会在视口中相互阻塞。" };
+    public static readonly string[] LayoutTemplateTip = {
+      "The name of the layout to be copied from the drawing template. \r\n" +
+        "This layout may contain viewports - each of them will contain one assembly. \r\n" +
+        "If there are no viewports, then you must specify a number of assemblies on the sheet greater than zero.",
+      "Название вкладки листа, который надо копировать из шаблона чертежа. \r\n" +
+        "На этом листе могут быть вьюпорты - в каждом из них будет размещена одна сборка. \r\n" +
+        "Если вьюпортов нет, то нужно указать количество сборок на листе больше ноля.",
+      "Il nome del foglio da copiare dal modello di disegno. \r\n" +
+        "Questo foglio può contenere delle finestre di visualizzazione, ognuna delle quali conterrà un assieme. \r\n" +
+        "Se non ci sono finestre di visualizzazione, \r\n" +
+        "è necessario specificare un numero di assiemi sul foglio maggiore di zero.",
+      "Der Name des Blatts, das aus der Zeichnungsvorlage kopiert werden soll. \r\n" +
+        "Dieses Blatt kann Ansichtsfenster enthalten – jedes davon enthält eine Baugruppe. \r\n" +
+        "Wenn keine Ansichtsfenster vorhanden sind, müssen Sie eine Anzahl von Baugruppen auf dem Blatt angeben, \r\n" +
+        "die größer als Null ist.",
+      "图形样板文件中的布局名称。 \r\n" +
+        "此工作表可能包含视口 - 每个视口将包含一个组件。\r\n" +
+        "如果没有视口，则必须在工作表上指定大于零的组件数量。"};
+    public static readonly string[] CountPerLayout = {
+      "Number of assemblies per layout",
+      "Количество сборок на лист",
+      "Numero di assiemi per foglio",
+      "Anzahl der Baugruppen pro Blatt",
+      "每张图纸的组件数量"};
+    public static readonly string[] CountPerLayoutTip = {
+      "Ignore viewports in the sheet template and place no more than this number of assemblies. \r\n" +
+        "If 0, then use the old viewports of the layout template as the location of each assembly.",
+      "Игнорировать вьюпорты в шаблоне листа и разместить не более этого количества сборок. \r\n" +
+        "Если 0, то использовать старые вьюпорты шаблона листа, как расположение каждой сборки.",
+      "Ignorare le finestre nel modello di foglio e non posizionare più di questo numero di assiemi. \r\n" +
+        "Se 0, utilizzare le vecchie finestre di visualizzazione del modello di foglio come posizione di ogni assemblaggio.",
+      "Ignorieren Sie Ansichtsfenster in der Blattvorlage und platzieren Sie nicht mehr als diese Anzahl an Baugruppen. \r\n" +
+        "Wenn 0, verwenden Sie die alten Ansichtsfenster der Blattvorlage als Position jeder Baugruppe.",
+      "忽略图纸模板中的视口，并且放置的组件数量不得超过此数量。 \r\n" +
+        "如果为 0，则使用图纸模板的旧视口作为每个组件的位置。" };
+    public static readonly string[] PlaceRearViewRight ={
+      "Place the rear view to the right",
+      "Размещать вид сзади правее.",
+      "Posizionare la vista posteriore a destra.",
+      "Platzieren Sie die Rückansicht nach rechts.",
+      "后视图应放置在右边缘。" };
+    public static readonly string[] PlaceRearViewRightTip = {
+      "The rear view will be placed to the right of the side view. \r\n" +
+        "If this option is disabled, the rear view will be placed below the front view.",
+      "Вид сзади будет помещаться правее от вида сбоку. \r\n" +
+        "Если опция выключена, то вид сзади помещается ниже вида спереди.",
+      "La vista posteriore verrà posizionata a destra della vista laterale. \r\n" +
+        "Se questa opzione è disabilitata, la vista posteriore verrà posizionata sotto la vista frontale.",
+      "Die Rückansicht wird rechts von der Seitenansicht platziert. \r\n" +
+        "Wenn diese Option deaktiviert ist, wird die Rückansicht unter der Vorderansicht platziert.",
+      "后视图将放置在侧视图的右侧。如果禁用此选项，后视图将放置在前视图下方。" };
+    public static readonly string[] SWIfSingle = {
+      "Make SW view instead of any isometric view",
+      "Делать ЮЗ-вид вместо любой изометрии",
+      "Fare la vista SW invece di qualsiasi vista isometrica",
+      "SW-Ansicht anstelle einer isometrischen Ansicht erstellen",
+      "制作 SW 视图而不是任何等轴测视图" };
+    public static readonly string[] SWIfSingleTip = {
+      "If only one isometric view is configured, then replace it with a view from the South-West (+X,+Y), \r\n" +
+        "violating the rules of projection directions.",
+      "Если настроена только одна изометрия, то заменить ее на вид с Юго-Запада (+X,+Y), " +
+        "нарушая правила направлений проецирования.",
+      "Se è configurata una sola vista isometrica, sostituirla con una vista da Sud-Ovest (+X,+Y), \r\n" +
+        "violando le regole delle direzioni di proiezione.",
+      "Wenn nur eine isometrische Ansicht konfiguriert ist, \r\n" +
+        "ersetzen Sie sie durch eine Ansicht aus Südwesten (+X,+Y), \r\n" +
+        "wodurch die Regeln für Projektionsrichtungen verletzt werden.",
+      "如果只配置了一个等轴测视图，则将其替换为来自西南方向的视图（+X，+Y），\r\n" +
+        "违反投影方向的规则。" };
+    public static readonly string[] ThirdAngleProjection = {
+      "Third Angle Projection",
+      "Проекция из 'Третьего Угла'",
+      "Proiezione del Terzo Angolo",
+      "Dritte Winkelprojektion",
+      "第三角投影" };
+    public static readonly string[] ThirdAngleProjectionTip = {
+      "Place views using the Third Angle Projection type.\r\n" +
+        "This is the standard for placing views in the US and Japan: ANSI, ASME, CSA, JIS.\r\n" +
+        "1st angle - the object is located between the observer and the projection plane.\r\n" +
+        "3rd angle - the projection plane is located between the observer and the object.",
+      "Размещать виды по типу проекции «третий угол» (Third Angle Projection).\r\n" +
+        "Первый угол (1st angle) — объект расположен между наблюдателем и плоскостью проекции (ГОСТ, ЕСКД, DIN).\r\n" +
+        "Третий угол (3rd angle) — плоскость проекции находится между наблюдателем и объектом.\r\n"+
+        "Это стандарт размещения видов в США и Японии: ANSI, ASME, CSA, JIS.\r\n",
+      "Posizionare le viste utilizzando il tipo di proiezione del terzo angolo.\r\n" +
+        "Questo è lo standard per il posizionamento delle viste negli Stati Uniti e in Giappone: ANSI, ASME, CSA, JIS.\r\n" +
+        "1st angle - l'oggetto si trova tra l'osservatore e il piano di proiezione (DIN, GOST).\r\n" +
+        "3rd angle - il piano di proiezione si trova tra l'osservatore e l'oggetto.",
+      "Platzieren Sie Ansichten mit dem Projektionstyp Dritte Winkelprojektion.\r\n" +
+        "Dies ist der Standard für die Platzierung von Ansichten in den USA und Japan: ANSI, ASME, CSA, JIS.\r\n" +
+        "1st angle - das Objekt befindet sich zwischen dem Beobachter und der Projektionsfläche (DIN, GOST).\r\n" +
+        "3rd angle - die Projektionsfläche befindet sich zwischen dem Beobachter und dem Objekt.",
+      "使用第三角投影类型放置视图。\r\n" +
+        "第一角 - 物体位于观察者和投影平面之间 (DIN, GOST)。\r\n" +
+        "第三角 - 投影平面位于观察者和物体之间 (ANSI、ASME、CSA、JIS)。" };
+    public static readonly string[] SameScaleTip = {
+      "Same scale for all assemblies on one sheet. \r\n" +
+        "The option affects only the scale of orthogonal views. \r\n" +
+        "All orthogonal views of one assembly will be adjusted to the same scale in any case.",
+      "Одинаковый масштаб для всех сборок на одном листе. \r\n" +
+        "Опция влияет только на масштаб ортогональных видов. \r\n" +
+        "Все ортогональные виды одной сборки в любом случае будут подгоняться под один масштаб.",
+      "Stessa scala per tutti gli assiemi su un foglio.\r\n" +
+        "L'opzione influisce solo sulla scala delle viste ortogonali.\r\n" +
+        "Tutte le viste ortogonali di un assieme verranno comunque adattate alla stessa scala.",
+      "Gleicher Maßstab für alle Baugruppen auf einem Blatt.\r\n" +
+        "Die Option wirkt sich nur auf den Maßstab orthogonaler Ansichten aus.\r\n" +
+        "Alle orthogonalen Ansichten einer Baugruppe werden in jedem Fall auf den gleichen Maßstab eingestellt." +
+      "同一张图纸上所有组件的比例相同。\r\n" +
+        "此选项仅影响正交视图的比例。\r\n" +
+        "无论如何，一个组件的所有正交视图都将调整为相同比例。"};
+    public static readonly string[] Make = {
+      "Make",
+      "Создать",
+      "Crea",
+      "Erstellen",
+      "制作"};
+    public static readonly string[] Title = {
+      "Assembly Title",
+      "Заголовок сборки",
+      "Titolo dell'assemblaggio",
+      "Baugruppentitel",
+      "组件标题" };
+    public static readonly string[] TitleTip = {
+      "Create an MText with a title above each assembly.",
+      "Создавать MText с заголовком над каждой сборкой.",
+      "Creare MText con il titolo sopra ogni assemblaggio.",
+      "Erstellen Sie MText mit dem Titel über jeder Baugruppe.",
+      "在每个组件上方创建带标题的 MText。" };
+    public static readonly string[] TitleCenteredTip = {
+      "Center the title above the assembly in the middle of all assembly views.\r\n" +
+        "Also center the block with the view name in the center of the viewport.",
+      "Центрировать заголовок над сборкой по середине всех видов сборки. \r\n" +
+        "Так же центрировать блок с названием вида по центру вьюпорта.",
+      "Centrare il titolo sopra l'assemblaggio al centro di tutte le viste dell'assemblaggio. \r\n" +
+        "Centrare anche il blocco con il nome della vista al centro della finestra di visualizzazione.",
+      "Den Titel über der Baugruppe in der Mitte aller Baugruppenansichten zentrieren. \r\n" +
+        "Zentrieren Sie auch den Block mit dem Ansichtsname in der Mitte des Ansichtsfensters.",
+      "将标题居中放置在所有组件视图的组件上方。还要将带有视图名称的块居中放置在视口的中心。" };
+    public static readonly string[] TitleSpaceTip = {
+      "Leave a space between the title and the assembly.",
+      "Оставлять зазор между заголовком и сборкой.",
+      "Lascia uno spazio tra il titolo e l'assemblaggio.",
+      "Lassen Sie einen Abstand zwischen dem Titel und der Baugruppe.",
+      "在标题和组件之间留出空间。" };
+    public static readonly string[] TitleMaskTip = {
+      "Assembly property substitution template for assembly header. Sheet and viewport property substitutions will not work.",
+      "Шаблон подстановок свойств сборки для заголовка сборки. Подстановки свойств листа и вьюпортов не сработают.",
+      "Modello di sostituzione delle proprietà di assemblaggio per l'intestazione dell'assemblaggio. Le sostituzioni delle proprietà del foglio e della finestra di visualizzazione non funzioneranno.",
+      "Vorlagen für den Austausch von Baugruppeneigenschaften für die Baugruppenüberschrift. Blatt- und Ansichtsfenstereigenschaften funktionieren nicht.",
+      "组件标题的组件属性替换模板。图纸和视口属性替换将不起作用。" };
+    public static readonly string[] ViewNames = {
+      "View Names",
+      "Названия видов",
+      "Nomi delle viste",
+      "Ansichtsname",
+      "视图名称" };
+    public static readonly string[] ViewNamesTip = {
+      "Place a block with the view name under each viewport.",
+      "Помещать блок с названием вида под каждый вьюпорт.",
+      "Posizionare un blocco con il nome della vista in ogni finestra di visualizzazione.",
+      "Platzieren Sie einen Block mit dem Ansichtsname in jedem Ansichtsfenster.",
+      "在每个视口中放置一个带有视图名称的块。" };
+    public static readonly string[] ViewNamesEnable = {
+      "Insert view name blocks",
+      "Вставить блоки названий видов",
+      "Inserire i blocchi dei nomi delle viste",
+      "Ansichtsname-Blöcke einfügen",
+      "插入视图名称块" };
+    public static readonly string[] VisualStyleTip = {
+      "Assign this visual style to all orthogonal views (except isometric). \r\n" +
+        "Empty line - keep the visual style of the old viewports from the sheet template.",
+      "Назначить этот визуальный стиль всем ортогональным видам (кроме изометрических). \r\n" +
+        "Пустая строка - оставить визуальный стиль старых вьюпортов из шаблона листа.",
+      "Assegnare questo stile visivo a tutte le viste ortogonali (escluse le isometriche). \r\n" +
+        "Riga vuota: mantiene lo stile visivo delle vecchie finestre del modello di foglio.",
+      "Weisen Sie diesen Visualisierungsstil allen orthogonalen Ansichten zu (außer isometrischen). \r\n" +
+        "Leere Zeile – Behalten Sie den visuellen Stil der alten Ansichtsfenster aus der Blattvorlage bei.",
+      "将此视觉样式分配给所有正交视图（等轴测视图除外）\r\n" +
+        "空行 - 保留图纸模板中旧视口的视觉样式。" };
+    public static readonly string[] Isometric = {
+      "Isometric",
+      "Изометрии",
+      "Isometric",
+      "Isometric",
+      "等轴测" };
+    public static readonly string[] IsoVisualStyleTip = {
+      "Assign this visual style to isometric views. \r\n" +
+        "Leave empty to use the style of the old viewports of the sheet template.",
+      "Назначить этот визуальный стиль изометрическим видам. \r\n" +
+        "Оставьте пустым, чтоб использовать стиль старых вьюпортов шаблона листа.",
+      "Assegnare questo stile visivo alle viste isometriche. \r\n" +
+        "Lascia vuoto per utilizzare lo stile delle vecchie finestre del modello di foglio.",
+      "Weisen Sie diesen Visualisierungsstil isometrischen Ansichten zu. \r\n" +
+        "Lassen Sie es leer, um den Stil der alten Ansichtsfenster der Blattvorlage zu verwenden.",
+      "将此视觉样式分配给等轴测视图。\r\n留空则使用旧图纸模板视口的样式。" };
+    public static readonly string[] FreezeLayers = {
+      "Freeze Layers",
+      "Заморозить слои",
+      "Congela Layers",
+      "Layer sperren",
+      "冻结图层" };
+    public static readonly string[] FreezeLayersTip = {
+      "List of layers to freeze in all viewports.",
+      "Список слоев, которые надо заморозить во всех вьюпортах.",
+      "Elenco dei Layer da congelare in tutte le finestre di visualizzazione.",
+      "Liste der in allen Ansichtsfenstern zu sperrenden Layer.",
+      "要在所有视口中冻结的图层列表。" };
+    public static readonly string[] OverallDimensionsTip = {
+      "Show the overall dimensions of the assembly in two orthogonal views.",
+      "Показать габаритные размеры сборки на двух ортогональных видах.",
+      "Mostra le dimensioni complessive dell'assieme in due viste ortogonali.",
+      "Zeigt die Gesamtmaße der Baugruppe in zwei orthogonalen Ansichten an.",
+      "在两个正交视图中显示组件的整体尺寸。" };
+    public static readonly string[] DimView1 = {
+      "View for dimensions",
+      "Вид для габаритов",
+      "Vista per le dimensioni",
+      "Ansicht für Maße",
+      "用于尺寸的视图"};
+    public static readonly string[] DimView1Tip = {
+      "On which of the views to place two overall dimensions of the assembly. Only orthogonal views.",
+      "На каком из видов разместить два габаритных размера сборки. Только ортогональные виды.",
+      "Su quale delle viste posizionare due dimensioni complessive dell'assieme. Solo viste ortogonali.",
+      "Auf welcher der Ansichten zwei Gesamtmaße der Baugruppe platziert werden sollen. Nur orthogonale Ansichten.",
+      "在哪个视图上放置组件的两个整体尺寸。仅正交视图。" };
+    public static readonly string[] DimView2 = {
+      "Third dimension",
+      "Третий габарит",
+      "Terza dimensione",
+      "Dritte Dimension",
+      "第三个尺寸" };
+    public static readonly string[] DimView2Tip ={
+      "The view on which to place the third overall dimension. \r\n" +
+        "The view must be in the same column or row as the first view.",
+      "Вид на котором надо разместить третий габаритный размер. \r\n" +
+        "Вид должен быть в том же столбце или в той же строке, что и первый вид.",
+      "La vista su cui posizionare la terza dimensione complessiva. \r\n" +
+        "La vista deve essere nella stessa colonna o riga della prima vista.",
+      "Die Ansicht, auf der die dritte Gesamtmaße platziert werden soll. \r\n" +
+        "Die Ansicht muss sich in derselben Spalte oder Zeile wie die erste Ansicht befinden.",
+      "放置第三个整体尺寸的视图。 \r\n" +
+        "视图必须与第一个视图位于同一列或同一行。" };
+    public static readonly string[] PlaceLeadersTip = {
+      "Place Multi-Leaders from each assembly part on one (or two) assembly views.",
+      "Расставить выноски (MLeader) от каждой детали сборки на одном (или двух) видах сборки.",
+      "Posiziona le didascalie (MLeader) da ogni parte dell'assieme su una (o due) viste dell'assieme.",
+      "Platzieren Sie Beschriftungen (MLeader) von jedem Baugruppenteil auf einer (oder zwei) Baugruppenansichten.",
+      "在一个（或两个）组件视图上从每个组件零件放置标注（MLeader）。" };
+    public static readonly string[] LeadersView = {
+      "View for MLeaders",
+      "Вид для выносок",
+      "Vista per le didascalie",
+      "Ansicht für Beschriftungen",
+      "标注视图" };
+    public static readonly string[] LeadersViewTip = {
+      "The view on which to place callouts (MLeader) from parts. \r\n" +
+        "Do not use the same view as for overall dimensions.",
+      "Вид, на котором надо разместить выноски (MLeader) с позициями деталей. \r\n" +
+        "Не используйте тот же вид, что и для габаритных размеров.",
+      "La vista su cui posizionare le didascalie (MLeader) dalle parti. \r\n" +
+        "Non utilizzare la stessa vista delle dimensioni complessive.",
+      "Die Ansicht, auf der Beschriftungen (MLeader) von Teilen platziert werden sollen. \r\n" +
+        "Verwenden Sie nicht dieselbe Ansicht wie für Gesamtmaße.",
+      "在其中放置零件标注（MLeader）的视图。 \r\n" +
+        "不要使用与整体尺寸相同的视图。" };
+    public static readonly string[] LeaderGap = {
+      "Gap for MLeaders",
+      "Зазор для выносок",
+      "Spazio per MLeaders",
+      "Abstand für MLeaders",
+      "MLeaders 间隙"};
+    public static readonly string[] LeaderGapTip = {
+      "How much space to leave on the side of the view to place callouts.",
+      "Сколько оставить места сбоку от вида для размещения выносок.",
+      "Quanto spazio lasciare sul lato della vista per posizionare le didascalie.",
+      "Wie viel Platz an der Seite der Ansicht zum Platzieren von Beschriftungen gelassen werden soll.",
+      "在视图侧面留出多少空间以放置标注。" };
+    public static readonly string[] ViewBlockTip = {
+      "Select a block from the drawing or DWT template that has attributes for the view name and scale.",
+      "Выберите блок из чертежа или DWT-шаблона, в котором есть атрибуты для имени и масштаба вида.",
+      "Selezionare un blocco dal disegno o dal modello DWT che abbia attributi per il nome e la scala della vista.",
+      "Wählen Sie einen Block aus der Zeichnung oder DWT-Vorlage, der Attribute für den Ansichtsname und den Maßstab enthält.",
+      "从图纸或 DWT 模板中选择一个块，该块具有视图名称和比例的属性。" };
+    public static readonly string[] ViewNameHeight = {
+      "Height gap",
+      "Зазор по высоте",
+      "Spazio in altezza",
+      "Höhenabstand",
+      "高度间隙" };
+    public static readonly string[] ViewNameHeightTip = {
+      "How much space to leave under the view to place the block. \r\n" +
+        " If 0, the program will measure the height of the block itself.",
+      "Сколько места оставить под видом, для размещения блока. Если 0, то программа сама измерит высоту блока.",
+      "Quanto spazio lasciare sotto la vista per posizionare il blocco. \r\n" +
+        "Se 0, il programma misurerà l'altezza del blocco stesso.",
+      "Wie viel Platz unter der Ansicht zum Platzieren des Blocks gelassen werden soll. \r\n" +
+        "Wenn 0, misst das Programm die Höhe des Blocks selbst.",
+      "在视图下方留出多少空间以放置块。如果为 0，程序将自行测量块的高度。" };
+    public static readonly string[] ViewAttributes ={
+      "Block attributes",
+      "Атрибуты блока",
+      "Attributi del blocco",
+      "Blockattribute",
+      "块属性" };
+    public static readonly string[] ViewAttributesTip ={
+      "A list of attribute names (tags) and values. \r\n" +
+        "Each attribute on a new line. Write values after the = sign. \r\n" +
+        "You can use all viewport property substitutions.",
+      "Список имен (тегов) и значений атрибутов. \r\n" +
+        "Каждый атрибут в новой строке. Значения пишите после символа =. \r\n" +
+        "Можно использовать все подстановки свойств вьюпорта.",
+      "Elenco di nomi e valori degli attributi. \r\n" +
+        "Ogni attributo su una nuova riga. Scrivi i valori dopo il segno =. \r\n" +
+        "È possibile utilizzare tutte le sostituzioni delle proprietà della finestra di visualizzazione.",
+      "Liste von Attributnamen und -werten. \r\n" +
+        "Jedes Attribut in einer neuen Zeile. Schreiben Sie Werte nach dem = Zeichen. \r\n" +
+        "Sie können alle Eigenschaftenersetzungen des Ansichtsfensters verwenden.",
+      "属性名称和值的列表。 \r\n" +
+        "每个属性占一行。在 = 符号后写值。 \r\n" +
+        "您可以使用所有视口属性替换。" };
+    public static readonly string[] ViewGap = {
+      "Gap between views",
+      "Зазор между видами",
+      "Spazio tra le viste",
+      "Abstand zwischen Ansichten",
+      "视图之间的间隙" };
+    public static readonly string[] ViewGapTip = {
+      "How much minimum space to leave between the views of one assembly. \r\n" +
+        "This gap is also used between assemblies.",
+      "Сколько минимально оставить места между видами одной сборки. \r\n" +
+        "Этот зазор так же используется между сборками.",
+      "Quanto spazio minimo lasciare tra le viste di un assemblaggio. \r\n" +
+        "Questo spazio viene utilizzato anche tra gli assiemi.",
+      "Wie viel Mindestabstand zwischen den Ansichten einer Baugruppe gelassen werden soll. \r\n" +
+        "Dieser Abstand wird auch zwischen Baugruppen verwendet.",
+      "在一个组件的视图之间留出多少最小空间。 \r\n" +
+        "此间隙也用于组件之间。" };
+    public static readonly string[] LayoutAttributesTip = {
+      "A list of attributes for substitution into all sheet blocks. \r\n" +
+        "Each attribute on a new line. Write values after the = sign. \r\n" +
+        "You can use all sheet property substitutions, its viewports and objects in viewports.",
+      "Список атрибутов для подстановки во все блоки листа. \r\n" +
+        "Каждый атрибут в новой строке. Значения пишите после символа =. \r\n" +
+        "Можно использовать все подстановки свойств листа, его вьюпортов и объектов во вьюпортах.",
+      "Elenco di attributi per la sostituzione in tutti i blocchi del foglio. \r\n" +
+        "Ogni attributo su una nuova riga. Scrivi i valori dopo il segno =. \r\n" +
+        "È possibile utilizzare tutte le sostituzioni delle proprietà del foglio, i suoi viewport e gli oggetti nei viewport.",
+      "Eine Liste von Attributen zur Substitution in alle Blattblöcke. \r\n" +
+        "Jedes Attribut in einer neuen Zeile. Schreiben Sie Werte nach dem = Zeichen. \r\n" +
+        "Sie können alle Blatt-Eigenschaftenersetzungen, seine Ansichtsfenster und Objekte in Ansichtsfenstern verwenden.",
+      "所有图纸块的属性列表。 \r\n" +
+        "每个属性占一行。在 = 符号后写值。 \r\n" +
+        "您可以使用所有图纸属性替换、其视口和视口中的对象。" };
+    public static readonly string[] LeftField = {
+      "Left field",
+      "Поле слева",
+      "Campo a sinistra",
+      "Linkes Feld",
+      "左字段" };
+    public static readonly string[] LeftFieldTip = {
+      "Indent from the left edge of the paper space to the assembly drawings. For placing the frame and other sheet objects.",
+      "Отступ от левого края пространства бумаги до чертежей сборок. Для размещения рамки и прочих объектов листа.",
+      "Rientro dal bordo sinistro dello spazio carta ai disegni di assemblaggio. Per posizionare il telaio e altri oggetti del foglio.",
+      "Einzug vom linken Rand des Papierbereichs zu den Montagezeichnungen. Zum Platzieren des Rahmens und anderer Blattelemente.",
+      "从图纸空间的左边缘到装配图的缩进。用于放置框架和其他图纸对象。"};
+    public static readonly string[] RightField = {
+      "Right",
+      "Справа",
+      "Destra",
+      "Rechtes",
+      "右字段" };
+    public static readonly string[] RightFieldTip = {
+      "Indent from the right edge of the paper space to the assembly drawings. For placing the frame and other sheet objects.",
+      "Отступ от правого края пространства бумаги до чертежей сборок. Для размещения рамки и прочих объектов листа.",
+      "Rientro dal bordo destro dello spazio carta ai disegni di assemblaggio. Per posizionare il telaio e altri oggetti del foglio.",
+      "Einzug vom rechten Rand des Papierbereichs zu den Montagezeichnungen. Zum Platzieren des Rahmens und anderer Blattelemente.",
+      "从图纸空间的右边缘到装配图的缩进。用于放置框架和其他图纸对象。" };
+    public static readonly string[] TopField = {
+      "Top field",
+      "Поле сверху",
+      "Campo in alto",
+      "Oberes Feld",
+      "顶部字段" };
+    public static readonly string[] TopFieldTip = {
+      "Indent from the top edge of the paper space to the assembly drawings. For placing the frame and other sheet objects.",
+      "Отступ от верхнего края пространства бумаги до чертежей сборок. Для размещения рамки и прочих объектов листа.",
+      "Rientro dal bordo superiore dello spazio carta ai disegni di assemblaggio. Per posizionare il telaio e altri oggetti del foglio.",
+      "Einzug vom oberen Rand des Papierbereichs zu den Montagezeichnungen. Zum Platzieren des Rahmens und anderer Blattelemente.",
+      "从图纸空间的上边缘到装配图的缩进。用于放置框架和其他图纸对象。" };
+    public static readonly string[] BottomField = {
+      "Bottom",
+      "Снизу",
+      "Basso",
+      "Unteres",
+      "底部字段" };
+    public static readonly string[] BottomFieldTip = {
+      "Indent from the bottom edge of the paper space to the assembly drawings. For placing the frame and other sheet objects.",
+      "Отступ от нижнего края пространства бумаги до чертежей сборок. Для размещения рамки и прочих объектов листа.",
+      "Rientro dal bordo inferiore dello spazio carta ai disegni di assemblaggio. Per posizionare il telaio e altri oggetti del foglio.",
+      "Einzug vom unteren Rand des Papierbereichs zu den Montagezeichnungen. Zum Platzieren des Rahmens und anderer Blattelemente.",
+      "从图纸空间的下边缘到装配图的缩进。用于放置框架和其他图纸对象。" };
+
+  }
+}

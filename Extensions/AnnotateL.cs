@@ -5,18 +5,18 @@
 namespace AVC
 {
   /// <summary>
-  /// Локализация методов для работы с текстами и другими аннтациями
+  /// Локализация методов для работы с текстами и другими аннотациями
   /// </summary>
   public static class
   AnnotateL
   {
     // ===================================  布局 = layout ====================================================================
     public static readonly string[] NoLayoutErr = {
-      "Error layout inserting: template {0} does not contain the layout '{1}'",
-      "Ошибка вставки листа: шаблон {0} не содержит листа '{1}'",
-      "Inserimento del layout di errore: il modello {0} non contiene il layout '{1}'",
-      "Fehler beim Einfügen des Layouts: Die Vorlage {0} enthält nicht das Layout '{1}'",
-      "插入布局时出错：模板 {0} 不包含布局“{1}”"};
+      "Error layout inserting: template '{0}' does not contain the layout '{1}'",
+      "Ошибка вставки листа: шаблон '{0}' не содержит листа '{1}'",
+      "Inserimento del layout di errore: il modello '{0}' non contiene il layout '{1}'",
+      "Fehler beim Einfügen des Layouts: Die Vorlage '{0}' enthält nicht das Layout '{1}'",
+      "插入布局时出错：模板 '{0}' 不包含布局“{1}”"};
     public static readonly string[] LayoutDisplayErr = {
       "Failed to display layout {0}",
       "Не удалось отобразить лист {0}",
@@ -24,11 +24,11 @@ namespace AVC
       "Layout konnte nicht angezeigt werden {0}",
       "未能显示布局 {0}"};
     public static readonly string[] LayoutAdded = {
-      "Added layout {0}",
-      "Добавлен лист {0}",
-      "Aggiunto layout {0}",
-      "Layout hinzugefügt {0}",
-      "添加了布局 {0}"};
+      "  Added layout '{0}'",
+      "  Добавлен лист '{0}'",
+      "  Aggiunto layout '{0}'",
+      "  Layout hinzugefügt '{0}'",
+      "  添加了布局 '{0}'"};
     public static readonly string[] LayoutOrder = {
       "Set tab order for new layout {0}",
       "Назначаем новый лист на позицию {0}",

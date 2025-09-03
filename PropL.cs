@@ -3190,18 +3190,6 @@ namespace AVC
       "涂层表面材料。\r\n" +
          "油漆、胶片、层压板。\r\n" +
          "输入任何文本。程序可以创建新材料。" };
-    public static readonly string[] Front = {
-      "Front",
-      "Фасад",
-      "Facciata",
-      "Fassade",
-      "正面" };
-    public static readonly string[] Rear = {
-      "Rear",
-      "Тыл",
-      "Posteriore",
-      "Hinten",
-      "反面" };
     public static readonly string[] LeftLetter = {
       "L",
       "Л",
@@ -3579,6 +3567,30 @@ namespace AVC
       "Visualizzazioni",
       "Ansichten",
       "视图" };
+    public static readonly string[] ViewportNumber = {
+      "Viewport Number",
+      "Номер вьюпорта",
+      "Numero di viewport",
+      "Ansichtsfensternummer",
+      "视口数量" };
+    public static readonly string[] ViewportIndex = {
+      "Viewport Index",
+      "Индекс вьюпорта",
+      "Indice di viewport",
+      "Ansichtsfensterindex",
+      "视口索引" };
+    public static readonly string[] ViewDirection = {
+      "View Direction",
+      "Направление вида",
+      "Visualizza direzione",
+      "Blickrichtung",
+      "查看方向" };
+    public static readonly string[] ViewName = { // только для LAY
+      "View Name",
+      "Имя вида",
+      "Visualizza nome",
+      "Name anzeigen",
+      "视图名称" };
     public static readonly string[] Locked = {
       "Locked",
       "Заблокирован",
@@ -3591,6 +3603,18 @@ namespace AVC
       "Blocca la visualizzazione e la scala del modello da spostamenti accidentali",
       "Sperren Sie die Modellansicht und den Maßstab, damit diese nicht versehentlich verschoben werden.",
       "锁定模型视图和比例以防止意外移位"};
+    public static readonly string[] On = {
+      "On",
+      "Включен",
+      "SU",
+      "An",
+      "在"};
+    public static readonly string[] OnTip = {
+      "Enable display of model objects",
+      "Включить отображение объектов модели",
+      "Abilita la visualizzazione degli oggetti del modello",
+      "Anzeige von Modellobjekten aktivieren",
+      "启用模型对象的显示"};
     public static readonly string[] CustomScale = {
       "Scale",
       "Масштаб",
@@ -3603,24 +3627,102 @@ namespace AVC
       "Fattore di scala: il rapporto tra le dimensioni nel modello e le dimensioni sulla carta.",
       "Skalierungsfaktor: Das Verhältnis der Abmessungen im Modell zu den Abmessungen auf dem Papier.",
       "比例因子：模型中的尺寸与纸上的尺寸之比。" };
-    public static readonly string[] ViewName = {
-      "View Name",
-      "Имя вида",
-      "Visualizza nome",
-      "Name anzeigen",
-      "视图名称" };
-    public static readonly string[] FrontView = {
+    public static readonly string[] VisualStyle = {
+      "Visual Style",
+      "Визуальный стиль",
+      "Stili visivi",
+      "Visuelle Stile",
+      "视觉样式" };
+    public static readonly string[] VisualStyleTip = {
+      "Visual style of the viewport",
+      "Визуальный стиль вьюпорта",
+      "Stile visivo della vista",
+      "Visueller Stil des Ansichtsfensters",
+      "视口的视觉样式" };
+    public static readonly string[] FrontView4Lay = {
       "FRONT VIEW",
       "ВИД СПЕРЕДИ",
       "VISTA FRONTALE",
       "VORNE",
       "正视图" };
-    public static readonly string[] RearView = {
+    public static readonly string[] RearView4Lay = {
       "REAR VIEW",
       "ВИД СЗАДИ",
       "VISTA POSTERIORE",
       "HINTEN",
       "后视图" };
+    public static readonly string[] FrontSide = {
+      "Front",
+      "Фасад",
+      "Facciata",
+      "Fassade",
+      "正面" };
+    public static readonly string[] RearSide = {
+      "Rear",
+      "Тыл",
+      "Posteriore",
+      "Hinten",
+      "反面" };
+    public static readonly string[] FrontView = { 
+      "FRONT",
+      "СПЕРЕДИ",
+      "FRONTALE",
+      "VORNE",
+      "正面" };
+    public static readonly string[] RearView = {
+      "REAR",
+      "СЗАДИ",
+      "POSTERIORE",
+      "HINTEN",
+      "后面" };
+    public static readonly string[] LeftView = {
+      "LEFT",
+      "СЛЕВА",
+      "SINISTRA",
+      "LINKS",
+      "左侧" };
+    public static readonly string[] RightView = {
+      "RIGHT",
+      "СПРАВА",
+      "GIUSTA",
+      "RECHTS",
+      "右侧" };
+    public static readonly string[] TopView = {
+      "TOP",
+      "СВЕРХУ",
+      "ALTO",
+      "OBEN",
+      "顶部" };
+    public static readonly string[] BottomView = {
+      "BOTTOM",
+      "СНИЗУ",
+      "BASSO",
+      "UNTEN",
+      "底部" };
+    public static readonly string[] SWView = {
+      "SW",
+      "ЮЗ",
+      "SO",
+      "SW",
+      "西南" };
+    public static readonly string[] NWView = {
+      "NW",
+      "СЗ",
+      "NO",
+      "NW",
+      "西北" };
+    public static readonly string[] SEView = {
+      "SE",
+      "ЮВ",
+      "SE",
+      "SE",
+      "东南" };
+    public static readonly string[] NEView = {
+      "NE",
+      "СВ",
+      "NE",
+      "NE",
+      "东北" };
     public static readonly string[] PerspectiveOn = {
       "Perspective",
       "Перспектива",
@@ -3681,7 +3783,6 @@ namespace AVC
       "Abilita il piano di ritaglio posteriore e nascondi tutti gli oggetti dietro di esso",
       "Aktivieren Sie die hintere Schnittebene und verbergen Sie alle Objekte dahinter",
       "启用后剪裁平面并隐藏其后面的所有对象" };
-
 
     // =======================================================================================================
     // Layout 

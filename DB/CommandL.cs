@@ -45,6 +45,12 @@ namespace AVC
       "Nuovo Assemblaggio",
       "Neue Baugruppe",
       "新组件" };
+    public static readonly string[] AsmDraw = {
+      "Assembly drawings",
+      "Сборочные чертежи",
+      "Disegni di assemblaggio",
+      "Montagezeichnungen",
+      "装配图" };
     public static readonly string[] AutoOrtho = {
       "Shutdown Ortho",
       "Выключение Орто",

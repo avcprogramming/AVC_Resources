@@ -43,6 +43,7 @@
     </Compile>
     <Compile Include="CadProcessL.cs" />
     <Compile Include="CnsL.cs" />
+    <Compile Include="Commands\AssemblyDrawingsL.cs" />
     <Compile Include="Commands\AssemblyL.cs" />
     <Compile Include="Commands\AutoAnnL.cs" />
     <Compile Include="Commands\AutoLngL.cs" />
@@ -908,9 +909,6 @@
     <None Include="Resources\BlockMetric80.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BUpdate80.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Chop80.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1023,9 +1021,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RemHoles80.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Saw80.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Slice80.png" />
@@ -1212,9 +1207,6 @@
     <None Include="Resources\CurveSub32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CurveSub80.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\CurveUnion16.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1231,9 +1223,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PLineDir16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PLineDir80.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PLineDir32.png" />
@@ -1290,12 +1279,6 @@
     <None Include="Resources\SolidSub80.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Drill80.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lay80.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Views32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1312,6 +1295,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\computer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUpdate80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveSub80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lay80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drill80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLineDir80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saw80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmDraw16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmDraw32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsmDraw80.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

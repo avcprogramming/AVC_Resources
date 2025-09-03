@@ -51,11 +51,17 @@ namespace AVC
       "Blattvorlage nicht festgelegt",
       "未设置布局模板"};
     public static readonly string[] NoLayoutWithViewportErr = {
-      "Error layout inserting: template {0} does not contain any viewport sheets",
-      "Ошибка вставки листа: шаблон {0} не содержит ни одного листа с видовыми экранами",
-      "Inserimento del layout di errore: il modello {0} non contiene fogli viewport",
-      "Fehler beim Einfügen des Layouts: Vorlage {0} enthält keine Darstellungsfensterblätter",
-      "插入布局时出错：模板 {0} 不包含任何视口"};
+      "Error layout inserting: template '{0}' does not contain any viewport sheets",
+      "Ошибка вставки листа: шаблон '{0}' не содержит ни одного листа с видовыми экранами",
+      "Inserimento del layout di errore: il modello '{0}' non contiene fogli viewport",
+      "Fehler beim Einfügen des Layouts: Vorlage '{0}' enthält keine Darstellungsfensterblätter",
+      "插入布局时出错：模板 '{0}' 不包含任何视口"};
+    public static readonly string[] NoLayoutWithViewport = {
+      "There are no viewport sheets to use as a template. The program will use sheet {0}.",
+      "Нет листов с вьюпортами для использования в качестве шаблона. Программа будет использовать лист {0}.",
+      "Non ci sono fogli di visualizzazione da utilizzare come modello. Il programma utilizzerà il foglio {0}.",
+      "Es sind keine Ansichtsfensterblätter als Vorlage vorhanden. Das Programm verwendet Blatt {0}.",
+      "没有可用作模板的视口表。程序将使用表 {0}。" };
     public static readonly string[] LayoutFoundQuery = {
       "Layout {0} with viewports found in drawing template. \r\n" +
         "Use this layout?",
@@ -109,11 +115,11 @@ namespace AVC
       "Zu viele Details ({0}). Eine Zeichnung darf nur 255 Blätter enthalten.",
       "零件过多 ({0})。 一个dwg文件中只能有 255 个布局(图纸)。"};
 
-    public static readonly string[] PartNumberWarning = {
-      "{0} layouts are required to place all parts. \r\n" +
+    public static readonly string[] LayoutNumberWarning = {
+      "{0} layouts are required to place all drawings. \r\n" +
         "This will take a long time and may result in a fatal error. \r\n" +
         "Proceed?",
-      "Для размещения всех деталей требуется создать {0} листов. \r\n" +
+      "Для размещения всех чертежей требуется создать {0} листов. \r\n" +
         "Это займет много времени и может привести к фатальной ошибке. \r\n" +
         "Продолжить?",
       "Sono necessari {0} fogli per posizionare tutte le parti. \r\n" +
@@ -127,11 +133,11 @@ namespace AVC
         "是否继续？"};
 
     public static string[] DefaultLayoutName = { // меняем в VARS
-      "Det%viewname%",
-      "Дет%viewname%",
-      "Det%viewname%",
-      "Det%viewname%",
-      "图%viewname%"};
+      "Det%viewtargetname%",
+      "Дет%viewtargetname%",
+      "Det%viewtargetname%",
+      "Det%viewtargetname%",
+      "图%viewtargetname%"};
 
     // ============================================ Options Box =================================================
     public static readonly string[] DialogTitle = {
@@ -188,11 +194,11 @@ namespace AVC
       "新布局的名称"};
     public static readonly string[] LayoutNameTip = {
       "Rename inserted sheets (tabs). \r\n" +
-        "You can use drawing, view, part properties here. \r\n" +
+        "You can use drawing, layout, view, part properties here. \r\n" +
         "If the name matches other sheets, the program will add a number to the end of the name. \r\n" +
         "You can leave an empty line - the program will use the name of the sheet from the template drawing.",
-      "Переименовывать вставленные листы (вкладки). \r\n" +
-        "Вы можете использовать тут подстановки чертежа, вида, свойства деталей. \r\n" +
+      "Переименовывать вкладки новых листов. \r\n" +
+        "Вы можете использовать тут подстановки чертежа, листа, видов, свойства деталей. \r\n" +
         "Если имя совпадет с другими листами, то программа добавит номер в конец названия. \r\n" +
         "Можно оставить пустую строку - программа будет использовать название вкладки из чертежа-шаблона.",
       "Rinomina i fogli inseriti (segnalibri). \r\n" +
@@ -275,27 +281,27 @@ namespace AVC
         "versucht das Programm, die Tabellen mit Daten aus allen Ansichtsfenstern zu füllen.",
       "如果工作表模板中有表格并且它们的标题与数据提取命令的样式之一匹配，\r\n" +
         "则程序将尝试使用来自所有视口的数据填充表格。"};
-    public static readonly string[] Attributes = {
+    public static readonly string[] FillAttributes = {
       "Fill in block attributes",
       "Заполнить атрибуты блоков",
       "Compila gli attributi del blocco",
       "Füllen Sie die Blockattribute aus",
       "填写块属性"};
-    public static readonly string[] AttributesTip = {
+    public static readonly string[] FillAttributesTip = {
       "If there are blocks with variable attributes in the sheet template, \r\n" +
-        "then the program will take the default values of these attributes and try to perform all substitutions. \r\n" +
+        "then the program will perform all the substitutions and fill in these attributes. \r\n" +
         "You can use drawing, sheet, view and all parts substitutions",
       "Если в шаблоне листа есть блоки с изменяемыми атрибутами, \r\n" +
-        "то программа возьмет значения по умолчанию этих атрибутов и попробует выполнить все подстановки. \r\n" +
+        "то программа выполнить все подстановки и заполнит эти атрибуты. \r\n" +
         "Вы можете использовать подстановки чертежа, листа, вида и всех деталей",
       "Se il modello di foglio contiene blocchi con attributi variabili, \r\n" +
-        "il programma prenderà i valori predefiniti di questi attributi e proverà a eseguire tutte le sostituzioni. \r\n" +
+        "quindi il programma eseguirà tutte le sostituzioni e compilerà questi attributi. \r\n" +
         "È possibile utilizzare il disegno, il foglio, la vista e tutte le sostituzioni delle parti",
       "Wenn die Blattvorlage Blöcke mit variablen Attributen enthält, \r\n" +
-        "nimmt das Programm die Standardwerte dieser Attribute und versucht, alle Ersetzungen durchzuführen. \r\n" +
+        "dann führt das Programm alle Ersetzungen durch und füllt diese Attribute aus. \r\n" +
         "Sie können Zeichnungs-, Blatt-, Ansichts- und alle Teileersetzungen verwenden",
       "如果工作表模板包含具有可变属性的块，\r\n" +
-        "则程序将采用这些属性的默认值并尝试执行所有替换。 \r\n" +
+        "然后程序将执行所有替换并填充这些属性。 \r\n" +
         "您可以使用图纸、图纸、视图和所有零件替换"};
 
 

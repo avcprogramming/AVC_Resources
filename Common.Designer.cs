@@ -223,6 +223,36 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap AsmDraw16 {
+            get {
+                object obj = ResourceManager.GetObject("AsmDraw16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AsmDraw32 {
+            get {
+                object obj = ResourceManager.GetObject("AsmDraw32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AsmDraw80 {
+            get {
+                object obj = ResourceManager.GetObject("AsmDraw80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap AsmNew16 {
             get {
                 object obj = ResourceManager.GetObject("AsmNew16", resourceCulture);
@@ -833,9 +863,9 @@ namespace AVC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap computer16 {
+        public static System.Drawing.Bitmap Computer16 {
             get {
-                object obj = ResourceManager.GetObject("computer16", resourceCulture);
+                object obj = ResourceManager.GetObject("Computer16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -845,7 +875,7 @@ namespace AVC {
         /// </summary>
         public static System.Drawing.Bitmap Computer32 {
             get {
-                object obj = ResourceManager.GetObject("computer32", resourceCulture);
+                object obj = ResourceManager.GetObject("Computer32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

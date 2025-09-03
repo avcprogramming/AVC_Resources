@@ -64,6 +64,17 @@ namespace AVC
         "Geben Sie dem Block einen automatischen Namen basierend auf einem Muster mit einer fortlaufenden Nummer. ",
       "在保持属性值的同时用新的块替换块。 " +
          "根据带有序列号的模式为块自动命名。"};
+    public static readonly string[] AsmDrawTip = {
+      "Full automation of assembly drawings for all assembly-blocks in 1 click. " +
+        "Copies of assemblies in the model, creation of sheets and viewports, signatures of views, overall dimensions, filling in tables.",
+      "Полная автоматизация сборочных чертежей для всех блоков-сборок за 1 клик. " +
+        "Копии сборок в модели, создание листов и вьюпортов, подписи видов, габаритные размеры, заполнение таблиц.",
+      "Automazione completa dei disegni di assieme per tutti i blocchi di assieme in un solo clic. " +
+        "Copie degli assiemi nel modello, creazione di fogli e finestre, firme delle viste, quote di ingombro, compilazione di tabelle.",
+      "Vollständige Automatisierung von Baugruppenzeichnungen für alle Baugruppenblöcke mit nur einem Klick. " +
+        "Kopien von Baugruppen im Modell, Erstellung von Blättern und Ansichtsfenstern, Signaturen von Ansichten, Gesamtabmessungen, Ausfüllen von Tabellen.",
+      "一键即可自动绘制所有装配体模块的装配图。" +
+        "在模型中复制装配体，创建图纸和视口，签名视图，标注整体尺寸，填写表格。" };
     public static readonly string[] AutoAnnTip = {
       "Automatic inclusion of the Annotation|MD_Annotation layer when creating texts, leaders, dimensions, etc. " +
         "And also disabling snapping and orthogonality.",

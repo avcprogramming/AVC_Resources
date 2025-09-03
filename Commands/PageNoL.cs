@@ -80,6 +80,16 @@ namespace AVC
       "Fehler beim Arbeiten mit der Zwischenablage",
       "使用剪贴板时出错" };
 
+    public readonly static string[] DefaultOtherAttributes = {
+      "DETAILER=%<\\AcVar Author>%\r\n"+
+        "TECHLEAD=\r\n" +
+        "PROJECT=%<\\AcVar Filename \\f \"%fn2\">%\r\n" +
+        "CLIENT=%<\\AcVar Subject>%",
+      "РАЗРАБ=%<\\AcVar Author>%\r\n"+
+        "ПРОВЕРИЛ=\r\n" +
+        "ПРОЕКТ=%<\\AcVar Filename \\f \"%fn2\">%\r\n" +
+        "ЗАКАЗЧИК=%<\\AcVar Subject>%" };
+
     // ================================ Settings Dialog ===================================================
 
     public static readonly string[] StartTip = {

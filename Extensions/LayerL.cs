@@ -1,9 +1,12 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
+
+// Ignore Spelling: Linetype
+
 namespace AVC
 {
   /// <summary>
   /// Локализация методов для работы со слоями.
-  /// Нзвания слоев и типов линий. Важно, чтоб совпадали с названиями в соотвествующей локализации AutoCAD
+  /// Названия слоев и типов линий. Важно, чтоб совпадали с названиями в соответствующей локализации AutoCAD
   /// </summary>
   public static class
   LayerL
@@ -93,6 +96,12 @@ namespace AVC
       "Tagliente",
       "Löcher",
       "孔" };
+    public static readonly string DefaultLayerHoles = 
+      "Hole,Holes," +
+      "Отверстие,Отверстия," +
+      "Tagliente," +
+      "Löcher," +
+      "孔";
     public static readonly string[] LayerFixture = {
       "Fixture",
       "Крепеж",

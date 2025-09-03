@@ -31,12 +31,24 @@ namespace AVC
       "La connessione al database A>V>C> non è stata stabilita.",
       "Die Verbindung zur A>V>C>-Datenbank wurde nicht hergestellt.",
       "A>V>C> 数据库连接尚未建立。" };
+    public static readonly string[] ConnectionError = {
+      "Connection error. {0}",
+      "Ошибка соединения. {0}",
+      "Errore di connessione. {0}",
+      "Verbindungsfehler. {0}",
+      "连接错误。{0}" };
     public static readonly string[] LoadPrice = {
       "Loading price list...",
       "Загрузка прайс-листа...",
       "Scarica listino prezzi...",
       "Preisliste herunterladen...",
       "正在加载价目表..." };
+    public static readonly string[] LoadOptions = {
+      "Loading options...",
+      "Загрузка настроек...",
+      "Caricamento delle impostazioni...",
+      "Einstellungen werden geladen...",
+      "正在加载设置..." };
     public static readonly string[] LoadVersionLog = {
       "Loading version list...",
       "Загрузка списка версий...",

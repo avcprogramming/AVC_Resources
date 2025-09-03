@@ -122,11 +122,11 @@ namespace AVC
       "Aktivierung konnte nicht abgebrochen werden. Der Server hat einen Fehler gemeldet:\r\n\r\n{0}",
       "无法取消激活。 服务器报错：\r\n\r\n{0}" };
     public static readonly string[] CannotActivate = {
-      "Failed to activate the program.",
-      "Не удалось активировать программу.",
-      "Impossibile attivare il programma.",
-      "Programm konnte nicht aktiviert werden.",
-      "启动程序失败。" };
+      "Failed to activate the program. \r\n  {0}",
+      "Не удалось активировать программу.\r\n  {0}",
+      "Impossibile attivare il programma.\r\n  {0}",
+      "Programm konnte nicht aktiviert werden.\r\n  {0}",
+      "启动程序失败。\r\n  {0}" };
     public static readonly string[] SuccessActivated = {
       "'{0}' program has been successfully activated.",
       "Программа '{0}' успешно активирована.",

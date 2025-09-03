@@ -157,6 +157,15 @@
   <data name="AsmCreate32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AsmCreate32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AsmDraw16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AsmDraw16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AsmDraw32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AsmDraw32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AsmDraw80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AsmDraw80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AsmNew16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AsmNew16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -340,10 +349,10 @@
   <data name="CNum80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\CNum80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computer16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Computer16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\computer16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Computer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\computer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CopyCmd32" type="System.Resources.ResXFileRef, System.Windows.Forms">

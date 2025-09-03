@@ -128,11 +128,11 @@ namespace AVC
       "未设置绘图 dwt 模板。"};
     public static readonly string[]
       TemplateNoFound = {
-      "The template file can not be found or incorrect path specified.",
-      "Файл шаблона не найден, либо неверно указан путь.",
-      "Il file di modello non può essere trovato o percorso specificato non corretto.",
-      "Die Vorlagendatei wurde nicht gefunden oder der Pfad ist falsch.",
-      "找不到模板文件或指定的路径不正确。"};
+      "The template file {0} was not found, or the path was specified incorrectly.",
+      "Файл шаблона {0} не найден, либо неверно указан путь.",
+      "Il file modello {0} non è stato trovato oppure il percorso è stato specificato in modo errato.",
+      "Die Vorlagendatei {0} wurde nicht gefunden oder der Pfad wurde falsch angegeben.",
+      "未找到模板文件 {0}，或者路径指定不正确。"};
     public static readonly string[]
       PressESC = {
       "Press ESC to complete",
