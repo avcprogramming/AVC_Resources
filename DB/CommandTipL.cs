@@ -794,6 +794,12 @@ namespace AVC
         "geschlossene Polylinien, Kreise, Ellipsen und Splines",
       "计算所有选定绘图对象的面积之和：" +
          "闭合的折线、圆、椭圆和样条曲线。"};
+    public static readonly string[] TableFillTip = {
+      "Fill in the drawing tables based on its title, extracting data from all sheet views.",
+      "Заполнить таблицы чертежа на основе ее заголовка, извлекая данные из всех видов листа.",
+      "Compilare le tabelle di disegno in base al titolo, estraendo i dati da tutte le viste del foglio.",
+      "Füllen Sie die Zeichnungstabellen basierend auf ihrem Titel aus und extrahieren Sie Daten aus allen Blattansichten.",
+      "根据标题填写图纸表，从所有图纸视图中提取数据。" };
     public static readonly string[] TableSplitTip = {
       "Splitting of long dwg-tables into layouts.",
       "Разбиение длинных dwg-таблиц на листы (layout)." ,

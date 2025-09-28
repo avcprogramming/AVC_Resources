@@ -68,6 +68,13 @@ namespace AVC
       "Die Abmessungen des Führungslinie-Platzierungsbereichs konnten nicht abgerufen werden",
       "获取多引线放置区域的尺寸失败"};
 
+    public static readonly string[] SpaceErr = {
+      "Unable to get block space for inserting multileaders",
+      "Не удалось получить блок-пространство для вставки мультивыносок",
+      "Impossibile ottenere lo spazio di blocco per l'inserimento di multileader",
+      "Es kann kein Blockplatz zum Einfügen von Multileadern abgerufen werden.",
+      "无法获得用于插入多重引线的块空间"};
+
     public static readonly string[] ObjectSizeErr = {
       "Failed to get dimensions for {0}",
       "Не удалось получить габариты для {0}",
@@ -109,6 +116,22 @@ namespace AVC
       "La distanza verticale tra i testi con più direttrici. Immettere 0 affinché il programma scelga il passaggio stesso.",
       "Der vertikale Abstand zwischen mehrzeiligen Texten. Geben Sie 0 ein, damit das Programm den Schritt selbst auswählt.",
       "多引线文本之间的垂直距离。 输入 0 让程序自行选择步骤。"};
+    public static readonly string[] Horizontally = {
+      "Opposite the arrow",
+      "Напротив стрелки",
+      "Di fronte alla freccia",
+      "Gegenüber dem Pfeil",
+      "箭头相对"};
+    public static readonly string[] HorizontallyTip = {
+      "Position multi-leader texts horizontally opposite the arrow. \r\n" +
+        "If the space is occupied, then place it below with an indent of no less than the specified step.",
+      "Располагать тексты выносок горизонтально напротив стрелки. \r\n" +
+        "Если место занято, то размещать ниже с отступом не меньше чем заданный шаг.",
+      "Posiziona i testi con più direttrici orizzontalmente di fronte alla freccia. \r\n" +
+        "Se lo spazio è occupato, posizionarlo sotto con un rientro non inferiore al passo specificato.",
+      "Positionieren Sie mehrzeilige Texte horizontal gegenüber dem Pfeil. \r\n" +
+        "Wenn der Platz belegt ist, platzieren Sie ihn unten mit einem Einzug von mindestens dem angegebenen Schritt.",
+      "将多引线文本水平放置在箭头的对面。如果空间已被占用，则将其放在下面，缩进量不小于指定的步骤。"};
     public static readonly string[] IncreaseStep = {
       "Increase step",
       "Увеличить шаг",
@@ -168,6 +191,18 @@ namespace AVC
         "erstellen Sie zunächst eine Führungslinie von der Mitte aus.",
       "如果零件的几何中心是可见的，\r\n" +
         "那么首先从中心做一个多引线。"};
+    public static readonly string[] FromFace = {
+      "From part face",
+      "От поверхности детали",
+      "Dalla superficie della parte",
+      "Von der Oberfläche",
+      "从零件表面"};
+    public static readonly string[] FromFaceTip = {
+      "Look for visible points of the part in the middle and near the middle of each of its surfaces",
+      "Искать видимые точки детали в середине и около середины каждой ее грани (поверхности)",
+      "Cerca i punti visibili della parte al centro e vicino al centro di ciascuna delle sue superfici",
+      "Suchen Sie nach sichtbaren Punkten des Teils in der Mitte und in der Nähe der Mitte jeder seiner Flächen",
+      "在每个表面的中间和接近中间搜索零件的可见点"};
     public static readonly string[] FromEdge = {
       "From part edge",
       "От ребра детали",
@@ -175,11 +210,15 @@ namespace AVC
       "Von Teilkante",
       "从零件边缘"};
     public static readonly string[] FromEdgeTip = {
-      "Search for visible points of the part in the middle of each of its edges",
-      "Искать видимые точки детали в середине каждого ее ребра",
-      "Cerca i punti visibili della parte al centro di ciascuno dei suoi bordi",
-      "Suchen Sie nach sichtbaren Punkten des Teils in der Mitte jeder seiner Kanten",
-      "在每个边缘的中间搜索零件的可见点"};
+      "Search for visible points of the details in the middle of each of its edge. \r\n" +
+        "And for long ribs, a pair of points on each edge.",
+      "Искать видимые точки детали в середине каждого ее ребра. \r\n" +
+        "А для длинных ребер еще в паре точек на каждом ребре.",
+      "Cerca punti visibili dei dettagli nel mezzo di ciascuna delle sue costole. \r\n" +
+        "E per le costole lunghe, un paio di punti su ogni bordo.",
+      "Wenn der Platz belegt ist, \r\n" +
+        "platzieren Sie ihn unten mit einem Einzug von mindestens dem angegebenen Schritt.",
+      "在其每个肋骨的中间搜索细节的可见点。对于长肋骨，每个边缘都有一对点。"};
     public static readonly string[] FromVertex = {
       "From part vertex",
       "От угла детали",

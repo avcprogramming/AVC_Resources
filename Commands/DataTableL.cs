@@ -377,11 +377,11 @@ namespace AVC
       "Aktualisierte Tabellen: {0}",
       "更新的表格：{0}"};
     public static readonly string[] StyleErr = {
-      "Style '{0}' not found",
-      "Стиль '{0}' не найден",
-      "Stile '{0}' non trovato",
-      "Stil „{0}“ nicht gefunden",
-      "未找到样式“{0}”" };
+      "Style for table fill '{0}' not found.",
+      "Стиль для заполнения таблицы '{0}' не найден.",
+      "Stile per il riempimento della tabella '{0}' non trovato.",
+      "Tabellenfüllstil „{0}“ nicht gefunden.",
+      "未找到表格填充样式“{0}”。" };
     public static readonly string[] TableUpdate = {
       "Updating table {0}, '{1}' style",
       "Обновление таблицы {0}, стиль “{1}”",
@@ -415,6 +415,12 @@ namespace AVC
       "Impossibile impostare il layout corrente {0}",
       "Aktuelles Layout konnte nicht festgelegt werden {0}",
       "无法设置当前布局 {0}" };
+    public static readonly string[] NoLicense =    {
+      "There is no license for any of the table filling commands.",
+      "Нет лицензии ни на одну команду заполнения таблиц.",
+      "Non esiste alcuna licenza per nessuno dei comandi di riempimento delle tabelle.",
+      "Für die Befehle zum Ausfüllen von Tabellen ist keine Lizenz erforderlich.",
+      "任何表格填充命令均没有许可证。"};
 
     //============================= Dialog Box ===============================================
 

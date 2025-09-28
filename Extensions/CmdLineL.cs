@@ -71,195 +71,203 @@ namespace AVC
       "  Die folgenden Objekte werden verarbeitet: {0}",
       "  将处理以下对象：{0}" };
     public static readonly string[]
-      TinkerWith = {
+    TinkerWith = {
       ". There is something to tinker with...",
       ". Есть над чем потрудиться...",
       ". C'è qualcosa con cui armeggiare...",
       ". Es gibt etwas zu basteln...",
       ". 有事要做..."};
     public static readonly string[]
-      NoSelected = {
+    NoSelected = {
       "  Nothing selected or all objects inappropriate.",
       "  Ничего не выбрано или все объекты неподходящие.",
       "  Niente di selezionato o tutti gli oggetti inappropriati.",
       "  Nichts ist ausgewählt oder alle Objekte sind ungeeignet.",
       "  未选择任何内容或所有对象都不合适。"};
     public static readonly string[]
-      NoViewportSelected = {
+    NoViewportSelected = {
       "  No viewport selected",
       "  Не выбран ни один видовой экран",
       "  Nessuna viewport selezionata",
       "  Kein Viewport ausgewählt",
       "  未选择视口"};
     public static readonly string[]
-      ErrSolids = {
+    ErrSolids = {
       "Failing solids: {0}",
       "Сбойных солидов: {0}",
       "Solidi guasti: {0}",
       "Fehlende Volumenkörper: {0}",
       "无法加工的零件数量： {0}"};
     public static readonly string[]
-      ErrorCount = {
+    ErrorCount = {
       "FAILURE: {0}",
       "СБОЕВ: {0}",
       "FALLIMENTO: {0}",
       "VERSAGEN: {0}",
       "失败： {0}"};
     public static readonly string[]
-      ModelDoc = {
+    ModelDoc = {
       "ModelDoc(ViewBase) views not supported",
       "Виды ModelDoc(ВидБаз) не поддерживаются",
       "ModelDoc(ViewBase) visualizzazioni non supportate.",
       "ModelDoc(ViewBase)-Ansichten werden nicht unterstützt.",
       "不支持 ModelDoc(ViewBase) 视图"};
     public static readonly string[]
-      FormatErr = {
+    FormatErr = {
       "Format is not valid",
       "Неправильный формат",
       "Formato non valido",
       "Ungültiges Format" ,
       "格式无效"};
     public static readonly string[]
-      NoTemplate = {
+    NoTemplate = {
       "No dwt-template",
       "Не задан dwt-шаблон",
       "Non utilizzare il modello-DWT",
       "Keine DWT-Vorlage",
       "未设置绘图 dwt 模板。"};
     public static readonly string[]
-      TemplateNoFound = {
+    TemplateNoFound = {
       "The template file {0} was not found, or the path was specified incorrectly.",
       "Файл шаблона {0} не найден, либо неверно указан путь.",
       "Il file modello {0} non è stato trovato oppure il percorso è stato specificato in modo errato.",
       "Die Vorlagendatei {0} wurde nicht gefunden oder der Pfad wurde falsch angegeben.",
       "未找到模板文件 {0}，或者路径指定不正确。"};
     public static readonly string[]
-      PressESC = {
+    PressESC = {
       "Press ESC to complete",
       "Нажмите ESC для завершения",
       "Premere ESC per completare",
       "Drücken Sie ESC, um den Vorgang abzuschließen",
       "按 ESC 退出。"};
     public static readonly string[]
-      StyleUsed = {
+    StyleUsed = {
       "  Style will be used: {0}",
       "  Будет использован стиль: {0}",
       "  Stile sarà usato: {0}",
       "  Der Stil wird verwendet: {0}",
       "  将使用的样式：{0}"};
     public static readonly string[]
-      LockedLayer = {
+    PaperSpaceOnlyCommand = {
+      "This command works only in PaperSpace.",
+      "Эта команда работает только в пространстве листа.",
+      "Questo comando funziona solo nello spazio carta (PaperSpace).",
+      "Dieser Befehl funktioniert nur im Papierbereich (PaperSpace).",
+      "此命令仅在图纸空间中有效。"};
+    public static readonly string[]
+    LockedLayer = {
       "Locked layer object selected",
       "Выбран объект с заблокированного слоя",
       "Oggetto layer bloccato selezionato",
       "Gesperrtes Ebenenobjekt ausgewählt",
       "锁定层中的对象被选中。"};
     public static readonly string[]
-      CreateLogErr =     {
+    CreateLogErr =     {
       "To write errors to the Windows event log, you need to run the program with elevated privileges once (as Administrator)",
       "Чтоб записывать ошибки в журнал событий Windows требуется один раз запустить программу с повышенными привилегиями (от имени Администратора)",
       "Per scrivere errori nel registro eventi di Windows, è necessario eseguire il programma con privilegi elevati una volta (come Amministratore)",
       "Um Fehler in das Windows-Ereignisprotokoll zu schreiben, müssen Sie das Programm mit erhöhten Berechtigungen einmal ausführen (als Administrator).",
       "要将错误写入 Windows 事件日志，您需要以提升的权限运行程序一次（以管理员身份）"};
     public static readonly string[]
-      MessageOptions = {
+    MessageOptions = {
       "Options for A>V>C> plug-ins messages",
       "Настройка вывода сообщений от плагинов A>V>C>",
       "Opzioni per A>V>C> Plugin messaggi",
       "Optionen für A>V>C> Plug-ins-Meldungen",
       "A>V>C> 插件消息的选项"};
     public static readonly string[]
-      SaveMessages = {
+    SaveMessages = {
       "Save info-messages to Windows events log (Admin rights required). Not recommended",
       "Сохранять информационные сообщения программ A>V>C> в журнале событий Windows (не рекомендуется)",
       "Salva info-messaggi di registro eventi di windows (Diritti di amministratore richiesti. Non raccomandato)",
       "Speichern von Informationsnachrichten der Programme A>V>C> im Windows-Ereignisprotokoll (nicht empfohlen)",
       "将信息消息保存到 Windows 事件日志（需要管理员权限) 不推荐"};
     public static readonly string[]
-      ShowWarnings = {
+    ShowWarnings = {
       "Show warning-messages like message window (Recommended)",
       "Выводить предупреждения программ A>V>C> на экране отдельным окном (рекомендуется включить)",
       "Mostra messaggi di Avvertimento (Raccomandato)",
       "Warnungen der Programme A>V>C> in einem separaten Fenster anzeigen (Aktivierung wird empfohlen)",
       "显示警告消息，如消息窗口（推荐）"};
     public static readonly string[]
-      ShowError = {
+    ShowError = {
       "Show error-messages like message window (Recommended)",
       "Выводить ошибки программ A>V>C> на экране отдельным окном (рекомендуется включить)",
       "Visualizza gli errori di programma A>V>C> sullo schermo in una finestra separata. (Raccomandato)",
       "Anzeige der Programme A>V>C> in einem separaten Fenster anzeigen (Aktivierung wird empfohlen)",
       "显示错误消息，如消息窗口（推荐）"};
     public static readonly string[]
-      SendError = {
+    SendError = {
       "Send error messages to programmer by e-mail (Recommended)",
       "Отправлять ошибки программ A>V>C> по почте разработчику (рекомендуется включить)",
       "Invia messaggi di errore al programmatore via e-mail (Raccomandato)",
       "Programmfehler senden A>V>C> per E-Mail an den Entwickler (Aktivierung wird empfohlen)",
       "显示错误消息，如消息窗口（推荐）通过电子邮件向程序员发送错误消息（推荐）"};
     public static readonly string[]
-      LoadedPlugin = {
+    LoadedPlugin = {
       "Plugin  '{0}' V{1}  loaded. ",
       "Плагин '{0}' V{1}  загружен. ",
       "Plugin  '{0}' V{1}  caricato. ",
       "Plugin  '{0}' V{1}  geladen. ",
       "插件“{0}”已加载。 运行版本号 {1}"};
     public static readonly string[]
-      SelectFirstPoint = {
+    SelectFirstPoint = {
       "Select first point on plane",
       "Укажите первую точку плоскости" ,
       "Selezionare primo punto sul piano",
       "Wählen Sie den ersten Punkt der Ebene",
       "选择平面上的第一个点。"};
     public static readonly string[]
-      SelectSecondPoint = {
+    SelectSecondPoint = {
       "Select second point on plane",
       "Укажите вторую точку плоскости",
       "Selezionare secondo punto sul piano",
       "Wählen Sie den zweiten Punkt der Ebene.",
       "选择平面上的第二个点"};
     public static readonly string[]
-      SelectThirdPoint = {
+    SelectThirdPoint = {
       "Select third point on plane",
       "Укажите третью точку плоскости",
       "Selezionare terzo punto sul piano",
       "Wählen Sie den dritten Punkt der Ebene.",
       "选择平面上的第三个点"};
-    public static string[] SelectFile = {
+    public static string[] 
+    SelectFile = {
       "Select drawing",
       "Выберите чертеж",
       "Seleziona il disegno",
       "Zeichnung auswählen",
       "选择图纸" };
     public static readonly string[]
-      NoMaterial = {
+    NoMaterial = {
       "No material",
       "Нет материала",
       "Nessun materiale",
       "Kein Material",
       "没有材料"};
     public static readonly string[]
-      Point4Copy = {
+    Point4Copy = {
       "Enter point for copy insertion",
       "Укажите точку вставки копии",
       "Specificare il punto di inserimento",
       "Geben Sie die Einfügemarke der Kopie an",
       "输入复制插入点"};
     public static readonly string[]
-      FileOpenErr = {
+    FileOpenErr = {
       "Can't read drawing file: {0}",
       "Не удалось прочитать файл чертежа: {0}",
       "Impossibile leggere il file di disegno: {0}" ,
       "Zeichnungsdatei kann nicht gelesen werden: {0}",
       "无法读取绘图文件：{0}" };
     public static readonly string[]
-      FileVersionErr = {
+    FileVersionErr = {
       "To read the file you need AutoCAD|BricsCAD newer: {0}",
       "Для чтения файла нужен AutoCAD|BricsCAD по новее: {0}",
       "Per leggere il file è necessario AutoCAD|BricsCAD di più recente: {0}",
       "Um die Datei zu lesen, benötigen Sie AutoCAD|BricsCAD auf neueren: {0}",
       "要读取文件，您需要 AutoCAD|BricsCAD 更新版本：{0}" };
     public static readonly string[]
-      PropUpdated = {
+    PropUpdated = {
       "  Drawing property updated: '{0}' = {1}",
       "  Обновлено свойство чертежа: '{0}' = {1}",
       "  Proprietà disegno aggiornata: '{0}' = {1}",
@@ -321,19 +329,22 @@ namespace AVC
       "Documento non salvato",
       "Nicht gespeichertes Dokument",
       "未保存的文件"};
-    public static readonly string[] XRefDBError = {
+    public static readonly string[] 
+    XRefDBError = {
       "Error opening xref drawing {0}",
       "Ошибка открытия чертежа внешней ссылки {0}",
       "Errore durante l'apertura del disegno xrif {0}",
       "Fehler beim Öffnen der XRef-Zeichnung {0}",
       "打开外部参照图形 {0} 时出错" };
-    public static readonly string[] XRefCopyError = {
+    public static readonly string[] 
+    XRefCopyError = {
       "Error copying objects from external reference. {0}",
       "Ошибка копирования объектов из внешней ссылки. {0}",
       "Errore durante la copia di oggetti dal riferimento esterno. {0}",
       "Fehler beim Kopieren von Objekten aus externer Referenz. {0}",
       "从外部引用复制对象时出错。 {0}" };
-    public static readonly string[] SameFile = {
+    public static readonly string[] 
+    SameFile = {
       "The source file must not be the same as the destination file",
       "Файл-источник не должен совпадать с файлом-назначения",
       "Il file di origine non corrisponde al file di destinazione",
@@ -347,27 +358,27 @@ namespace AVC
     // Ge: F L K QUADER ALLE ZA FP KP G H E M V ZU AU EI SPUR SPU SP TT ENDP MIT M G PUN QUAD SCH HIL BAS LOT TAN NÄC ANP PAR KEI ZSC ZMIT ZZEN ZKNOT ZLOT ZNÄH ZKEI
 
     public static readonly string[]
-      TuneKW = { "TUNE", "НАстроить", "REGolare", "ANpassen", "设置程序(TUNE)" };
+    TuneKW = { "TUNE", "НАстроить", "REGolare", "ANpassen", "设置程序(TUNE)" };
     public static readonly string[]
-      SwitchKW = { "SwitchStyle", "ПЕреключитьСтиль", "CAmbiaStile", "StilWechseln", "按编号切换样式(S)" };
+    SwitchKW = { "SwitchStyle", "ПЕреключитьСтиль", "CAmbiaStile", "StilWechseln", "按编号切换样式(S)" };
     public static readonly string[]
-      YesKW = { "Yes", "Да", "Si", "Ja", "是的(Y)" };
+    YesKW = { "Yes", "Да", "Si", "Ja", "是的(Y)" };
     public static readonly string[]
-      NoKW = { "No", "Нет", "No", "Nein", "不(N)" };
+    NoKW = { "No", "Нет", "No", "Nein", "不(N)" };
     public static readonly string[]
-      OnKW = { "ON", "ВКЛючить", "ACCendere", "AKTivieren", "打开(ON)" };
+    OnKW = { "ON", "ВКЛючить", "ACCendere", "AKTivieren", "打开(ON)" };
     public static readonly string[]
-      OffKW = { "OFF", "ОТКлючить", "DISattivare", "DEAKTivieren", "禁用(OFF)" };
+    OffKW = { "OFF", "ОТКлючить", "DISattivare", "DEAKTivieren", "禁用(OFF)" };
     public static readonly string[]
-      CancelKW = { "Cancel", "ОТмена", "Annulla", "Stornieren", "取消(C)" }; // Для командной строки. А для кнопок есть CnsL.Cancel
+    CancelKW = { "Cancel", "ОТмена", "Annulla", "Stornieren", "取消(C)" }; // Для командной строки. А для кнопок есть CnsL.Cancel
     public static readonly string[]
-      InfoToLogKW = { "InfoToLog", "ИнфоВЛог", "InfoPerEntrare", "InfoInLog", "将信息性消息写入协议(I)" };
+    InfoToLogKW = { "InfoToLog", "ИнфоВЛог", "InfoPerEntrare", "InfoInLog", "将信息性消息写入协议(I)" };
     public static readonly string[]
-      WarningPopupKW = { "WarningPopup", "ПредупрежденияВОкно", "AvvertimentoPopup", "WarnungPopup", "在单独的窗口中显示警告消息(W)" };
+    WarningPopupKW = { "WarningPopup", "ПредупрежденияВОкно", "AvvertimentoPopup", "WarnungPopup", "在单独的窗口中显示警告消息(W)" };
     public static readonly string[]
-      ErrorPopupKW = { "ErrorPopup", "ОшибкиВОкно", "ErrorePopup", "ErrorPopup", "在单独的窗口中显示错误消息(E)" };
+    ErrorPopupKW = { "ErrorPopup", "ОшибкиВОкно", "ErrorePopup", "ErrorPopup", "在单独的窗口中显示错误消息(E)" };
     public static readonly string[]
-      SendEMailKW = { "SendEMail", "СлатьПисьма", "InviaUnaEMail", "SendenEMail", "向开发者发送错误消息(S)" };
+    SendEMailKW = { "SendEMail", "СлатьПисьма", "InviaUnaEMail", "SendenEMail", "向开发者发送错误消息(S)" };
 
 
     public static readonly string[]

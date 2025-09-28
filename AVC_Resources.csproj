@@ -1323,5 +1323,11 @@
   <ItemGroup>
     <None Include="Resources\AsmDraw80.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableFill16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableFill32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

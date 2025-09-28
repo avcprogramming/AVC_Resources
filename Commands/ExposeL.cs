@@ -1,5 +1,8 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
+using System;
+using System.Security.Cryptography;
+
 namespace AVC
 {
   public static class
@@ -184,6 +187,28 @@ namespace AVC
         "Wenn Sie 0 angeben, rückt das Programm die Größe der Assemblygröße ein." ,
       "组件之间沿一根轴的距离。 \r\n" +
         "如果指定 0，则程序将缩进程序集的大小。"};
+    public static readonly string[] StepPlusSize = {
+      "Add assembly size",
+      "Прибавлять размер сборки",
+      "Aggiungi la dimensione dell'assieme",
+      "Fügen Sie die Montagegröße hinzu" ,
+      "添加组件大小"};
+    public static readonly string[] StepPlusSizeTip = {
+      "The distance between assemblies will be equal to the specified space plus the assembly size. \r\n" +
+        "If you disable this option, you'll need to specify an indentation much larger than the largest assembly.\r\n" +
+        "But the assemblies will be arranged with uniform spacing.",
+      "Расстояние между сборками будет равно размеру сборки плюс указанный отступ. \r\n" +
+        "Если опцию отключить, то потребуется указать отступ на много больше самой большой сборки.\r\n" +
+        "Но зато сборки будут выстроены с равномерным шагом.",
+      "La distanza tra gli assiemi sarà pari alla dimensione dell'assieme più il rientro specificato.\r\n" +
+        "Se disabiliti questa opzione, dovrai specificare un rientro molto più grande dell'assembly più grande.\r\n" +
+        "Tuttavia, gli assembly saranno disposti con una spaziatura uniforme.",
+      "Der Abstand zwischen den Baugruppen entspricht der Baugröße plus dem angegebenen Einzug.\r\n" +
+        "Wenn Sie diese Option deaktivieren, müssen Sie einen deutlich größeren Einzug als die größte Baugruppe angeben.\r\n" +
+        "Die Baugruppen werden jedoch mit gleichmäßigem Abstand angeordnet." ,
+      "组件之间的距离将等于组件大小加上指定的缩进。\r\n" +
+        "如果禁用此选项，则需要指定比最大组件大得多的缩进。\r\n" +
+        "但是，组件将以均匀的间距排列。"};
     public static readonly string[] TitleSpaceTip = {
       "Extra padding between header and assembly. \r\n" +
          "Set to 0 to use a padding equal to the height of the title text.\r\n" +

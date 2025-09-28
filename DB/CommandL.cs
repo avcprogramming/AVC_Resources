@@ -1,6 +1,5 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-
 // Ignore Spelling: Ortho Poly Simp Unhide Dwg Det CRS NCP OSL SNN StSt TNT DDL DDJ DRI DXFExport MSL CNC Linetype
 
 namespace AVC
@@ -539,6 +538,12 @@ namespace AVC
       "Scalino",
       "Treppenstufe",
       "做阶梯式末端" };
+    public static readonly string[] TableFill = {
+      "Fill in Table",
+      "Заполнить таблицу",
+      "Compila la tabella",
+      "Füllen Sie die Tabelle aus",
+      "填写表格" };
     public static readonly string[] TableSplit = {
       "Split Table",
       "Разделить таблицу",

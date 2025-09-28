@@ -3723,6 +3723,12 @@ namespace AVC
       "NE",
       "NE",
       "东北" };
+    public static readonly string[] Isometric = {
+      "ISOMETRIC",
+      "ИЗОМЕТРИЯ",
+      "ISOMETRICO",
+      "ISOMETRISCH",
+      "等距" };
     public static readonly string[] PerspectiveOn = {
       "Perspective",
       "Перспектива",
