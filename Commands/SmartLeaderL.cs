@@ -386,13 +386,31 @@ namespace AVC
       "创建和编辑多引线时启用在此样式的多引线下搜索对象。 \r\n" +
         "如果禁用该选项，则搜索和替换程序将不会由 _MLD \r\n" +
         "命令自动启动，并且在移动多引线时不会自动启动。" };
+    public static readonly string[] UpdateOnEdit = {
+      "Update on edit",
+      "Обновлять при редактировании",
+      "Aggiorna durante la modifica",
+      "Beim Bearbeiten aktualisieren",
+      "编辑时更新" };
+    public static readonly string[] UpdateOnEditTip = {
+      "Whenever you edit a MLeader, the search for objects under the MLeader will be performed again \r\n" +
+        "and their properties will be substituted into the MLeader text.",
+      "При любом редактировании выноски снова будет выполнен поиск объектов под выноской \r\n" +
+        "и подстановка их свойств в текст выноски.",
+      "Ogni volta che modifichi una Multi Leader, verrà eseguita nuovamente la ricerca di oggetti sotto la Multi Leader \r\n" +
+        "e le loro proprietà verranno sostituite nel testo della Multi Leader.",
+      "Jedes Mal, wenn Sie eine Multi-Führungslinie bearbeiten, wird die Suche nach Objekten \r\n" +
+        "unter der Multi-Führungslinie erneut durchgeführt \r\n" +
+        "und deren Eigenschaften werden in den Text der Multi-Führungslinie eingefügt.",
+      "每次编辑多引线时，都会再次执行对多引线下对象的搜索，\r\n" +
+        "并将其属性替换为多引线文本。"  };
     public static readonly string[] StyleTip = {
       "Select MultiLeader style to configure it. \r\n" +
-        "Use command  _MLeaderStyle to add or delete style.",
+        "Use command _MLeaderStyle to add or delete style.",
       "Стиль мультивыноски. \r\n" +
         "Используйте для быстрого переключения всех настроек сразу. \r\n" +
         "Добавить и удалить стиль в этом окне нельзя. \r\n" +
-        "Используйте команду  _MLeaderStyle",
+        "Используйте команду _MLeaderStyle",
       "Seleziona lo stile MultiLeader per configurarlo. \r\n" +
         "Utilizza il comando _MLeaderStyle per aggiungere o eliminare lo stile.",
       "Wählen Sie den MultiLeader-Stil aus, um ihn zu konfigurieren. \r\n" +
@@ -505,7 +523,28 @@ namespace AVC
       "Questi formati verranno utilizzati se digiti '?' o lasciare vuoto il MultiLeader.",
       "Diese Formate werden verwendet, wenn Sie '?' oder wenn Sie das MultiLeader leer lassen.",
       "如果您输入“？”，将使用这些格式。 或者如果您将标注留空。" };
-
+    public static readonly string[] BackgroundFill = {
+      "Text background fill",
+      "Фон текста",
+      "Riempimento di sfondo",
+      "Texthintergrundfüllung",
+      "文本背景填充" };
+    public static readonly string[] BackgroundFillTip = {
+      "Opaque background for leader text.\r\n" +
+        "Only for leaders with text, not blocks.\r\n" +
+        "Assigned only when creating new leaders.",
+      "Непрозрачный фон текста выноски.\r\n" +
+        "Только для выносок с текстом, а не с блоком. \r\n" +
+        "Назначается только в момент создания новых выносок. ",
+      "Sfondo opaco per il testo della guida.\r\n" +
+        "Solo per guide con testo, non blocchi.\r\n" +
+        "Assegnato solo quando si creano nuove guide.",
+      "Undurchsichtiger Hintergrund für Führungslinientext.\r\n" +
+        "Nur für Führungslinien mit Text, nicht für Blöcke.\r\n" +
+        "Wird nur beim Erstellen neuer Führungslinien zugewiesen.",
+      "引线文本的不透明背景。\r\n" +
+        "仅适用于带文本的引线，而不适用于块。\r\n" +
+        "仅在创建新引线时分配。"  };
     public static readonly string[] DialogTitle = {
       "Smart Leader Options",
       "Настройки Умных Выносок",
