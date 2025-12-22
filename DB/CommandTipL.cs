@@ -165,13 +165,13 @@ namespace AVC
         "entsprechend den Abmessungen eines bestimmten massiven Kastens oder Blocks",
       "根據給定的實心盒子或塊的尺寸創建木質隔間（牆）的平面圖" };
     public static readonly string[] BoxFromTableTip = {
-      "Create solid boxes and insert blocks based on data from an Excel table",
+      "Create solid boxes and insert blocks based on data From an Excel table",
       "Создать солиды-боксы и расставить блоки по данным из таблицы Excel",
       "Crea scatole solide e disponi i blocchi in base ai dati di una tabella Excel",
       "Erstellen Sie feste Kästchen und ordnen Sie die Blöcke entsprechend den Daten aus einer Excel-Tabelle an.",
       "创建实心框并根据 Excel 表格中的数据排列块。" };
     public static readonly string[] BUpdateTip = {
-      "Replace selected blocks with blocks of the same name from another drawing.",
+      "Replace selected blocks with blocks of the same name From another drawing.",
       "Заменить выбранные блоки на одноименные блоки из другого чертежа." ,
       "Sostituisci i blocchi selezionati con blocchi con lo stesso nome di un altro disegno.",
       "Ersetzen Sie ausgewählte Blöcke durch gleichnamige Blöcke aus einer anderen Zeichnung.",
@@ -260,7 +260,7 @@ namespace AVC
       "Bildung einer geschlossenen Polylinie zum Fräsen von Nuten und Taschen auf der CNC" ,
       "在 CNC 上形成用于铣槽和选择的闭合折线"};
     public static readonly string[] DataTableTip = {
-      "Extract properties from any objects, including names and descriptions, attributes, and parameters. " +
+      "Extract properties From any objects, including names and descriptions, attributes, and parameters. " +
         "Writing tables in a drawing, Excel, CSV, XML. Calculation of total results.",
       "Извлечение свойств из любых объектов, включая имена и описания, атрибуты и параметры. " +
         "Запись таблиц в чертеж, Excel, CSV, XML. Подсчет суммарных итогов." ,
@@ -371,14 +371,14 @@ namespace AVC
       "沿固体接头布置固定装置。 " +
          "RTA 配件、紧固件、家具铰链、搁板架、五金"};
     public static readonly string[] FlatTip = {
-      "Generate flat drawing from any AutoCAD objects. Project all on XY",
+      "Generate flat drawing From any AutoCAD objects. Project all on XY",
       "Получить плоский чертеж с любого объекта Автокада. Проецировать все на плоскость XY." ,
       "Ottieni un disegno piatto da qualsiasi oggetto AutoCAD. Proietta tutto sull'aereo XY.",
       "Holen Sie sich eine flache Zeichnung von einem beliebigen AutoCAD-Objekt. " +
         "Projizieren Sie alles auf die XY-Ebene.",
       "从任何 AutoCAD 对象生成平面图。 全部在 XY 上投影."};
     public static readonly string[] HideAvcTip = {
-      "Hide AVC palettes from the screen by list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Hide AVC palettes From the screen by list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Скрыть с экрана палитры AVC по списку. В списке через запятую можно указать: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Nascondi le tavolozze AVC dallo schermo tramite elenco. In un elenco separato da virgole è possibile specificare: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Blenden Sie AVC-Paletten nach Liste auf dem Bildschirm aus. In einer durch Kommas getrennten Liste können Sie Folgendes angeben: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
@@ -511,7 +511,7 @@ namespace AVC
       "从直线边沿角平分线切割刚体（实体）"};
     public static readonly string[] MultiSliceTip = {
       "Cutting off many solid surfaces. Creating a Miter joint. " +
-        "Modeling columns and walls from particleboard/plywood in 1 click.",
+        "Modeling columns and walls From particleboard/plywood in 1 click.",
       "Отслоение многих поверхностей солидов. Стыки под ус. " +
         "Моделирование колонн и стен из ДСП за 1 клик." ,
       "Distacco di molte superfici solide. " +
@@ -527,7 +527,7 @@ namespace AVC
       "Panel zum Bearbeiten der Name-Eigenschaft für alle Objekte.",
       "用于编辑所有对象的名称属性的面板。"};
     public static readonly string[] NCPTip = {
-      "Preparing part contours from 3D solids. " +
+      "Preparing part contours From 3D solids. " +
         "Polylines for milling, sawing, drilling on CNC with processing parameters in layer names. " +
         "Calling the Dimensions program.",
       "Подготовка контуров деталей по 3D-солидам. " +
@@ -560,7 +560,7 @@ namespace AVC
       "数以千计的偏移轮廓一键点击。 "+
          "重复和双面偏移。图层更改。删除原始。"};
     public static readonly string[] OpenAvcTip = {
-      "Open AVC palettes from the list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
+      "Open AVC palettes From the list. The list can be separated by commas and contain: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Открыть палитры AVC по списку. В списке через запятую можно указать: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Apri le tavolozze AVC per elenco. In un elenco separato da virgole è possibile specificare: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
       "Öffnen Sie AVC-Paletten nach Liste. In einer durch Kommas getrennten Liste können Sie Folgendes angeben: AVC,DwgTree,Options,Name,Kind,Info,User0..User19,All,Main,Text,List",
@@ -630,7 +630,7 @@ namespace AVC
       "全套所有程序 A>V>C>: " +
          "建模命令、实用程序、用于处理轮廓的命令、为 CNC 准备图纸、准备表格"};
     public static readonly string[] PTTTip = {
-      "Insert text table from the Windows clipboard into the DWG-table. " +
+      "Insert text table From the Windows clipboard into the DWG-table. " +
         "Splitting of long tables into layouts.",
       "Вставка текстовых таблиц из буфера Windows в DWG-таблицу. " +
         "Разбиение длинных таблиц на листы." ,
@@ -688,7 +688,7 @@ namespace AVC
       "在图纸中搜索相似对象，按属性和参数搜索块，按面颜色搜索实体"};
     public static readonly string[] SelectSameAgainTip = {
       "Search for a similar object without queries. " +
-        "The search parameters from the last call to the SelectSame command will be used.",
+        "The search parameters From the last call to the SelectSame command will be used.",
       "Поиск похожего объекта без запросов. " +
         "Используются параметры поиска из последнего вызова команды SelectSame.",
       "Cerca un oggetto simile senza query. " +
@@ -795,7 +795,7 @@ namespace AVC
       "计算所有选定绘图对象的面积之和：" +
          "闭合的折线、圆、椭圆和样条曲线。"};
     public static readonly string[] TableFillTip = {
-      "Fill in the drawing tables based on its title, extracting data from all sheet views.",
+      "Fill in the drawing tables based on its title, extracting data From all sheet views.",
       "Заполнить таблицы чертежа на основе ее заголовка, извлекая данные из всех видов листа.",
       "Compilare le tabelle di disegno in base al titolo, estraendo i dati da tutte le viste del foglio.",
       "Füllen Sie die Zeichnungstabellen basierend auf ihrem Titel aus und extrahieren Sie Daten aus allen Blattansichten.",
@@ -807,7 +807,7 @@ namespace AVC
       "Aufteilen langer dwg-Tabellen in Layouts.",
       "将长 dwg 表拆分为工作表（布局）。"};
     public static readonly string[] TableUpdateTip = {
-      "Refill the drawing tables with the old settings, extracting data from the same objects.",
+      "Refill the drawing tables with the old settings, extracting data From the same objects.",
       "Заполнить таблицы чертежа заново со старыми настройками, извлекая данные из тех же объектов." ,
       "Ripopolare le tabelle di disegno con le vecchie impostazioni, estraendo i dati dagli stessi oggetti.",
       "Füllen Sie die Zeichnungstabellen erneut mit den alten Einstellungen und extrahieren Sie Daten aus denselben Objekten.",
@@ -917,7 +917,7 @@ namespace AVC
     public static readonly string[] StyleTip = {
       "Style (set of all settings).\r\n" +
         "Key and name.\r\n" +
-        "The key is used to quickly switch styles from the command line.",
+        "The key is used to quickly switch styles From the command line.",
       "Стиль (набор всех настроек).\r\n" +
         "Ключ и имя.\r\n" +
         "Ключ используется для быстрого переключения стилей из командной строки.",
@@ -960,7 +960,7 @@ namespace AVC
       "Alle Objekte mit dieser Eigenschaft zu den ausgewählten hinzufügen",
       "将具有此属性的所有对象添加到选定的图形对象" };
     public static readonly string[] RemoveSelectTip = {
-      "Exclude objects with this property from the selection",
+      "Exclude objects with this property From the selection",
       "Исключить объекты с этим свойством из выбранных",
       "Escludere gli oggetti con questa proprietà dalla selezione",
       "Objekte mit dieser Eigenschaft von der Auswahl ausschließen",
@@ -1052,19 +1052,19 @@ namespace AVC
       "Allgemeine Einstellungen",
       "常用选项" };
     public static readonly string[] CommonTip = {
-      "Setting common functions for all commands from A>V>C> plugins.",
+      "Setting common functions for all commands From A>V>C> plugins.",
       "Настройка общих функций для всех команд из плагинов A>V>C>.",
       "Impostazione di funzioni comuni per tutti i comandi dei plugin A>V>C>.",
       "Festlegen gemeinsamer Funktionen für alle Befehle von A>V>C>-Plugins.",
       "为 A>V>C> 插件中的所有命令设置通用功能。" };
     public static readonly string[] Message = {
-      "Messages from commands",
+      "Messages From commands",
       "Сообщения от команд",
       "Messaggi da comandi",
       "Nachrichten von Befehlen",
       "来自命令的消息" };
     public static readonly string[] MessageTip = {
-      "Setting up displaying and sending messages from A>V>C> programs",
+      "Setting up displaying and sending messages From A>V>C> programs",
       "Настройка показа и отправки сообщений от программ A>V>C>",
       "Configurazione della visualizzazione e dell'invio di messaggi da programmi A>V>C>",
       "Einrichten des Anzeigens und Sendens von Nachrichten von A>V>C>-Programmen",

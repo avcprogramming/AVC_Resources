@@ -1499,7 +1499,7 @@ namespace AVC
       "Profondità",
       "Standardtiefe",
       "默认深度" };
-    public static readonly string[] Liner = {
+    public static readonly string[] InSize = {
       "in Size",
       "по длине",
       "in formato",

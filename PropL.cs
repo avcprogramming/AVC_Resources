@@ -444,7 +444,7 @@ namespace AVC
       "The full name of the color. \r\n" +
         "If the color does not have a name, then the digital color index or RGB code. \r\n" +
         "The ByLayer color will be replaced with the layer color. \r\n" +
-        "If the color is selected from a color book, then the name of the book is indicated.",
+        "If the color is selected From a color book, then the name of the book is indicated.",
       "Полное имя цвета. \r\n" +
         "Если у цвета нет имени – цифровой индекс цвета или RGB-код. \r\n" +
         "«По слою» -заменяется на цвет слоя. \r\n" +
@@ -913,7 +913,7 @@ namespace AVC
       "Unsichtbar",
       "不可见" };
     public static readonly string[] InvisibleTip = {
-      "The attribute is hidden from view in the drawing,\r\n" +
+      "The attribute is hidden From view in the drawing,\r\n" +
         "is intended only for storing information for later retrieval of data.",
       "Атрибут скрыт от просмотра в чертеже,\r\n" +
         "предназначен только для хранения информации для последующего извлечения данных.",
@@ -1452,7 +1452,7 @@ namespace AVC
       "Z-Koordinate",
       "Z坐标" };
     public static readonly string[] ZFromTop = {
-      "Z from top",
+      "Z From top",
       "Z от верха",
       "Z dall'alto",
       "Z von oben",
@@ -1494,7 +1494,7 @@ namespace AVC
       "Drehung",
       "旋转" };
     public static readonly string[] RotationMinus = {
-      "Rotation from -X",
+      "Rotation From -X",
       "Вращение от -X",
       "Rotazione da -X",
       "Drehung von -X.",
@@ -1586,7 +1586,7 @@ namespace AVC
     public static readonly string[] MillToolTip = {
       "The name or number of the tool (cutter) as it is named in the CNC machine.\r\n" +
         "This name can be used in the %milltool% substitution in all NC-layer names.\r\n" +
-        "The program will use this name from the material properties of the part,\r\n" +
+        "The program will use this name From the material properties of the part,\r\n" +
         "even if a different tool name is specified in the CNC style.",
       "Имя или номер инструмента (фрезы), как он назван в станке ЧПУ.\r\n" +
         "Это имя можно использовать в подстановке %milltool% во всех именах слоев ЧПУ.\r\n" +
@@ -1613,7 +1613,7 @@ namespace AVC
     public static readonly string[] SawToolTip = {
       "The name or number of the tool (disk), as it is named in the CNC machine.\r\n" +
         "This name can be used in the %sawtool% substitution in all NC-layer names.\r\n" +
-        "The program will use this name from the material properties of the part,\r\n" +
+        "The program will use this name From the material properties of the part,\r\n" +
         "even if a different tool name is specified in the CNC style.",
       "Имя или номер инструмента (диска), как он назван в станке ЧПУ. \r\n" +
         "Это имя можно использовать в подстановке %sawtool% во всех именах слоев ЧПУ.\r\n" +
@@ -1775,7 +1775,7 @@ namespace AVC
       "Bemerkungen",
       "注释" };
     public static readonly string[] CommentsTip = {
-      "Any information about the drawing, comments from editors and reviewers.",
+      "Any information about the drawing, comments From editors and reviewers.",
       "Любая информация о чертеже, комментарии редакторов и проверяющих.",
       "Qualsiasi informazione sul disegno, commenti da editori e revisori.",
       "Alle Informationen über die Zeichnung, Kommentare von Redakteuren und Rezensenten.",
@@ -2003,7 +2003,7 @@ namespace AVC
       "组件数量" };
     public static readonly string[] NumberAssembliesTip = {
       "The number of assembly blocks in the drawing.\r\n" +
-        "The numbering of assemblies will continue from this number.",
+        "The numbering of assemblies will continue From this number.",
       "Количество блоков-сборок в чертеже.\r\n" +
         "С этой цифры будет продолжена нумерация сборок.",
       "Il numero di blocchi di assieme nel disegno.\r\n" +
@@ -2187,7 +2187,7 @@ namespace AVC
       "Leader text.\r\n" +
         "For Leaders with a block, you can edit the attribute of the block if there is only one attribute.\r\n" +
         "If you write any substitution in the text, the Leader will become 'smart'\r\n" +
-        "and will try to load the substitution value from the object under the arrow.",
+        "and will try to load the substitution value From the object under the arrow.",
       "Текст выноски.\r\n" +
         "У выносок с блоком, можно редактировать атрибут блока, еcли атрибут только один.\r\n" +
         "Если записать в текст любую подстановку, то выноска станет 'умной'\r\n" +
@@ -2220,7 +2220,7 @@ namespace AVC
       "Material" ,
       "材料" };
     public static readonly string[] MaterialTip = {
-      "The name of the rendering material that AVC plugins use as the material from which the part is made.",
+      "The name of the rendering material that AVC plugins use as the material From which the part is made.",
       "Название материала рендеринга, который плагины AVC используют как материал из которого изготовлена деталь.",
       "Il nome del materiale di rendering utilizzato dai plugin AVC come materiale da cui è realizzata la parte.",
       "Der Name des Rendering-Materials, das AVC-Plugins als Material verwenden, aus dem das Teil erstellt wird.",
@@ -2297,7 +2297,7 @@ namespace AVC
       "Diffuse color of the material. You can write any name for the color. The program will try to recognize it.\r\n" +
         "Write an empty line to show the inherited solid color (ByObject).\r\n" +
         "When changing this color, the program will also change the Ambient color of the material,\r\n" +
-        "if it is not inherited from the object (not ByObject).\r\n" +
+        "if it is not inherited From the object (not ByObject).\r\n" +
         "The same color can be assigned to solids and surfaces when changing materials (see General settings)\r\n" +
         "and then you will see this color in any visual style.",
       "Диффузный (diffuse) цвет материала. \r\n" +
@@ -2427,7 +2427,7 @@ namespace AVC
       "Material für Biegung",
       "材料-弯曲" };
     public static readonly string[] MaterialSweepTip = {
-      "All parts from this material will be marked for measurement as Sweep.",
+      "All parts From this material will be marked for measurement as Sweep.",
       "Все детали из этого материала будут помечены для обмера как Развертка.",
       "Tutti i pezzi realizzati con questo materiale saranno contrassegnati per la misurazione come Scansione.",
       "Alle Teile aus diesem Material werden für die Messung als Sweep markiert.",
@@ -2794,7 +2794,7 @@ namespace AVC
       "Asymmetrie",
       "不对称" };
     public static readonly string[] AsymmetryTip = {
-      "Indicator asymmetrical: the distance from the boxing center to the center of mass.\r\n" +
+      "Indicator asymmetrical: the distance From the boxing center to the center of mass.\r\n" +
         "It allows you to identify the offset holes, and others.",
       "Показатель асимметричности: расстояние от центра бокса до центра масс.\r\n" +
         "Позволяет выявить смещения отверстий и др.отличия тел при одинаковом объеме.",
@@ -2912,7 +2912,7 @@ namespace AVC
     public static readonly string[] SolidMirrorTip = {
       "The detail is mirror-symmetrical to other, similar details.\r\n" +
         "The 'Mirror' property is used when the same parts are grouped together.\r\n" +
-        "If the parts are the same in size and additive, but colored differently from different sides,\r\n" +
+        "If the parts are the same in size and additive, but colored differently From different sides,\r\n" +
         "or you need a neat cutter entry on one side, then you can pre-mark the mirrored parts yourself\r\n" +
         "by setting the Mirror = YES property to them.\r\n" +
         "Then the LAY command will be able to separately write the number of 'right' and 'mirror' parts in the part header.\r\n" +
@@ -3033,7 +3033,7 @@ namespace AVC
       "宽度 mm" };
     public static readonly string[] Slopes = {
       "Slope ends",
-      "Наклоны торцев",
+      "Наклоны торцов",
       "La pendenza delle estremità",
       "Neigung der Enden",
       "斜坡末端" };
@@ -3046,7 +3046,7 @@ namespace AVC
     public static readonly string[] SweepTip = {
       "Affects how other plugins will measure solid.\r\n" +
         "If you set the value YES, then the measurement program will attempt to measure this item,\r\n" +
-        "as if it was made from a thin rectangle and smoothly (no fractures) curved in one plane.\r\n" +
+        "as if it was made From a thin rectangle and smoothly (no fractures) curved in one plane.\r\n" +
         "Such measurement is suitable for the skins stretched on a cylinder\r\n" +
         "or combined cylindrical and flat faces without fractures.",
       "'Развертка' влияет на то, как другие плагины будут обмерять твердое тело.\r\n" +
@@ -3075,7 +3075,7 @@ namespace AVC
       "纹理方向" };
     public static readonly string[] TextureTip = {
       "Invented for marking parts made of wood or a wood pattern.\r\n" +
-        "Use it when you it is important to flag as the texture should be placed.\r\n" +
+        "Use it when it is important to flag how the texture should be placed.\r\n" +
         "There are three options: when no matter what the part is placed on a sheet of material - use the value No.\r\n" +
         "When the wood fiber should be placed on the long side parts - use the value Along.\r\n" +
         "And when on the short side – value Across.\r\n" +
@@ -3346,14 +3346,14 @@ namespace AVC
     // Bandings
     public static readonly string[] BandingsAllTip = {
       "All edges",
-      "Покрытие для всех торцев",
+      "Покрытие для всех торцов",
       "Copertura per tutte le estremità.",
       "Abdeckung für alle Zwecke.",
       "所有边缘" };
     public static readonly string[] BandingsIDTip = {
       "The number of the edge in the order of going around the front surface.\r\n" +
         "The numbers are set for the part laid out with the front down. \r\n" +
-        "Starting from the lower left corner and going clockwise. \r\n" +
+        "Starting From the lower left corner and going clockwise. \r\n" +
         "For a rectangular part, you can specify side names instead of a number.",
       "Номер торца по порядку обхода фасадной поверхности солида.\r\n" +
         "Номера задаются для детали, выложенной фасадом вниз. \r\n" +
@@ -3394,7 +3394,7 @@ namespace AVC
          "它是由前面边缘的长度计算的。" };
     public static readonly string[] BandingsAngle = {
       "Saw angle for flat ends.",
-      "Угол наклона пилы для плоских торцев.",
+      "Угол наклона пилы для плоских торцов.",
       "Angolo di sega per estremità piatte.",
       "Sägewinkel für flache Enden.",
       "平端锯切角度。" };
@@ -3598,7 +3598,7 @@ namespace AVC
       "Gesperrt",
       "锁定"};
     public static readonly string[] LockedTip = {
-      "Lock model view and scale from accidental shift",
+      "Lock model view and scale From accidental shift",
       "Заблокировать вид модели и масштаб от случайного сдвига",
       "Blocca la visualizzazione e la scala del modello da spostamenti accidentali",
       "Sperren Sie die Modellansicht und den Maßstab, damit diese nicht versehentlich verschoben werden.",
@@ -3748,7 +3748,7 @@ namespace AVC
       "Vorne",
       "前面" };
     public static readonly string[] ClipFrontTip = {
-      "Distance from viewpoint to front clipping plane",
+      "Distance From viewpoint to front clipping plane",
       "Дистанция от точки вида до передней отсекающей плоскости",
       "Distanza dal punto di vista al piano di ritaglio anteriore",
       "Abstand vom Blickpunkt zur vorderen Schnittebene",
@@ -3760,7 +3760,7 @@ namespace AVC
       "Zurück",
       "后退" };
     public static readonly string[] ClipBackTip = {
-      "Distance from viewpoint to back clipping plane",
+      "Distance From viewpoint to back clipping plane",
       "Дистанция от точки вида до задней отсекающей плоскости",
       "Distanza dal punto di vista al piano di ritaglio posteriore",
       "Abstand vom Blickpunkt zur hinteren Schnittebene",
@@ -3846,7 +3846,7 @@ namespace AVC
       "Plotbar",
       "可绘图"};
     public static readonly string[] IsPlottableTip = {
-      "Objects from this layer will be printed.",
+      "Objects From this layer will be printed.",
       "Объекты этого слоя будут выводиться на печать.",
       "Gli oggetti di questo livello verranno stampati.",
       "Objekte aus dieser Ebene werden gedruckt.",
@@ -3876,7 +3876,7 @@ namespace AVC
       "Die Schicht ist eingefroren. Layer-Objekte sind nicht sichtbar, können nicht ausgewählt werden und nehmen an keiner Berechnung teil.",
       "该层被冻结。 图层对象不可见、无法选择、不参与任何计算。" };
     public static readonly string[] LayerMaterialTip = {
-      "The material from which the details of this layer are made. \r\n" +
+      "The material From which the details of this layer are made. \r\n" +
         "The material will be applied to all parts that have the material set to By Layer.\r\n" +
         "You can write any name of the material. The program will find it in the drawing or template.\r\n" +
         "Or create new material. Press Enter after entering new material.",

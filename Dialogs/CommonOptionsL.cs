@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Multisolid
+// Ignore Spelling: Multisolid, Cuix
 
 namespace AVC
 {
@@ -152,13 +152,13 @@ namespace AVC
       "当对象没有找到这样的属性时要在替换位置写入的文本。\r\n" +
          "您可以将该字段留空。"};
     public static readonly string[] RightAngle = {
-      "Right angle priority",
+      "Right-angle priority",
       "Приоритет прямого угла",
       "La priorità di un angolo retto",
       "Rechtwinklige Priorität",
       "直角优先"};
     public static readonly string[] RightAngleTip = {
-      "When calculating the size of the solid need to turn it at right angle. \r\n" +
+      "When calculating the size of the solid, the program must turn it at a right angle. \r\n" +
         "If this is disabled, the benefit will have the longest line or arc.\r\n" +
         "It allows you to configure commands LAY, SAW and Smart Leader.",
       "При вычислении размеров тела надо поворачивать его прямым углом.\r\n" +
@@ -225,7 +225,7 @@ namespace AVC
       "Nur Rechtecke gesehen",
       "只看到矩形"};
     public static readonly string[] SawOnlyRectanglesTip = {
-      "When choosing technology, triangles and trapezoid will be used for milling,\r\n" +
+      "When program analyzes solids and chooses technology, triangles and trapezoids will be used for milling,\r\n" +
         "and only parts with a rectangular front face will be used for sawing.",
       "При выборе технологии треугольники и трапеции пойдут на фрезеровку,\r\n" +
         "а в напилку только детали с прямоугольным фасадом",
@@ -263,7 +263,7 @@ namespace AVC
       "Additiv zur Plattenfläche, um den Preis von Plattenmaterialien zu berechnen.",
       "添加到板材面积以计算板材的价格。"};
     public static readonly string[] TopSide = {
-      "Top side priority",
+      "Top-side priority",
       "Приоритет верхней грани",
       "Priorità in primo piano",
       "Oberste Priorität",
@@ -288,7 +288,7 @@ namespace AVC
         "（在 LAY 命令中）。"};
     public static readonly string[] UseEdgeLetter = {
       "Use edge letter",
-      "Буквы торцев",
+      "Буквы торцов",
       "Usa la lettera sul bordo",
       "Kantenbuchstaben verwenden",
       "使用边缘字母"};
@@ -300,7 +300,7 @@ namespace AVC
          "B - the bottom side.\r\n"+
          "Len - for a complex part, the end length coincides with the length dimension of the part.\r\n" +
          "W - -//- in width.",
-      "Для обозначения торцев детали вместо длинны торца писать букву:\r\n" +
+      "Для обозначения торцов детали вместо длинны торца писать букву:\r\n" +
         "Л - левая сторона четырехугольной детали на выкладке (фасадом вниз).\r\n"+
         "В - верхняя сторона.\r\n"+
         "П - правая сторона.\r\n"+
@@ -334,7 +334,7 @@ namespace AVC
          "left, top, right, bottom, lengthwise, widthwise.\r\n" +
          "Use a comma as separator and don't use spaces.\r\n" +
          "The setting is used in the %bandings% and %slopes% substitutions.",
-      "Можно заменить обозначения торцев детали. \r\n" +
+      "Можно заменить обозначения торцов детали. \r\n" +
          "Составьте свой список в следующей последовательности:\r\n" +
          "левая, верхняя, правая, нижняя, по длине, по ширине.\r\n" +
          "Используйте запятую как разделитель и не делайте пробелов.\r\n" +
@@ -362,7 +362,7 @@ namespace AVC
       "使用箭头符号代替字母符号。 但请确保这些箭头包含在您选择的字体中。" };
     public static readonly string[] UseEdgeNumber = {
       "Use edge number",
-      "Номера торцев",
+      "Номера торцов",
       "Usa il numero del bordo",
       "Kantenzahl verwenden",
       "使用边号"};
@@ -370,8 +370,8 @@ namespace AVC
       "To indicate the edges (ends) of the part, use the number in order, starting from the longest edge.\r\n" +
         "Edge lengths are commonly used.\r\n" +
         "The setting is used in the %bandings% and %slopes% substitutions.",
-      "Для обозначения торцев детали использовать номер по порядку, начиная от самого длинного торца.\r\n" +
-        "Обычно используются длины торцев.\r\n" +
+      "Для обозначения торцов детали использовать номер по порядку, начиная от самого длинного торца.\r\n" +
+        "Обычно используются длины торцов.\r\n" +
         "Настройка используется в подстановках Кромки %bandings% и Наклоны %slopes%.",
       "Per indicare le estremità della parte, utilizzare il numero in ordine, a partire dalla fine più lunga.\r\n" +
         "Le lunghezze finali sono comunemente utilizzate.\r\n" +
@@ -403,9 +403,10 @@ namespace AVC
       "计算中的有效小数位数。\r\n" +
          "越多 - 计算越精确。但 AutoCAD|BricsCAD 残酷的谎言从第七位开始。\r\n" +
          "谨慎改变！"};
-    public static readonly string[] LinerTip = {
-      "The maximum allowable deviation. In the current drawing units (mm or inch).\r\n" +
-        "It is used to compare the distances between points, for define linearity and plane.\r\n" +
+    public static readonly string[] LinearTip = {
+      "The maximum allowable deviation.\r\n" +
+        "It is used to compare the distances between points to define linearity and plane.\r\n" +
+        "It uses current drawing units (mm or inch).\r\n" +
         "Change with caution!",
       "Максимально допустимое отклонение.\r\n" +
         "В единицах текущего чертежа (мм или дюймы).\r\n" +
@@ -542,11 +543,11 @@ namespace AVC
       "Tondo cifre decimali",
       "Dezimalziffer rund",
       "小数位圆"};
-    public static readonly string[] Liner = {
-      "Liner tolerance",
+    public static readonly string[] LinearTolerance = {
+      "InSize tolerance",
       "Линейная точность",
       "Precisione lineare",
-      "Liner-Toleranz",
+      "InSize-Toleranz",
       "衬垫公差"};
     public static readonly string[] TextureTip = {
       "List of texture names: no texture,along,across.\r\n" +
@@ -580,7 +581,7 @@ namespace AVC
       "Dialoge zurücksetzen",
       "重置对话框"};
     public static readonly string[] ResetDialogsTip = {
-      "Delete the saved dimensions and positions of the A>V>C> command settings dialogs. \r\n" +
+      "Delete the saved dimensions and positions of the A>V>C> command setup dialogs. \r\n" +
         "This procedure saves you when dialog windows accidentally end up off the screen. \r\n" +
         "The procedure can be called with the command AvcResetDialogs",
       "Удалить сохраненные размеры и положение диалогов настройки команд A>V>C>. \r\n" +
@@ -603,7 +604,7 @@ namespace AVC
       "设置已重置。 所有对话框都将在屏幕中间打开。"};
 
     public static readonly string[]
- InfoLog = {
+    InfoLog = {
       "Info message to Events Log",
       "Информация в системный лог",
       "Informazioni nel registro di sistema",
@@ -700,25 +701,25 @@ namespace AVC
       "Modalità di misurazione a scansione",
       "Sweep-Messmodus",
       "Modalità di misurazione a scansione"};
-      public static readonly string[] LongerSide = {
+    public static readonly string[] LongerSide = {
       "Longer side",
       "Длинная сторона",
       "Lato più lungo",
       "Längere Seite",
       "较长的一边"};
-      public static readonly string[] LongerSideTip = {
+    public static readonly string[] LongerSideTip = {
       "The longer one is selected from the two sides of the bent part.",
       "Из двух сторон согнутой детали выбирается более длинная",
       "Tra i due lati della parte piegata si sceglie quello più lungo.",
       "Aus den beiden Seiten des gebogenen Teils wird die längere ausgewählt.",
       "从弯曲部分的两侧选择较长的一个。"};
-      public static readonly string[] LongerSegments = {
+    public static readonly string[] LongerSegments = {
       "Longer segments",
       "Длинные сегменты",
       "Segmenti più lunghi",
       "Längere Segmente",
       "较长的段"};
-      public static readonly string[] LongerSegmentsTip = {
+    public static readonly string[] LongerSegmentsTip = {
       "For parts with many bends in different directions, \r\n" +
         "the longer side is selected on each part segment and the sum of the segment lengths is calculated.",
       "Для деталей с множеством изгибов в разные стороны, \r\n" +
@@ -730,13 +731,13 @@ namespace AVC
         "Teilsegment die längere Seite ausgewählt und die Summe der Segmentlängen berechnet.",
       "对于在不同方向上有多个折弯的零件，\r\n" +
         "在每个零件段上选择较长的一侧，并计算段长度的总和。"};
-      public static readonly string[] MiddleLine = {
+    public static readonly string[] MiddleLine = {
       "Middle line",
       "Средняя линия",
       "Linea di mezzo",
       "Mittellinie",
       "中线"};
-      public static readonly string[] MiddleLineTip = {
+    public static readonly string[] MiddleLineTip = {
       "The average value between the lengths of both sides of the part is used",
       "Используется среднее значение между длинами обоих сторон детали",
       "Usiamo il valore medio tra le lunghezze di entrambi i lati della parte",

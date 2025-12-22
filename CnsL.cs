@@ -132,6 +132,13 @@ namespace AVC
       "Getan.",
       "完成。" };
     public static readonly string[]
+    ProcessCompleted = {
+      "   ... Process completed: {0}..",
+      "   ... Закончен процесс: {0}.",
+      "   ... Processo completato: {0}.",
+      "   ... Prozess abgeschlossen: {0}.",
+      "   ... 进程完成：{0}。"};
+    public static readonly string[]
     All = {
       "All",
       "Все",
@@ -212,6 +219,13 @@ namespace AVC
       "Impossibile inviare il messaggio al programmatore.",
       "Ich kann keine Nachricht an den Programmentwickler senden." ,
       "无法向程序员发送消息。"};
+    public static readonly string[]
+    CannotSendMail = {
+      "Can't send email message." ,
+      "Не удалось отправить почтовое сообщение.",
+      "Impossibile inviare il messaggio di posta elettronica.",
+      "Ich kann keine E-Mail-Nachricht senden." ,
+      "无法发送电子邮件消息。" };
     public static readonly string[]
     ParseLengthErr = {
       "The string cannot be recognized as a size",

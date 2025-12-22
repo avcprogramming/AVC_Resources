@@ -149,6 +149,12 @@ namespace AVC
        "Impossibile creare una nuova tabella. Errore: {0}",
        "Konnte keine neue Tabelle erstellen. Fehler: {0}",
        "创建新表失败。 错误：{0}" };
+    public static readonly string[] TableBottomToTopErr = {
+       "The command does not work with tables with bottom-up filling direction.",
+       "Команда не работает с таблицами с направлением заполнения снизу вверх.",
+       "Il comando non funziona con le tabelle con direzione di riempimento dal basso verso l'alto.",
+       "Der Befehl funktioniert nicht bei Tabellen mit Bottom-Up-Füllrichtung.",
+       "该命令不适用于自下而上填充方向的表格。"};
     public static readonly string[] NoFreeSpace = {
        "There is no free space on the sheet even for {0} rows of the table",
        "На листе нет свободного места даже для {0} строк таблицы",

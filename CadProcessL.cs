@@ -28,7 +28,7 @@ namespace AVC
       "Der Support-Ordner wurde aus dem Plugin-Menü entfernt",
       "支持文件夹已从插件菜单中清除" };
     public static readonly string[] AutodeskErr = {
-      "For latest updates, download the installer from Autodesk App Store",
+      "For latest updates, download the installer From Autodesk App Store",
       "Загрузите инсталлятор из Autodesk AppStore.",
       "Scarica il programma di installazione da Autodesk AppStore.",
       "Laden Sie das Installationsprogramm aus dem Autodesk AppStore herunter.",

@@ -79,6 +79,12 @@ namespace AVC
       "Creazione di fogli e finestre",
       "Pläne und Ansichtsfenster erstellen",
       "创建布局和视口"};
+    public static readonly string[] VPForAssembliesCreating = {
+      "Creating Viewports for Assemblies",
+      "Создание вьюпортов для сборок",
+      "Creazione di finestre per assiemi",
+      "Erstellen von Ansichtsfenstern für Baugruppen",
+      "为装配体创建视口"};
 
     public static readonly string[] ViewportTargeting = {
       "Viewport targeting",

@@ -190,6 +190,18 @@ namespace AVC
         "Zellenstileinstellungen werden verwendet.",
       "清除所有表格单元格的格式设置。 \r\n" +
         "将使用单元格样式设置。" };
+    public static readonly string[] DelEmptyColumns = {
+      "Delete empty columns",
+      "Удалять пустые столбцы",
+      "Rimuovi colonne vuote",
+      "Leere Spalten löschen",
+      "删除空列" };
+    public static readonly string[] DelEmptyColumnsTip = {
+      "Delete a table column if all values ​​and substitutions are empty.",
+      "Удалять колонку таблицы, если все значения и подстановки оказались пустыми.",
+      "Elimina una colonna della tabella se tutti i valori e le sostituzioni sono vuoti.",
+      "Löschen Sie eine Tabellenspalte, wenn alle Werte und Ersetzungen leer sind.",
+      "如果所有值和替换项均为空，则删除表列。" };
     public static readonly string[] DelRowsText = {
       "Delete Rows",
       "Удалять строки",
@@ -282,6 +294,28 @@ namespace AVC
         "Legen Sie HEADER im Zellenstil fest",
       "在表格的第二行写入列标题。 \r\n" +
         "设置单元格样式的 HEADER" };
+    public static readonly string[] HeadersEachGroup = {
+      "In each group",
+      "В каждой группе",
+      "In ogni gruppo",
+      "In jeder Gruppe",
+      "在每个组中" };
+    public static readonly string[] HeadersEachGroupTip = {
+      "Place column headers after the group name and repeat for each data group. \r\n" +
+        "If a table has only one group and title is disabled, the group name will become the table title.\r\n" +
+        "If grouping is disabled, this setting is ignored.",
+      "Расположить заголовки столбцов после имени группы и повторять в каждой группе данных.\r\n" +
+        "Если в таблице только одна группа и отключено заглавие, то имя группы станет заглавием таблицы.\r\n" +
+        "Если отключена группировка, то настройка игнорируется.",
+      "Posizionare le intestazioni delle colonne dopo il nome del gruppo e ripetere per ogni gruppo di dati. \r\n" +
+        "Se una tabella ha un solo gruppo e il titolo è disabilitato, il nome del gruppo diventerà il titolo della tabella.\r\n" +
+        "Se il raggruppamento è disabilitato, questa impostazione viene ignorata.",
+      "Platzieren Sie die Spaltenüberschriften nach dem Gruppennamen und wiederholen Sie sie für jede Datengruppe. \r\n" +
+        "Wenn eine Tabelle nur eine Gruppe hat und der Titel deaktiviert ist, wird der Gruppenname zum Tabellentitel.\r\n" +
+        "Wenn die Gruppierung deaktiviert ist, wird diese Einstellung ignoriert.",
+      "将列标题放在组名之后，并为每个数据组重复。 \r\n" +
+        "如果表格只有一个组且标题被禁用，则组名将成为表格标题。\r\n" +
+        "如果禁用分组，则忽略此设置。"  };
     public static readonly string[] MergeGroupTitlesText = {
       "Merge Titles",
       "Объединять",
@@ -404,6 +438,47 @@ namespace AVC
       "DWG Tavolo",
       "DWG-Tabelle",
       "DWG 表" };
+    public static readonly string[] TableAnchor = {
+      "Table Anchor Point",
+      "Точка привязки таблицы",
+      "Punto di ancoraggio",
+      "Ankerpunkt",
+      "锚点" };
+    public static readonly string[] TableAnchorTip = {
+      "This table corner will be used as the base point when inserting a new table. " +
+        "And when expanding or contracting the old table, this corner will retain its position.",
+      "Этот угол таблицы будет использован как базовая точка при вставке новой таблицы. " +
+        "А при расширении/сжатии старой таблицы, этот угол сохранит свое положение.",
+      "Questo angolo della tabella sarà utilizzato come punto base durante l'inserimento di una nuova tabella. " +
+        "E durante l'espansione o la contrazione della vecchia tabella, questo angolo manterrà la sua posizione.",
+      "Diese Tabellenecke wird als Basispunkt beim Einfügen einer neuen Tabelle verwendet. " +
+        "Und beim Erweitern oder Verkleinern der alten Tabelle behält diese Ecke ihre Position bei.",
+      "插入新表格时，将使用此表格角作为基点。 " +
+        "在扩展或收缩旧表时，此角将保留其位置。" };
+    public static readonly string[] TopLeft = {
+      "Top-Left",
+      "Верх-Лево",
+      "In alto a sinistra",
+      "Oben links",
+      "左上角" };
+    public static readonly string[] TopRight = {
+      "Top-Right",
+      "Верх-Право",
+      "In alto a destra",
+      "Oben rechts",
+      "右上角" };
+    public static readonly string[] BottomLeft = {
+      "Bottom-Left",
+      "Низ-Лево",
+      "In basso a sinistra",
+      "Unten links",
+      "左下角" };
+    public static readonly string[] BottomRight = {
+      "Bottom-Right",
+      "Низ-Право",
+      "In basso a destra",
+      "Unten rechts",
+      "右下角" };
     public static readonly string[] CreateFileText = {
       "Create file",
       "Создание файла",
@@ -416,12 +491,6 @@ namespace AVC
       "Riempimento da tavola",
       "Tischfüllung",
       "表格填充" };
-    public static readonly string[] PTTText = {
-      "Paste data",
-      "Вставка данных",
-      "Incolla",
-      "Osterdatum",
-      "复活节日期" };
     public static readonly string[] TextText = {
       "Text options",
       "Настройка текста",
@@ -477,7 +546,6 @@ namespace AVC
         "Legen Sie 0 fest, um die Systemvariable TextSize zu verwenden",
       "字体大小。 \r\n" +
         "设置 0 使用系统变量 TextSize" };
-
 
 
   }

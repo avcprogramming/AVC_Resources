@@ -127,7 +127,7 @@ namespace AVC
         "Set space for using default tags\r\n" +
         "(PageNo or SheetNo or Page or Sheet)",
       "Тег атрибута, в который будет записан номер листа.\r\n" +
-        "Оставьте поле пустым, чтоб использовать атрибут по-умолчанию \r\n" +
+        "Оставьте поле пустым, чтоб использовать атрибут по умолчанию \r\n" +
         "(Лист или ЛистНомер)",
       "Un tag di attributo su cui verrà scritto il numero del foglio.\r\n" +
         "Lascia vuoto per utilizzare l'attributo predefinito\r\n" +
@@ -143,7 +143,7 @@ namespace AVC
         "Set space for using default tags\r\n" +
         "(PageCount or SheetCount or Pages or From)",
       "Тег атрибута, в который будет записано общее количество листов.\r\n" +
-        "Оставьте поле пустым, чтоб использовать атрибут по-умолчанию\r\n" +
+        "Оставьте поле пустым, чтоб использовать атрибут по умолчанию\r\n" +
         "(Листов или КоличествоЛистов или Из)",
       "Un tag di attributo su cui verrà scritto il numero totale di fogli.\r\n" +
         "Lascia vuoto per utilizzare l'attributo predefinito\r\n" +
@@ -159,7 +159,7 @@ namespace AVC
         "Set space for using default tags\r\n" +
         "(Title or Name or SheetName or SheetTitle or DrawingName)",
       "Тег атрибута, из которого будет извлечено название чертежа для оглавления.\r\n" +
-        "Оставьте поле пустым, чтоб использовать атрибут по-умолчанию\r\n" +
+        "Оставьте поле пустым, чтоб использовать атрибут по умолчанию\r\n" +
         "(Чертеж или НаименованиеЛиста или Заголовок или Наименование или Название)",
       "Tag di attributo da cui estrarre il titolo del disegno per il sommario.\r\n" +
         "Lascia vuoto per utilizzare l'attributo predefinito\r\n" +
@@ -368,7 +368,7 @@ namespace AVC
         "Set space for using default tags\r\n" +
         "(Scale or Ratio)",
       "Тег атрибута, в который будет записан масштаб листа. \r\n" +
-        "Оставьте поле пустым, чтоб использовать атрибут по-умолчанию\r\n" +
+        "Оставьте поле пустым, чтоб использовать атрибут по умолчанию\r\n" +
         "(Масштаб или Scale)",
       "Tag di attributo su cui verrà scritto il numero della scala del foglio. \r\n" +
         "Lascia vuoto per utilizzare l'attributo predefinito\r\n" +

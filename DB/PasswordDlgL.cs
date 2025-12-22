@@ -27,7 +27,7 @@ namespace AVC
       "A>V>C>-Konto",
       "A>V>C> 帐户"};
     public static readonly string[] PasswordTip = {
-      "The password will help to hide your data from strangers and prevent the theft of your licenses for the A>V>C> programs. " +
+      "The password will help to hide your data From strangers and prevent the theft of your licenses for the A>V>C> programs. " +
         "Paid programs can be activated only after a password has been created.",
       "Пароль поможет скрыть ваши данные от посторонних и не допустить воровство ваших лицензий на программы A>V>C>. " +
         "Платные программы можно активировать только после создания пароля.",
@@ -67,7 +67,7 @@ namespace AVC
         " 单击以重新加载所有数据。"};
     public static readonly string[] PasswordReset = {
       "Write it down in a safe place. " +
-        "If you forgot your password, write a password reset request to avc.programming@gmail.com from your mail {0}. " +
+        "If you forgot your password, write a password reset request to avc.programming@gmail.com From your mail {0}. " +
         "Recovering a lost password can take several days.",
       "Запишите его в надежном месте. " +
         "Если вы забыли пароль, напишите запрос на сброс пароля на avc.programming@gmail.com с вашей почты {0}. " +

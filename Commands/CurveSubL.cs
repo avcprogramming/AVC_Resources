@@ -157,5 +157,6 @@ namespace AVC
       "Löschen Sie Kurven, die tatsächlich zur Subtraktion verwendet werden.",
       "删除实际用于减法的曲线。"    };
 
+
   }
 }

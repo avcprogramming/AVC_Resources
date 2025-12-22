@@ -93,7 +93,7 @@ namespace AVC
       "突出显示找到的对象？" };
     public static readonly string[] DimensionFormatQuery ={
       "Enter dimension format. Default - 0.#",
-      "Введите формат для размеров. По-умолчанию 0.#",
+      "Введите формат для размеров. по умолчанию 0.#",
       "Inserisci il formato della dimensione. Predefinito - 0. #",
       "Geben Sie ein Format für die Abmessungen ein. Standard - 0. #",
       "输入尺寸的格式。 默认 0.#" };

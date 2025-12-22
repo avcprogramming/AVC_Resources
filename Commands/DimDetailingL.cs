@@ -63,9 +63,9 @@ namespace AVC
         "and it makes no sense to repeat it on the leaders at all edges. \r\n" +
         "The setting applies only to the ends on the outside of the part(edge bandings). \r\n" +
         "The rest of the coverings will be shown anyway." ,
-      "Делать выноски с материалами торцев даже в том случае, \r\n" +
+      "Делать выноски с материалами торцов даже в том случае, \r\n" +
         "если все торцы покрыты одинаковым материалом. \r\n" +
-        "Обычно покрытие торцев указано в описании детали \r\n" +
+        "Обычно покрытие торцов указано в описании детали \r\n" +
         "и его нет смысла повторять на выносках на всех торцах. \r\n" +
         "Настройка распространяется только на торцы снаружи детали. \r\n" +
         "Остальные покрытия будут показаны в любом случае.",
@@ -271,7 +271,7 @@ namespace AVC
     public static readonly string[] SlopeLeadersTip = {
       "Create markings for the ends of the details made with the incline of the saw.\r\n" +
         "The accuracy of the angle designation depends on the current dimension style.",
-      "Создавать обозначения для плоских торцев детали сделанных с наклоном пилы. \r\n" +
+      "Создавать обозначения для плоских торцов детали сделанных с наклоном пилы. \r\n" +
         "Точность обозначения угла зависит от текущего размерного стиля.",
       "Crea segni per le estremità dei dettagli realizzati con l'inclinazione della sega.\r\n" +
         "La precisione della designazione dell'angolo dipende dallo stile di quotatura corrente.",
@@ -560,7 +560,7 @@ namespace AVC
         "%down% - 文本“向下”"};
     public static readonly string[] TiltBelowTip = {
       "Text to be inserted into leaders for invisible slope ends.",
-      "Текст, который будет подставлен в выноски для невидимых наклонных торцев.",
+      "Текст, который будет подставлен в выноски для невидимых наклонных торцов.",
       "Testo da inserire nelle direttrici per estremità inclinate invisibili.",
       "In Führungslinien einzufügender Text für unsichtbare Gefälleenden.",
       "要插入到不可见坡端引线中的文本。"};

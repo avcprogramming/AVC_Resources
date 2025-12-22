@@ -67,7 +67,13 @@ namespace AVC
       "Caricamento dei dati utente {0}...",
       "Benutzerdaten laden {0}...",
       "正在加载用户数据 {0}..." };
-    public static readonly string[] NotConnectedTip = {
+    public static readonly string[] NoAccessToServerTip = {
+      "There is no access to the A>V>C> server." ,
+      "Нет доступа к серверу A>V>C>." ,
+      "Non c'è accesso al server A>V>C>." ,
+      "Es besteht kein Zugriff auf den Server A>V>C>.",
+      "无法访问 A>V>C> 服务器。" };
+    public static readonly string[] NoAccessSoonBlockedTip = {
       "There is no access to the A>V>C> server.\r\n" +
         "Without connection to the server, A>V>C> programs will soon be blocked.",
       "Нет доступа к серверу A>V>C>.\r\n" +
@@ -78,6 +84,17 @@ namespace AVC
         "Ohne Verbindung zum Server werden die Programme A>V>C> bald blockiert.",
       "无法访问 A>V>C> 服务器。\r\n" +
         "如果没有连接到服务器，A>V>C> 程序很快就会被阻止。" };
+    public static readonly string[] NoAccessNoActivateTip = {
+      "There is no access to the A>V>C> server.\r\n" +
+        "Without connection to the server it is impossible to activate A>V>C> programs.",
+      "Нет доступа к серверу A>V>C>.\r\n" +
+        "Без связи с сервером невозможно активировать программы A>V>C>.",
+      "Non c'è accesso al server A>V>C>.\r\n" +
+        "Senza connessione al server non è possibile attivare i programmi A>V>C>.",
+      "Es besteht kein Zugriff auf den Server A>V>C>.\r\n" +
+        "Ohne Verbindung zum Server ist es nicht möglich, A>V>C>-Programme zu aktivieren.",
+      "无法访问 A>V>C> 服务器。\r\n" +
+        "如果没有连接到服务器，就无法激活 A>V>C> 程序。" };
     public static readonly string[] OnlineMode = {
       "Online Mode",
       "Режим Онлайн",
@@ -175,7 +192,7 @@ namespace AVC
       "Nein, das Passwort ist nicht korrekt.",
       "不，密码不正确。" };
     public static readonly string[] PasswordResetInfo = {
-      "If you forgot your password, write a password reset request from your mail {0}",
+      "If you forgot your password, write a password reset request From your mail {0}",
       "Если вы забыли пароль, напишите запрос на сброс пароля с вашей почты {0}",
       "Se hai dimenticato la password, scrivi una richiesta di reimpostazione della password dalla tua posta {0}",
       "Wenn Sie Ihr Passwort vergessen haben, schreiben Sie eine Anfrage zum Zurücksetzen des Passworts " +

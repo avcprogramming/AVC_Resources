@@ -212,7 +212,7 @@ namespace AVC
         "Leave the field blank to use the default layer.",
       "Назначить слой новой кривой. \r\n" +
         "Если слоя нет в чертеже - он будет создан. \r\n" +
-        "Оставьте поле пустым, чтоб использовать слой по-умолчанию.",
+        "Оставьте поле пустым, чтоб использовать слой по умолчанию.",
       "Assegna un livello a una nuova curva. \r\n" +
         "Se il layer non è nel disegno, verrà creato. \r\n" +
         "Lascia il campo vuoto per utilizzare il livello predefinito.",

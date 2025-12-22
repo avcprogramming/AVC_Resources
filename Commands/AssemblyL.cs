@@ -110,7 +110,7 @@ namespace AVC
         "If the name is already taken, the program will increment the number until it finds a free name.\r\n" +
         "The substitution can be formatted as a Roman numeral or as an alphabetical letter.",
       "Шаблон имени сборки.\r\n" +
-        "В шаблоне обязательно должна быть подстановка %row%. В это место будет вставлен номер новой сборки.\r\n" +
+        "В шаблонеобязательно должна быть подстановка %row%. В это место будет вставлен номер новой сборки.\r\n" +
         "Программа использует свойство чертежа Number_of_assemblies и добавляет к нему 1.\r\n" +
         "Если имя уже занято, то программа будет увеличивать номер, пока не найдет свободное имя.\r\n" +
         "Подстановку можно форматировать как римскую цифру или как букву по алфавиту.",

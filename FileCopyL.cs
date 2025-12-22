@@ -4,7 +4,12 @@ namespace AVC
   public static class
   FileCopyL
   {
-
+    public static readonly string[] FileCopyVer = {
+      "The file copying program for A>V>C> plugins is working: {0}. Version {1}",
+      "Работает программа копирования файлов для плагинов A>V>C>: {0}. Версия {1}",
+      "Il programma di copia dei file per i plugin A>V>C> funziona: {0}. Versione {1}",
+      "Das Programm zum Kopieren von Dateien für A>V>C>-Plugins funktioniert.: {0}. Version {1}",
+      "A>V>C>插件的文件复制程序正在运行：{0}。版本 {1}" };
     public static readonly string[] Count = {
       "Failed to copy {0} files. Next try in {1} minutes.",
       "Не удалось скопировать {0} файлов. Следующая попытка через {1} минут.",
@@ -38,7 +43,7 @@ namespace AVC
 
     // ============================= Pack7z ==============================================
     public static readonly string[] No7z = {
-      "The 7-Zip archiver was not found in the system. Download it from the 7-zip.org website and install it in the default folder {0}",
+      "The 7-Zip archiver was not found in the system. Download it From the 7-zip.org website and install it in the default folder {0}",
       "В системе не найден архиватор 7-Zip. Скачайте его с сайта 7-zip.org и установите в папку по умолчанию {0}",
       "L'archiviatore 7-Zip non è stato trovato nel sistema. Scaricalo dal sito web 7-zip.org e installalo nella cartella predefinita {0}",
       "Der 7-Zip-Archivierer wurde im System nicht gefunden. Laden Sie es von der Website 7-zip.org herunter und installieren Sie es im Standardordner {0}",

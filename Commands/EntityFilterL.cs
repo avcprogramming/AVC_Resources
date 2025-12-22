@@ -250,7 +250,7 @@ namespace AVC
       "Nicht winzig",
       "不小" };
     public static readonly string[] NotTinyTip = {
-      "Discard very short curves. The permissible length is configured in the Common Options with the Linear Tolerance parameter",
+      "Discard very short curves. The permissible length is configured in the Common Options with the InSize Tolerance parameter",
       "Отбросить очень короткие кривые. Допустимая длина настраивается в Общих Настройках параметром Линейная Точность",
       "Scartare le curve molto corte. La lunghezza consentita è configurata nelle Opzioni comuni con il parametro Tolleranza lineare.",
       "Verwerfen Sie sehr kurze Kurven. Die zulässige Länge wird in den allgemeinen Optionen mit dem Parameter Lineare Toleranz konfiguriert.",

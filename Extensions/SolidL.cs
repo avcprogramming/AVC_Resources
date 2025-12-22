@@ -95,6 +95,12 @@ namespace AVC
       "Non trovato una coppia di superfici identiche",
       "Keine passenden Paare gefunden",
       "未找到一对相同的面"};
+    public static readonly string[] IsNotSweepErr ={
+      "There are no curved faces. The solid cannot be measured as a sweep.",
+      "Нет изогнутых поверхностей. Солид нельзя измерить как развертку.",
+      "Non ci sono facce curve. Il solido non può essere misurato come uno sweep.",
+      "Es gibt keine gekrümmten Flächen. Der Körper kann nicht als Sweep vermessen werden.",
+      "该实体没有曲面。因此，不能用扫描的方式来测量该实体。"};
     public static readonly string[] Unsupported ={
       "Unsupported solid type",
       "Не поддерживаемый вид солида",

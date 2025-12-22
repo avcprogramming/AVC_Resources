@@ -72,6 +72,12 @@ namespace AVC
         "Impossibile espandere la superficie per creare uno spazio. {0}",
         "Die Oberfläche kann nicht erweitert werden, um eine Lücke zu erzeugen. {0}",
         "无法扩大表面来产生间隙。 {0}"    };
+    public static readonly string[] OffsetRegionErr = {
+        "Unable to expand region to make gap. {0}",
+        "Не удалось расширить регион, чтоб сделать зазор. {0}",
+        "Impossibile espandere la regione per creare uno spazio. {0}",
+        "Die Region kann nicht erweitert werden, um eine Lücke zu erzeugen. {0}",
+        "无法扩大区域来产生间隙。 {0}"    };
     public static readonly string[] MadeSub = {
         "  Subtractions performed: {0}",
         "  Выполнено вычитаний: {0}",
@@ -227,5 +233,33 @@ namespace AVC
         "如果可以创建实体，则将删除与组接触的所有对象。\r\n" +
         "类似于标准命令 _SurfSculpt。"
     };
+
+    public static readonly string[] FromLargest = {
+      "Properties from largest",
+      "Свойства от большего",
+      "Proprietà dal più grande",
+      "Eigenschaften vom Größten",
+      "从最大值继承属性" };
+    public static readonly string[] FromLargestTip = {
+      "Take color, material, and all properties from the largest solid. \r\n" +
+        "The solid that has the assigned material has priority. \r\n" +
+        "If this option is disabled, take the properties from the first selected solid. \r\n" +
+        "This option only works with the Union and Intersect commands.",
+      "Брать цвет, материал и все свойства от самого большого солида. \r\n" +
+        "Преимущество имеет солид у которого назначен материал. \r\n" +
+        "Если опция выключена, то брать от первого выбранного. \r\n" +
+        "Опция работает только с командами Объединения и Пересечения.",
+      "Prendi colore, materiale e tutte le proprietà dal solido più grande. \r\n" +
+        "Il solido a cui è stato assegnato il materiale ha la priorità. \r\n" +
+        "Se questa opzione è disabilitata, prendi le proprietà dal primo solido selezionato. \r\n" +
+        "Questa opzione funziona solo con i comandi Unione e Intersezione.",
+      "Nehmen Sie Farbe, Material und alle Eigenschaften vom größten Volumenkörper. \r\n" +
+        "Der Volumenkörper, dem das Material zugewiesen ist, hat Priorität. \r\n" +
+        "Wenn diese Option deaktiviert ist, nehmen Sie die Eigenschaften vom zuerst ausgewählten Volumenkörper. \r\n" +
+        "Diese Option funktioniert nur mit den Befehlen Vereinigen und Schneiden.",
+      "从最大实体获取颜色、材质和所有属性。\r\n" +
+        "分配了材质的实体具有优先权。\r\n" +
+        "如果禁用此选项，则从第一个选定的实体获取属性。\r\n" +
+        "此选项仅适用于“联合”和“相交”命令。"    };
   }
 }

@@ -337,7 +337,7 @@
     public static readonly string[] TitleCenteredTip = {
       "Center the title above the assembly in the middle of all assembly views.\r\n" +
         "Also center the block with the view name in the center of the viewport.",
-      "Центрировать заголовок над сборкой по середине всех видов сборки. \r\n" +
+      "Центрировать заголовок над сборкой посередине всех видов сборки. \r\n" +
         "Так же центрировать блок с названием вида по центру вьюпорта.",
       "Centrare il titolo sopra l'assemblaggio al centro di tutte le viste dell'assemblaggio. \r\n" +
         "Centrare anche il blocco con il nome della vista al centro della finestra di visualizzazione.",
@@ -510,6 +510,38 @@
       "如果视觉样式为“隐藏”，则将阴影绘图设置为“传统隐藏”。\r\n" +
         "该设置允许以单色打印样式打印 3D 模型。\r\n" +
         "但必须禁用视图深度裁剪 (_3dClip)。"  };
+    public static readonly string[] Clip3d = {
+      "Clip view by depth (3dClip)",
+      "Обрезать вид по глубине (_3dClip)",
+      "Ritaglia la vista per profondità (3dClip)",
+      "Sicht nach Tiefe zuschneiden (3dClip)",
+      "按深度裁剪视图 (3dClip)" };
+    public static readonly string[] Clip3dTip = {
+      "Enable 3D clipping (_3dClip) for all views. \r\n" +
+        "This setting allows you to crop the view along the Z axis at the edges of the part, \r\n" +
+        "and prevent other assemblies from appearing in the view. \r\n" +
+        "But 'Legacy Hidden' shade plot will have to be disabled.\r\n" +
+        "However, AutoCAD is glitchy and some assembly parts may disappear.",
+      "Включать 3D-отсечение (_3dClip) для всех видов. \r\n" +
+        "Настройка позволяет обрезать вид по оси Z по краям детали, \r\n" +
+        "и избежать попадания других сборок на вид. \r\n" +
+        "Но тонирование при печати 'Legacy Hidden' придется отключить. \r\n" +
+        "Однако AutoCAD глючит и часть деталей сборки может исчезнуть.",
+      "Abilita il ritaglio 3D (3dClip) per tutte le viste. \r\n" +
+        "Questa impostazione consente di ritagliare la vista lungo l'asse Z ai bordi del pezzo, \r\n" +
+        "e di evitare che altri assiemi appaiano nella vista. \r\n" +
+        "Ma il tono di stampa 'Nascosto Legacy' dovrà essere disabilitato. \r\n" +
+        "Tuttavia, AutoCAD presenta dei problemi e alcune parti dell'assieme potrebbero scomparire.",
+      "3D-Clipping (_3dClip) für alle Ansichten aktivieren.\r\n" +
+        "Mit dieser Einstellung können Sie die Ansicht entlang der Z-Achse an den Kanten des Bauteils beschneiden.\r\n" +
+        "und verhindern, dass andere Baugruppen in der Ansicht angezeigt werden.\r\n" +
+        "Die Darstellung der Schattierung ‚Versteckt‘ (Legacy) muss jedoch deaktiviert werden.\r\n" +
+        "AutoCAD ist allerdings fehleranfällig, und einige Baugruppenteile können verschwinden.",
+      "为所有视图启用 3D 裁剪 (_3dClip)。\r\n" +
+        "此设置允许沿零件边缘沿 Z 轴裁剪视图，\r\n" +
+        "并防止其他组件出现在视图中。\r\n" +
+        "但必须禁用“传统隐藏”阴影绘图。\r\n" +
+        "但是，AutoCAD 存在故障，某些组件部件可能会消失。" };
     public static readonly string[] FreezeLayers = {
       "Freeze Layers",
       "Заморозить слои",
@@ -598,10 +630,10 @@
       "Zeigt die Gesamtmaße der Baugruppe in zwei orthogonalen Ansichten an.",
       "在两个正交视图中显示组件的整体尺寸。" };
     public static readonly string[] DimView1 = {
-      "View for dimensions",
-      "Вид для габаритов",
-      "Vista per le dimensioni",
-      "Ansicht für Maße",
+      "On view",
+      "На виде",
+      "In vista",
+      "Im Ansicht",
       "用于尺寸的视图"};
     public static readonly string[] DimView1Tip = {
       "On which of the views to place two overall dimensions of the assembly. Only orthogonal views.",
@@ -610,10 +642,10 @@
       "Auf welcher der Ansichten zwei Gesamtmaße der Baugruppe platziert werden sollen. Nur orthogonale Ansichten.",
       "在哪个视图上放置组件的两个整体尺寸。仅正交视图。" };
     public static readonly string[] DimView2 = {
-      "Third dimension",
-      "Третий габарит",
-      "Terza dimensione",
-      "Dritte Dimension",
+      "3rd dim",
+      "3-й габарит",
+      "3° dim.",
+      "3. Dim.",
       "第三个尺寸" };
     public static readonly string[] DimView2Tip ={
       "The view on which to place the third overall dimension. \r\n" +

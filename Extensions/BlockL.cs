@@ -38,6 +38,12 @@ namespace AVC
       "  La creazione di blocco {0}...",
       "  Block {0} erstellen...",
       "  块创建 {0}..." };
+    public static readonly string[] ReplacingBlock = {
+      "  Replacing a block {0}...",
+      "  Замена блока {0}...",
+      "  Sostituzione del blocco {0}...",
+      "  Block {0} ersetzen...",
+      "  块替换 {0}..." };
     public static readonly string[] Itself = {
       "It is inadmissible to copy the block to itself. It is recommended to first explode blocks",
       "Недопустимо копирование блока в самого себя. Рекомендуется сначала взорвать блоки",

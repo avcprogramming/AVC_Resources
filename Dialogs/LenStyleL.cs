@@ -71,11 +71,11 @@ namespace AVC
         "Symbol 0 - any digit or zero. Symbol # - any digit or nothing.\r\n" +
         "Default “0.#” - interpreted like 1 decimal digit after float point if it not 0\r\n" +
         "Additional you can use fractional formats: \r\n" +
-        "CU - from current drawing (Set it in Drawing utits dialog box)\r\n" +
+        "CU - from current drawing (Set it in Drawing units dialog box)\r\n" +
         "AR - Architectural\r\n" +
         "EN - Engineering\r\n" +
         "FR - Fractional\r\n" +
-        "After AR, EN, FR you can write precision (0-8)",
+        "After AR, EN, FR you can write precision (from 0 to 8)",
       "Только для размеров. \r\n" +
         "Можно переопределять в подстановках.\r\n" +
         "Задает сколько знаков после запятой писать и писать ли незначащие нули.\r\n" +
@@ -116,7 +116,7 @@ namespace AVC
          "FR - 分数\r\n" +
          "在 AR、EN、FR 之后，您可以写精度 (0-8)"};
     public static readonly string[] LenStyle = {
-      "Convert numbers to string",
+      "Convert number to string",
       "Число к строке",
       "Converti i numeri in stringa",
       "Konvertieren Sie Zahlen in Zeichenfolgen",

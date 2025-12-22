@@ -73,7 +73,7 @@ namespace AVC
       "  测量的 {0} 个固体"};
     public static readonly string[] NoFrontForBendingErr = {
       "3d solid #{0} did not have a flat front side. The edge banding list will not be created.",
-      "У 3d-солида #{0} не найдено плоской фасадной стороны. Список торцев не будет создан." ,
+      "У 3d-солида #{0} не найдено плоской фасадной стороны. Список торцов не будет создан." ,
       "Il solido 3d #{0} non aveva un lato anteriore piatto. L'elenco dei bordi non verrà creato.",
       "3D-Volumenkörper #{0} hatte keine flache Vorderseite. Die Kantenanleimliste wird nicht erstellt.",
       "3d 实体 #{0} 没有平坦的正面。 不会创建封边列表。"};

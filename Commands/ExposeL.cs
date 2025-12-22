@@ -91,7 +91,7 @@ namespace AVC
         "You can add any text and formatting characters (eg \\P - line break).",
       "Шаблон заголовка сборки.\r\n" +
         "Используйте подстановки свойств и атрибутов блока-сборки и чертежа.\r\n" +
-        "Вы можете добавить любой текст и символы форматирования (например \\P - перенос строки).",
+        "Вы можете добавить любой текст и символы форматирования (например, \\P - перенос строки).",
       "Modello di intestazione dell'assieme.\r\n" +
         "Utilizza proprietà di assemblaggio di blocchi e blocchi di disegno e sostituzioni di attributi.\r\n" +
         "Puoi aggiungere qualsiasi testo e carattere di formattazione (ad es. \\P - interruzione di riga).",

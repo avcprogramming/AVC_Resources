@@ -317,6 +317,23 @@ namespace AVC
         "在绘图树的设置中，您可以启用实体的背景测量。 \r\n" +
         "读取发生在程序空闲时间的小部分，但轻微的制动是可能的。 \r\n" +
         "测量实体有时会导致 AutoCAD 崩溃。" };
+    public static readonly string[] MechanicalNames = {
+      "BricsCAD Mechanical Part Names",
+      "Имена деталей BricsCAD Mechanical",
+      "Nomi delle parti BricsCAD Mechanical",
+      "BricsCAD Mechanical-Teilenamen",
+      "部件名称“BricsCAD Mechanical”" };
+    public static readonly string[] MechanicalNamesTip = {
+      "Read and write BricsCAD Mechanical component solid names to XData. \r\n" +
+        "This option only works in drawings converted to Mechanical components.",
+      "Считывать и записывать в XData имена солидов-компонентов BricsCAD Mechanical. \r\n" +
+        "Опция работает только в чертежах конвертированных в компоненты Mechanical.",
+      "Leggi e scrivi i nomi dei solidi dei componenti BricsCAD Mechanical in XData. \r\n" +
+        "Questa opzione funziona solo nei disegni convertiti in componenti meccanici.",
+      "Lese und schreibe BricsCAD Mechanical-Komponenten-Volumenkörpernamen in XData. \r\n" +
+        "Diese Option funktioniert nur in Zeichnungen, die in Mechanical-Komponenten konvertiert wurden.",
+      "将 BricsCAD Mechanical 组件实体名称读写到 XData。 \r\n" +
+        "此选项仅适用于转换为 Mechanical 组件的图纸。"};
     public static readonly string[] CimNames = {
       "Router-CIM Part Names",
       "Имена деталей Router-CIM",
@@ -352,7 +369,7 @@ namespace AVC
          "But for quad parts, you can rearrange the ends however you like.\r\n" +
          "Write a list of four numbers from 1 to 4 separated by commas.\r\n" +
          "This order only works in the Properties Palette and has no effect on substitutions.",
-      "Обычно список торцев начинается с левого нижнего угла детали и далее по часовой стрелке.\r\n" +
+      "Обычно список торцов начинается с левого нижнего угла детали и далее по часовой стрелке.\r\n" +
         "Но для четырехугольных деталей вы можете переставить торцы как вам нравится.\r\n" +
         "Напишите список из четырех чисел от 1 до 4 через запятую.\r\n" +
         "Данный порядок работает только в Палитре Свойств и никак не влияет на подстановки.",
@@ -584,7 +601,7 @@ namespace AVC
 
     public static readonly string[] DwgMaterialErr = {
       "Failed to assign default material {0}",
-      "Не удалось назначить материал по-умолчанию {0}",
+      "Не удалось назначить материал по умолчанию {0}",
       "Impossibile assegnare il materiale predefinito {0}",
       "Fehler beim Zuweisen des Standardmaterials {0}.",
       "无法分配默认材质 {0}" };

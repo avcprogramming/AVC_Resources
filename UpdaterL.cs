@@ -37,13 +37,13 @@ namespace AVC
       "Benutzer hat die Installation von Version {0} abgelehnt",
       "用户拒绝安装版本 {0}" };
     public static readonly string[] Download = {
-      "Downloading updates {0} from the server...",
+      "Downloading updates {0} From the server...",
       "Загрузка обновлений {0} с сервера...",
       "Download degli aggiornamenti {0} dal server...",
       "Herunterladen von Updates {0} vom Server...",
       "正在从服务器下载更新 {0}..."};
     public static readonly string[] DownloadErr = {
-      "Failed to download updates from the server.",
+      "Failed to download updates From the server.",
       "Не удалось загрузить обновления с сервера",
       "Impossibile scaricare gli aggiornamenti dal server.",
       "Fehler beim Herunterladen von Updates vom Server.",
@@ -67,7 +67,7 @@ namespace AVC
       "Der Update-Ordner für das Plugin {0} wurde nicht gefunden.",
       "未找到插件 {0} 的更新文件夹。"};
     public static readonly string[] CopyFiles = {
-      "The AVC_FileCopy program is launched to copy {0} files from the temporary folder to the plug-in folders.",
+      "The AVC_FileCopy program is launched to copy {0} files From the temporary folder to the plug-in folders.",
       "Запускается программа AVC_FileCopy для копирования {0} файлов из временной папки в папки плагинов.",
       "Il programma AVC_FileCopy viene avviato per copiare {0} file dalla cartella temporanea alle cartelle dei plug-in.",
       "Das Programm AVC_FileCopy wird gestartet, um {0} -Dateien aus dem temporären Ordner in die Plugin-Ordner zu kopieren.",
@@ -152,7 +152,7 @@ namespace AVC
 
     // ====================================== Updater Dialog Box ================================================
     public static readonly string[] UpdaterTip = {
-      "Plug-in updates can be downloaded from the server automatically. Or you can choose and install any version.",
+      "Plug-in updates can be downloaded From the server automatically. Or you can choose and install any version.",
       "Обновление плагинов может загружаться с сервера в автоматическом режиме. Или вы можете выбрать и установить любую версию.",
       "Gli aggiornamenti dei plugin possono essere scaricati automaticamente dal server. Oppure puoi scegliere e installare qualsiasi versione.",
       "Plugin-Updates können automatisch vom Server heruntergeladen werden. Oder Sie können eine beliebige Version auswählen und installieren.",
@@ -163,6 +163,18 @@ namespace AVC
       "Installare",
       "Installieren",
       "安装"};
+    public static readonly string[] Reload = {
+      "Versions",
+      "Версии",
+      "Versioni",
+      "Versionen",
+      "更新版本列表" };
+    public static readonly string[] ReloadTip = {
+      "Download the version list From the server again",
+      "Загрузить список версий с сервера заново",
+      "Scarica nuovamente l'elenco delle versioni dal server",
+      "Laden Sie die Versionsliste erneut vom Server herunter.",
+      "再次从服务器下载版本列表" };
     public static readonly string[] Beta = {
       "Automatically install pre-release(Beta) versions",
       "Автоматически устанавливать предварительные отладочные (Бета) версии",
@@ -248,13 +260,13 @@ namespace AVC
       "Daten werden geladen... {0}% abgeschlossen",
       "正在加载数据... {0}% 已完成"};
     public static readonly string[] SecondTry = {
-      "An error occurred while reading data from the server. Second try...",
+      "An error occurred while reading data From the server. Second try...",
       "Ошибка при считывании данных с сервера. Вторая попытка...",
       "Si è verificato un errore durante la lettura dei dati dal server. Secondo tentativo...",
       "Beim Lesen von Daten vom Server ist ein Fehler aufgetreten. Zweiter Versuch...",
       "从服务器读取数据时出错。请切换网络供应商。第二次尝试..." };
     public static readonly string[] ThirdTry = {
-      "An error occurred while reading data from the server. Third try...",
+      "An error occurred while reading data From the server. Third try...",
       "Ошибка при считывании данных с сервера. Третья  попытка...",
       "Si è verificato un errore durante la lettura dei dati dal server. Terzo tentativo...",
       "Beim Lesen von Daten vom Server ist ein Fehler aufgetreten. Dritter Versuch...",
@@ -266,10 +278,16 @@ namespace AVC
       "Archiv in Datei {0} schreiben...",
       "将存档写入文件 {0}..." };
     public static readonly string[] TimerTick = {
-      "{0}. Timer check for updates...",
-      "{0}. Проверка обновлений по таймеру...",
-      "{0}. Controllo aggiornamenti tramite timer...",
-      "{0}. Timer-Überprüfung auf Updates...",
-      "{0}. 定时检查更新..." };
+      "Timer check for updates...",
+      "Проверка обновлений по таймеру...",
+      "Controllo aggiornamenti tramite timer...",
+      "Timer-Überprüfung auf Updates...",
+      "定时检查更新..." };
+    public static readonly string[] AutoUpdatesOff = {
+      "Automatic update check is disabled.",
+      "Автоматическая проверка обновлений отключена.",
+      "Il controllo automatico degli aggiornamenti è disabilitato.",
+      "Die automatische Update-Prüfung ist deaktiviert.",
+      "自动更新检查已禁用。" };
   }
 }

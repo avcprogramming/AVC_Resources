@@ -57,7 +57,7 @@ namespace AVC
       "免费使用该程序 {0} 天。 您只能使用一次此类许可证，并且不能取消。 它不能在另一台计算机上使用。 " +
         "此计算机的其他用户将无法尝试此程序。 如果没有与服务器的连接，此许可证将被阻止。"};
     public static readonly string[] LicenseAnnualTip = {
-      "EUR {0:0}. The use of the program is 1 year from today. " +
+      "EUR {0:0}. The use of the program is 1 year From today. " +
         "Any version of the program can be activated. All updates are available. " +
         "Activation can be canceled and transferred to another computer. Activating your home computer is free!",
       "{0:0} EUR. Использование программы 1 год с сегодняшнего дня. " +
@@ -190,7 +190,7 @@ namespace AVC
          "用它来激活这台电脑？" };
     public static readonly string[] StartTrial = {
       "Start trial period now?\r\n" +
-        "You will not be able to re-use the trial period either on other computers or from other " +
+        "You will not be able to re-use the trial period either on other computers or From other " +
         "users of this computer.",
       "Начать пробный период сейчас?\r\n" +
         "Вы не сможете повторно использовать пробный период ни на других компьютерах, " +
@@ -203,7 +203,7 @@ namespace AVC
       "现在开始试用期吗？\r\n" +
          "您将无法在其他计算机或该计算机的其他用户处重新使用试用期。" };
     public static readonly string[] PurchaseOffline = {
-      "If you do not have a license for the program {1} yet, then EUR {0:0} will be debited from your balance.\r\n" +
+      "If you do not have a license for the program {1} yet, then EUR {0:0} will be debited From your balance.\r\n" +
         "Continue activating?",
       "Если у вас еще нет лицензии на программу {1}, то с вашего баланса будет списано {0:0} EUR.\r\n" +
         "Продолжить активацию?",
@@ -337,7 +337,7 @@ namespace AVC
     public static readonly string[] LicenseTip = {
       "You can see all your licenses activated on all your workplaces.\r\n" +
         "If you need to transfer the license to a new workplace, you must first deactivate the old workplace.\r\n" +
-        "Select the unwanted workplace from the list and click 'Delete'.\r\n" +
+        "Select the unwanted workplace From the list and click 'Delete'.\r\n" +
         "Or use the 'Deactivate' button to remove all activations for this workplace.",
       "Вы можете посмотреть все ваши лицензии, активированные на всех ваших компьютерах. \r\n" +
         "Для переноса лицензии на новое рабочее место, следует сначала отменить активацию старого.\r\n" +
@@ -846,7 +846,7 @@ namespace AVC
       "Klicken Sie auf das Programmsymbol, um es zu aktivieren.\r\n",
       "单击程序图标以激活它\r\n"};
     public static readonly string[] ProgramQuery4Command = {
-      "To use the command {0} you need to activate one of the programs from the list.\r\n",
+      "To use the command {0} you need to activate one of the programs From the list.\r\n",
       "Чтобы использовать команду {0} вам необходимо активировать одну из программ из списка.\r\n",
       "Per utilizzare il comando {0} è necessario attivare uno dei programmi dall'elenco.\r\n",
       "Um den Befehl {0} verwenden zu können, müssen Sie eines der Programme aus der Liste aktivieren.\r\n",
@@ -891,7 +891,7 @@ namespace AVC
       "安装这个程序没有意义。\r\n" +
          "你已经有一个使用相同命令的激活集合。" };
     public static readonly string[] Repeated = {
-      "It is recommended to uninstall this program. All commands from this program are in your collection.",
+      "It is recommended to uninstall this program. All commands From this program are in your collection.",
       "Рекомендуется удалить эту программу. Все команды из этой программы есть у вас в сборнике.",
       "Si consiglia di disinstallare questo programma. Tutti i comandi di questo programma sono nella tua raccolta.",
       "Es wird empfohlen, dieses Programm zu deinstallieren. " +
@@ -979,7 +979,7 @@ namespace AVC
       "Registrierungsdatum",
       "注册日期"};
     public static readonly string[] RegisteredFromWorkplace = {
-      "Registered from Workplace",
+      "Registered From Workplace",
       "Регистрация с рабочего места",
       "Registrato da Workplace",
       "Registriert von Workplace",
@@ -1014,7 +1014,7 @@ namespace AVC
       "未指定用户的电子邮件。 无法激活 A>V>C> 程序。" };
 
     public static readonly string[] MailMissing = {
-      "User {0} is missing from the database.",
+      "User {0} is missing From the database.",
       "Пользователь {0} отсутствует в базе данных.",
       "L'utente {0} non è presente nel database.",
       "L'utente {0} non è presente nel database.",
@@ -1066,7 +1066,7 @@ namespace AVC
       "Kontostand",
       "账户余额"};
     public static readonly string[] AccountBalanceClickTip = {
-      "Click to reload balance from A>V>C> server",
+      "Click to reload balance From A>V>C> server",
       "Кликни, чтоб перезагрузить баланс с сервера A>V>C>",
       "Fare clic per ricaricare il saldo dal server A>V>C>",
       "Klicken Sie hier, um das Guthaben vom A>V>C>-Server neu zu laden.",
@@ -1116,7 +1116,7 @@ namespace AVC
       "你的名字"};
     public static readonly string[] NameTip = {
       "It is advisable (but not required) to indicate your Name and Surname. This data will be used in correspondence.",
-      "Можно указать (но не обязательно) ваше Имя и Фамилию. Они будут использоваться в переписке.",
+      "Можно указать (но необязательно) ваше Имя и Фамилию. Они будут использоваться в переписке.",
       "Puoi inserire (ma non obbligatorio) il tuo nome e cognome. Saranno utilizzati in corrispondenza.",
       "Sie können (aber nicht erforderlich) Ihren Vor- und Nachnamen eingeben. Sie werden in der Korrespondenz verwendet.",
       "您可以输入（但不是必需的）您的名字和姓氏。 它们将用于通信。"};
@@ -1219,7 +1219,7 @@ namespace AVC
       "Aktivierungsschlüssel",
       "激活码"};
     public static readonly string[] QR = {
-      "Alternatively, you can scan this QR code containing the same request code and send it by email from your phone. Use any barcode recognition software. For example, Google Lens.",
+      "Alternatively, you can scan this QR code containing the same request code and send it by email From your phone. Use any barcode recognition software. For example, Google Lens.",
       "Как вариант, вы можете отсканировать этот QR - код, содержащий тот же самый код запроса, и отправить его письмом с вашего телефона. Используйте любые программы распознавания штрих - кодов. Например, Google Объектив. Только не надо слать фотографии экрана.",
       "In alternativa, puoi scansionare questo codice QR contenente lo stesso codice di richiesta e inviarlo via email dal tuo telefono. Utilizzare qualsiasi software di riconoscimento dei codici a barre. Ad esempio, Google Lens. Basta non inviare screenshot.",
       "Alternativ können Sie diesen QR-Code mit demselben Anforderungscode scannen und von Ihrem Telefon aus per E-Mail versenden. Verwenden Sie eine beliebige Barcode-Erkennungssoftware. Zum Beispiel Google Lens. Senden Sie einfach keine Screenshots.",
@@ -1231,14 +1231,14 @@ namespace AVC
       "Anfrage Code",
       "请求代码"};
     public static readonly string[] RequestTip = {
-      "Save the request code and send it from your mail to avc.programming@gmail.com",
+      "Save the request code and send it From your mail to avc.programming@gmail.com",
       "Сохраните код запроса и отправьте его со своей почты на avc.programming@gmail.com",
       "Salva il codice della richiesta e invialo dalla tua mail a avc.programming@gmail.com",
       "Speichern Sie den Anfragecode und senden Sie ihn aus Ihrer Mail an avc.programming@gmail.com",
       "保存请求代码并将其从您的邮件发送到 avc.programming@gmail.com"};
     public static readonly string[] OfflineTip = {
       "The program was unable to establish a connection to the A>V>C> database.\r\n" +
-        "You can try to activate the program by email from another computer or phone.",
+        "You can try to activate the program by email From another computer or phone.",
       "Программа не смогла установить соединение с сервером A>V>C>.\r\n" +
         "Вы можете активировать программу по email с другого компьютера или телефона.",
       "Il programma non è stato in grado di stabilire una connessione al database A>V>C>.\r\n" +
