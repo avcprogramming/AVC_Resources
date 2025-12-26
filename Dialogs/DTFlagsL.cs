@@ -2,7 +2,7 @@
 namespace AVC
 {
   /// <summary>
-  /// Локализация копмонента диалогов для настройки опций извлечения данных в таблицы
+  /// Локализация компонента диалогов для настройки опций извлечения данных в таблицы
   /// </summary>
   public static class
   DTFlagsL
@@ -12,7 +12,11 @@ namespace AVC
       "Проверять внешний вид",
       "Somiglianza nell'aspetto",
       "Äußerliche Ähnlichkeit",
-      "外观相似度"};
+      "外观相似度",
+      "Similitud de apariencia",
+      "Similarité d'apparence",
+      "Görünüm benzerliği"};
+
     public static readonly string[] AppearanceSimilarityTip = {
       "When combining rows, program should consider not only the sorting columns,\r\n" +
         "but also color, layer, linetype, material of the solids and covers.\r\n" +
@@ -27,13 +31,27 @@ namespace AVC
         "sondern auch Farbe, Layer, Linientyp, Material der Volumenkörper und Abdeckungen.\r\n" +
          "Material wird nur bei Volumenkörpern mit metrisch geprüft.",
       "合并时，程序不仅会考虑排序，还会考虑颜色、图层、线型、实体和封面的材质。\r\n" +
-         "仅检查具有公制单位的三维实体表面材料。"};
+         "仅检查具有公制单位的三维实体表面材料。",
+      "Al combinar filas, el programa debe considerar no solo las columnas de clasificación,\r\n" +
+        "sino también el color, la capa, el tipo de línea, el material de los sólidos y las cubiertas.\r\n" +
+        "El material se verifica solo para sólidos con métrica.",
+      "Lors de la combinaison de lignes, le programme doit considérer non seulement les colonnes de tri,\r\n" +
+        "mais aussi la couleur, le calque, le type de ligne, le matériau des solides et des couvertures.\r\n" +
+        "Le matériau n'est vérifié que pour les solides avec métrique.",
+      "Satırları birleştirirken, program yalnızca sıralama sütunlarını değil,\r\n" +
+        "aynı zamanda katıların ve kaplamaların rengini, katmanını, çizgi tipini, malzemesini de dikkate almalıdır.\r\n" +
+        "Malzeme yalnızca metrikli katılar için kontrol edilir."};
+
     public static readonly string[] DescendSize = {
       "Descending size",
       "По убыванию размера",
       "Dimensione decrescente",
       "Absteigende Größe",
-      "降序大小"};
+      "降序大小",
+      "Tamaño descendente",
+      "Taille décroissante",
+      "Azalan boyut"};
+
     public static readonly string[] DescendSizeTip = {
       "Sort objects in the table and in numbering in descending order of size, from large to small.\r\n" +
         "This option is only used if all the sorted columns of the Data Table are the same.\r\n" +
@@ -55,13 +73,30 @@ namespace AVC
       "对表格中的对象进行排序，并按照从大到小的顺序编号。\r\n" +
          "仅当数据表的所有排序列都相同时才使用此选项。\r\n" +
          "曲线的长度和面积、三维实体的体积和尺寸、块的比例都被考虑在内。\r\n" +
-         "如果你关闭这个选项，那么首从小到大排序。"};
+         "如果你关闭这个选项，那么首从小到大排序。",
+      "Ordenar objetos en la tabla y en la numeración en orden descendente de tamaño, de grande a pequeño.\r\n" +
+        "Esta opción solo se usa si todas las columnas ordenadas de la Tabla de datos son iguales.\r\n" +
+        "Se tienen en cuenta las longitudes y áreas de las curvas, el volumen y las dimensiones del sólido, la escala de los bloques.\r\n" +
+        "Si desactiva la opción, primero habrá detalles pequeños y luego grandes.",
+      "Trier les objets dans le tableau et dans la numérotation par ordre décroissant de taille, du plus grand au plus petit.\r\n" +
+        "Cette option n'est utilisée que si toutes les colonnes triées de la Table de données sont identiques.\r\n" +
+        "Les longueurs et les surfaces des courbes, le volume et les dimensions du solide, l'échelle des blocs sont pris en compte.\r\n" +
+        "Si vous désactivez l'option, il y aura d'abord de petits détails, puis de grands.",
+      "Tablodaki nesneleri ve numaralandırmada boyut sırasına göre, büyükten küçüğe doğru sıralayın.\r\n" +
+        "Bu seçenek yalnızca Veri Tablosunun tüm sıralanmış sütunları aynıysa kullanılır.\r\n" +
+        "Eğrilerin uzunlukları ve alanları, katının hacmi ve boyutları, blokların ölçeği dikkate alınır.\r\n" +
+        "Seçeneği kapatırsanız, önce küçük ayrıntılar, sonra büyük ayrıntılar olacaktır."};
+
     public static readonly string[] Geometric = {
       "Geometric similarity",
       "Проверять геометрию",
       "Somiglianza geometrica",
       "Geometrische Ähnlichkeit",
-      "几何相似度"};
+      "几何相似度",
+      "Similitud geométrica",
+      "Similarité géométrique",
+      "Geometrik benzerlik"};
+
     public static readonly string[] GeometricTip = {
       "When combining rows, program should consider not only the sorting columns,\r\n" +
         "but also the geometry of the drawing objects.\r\n" +
@@ -86,13 +121,33 @@ namespace AVC
       "合并行时，程序不仅要考虑排序列，还要考虑绘图对象的几何形状。\r\n" +
          "几何上不同的物体会写在不同的行中。\r\n" +
          "仅检查直线、曲线和三维实体的几何图形。\r\n" +
-         "几何检查忽略了对象在模型空间中的位置和旋转方向。"};
+         "几何检查忽略了对象在模型空间中的位置和旋转方向。",
+      "Al combinar filas, el programa debe considerar no solo las columnas de clasificación,\r\n" +
+        "sino también la geometría de los objetos de dibujo.\r\n" +
+        "Los objetos geométricamente diferentes deben escribirse en líneas diferentes.\r\n" +
+        "La geometría se verifica solo para líneas, curvas y sólidos.\r\n" +
+        "La verificación de geometría ignora la posición y rotación de objetos en el espacio.",
+      "Lors de la combinaison de lignes, le programme doit considérer non seulement les colonnes de tri,\r\n" +
+        "mais aussi la géométrie des objets de dessin.\r\n" +
+        "Les objets géométriquement différents doivent être écrits dans des lignes différentes.\r\n" +
+        "La géométrie n'est vérifiée que pour les lignes, les courbes et les solides.\r\n" +
+        "La vérification de la géométrie ignore la position et la rotation des objets dans l'espace.",
+      "Satırları birleştirirken, program yalnızca sıralama sütunlarını değil,\r\n" +
+        "aynı zamanda çizim nesnelerinin geometrisini de dikkate almalıdır.\r\n" +
+        "Geometrik olarak farklı nesneler farklı satırlara yazılmalıdır.\r\n" +
+        "Geometri yalnızca çizgiler, eğriler ve katılar için kontrol edilir.\r\n" +
+        "Geometri kontrolü, nesnelerin uzaydaki konumunu ve dönüşünü göz ardı eder."};
+
     public static readonly string[] MergeSameData = {
       "Merge the same data",
       "Объединять одинаковые",
       "Unisci gli stessi dati",
       "Dieselben Daten zusammenführen",
-      "合并相同的数据"};
+      "合并相同的数据",
+      "Combinar los mismos datos",
+      "Fusionner les mêmes données",
+      "Aynı verileri birleştir"};
+
     public static readonly string[] MergeSameDataTip = {
       "Do not write identical rows to the table, but combine the data into one row.\r\n" +
         "Only sorted columns are checked for similarity; total columns are ignored.\r\n" +
@@ -108,13 +163,27 @@ namespace AVC
          "Die Anzahl der Objekte in der verketteten Zeichenfolge kann mit der Substitution %count% angezeigt werden.",
       "将相同的数据合并为一行。\r\n" +
          "仅检查排序列的相似性；忽略总列。\r\n" +
-         "可以使用 %count% 替换来显示连接字符串中的对象数量。"};
+         "可以使用 %count% 替换来显示连接字符串中的对象数量。",
+      "No escribir filas idénticas en la tabla, sino combinar los datos en una fila.\r\n" +
+        "Solo se verifican las columnas ordenadas para similitud; se ignoran las columnas totales.\r\n" +
+        "El número de objetos en la cadena concatenada se puede mostrar usando la sustitución %count%.",
+      "Ne pas écrire de lignes identiques dans le tableau, mais combiner les données en une seule ligne.\r\n" +
+        "Seules les colonnes triées sont vérifiées pour la similitude; les colonnes totales sont ignorées.\r\n" +
+        "Le nombre d'objets dans la chaîne concaténée peut être affiché à l'aide de la substitution %count%.",
+      "Tabloya aynı satırları yazmayın, verileri bir satırda birleştirin.\r\n" +
+        "Yalnızca sıralanmış sütunlar benzerlik için kontrol edilir; toplam sütunlar göz ardı edilir.\r\n" +
+        "Birleştirilmiş dizedeki nesne sayısı %count% ikamesi kullanılarak gösterilebilir."};
+
     public static readonly string[] Mirror = {
       "Separate mirrored",
       "Зеркальные отдельно",
       "Separato a specchio",
       "Separat gespiegelt",
-      "独立镜像"};
+      "独立镜像",
+      "Espejado separado",
+      "Miroir séparé",
+      "Ayrı aynalı"};
+
     public static readonly string[] MirrorTip = {
       "Write mirrored solid and polyline separate.\r\n" +
         "Mark solid like 'mirrored' using A>V>C> Palette.",
@@ -125,13 +194,24 @@ namespace AVC
       "Schreiben Sie gespiegelten Volumenkörper und Polylinie getrennt. "+
          "Markieren Sie solide wie 'gespiegelt' mit A>V>C> Palette.",
       "将镜像实体和多段线分开。\r\n" +
-         "使用 A>V>C> 属性板(特性板)将实体标记为‘镜像’。"};
+         "使用 A>V>C> 属性板(特性板)将实体标记为'镜像'。",
+      "Escribir sólido reflejado y polilínea por separado.\r\n" +
+        "Marque el sólido como 'reflejado' usando A>V>C> Paleta.",
+      "Écrire solide en miroir et polyligne séparément.\r\n" +
+        "Marquer le solide comme 'en miroir' en utilisant A>V>C> Palette.",
+      "Aynalı katıyı ve çoklu çizgiyi ayrı yazın.\r\n" +
+        "A>V>C> Paleti kullanarak katıyı 'aynalı' olarak işaretleyin."};
+
     public static readonly string[] MultiplyRequest = {
       "Multiplication request",
       "Запрос умножения",
       "Richiesta di moltiplicazione",
       "Multiplikationsanfrage",
-      "乘法请求"};
+      "乘法请求",
+      "Solicitud de multiplicación",
+      "Demande de multiplication",
+      "Çarpma isteği"};
+
     public static readonly string[] MultiplyRequestTip = {
       "Multiply the number of parts by an integer.\r\n" +
         "This will help fill the table for making a large series of identical products.",
@@ -141,7 +221,14 @@ namespace AVC
         "Ciò contribuirà a riempire il tavolo per realizzare una grande serie di prodotti identici.",
       "Multiplizieren Sie die Anzahl der Teile mit einer ganzen Zahl. "+
          "Dies wird dazu beitragen, den Tisch für die Herstellung einer großen Serie identischer Produkte zu füllen.",
-      "将零件数乘以一个整数。 " };
+      "将零件数乘以一个整数。",
+      "Multiplicar el número de piezas por un número entero.\r\n" +
+        "Esto ayudará a llenar la tabla para hacer una gran serie de productos idénticos.",
+      "Multiplier le nombre de pièces par un nombre entier.\r\n" +
+        "Cela aidera à remplir le tableau pour fabriquer une grande série de produits identiques.",
+      "Parça sayısını bir tam sayıyla çarpın.\r\n" +
+        "Bu, aynı ürünlerin büyük bir serisini yapmak için tabloyu doldurmaya yardımcı olacaktır."};
+
     public static readonly string[] NumberingTip = {
       "Call NUMBERING command before.\r\n" +
         "Use this to automatically assign a name to objects.\r\n" +
@@ -155,7 +242,16 @@ namespace AVC
       "Rufen Sie vorher den NUMBERING-Befehl auf.\r\n" +
          "Verwenden Sie dies, um Objekten automatisch einen Namen zuzuweisen.",
       "在平铺命令之前调用(NUMBERING)编号命令进行命名。\r\n" +
-         "使用它可以自动为对象编号(名称)。"};
+         "使用它可以自动为对象编号(名称)。",
+      "Llamar al comando NUMBERING antes.\r\n" +
+        "Úselo para asignar automáticamente un nombre a los objetos.\r\n" +
+        "El comando de numeración se configura por separado.",
+      "Appelez la commande NUMBERING avant.\r\n" +
+        "Utilisez ceci pour attribuer automatiquement un nom aux objets.\r\n" +
+        "La commande de numérotation est configurée séparément.",
+      "Önce NUMBERING komutunu çağırın.\r\n" +
+        "Nesnelere otomatik olarak ad atamak için bunu kullanın.\r\n" +
+        "Numaralandırma komutu ayrı olarak yapılandırılır."};
 
   }
 }

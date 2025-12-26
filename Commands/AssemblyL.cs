@@ -6,86 +6,130 @@ namespace AVC
   public static class
   AssemblyL
   {
-    public static readonly string[,] AsmStyleNames = {
-/* 0 */ { PropL.Assembly[0], PropL.Assembly[1], PropL.Assembly[2], PropL.Assembly[3], PropL.Assembly[4] },
-/* 1 */ { PropL.Assembly[0], PropL.Assembly[1], PropL.Assembly[2], PropL.Assembly[3], PropL.Assembly[4] },
-/* 2 */ { "Product",
+    public static readonly string[][] AsmStyleNames = {
+/* 0 */ PropL.Assembly,
+/* 1 */ PropL.Assembly,
+/* 2 */ new[]{ "Product",
           "Изделие",
           "Product",
           "Produkt",
-          "产品" },
-/* 3 */ { "Renaming",
+          "产品",
+          "Producto",
+          "Produit",
+          "Ürün"},
+/* 3 */ new[]{ "Renaming",
           "Переименование",
           "Ridenominazione",
           "Umbenennung",
-          "重命名" },
+          "重命名",
+          "Renombrar",
+          "Renommer",
+          "Yeniden adlandırma" },
         };
+
     public static readonly string[] DefNameTemplate = {
       "Asm#%row%",
       "Сб%row%",
       "Assemblaggio %row%",
       "Baugruppe %row%",
-      "集会%row%"};
+      "集会%row%",
+      "Ens#%row%",
+      "Assemblage %row%",
+      "Montaj#%row%"};
+
     public static readonly string[] DefProdTemplate = {
       "Art#%row:000%",
       "Арт.№%row:000%",
       "Art#%row:000%",
       "Art#%row:000%",
-      "产品%row:000%"};
+      "产品%row:000%",
+      "Art#%row:000%",
+      "Art#%row:000%",
+      "Ürün#%row:000%"};
+
     public static readonly string[] SelectBlock = {
       "Select block",
       "Выберите блок",
       "Seleziona blocco",
       "Block auswählen",
-      "选择块"};
+      "选择块",
+      "Seleccionar bloque",
+      "Sélectionner un bloc",
+      "Blok seç"};
+
     public static readonly string[] Creating = {
       "Creating new blocks",
       "Создание новых блоков",
       "Creazione di nuovi blocchi",
       "Neue Blöcke erstellen",
-      "创建新块"};
+      "创建新块",
+      "Creando nuevos bloques",
+      "Création de nouveaux blocs",
+      "Yeni bloklar oluşturuluyor"};
+
     public static readonly string[] SelectObjects = {
       "Select objects to be assembled into a block assembly",
       "Выберите объекты для объединения в блок-сборку",
       "Seleziona gli oggetti da assemblare in un assieme di blocco",
       "Wählen Sie Objekte aus, die zu einer Blockbaugruppe zusammengefügt werden sollen",
-      "选择要组装成块组件的对象"};
+      "选择要组装成块组件的对象",
+      "Seleccionar objetos para ensamblar en un ensamblaje de bloques",
+      "Sélectionner les objets à assembler dans un assemblage de blocs",
+      "Blok montajına birleştirilecek nesneleri seçin"};
     public static readonly string[] PickPoint = {
       "Set the base point of the block (PickPoint)",
       "Задайте базовую точку блока (PickPoint)",
       "Imposta il punto base del blocco (PickPoint)",
       "Setzen Sie den Basispunkt des Blocks (PickPoint)",
-      "设置块的基点（PickPoint)"};
+      "设置块的基点（PickPoint)",
+      "Establecer el punto base del bloque (PickPoint)",
+      "Définir le point de base du bloc (PickPoint)",
+      "Bloğun taban noktasını ayarlayın (PickPoint)"};
     public static readonly string[] Ucs1point = {
       "Specify the first point of the X axis to rotate the block coordinate system around Z",
       "Задайте первую точку оси X для разворота системы координат блока вокруг Z",
       "Specificare il primo punto dell'asse X per ruotare il sistema di coordinate del blocco",
       "Geben Sie den ersten Punkt der X-Achse an, um das Blockkoordinatensystem zu drehen",
-      "指定 X 轴的第一点旋转块坐标系"};
+      "指定 X 轴的第一点旋转块坐标系",
+      "Especificar el primer punto del eje X para rotar el sistema de coordenadas del bloque alrededor de Z",
+      "Spécifier le premier point de l'axe X pour faire pivoter le système de coordonnées du bloc autour de Z",
+      "Blok koordinat sistemini Z etrafında döndürmek için X ekseninin ilk noktasını belirtin"};
     public static readonly string[] Ucs2point = {
       "Specify the second X-axis point",
       "Задайте вторую точку оси X",
       "Specificare il secondo punto dell'asse X",
       "Geben Sie den zweiten X-Achsenpunkt an",
-      "指定第二个X轴点"};
+      "指定第二个X轴点",
+      "Especificar el segundo punto del eje X",
+      "Spécifier le deuxième point de l'axe X",
+      "İkinci X ekseni noktasını belirtin"};
     public static readonly string[] ErrorPoint = {
       "Failed to build coordinate system. You have set the same points.",
       "Не удалось построить систему координат. Вы задали одинаковые точки.",
       "Impossibile creare il sistema di coordinate. Hai impostato gli stessi punti.",
       "Fehler beim Erstellen des Koordinatensystems. Sie haben die gleichen Punkte gesetzt.",
-      "建立坐标系失败。 你已经设置了相同的点。"};
+      "建立坐标系失败。 你已经设置了相同的点。",
+      "No se pudo construir el sistema de coordenadas. Ha establecido los mismos puntos.",
+      "Échec de la construction du système de coordonnées. Vous avez défini les mêmes points.",
+      "Koordinat sistemi oluşturulamadı. Aynı noktaları ayarladınız."};
     public static readonly string[] ErrTemplate = {
       "The assembly name template produces the same names for different assembly numbers. Correct the template.",
       "Шаблон имени сборки выдает одинаковые имена для разных номеров сборок. Исправьте шаблон.",
       "Il modello del nome dell'assieme produce gli stessi nomi per i diversi numeri dell'assieme. Correggi il modello.",
       "Das Muster für Baugruppennamen erzeugt dieselben Namen für unterschiedliche Baugruppennummern. Korrigieren Sie die Vorlage.",
-      "程序集名称模板为不同的程序集编号生成相同的名称。 更正模板。"};
+      "程序集名称模板为不同的程序集编号生成相同的名称。 更正模板。",
+      "La plantilla de nombre de ensamblaje produce los mismos nombres para diferentes números de ensamblaje. Corrija la plantilla.",
+      "Le modèle de nom d'assemblage produit les mêmes noms pour différents numéros d'assemblage. Corrigez le modèle.",
+      "Montaj adı şablonu farklı montaj numaraları için aynı adları üretir. Şablonu düzeltin."};
     public static readonly string[] InsertErr = {
       "Failed to insert link to block {0}",
       "Не удалось вставить ссылку на блок {0}",
-        "Impossibile inserire il collegamento per bloccare {0}",
-        "Link zum Block {0} konnte nicht eingefügt werden",
-        "无法插入阻止 {0} 的链接" };
+      "Impossibile inserire il collegamento per bloccare {0}",
+      "Link zum Block {0} konnte nicht eingefügt werden",
+      "无法插入阻止 {0} 的链接",
+      "No se pudo insertar el enlace al bloque {0}",
+      "Échec de l'insertion du lien vers le bloc {0}",
+      "Blok {0} bağlantısı eklenemedi" };
 
     // ================================ Dialog Box ================================================================
 
@@ -96,13 +140,19 @@ namespace AVC
         "Non utilizzato nel programma. Solo per comodità di scelta.",
       "Der Name für diesen Stil (Satz von Einstellungen). \r\n" +
         "Wird im Programm nicht verwendet. Nur zur Bequemlichkeit der Wahl.",
-      "此样式（设置集）的名称。 没有在程序中使用。 只为方便选择。" };
+      "此样式（设置集）的名称。 没有在程序中使用。 只为方便选择。",
+      "El nombre de este estilo (conjunto de configuraciones). No se usa en el programa. Solo por conveniencia de elección.",
+      "Le nom de ce style (ensemble de paramètres). Non utilisé dans le programme. Uniquement pour la commodité du choix.",
+      "Bu stil için ad (ayarlar kümesi). Programda kullanılmaz. Sadece seçim kolaylığı için." };
     public static readonly string[] NameTemplateText = {
       "Name template",
       "Шаблон имени",
       "Modello di nome",
       "Namensvorlage",
-      "名称模板" };
+      "名称模板",
+      "Plantilla de nombre",
+      "Modèle de nom",
+      "Ad şablonu" };
     public static readonly string[] NameTemplateTip = {
       "Assembly name pattern. The template must contain the %row% substitution. \r\n" +
         "The new assembly number will be inserted at this location.\r\n" +
@@ -129,19 +179,40 @@ namespace AVC
          "新的装配编号将插入此位置。\r\n" +
          "程序使用绘图属性 Number_of_assemblies 并加 1。\r\n" +
          "如果这个名字已经被占用，程序会增加这个数字，直到找到一个空闲的名字。\r\n" +
-         "替换可以格式化为罗马数字或字母。" };
+         "替换可以格式化为罗马数字或字母。",
+      "Patrón de nombre de ensamblaje. La plantilla debe contener la sustitución %row%. \r\n" +
+        "El nuevo número de ensamblaje se insertará en esta ubicación.\r\n" +
+        "El programa utiliza la propiedad de dibujo Number_of_assemblies y agrega 1.\r\n" +
+        "Si el nombre ya está ocupado, el programa incrementará el número hasta encontrar un nombre libre.\r\n" +
+        "La sustitución se puede formatear como número romano o como letra alfabética.",
+      "Modèle de nom d'assemblage. Le modèle doit contenir la substitution %row%. \r\n" +
+        "Le nouveau numéro d'assemblage sera inséré à cet emplacement.\r\n" +
+        "Le programme utilise la propriété de dessin Number_of_assemblies et ajoute 1.\r\n" +
+        "Si le nom est déjà pris, le programme incrémentera le numéro jusqu'à ce qu'il trouve un nom libre.\r\n" +
+        "La substitution peut être formatée en chiffre romain ou en lettre alphabétique.",
+      "Montaj adı deseni. Şablon %row% değiştirmesini içermelidir. \r\n" +
+        "Yeni montaj numarası bu konuma eklenecektir.\r\n" +
+        "Program çizim özelliği Number_of_assemblies kullanır ve 1 ekler.\r\n" +
+        "Ad zaten alınmışsa, program boş bir ad bulana kadar numarayı artıracaktır.\r\n" +
+        "Değiştirme Roma rakamı veya alfabetik harf olarak biçimlendirilebilir." };
     public static readonly string[] TemplateErr = {
       "Template must contain %row% substitution",
       "Шаблон должен содержать подстановку %row%",
       "Il modello deve contenere %row% sostituzione",
       "Vorlage muss %row%-Ersetzung enthalten",
-      "模板必须包含 %row% 替换"};
+      "模板必须包含 %row% 替换",
+      "La plantilla debe contener la sustitución %row%",
+      "Le modèle doit contenir la substitution %row%",
+      "Şablon %row% değiştirmesini içermelidir"};
     public static readonly string[] KeepBlockNumber = {
       "Keep block number",
       "Сохранять номер блока",
       "Numero di blocco del negozio",
       "Blocknummer speichern",
-      "存储块号" };
+      "存储块号",
+      "Mantener número de bloque",
+      "Conserver le numéro de bloc",
+      "Blok numarasını sakla" };
     public static readonly string[] KeepBlockNumberTip = {
       "Save the number assigned to the block-assembly for numbering the next assembly. \r\n" +
         "The number is stored in the custom drawing properties. \r\n" +
@@ -157,13 +228,25 @@ namespace AVC
         "Wenn die Option deaktiviert ist, sucht das Programm immer nach unbenutzten Nummern beginnend bei 1",
       "保存分配给块组件的编号，以便为下一个组件编号。\r\n" +
         "该编号存储在自定义绘图属性中。 \r\n" +
-        "如果禁用该选项，则程序将始终从 1 开始查找未使用的数字" };
+        "如果禁用该选项，则程序将始终从 1 开始查找未使用的数字",
+      "Guardar el número asignado al ensamblaje de bloques para numerar el siguiente ensamblaje. \r\n" +
+        "El número se almacena en las propiedades de dibujo personalizadas. \r\n" +
+        "Si la opción está deshabilitada, el programa siempre buscará números no utilizados comenzando desde 1",
+      "Enregistrer le numéro attribué à l'assemblage de blocs pour numéroter l'assemblage suivant. \r\n" +
+        "Le numéro est stocké dans les propriétés de dessin personnalisées. \r\n" +
+        "Si l'option est désactivée, le programme recherchera toujours les numéros inutilisés à partir de 1",
+      "Sonraki montajı numaralandırmak için blok montajına atanan numarayı kaydedin. \r\n" +
+        "Numara özel çizim özelliklerinde saklanır. \r\n" +
+        "Seçenek devre dışı bırakılırsa, program her zaman 1'den başlayarak kullanılmayan numaraları arayacaktır" };
     public static readonly string[] NumberOfAssemblies = {
       "Next number",
       "Следующий номер",
       "Numero successivo",
       "Nächste Nummer",
-      "下一个号码" };
+      "下一个号码",
+      "Siguiente número",
+      "Numéro suivant",
+      "Sonraki numara" };
     public static readonly string[] NumberOfAssembliesTip = {
       "Substitute this number in the block name instead of substituting %row%. \r\n" +
         "This number is stored in the drawing properties and is not associated with a settings style.",
@@ -174,25 +257,40 @@ namespace AVC
       "Ersetzen Sie diese Zahl im Blocknamen anstelle von %row%. \r\n" +
         "Diese Nummer wird in den Zeichnungseigenschaften gespeichert und ist keinem Einstellungsstil zugeordnet.",
       "在块名称中替换此数字而不是替换 %row%。 \r\n" +
-        "此编号存储在图纸属性中，与设置样式无关。" };
+        "此编号存储在图纸属性中，与设置样式无关。",
+      "Sustituir este número en el nombre del bloque en lugar de sustituir %row%. \r\n" +
+        "Este número se almacena en las propiedades del dibujo y no está asociado con un estilo de configuración.",
+      "Substituer ce numéro dans le nom du bloc au lieu de substituer %row%. \r\n" +
+        "Ce numéro est stocké dans les propriétés du dessin et n'est pas associé à un style de paramètres.",
+      "Blok adında %row% yerine bu numarayı değiştirin. \r\n" +
+        "Bu numara çizim özelliklerinde saklanır ve ayarlar stiliyle ilişkilendirilmez." };
     public static readonly string[] MinGrip = {
       "On the bottom grip",
       "На нижней ручке",
       "Su una presa inferiore",
       "Auf einem unteren Griff",
-      "在较低的抓地力"};
+      "在较低的抓地力",
+      "En el agarre inferior",
+      "Sur la poignée inférieure",
+      "Alt tutuşta"};
     public static readonly string[] MinGripTip = {
       "Select base point automatically on the bottom left 'grip' of all block objects.",
       "Подбирать базовую точку автоматически на самой нижней левой 'ручке' всех объектов блока.",
       "Seleziona automaticamente il punto base sulla 'presa' in basso a sinistra di tutti gli oggetti di blocco.",
       "Wählen Sie den Basispunkt automatisch am unteren linken 'Griff' aller Blockobjekte.",
-      "在所有块对象的左下角“夹点”上自动选择基点。"};
+      "在所有块对象的左下角'夹点'上自动选择基点。",
+      "Seleccionar automáticamente el punto base en el agarre inferior izquierdo de todos los objetos de bloque.",
+      "Sélectionner automatiquement le point de base sur la poignée inférieure gauche de tous les objets de bloc.",
+      "Tüm blok nesnelerinin sol alt tutuşunda taban noktasını otomatik olarak seçin."};
     public static readonly string[] Center = {
       "In the center",
       "В центре",
       "Al centro",
       "Im Zentrum",
-      "在中心"};
+      "在中心",
+      "En el centro",
+      "Au centre",
+      "Merkezde"};
     public static readonly string[] CenterTip = {
       "Select the base point automatically in the geometric center of the new block. \r\n" +
         "There may not be a single object at this point",
@@ -202,13 +300,22 @@ namespace AVC
         "Potrebbe non esserci un singolo oggetto a questo punto",
       "Wählen Sie den Basispunkt automatisch in der geometrischen Mitte des neuen Blocks aus. \r\n" +
         "Zu diesem Zeitpunkt befindet sich möglicherweise kein einziges Objekt",
-      "自动在新块的几何中心选择基点。 此时可能没有单个对象"};
+      "自动在新块的几何中心选择基点。 此时可能没有单个对象",
+      "Seleccionar automáticamente el punto base en el centro geométrico del nuevo bloque. \r\n" +
+        "Puede que no haya un solo objeto en este punto",
+      "Sélectionner automatiquement le point de base au centre géométrique du nouveau bloc. \r\n" +
+        "Il peut ne pas y avoir un seul objet à ce stade",
+      "Yeni bloğun geometrik merkezinde taban noktasını otomatik olarak seçin. \r\n" +
+        "Bu noktada tek bir nesne olmayabilir"};
     public static readonly string[] BottomCenter = {
       "In the center of the bottom",
       "В центре дна",
       "Al centro del fondo",
       "In der Mitte des Bodens",
-      "在底部的中央"};
+      "在底部的中央",
+      "En el centro de la parte inferior",
+      "Au centre du bas",
+      "Alt kısmın merkezinde"};
     public static readonly string[] BottomCenterTip = {
       "Select a base point automatically in the geometric center of the new block \r\n" +
         "and project this point to the very bottom of the block dimensions. \r\n" +
@@ -222,13 +329,25 @@ namespace AVC
       "Wählen Sie automatisch einen Basispunkt in der geometrischen Mitte des neuen Blocks \r\n" +
         "und projizieren Sie diesen Punkt ganz unten in die Blockabmessungen. \r\n" +
         "Zu diesem Zeitpunkt befindet sich möglicherweise kein einziges Objekt.",
-      "在新块的几何中心自动选择一个基点，并将该点投影到块尺寸的最底部。 此时可能没有一个对象。"};
+      "在新块的几何中心自动选择一个基点，并将该点投影到块尺寸的最底部。 此时可能没有一个对象。",
+      "Seleccionar automáticamente un punto base en el centro geométrico del nuevo bloque \r\n" +
+        "y proyectar este punto hasta la parte inferior de las dimensiones del bloque. \r\n" +
+        "Puede que no haya un solo objeto en este punto.",
+      "Sélectionner automatiquement un point de base au centre géométrique du nouveau bloc \r\n" +
+        "et projeter ce point tout en bas des dimensions du bloc. \r\n" +
+        "Il peut ne pas y avoir un seul objet à ce stade.",
+      "Yeni bloğun geometrik merkezinde otomatik olarak bir taban noktası seçin \r\n" +
+        "ve bu noktayı blok boyutlarının en altına yansıtın. \r\n" +
+        "Bu noktada tek bir nesne olmayabilir."};
     public static readonly string[] BasePointQueryText = {
       "Base point query",
       "Запрос базовой точки",
       "Query punto base",
       "Basispunktabfrage",
-      "基点查询" };
+      "基点查询",
+      "Consulta de punto base",
+      "Requête de point de base",
+      "Taban noktası sorgusu" };
     public static readonly string[] BasePointQueryTip = {
       "The program will ask you to specify the base point of the block.\r\n" +
         "The zero of the block coordinate system will be moved to this point.\r\n"+
@@ -242,25 +361,43 @@ namespace AVC
       "Das Programm fordert Sie auf, den Basispunkt des Blocks anzugeben.\r\n" +
         "Der Nullpunkt des Blockkoordinatensystems wird an diesen Punkt verschoben.",
       "该程序将要求您指定块的基点。\r\n" +
-         "方块坐标系的零点将移动到该点。" };
+         "方块坐标系的零点将移动到该点。",
+      "El programa le pedirá que especifique el punto base del bloque.\r\n" +
+        "El cero del sistema de coordenadas del bloque se moverá a este punto.\r\n" +
+        "Este punto se convertirá en el agarre del bloque cuando se inserte.",
+      "Le programme vous demandera de spécifier le point de base du bloc.\r\n" +
+        "Le zéro du système de coordonnées du bloc sera déplacé vers ce point.\r\n" +
+        "Ce point deviendra la poignée du bloc lors de l'insertion.",
+      "Program bloğun taban noktasını belirtmenizi isteyecektir.\r\n" +
+        "Blok koordinat sisteminin sıfırı bu noktaya taşınacaktır.\r\n" +
+        "Bu nokta, eklendiğinde bloğun tutuşu haline gelecektir." };
     public static readonly string[] UcsOrigin = {
       "UCS origin",
       "Начало координат ПСК",
       "Origine dell'UCS",
       "UCS-Ursprung",
-      "UCS起源"};
+      "UCS起源",
+      "Origen UCS",
+      "Origine UCS",
+      "UCS başlangıcı"};
     public static readonly string[] UcsOriginTip = {
       "Assign the base point of the block to the origin point (zero) of the current user coordinate system.",
       "Назначить базовой точкой блока ноль текущей пользовательской системы координат.",
       "Assegnare il punto base del blocco al punto di origine (zero) del sistema di coordinate utente corrente.",
       "Weisen Sie den Basispunkt des Blocks dem Ursprungspunkt (Null) des aktuellen Benutzerkoordinatensystems zu.",
-      "将块的基点分配给当前用户坐标系的原点（零）。"};
+      "将块的基点分配给当前用户坐标系的原点（零）。",
+      "Asignar el punto base del bloque al punto de origen (cero) del sistema de coordenadas de usuario actual.",
+      "Attribuer le point de base du bloc au point d'origine (zéro) du système de coordonnées utilisateur actuel.",
+      "Bloğun taban noktasını mevcut kullanıcı koordinat sisteminin başlangıç noktasına (sıfır) atayın."};
     public static readonly string[] WcsOrigin = {
       "WCS origin",
       "Начало координат МСК",
       "Origine dell'WCS",
       "WCS-Ursprung",
-      "WCS起源"};
+      "WCS起源",
+      "Origen WCS",
+      "Origine WCS",
+      "WCS başlangıcı"};
     public static readonly string[] WcsOriginTip = {
       "Assign the base point of the block to the zero of the world coordinate system. " +
         "That is, do not move the base point anywhere at all.",
@@ -270,7 +407,13 @@ namespace AVC
         "Cioè, non spostare affatto il punto base da nessuna parte.",
       "Ordnen Sie den Basispunkt des Blocks dem Nullpunkt des Weltkoordinatensystems zu. " +
         "Das heißt, den Basispunkt überhaupt nicht verschieben.",
-      "将块的基点分配给世界坐标系的零点。 也就是说，根本不要将基点移动到任何地方。"};
+      "将块的基点分配给世界坐标系的零点。 也就是说，根本不要将基点移动到任何地方。",
+      "Asignar el punto base del bloque al cero del sistema de coordenadas mundial. " +
+        "Es decir, no mover el punto base en absoluto.",
+      "Attribuer le point de base du bloc au zéro du système de coordonnées mondial. " +
+        "C'est-à-dire, ne pas déplacer du tout le point de base.",
+      "Bloğun taban noktasını dünya koordinat sisteminin sıfırına atayın. " +
+        "Yani, taban noktasını hiçbir yere taşımayın."};
     public static readonly string[] MaxFaceTip = {
       "Rotate the block around the Z-axis so that the largest flat surface is rotated in the opposite direction of the Y-axis.\r\n" +
         "For flat blocks, the longest line will be found and expanded along X.\r\n" +
@@ -291,13 +434,28 @@ namespace AVC
         "da es lange dauert, alle Flächen aller Volumenkörper zu durchlaufen." ,
       "围绕 Z 轴旋转块，使最大平面沿 Y 轴的相反方向旋转。\r\n" +
          "对于平面块，将找到最长的线并沿 X 展开。\r\n" +
-         "不建议在复杂的装配体中使用该选项，因为遍历所有实体的所有面需要很长时间。"};
+         "不建议在复杂的装配体中使用该选项，因为遍历所有实体的所有面需要很长时间。",
+      "Rotar el bloque alrededor del eje Z de modo que la superficie plana más grande gire en dirección opuesta al eje Y.\r\n" +
+        "Para bloques planos, se encontrará la línea más larga y se expandirá a lo largo de X.\r\n" +
+        "No se recomienda usar la opción en ensamblajes complejos, \r\n" +
+        "ya que llevará mucho tiempo revisar todas las caras de todos los sólidos.",
+      "Faire pivoter le bloc autour de l'axe Z de sorte que la plus grande surface plane tourne dans la direction opposée à l'axe Y.\r\n" +
+        "Pour les blocs plats, la ligne la plus longue sera trouvée et étendue le long de X.\r\n" +
+        "Il n'est pas recommandé d'utiliser l'option dans les assemblages complexes, \r\n" +
+        "car il faudra beaucoup de temps pour trier toutes les faces de tous les solides.",
+      "Bloğu Z ekseni etrafında döndürün, böylece en büyük düz yüzey Y ekseninin ters yönünde döndürülür.\r\n" +
+        "Düz bloklar için en uzun çizgi bulunacak ve X boyunca genişletilecektir.\r\n" +
+        "Karmaşık montajlarda seçeneği kullanmanız önerilmez, \r\n" +
+        "çünkü tüm katıların tüm yüzlerini incelemek uzun zaman alacaktır."};
     public static readonly string[] XAxisQueryText = {
       "X-axis query",
       "Запрос оси X",
       "Query sull'asse X",
       "Abfrage der X-Achse",
-      "X轴查询" };
+      "X轴查询",
+      "Consulta del eje X",
+      "Requête de l'axe X",
+      "X ekseni sorgusu" };
     public static readonly string[] XAxisQueryTip = {
       "The program will ask for the X-axis direction for the block's internal coordinate system (BCS).\r\n" +
         "The Z axis will be taken from the world coordinate system WCS.\r\n" +
@@ -313,25 +471,43 @@ namespace AVC
          "Das Koordinatensystem bestimmt, wie der Block beim Einfügen gedreht wird.",
       "该程序将要求块的内部坐标系 (BCS) 的 X 轴方向。\r\n" +
          "Z 轴将取自世界坐标系 WCS。\r\n" +
-         "坐标系决定了块在插入时如何旋转。" };
+         "坐标系决定了块在插入时如何旋转。",
+      "El programa solicitará la dirección del eje X para el sistema de coordenadas interno del bloque (BCS).\r\n" +
+        "El eje Z se tomará del sistema de coordenadas mundial WCS.\r\n" +
+        "El sistema de coordenadas determina cómo se rotará el bloque al insertarse.",
+      "Le programme demandera la direction de l'axe X pour le système de coordonnées interne du bloc (BCS).\r\n" +
+        "L'axe Z sera pris du système de coordonnées mondial WCS.\r\n" +
+        "Le système de coordonnées détermine comment le bloc sera pivoté lors de l'insertion.",
+      "Program, bloğun dahili koordinat sistemi (BCS) için X ekseni yönünü soracaktır.\r\n" +
+        "Z ekseni dünya koordinat sistemi WCS'den alınacaktır.\r\n" +
+        "Koordinat sistemi, bloğun eklendiğinde nasıl döndürüleceğini belirler." };
     public static readonly string[] Ucs = {
       "By current UCS",
       "По текущей ПСК",
       "In base all'attuale UCS",
       "Nach aktuellem UCS",
-      "按当前 UCS"};
+      "按当前 UCS",
+      "Por UCS actual",
+      "Par UCS actuel",
+      "Mevcut UCS'ye göre"};
     public static readonly string[] UcsTip = {
       "Leave the block's coordinate system as the current user coordinate system (UCS).",
       "Оставить систему координат блока такой, как текущая пользовательская система координат (UCS).",
       "Lasciare il sistema di coordinate del blocco come sistema di coordinate dell'utente corrente (UCS).",
       "Belassen Sie das Koordinatensystem des Blocks als aktuelles Benutzerkoordinatensystem (BKS).",
-      "将块的坐标系保留为当前用户坐标系 (UCS)。"};
+      "将块的坐标系保留为当前用户坐标系 (UCS)。",
+      "Dejar el sistema de coordenadas del bloque como el sistema de coordenadas de usuario actual (UCS).",
+      "Laisser le système de coordonnées du bloc comme système de coordonnées utilisateur actuel (UCS).",
+      "Bloğun koordinat sistemini mevcut kullanıcı koordinat sistemi (UCS) olarak bırakın."};
     public static readonly string[] Wcs = {
       "Use WCS (do not rotate)",
       "Использовать МСК (не вращать)",
       "Usa WCS (non ruotare)",
       "WCS verwenden (nicht drehen)",
-      "使用WCS（不旋转）"};
+      "使用WCS（不旋转）",
+      "Usar WCS (no rotar)",
+      "Utiliser WCS (ne pas pivoter)",
+      "WCS kullan (döndürme)"};
     public static readonly string[] WcsTip = {
       "Leave the block coordinate system as is, without rotations, \r\n" +
         "as it is in the world coordinate system (WCS).",
@@ -341,26 +517,41 @@ namespace AVC
         "come nel sistema di coordinate globali (WCS).",
       "Belassen Sie das Blockkoordinatensystem unverändert, ohne Drehungen, \r\n" +
         "wie es im Weltkoordinatensystem (WCS) ist.",
-      "保持块坐标系不变，不进行旋转，就像在世界坐标系 (WCS) 中一样。"};
+      "保持块坐标系不变，不进行旋转，就像在世界坐标系 (WCS) 中一样。",
+      "Dejar el sistema de coordenadas del bloque como está, sin rotaciones, \r\n" +
+        "tal como está en el sistema de coordenadas mundial (WCS).",
+      "Laisser le système de coordonnées du bloc tel quel, sans rotations, \r\n" +
+        "tel qu'il est dans le système de coordonnées mondial (WCS).",
+      "Blok koordinat sistemini olduğu gibi, dönmeler olmadan bırakın, \r\n" +
+        "dünya koordinat sisteminde (WCS) olduğu gibi."};
     public static readonly string[] Invisible = {
       "Save invisible objects",
       "Сохранить невидимые объекты",
       "Salva oggetti invisibili",
       "Speichern Sie unsichtbare Objekte",
-      "保存不可见的物体" };
+      "保存不可见的物体",
+      "Guardar objetos invisibles",
+      "Enregistrer les objets invisibles",
+      "Görünmez nesneleri kaydet" };
     public static readonly string[] InvisibleTip = {
       "If there were invisible objects in the old block (disabled by the visibility parameter), then save them to the new block.",
       "Если в старом блоке были невидимые объекты (отключенные параметром видимости), то сохранить их в новый блок.",
       "Se nel vecchio blocco erano presenti oggetti invisibili (disabilitati dal parametro visibilità), salvali nel nuovo blocco.",
       "Wenn im alten Block unsichtbare Objekte vorhanden waren (durch den Sichtbarkeitsparameter deaktiviert), \r\n" +
         "speichern Sie sie im neuen Block.",
-      "如果旧块中有不可见的对象（被可见性参数禁用），则将它们保存到新块中。" };
+      "如果旧块中有不可见的对象（被可见性参数禁用），则将它们保存到新块中。",
+      "Si había objetos invisibles en el bloque antiguo (deshabilitados por el parámetro de visibilidad), guárdalos en el nuevo bloque.",
+      "S'il y avait des objets invisibles dans l'ancien bloc (désactivés par le paramètre de visibilité), enregistrez-les dans le nouveau bloc.",
+      "Eski blokta görünmez nesneler varsa (görünürlük parametresi tarafından devre dışı bırakılmış), bunları yeni bloğa kaydedin." };
     public static readonly string[] LabelOnFront = {
       "Label on Front",
       "Метка на фасаде",
       "Etichetta sul lato anteriore",
       "Etikett auf der Vorderseite",
-      "正面标签"};
+      "正面标签",
+      "Etiqueta en el frente",
+      "Étiquette à l'avant",
+      "Ön yüzde etiket"};
     public static readonly string[] LabelOnFrontTip = {
       "Create text inside the block with the name of the block. \r\n" +
         "Place this text in front of the block in the XZ plane of the block's coordinate system.",
@@ -371,13 +562,22 @@ namespace AVC
       "Erstellen Sie Text innerhalb des Blocks mit dem Namen des Blocks. \r\n" +
         "Platzieren Sie diesen Text vor dem Block in der XZ-Ebene des Koordinatensystems des Blocks.",
       "使用块的名称在块内创建文本。 \r\n" +
-        "将此文本放置在块坐标系 XZ 平面中的块前面。"};
+        "将此文本放置在块坐标系 XZ 平面中的块前面。",
+      "Crear texto dentro del bloque con el nombre del bloque. \r\n" +
+        "Colocar este texto frente al bloque en el plano XZ del sistema de coordenadas del bloque.",
+      "Créer du texte à l'intérieur du bloc avec le nom du bloc. \r\n" +
+        "Placer ce texte devant le bloc dans le plan XZ du système de coordonnées du bloc.",
+      "Bloğun içinde bloğun adıyla metin oluşturun. \r\n" +
+        "Bu metni bloğun koordinat sisteminin XZ düzleminde bloğun önüne yerleştirin."};
     public static readonly string[] LabelOnTop = {
       "Label on Top",
       "Метка сверху",
       "Etichetta in alto",
       "Etikett oben",
-      "顶部标签"};
+      "顶部标签",
+      "Etiqueta en la parte superior",
+      "Étiquette en haut",
+      "Üstte etiket"};
     public static readonly string[] LabelOnTopTip = {
       "Create text inside the block with the name of the block. \r\n" +
         "Position this text above the block in the XY plane of the block's coordinate system.",
@@ -388,13 +588,22 @@ namespace AVC
       "Erstellen Sie Text innerhalb des Blocks mit dem Namen des Blocks. \r\n" +
         "Positionieren Sie diesen Text über dem Block in der XY-Ebene des Koordinatensystems des Blocks.",
       "使用块的名称在块内创建文本。 \r\n" +
-        "在块坐标系的 XY 平面中将此文本定位在块上方。"};
+        "在块坐标系的 XY 平面中将此文本定位在块上方。",
+      "Crear texto dentro del bloque con el nombre del bloque. \r\n" +
+        "Posicionar este texto sobre el bloque en el plano XY del sistema de coordenadas del bloque.",
+      "Créer du texte à l'intérieur du bloc avec le nom du bloc. \r\n" +
+        "Positionner ce texte au-dessus du bloc dans le plan XY du système de coordonnées du bloc.",
+      "Bloğun içinde bloğun adıyla metin oluşturun. \r\n" +
+        "Bu metni bloğun koordinat sisteminin XY düzleminde bloğun üstüne yerleştirin."};
     public static readonly string[] LabelTurnOver = {
       "Flip front mark",
       "Перевернуть фасадную метку",
       "Capovolgi il segno anteriore",
       "Vordere Markierung umdrehen",
-      "翻盖正面标记"};
+      "翻盖正面标记",
+      "Voltear marca frontal",
+      "Retourner la marque avant",
+      "Ön işareti çevir"};
     public static readonly string[] LabelTurnOverTip = {
       "Place the front mark on the back side upside down.\r\n" +
         "An option has been made to convert dynamic wall blocks modeled in a lying position.",
@@ -405,13 +614,22 @@ namespace AVC
       "Platzieren Sie die vordere Markierung verkehrt herum auf der Rückseite. \r\n" +
         "Es besteht die Möglichkeit, dynamische Wandblöcke, die in liegender Position modelliert wurden, umzuwandeln.",
       "将正面标记倒置在背面。\r\n" +
-        "可以选择转换以平躺位置建模的动态墙块。"};
+        "可以选择转换以平躺位置建模的动态墙块。",
+      "Coloque la marca frontal en la parte posterior al revés.\r\n" +
+        "Se ha hecho una opción para convertir bloques de pared dinámicos modelados en posición acostada.",
+      "Placez la marque avant à l'envers sur le côté arrière.\r\n" +
+        "Une option a été faite pour convertir les blocs de mur dynamiques modélisés en position couchée.",
+      "Ön işareti arka tarafa baş aşağı yerleştirin.\r\n" +
+        "Yatar konumda modellenen dinamik duvar bloklarını dönüştürmek için bir seçenek yapılmıştır."};
     public static readonly string[] LabelField = {
       "Use Field for block name",
       "Поле для имени блока",
       "Usa Campo per il nome del blocco",
       "Feld für den Blocknamen",
-      "使用“字段”作为块名称"};
+      "使用'字段'作为块名称",
+      "Usar Campo para el nombre del bloque",
+      "Utiliser un champ pour le nom du bloc",
+      "Blok adı için Alan kullan"};
     public static readonly string[] LabelFieldTip = {
       "Use an auto-updating 'field' to retrieve the block name. \r\n" +
         "If the option is disabled, then the labels will contain plain text and it will not change when the block is renamed.",
@@ -419,16 +637,25 @@ namespace AVC
         "Если опция выключена, то метки будут содержать обычный текст и он не изменится при переименовании блока.",
       "Utilizza un 'campo' aggiornato automaticamente per recuperare il nome del blocco. \r\n" +
         "Se l'opzione è disabilitata, le etichette conterranno testo normale e non cambieranno quando il blocco viene rinominato.",
-      "Verwenden Sie ein automatisch aktualisiertes „Feld“, um den Blocknamen abzurufen. \r\n" +
+      "Verwenden Sie ein automatisch aktualisiertes 'Feld', um den Blocknamen abzurufen. \r\n" +
         "Wenn die Option deaktiviert ist, enthalten die Beschriftungen Klartext und ändern sich nicht, wenn der Block umbenannt wird.",
-      "使用自动更新的“字段”来检索块名称。 \r\n" +
-        "如果禁用该选项，则标签将包含纯文本，并且在重命名块时不会更改。"};
+      "使用自动更新的'字段'来检索块名称。 \r\n" +
+        "如果禁用该选项，则标签将包含纯文本，并且在重命名块时不会更改。",
+      "Usar un 'campo' de actualización automática para recuperar el nombre del bloque. \r\n" +
+        "Si la opción está deshabilitada, las etiquetas contendrán texto plano y no cambiará cuando se renombre el bloque.",
+      "Utiliser un 'champ' à mise à jour automatique pour récupérer le nom du bloc. \r\n" +
+        "Si l'option est désactivée, les étiquettes contiendront du texte brut et ne changeront pas lorsque le bloc sera renommé.",
+      "Blok adını almak için otomatik güncellenen bir 'alan' kullanın. \r\n" +
+        "Seçenek devre dışı bırakılırsa, etiketler düz metin içerecek ve blok yeniden adlandırıldığında değişmeyecektir."};
     public static readonly string[] LabelStyleTip = {
       "Text style for block labels. Enter an empty string to use the current text style.",
       "Стиль текста для меток блока. Введите пустую строку, чтоб использовать текущий стиль текста.",
       "Stile di testo per le etichette dei blocchi. Immettere una stringa vuota per utilizzare lo stile di testo corrente.",
       "Textstil für Blockbeschriftungen. Geben Sie eine leere Zeichenfolge ein, um den aktuellen Textstil zu verwenden.",
-      "块标签的文本样式。 输入一个空字符串以使用当前文本样式。"};
+      "块标签的文本样式。 输入一个空字符串以使用当前文本样式。",
+      "Estilo de texto para etiquetas de bloques. Ingrese una cadena vacía para usar el estilo de texto actual.",
+      "Style de texte pour les étiquettes de bloc. Entrez une chaîne vide pour utiliser le style de texte actuel.",
+      "Blok etiketleri için metin stili. Mevcut metin stilini kullanmak için boş bir dize girin."};
     public static readonly string[] LabelHeightTip = {
       "The text height for block labels. \r\n" +
         "Enter 0 so that the program itself picks up the height of the text, focusing on the size of the block",
@@ -438,7 +665,13 @@ namespace AVC
         "Immettere 0 in modo che il programma stesso rilevi l'altezza del testo, concentrandosi sulla dimensione del blocco",
       "Die Texthöhe für Blockbeschriftungen. \r\n" +
         "Geben Sie 0 ein, damit das Programm selbst die Höhe des Textes übernimmt und sich auf die Größe des Blocks konzentriert",
-      "块标签的文本高度。 输入0让程序自己拾取文字的高度，重点是块的大小"};
+      "块标签的文本高度。 输入0让程序自己拾取文字的高度，重点是块的大小",
+      "La altura del texto para las etiquetas de bloques. \r\n" +
+        "Ingrese 0 para que el programa recoja la altura del texto, centrándose en el tamaño del bloque",
+      "La hauteur du texte pour les étiquettes de bloc. \r\n" +
+        "Entrez 0 pour que le programme lui-même récupère la hauteur du texte, en se concentrant sur la taille du bloc",
+      "Blok etiketleri için metin yüksekliği. \r\n" +
+        "Programın bloğun boyutuna odaklanarak metnin yüksekliğini kendisinin alması için 0 girin"};
     public static readonly string[] BlockMetricTip = {
       "Call the 'Block Metric' command to measure the dimensions, \r\n" +
         "weight and price of the block and create invisible attributes.",
@@ -446,16 +679,25 @@ namespace AVC
         "веса и цены блока и создания невидимых атрибутов.",
       "Chiama il comando 'Block Metric' per misurare le dimensioni, \r\n" +
         "il peso e il prezzo del blocco e creare attributi invisibili.",
-      "Rufen Sie den Befehl „Block Metric“ auf, um die Abmessungen, \r\n" +
+      "Rufen Sie den Befehl 'Block Metric' auf, um die Abmessungen, \r\n" +
         "das Gewicht und den Preis des Blocks zu messen und unsichtbare Attribute zu erstellen.",
-      "调用“块度量”(BlockMetric)命令来测量块的尺寸、重量和价格，\r\n" +
-        "并创建不可见的属性。"};
+      "调用'块度量'(BlockMetric)命令来测量块的尺寸、重量和价格，\r\n" +
+        "并创建不可见的属性。",
+      "Llamar al comando 'Block Metric' para medir las dimensiones, \r\n" +
+        "peso y precio del bloque y crear atributos invisibles.",
+      "Appeler la commande 'Block Metric' pour mesurer les dimensions, \r\n" +
+        "le poids et le prix du bloc et créer des attributs invisibles.",
+      "'Block Metric' komutunu çağırarak bloğun boyutlarını, \r\n" +
+        "ağırlığını ve fiyatını ölçün ve görünmez öznitelikler oluşturun."};
     public static readonly string[] ExplodeText = {
       "Explode all blocks",
       "Взорвать все блоки",
       "Esplodi tutti i blocchi",
       "Explodieren Sie alle Blöcke",
-      "炸开所有方块" };
+      "炸开所有方块",
+      "Explotar todos los bloques",
+      "Éclater tous les blocs",
+      "Tüm blokları patlat" };
     public static readonly string[] ExplodeTip = {
       "If you plan to combine other blocks or arrays into an assembly, \r\n" +
         "the program can explode them all, including nested blocks.",
@@ -466,27 +708,42 @@ namespace AVC
       "Wenn Sie andere Blöcke oder Arrays zu einer Baugruppe kombinieren möchten, \r\n" +
         "kann das Programm sie alle auflösen, einschließlich verschachtelter Blöcke.",
       "如果您计划将其他块或数组组合成一个程序集，\r\n" +
-        "程序可以将它们全部分解，包括嵌套块。" };
+        "程序可以将它们全部分解，包括嵌套块。",
+      "Si planea combinar otros bloques o matrices en un ensamblaje, \r\n" +
+        "el programa puede explotarlos todos, incluidos los bloques anidados.",
+      "Si vous prévoyez de combiner d'autres blocs ou tableaux dans un assemblage, \r\n" +
+        "le programme peut tous les éclater, y compris les blocs imbriqués.",
+      "Diğer blokları veya dizileri bir montaja birleştirmeyi planlıyorsanız, \r\n" +
+        "program iç içe bloklar da dahil olmak üzere hepsini patlayabilir." };
     public static readonly string[] MeshToSolid = {
       "Convert mesh to solid",
       "Конвертировать сети в солиды",
       "Converti la mesh in solido",
       "Netz in Volumen umwandeln",
-      "将网格转换为实体" };
+      "将网格转换为实体",
+      "Convertir malla a sólido",
+      "Convertir le maillage en solide",
+      "Ağı katıya dönüştür" };
     public static readonly string[] MeshToSolidTip = {
       "Call the MeshToSolid command to attempt to convert any meshes, 3D-faces, and pseudo-3D curves into 3D solids.",
       "Вызвать команду MeshToSolid, чтоб попытаться конвертировать любые сети, \r\n" +
         "3D-грани и псевдотрехмерные кривые в 3D-солиды.",
       "Chiamare il comando MeshToSolid per tentare di convertire qualsiasi mesh, faccia 3D e curve pseudo-3D in solidi 3D.",
-      "Rufen Sie den Befehl „MeshToSolid“ auf, um zu versuchen, alle Netze, \r\n" +
+      "Rufen Sie den Befehl 'MeshToSolid' auf, um zu versuchen, alle Netze, \r\n" +
         "3D-Flächen und Pseudo-3D-Kurven in 3D-Volumenkörper umzuwandeln.",
-      "调用 MeshToSolid 命令尝试将任何网格、3D 面和伪 3D 曲线转换为 3D 实体。" };
+      "调用 MeshToSolid 命令尝试将任何网格、3D 面和伪 3D 曲线转换为 3D 实体。",
+      "Llamar al comando MeshToSolid para intentar convertir cualquier malla, cara 3D y curvas pseudo-3D en sólidos 3D.",
+      "Appeler la commande MeshToSolid pour tenter de convertir tous les maillages, faces 3D et courbes pseudo-3D en solides 3D.",
+      "Herhangi bir ağı, 3D yüzü ve sözde 3D eğrileri 3D katılara dönüştürmeye çalışmak için MeshToSolid komutunu çağırın." };
     public static readonly string[] Layer0Text = {
       "Assign '0' layer",
       "Назначить слой '0'",
       "Assegna il layer '0'",
       "Ebene '0' zuweisen",
-      "分配图层“0”" };
+      "分配图层'0'",
+      "Asignar capa '0'",
+      "Attribuer le calque '0'",
+      "'0' katmanını ata" };
     public static readonly string[] Layer0Tip = {
       "The program can assign 0 (zero) layer to all objects.\r\n" +
         "0 layer is used inside blocks to inherit layer properties from a block reference.\r\n" +
@@ -510,15 +767,33 @@ namespace AVC
         "Die Ebene Holes and Info ändert sich dadurch nicht.",
       "该程序可以为所有对象分配 0（零）层。\r\n" +
          "0 层用于块内部以从块参考继承层属性。\r\n" +
-         "也就是说，而不是‘ByBlock’层。\r\n" +
+         "也就是说，而不是'ByBlock'层。\r\n" +
          "之后，您可以通过更改链接到块的图层来更改对象的颜色。\r\n" +
-        "这不会改变图层 Holes 和 Info。" };
+        "这不会改变图层 Holes 和 Info。",
+      "El programa puede asignar la capa 0 (cero) a todos los objetos.\r\n" +
+        "La capa 0 se usa dentro de los bloques para heredar las propiedades de capa de una referencia de bloque.\r\n" +
+        "Es decir, en lugar de la capa 'PorBloque' (ByBlock).\r\n" +
+        "Después de eso, puede cambiar el color de los objetos cambiando la capa del enlace al bloque.\r\n" +
+        "Esto no cambia la capa Agujeros e Información.",
+      "Le programme peut attribuer le calque 0 (zéro) à tous les objets.\r\n" +
+        "Le calque 0 est utilisé à l'intérieur des blocs pour hériter des propriétés de calque d'une référence de bloc.\r\n" +
+        "C'est-à-dire, au lieu du calque 'ParBloc' (ByBlock).\r\n" +
+        "Après cela, vous pouvez modifier la couleur des objets en modifiant le calque du lien vers le bloc.\r\n" +
+        "Cela ne modifie pas le calque Trous et Infos.",
+      "Program tüm nesnelere 0 (sıfır) katmanını atayabilir.\r\n" +
+        "0 katmanı, bir blok referansından katman özelliklerini miras almak için blokların içinde kullanılır.\r\n" +
+        "Yani, 'ByBlock' katmanı yerine.\r\n" +
+        "Bundan sonra, bloğa bağlantının katmanını değiştirerek nesnelerin rengini değiştirebilirsiniz.\r\n" +
+        "Bu, Delikler ve Bilgi katmanını değiştirmez." };
     public static readonly string[] UniteText = {
       "Unite solids",
       "Склеить солиды",
       "Unisci i solidi",
       "Feststoffe vereinen",
-      "合并实体" };
+      "合并实体",
+      "Unir sólidos",
+      "Unir les solides",
+      "Katıları birleştir" };
     public static readonly string[] UniteTip = {
       "The program can combine all the solid inside the block into one big solid.\r\n" +
         "This will drastically simplify the block geometry \r\n" +
@@ -546,13 +821,34 @@ namespace AVC
       "该程序可以将块内的所有实体组合成一个大实体。\r\n" +
          "这将大大简化块的几何形状，并在显示许多块时大大提高性能。\r\n" +
          "但是，你将失去提取零件和正确计算材料数量、重量和价格的能力\r\n" +
-         "由不同材料制成的不同零件组成的组件。" };
+         "由不同材料制成的不同零件组成的组件。",
+      "El programa puede combinar todos los sólidos dentro del bloque en un solo sólido grande.\r\n" +
+        "Esto simplificará drásticamente la geometría del bloque \r\n" +
+        "y mejorará enormemente el rendimiento al mostrar muchos bloques.\r\n" +
+        "Sin embargo, perderá la capacidad de extraer piezas \r\n" +
+        "y calcular correctamente la cantidad de materiales, peso y precio\r\n" +
+        "de un ensamblaje que consta de diferentes piezas de diferentes materiales.",
+      "Le programme peut combiner tous les solides à l'intérieur du bloc en un seul grand solide.\r\n" +
+        "Cela simplifiera considérablement la géométrie du bloc \r\n" +
+        "et améliorera grandement les performances lors de l'affichage de nombreux blocs.\r\n" +
+        "Cependant, vous perdrez la capacité d'extraire des pièces \r\n" +
+        "et de calculer correctement la quantité de matériaux, le poids et le prix\r\n" +
+        "d'un assemblage composé de différentes pièces de différents matériaux.",
+      "Program bloğun içindeki tüm katıları tek bir büyük katıda birleştirebilir.\r\n" +
+        "Bu, blok geometrisini büyük ölçüde basitleştirecek \r\n" +
+        "ve birçok blok görüntülenirken performansı büyük ölçüde artıracaktır.\r\n" +
+        "Ancak, parçaları çıkarma yeteneğini kaybedeceksiniz \r\n" +
+        "ve farklı malzemelerden farklı parçalardan oluşan bir montajın\r\n" +
+        "malzeme miktarını, ağırlığını ve fiyatını doğru şekilde hesaplayamayacaksınız." };
     public static readonly string[] Unexplodable = {
       "Forbid explode the block",
       "Запретить взрывать блок",
       "Vieta esplodere il blocco",
       "Verbiete den Block zu explodieren",
-      "禁止爆炸方块" };
+      "禁止爆炸方块",
+      "Prohibir explotar el bloque",
+      "Interdire d'éclater le bloc",
+      "Bloğu patlatmayı yasakla" };
     public static readonly string[] UnexplodableTip = {
       "Mark block as unexploded. \r\n" +
         "A>V>C> plugins consider exploded blocks as assemblies, and non-explosive - as ready-made purchased items.",
@@ -563,7 +859,13 @@ namespace AVC
       "Block als nicht explodiert markieren. \r\n" +
         "A>V>C>-Plugins behandeln explodierte Blöcke als Baugruppen und nicht explodierbare als fertige gekaufte Artikel.",
       "将方块标记为未爆炸。 \r\n" +
-        "A>V>C> 插件将爆炸块视为组件，将非爆炸块视为现成的购买物品。" };
+        "A>V>C> 插件将爆炸块视为组件，将非爆炸块视为现成的购买物品。",
+      "Marcar el bloque como no explotado. \r\n" +
+        "Los complementos A>V>C> consideran los bloques explotados como ensamblajes, y los no explosivos como artículos comprados prefabricados.",
+      "Marquer le bloc comme non éclaté. \r\n" +
+        "Les plugins A>V>C> considèrent les blocs éclatés comme des assemblages, et les non explosifs comme des articles achetés prêts à l'emploi.",
+      "Bloğu patlatılmamış olarak işaretleyin. \r\n" +
+        "A>V>C> eklentileri patlatılmış blokları montaj olarak, patlatılamayan blokları ise hazır satın alınan ürünler olarak değerlendirir." };
 
 
   }

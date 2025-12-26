@@ -12,37 +12,60 @@ namespace AVC
       "Выберите исходный объект",
       "Selezionare oggetto originale",
       "Wählen Sie das Quellobjekt aus",
-      "选择原始对象"};
+      "选择原始对象",
+      "Seleccione el objeto original",                 // ES
+      "Sélectionnez l'objet d'origine",                // FR
+      "Orijinal nesneyi seçin"};                       // TR
+
     public static readonly string[] Exists = {
       "Exists",
       "Есть",
       "Esiste",
       "Existiert",
-      "存在" };
+      "存在",
+      "Existe",                                        // ES
+      "Existe",                                        // FR
+      "Var" };                                         // TR
+
     public static readonly string[] Tested = {
       "Tested objects: {0}",
       "Проверено объектов: {0}",
       "Oggetti controllato: {0}",
       "Getestete Objekte: {0}",
-      "测试对象：{0}" };
+      "测试对象：{0}",
+      "Objetos probados: {0}",                         // ES
+      "Objets testés : {0}",                           // FR
+      "Test edilen nesneler: {0}" };                   // TR
+
     public static readonly string[] Found = {
       "Found objects: {0}",
       "Найдено объектов: {0}",
       "Gli oggetti trovati: {0}",
       "Gefundene Objekte: {0}",
-      "找到的对象：{0}" };
+      "找到的对象：{0}",
+      "Objetos encontrados: {0}",                      // ES
+      "Objets trouvés : {0}",                          // FR
+      "Bulunan nesneler: {0}" };                       // TR
+
     public static readonly string[] NeedProp = {
       "First, set at least one property for objects of type {0}",
       "Сначала задайте хотя бы одно искомое свойство для объектов типа {0}",
       "Si prega di specificare almeno una proprietà desiderata per gli oggetti di tipo {0}",
       "Legen Sie zunächst mindestens eine Eigenschaft fest, die Sie für Objekte suchen {0}",
-      "首先，为 {0} 类型的对象设置至少一个属性" };
+      "首先，为 {0} 类型的对象设置至少一个属性",
+      "Primero, establezca al menos una propiedad para objetos del tipo {0}",  // ES
+      "Tout d'abord, définissez au moins une propriété pour les objets de type {0}",  // FR
+      "İlk olarak, {0} türündeki nesneler için en az bir özellik ayarlayın" };  // TR
+
     public static readonly string[] NoChecked = {
       "There are no checked properties. Search canceled.",
       "Ни одно свойство не отмечено. Поиск отменен.",
       "No spiccate proprietà. Ricerca annullato.",
       "Keine Eigenschaft ist markiert. Suche abgebrochen",
-      "没有选中的属性。 搜索已取消。" };
+      "没有选中的属性。 搜索已取消。",
+      "No hay propiedades marcadas. Búsqueda cancelada.",  // ES
+      "Aucune propriété cochée. Recherche annulée.",  // FR
+      "İşaretli özellik yok. Arama iptal edildi." };  // TR
 
 
     //=================================== Setting Dialog ====================================================
@@ -52,67 +75,110 @@ namespace AVC
       "Скрыть неотмеченные свойства",
       "Nascondere proprietà non controllati",
       "Nicht aktivierte Eigenschaften ausblenden",
-      "隐藏未选中的属性" };
+      "隐藏未选中的属性",
+      "Ocultar propiedades no marcadas",               // ES
+      "Masquer les propriétés non cochées",            // FR
+      "İşaretlenmemiş özellikleri gizle" };            // TR
+
     public static readonly string[] InvertText = {
       "Invert Visibility",
       "Инвертировать видимость",
       "Inverti visibilità",
       "Sichtbarkeit umkehren",
-      "反转可见性" };
+      "反转可见性",
+      "Invertir visibilidad",                          // ES
+      "Inverser la visibilité",                        // FR
+      "Görünürlüğü tersine çevir" };                   // TR
+
     public static readonly string[] InvertTip = {
       "Isolate suitable objects along with those that were previously hidden.",
       "Изолировать подходящие объекты вместе с теми, что были скрыты ранее.",
       "Isolare gli oggetti adatti insieme a quelli precedentemente nascosti.",
       "Isolieren Sie geeignete Objekte zusammen mit denen, die zuvor ausgeblendet wurden.",
-      "将合适的对象与之前隐藏的对象隔离开来。" };
+      "将合适的对象与之前隐藏的对象隔离开来。",
+      "Aislar objetos adecuados junto con los que estaban ocultos anteriormente.",  // ES
+      "Isoler les objets appropriés avec ceux qui étaient précédemment masqués.",  // FR
+      "Uygun nesneleri daha önce gizlenmiş olanlarla birlikte izole edin." };  // TR
+
     public static readonly string[] SelectTip = {
       "Find and select suitable objects",
       "Найти и выбрать подходящие объекты",
       "Trova e seleziona gli oggetti adatti",
       "Passende Objekte finden und auswählen",
-      "查找并选择合适的对象" };
+      "查找并选择合适的对象",
+      "Buscar y seleccionar objetos adecuados",        // ES
+      "Trouver et sélectionner les objets appropriés", // FR
+      "Uygun nesneleri bulun ve seçin" };              // TR
+
     public static readonly string[] ShowText = {
       "Show all properties",
       "Показать все свойства",
       "Mostra tutte le proprietà",
       "Alle Eigenschaften anzeigen",
-      "显示所有属性" };
+      "显示所有属性",
+      "Mostrar todas las propiedades",                 // ES
+      "Afficher toutes les propriétés",                // FR
+      "Tüm özellikleri göster" };                      // TR
+
     public static readonly string[] AllTip = {
       "Check\\uncheck all properties",
       "Отметить\\снять отметку всех свойств",
       "Selezionare\\deselezionare tutte le proprietà",
       "Aktivieren\\deaktivieren Sie alle Eigenschaften",
-      "选中\\取消选中所有属性" };
+      "选中\\取消选中所有属性",
+      "Marcar\\desmarcar todas las propiedades",       // ES
+      "Cocher\\décocher toutes les propriétés",        // FR
+      "Tüm özellikleri işaretle\\işareti kaldır" };   // TR
+
     public static readonly string[] InViewText = {
       "Search in viewport",
       "Искать на текущем виде",
       "Cerca nella viewport corrente",
       "Suche im Ansichtsfenster",
-      "在视口中搜索" };
+      "在视口中搜索",
+      "Buscar en la ventana gráfica",                  // ES
+      "Rechercher dans la fenêtre",                    // FR
+      "Görünüm penceresinde ara" };                    // TR
+
     public static readonly string[] InViewTip = {
       "Select only objects currently visible in the viewport.",
       "Выбирать только объекты видимые сейчас во вьюпорте.",
       "Seleziona solo gli oggetti attualmente visibili nel viewport.",
       "Wählen Sie nur Objekte aus, die derzeit im Ansichtsfenster sichtbar sind.",
-      "仅选择当前在视口中可见的对象。" };
+      "仅选择当前在视口中可见的对象。",
+      "Seleccionar solo objetos actualmente visibles en la ventana gráfica.",  // ES
+      "Sélectionner uniquement les objets actuellement visibles dans la fenêtre.",  // FR
+      "Yalnızca görünüm penceresinde görünen nesneleri seçin." };  // TR
+
     public static readonly string[] ZoomObjText = {
       "Zoom model",
       "Зумировать модель",
       "Zoom",
       "Zoom-Modell",
-      "缩放模型" };
+      "缩放模型",
+      "Ampliar modelo",                                // ES
+      "Zoomer le modèle",                              // FR
+      "Modeli yakınlaştır" };                          // TR
+
     public static readonly string[] ZoomObjTip = {
       "Zoom model to selected objects",
       "Показать найденные объекты во весь экран",
       "Mostra gli oggetti trovati a schermo intero",
       "Gefundene Objekte im Vollbildmodus anzeigen",
-      "全屏显示找到的对象" };
+      "全屏显示找到的对象",
+      "Ampliar modelo a los objetos seleccionados",    // ES
+      "Zoomer le modèle sur les objets sélectionnés",  // FR
+      "Modeli seçili nesnelere yakınlaştır" };         // TR
+
     public static readonly string[] HeaderText = {
       "Check the properties of the current object what to look for",
       "Отметьте свойства выбранного объекта, которые нужно искать",
       "Segnare le proprietà che dovranno cercare",
       "Überprüfen Sie die Eigenschaften des aktuellen Objekts, wonach gesucht werden soll",
-      "检查当前对象的属性要查找的内容" };
+      "检查当前对象的属性要查找的内容",
+      "Marque las propiedades del objeto actual que desea buscar",  // ES
+      "Cochez les propriétés de l'objet actuel à rechercher",  // FR
+      "Aranacak geçerli nesnenin özelliklerini işaretleyin" };  // TR
 
 
     // ======================= Перевод на русский свойств, которых нет в палитре ============================

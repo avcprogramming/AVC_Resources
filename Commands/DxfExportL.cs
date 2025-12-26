@@ -7,25 +7,26 @@ namespace AVC
   public static class
   DxfExportL
   {
-    public static readonly string[,] DxfExportStyleNames = {
-        {
-        CommandL.DXFExport[0],
-        CommandL.DXFExport[1],
-        CommandL.DXFExport[2],
-        CommandL.DXFExport[3],
-        CommandL.DXFExport[4] } ,
-        {
+    public static readonly string[][] DxfExportStyleNames = {
+        CommandL.DXFExport,
+        new []{
         "Export 2D contours",
         "Экспорт контуров",
         "Esporta contorni 2D",
         "2D-Konturen exportieren",
-        "导出 2D 大纲" } ,
-        {
+        "导出 2D 大纲",
+        "Exportar contornos 2D",                       // ES
+        "Exporter les contours 2D",                    // FR
+        "2D konturları dışa aktar" } ,                 // TR
+        new []{
         "Export 3D solids",
         "Экспорт солидов",
         "Esporta solidi 3D",
         "3D-Volumenkörper exportieren",
-        "导出 3D 实体" } ,
+        "导出 3D 实体",
+        "Exportar sólidos 3D",                         // ES
+        "Exporter des solides 3D",                     // FR
+        "3D katıları dışa aktar" } ,                   // TR
       };
 
     public static readonly string[] TechErr = {
@@ -33,31 +34,51 @@ namespace AVC
       "  Возможно все детали отброшены из-за неподходящих технологий изготовления",
       "  Forse tutte le parti vengono scartate a causa di tecniche di produzione inadeguate.",
       "  Möglicherweise werden alle Teile aufgrund ungeeigneter Herstellungstechniken weggeworfen.",
-      "  由于制造技术不当，可能所有零件都被丢弃了。"};
+      "  由于制造技术不当，可能所有零件都被丢弃了。",
+      "  Quizás todas las piezas se descarten debido a técnicas de fabricación inapropiadas.",  // ES
+      "  Peut-être que toutes les pièces sont rejetées en raison de techniques de fabrication inappropriées.",  // FR
+      "  Belki tüm parçalar uygunsuz üretim teknikleri nedeniyle atılmıştır."};  // TR
+
     public static readonly string[] LayErr = {
       "Couldn't lay out any details for DXF file",
       "Не удалось выложить ни одной детали для файла DXF",
       "Es konnten keine Details für die DXF-Datei angegeben werden",
       "Es konnten keine Details für die DXF-Datei angegeben werden",
-      "无法列出 DXF 文件的任何详细信息" };
+      "无法列出 DXF 文件的任何详细信息",
+      "No se pudo diseñar ningún detalle para el archivo DXF",  // ES
+      "Impossible de disposer des détails pour le fichier DXF",  // FR
+      "DXF dosyası için herhangi bir ayrıntı düzenlenemedi" };  // TR
+
     public static readonly string[] NoGroupContour = {
       "Failed to draw any contours of parts of group {0}",
       "Не удалось построить ни одного контура деталей группы {0}",
       "Impossibile disegnare i contorni delle parti del gruppo {0}",
       "Konturen der Teile der Gruppe {0} konnten nicht gezeichnet werden.",
-      "未能绘制组 {0} 的任何部分的轮廓" };
+      "未能绘制组 {0} 的任何部分的轮廓",
+      "No se pudieron dibujar contornos de piezas del grupo {0}",  // ES
+      "Impossible de dessiner des contours de pièces du groupe {0}",  // FR
+      "Grup {0} parçalarının konturları çizilemedi" };  // TR
+
     public static readonly string[] NoContour = {
       "Failed to draw the outline of part {0}",
       "Не удалось построить контур детали {0}",
       "Impossibile disegnare il contorno della parte {0}",
       "Fehler beim Zeichnen des Umrisses von Teil {0}",
-      "未能绘制部分 {0} 的轮廓" };
+      "未能绘制部分 {0} 的轮廓",
+      "No se pudo dibujar el contorno de la pieza {0}",  // ES
+      "Impossible de dessiner le contour de la pièce {0}",  // FR
+      "Parça {0} konturu çizilemedi"};  // TR
+
     public static readonly string[] RepeatInfo = {
       "Repeat file name {0}.\nThe program will add SameX to the name",
       "Повтор имени файла {0}.\nПрограмма добавит к имени SameX.",
       "Ripeti il ​​nome del file {0}.\nIl programma aggiungerà SameX al nome",
       "Wiederholen Sie den Dateinamen {0}.\nDas Programm fügt dem Namen SameX hinzu",
-      "重复文件名 {0}。\n程序会将 SameX 添加到名称中"};
+      "重复文件名 {0}。\n程序会将 SameX 添加到名称中",
+      "Repetir nombre de archivo {0}.\nEl programa agregará SameX al nombre",  // ES
+      "Répéter le nom de fichier {0}.\nLe programme ajoutera SameX au nom",  // FR
+      "Dosya adını tekrarla {0}.\nProgram ada SameX ekleyecektir"};  // TR
+
     public static readonly string[] RepeatErr = {
       "Repeat file name {0}.\n" +
         "Dxf file will not be created. Customize the file name template. Use %row% substitution",
@@ -68,43 +89,73 @@ namespace AVC
       "Wiederholen Sie den Dateinamen {0}.\n" +
         "Dxf-Datei wird nicht erstellt. Passen Sie die Dateinamenvorlage an. Verwenden Sie %row% Ersetzungen",
       "重复文件名 {0}。\n" +
-        "不会创建 Dxf 文件。 自定义文件名模板。 使用 %row% 替换"};
+        "不会创建 Dxf 文件。 自定义文件名模板。 使用 %row% 替换",
+      "Repetir nombre de archivo {0}.\n" +  // ES
+        "El archivo Dxf no se creará. Personalice la plantilla de nombre de archivo. Use sustitución %row%",
+      "Répéter le nom de fichier {0}.\n" +  // FR
+        "Le fichier Dxf ne sera pas créé. Personnalisez le modèle de nom de fichier. Utilisez la substitution %row%",
+      "Dosya adını tekrarla {0}.\n" +  // TR
+        "Dxf dosyası oluşturulmayacak. Dosya adı şablonunu özelleştirin. %row% değiştirmesini kullanın"};
+
     public static readonly string[] Nothing = {
       "  Nothing to export.",
       "  Нечего экспортировать.",
       "  Niente da esportare.",
       "  Nichts zu exportieren.",
-      "  没有什么可出口的。"};
+      "  没有什么可出口的。",
+      "  Nada que exportar.",                          // ES
+      "  Rien à exporter.",                            // FR
+      "  Dışa aktarılacak bir şey yok."};              // TR
+
     public static readonly string[] SaveWarning = {
       "You must first save the drawing file.",
       "Требуется сначала сохранить файл чертежа.",
       "È necessario prima salvare il file di disegno.",
       "Sie müssen zuerst die Zeichnungsdatei speichern.",
-      "您必须先保存图形文件。" };
+      "您必须先保存图形文件。",
+      "Primero debe guardar el archivo de dibujo.",    // ES
+      "Vous devez d'abord enregistrer le fichier de dessin.",  // FR
+      "Önce çizim dosyasını kaydetmelisiniz." };       // TR
+
     public static readonly string[] Saved = {
       "File saved '{0}'",
       "Сохранен файл '{0}'",
       "File salvato '{0}'",
       "Gespeicherte Datei '{0}'",
-      "文件已保存“{0}”" };
+      "文件已保存'{0}'",
+      "Archivo guardado '{0}'",                        // ES
+      "Fichier enregistré '{0}'",                      // FR
+      "Dosya kaydedildi '{0}'" };                      // TR
+
     public static readonly string[] NoFile = {
       "No dxf file exported",
       "Не экспортировано ни одного файла dxf",
       "Nessun file dxf esportato",
       "Es wurden keine DXF-Dateien exportiert",
-      "没有导出 dxf 文件" };
+      "没有导出 dxf 文件",
+      "No se exportó ningún archivo dxf",              // ES
+      "Aucun fichier dxf exporté",                     // FR
+      "Dxf dosyası dışa aktarılmadı" };                // TR
+
     public static readonly string[] Exported = {
       "{0} dxf files exported",
       "Экспортировано {0} файлов dxf",
       "{0} file dxf esportati",
       "Exportierte {0} DXF-Dateien",
-      "已导出 {0} 个 dxf 文件" };
+      "已导出 {0} 个 dxf 文件",
+      "{0} archivos dxf exportados",                   // ES
+      "{0} fichiers dxf exportés",                     // FR
+      "{0} dxf dosyası dışa aktarıldı" };              // TR
+
     public static readonly string[] DirNotExist = {
       "Directory does not exist or is not available",
       "Каталог не существует или недоступен",
       "La directory non esiste o non è disponibile",
       "Verzeichnis existiert nicht oder ist nicht verfügbar",
-      "目录不存在或不可用"};
+      "目录不存在或不可用",
+      "El directorio no existe o no está disponible",  // ES
+      "Le répertoire n'existe pas ou n'est pas disponible",  // FR
+      "Dizin mevcut değil veya kullanılamıyor"};       // TR
 
     // Опции командной строки
     public static readonly string[] LayStyleKW = {
@@ -112,31 +163,50 @@ namespace AVC
       "LAYcтиль",
       "LAYstile",
       "LAYstil",
-      "LAY风格" };
+      "LAY风格",
+      "LAYestilo",                                     // ES
+      "LAYstyle",                                      // FR
+      "LAYstil" };                                     // TR
+
     public static readonly string[] CncStyleKW = {
       "CNCstyle",
       "CNCcтиль",
       "CNCstile",
       "CNCstil",
-      "CNC风格" };
+      "CNC风格",
+      "CNCestilo",                                     // ES
+      "CNCstyle",                                      // FR
+      "CNCstil" };                                     // TR
+
     public static readonly string[] DimDetStyleKW = {
       "DIMDETstyle",
       "DIMDETcтиль",
       "DIMDETstile",
       "DIMDETstil",
-      "DIMdet风格" };
+      "DIMdet风格",
+      "DIMDETestilo",                                  // ES
+      "DIMDETstyle",                                   // FR
+      "DIMDETstil" };                                  // TR
+
     public static readonly string[] DxfStyleKW = {
       "DXFstyle",
       "DXFcтиль",
       "DXFstile",
       "DXFstil",
-      "DXF风格" };
+      "DXF风格",
+      "DXFestilo",                                     // ES
+      "DXFstyle",                                      // FR
+      "DXFstil" };                                     // TR
+
     public static readonly string[] DDrawStyleKW = {
       "DDRAWstyle",
       "DDRAWcтиль",
       "DDRAWstile",
       "DDRAWstil",
-      "DDRAW风格" };
+      "DDRAW风格",
+      "DDRAWestilo",                                   // ES
+      "DDRAWstyle",                                    // FR
+      "DDRAWstil" };                                   // TR
 
     //============================== Options Box ==============================================
     public static readonly string[] DialogTitle = {
@@ -144,52 +214,84 @@ namespace AVC
       "Настройки экспорта в DXF",
       "Opzioni di esportazione DXF",
       "DXF-Exportoptionen",
-      "DXF 导出选项"};
+      "DXF 导出选项",
+      "Opciones de exportación DXF",                   // ES
+      "Options d'exportation DXF",                     // FR
+      "DXF Dışa aktarma seçenekleri"};                // TR
+
     public static readonly string[] StyleNameTip = {
       "The name for this DXFExport-style (set of settings). Not used in the program. Only for convenience of choice.",
       "Название для этого стиля Экспорта DXF. Не используется в работе программы. Только для удобства выбора.",
       "Il nome di questo stile DXFExport (set di impostazioni). Non utilizzato nel programma. Solo per comodità di scelta.",
       "Der Name für diesen DXFExport-Stil (Satz von Einstellungen). Wird im Programm nicht verwendet.\r\n\r\n" +
         "Nur zur Bequemlichkeit der Wahl.",
-      "此 DXFExport 样式（设置集）的名称。 程序中未使用。 只为方便选择。"};
+      "此 DXFExport 样式（设置集）的名称。 程序中未使用。 只为方便选择。",
+      "El nombre para este estilo DXFExport (conjunto de configuraciones). No se usa en el programa. Solo por conveniencia de elección.",  // ES
+      "Le nom de ce style DXFExport (ensemble de paramètres). Non utilisé dans le programme. Uniquement pour la commodité du choix.",  // FR
+      "Bu DXFExport stili için ad (ayar seti). Programda kullanılmaz. Sadece seçim kolaylığı için."};  // TR
+
     public static readonly string[] OpenFolderTip = {
       "Select a folder for saving dxf files.",
       "Выбрать папку для сохранения файлов dxf.",
       "Seleziona una cartella per salvare i file dxf.",
       "Wählen Sie einen Ordner zum Speichern von DXF-Dateien.",
-      "选择用于保存 dxf 文件的文件夹。"};
+      "选择用于保存 dxf 文件的文件夹。",
+      "Seleccione una carpeta para guardar archivos dxf.",  // ES
+      "Sélectionnez un dossier pour enregistrer les fichiers dxf.",  // FR
+      "Dxf dosyalarını kaydetmek için bir klasör seçin."};  // TR
+
     public static readonly string[] Annotate = {
       "Create dimensions",
       "Создать размеры",
       "Crea dimensioni",
       "Dimensionen erstellen",
-      "创建尺寸"};
+      "创建尺寸",
+      "Crear dimensiones",                             // ES
+      "Créer des dimensions",                          // FR
+      "Boyutlar oluştur"};                             // TR
+
     public static readonly string[] AnnotateTip = {
       "Create all annotations as configured in DimDet command style",
       "Создать все аннотации (размеры и выноски), \r\n" +
         "как настроено в стиле команды 'Размеры для деталировки'",
       "Crea tutte le annotazioni come configurate in stile Dimensioni (DimDet)",
       "Erstellen Sie alle Anmerkungen (Bemaßungen und Führungslinien) \r\n" +
-        "wie im Stil des Befehls „Bemaßungen bis ins Detail“(DimDet) konfiguriert",
-      "按照 DimDet 命令样式中的配置创建所有注释（“详图尺寸”）"};
+        "wie im Stil des Befehls 'Bemaßungen bis ins Detail'(DimDet) konfiguriert",
+      "按照 DimDet 命令样式中的配置创建所有注释（详图尺寸）",
+      "Crear todas las anotaciones según la configuración en el estilo de comando DimDet",  // ES
+      "Créer toutes les annotations telles que configurées dans le style de commande DimDet",  // FR
+      "DimDet komut stilinde yapılandırıldığı gibi tüm açıklamaları oluştur"};  // TR
+
     public static readonly string[] DwgFolder = {
       "Dwg Folder",
       "Папка для Dwg",
       "Cartella DWG",
       "Ordner für Dwg",
-      "Dwg 文件夹"};
+      "Dwg 文件夹",
+      "Carpeta Dwg",                                   // ES
+      "Dossier Dwg",                                   // FR
+      "Dwg Klasörü"};                                  // TR
+
     public static readonly string[] DwgFolderTip = {
       "Create a subfolder named dwg-drawing",
       "Создать подпапку с именем dwg-чертежа",
       "Crea una sottocartella denominata dwg-drawing",
       "Erstellen Sie einen Unterordner namens dwg-drawing",
-      "创建一个名为 dwg-drawing 的子文件夹"};
+      "创建一个名为 dwg-drawing 的子文件夹",
+      "Crear una subcarpeta con el nombre del dibujo dwg",  // ES
+      "Créer un sous-dossier nommé dwg-drawing",      // FR
+      "Dwg-drawing adlı bir alt klasör oluştur"};     // TR
+
     public static readonly string[] GroupFolders = {
       "Group Folders",
       "Папки групп",
       "Cartelle di gruppo",
       "Ordner gruppieren",
-      "组文件夹"};
+      "组文件夹",
+      "Carpetas de grupo",                             // ES
+      "Dossiers de groupe",                            // FR
+      "Grup Klasörleri"};                              // TR
+
     public static readonly string[] GroupFoldersTip = {
       "Create folders for groups. \r\n" +
         "Depending on the LAY settings folders for the Layer can be created, \r\n" +
@@ -206,13 +308,30 @@ namespace AVC
         "sie haben Ordner für Material/Farbe und sie haben Ordner für unterschiedliche Dicken von Teilen.",
       "为组创建文件夹。 \r\n" +
         "根据可以创建图层的 LAY 设置文件夹，它们具有用于材料/颜色的文件夹，\r\n" +
-        "它们具有用于不同零件厚度的文件夹。"};
+        "它们具有用于不同零件厚度的文件夹。",
+      "Crear carpetas para grupos. \r\n" +  // ES
+        "Dependiendo de la configuración de LAY, se pueden crear carpetas para la Capa, \r\n" +
+        "tienen carpetas para Material/Color, \r\n" +
+        "y tienen carpetas para diferentes Espesores de piezas.",
+      "Créer des dossiers pour les groupes. \r\n" +  // FR
+        "Selon les paramètres LAY, des dossiers pour le Calque peuvent être créés, \r\n" +
+        "ils ont des dossiers pour Matériau/Couleur, \r\n" +
+        "et ils ont des dossiers pour différentes Épaisseurs de pièces.",
+      "Gruplar için klasörler oluşturun. \r\n" +  // TR
+        "LAY ayarlarına bağlı olarak Katman için klasörler oluşturulabilir, \r\n" +
+        "Malzeme/Renk için klasörleri vardır, \r\n" +
+        "ve farklı parça Kalınlıkları için klasörleri vardır."};
+
     public static readonly string[] MultiDetail = {
       "Multi Detail",
       "Много деталей",
       "Multi dettaglio",
       "Viele Details",
-      "很多细节"};
+      "很多细节",
+      "Múltiples detalles",                            // ES
+      "Multi détails",                                 // FR
+      "Çoklu Detay"};                                  // TR
+
     public static readonly string[] MultiDetailTip = {
       "Write the contours of all parts of the group in one dxf-file. \r\n" +
         "If grouping is turned off, then you get 1 dxf file for all parts.",
@@ -223,13 +342,24 @@ namespace AVC
       "Schreiben Sie die Konturen aller Teile der Gruppe in eine dxf-Datei. \r\n" +
         "Wenn die Gruppierung ausgeschaltet ist, erhalten Sie 1 dxf-Datei für alle Teile.",
       "将组的所有部分的轮廓写入一个 dxf 文件。 \r\n" +
-        "如果分组关闭，那么您将获得所有部分的 1 个 dxf 文件。"};
+        "如果分组关闭，那么您将获得所有部分的 1 个 dxf 文件。",
+      "Escribir los contornos de todas las piezas del grupo en un archivo dxf. \r\n" +  // ES
+        "Si la agrupación está desactivada, obtendrá 1 archivo dxf para todas las piezas.",
+      "Écrire les contours de toutes les pièces du groupe dans un fichier dxf. \r\n" +  // FR
+        "Si le regroupement est désactivé, vous obtenez 1 fichier dxf pour toutes les pièces.",
+      "Grubun tüm parçalarının konturlarını bir dxf dosyasına yazın. \r\n" +  // TR
+        "Gruplama kapalıysa, tüm parçalar için 1 dxf dosyası alırsınız."};
+
     public static readonly string[] OpenDXF = {
       "Open DXF",
       "Открыть DXF",
       "Apri DXF",
       "DXF öffnen",
-      "打开 DXF"};
+      "打开 DXF",
+      "Abrir DXF",                                     // ES
+      "Ouvrir DXF",                                    // FR
+      "DXF Aç"};                                       // TR
+
     public static readonly string[] OpenDXFTip = {
       "After performing the export, \r\n" +
         "program need to open a DXF file or a window with a list of files",
@@ -238,13 +368,24 @@ namespace AVC
       "Dopo aver eseguito l'esportazione, \r\n" +
         "è necessario aprire un file DXF o una finestra con un elenco di file",
       "Nach dem Export muss das Programm eine DXF-Datei oder ein Fenster mit einer Liste von Dateien öffnen",
-      "执行导出后，程序需要打开一个 DXF 文件或带有文件列表的窗口"};
+      "执行导出后，程序需要打开一个 DXF 文件或带有文件列表的窗口",
+      "Después de realizar la exportación, \r\n" +  // ES
+        "el programa necesita abrir un archivo DXF o una ventana con una lista de archivos",
+      "Après avoir effectué l'exportation, \r\n" +  // FR
+        "le programme doit ouvrir un fichier DXF ou une fenêtre avec une liste de fichiers",
+      "Dışa aktarmayı gerçekleştirdikten sonra, \r\n" +  // TR
+        "programın bir DXF dosyası veya dosya listesi olan bir pencere açması gerekir"};
+
     public static readonly string[] Replace = {
       "Replace old files",
       "Заменять старые",
       "Sostituisci i vecchi file",
       "Alte Dateien ersetzen",
-      "替换旧文件"};
+      "替换旧文件",
+      "Reemplazar archivos antiguos",                  // ES
+      "Remplacer les anciens fichiers",                // FR
+      "Eski dosyaları değiştir"};                      // TR
+
     public static readonly string[] ReplaceTip = {
       "If the dxf file already exists, it must be replaced with a new one. \r\n" +
         "Otherwise, the program will add the version number to the end of the file name.",
@@ -255,13 +396,24 @@ namespace AVC
       "Wenn die dxf-Datei bereits vorhanden ist, muss sie durch eine neue ersetzt werden. \r\n" +
         "Andernfalls fügt das Programm die Versionsnummer an das Ende des Dateinamens an.",
       "如果 dxf 文件已经存在，则必须将其替换为新文件。 \r\n" +
-        "否则，程序会将版本号添加到文件名的末尾。"};
+        "否则，程序会将版本号添加到文件名的末尾。",
+      "Si el archivo dxf ya existe, debe ser reemplazado con uno nuevo. \r\n" +  // ES
+        "De lo contrario, el programa agregará el número de versión al final del nombre del archivo.",
+      "Si le fichier dxf existe déjà, il doit être remplacé par un nouveau. \r\n" +  // FR
+        "Sinon, le programme ajoutera le numéro de version à la fin du nom de fichier.",
+      "Dxf dosyası zaten mevcutsa, yenisiyle değiştirilmelidir. \r\n" +  // TR
+        "Aksi takdirde, program dosya adının sonuna sürüm numarasını ekleyecektir."};
+
     public static readonly string[] Version = {
       "DXF version",
       "Версия DXF",
       "Versione DXF",
       "DXF-Version",
-      "版本 DXF"};
+      "版本 DXF",
+      "Versión DXF",                                   // ES
+      "Version DXF",                                   // FR
+      "DXF sürümü"};                                   // TR
+
     public static readonly string[] VersionTip = {
       "Select the dxf file version (file format) for compatibility. \r\n" +
         "If in doubt, use the oldest version.",
@@ -272,13 +424,24 @@ namespace AVC
       "Wählen Sie aus Kompatibilitätsgründen die dxf-Dateiversion (Dateiformat) aus. \r\n" +
         "Verwenden Sie im Zweifelsfall die älteste Version.",
       "选择 dxf 文件版本（文件格式）以获得兼容性。 \r\n" +
-        "如有疑问，请使用最旧的版本。"};
+        "如有疑问，请使用最旧的版本。",
+      "Seleccione la versión del archivo dxf (formato de archivo) para compatibilidad. \r\n" +  // ES
+        "En caso de duda, use la versión más antigua.",
+      "Sélectionnez la version du fichier dxf (format de fichier) pour la compatibilité. \r\n" +  // FR
+        "En cas de doute, utilisez la version la plus ancienne.",
+      "Uyumluluk için dxf dosya sürümünü (dosya formatı) seçin. \r\n" +  // TR
+        "Şüpheniz varsa, en eski sürümü kullanın."};
+
     public static readonly string[] Folder = {
       "Folder",
       "Папка",
       "Cartella",
       "Mappe",
-      "文件夹"};
+      "文件夹",
+      "Carpeta",                                       // ES
+      "Dossier",                                       // FR
+      "Klasör"};                                       // TR
+
     public static readonly string[] FolderTip = {
       "The name of the folder for saving dxf files. \r\n" +
         "If you leave the field blank, the dwg-drawing folder will be used. \r\n" +
@@ -294,13 +457,27 @@ namespace AVC
         "Sie können Ersetzungen im Ordnernamen verwenden.",
       "保存 dxf 文件的文件夹的名称。 \r\n" +
         "如果您将该字段留空，将使用 dwg-drawing 文件夹。 \r\n" +
-        "您可以在文件夹名称中使用替换。"};
+        "您可以在文件夹名称中使用替换。",
+      "El nombre de la carpeta para guardar archivos dxf. \r\n" +  // ES
+        "Si deja el campo en blanco, se usará la carpeta de dibujo dwg. \r\n" +
+        "Puede usar sustituciones en el nombre de la carpeta.",
+      "Le nom du dossier pour enregistrer les fichiers dxf. \r\n" +  // FR
+        "Si vous laissez le champ vide, le dossier dwg-drawing sera utilisé. \r\n" +
+        "Vous pouvez utiliser des substitutions dans le nom du dossier.",
+      "Dxf dosyalarını kaydetmek için klasörün adı. \r\n" +  // TR
+        "Alanı boş bırakırsanız, dwg-drawing klasörü kullanılacaktır. \r\n" +
+        "Klasör adında değiştirmeler kullanabilirsiniz."};
+
     public static readonly string[] FileNames = {
       "File names",
       "Имена файлов",
       "Nomi di file",
       "Dateinamen",
-      "文件名"};
+      "文件名",
+      "Nombres de archivo",                            // ES
+      "Noms de fichier",                               // FR
+      "Dosya adları"};                                 // TR
+
     public static readonly string[] FileNamesTip = {
       "String for you own file name mask.You can use substitutions of detail, drawing and time.\r\n" +
         "Input space string for returning to default file name mask.\r\n" +
@@ -316,7 +493,17 @@ namespace AVC
         "Geben Sie eine Leerzeichenfolge ein, um zur Standard-Dateinamensmaske zurückzukehren. Das Programm wählt eine Standardmaske gemäß der Lay-Sortiereinstellung aus",
       "您自己的文件名掩码的字符串。\r\n" +
         "您可以使用细节，图纸和时间的替换。输入空格字符串以返回默认文件名掩码。\r\n" +
-        "程序根据布局排序设置选择默认掩码"};
+        "程序根据布局排序设置选择默认掩码",
+      "Cadena para su propia máscara de nombre de archivo. Puede usar sustituciones de detalle, dibujo y tiempo.\r\n" +  // ES
+        "Ingrese cadena de espacio para volver a la máscara de nombre de archivo predeterminada.\r\n" +
+        "El programa selecciona una máscara predeterminada según la configuración de clasificación de lay",
+      "Chaîne pour votre propre masque de nom de fichier. Vous pouvez utiliser des substitutions de détail, dessin et temps.\r\n" +  // FR
+        "Saisissez une chaîne d'espace pour revenir au masque de nom de fichier par défaut.\r\n" +
+        "Le programme sélectionne un masque par défaut selon le paramètre de tri lay",
+      "Kendi dosya adı maskeniz için dize. Detay, çizim ve zaman değiştirmelerini kullanabilirsiniz.\r\n" +  // TR
+        "Varsayılan dosya adı maskesine dönmek için boşluk dizesi girin.\r\n" +
+        "Program, lay sıralama ayarına göre varsayılan bir maske seçer"};
+
     public static readonly string[] StyleHint = {
       "The command uses the current LAY style to lay out parts and grouping. \r\n" +
         "And to create the contours of parts, the current style of the 'NC Prepare' command is used. \r\n" +
@@ -330,17 +517,34 @@ namespace AVC
         "E per creare i contorni delle parti, viene utilizzato lo stile corrente del comando 'NC Prepare'. \r\n" +
         "E se è necessario posizionare quote e direttrici, verrà utilizzato lo stile del comando 'Dimensioni''.",
       "Der Befehl verwendet den aktuellen Lay-Stil (LAY) zum Anordnen von Teilen und zum Gruppieren.\r\n" +
-        "Und um die Konturen der Teile zu erstellen, wird der aktuelle Stil des Befehls „NC-Vorbereitung“ verwendet. \r\n" +
-        "Und wenn Sie Bemaßungen und Führungslinien platzieren müssen, wird der Stil des Befehls „Bemaßungen für Detaillierung“ verwendet.",
+        "Und um die Konturen der Teile zu erstellen, wird der aktuelle Stil des Befehls 'NC-Vorbereitung' verwendet. \r\n" +
+        "Und wenn Sie Bemaßungen und Führungslinien platzieren müssen, wird der Stil des Befehls 'Bemaßungen für Detaillierung' verwendet.",
       "该命令使用当前的布局样式 (LAY) 来布置零件和分组。\r\n" +
-        "并且要创建零件的轮廓，使用当前样式的“NC Prepare”命令。 \r\n" +
-        "如果您需要放置尺寸和引线，则将使用“详图尺寸”命令的样式。"};
+        "并且要创建零件的轮廓，使用当前样式的'NC Prepare'命令。 \r\n" +
+        "如果您需要放置尺寸和引线，则将使用'详图尺寸'命令的样式。",
+      "El comando usa el estilo LAY actual para distribuir piezas y agrupar. \r\n" +  // ES
+        "Y para crear los contornos de piezas, se usa el estilo actual del comando 'NC Prepare'. \r\n" +
+        "Y si necesita colocar dimensiones y directrices, \r\n" +
+        "se usará el estilo del comando 'Dimensiones para Detallado'.",
+      "La commande utilise le style LAY actuel pour disposer les pièces et les regrouper. \r\n" +  // FR
+        "Et pour créer les contours des pièces, le style actuel de la commande 'NC Prepare' est utilisé. \r\n" +
+        "Et si vous devez placer des dimensions et des lignes de repère, \r\n" +
+        "le style de la commande 'Dimensions pour Détail' sera utilisé.",
+      "Komut, parçaları düzenlemek ve gruplamak için mevcut LAY stilini kullanır. \r\n" +  // TR
+        "Ve parçaların konturlarını oluşturmak için 'NC Prepare' komutunun mevcut stili kullanılır. \r\n" +
+        "Ve boyutlar ve işaret çizgileri yerleştirmeniz gerekiyorsa, \r\n" +
+        "'Detaylandırma için Boyutlar' komutunun stili kullanılacaktır."};
+
     public static readonly string[] ExplodeAnnotations = {
       "Explode multi-leaders and multi-line texts",
       "Взорвать выноски и мультитексты",
       "Esplodi multidirettrici e testi multiriga",
       "Explodieren Sie mehrere Führungslinien und mehrzeilige Texte",
-      "展开多引线和多行文本"};
+      "展开多引线和多行文本",
+      "Explotar líneas múltiples de referencia y textos de líneas múltiples",  // ES
+      "Exploser les lignes de repère multiples et les textes multilignes",  // FR
+      "Çoklu işaret çizgilerini ve çok satırlı metinleri patlat"};  // TR
+
     public static readonly string[] ExplodeAnnotationsTip = {
       "Separate multi-leader (MLeader) and multi-line texts (MText) into separate lines and lines. \r\n" +
         "This option will help you export dxf to AlphaCAM.",
@@ -351,19 +555,33 @@ namespace AVC
       "Trennen Sie mehrzeilige (MLeader) und mehrzeilige Texte (MText) in separate Zeilen und Zeilen. \r\n" +
         "Diese Option hilft Ihnen, dxf nach AlphaCAM zu exportieren.",
       "将多引线 (MLeader) 和多行文本 (MText) 分成单独的行和行。 \r\n" +
-        "此选项将帮助您将 dxf 导出到 AlphaCAM。"};
+        "此选项将帮助您将 dxf 导出到 AlphaCAM。",
+      "Separar líneas múltiples de referencia (MLeader) y textos de líneas múltiples (MText) en líneas separadas. \r\n" +  // ES
+        "Esta opción le ayudará a exportar dxf a AlphaCAM.",
+      "Séparer les lignes de repère multiples (MLeader) et les textes multilignes (MText) en lignes séparées. \r\n" +  // FR
+        "Cette option vous aidera à exporter dxf vers AlphaCAM.",
+      "Çoklu işaret çizgilerini (MLeader) ve çok satırlı metinleri (MText) ayrı satırlara ayırın. \r\n" +  // TR
+        "Bu seçenek dxf'yi AlphaCAM'e aktarmanıza yardımcı olacaktır."};
+
     public static readonly string[] ProhibitSpaces = {
       "Prohibit spaces in file name",
       "Запретить пробелы в имени файла",
       "Sopprimi gli spazi nel nome del file",
       "Leerzeichen im Dateinamen unterdrücken",
-      "抑制文件名中的空格"};
+      "抑制文件名中的空格",
+      "Prohibir espacios en el nombre del archivo",    // ES
+      "Interdire les espaces dans le nom de fichier",  // FR
+      "Dosya adında boşluklara izin verme"};           // TR
+
     public static readonly string[] ProhibitSpacesTip = {
       "Replace all spaces in DXF file name with _ character",
       "Заменять все пробелы в имени DXF-файла на символ _",
       "Sostituisci tutti gli spazi nel nome del file DXF con il carattere _",
       "Ersetzen Sie alle Leerzeichen im DXF-Dateinamen durch das Zeichen _",
-      "将 DXF 文件名中的所有空格替换为 _ 字符"};
+      "将 DXF 文件名中的所有空格替换为 _ 字符",
+      "Reemplazar todos los espacios en el nombre del archivo DXF con el carácter _",  // ES
+      "Remplacer tous les espaces dans le nom de fichier DXF par le caractère _",  // FR
+      "DXF dosya adındaki tüm boşlukları _ karakteriyle değiştir"};  // TR
 
     //======================================  DXFExport File List ===============================================
     public static readonly string[] DXFFileList = {
@@ -371,37 +589,60 @@ namespace AVC
       "Список файлов DXF",
       "Elenco di file DXF",
       "Liste der DXF-Dateien",
-      "DXF 文件列表"};
+      "DXF 文件列表",
+      "Lista de archivos DXF",                         // ES
+      "Liste de fichiers DXF",                         // FR
+      "DXF Dosya Listesi"};                            // TR
+
     public static readonly string[] AllFiles = {
       "All Files",
       "Все файлы",
       "Tutti i file",
       "Alle Dateien",
-      "所有文件"};
+      "所有文件",
+      "Todos los archivos",                            // ES
+      "Tous les fichiers",                             // FR
+      "Tüm Dosyalar"};                                 // TR
+
     public static readonly string[] AllFilesTip = {
       "Open all files",
       "Открыть все файлы",
       "Apri tutti i file",
       "Öffnen Sie alle Dateien",
-      "打开所有文件"};
+      "打开所有文件",
+      "Abrir todos los archivos",                      // ES
+      "Ouvrir tous les fichiers",                      // FR
+      "Tüm dosyaları aç"};                             // TR
+
     public static readonly string[] FileOpenTip = {
       "Open selected file",
       "Открыть выбранный файл",
       "Apri il file selezionato",
       "Ausgewählte Datei öffnen",
-      "打开选定的文件"};
+      "打开选定的文件",
+      "Abrir archivo seleccionado",                    // ES
+      "Ouvrir le fichier sélectionné",                 // FR
+      "Seçili dosyayı aç"};                            // TR
+
     public static readonly string[] FolderOpenTip = {
       "Open selected folder",
       "Открыть папку выбранного файла",
       "Apri la cartella selezionata",
       "Öffnen Sie den Ordner der ausgewählten Datei",
-      "打开所选文件的文件夹"};
+      "打开所选文件的文件夹",
+      "Abrir carpeta seleccionada",                    // ES
+      "Ouvrir le dossier sélectionné",                 // FR
+      "Seçili klasörü aç"};                            // TR
+
     public static readonly string[] DXFFileListHint = {
       "Exported DXF files",
       "Экспортированные файлы DXF",
       "File DXF esportati",
       "Exportierte DXF-Dateien",
-      "导出的 DXF 文件"};
+      "导出的 DXF 文件",
+      "Archivos DXF exportados",                       // ES
+      "Fichiers DXF exportés",                         // FR
+      "Dışa aktarılan DXF dosyaları"};                // TR
 
 
   }

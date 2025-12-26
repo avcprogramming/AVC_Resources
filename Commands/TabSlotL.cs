@@ -4,22 +4,27 @@ namespace AVC
   public static class
   TabSlotL
   {
-    public static readonly string[,] TabSlotStyleNames = { 
-/*0*/   { CommandL.TabSlot[0], CommandL.TabSlot[1], CommandL.TabSlot[2], CommandL.TabSlot[3], CommandL.TabSlot[4]  },
-/*1*/   {
+    public static readonly string[][] TabSlotStyleNames = { 
+/*0*/   CommandL.TabSlot,
+/*1*/   new []{
           "Through",
           "Сквозной",
           "Attraverso",
           "Durch" ,
-          "通过" },
-/*2*/   {
+          "通过",
+          "Pasante",                                   // ES
+          "Traversant",                                // FR
+          "Geçişli" },                                 // TR
+/*2*/   new []{
           "Blind slot",
           "Глухой паз",
           "Fessura cieca",
           "Blinder Schlitz" ,
-          "盲槽" },
+          "盲槽",
+          "Ranura ciega",                              // ES
+          "Rainure aveugle",                           // FR
+          "Kör yuva" },                                // TR
       };
-
 
     //======================= Dialog Box =============================================================
 
@@ -33,14 +38,23 @@ namespace AVC
       "Der Name für diesen TabSlot-Stil (Satz von Einstellungen). \r\n" +
         "Wird im Programm nicht verwendet. Nur zur Bequemlichkeit der Wahl.",
       "此处只作为备注使用的名称。 \r\n" +
-         "在程序中没有使用。只是为了方便阅读。"};
+         "在程序中没有使用。只是为了方便阅读。",
+      "El nombre para este estilo de TabSlot (conjunto de configuraciones). \r\n" +  // ES
+        "No se usa en el programa. Solo por conveniencia de elección.",
+      "Le nom de ce style TabSlot (ensemble de paramètres). \r\n" +  // FR
+        "Non utilisé dans le programme. Uniquement pour la commodité du choix.",
+      "Bu TabSlot stili için ad (ayarlar kümesi). \r\n" +  // TR
+        "Programda kullanılmaz. Sadece seçim kolaylığı için."};
 
     public static readonly string[] Depth = {
       "Depth",
       "Глубина",
       "Profondità",
       "Standardtiefe",
-      "默认深度" };
+      "默认深度",
+      "Profundidad",                                   // ES
+      "Profondeur",                                    // FR
+      "Derinlik" };                                    // TR
 
     public static readonly string[] DepthTip = {
       "The parameter sets the dado (slot) depth.\r\n" +
@@ -61,7 +75,19 @@ namespace AVC
         "und die Tiefe wird für jedes Teil als Teiledicke - |Tiefe| berechnet.",
       "该参数设置榫高度和槽深度。\r\n" +
          "如果你把它设置为 0，那么程序会贯穿槽孔。\r\n" +
-         "负值是铣削后材料的剩余厚度。"};
+         "负值是铣削后材料的剩余厚度。",
+      "El parámetro establece la profundidad de la ranura.\r\n" +  // ES
+        "Si lo establece en 0, el programa cortará a través de la ventana en lugar de la ranura. \r\n" +
+        "Un valor negativo especifica el espesor de material restante después del fresado de ranura,\r\n" +
+        "y la profundidad se calculará para cada pieza como Espesor de pieza - |Profundidad|.\r\n",
+      "Le paramètre définit la profondeur de la rainure.\r\n" +  // FR
+        "Si vous le réglez à 0, le programme coupera à travers la fenêtre au lieu de la rainure. \r\n" +
+        "Une valeur négative spécifie l'épaisseur de matériau restante après le fraisage de rainure,\r\n" +
+        "et la profondeur sera calculée pour chaque pièce comme Épaisseur de pièce - |Profondeur|.\r\n",
+      "Parametre yuva derinliğini ayarlar.\r\n" +  // TR
+        "0'a ayarlarsanız, program yuva yerine pencereyi tamamen kesecektir. \r\n" +
+        "Negatif bir değer, yuva frezelemeden sonra kalan malzeme kalınlığını belirtir,\r\n" +
+        "ve derinlik her parça için Parça Kalınlığı - |Derinlik| olarak hesaplanacaktır.\r\n"};
 
     public static readonly string[] GapTip = {
       "Gap between details.\r\n" +
@@ -83,14 +109,29 @@ namespace AVC
       "开孔间隙。\r\n" +
         "如果你指定一个大于 0 的值，那么切割槽会向各个方向放大。\r\n" +
         "这将使榫头可以毫不费力插入凹槽中。\r\n" +
-        "默认为 0。" };
+        "默认为 0。",
+      "Espacio entre detalles.\r\n" +  // ES
+        "Si especifica un valor mayor que 0, la ranura de corte se ampliará en todas las direcciones.\r\n" +
+        "Esto permitirá que el ensamblaje se deslice libremente en la ranura sin esfuerzo.\r\n" +
+        "Predeterminado 0.",
+      "Espace entre les détails.\r\n" +  // FR
+        "Si vous spécifiez une valeur supérieure à 0, la rainure de coupe sera agrandie dans toutes les directions.\r\n" +
+        "Cela permettra au tenon de glisser librement dans la rainure sans effort.\r\n" +
+        "Par défaut 0.",
+      "Parçalar arasındaki boşluk.\r\n" +  // TR
+        "0'dan büyük bir değer belirtirseniz, kesim yuvası tüm yönlerde büyütülecektir.\r\n" +
+        "Bu, zıvanın yuvaya hiç çaba harcamadan serbestçe kaymasını sağlayacaktır.\r\n" +
+        "Varsayılan 0." };
 
     public static readonly string[] Backlash = {
       "Backlash",
       "Люфт",
       "Gioco",
       "Luft",
-      "间隙"};
+      "间隙",
+      "Holgura",                                       // ES
+      "Jeu",                                           // FR
+      "Boşluk"};                                       // TR
 
     public static readonly string[] BacklashTip = {
       "Backlash in the depth of the slot.\r\n" +
@@ -117,14 +158,32 @@ namespace AVC
         "如果指定大于 0 的值，榫头将会缩短。\r\n" +
         "这将允许零件紧密配合，即使槽中有残留的碎屑。\r\n" +
         "程序不会将深度差距和各个方向的差距相加，而是选择一个较大的值。\r\n" +
-        "默认为 0。"};
+        "默认为 0。",
+      "Holgura en la profundidad de la ranura.\r\n" +  // ES
+        "Si especifica un valor mayor que 0, el ensamblaje se acortará. \r\n" +
+        "Esto permitirá un ajuste apretado de las piezas, incluso si quedan virutas en la ranura.\r\n" +
+        "El programa no suma Holgura y Espacio, sino que se elige el valor mayor.\r\n" +
+        "Predeterminado 0.",
+      "Jeu dans la profondeur de la rainure.\r\n" +  // FR
+        "Si vous spécifiez une valeur supérieure à 0, le tenon sera raccourci. \r\n" +
+        "Cela permettra un ajustement serré des pièces, même s'il reste des copeaux dans la rainure.\r\n" +
+        "Le programme ne somme pas Jeu et Espace, mais la valeur la plus grande est choisie.\r\n" +
+        "Par défaut 0.",
+      "Yuvanın derinliğindeki boşluk.\r\n" +  // TR
+        "0'dan büyük bir değer belirtirseniz, zıvana kısaltılacaktır. \r\n" +
+        "Bu, yuvada talaş kalsa bile parçaların sıkı bir şekilde oturmasını sağlayacaktır.\r\n" +
+        "Program Boşluk ve Aralık'ı toplamaz, daha büyük değer seçilir.\r\n" +
+        "Varsayılan 0."};
 
     public static readonly string[] MaxStep = {
       "Max step",
       "Максимальный шаг",
       "Passo massimo",
       "Maximaler Schritt",
-      "最大步长"};
+      "最大步长",
+      "Paso máximo",                                   // ES
+      "Pas maximum",                                   // FR
+      "Maksimum adım"};                                // TR
 
     public static readonly string[] MaxStepTip = {
       "Maximum allowable length of the gap (stop) between the tabs (tenons). \r\n" +
@@ -149,14 +208,32 @@ namespace AVC
       "榫头之间允许的最大间隙（止动）。\r\n" +
         "如果未指定榫头长度，则榫头长度相同。\r\n" +
         "整个接头（不包括末端止动）将被分成相等的步长。\r\n" +
-        "如果接头短于此值，则将制作一个榫头以覆盖整个接头，忽略榫头长度设置。"};
+        "如果接头短于此值，则将制作一个榫头以覆盖整个接头，忽略榫头长度设置。",
+      "Longitud máxima permitida del espacio (tope) entre los ensamblajes. \r\n" +  // ES
+        "Si no se especifica la longitud del ensamblaje, el ensamblaje será exactamente igual.\r\n" +
+        "La junta completa (excluyendo los topes finales) se dividirá en pasos iguales.\r\n" +
+        "Si la junta es más corta que este valor, se hará un ensamblaje para toda la junta, \r\n" +
+        "ignorando la configuración de longitud del ensamblaje.",
+      "Longueur maximale autorisée de l'espace (butée) entre les tenons. \r\n" +  // FR
+        "Si la longueur du tenon n'est pas spécifiée, le tenon sera exactement le même.\r\n" +
+        "L'ensemble du joint (à l'exclusion des butées finales) sera divisé en étapes égales.\r\n" +
+        "Si le joint est plus court que cette valeur, un tenon sera fait pour tout le joint, \r\n" +
+        "en ignorant le réglage de longueur du tenon.",
+      "Zıvanalar arasındaki boşluğun (durağın) izin verilen maksimum uzunluğu. \r\n" +  // TR
+        "Zıvana uzunluğu belirtilmemişse, zıvana tam olarak aynı olacaktır.\r\n" +
+        "Tüm ek (uç duraklar hariç) eşit adımlara bölünecektir.\r\n" +
+        "Ek bu değerden daha kısaysa, tüm ek için bir zıvana yapılacaktır, \r\n" +
+        "zıvana uzunluğu ayarı göz ardı edilecektir."};
 
     public static readonly string[] MinStepNum = {
       "Minimum number of steps",
       "Минимальное количество шагов",
       "Numero minimo di passaggi",
       "Minimale Anzahl von Schritten",
-      "最小步长"};
+      "最小步长",
+      "Número mínimo de pasos",                        // ES
+      "Nombre minimum d'étapes",                       // FR
+      "Minimum adım sayısı"};                          // TR
 
     public static readonly string[] MinStepNumTip = {
       "Prevent the program from taking too few steps on short joints.\r\n" +
@@ -174,14 +251,26 @@ namespace AVC
         "1 Schritt bedeutet einen durchgehenden Zapfen für die gesamte Verbindung.",
       "防止程序在短接头上执行太少的步骤。\r\n" +
         "计算榫头和它们之间的间隙（止动）。末端止动不计算在内。\r\n" +
-        "1 步将意味着整个接头的实心榫头。" };
+        "1 步将意味着整个接头的实心榫头。",
+      "Evitar que el programa tome demasiados pocos pasos en juntas cortas.\r\n" +  // ES
+        "Se cuentan tanto los ensamblajes como los espacios entre ellos (topes). Los topes finales no se cuentan.\r\n" +
+        "1 paso significará un ensamblaje sólido para toda la junta.",
+      "Empêcher le programme de faire trop peu d'étapes sur les joints courts.\r\n" +  // FR
+        "Les tenons et les espaces entre eux (butées) sont comptés. Les butées finales ne sont pas comptées.\r\n" +
+        "1 étape signifiera un tenon solide pour tout le joint.",
+      "Programın kısa eklerde çok az adım atmasını engelleyin.\r\n" +  // TR
+        "Hem zıvanalar hem de aralarındaki boşluklar (duraklar) sayılır. Uç duraklar sayılmaz.\r\n" +
+        "1 adım, tüm ek için sağlam bir zıvana anlamına gelecektir." };
 
     public static readonly string[] TabLength = {
       "Tab length",
       "Длина шипа",
       "Lunghezza del tenone",
       "Zapfenlänge",
-      "榫头长度"};
+      "榫头长度",
+      "Longitud del ensamblaje",                       // ES
+      "Longueur du tenon",                             // FR
+      "Zıvana uzunluğu"};                              // TR
 
     public static readonly string[] TabLengthTip = {
       "Fixed tab length. The slot will be larger by the gap. \r\n" +
@@ -198,14 +287,26 @@ namespace AVC
         "aber nicht länger als der maximale Schritt.",
       "固定榫头长度。槽将因间隙而变大。\r\n" +
         "如果设置为 0，榫头将等于间隙（止动），并在不同的接头上变化，\r\n" +
-        "但不超过最大步长。"};
+        "但不超过最大步长。",
+      "Longitud fija del ensamblaje. La ranura será más grande por el espacio. \r\n" +  // ES
+        "Si se establece en 0, el ensamblaje será igual al espacio (tope) y variará en diferentes juntas, \r\n" +
+        "pero no más largo que el paso máximo.",
+      "Longueur fixe du tenon. La rainure sera plus grande de l'espace. \r\n" +  // FR
+        "Si réglé à 0, le tenon sera égal à l'espace (butée) et variera sur différents joints, \r\n" +
+        "mais pas plus long que le pas maximum.",
+      "Sabit zıvana uzunluğu. Yuva, boşluk kadar daha büyük olacaktır. \r\n" +  // TR
+        "0'a ayarlanırsa, zıvana boşluğa (durağa) eşit olacak ve farklı eklerde değişecektir, \r\n" +
+        "ancak maksimum adımdan daha uzun olmayacaktır."};
 
     public static readonly string[] Start = {
       "Start pad",
       "Упоры по краям",
       "Fermi iniziali",
       "Anfangsanschläge",
-      "起始垫片" };
+      "起始垫片",
+      "Tope inicial",                                  // ES
+      "Butée de départ",                               // FR
+      "Başlangıç durağı" };                            // TR
 
     public static readonly string[] StartTip = {
       "Indent a fixed distance from both ends of the joint. \r\n" +
@@ -232,14 +333,32 @@ namespace AVC
         "如果设置为大于 0，则在所有接头的边缘都会有一个止动，而不是榫/槽连接。\r\n" +
         "并且这个止动的尺寸不会与榫头之间的其他间隙相同。\r\n" +
         "即使连接从间隙开始，也会进行缩进，\r\n" +
-        "即第一个间隙只是增加到榫头。"};
+        "即第一个间隙只是增加到榫头。",
+      "Sangría a una distancia fija desde ambos extremos de la junta. \r\n" +  // ES
+        "Si se establece en más de 0, habrá un tope en el borde de todas las juntas, no una conexión ensamblaje/ranura. \r\n" +
+        "Y este tope no será del mismo tamaño que los otros espacios entre los ensamblajes. \r\n" +
+        "La sangría se hace incluso si la conexión comienza con un espacio, \r\n" +
+        "es decir, el primer espacio simplemente se aumenta hasta el ensamblaje.",
+      "Indenter à une distance fixe des deux extrémités du joint. \r\n" +  // FR
+        "Si réglé à plus de 0, il y aura une butée au bord de tous les joints, pas une connexion tenon/rainure. \r\n" +
+        "Et cette butée ne sera pas de la même taille que les autres espaces entre les tenons. \r\n" +
+        "L'indentation est faite même si la connexion commence par un espace, \r\n" +
+        "c'est-à-dire que le premier espace est simplement augmenté jusqu'au tenon.",
+      "Ekin her iki ucundan sabit bir mesafe girintisi yapın. \r\n" +  // TR
+        "0'dan fazla ayarlanırsa, tüm eklerin kenarında bir durak olacaktır, zıvana/yuva bağlantısı değil. \r\n" +
+        "Ve bu durak, zıvanalar arasındaki diğer boşluklarla aynı boyutta olmayacaktır. \r\n" +
+        "Bağlantı bir boşlukla başlasa bile girinti yapılır, \r\n" +
+        "yani ilk boşluk basitçe zıvanaya kadar artırılır."};
 
     public static readonly string[] MinArea = {
       "Minimum area",
       "Минимальная площадь",
       "Area minima",
       "Mindestfläche",
-      "最小面积"};
+      "最小面积",
+      "Área mínima",                                   // ES
+      "Surface minimale",                              // FR
+      "Minimum alan"};                                 // TR
 
     public static readonly string[] MinAreaTip = {
       "Do not process joints with an area smaller than the specified one. \r\n" +
@@ -250,14 +369,23 @@ namespace AVC
         "It makes sense to adjust this value when the entire assembly is being processed at once.",
       "Verarbeiten Sie keine Fugen mit einer kleineren Fläche als der angegebenen. \r\n" +
         "Es ist sinnvoll, diesen Wert anzupassen, wenn die gesamte Baugruppe auf einmal bearbeitet wird.",
-      "小于此最小面积将不生成指接榫。 在一次处理多个指接榫时此值是有意义的。"};
+      "小于此最小面积将不生成指接榫。 在一次处理多个指接榫时此值是有意义的。",
+      "No procesar juntas con un área menor que la especificada. \r\n" +  // ES
+        "Tiene sentido ajustar este valor cuando se procesa todo el ensamblaje a la vez.",
+      "Ne pas traiter les joints avec une surface inférieure à celle spécifiée. \r\n" +  // FR
+        "Il est logique d'ajuster cette valeur lorsque l'ensemble de l'assemblage est traité en une seule fois.",
+      "Belirtilenden daha küçük alana sahip ekleri işleme. \r\n" +  // TR
+        "Tüm montaj aynı anda işlenirken bu değeri ayarlamak mantıklıdır."};
 
     public static readonly string[] StartFromTab = {
       "Start with tab",
       "Начинать с шипа",
       "Inizia con un picco",
       "Beginnen Sie mit einer Spitze",
-      "从盖板开始"};
+      "从盖板开始",
+      "Comenzar con ensamblaje",                       // ES
+      "Commencer avec tenon",                          // FR
+      "Zıvana ile başla"};                             // TR
 
     public static readonly string[] StartFromTabTip = {
       "The first step is to make a tab and slot. \r\n" +
@@ -269,14 +397,23 @@ namespace AVC
       "Der erste Schritt besteht darin, eine Nut und Feder zu machen. \r\n" +
         "Wenn die Option deaktiviert ist, bleibt das Stopp-Pad beim ersten Schritt.",
       "第一步是盖板制作榫槽。 \r\n" +
-        "如果该选项被禁用，则短板第一步是制作榫槽。"};
+        "如果该选项被禁用，则短板第一步是制作榫槽。",
+      "El primer paso es hacer un ensamblaje y ranura. \r\n" +  // ES
+        "Si la opción está deshabilitada, el tope permanece en el primer paso.",
+      "La première étape consiste à faire un tenon et une rainure. \r\n" +  // FR
+        "Si l'option est désactivée, la butée reste à la première étape.",
+      "İlk adım bir zıvana ve yuva yapmaktır. \r\n" +  // TR
+        "Seçenek devre dışı bırakılırsa, durak ilk adımda kalır."};
 
     public static readonly string[] Odd = {
       "Odd number of steps",
       "Нечетное количество шагов",
       "Numero dispari di passaggi",
       "Ungerade Anzahl von Schritten",
-      "奇数步数"};
+      "奇数步数",
+      "Número impar de pasos",                         // ES
+      "Nombre impair d'étapes",                        // FR
+      "Tek sayıda adım"};                              // TR
 
     public static readonly string[] OddTip = {
       "Always divide the joint into an odd number of steps. \r\n" +
@@ -290,9 +427,18 @@ namespace AVC
         "E se è impostato 'Inizia con tenone', i tenoni e le scanalature verranno eseguiti su entrambe le estremità.",
       "Teilen Sie die Naht immer in eine ungerade Anzahl von Schritten. \r\n" +
         "Dann verbleiben zwei Druckstücke an beiden Enden des Gelenks. \r\n" +
-        "Und wenn „Mit Zapfen beginnen“ eingestellt ist, werden Zapfen und Nuten an beiden Enden hergestellt.",
+        "Und wenn 'Mit Zapfen beginnen' eingestellt ist, werden Zapfen und Nuten an beiden Enden hergestellt.",
       "始终将榫齿分成奇数个。 \r\n" +
         "两个榫齿将保留在接头的两端。 \r\n" +
-        "如果设置了“从盖板开始”，则在盖板和短板之间切换凹槽和榫齿的顺序。"};
+        "如果设置了'从盖板开始'，则在盖板和短板之间切换凹槽和榫齿的顺序。",
+      "Siempre dividir la junta en un número impar de pasos. \r\n" +  // ES
+        "Entonces dos topes permanecerán en ambos extremos de la junta. \r\n" +
+        "Y si se establece 'Comenzar con ensamblaje', entonces se harán ensamblajes y ranuras en ambos extremos.",
+      "Toujours diviser le joint en un nombre impair d'étapes. \r\n" +  // FR
+        "Alors deux butées resteront aux deux extrémités du joint. \r\n" +
+        "Et si 'Commencer avec tenon' est réglé, alors des tenons et rainures seront faits aux deux extrémités.",
+      "Eki her zaman tek sayıda adıma bölün. \r\n" +  // TR
+        "O zaman ekin her iki ucunda iki durak kalacaktır. \r\n" +
+        "Ve 'Zıvana ile başla' ayarlanırsa, her iki uçta da zıvanalar ve yuvalar yapılacaktır."};
   }
 }

@@ -14,24 +14,39 @@ namespace AVC
       "Требуется завершить работу AutoCAD и перезапустить установку.",
       "Richiede l'arresto di AutoCAD e il riavvio dell'installazione.",
       "Dazu muss AutoCAD heruntergefahren und die Installation neu gestartet werden.",
-      "您需要关闭 AutoCAD 并重新开始安装。" };
+      "您需要关闭 AutoCAD 并重新开始安装。",
+      "Se requiere cerrar AutoCAD y reiniciar la instalación.",
+      "Nécessite l'arrêt d'AutoCAD et le redémarrage de l'installation.",
+      "AutoCAD'in kapatılması ve kurulumun yeniden başlatılması gerekiyor."};
+
     public static readonly string[] BricscadIsRunning = {
       "It requires shutting down BricsCAD and restarting the installation.",
       "Требуется завершить работу BricsCAD и перезапустить установку.",
       "Richiede l'arresto di BricsCAD e il riavvio dell'installazione.",
       "Dazu muss BricsCAD heruntergefahren und die Installation neu gestartet werden.",
-      "您需要关闭 BricsCAD 并重新开始安装。" };
+      "您需要关闭 BricsCAD 并重新开始安装。",
+      "Se requiere cerrar BricsCAD y reiniciar la instalación.",
+      "Nécessite l'arrêt de BricsCAD et le redémarrage de l'installation.",
+      "BricsCAD'in kapatılması ve kurulumun yeniden başlatılması gerekiyor."};
+
     public static readonly string[] ClearSupport = {
       "The Support folder has been cleared of the plugins menu",
       "Папка Support очищена от меню плагинов",
       "La cartella Support è stata cancellata dal menu dei plugin",
       "Der Support-Ordner wurde aus dem Plugin-Menü entfernt",
-      "支持文件夹已从插件菜单中清除" };
+      "支持文件夹已从插件菜单中清除",
+      "La carpeta Support ha sido limpiada del menú de complementos",
+      "Le dossier Support a été nettoyé du menu des plug-ins",
+      "Destek klasörü eklenti menüsünden temizlendi"};
+
     public static readonly string[] AutodeskErr = {
       "For latest updates, download the installer From Autodesk App Store",
       "Загрузите инсталлятор из Autodesk AppStore.",
       "Scarica il programma di installazione da Autodesk AppStore.",
       "Laden Sie das Installationsprogramm aus dem Autodesk AppStore herunter.",
-      "有关最新更新，请从 Autodesk App Store 下载安装程序" };
+      "有关最新更新，请从 Autodesk App Store 下载安装程序",
+      "Para obtener las últimas actualizaciones, descargue el instalador de Autodesk App Store",
+      "Pour les dernières mises à jour, téléchargez le programme d'installation depuis Autodesk App Store",
+      "En son güncellemeler için yükleyiciyi Autodesk App Store'dan indirin"};
   }
 }

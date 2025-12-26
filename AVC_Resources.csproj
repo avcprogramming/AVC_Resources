@@ -62,7 +62,7 @@
     <Compile Include="Commands\DrillL.cs" />
     <Compile Include="Commands\DwgTreeL.cs" />
     <Compile Include="Commands\DxfExportL.cs" />
-    <Compile Include="Commands\EntityFilterL.cs" />
+    <Compile Include="EntityFilterL.cs" />
     <Compile Include="Commands\ExportSettingsL.cs" />
     <Compile Include="Commands\ExposeL.cs" />
     <Compile Include="Commands\FilletL.cs" />
@@ -86,7 +86,7 @@
     <Compile Include="Commands\SelectSameL.cs" />
     <Compile Include="Commands\SmartLeaderL.cs" />
     <Compile Include="Commands\SolidSubL.cs" />
-    <Compile Include="Commands\StyleParentL.cs" />
+    <Compile Include="StyleParentL.cs" />
     <Compile Include="Commands\SumLenL.cs" />
     <Compile Include="Commands\TabSlotL.cs" />
     <Compile Include="Commands\TntL.cs" />

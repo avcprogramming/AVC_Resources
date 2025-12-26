@@ -4,25 +4,26 @@ namespace AVC
   public static class
   ReduceWeightL
   {
-    public static readonly string[,] RWStyleNames = { 
-/*0*/   {
-        CommandL.ReduceW[0],
-        CommandL.ReduceW[1],
-        CommandL.ReduceW[2],
-        CommandL.ReduceW[3],
-        CommandL.ReduceW[4]  },
-/*1*/   {
+    public static readonly string[][] RWStyleNames = { 
+/*0*/  CommandL.ReduceW,
+/*1*/   new []{
         "Window",
         "Окно",
         "Finestra",
         "Fenster" ,
-        "窗户" },
-/*2*/   {
+        "窗户",
+        "Ventana",                                     // ES
+        "Fenêtre",                                     // FR
+        "Pencere" },                                   // TR
+/*2*/   new []{
         "Pocket",
         "Выборка",
         "Tasca",
         "Tasche" ,
-        "口袋" },
+        "口袋",
+        "Bolsillo",                                    // ES
+        "Poche",                                       // FR
+        "Cep" },                                       // TR
       };
 
     public static readonly string[] Select = {
@@ -30,84 +31,120 @@ namespace AVC
       "  Выберите детали, которые надо облегчить",
       "  Seleziona le parti che devono essere ridotte di peso",
       "  Wählen Sie die Teile aus, die im Gewicht reduziert werden müssen",
-      "  选择需要减轻重量的部件"};
+      "  选择需要减轻重量的部件",
+      "  Seleccione las piezas que necesitan reducir peso",  // ES
+      "  Sélectionnez les pièces qui doivent être allégées",  // FR
+      "  Ağırlığın azaltılması gereken parçaları seçin"};  // TR
 
     public static readonly string[] SolidErr = {
       "Failed to get solid for editing",
       "Не удалось получить солид для редактирования",
       "Impossibile ottenere il solido per la modifica",
       "Solid zum Bearbeiten konnte nicht abgerufen werden",
-      "无法进行编辑"};
+      "无法进行编辑",
+      "No se pudo obtener el sólido para editar",      // ES
+      "Échec de l'obtention du solide pour l'édition",  // FR
+      "Düzenleme için katı alınamadı"};                // TR
 
     public static readonly string[] LayMatrixErr = {
       "It was not possible to measure the part to obtain the laying matrix.",
       "Не удалось обмерить деталь для получения матрицы выкладки",
       "Non è stato possibile misurare il pezzo per ottenere la matrice di posa.",
       "Eine Vermessung des Teils zur Gewinnung der Verlegematrize war nicht möglich.",
-      "无法测量零件以获得铺设矩阵。"};
+      "无法测量零件以获得铺设矩阵。",
+      "No fue posible medir la pieza para obtener la matriz de colocación.",  // ES
+      "Il n'a pas été possible de mesurer la pièce pour obtenir la matrice de pose.",  // FR
+      "Döşeme matrisini elde etmek için parçayı ölçmek mümkün olmadı."};  // TR
 
     public static readonly string[] AnalysisErr = {
       "Failed to analyze the part and get its contours.",
       "Не удалось проанализировать деталь и получить ее контуры.",
       "Impossibile analizzare la parte e ottenerne i contorni.",
       "Das Teil konnte nicht analysiert und seine Konturen abgerufen werden.",
-      "未能分析零件并获得其轮廓。"};
+      "未能分析零件并获得其轮廓。",
+      "No se pudo analizar la pieza y obtener sus contornos.",  // ES
+      "Échec de l'analyse de la pièce et de l'obtention de ses contours.",  // FR
+      "Parça analiz edilemedi ve konturları alınamadı."};  // TR
 
     public static readonly string[] OffsetErr = {
       "Failed to get window outline. Perhaps the offset is too large.",
       "Не удалось получить контур окна. Возможно задан слишком большой отступ",
       "Impossibile ottenere il contorno della finestra. Forse l'offset è troppo grande.",
       "Fensterumriss konnte nicht abgerufen werden. Vielleicht ist der Versatz zu groß.",
-      "获取窗口轮廓失败。 可能偏移量太大。"};
+      "获取窗口轮廓失败。 可能偏移量太大。",
+      "No se pudo obtener el contorno de la ventana. Quizás el desplazamiento es demasiado grande.",  // ES
+      "Échec de l'obtention du contour de la fenêtre. Peut-être que le décalage est trop grand.",  // FR
+      "Pencere konturu alınamadı. Belki de ofset çok büyük."};  // TR
 
     public static readonly string[] RegionErr = {
       "Failed to create window region",
       "Не удалось создать регион окна",
       "Impossibile creare la regione della finestra",
       "Fensterbereich konnte nicht erstellt werden",
-      "创建窗口区域失败"};
+      "创建窗口区域失败",
+      "No se pudo crear la región de ventana",         // ES
+      "Échec de la création de la région de fenêtre",  // FR
+      "Pencere bölgesi oluşturulamadı"};               // TR
 
     public static readonly string[] DividedErr = {
       "The window was divided by jumpers into too small parts. There is no point in cutting such small windows.",
       "Окно разделилось перемычками на слишком мелкие части. Нет смысла вырезать такие маленькие окна.",
       "La finestra era divisa da ponticelli in parti troppo piccole. Non ha senso tagliare finestre così piccole.",
       "Das Fenster wurde durch Jumper in zu kleine Teile geteilt. Es hat keinen Sinn, so kleine Fenster zu schneiden.",
-      "窗户被跳线分成太小的部分。 剪这么小的窗户是没有意义的。"};
+      "窗户被跳线分成太小的部分。 剪这么小的窗户是没有意义的。",
+      "La ventana fue dividida por puentes en partes demasiado pequeñas. No tiene sentido cortar ventanas tan pequeñas.",  // ES
+      "La fenêtre a été divisée par des ponts en parties trop petites. Il n'y a aucun intérêt à découper de si petites fenêtres.",  // FR
+      "Pencere köprülerle çok küçük parçalara bölündü. Bu kadar küçük pencereleri kesmek anlamsız."};  // TR
 
     public static readonly string[] TooSmallWindowErr = {
       "The window is less offset. There is no point in cutting such small windows.",
       "Окно меньше отступа. Нет смысла вырезать такие маленькие окна.",
       "La finestra è meno rientrata. Non ha senso tagliare finestre così piccole.",
       "Das Fenster ist weniger eingerückt. Es hat keinen Sinn, so kleine Fenster zu schneiden.",
-      "窗口缩进较少。 剪这么小的窗户是没有意义的。"};
+      "窗口缩进较少。 剪这么小的窗户是没有意义的。",
+      "La ventana es menor que el desplazamiento. No tiene sentido cortar ventanas tan pequeñas.",  // ES
+      "La fenêtre est inférieure au décalage. Il n'y a aucun intérêt à découper de si petites fenêtres.",  // FR
+      "Pencere ofsetten daha küçük. Bu kadar küçük pencereleri kesmek anlamsız."};  // TR
 
     public static readonly string[] TooSmallSolidErr = {
       "The solid is too small to cut a window with a given offset. {0}",
       "Солид слишком мал, чтоб вырезать окно с заданным смещением. {0}",
       "Il solido è troppo piccolo per tagliare una finestra con un determinato offset. {0}",
       "Der Volumenkörper ist zu klein, um ein Fenster mit einem bestimmten Versatz zu schneiden. {0}",
-      "实体太小，无法以给定的偏移量切割窗口。{0}"};
+      "实体太小，无法以给定的偏移量切割窗口。{0}",
+      "El sólido es demasiado pequeño para cortar una ventana con un desplazamiento dado. {0}",  // ES
+      "Le solide est trop petit pour découper une fenêtre avec un décalage donné. {0}",  // FR
+      "Katı, belirli bir ofsetle pencere kesmek için çok küçük. {0}"};  // TR
 
     public static readonly string[] ExtrudeErr = {
       "It was not possible to create a solid for subtraction. The window region is saved in the drawing.",
       "Не получилось создать солид для вычитания. Регион окна сохранен в чертеже.",
       "Non è stato possibile creare un solido per la sottrazione. La regione della finestra viene salvata nel disegno.",
       "Es war nicht möglich, einen Volumenkörper für die Subtraktion zu erstellen. Der Fensterbereich wird in der Zeichnung gespeichert.",
-      "不可能为减法创建实体。 窗口区域保存在图形中。"};
+      "不可能为减法创建实体。 窗口区域保存在图形中。",
+      "No fue posible crear un sólido para la sustracción. La región de ventana se guarda en el dibujo.",  // ES
+      "Il n'a pas été possible de créer un solide pour la soustraction. La région de fenêtre est enregistrée dans le dessin.",  // FR
+      "Çıkarma için katı oluşturulamadı. Pencere bölgesi çizime kaydedildi."};  // TR
 
     public static readonly string[] JumperErr = {
       "Jumper spacing {0} is too small for jumper width {1}",
       "Шаг расстановки перемычек {0} слишком мал для перемычек шириной {1}",
       "La spaziatura del ponticello {0} è troppo piccola per la larghezza del ponticello {1}",
       "Jumperabstand {0} ist zu klein für Jumperbreite {1}",
-      "跳线间距 {0} 对于跳线宽度 {1} 来说太小"};
+      "跳线间距 {0} 对于跳线宽度 {1} 来说太小",
+      "El espaciado de puentes {0} es demasiado pequeño para el ancho de puente {1}",  // ES
+      "L'espacement des ponts {0} est trop petit pour la largeur de pont {1}",  // FR
+      "Köprü aralığı {0}, köprü genişliği {1} için çok küçük"};  // TR
 
     public static readonly string[] SkipSmallWindowInfo = {
       "Part of the window will not be cut because it is too small",
       "Отдельная часть окна не будет вырезана, так как она слишком мелкая",
       "Parte della finestra non verrà tagliata perché troppo piccola",
       "Ein Teil des Fensters wird nicht geschnitten, da es zu klein ist",
-      "部分窗口不会被切割，因为它太小了"};
+      "部分窗口不会被切割，因为它太小了",
+      "Parte de la ventana no se cortará porque es demasiado pequeña",  // ES
+      "Une partie de la fenêtre ne sera pas découpée car elle est trop petite",  // FR
+      "Pencerenin bir kısmı çok küçük olduğu için kesilmeyecek"};  // TR
 
     //======================= Dialog Box =============================================================
 
@@ -121,14 +158,23 @@ namespace AVC
       "Der Name für diesen ReduceW-Stil (Satz von Einstellungen). \r\n" +
         "Wird im Programm nicht verwendet. Nur zur Bequemlichkeit der Wahl.",
       "这种重量损失命令样式的名称。 \r\n" +
-        "程序中未使用。 仅为方便起见。"};
+        "程序中未使用。 仅为方便起见。",
+      "El nombre para este estilo de reducción (conjunto de configuraciones). \r\n" +  // ES
+        "No se usa en el programa. Solo por conveniencia de elección.",
+      "Le nom de ce style de réduction (ensemble de paramètres). \r\n" +  // FR
+        "Non utilisé dans le programme. Uniquement pour la commodité du choix.",
+      "Bu azaltma stili için ad (ayarlar kümesi). \r\n" +  // TR
+        "Programda kullanılmaz. Sadece seçim kolaylığı için."};
 
     public static readonly string[] Offset = {
       "Offset",
       "Отступ",
       "Offset",
       "Versatz",
-      "抵消"};
+      "抵消",
+      "Desplazamiento",                                // ES
+      "Décalage",                                      // FR
+      "Ofset"};                                        // TR
 
     public static readonly string[] OffsetTip = {
       "The width of the strip of material to be left around the edge \r\n" +
@@ -141,14 +187,26 @@ namespace AVC
       "Die Breite des Materialstreifens, der nach dem Schneiden des Fensters um \r\n" +
         "die Kante des Teils verbleibt. Die gleiche Breite wird für Jumper verwendet.",
       "窗口被切割后留在零件边缘周围的材料条的宽度。 \r\n" +
-        "跳线使用相同的宽度。"};
+        "跳线使用相同的宽度。",
+      "El ancho de la franja de material que se dejará alrededor del borde \r\n" +  // ES
+        "de la pieza después de cortar la ventana. \r\n" +
+        "El mismo ancho se usa para puentes.",
+      "La largeur de la bande de matériau à laisser autour du bord \r\n" +  // FR
+        "de la pièce après la découpe de la fenêtre. \r\n" +
+        "La même largeur est utilisée pour les ponts.",
+      "Pencere kesildikten sonra parçanın kenarında bırakılacak \r\n" +  // TR
+        "malzeme şeridinin genişliği. \r\n" +
+        "Köprüler için aynı genişlik kullanılır."};
 
     public static readonly string[] PocketDepth = {
       "Pocket Depth",
       "Глубина выборки",
       "Profondità tascabile",
       "Taschentiefe",
-      "口袋深度"};
+      "口袋深度",
+      "Profundidad de bolsillo",                       // ES
+      "Profondeur de poche",                           // FR
+      "Cep derinliği"};                                // TR
 
     public static readonly string[] DepthTip = {
       "Specify how much material to remove.\r\n" +
@@ -179,14 +237,35 @@ namespace AVC
          "如果你把它设置为 0，那么程序会切穿窗口。\r\n" +
          "负值指定铣削后材料的剩余厚度，每个零件的深度将计算为零件厚度 - |深度|。\r\n" +
          "选择是从零件的背面切割的，保留正面。\r\n" +
-         "你可以帮助程序选择带有颜色标签的正面。"};
+         "你可以帮助程序选择带有颜色标签的正面。",
+      "Especifique cuánto material eliminar.\r\n" +  // ES
+         "Si lo establece en 0, el programa cortará a través de la ventana.\r\n" +
+         "La selección se corta desde la parte posterior de la pieza, manteniendo el lado frontal.\r\n" +
+        "Un valor negativo especifica el espesor de material restante después del fresado,\r\n" +
+        "y la profundidad se calculará para cada pieza como Espesor de pieza - |Profundidad|.\r\n" +
+         "Puede ayudar al programa a elegir el lado frontal con una etiqueta de color.",
+      "Spécifiez combien de matériau supprimer.\r\n" +  // FR
+         "Si vous le réglez à 0, le programme coupera à travers la fenêtre.\r\n" +
+         "La sélection est coupée de l'arrière de la pièce, en conservant le côté avant.\r\n" +
+        "Une valeur négative spécifie l'épaisseur de matériau restante après fraisage,\r\n" +
+        "et la profondeur sera calculée pour chaque pièce comme Épaisseur de pièce - |Profondeur|.\r\n" +
+         "Vous pouvez aider le programme à choisir le côté avant avec une étiquette de couleur.",
+      "Ne kadar malzeme kaldırılacağını belirtin.\r\n" +  // TR
+         "0'a ayarlarsanız, program pencereyi tamamen kesecektir.\r\n" +
+         "Seçim, parçanın arka tarafından kesilir, ön taraf korunur.\r\n" +
+        "Negatif bir değer, frezelemeden sonra kalan malzeme kalınlığını belirtir\r\n" +
+        "ve derinlik her parça için Parça Kalınlığı - |Derinlik| olarak hesaplanacaktır.\r\n" +
+         "Programa renk etiketi ile ön tarafı seçmesine yardımcı olabilirsiniz."};
 
     public static readonly string[] Jumper = {
       "Jumpers Step",
       "Шаг перемычек",
       "Passo del ponticello",
       "Jumper-Pitch",
-      "跳投间距"};
+      "跳投间距",
+      "Paso de puentes",                               // ES
+      "Pas des ponts",                                 // FR
+      "Köprü adımı"};                                  // TR
 
     public static readonly string[] JumperTip = {
       "The maximum allowed window size.\r\n" +
@@ -213,7 +292,22 @@ namespace AVC
          "如果窗口结果大于这个大小，那么程序应该留下一个跳线来增强力量。\r\n" +
          "跳线放置在根据 LAY 命令规则布局的零件上的 X 和 Y 网格中。\r\n" +
          "如果不需要跳线，则将值设置为 0。\r\n" +
-         "但是无论这种设置如何，都会跳线到孔和槽。"};
+         "但是无论这种设置如何，都会跳线到孔和槽。",
+      "El tamaño máximo permitido de ventana.\r\n" +  // ES
+         "Si la ventana resulta ser mayor que este tamaño, el programa debe dejar un puente para resistencia.\r\n" +
+         "Los puentes se colocan en una cuadrícula X e Y en una pieza dispuesta según las reglas del comando LAY.\r\n" +
+         "Si no se necesitan puentes, establezca el valor en 0.\r\n" +
+         "Pero los puentes para agujeros y ranuras se harán independientemente de esta configuración.",
+      "La taille maximale de fenêtre autorisée.\r\n" +  // FR
+         "Si la fenêtre s'avère être plus grande que cette taille, le programme doit laisser un pont pour la résistance.\r\n" +
+         "Les ponts sont placés dans une grille X et Y sur une pièce disposée selon les règles de la commande LAY.\r\n" +
+         "Si les ponts ne sont pas nécessaires, définissez la valeur sur 0.\r\n" +
+         "Mais les ponts vers les trous et les fentes seront faits indépendamment de ce réglage.",
+      "İzin verilen maksimum pencere boyutu.\r\n" +  // TR
+         "Pencere bu boyuttan büyük çıkarsa, program dayanıklılık için bir köprü bırakmalıdır.\r\n" +
+         "Köprüler, LAY komutunun kurallarına göre düzenlenmiş bir parça üzerinde X ve Y ızgarasına yerleştirilir.\r\n" +
+         "Köprülere ihtiyaç yoksa, değeri 0 olarak ayarlayın.\r\n" +
+         "Ancak deliklere ve yuvalara köprüler bu ayardan bağımsız olarak yapılacaktır."};
 
   }
 }
