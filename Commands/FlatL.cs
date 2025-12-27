@@ -216,13 +216,13 @@ namespace AVC
         "Если отключить опцию, то программа всегда будет работать в мировой системе координат (МСК = WCS)",
       "Utilizza il sistema di coordinate utente corrente (UCS). \r\n" +
         "Se disabiliti l'opzione, il programma funzionerà sempre nel sistema di coordinate mondiali (WCS)",
-      "Verwenden Sie das aktuelle Benutzerkoordinatensystem (UCS). \r\n" +
-        "Wenn Sie die Option deaktivieren, arbeitet das Programm immer im Weltkoordinatensystem (WCS).",
+      "Verwenden Sie das aktuelle Benutzerkoordinatensystem (BKS). \r\n" +
+        "Wenn Sie die Option deaktivieren, arbeitet das Programm immer im Weltkoordinatensystem (WKS).",
       "使用当前用户坐标系 (UCS)。如果禁用该选项，程序将始终在世界坐标系（WCS）中运行",
-      "Usar el sistema de coordenadas de usuario actual (UCS). \r\n" +  // ES
-        "Si desactiva esta opción, el programa siempre trabajará en el sistema de coordenadas mundial (WCS)",
-      "Utiliser le système de coordonnées utilisateur actuel (UCS). \r\n" +  // FR
-        "Si vous désactivez cette option, le programme fonctionnera toujours dans le système de coordonnées mondial (WCS)",
+      "Usar el sistemas de coordenadas personales actual (SCP). \r\n" +  // ES
+        "Si desactiva esta opción, el programa siempre trabajará en el sistema de coordenadas universales (SCU)",
+      "Utiliser le sistemas de coordenadas utilisateur actuel (SCU). \r\n" +  // FR
+        "Si vous désactivez cette option, le programme fonctionnera toujours dans le système de coordonnées général (SCG)",
       "Geçerli kullanıcı koordinat sistemini (UCS) kullanın. \r\n" +  // TR
         "Bu seçeneği devre dışı bırakırsanız, program her zaman dünya koordinat sisteminde (WCS) çalışacaktır" };
 

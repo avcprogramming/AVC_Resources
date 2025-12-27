@@ -951,10 +951,10 @@ namespace AVC
         "Sowie Zylinderflächen, bei denen die Achse des Zylinders parallel zur Koordinatenachse ist.",
       "沿给定 UCS 轴 X 切割面。将加工平行于该坐标轴的所有平面。\r\n" +
         "以及圆柱的轴线与坐标轴平行的圆柱表面。",
-      "Cortar caras a lo largo de un eje UCS X dado. \r\n" +  // ES
+      "Cortar caras a lo largo de un eje SCP X dado. \r\n" +  // ES
         "Se mecanizarán todas las superficies planas paralelas a este eje de coordenadas.\r\n" +
         "Así como superficies cilíndricas en las que el eje del cilindro es paralelo al eje de coordenadas.",
-      "Couper les faces le long d'un axe UCS X donné. \r\n" +  // FR
+      "Couper les faces le long d'un axe SCU X donné. \r\n" +  // FR
         "Toutes les surfaces planes parallèles à cet axe de coordonnées seront usinées.\r\n" +
         "Ainsi que les surfaces cylindriques dans lesquelles l'axe du cylindre est parallèle à l'axe de coordonnées.",
       "Verilen bir UCS X ekseni boyunca yüzleri kesin. \r\n" +  // TR
@@ -976,10 +976,10 @@ namespace AVC
         "Sowie Zylinderflächen, bei denen die Achse des Zylinders parallel zur Koordinatenachse ist.",
       "沿给定 UCS 轴 Y 切割面。将加工平行于该坐标轴的所有平面。\r\n" +
         "以及圆柱的轴线与坐标轴平行的圆柱表面。",
-      "Cortar caras a lo largo de un eje UCS Y dado.\r\n" +  // ES
+      "Cortar caras a lo largo de un eje SCP Y dado.\r\n" +  // ES
         "Se mecanizarán todas las superficies planas paralelas a este eje de coordenadas.\r\n" +
         "Así como superficies cilíndricas en las que el eje del cilindro es paralelo al eje de coordenadas.",
-      "Couper les faces le long d'un axe UCS Y donné.\r\n" +  // FR
+      "Couper les faces le long d'un axe SCU Y donné.\r\n" +  // FR
         "Toutes les surfaces planes parallèles à cet axe de coordonnées seront usinées.\r\n" +
         "Ainsi que les surfaces cylindriques dans lesquelles l'axe du cylindre est parallèle à l'axe de coordonnées.",
       "Verilen bir UCS Y ekseni boyunca yüzleri kesin.\r\n" +  // TR
@@ -1001,10 +1001,10 @@ namespace AVC
         "Sowie Zylinderflächen, bei denen die Achse des Zylinders parallel zur Koordinatenachse ist.",
       "沿给定 UCS 轴 Z 切割面。将加工平行于该坐标轴的所有平面。\r\n" +
         "以及圆柱的轴线与坐标轴平行的圆柱表面。",
-      "Cortar caras a lo largo de un eje UCS Z dado. \r\n" +  // ES
+      "Cortar caras a lo largo de un eje SCP Z dado. \r\n" +  // ES
         "Se mecanizarán todas las superficies planas paralelas a este eje de coordenadas.\r\n" +
         "Así como superficies cilíndricas en las que el eje del cilindro es paralelo al eje de coordenadas.",
-      "Couper les faces le long d'un axe UCS Z donné. \r\n" +  // FR
+      "Couper les faces le long d'un axe SCU Z donné. \r\n" +  // FR
         "Toutes les surfaces planes parallèles à cet axe de coordonnées seront usinées.\r\n" +
         "Ainsi que les surfaces cylindriques dans lesquelles l'axe du cylindre est parallèle à l'axe de coordonnées.",
       "Verilen bir UCS Z ekseni boyunca yüzleri kesin. \r\n" +  // TR

@@ -637,7 +637,7 @@ namespace AVC
       "Ignore UCS",
       "Игнорировать ПСК (UCS)",
       "Ignora l'UCS",
-      "UCS ignorieren",
+      "BKS ignorieren",
       "忽略 UCS",
       "Ignorar SCP",  // ES
       "Ignorer le SCU",  // FR
@@ -1116,8 +1116,8 @@ namespace AVC
     public static readonly string[] UpwardTip = {
       "The Z axis of the block will be deployed closer to the Z direction of the current UCS",
       "Ось Z блока будет развернута ближе к направлению оси Z текущей пользовательской системы координат (UCS). ",
-      "L'asse Z del blocco verrà distribuito più vicino alla direzione Z del sistema di coordinate corrente.",
-      "Die Z-Achse des Blocks wird näher an der Z-Richtung des aktuellen Koordinatensystems eingesetzt.",
+      "L'asse Z del blocco verrà distribuito più vicino alla direzione Z del sistema di coordinate corrente (UCS).",
+      "Die Z-Achse des Blocks wird näher an der Z-Richtung des aktuellen Koordinatensystems eingesetzt (BCS).",
       "块的 Z 轴将部署得更靠近当前坐标系的 Z 方向。",
       "El eje Z del bloque se desplegará más cerca de la dirección Z del SCP actual",  // ES
       "L'axe Z du bloc sera déployé plus près de la direction Z du SCU actuel",  // FR

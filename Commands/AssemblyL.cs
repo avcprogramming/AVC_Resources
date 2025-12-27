@@ -375,10 +375,10 @@ namespace AVC
       "UCS origin",
       "Начало координат ПСК",
       "Origine dell'UCS",
-      "UCS-Ursprung",
+      "BKS-Ursprung",
       "UCS起源",
-      "Origen UCS",
-      "Origine UCS",
+      "Origen CSP",
+      "Origine SCU",
       "UCS başlangıcı"};
     public static readonly string[] UcsOriginTip = {
       "Assign the base point of the block to the origin point (zero) of the current user coordinate system.",
@@ -485,10 +485,10 @@ namespace AVC
       "By current UCS",
       "По текущей ПСК",
       "In base all'attuale UCS",
-      "Nach aktuellem UCS",
+      "Nach aktuellem BKS",
       "按当前 UCS",
-      "Por UCS actual",
-      "Par UCS actuel",
+      "Por CSP actual",
+      "Par SCU actuel",
       "Mevcut UCS'ye göre"};
     public static readonly string[] UcsTip = {
       "Leave the block's coordinate system as the current user coordinate system (UCS).",
@@ -496,8 +496,8 @@ namespace AVC
       "Lasciare il sistema di coordinate del blocco come sistema di coordinate dell'utente corrente (UCS).",
       "Belassen Sie das Koordinatensystem des Blocks als aktuelles Benutzerkoordinatensystem (BKS).",
       "将块的坐标系保留为当前用户坐标系 (UCS)。",
-      "Dejar el sistema de coordenadas del bloque como el sistema de coordenadas de usuario actual (UCS).",
-      "Laisser le système de coordonnées du bloc comme système de coordonnées utilisateur actuel (UCS).",
+      "Dejar el sistema de coordenadas del bloque como el sistemas de coordenadas personales actual (SCP).",
+      "Laisser le système de coordonnées du bloc comme système de coordonnées utilisateur actuel (SCU).",
       "Bloğun koordinat sistemini mevcut kullanıcı koordinat sistemi (UCS) olarak bırakın."};
     public static readonly string[] Wcs = {
       "Use WCS (do not rotate)",

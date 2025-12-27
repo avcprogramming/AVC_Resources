@@ -1855,16 +1855,6 @@ namespace AVC
       "Modélisation",
       "Modelleme"};
 
-    public static readonly string[] Tables = {
-      "Tables",
-      "Таблицы",
-      "Tabelle",
-      "Tabellen",
-      "表",
-      "Tablas",
-      "Tableaux",
-      "Tablolar"};
-
     public static readonly string[] Annotations = {
       "Annotations",
       "Аннотации",
@@ -1874,16 +1864,6 @@ namespace AVC
       "Anotaciones",
       "Annotations",
       "Açıklamalar"};
-
-    public static readonly string[] Blocks = {
-      "Blocks",
-      "Блоки",
-      "Blocchi",
-      "Blöcke",
-      "块",
-      "Bloques",
-      "Blocs",
-      "Bloklar"};
 
     public static readonly string[] CNC2d = {
       "2D and CNC",
@@ -1925,8 +1905,61 @@ namespace AVC
       "Palettes de texte",
       "Metin Paletleri"};
 
+    public static readonly string[] UCS = {
+      "UCS",
+      "ПСК",
+      "UCS",
+      "BKS",
+      "UCS",
+      "CSP",
+      "SCU",
+      "UCS"};
+
+    public static readonly string[] Modify = {
+      "Modify",
+      "Редактирование",
+      "Modificare",
+      "Ändern",
+      "修改",
+      "Modificar",
+      "Modifier",
+      "Düzenle"
+    };
+
+    public static readonly string[] Draw = {
+      "Draw",
+      "Черчение",
+      "Disegnare",
+      "Zeichnen",
+      "绘图",
+      "Dibujar",
+      "Dessiner",
+      "Çiz"
+    };
+
+    public static readonly string[] SolidEditing = {
+      "Solid Editing",
+      "3D редактирование",
+      "Modifica solidi",
+      "Volumenkörper-Bearbeitung",
+      "实体编辑",
+      "Edición de sólidos",
+      "Édition de solides",
+      "Katı Düzenleme"
+    };
+
+    public static readonly string[] View = {
+      "View",
+      "Виды",
+      "Visualizzazioni",
+      "Ansichten",
+      "视图",
+      "Vistas",          // ES
+      "Vues",            // FR
+      "Görünümler"};     // TR
+
     public static readonly string[][] 
-    ProgramSections = { Collections, Modeling, Tables, Annotations, Blocks, CNC2d, Utilities, AllIn1Menu, TextPalettesMenu };
+    ProgramSections = { Collections, Modeling, PropL.Tables, Annotations, PropL.Blocks, CNC2d, Utilities, AllIn1Menu, TextPalettesMenu, UCS, Draw, Modify, SolidEditing, PropL.Layout, View, PropL.Layers, PropL.Groups };
 
     // ===================================================================================================
     // ProgramState ======================================================================================

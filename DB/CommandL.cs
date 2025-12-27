@@ -88,7 +88,7 @@ namespace AVC
       "Yakalamayı kapat" };
     public static readonly string[] AutoAnn = {
       "Annotation Layer",
-      "Cлой Аннотаций",
+      "Слой Аннотаций",
       "Layer Annotate",
       "Layer Beschriftung",
       "启用注释层",

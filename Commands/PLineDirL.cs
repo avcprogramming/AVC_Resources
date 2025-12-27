@@ -397,20 +397,20 @@ namespace AVC
       "The program will prompt you to select multiple curves and will set the start of each at the node with the minimum UCS coordinates.",
       "Программа будет запрашивать выбор нескольких кривых, и всем им назначит старт в узле с минимальными координатами UCS.",
       "Il programma ti chiederà di selezionare più curve e imposterà l'inizio di ciascuna al nodo con le coordinate UCS minime.",
-      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den minimalen UCS-Koordinaten.",
+      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den minimalen BKS-Koordinaten.",
       "程序将提示您选择多条曲线，并将每条曲线的起点设置在具有最小UCS坐标的节点。",
-      "El programa le pedirá que seleccione múltiples curvas y establecerá el inicio de cada una en el nodo con las coordenadas UCS mínimas.",  // ES
-      "Le programme vous demandera de sélectionner plusieurs courbes et définira le début de chacune au nœud avec les coordonnées UCS minimales.",  // FR
+      "El programa le pedirá que seleccione múltiples curvas y establecerá el inicio de cada una en el nodo con las coordenadas SCP mínimas.",  // ES
+      "Le programme vous demandera de sélectionner plusieurs courbes et définira le début de chacune au nœud avec les coordonnées SCU minimales.",  // FR
       "Program birden fazla eğri seçmenizi isteyecek ve her birinin başlangıcını minimum UCS koordinatlarına sahip düğüme ayarlayacaktır." };  // TR
 
     public static readonly string[] AllStartAtMaxTip = {
       "The program will prompt you to select multiple curves and will set the start of each at the node with the maximum UCS coordinates.",
       "Программа будет запрашивать выбор нескольких кривых, и всем им назначит старт в узле с максимальными координатами UCS.",
       "Il programma ti chiederà di selezionare più curve e imposterà l'inizio di ciascuna al nodo con le coordinate UCS massime.",
-      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den maximalen UCS-Koordinaten.",
+      "Das Programm fordert Sie auf, mehrere Kurven auszuwählen, und setzt den Startpunkt jeder Kurve auf den Knoten mit den maximalen BKS-Koordinaten.",
       "程序将提示您选择多条曲线，并将每条曲线的起点设置在具有最大UCS坐标的节点。",
-      "El programa le pedirá que seleccione múltiples curvas y establecerá el inicio de cada una en el nodo con las coordenadas UCS máximas.",  // ES
-      "Le programme vous demandera de sélectionner plusieurs courbes et définira le début de chacune au nœud avec les coordonnées UCS maximales.",  // FR
+      "El programa le pedirá que seleccione múltiples curvas y establecerá el inicio de cada una en el nodo con las coordenadas SCP máximas.",  // ES
+      "Le programme vous demandera de sélectionner plusieurs courbes et définira le début de chacune au nœud avec les coordonnées SCU maximales.",  // FR
       "Program birden fazla eğri seçmenizi isteyecek ve her birinin başlangıcını maksimum UCS koordinatlarına sahip düğüme ayarlayacaktır." };  // TR
 
     public static readonly string[] Mode = {

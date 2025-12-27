@@ -699,16 +699,16 @@ namespace AVC
         "Altrimenti verrà utilizzato UCS.",
       "Erstellen Sie sichtbaren MText für jedes Detail.\r\n" +
          "Wo immer möglich, werden Texte in den Raum des Papiers eingefügt.\r\n" +
-         "Andernfalls wird UCS verwendet.",
+         "Andernfalls wird BKS verwendet.",
       "为每个细节创建可见的多行文字。\r\n" +
          "只要有可能，文本就会被插入到纸张的空间中。\r\n" +
          "否则将使用 UCS。",
       "Crear MText visible para cada detalle.\r\n" +  // ES
         "Siempre que sea posible, los textos se insertarán en el espacio del papel.\r\n" +
-        "De lo contrario, se usará UCS.",
+        "De lo contrario, se usará SCP.",
       "Créer un MText visible pour chaque détail.\r\n" +  // FR
         "Dans la mesure du possible, les textes seront insérés dans l'espace du papier.\r\n" +
-        "Sinon, UCS sera utilisé.",
+        "Sinon, SCU sera utilisé.",
       "Her ayrıntı için görünür MText oluşturun.\r\n" +  // TR
         "Mümkün olduğunca metinler kağıdın alanına eklenecektir.\r\n" +
         "Aksi takdirde UCS kullanılacaktır." };

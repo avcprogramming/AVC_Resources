@@ -329,7 +329,7 @@ namespace AVC
       "基点 X 坐标 = 位置、插入点、第一个顶点。\r\n" +
          "在当前用户坐标系 (UCS)",
       "Coordenada X del punto base = posición, punto de inserción, primer vértice.\r\n" +
-        "En el sistema de coordenadas de usuario actual (UCS)",
+        "En el sistemas de coordenadas personales actual (SCP)",
       "Coordonnée X du point de base = position, point d'insertion, premier sommet.\r\n" +
         "Dans le système de coordonnées utilisateur actuel (SCU)",
       "Taban noktasının X koordinatı = konum, ekleme noktası, ilk köşe.\r\n" +
@@ -347,7 +347,7 @@ namespace AVC
       "基点 Y 坐标 = 位置、插入点、第一个顶点。\r\n" +
          "在当前用户坐标系 (UCS)",
       "Coordenada Y del punto base = posición, punto de inserción, primer vértice.\r\n" +
-        "En el sistema de coordenadas de usuario actual (UCS)",
+        "En el sistemas de coordenadas personales actual (SCP)",
       "Coordonnée Y du point de base = position, point d'insertion, premier sommet.\r\n" +
         "Dans le système de coordonnées utilisateur actuel (SCU)",
       "Taban noktasının Y koordinatı = konum, ekleme noktası, ilk köşe.\r\n" +
@@ -365,7 +365,7 @@ namespace AVC
       "基点 Y 坐标 = 位置、插入点、第一个顶点。\r\n" +
          "在当前用户坐标系 (UCS)",
       "Coordenada Z del punto base = posición, punto de inserción, primer vértice.\r\n" +
-        "En el sistema de coordenadas de usuario actual (UCS)",
+        "En el sistemas de coordenadas personales actual (SCP)",
       "Coordonnée Z du point de base = position, point d'insertion, premier sommet.\r\n" +
         "Dans le système de coordonnées utilisateur actuel (SCU)",
       "Taban noktasının Z koordinatı = konum, ekleme noktası, ilk köşe.\r\n" +
