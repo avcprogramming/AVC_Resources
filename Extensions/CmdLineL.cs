@@ -500,6 +500,26 @@ namespace AVC
       "Le fichier source ne doit pas être le même que le fichier de destination",
       "Kaynak dosya, hedef dosyayla aynı olmamalıdır"};
 
+    public static readonly string[] Ideas = {
+      "Enter the Idea Contest",
+      "Присоединяйтесь к конкурсу идей",
+      "Concorso di idee",
+      "Ideenwettbewerb",
+      "创意大赛",
+      "Participe en el concurso de ideas",
+      "Participez au concours d'idées",
+      "Fikir yarışmasına katılın"};
+
+    public static readonly string[] IdeasTip = {
+      "Are you missing features or settings? Do you need other commands and programs?",
+      "Вам не хватает опций для настройки плагинов? У вас есть идеи для новых команд?",
+      "Ti mancano funzionalità o impostazioni? Hai bisogno di altri comandi e programmi?",
+      "Vermissen Sie Funktionen oder Einstellungen? Benötigen Sie weitere Befehle und Programme?",
+      "您是否缺少功能或设置？ 您需要其他命令和程序吗？",
+      "¿Le faltan funciones o configuraciones? ¿Necesita otros comandos y programas?",
+      "Vous manque-t-il des fonctionnalités ou des paramètres? Avez-vous besoin d'autres commandes et programmes?",
+      "Özellikleri veya ayarları mı eksik? Başka komutlara ve programlara mı ihtiyacınız var?"};
+
     // ----------------- Command Line Options -----------------------------------------------
     // ----------------- Невидимые опции встроенные в запрос выбора объектов. их невозможно заменить своими опциями - сработают встроенные. На запрос выбора точки или выбора из ключевых слов эти ограничения не действуют.
     // En: W L C B ALL F WP CP G A R M P U AU SI TRACKING TRACK TK TT END MID CEN G NOD QUA INT EXT INS PER TAN NEA APP PAR NON ZVER ZMID ZCEN ZKNO ZPER ZNEA ZNON
@@ -555,24 +575,5 @@ namespace AVC
       "SendEMail", "СлатьПисьма", "InviaUnaEMail", "SendenEMail", "向开发者发送错误消息(S)",
       "EnviarEmail", "EnvoyerEmail", "EmailGönder"};
 
-    public static readonly string[] Ideas = {
-      "Enter the Idea Contest",
-      "Присоединяйтесь к конкурсу идей",
-      "Concorso di idee",
-      "Ideenwettbewerb",
-      "创意大赛",
-      "Participe en el concurso de ideas",
-      "Participez au concours d'idées",
-      "Fikir yarışmasına katılın"};
-
-    public static readonly string[] IdeasTip = {
-      "Are you missing features or settings? Do you need other commands and programs?",
-      "Вам не хватает опций для настройки плагинов? У вас есть идеи для новых команд?",
-      "Ti mancano funzionalità o impostazioni? Hai bisogno di altri comandi e programmi?",
-      "Vermissen Sie Funktionen oder Einstellungen? Benötigen Sie weitere Befehle und Programme?",
-      "您是否缺少功能或设置？ 您需要其他命令和程序吗？",
-      "¿Le faltan funciones o configuraciones? ¿Necesita otros comandos y programas?",
-      "Vous manque-t-il des fonctionnalités ou des paramètres? Avez-vous besoin d'autres commandes et programmes?",
-      "Özellikleri veya ayarları mı eksik? Başka komutlara ve programlara mı ihtiyacınız var?"};
   }
 }

@@ -35,12 +35,12 @@ namespace AVC
     public static readonly string[] ASL = {
       "A>V>C> Slice",
       "Отслоение",
-      "A>V>C> Esfoliazione",
-      "A>V>C> Kappen",
+      "Esfoliazione",
+      "Kappen",
       "去角质",
-      "A>V>C> Deslaminado",
-      "A>V>C> Délamination",
-      "A>V>C> Katman Ayırma" };
+      "Deslaminado",
+      "Délamination",
+      "Katman Ayırma" };
     public static readonly string[] AsmCreate = {
       "Create Assembly",
       "Создать сборку",

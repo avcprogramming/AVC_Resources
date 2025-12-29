@@ -61,7 +61,7 @@ namespace AVC
       "Sorgu"};
 
     /// <summary>
-    /// И для кнопок и для командной строки
+    /// И для кнопок и для командной строки ✅
     /// </summary>
     public static readonly string[] Ok = {
       "Ok",
@@ -74,7 +74,7 @@ namespace AVC
       "Tamam"};
 
     /// <summary>
-    /// Для кнопок. Для опций команд есть CmdLineL.Cancel
+    /// Для кнопок. Для опций команд есть CmdLineL.Cancel ❌
     /// </summary>
     public static readonly string[] Cancel = {
       "Cancel",
@@ -169,24 +169,24 @@ namespace AVC
       "Yüklendi"};
 
     public static readonly string[] Done = {
-      "Done.",
-      "Готово.",
-      "Fatto.",
-      "Getan.",
-      "完成。",
-      "Hecho.",
-      "Terminé.",
-      "Tamamlandı."};
+      "✅ Done.",
+      "✅ Готово.",
+      "✅ Fatto.",
+      "✅ Getan.",
+      "✅ 完成。",
+      "✅ Hecho.",
+      "✅ Terminé.",
+      "✅ Tamamlandı."};
 
     public static readonly string[] ProcessCompleted = {
-      "   ... Process completed: {0}..",
-      "   ... Закончен процесс: {0}.",
-      "   ... Processo completato: {0}.",
-      "   ... Prozess abgeschlossen: {0}.",
-      "   ... 进程完成：{0}。",
-      "   ... Proceso completado: {0}.",
-      "   ... Processus terminé: {0}.",
-      "   ... İşlem tamamlandı: {0}."};
+      "   ✅ Process completed: {0}..",
+      "   ✅ Закончен процесс: {0}.",
+      "   ✅ Processo completato: {0}.",
+      "   ✅ Prozess abgeschlossen: {0}.",
+      "   ✅ 进程完成：{0}。",
+      "   ✅ Proceso completado: {0}.",
+      "   ✅ Processus terminé: {0}.",
+      "   ✅ İşlem tamamlandı: {0}."};
 
     public static readonly string[] All = {
       "All",
@@ -326,14 +326,14 @@ namespace AVC
       "Dize bir boyut olarak tanınamıyor"};
 
     public static readonly string[] CommandCancel = {
-      "\r\n  Command canceled",
-      "\r\n  Команда отменена",
-      "\r\n  Comando annullato",
-      "\r\n  Vorgang abgebrochen",
-      "\r\n  命令已取消",
-      "\r\n  Comando cancelado",
-      "\r\n  Commande annulée",
-      "\r\n  Komut iptal edildi"};
+      "\r\n  ❌ Command canceled",
+      "\r\n  ❌ Команда отменена",
+      "\r\n  ❌ Comando annullato",
+      "\r\n  ❌ Vorgang abgebrochen",
+      "\r\n  ❌ 命令已取消",
+      "\r\n  ❌ Comando cancelado",
+      "\r\n  ❌ Commande annulée",
+      "\r\n  ❌ Komut iptal edildi"};
 
     public static readonly string[] Sorry = {
       "Sorry\r\n\r\n----  Under construction ----\r\n",
@@ -366,14 +366,14 @@ namespace AVC
       "Double türü için tolerans 1 ile 16 anlamlı ondalık basamak arasında olmalıdır"};
 
     public static readonly string[] NothingSucceeded = {
-      "Nothing succeeded",
-      "Ничего не получилось",
-      "Niente è riuscito",
-      "Nichts war erfolgreich",
-      "没有成功",
-      "Nada tuvo éxito",
-      "Rien n'a réussi",
-      "Hiçbir şey başarılı olmadı"};
+      "❌ Nothing succeeded",
+      "❌ Ничего не получилось",
+      "❌ Niente è riuscito",
+      "❌ Nichts war erfolgreich",
+      "❌ 没有成功",
+      "❌ Nada tuvo éxito",
+      "❌ Rien n'a réussi",
+      "❌ Hiçbir şey başarılı olmadı"};
 
     public static readonly string[] Process = {
       "Processing",
