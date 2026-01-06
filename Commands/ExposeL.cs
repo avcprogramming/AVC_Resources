@@ -129,100 +129,6 @@ namespace AVC
         "Blok montajı ve çizim bloğu özelliği ve öznitelik değiştirmelerini kullanın.\r\n" +
         "Herhangi bir metin ve biçimlendirme karakteri ekleyebilirsiniz (örneğin \\P - satır sonu)."};
 
-    public static readonly string[] TitlePosition = {
-      "Position",
-      "Расположить",
-      "Organizzare",
-      "Arrangieren",
-      "安排",
-      "Posición",                                      // ES
-      "Position",                                      // FR
-      "Konum" };                                       // TR
-
-    public static readonly string[] Above = {
-      "Above",
-      "Над",
-      "Sopra",
-      "Über",
-      "多于",
-      "Arriba",                                        // ES
-      "Au-dessus",                                     // FR
-      "Yukarıda" };                                    // TR
-
-    public static readonly string[] AboveTip = {
-      "Place the title above the assembly. Title offset from the assembly can be configured.",
-      "Разместить заголовок выше над сборкой. Отступ от сборки можно настроить.",
-      "Posizionare l'intestazione sopra l'assieme. È possibile configurare l'offset dell'intestazione dall'assieme.",
-      "Platzieren Sie den Header über der Baugruppe. Header-Offset von der Assembly kann konfiguriert werden.",
-      "将标题放在组件上方。 可以配置标题与程序集的偏移量。",
-      "Coloque el título encima del ensamblaje. Se puede configurar el desplazamiento del título desde el ensamblaje.",  // ES
-      "Placez le titre au-dessus de l'assemblage. Le décalage du titre par rapport à l'assemblage peut être configuré.",  // FR
-      "Başlığı montajın üzerine yerleştirin. Montajdan başlık ofseti yapılandırılabilir." };  // TR
-
-    public static readonly string[] InsideTip = {
-      "Place text inside assembly dimensions.\r\n"+
-         "If you turn on the render mode with solid face fills,\r\n"+
-         "then you won't see the header, because the texts will be under the assembly.",
-      "Разместить текст внутри габаритов сборки.\r\n"+
-        "Если вы включите режим визуализации с заливкой граней твердых тел,\r\n"+
-        "то вы не увидите заголовка, т.к. тексты окажутся под сборкой.",
-      "Posizionare il testo all'interno delle quote dell'assieme.\r\n"+
-         "Se attivi la modalità di rendering con riempimenti faccia pieni,\r\n"+
-         "allora non vedrai l'intestazione, perché i testi saranno sotto l'assemblea.",
-      "Text innerhalb der Montageabmessungen platzieren.\r\n"+
-         "Wenn Sie den Rendermodus mit einfarbigen Flächenfüllungen aktivieren,\r\n"+
-         "Dann sehen Sie die Kopfzeile nicht, weil die Texte unter der Baugruppe stehen." ,
-      "将文本放在装配尺寸内，而不是高于装配尺寸。\r\n"+
-         "如果您打开带有实体面填充的渲染模式，\r\n"+
-         "那么您将看不到标题，因为文本将在集会下。",
-      "Coloque el texto dentro de las dimensiones del ensamblaje.\r\n"+  // ES
-         "Si activa el modo de renderizado con rellenos de caras sólidas,\r\n"+
-         "entonces no verá el encabezado, porque los textos estarán debajo del ensamblaje.",
-      "Placez le texte à l'intérieur des dimensions de l'assemblage.\r\n"+  // FR
-         "Si vous activez le mode de rendu avec des remplissages de face solides,\r\n"+
-         "alors vous ne verrez pas l'en-tête, car les textes seront sous l'assemblage.",
-      "Metni montaj boyutlarının içine yerleştirin.\r\n"+  // TR
-         "Katı yüz dolguları ile işleme modunu açarsanız,\r\n"+
-         "başlığı göremezsiniz çünkü metinler montajın altında olacaktır."};
-
-    public static readonly string[] Below = {
-      "Below",
-      "Под",
-      "Sotto",
-      "Unter",
-      "在下面",
-      "Debajo",                                        // ES
-      "En dessous",                                    // FR
-      "Aşağıda" };                                     // TR
-
-    public static readonly string[] BelowTip = {
-      "Place the title below the assembly. Title offset from the assembly can be configured.",
-      "Разместить заголовок ниже под сборкой. Отступ от сборки можно настроить.",
-      "Posizionare l'intestazione sotto l'assieme. È possibile configurare l'offset dell'intestazione dall'assieme.",
-      "Platzieren Sie die Kopfzeile unter der Baugruppe. Header-Offset von der Assembly kann konfiguriert werden.",
-      "将标题放在组件下方。 可以配置标题与程序集的偏移量。",
-      "Coloque el título debajo del ensamblaje. Se puede configurar el desplazamiento del título desde el ensamblaje.",  // ES
-      "Placez le titre en dessous de l'assemblage. Le décalage du titre par rapport à l'assemblage peut être configuré.",  // FR
-      "Başlığı montajın altına yerleştirin. Montajdan başlık ofseti yapılandırılabilir." };  // TR
-
-    public static readonly string[] CenterTip = {
-      "Align the center of the header to the center of the assembly dimensions.\r\n"+
-         "If the title is inside the part, then vertical centering will be done too.",
-      "Выравнивать центр заголовка по центру габаритов сборки.\r\n"+
-        "Если заголовок внутри детали, то будет производится и вертикальное центрирование тоже.",
-      "Allineare il centro dell'intestazione al centro delle quote dell'assieme.\r\n"+
-         "Se il titolo è all'interno della parte, verrà eseguita anche la centratura verticale.",
-      "Richten Sie die Mitte des Headers an der Mitte der Montageabmessungen aus.\r\n"+
-         "Wenn sich der Titel innerhalb des Teils befindet, wird auch eine vertikale Zentrierung durchgeführt." ,
-      "将标题的中心与程序集尺寸的中心对齐。\r\n"+
-         "如果标题在部分内部，那么也会进行垂直居中。",
-      "Alinear el centro del encabezado con el centro de las dimensiones del ensamblaje.\r\n"+  // ES
-         "Si el título está dentro de la pieza, también se realizará el centrado vertical.",
-      "Aligner le centre de l'en-tête sur le centre des dimensions de l'assemblage.\r\n"+  // FR
-         "Si le titre est à l'intérieur de la pièce, le centrage vertical sera également effectué.",
-      "Başlığın merkezini montaj boyutlarının merkezine hizalayın.\r\n"+  // TR
-         "Başlık parçanın içindeyse, dikey ortalama da yapılacaktır."};
-
     public static readonly string[] SpaceX = {
       "X space",
       "Отступ по X",
@@ -537,6 +443,38 @@ namespace AVC
       "Llame al comando TNT (explosión de ensamblaje) y explote los detalles de cada ensamblaje en el espacio.",  // ES
       "Appelez la commande TNT (explosion d'assemblage) et explosez les détails de chaque assemblage dans l'espace.",  // FR
       "TNT komutunu (montaj patlaması) çağırın ve her montajın ayrıntılarını uzayda patlayın." };  // TR
+
+    public static readonly string[] ManualStep = {
+      "",
+      "Ручная настройка шага",
+    };
+
+    public static readonly string[] ManualStepTip = {
+      "",
+      "Вы можете настроить любые расстояния между выставленными сборками по каждой оси координат.",
+    };
+
+    public static readonly string[] AutoStepAlongX = {
+      "",
+      "Шаг вдоль X"
+    };
+
+    public static readonly string[] AutoStepAlongXTip = {
+      "",
+      "Программа сама подберет расстояния между сборками изходя из размеров сборки. Сборки располагаются вдоль оси X."
+    };
+
+    public static readonly string[] AutoStepXYZ = {
+      "",
+      "Шаг по XYZ"
+    };
+
+    public static readonly string[] AutoStepXYZTip = {
+      "",
+      "Программа сама подберет расстояния между сборками изходя из размеров сборки. \r\n" +
+        "Сборки располагаются со сдвигом по всем трем осям координат в сторону +X, -Y, +Z."
+    };
+
 
   }
 }

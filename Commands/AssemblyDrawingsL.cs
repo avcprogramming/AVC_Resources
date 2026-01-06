@@ -412,15 +412,6 @@
       "¡{0} viewports en la hoja! Puede ir lento y fallar.",
       "{0} viewports sur la feuille ! Ralentissements et crash possibles.",
       "Sayfada {0} viewport var! Yavaşlama ve çökme olabilir." };
-    public static readonly string[] Make = {
-      "Make",
-      "Создать",
-      "Crea",
-      "Erstellen",
-      "制作",
-      "Crear",
-      "Créer",
-      "Oluştur"};
     public static readonly string[] Title = {
       "Assembly Title",
       "Заголовок сборки",
@@ -439,37 +430,6 @@
       "Plantilla de sustitución de propiedades del ensamblaje para el encabezado. No funcionan las del layout/viewport.",
       "Modèle de substitution des propriétés d’assemblage pour l’en‑tête. Pas de substitution de feuille/viewport.",
       "Montaj başlığı için özellik değiştirme şablonu. Sayfa/viewport özellikleri işlemez." };
-    public static readonly string[] TitleTip = {
-      "Create an MText with a title above each assembly.",
-      "Создавать MText с заголовком над каждой сборкой.",
-      "Creare MText con il titolo sopra ogni assemblaggio.",
-      "Erstellen Sie MText mit dem Titel über jeder Baugruppe.",
-      "在每个组件上方创建带标题的 MText。",
-      "Crear un MText con título sobre cada ensamblaje.",
-      "Créer un MText avec un titre au‑dessus de chaque assemblage.",
-      "Her montajın üstünde başlıklı bir MText oluştur." };
-    public static readonly string[] TitleCenteredTip = {
-      "Center the title above the assembly in the middle of all assembly views.\r\n" +
-        "Also center the block with the view name in the center of the viewport.",
-      "Центрировать заголовок над сборкой посередине всех видов сборки. \r\n" +
-        "Так же центрировать блок с названием вида по центру вьюпорта.",
-      "Centrare il titolo sopra l'assemblaggio al centro di tutte le viste dell'assemblaggio. \r\n" +
-        "Centrare anche il blocco con il nome della vista al centro della finestra di visualizzazione.",
-      "Den Titel über der Baugruppe in der Mitte aller Baugruppenansichten zentrieren. \r\n" +
-        "Zentrieren Sie auch den Block mit dem Ansichtsname in der Mitte des Ansichtsfensters.",
-      "将标题居中放置在所有组件视图的组件上方。还要将带有视图名称的块居中放置在视口的中心。",
-      "Centrar el título sobre el ensamblaje, y el bloque de nombre en el centro del viewport.",
-      "Centrer le titre au‑dessus de l’assemblage, et le bloc de nom au centre du viewport.",
-      "Başlığı montajın üstünde ortalayın ve görünüm adı bloğunu viewport ortasına koyun." };
-    public static readonly string[] TitleSpaceTip = {
-      "Leave a space between the title and the assembly.",
-      "Оставлять зазор между заголовком и сборкой.",
-      "Lascia uno spazio tra il titolo e l'assemblaggio.",
-      "Lassen Sie einen Abstand zwischen dem Titel und der Baugruppe.",
-      "在标题和组件之间留出空间。",
-      "Deje un espacio entre el título y el ensamblaje.",
-      "Laisser un espace entre le titre et l’assemblage.",
-      "Başlık ile montaj arasında boşluk bırakın." };
     public static readonly string[] ThirdAngleProjection = {
       "Third Angle Projection",
       "Проекция из 'Третьего Угла'",
@@ -823,38 +783,6 @@
         "Si 0, la hauteur du bloc sera mesurée.",
       "Blok için görünüm altında bırakılacak boşluk.\r\n" +
         "0 ise program yüksekliği ölçer." };
-    public static readonly string[] ViewAttributes ={
-      "Block attributes",
-      "Атрибуты блока",
-      "Attributi del blocco",
-      "Blockattribute",
-      "块属性",
-      "Atributos del bloque",
-      "Attributs du bloc",
-      "Blok öznitelikleri" };
-    public static readonly string[] ViewAttributesTip ={
-      "A list of attribute names (tags) and values. \r\n" +
-        "Each attribute on a new line. Write values after the = sign. \r\n" +
-        "You can use all viewport property substitutions.",
-      "Список имен (тегов) и значений атрибутов. \r\n" +
-        "Каждый атрибут в новой строке. Значения пишите после символа =. \r\n" +
-        "Можно использовать все подстановки свойств вьюпорта.",
-      "Elenco di nomi e valori degli attributi. \r\n" +
-        "Ogni attributo su una nuova riga. Scrivi i valori dopo il segno =. \r\n" +
-        "È possibile utilizzare tutte le sostituzioni delle proprietà della finestra di visualizzazione.",
-      "Liste von Attributnamen und -werten. \r\n" +
-        "Jedes Attribut in einer neuen Zeile. Schreiben Sie Werte nach dem = Zeichen. \r\n" +
-        "Sie können alle Eigenschaftenersetzungen des Ansichtsfensters verwenden.",
-      "属性名称和值的列表。 \r\n" +
-        "每个属性占一行。在 = 符号后写值。 \r\n" +
-        "您可以使用所有视口属性替换。",
-      "Lista de nombres y valores de atributos.\r\n" +
-        "Uno por línea. Valores tras '='. Se admiten sustituciones.",
-      "Liste de noms et valeurs d’attributs.\r\n" +
-        "Un par ligne. Valeurs après '='. Substitutions acceptées.",
-      "Öznitelik adları ve değerleri listesi.\r\n" +
-        "Her satır bir öznitelik. '=' sonrası değeri yazın.\r\n" +
-        "Viewport özellik değişimleri desteklenir." };
     public static readonly string[] OverallDimensions = {
       "Overall dimensions of the assembly",
       "Габаритные размеры сборки",

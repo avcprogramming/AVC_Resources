@@ -62,6 +62,7 @@
     <Compile Include="Commands\DrillL.cs" />
     <Compile Include="Commands\DwgTreeL.cs" />
     <Compile Include="Commands\DxfExportL.cs" />
+    <Compile Include="Dialogs\TitleStyleL.cs" />
     <Compile Include="EntityFilterL.cs" />
     <Compile Include="Commands\ExportSettingsL.cs" />
     <Compile Include="Commands\ExposeL.cs" />

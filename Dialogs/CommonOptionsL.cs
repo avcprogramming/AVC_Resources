@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Multisolid, Cuix
+// Ignore Spelling: Multisolid Cuix Popup
 
 namespace AVC
 {

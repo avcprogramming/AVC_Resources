@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Plugin Deselect
+// Ignore Spelling: Plugin Deselect Popup
 
 namespace AVC
 {

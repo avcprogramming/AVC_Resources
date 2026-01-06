@@ -1,5 +1,7 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
+// Ignore Spelling: Ucs
+
 namespace AVC
 {
   public static class

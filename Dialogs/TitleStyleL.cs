@@ -1,0 +1,337 @@
+﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
+
+namespace AVC
+{
+  public class 
+  TitleStyleL
+  {
+    public static readonly string[] MakeTitle = {
+      "Title",
+      "Создать",
+      "Titolo",
+      "Titel",
+      "文字设置",
+      "Título",                                                  // ES
+      "Titre",                                                   // FR
+      "Başlık"};                                                 // TR
+
+    public static readonly string[] MakeTitleTip = {
+      "Insert title for each drawing.",
+      "Вставить текстовый заголовок для каждого чертежа.",
+      "Inserisci il titolo per ogni disegno.",
+      "Titel für jede Zeichnung einfügen.",
+      "为每个图纸插入标题文字。",
+      "Insertar título para cada dibujo.",                      // ES
+      "Insérer le titre pour chaque dessin.",                   // FR
+      "Her çizim için başlık ekle."};                           // TR
+
+    public static readonly string[] TextTemplate = {
+      "Text Template",
+      "Шаблон текста",
+      "Modello di testo",
+      "Textvorlage",
+      "文字模板",
+      "Plantilla de texto",                                    // ES
+      "Modèle de texte",                                       // FR
+      "Metin Şablonu"};                                        // TR
+
+    public static readonly string[] TextTemplateTip = {
+      "Title template with substitutions for drawing object properties." +
+        "Line breaks and text formatting codes are allowed.",
+      "Шаблон заголовка с подстановками свойств объектов чертежа. " +
+        "Допустимы переносы строк и коды форматирования теста. ",
+      "Modello di titolo con sostituzioni per le proprietà degli oggetti di disegno." +
+        "Sono consentiti interruzioni di linea e codici di formattazione del testo.",
+      "Titelvorlage mit Ersetzungen für Zeichenobjekteigenschaften." +
+        "Zeilenumbrüche und Textformatierungscodes sind zulässig.",
+      "带有绘图对象属性替代的标题模板。允许换行和文本格式代码。",
+      "Plantilla de título con sustituciones para las propiedades del objeto de dibujo." +
+        "Se permiten saltos de línea y códigos de formato de texto.",        // ES
+      "Modèle de titre avec substitutions pour les propriétés des objets de dessin." +
+        "Les sauts de ligne et les codes de formatage de texte sont autorisés.", // FR
+      "Çizim nesnesi özellikleri için ikamelerle başlık şablonu." +
+        "Satır sonları ve metin biçimlendirme kodlarına izin verilir."};      // TR
+
+    public static readonly string[] BlockAttributes = {
+      "Block Attributes",
+      "Атрибуты блока",
+      "Attributi del blocco",
+      "Blockattribute",
+      "块属性",
+      "Atributos de bloque",                                   // ES
+      "Attributs de bloc",                                    // FR
+      "Blok Özellikleri"};                                    // TR
+
+    public static readonly string[] BlockAttributesTip ={
+      "A list of attribute names (tags) and values. \r\n" +
+        "Each attribute on a new line. Write values after the = sign." ,
+      "Список имен (тегов) и значений атрибутов. \r\n" +
+        "Каждый атрибут в новой строке. Значения пишите после символа =." ,
+      "Elenco di nomi e valori degli attributi. \r\n" +
+        "Ogni attributo su una nuova riga. Scrivi i valori dopo il segno =." ,
+      "Liste von Attributnamen und -werten. \r\n" +
+        "Jedes Attribut in einer neuen Zeile. Schreiben Sie Werte nach dem = Zeichen." ,
+      "属性名称和值的列表。 \r\n" +
+        "每个属性占一行。在 = 符号后写值。",
+      "Lista de nombres y valores de atributos.\r\n" +
+        "Uno por línea. Valores tras '='. Se admiten sustituciones.",
+      "Liste de noms et valeurs d’attributs.\r\n" +
+        "Un par ligne. Valeurs après '='. Substitutions acceptées.",
+      "Öznitelik adları ve değerleri listesi.\r\n" +
+        "Her satır bir öznitelik. '=' sonrası değeri yazın.\r\n" +
+        "Viewport özellik değişimleri desteklenir." };
+
+    public static readonly string[] TextStyle = {
+      "Style",
+      "Стиль",
+      "Stile",
+      "Stil",
+      "样式",
+      "Estilo",                                                  // ES
+      "Style",                                                   // FR
+      "Stil"};                                                   // TR
+
+    public static readonly string[] TextStyleTip = {
+      "Title text style. Set space for use current style.",
+      "Стиль текста заголовка. В стилях задается шрифт и размер текста. Оставьте пустым, чтоб использовать текущий стиль текста.",
+      "Stile del testo del titolo. Imposta lo spazio per l'uso dello stile corrente.",
+      "Titeltextstil. Legen Sie Platz für die Verwendung des aktuellen Stils fest.",
+      "文字样式。你可选择其它的文字样式置为当前。",
+      "Estilo de texto del título. Deje espacio para usar el estilo actual.",  // ES
+      "Style de texte du titre. Définissez un espace pour utiliser le style actuel.",  // FR
+      "Başlık metin stili. Mevcut stili kullanmak için boşluk ayarlayın."};  // TR
+
+    public static readonly string[] HeightTip = {
+      "Text size. Set to 0 to use the _TextSize system variable.",
+      "Размер текста.\r\n"+
+        "Назначьте 0, чтоб использовать системную переменную _TextSize.",
+      "Dimensione del testo. Impostare su 0 per utilizzare la variabile di sistema _TextSize.",
+      "Textgröße. Auf 0 setzen, um die Systemvariable _TextSize zu verwenden.",
+      "文字高度。设为0以使用系统变量_TextSize。",
+      "Tamaño del texto. Establezca en 0 para usar la variable del sistema _TextSize.",  // ES
+      "Taille du texte. Définir sur 0 pour utiliser la variable système _TextSize.",  // FR
+      "Metin boyutu. _TextSize sistem değişkenini kullanmak için 0 olarak ayarlayın."};  // TR
+
+    public static readonly string[] TextFrame = {
+      "Text Frame",
+      "Рамка",
+      "Cornice di testo",
+      "Textrahmen",
+      "文字框",
+      "Marco de texto",                                          // ES
+      "Cadre de texte",                                          // FR
+      "Metin çerçevesi"};                                        // TR
+
+    public static readonly string[] TextFrameTip = {
+      "Draw a frame around the text.",
+      "Прямоугольная рамка вокруг заголовка",
+      "Disegna una cornice attorno al testo.",
+      "Ziehen Sie einen Rahmen um den Text.",
+      "在文字周围生成一个矩形框",
+      "Dibujar un marco alrededor del texto.",                   // ES
+      "Dessiner un cadre autour du texte.",                      // FR
+      "Metin etrafına bir çerçeve çiz."};                        // TR
+
+    public static readonly string[] TitlePosition = {
+      "Position",
+      "Расположить",
+      "Organizzare",
+      "Arrangieren",
+      "安排",
+      "Posición",                                      // ES
+      "Position",                                      // FR
+      "Konum" };                                       // TR
+
+    public static readonly string[] Above = {
+      "Above",
+      "Над",
+      "Sopra",
+      "Über",
+      "多于",
+      "Arriba",                                        // ES
+      "Au-dessus",                                     // FR
+      "Yukarıda" };                                    // TR
+
+    public static readonly string[] AboveTip = {
+      "Place the title above the drawing.",
+      "Разместить заголовок выше над чертежом.",
+      "Posiziona il titolo sopra il disegno.",
+      "Platzieren Sie den Titel über der Zeichnung.",
+      "将标题放置在图纸上方。",
+      "Colocar el título encima del dibujo.",          // ES
+      "Placer le titre au-dessus du dessin.",         // FR
+      "Başlığı çizimin üstüne yerleştir."};           // TR
+
+    public static readonly string[] Center = {
+      "Center",
+      "Центр",
+      "Centro",
+      "Center",
+      "居中",
+      "Centro",                                                  // ES
+      "Centre",                                                  // FR
+      "Merkez"};                                                 // TR
+
+    public static readonly string[] CenterTip = {
+      "Align the center of the title to the center of the drawing.\r\n"+
+        "If the title is set to be inside the drawing,\r\n"+
+        "then vertical alignment will also be performed.",
+      "Выравнивать центр заголовка по центру чертежа.\r\n"+
+        "Если настроен заголовок внутри чертежа,\r\n"+
+        "то будет производиться и вертикальное выравнивание тоже.",
+      "Allinea il centro del titolo al centro del disegno.\r\n"+
+        "Se il titolo è impostato per essere all'interno del disegno,\r\n"+
+        "verrà eseguito anche l'allineamento verticale.",
+      "Richten Sie die Mitte des Titels auf die Mitte der Zeichnung aus.\r\n"+
+          "Wenn der Titel so eingestellt ist, dass er sich innerhalb der Zeichnung befindet,\r\n"+
+          "wird auch die vertikale Ausrichtung durchgeführt.",
+      "将标题的中心对齐到图纸的中心。\r\n"+
+        "如果标题设置在图纸内，\r\n"+
+        "也将进行垂直对齐。",
+      "Alinear el centro del título con el centro del dibujo.\r\n"+
+        "Si el título está configurado para estar dentro del dibujo,\r\n"+
+        "también se realizará la alineación vertical.",            // ES
+      "Aligner le centre du titre au centre du dessin.\r\n"+
+        "Si le titre est défini pour être à l'intérieur du dessin,\r\n"+
+        "un alignement vertical sera également effectué.",         // FR
+      "Başlığın merkezini çizimin merkezine hizalayın.\r\n"+
+        "Başlık çizimin içinde olacak şekilde ayarlanmışsa,\r\n"+
+        "dikey hizalama da yapılacaktır."};                        // TR
+
+    public static readonly string[] Inside = {
+      "Inside",
+      "Внутри",
+      "Dentro",
+      "Innerhalb",
+      "内部",
+      "Interior",                                                // ES
+      "Intérieur",                                               // FR
+      "İç"};                                                     // TR
+
+    public static readonly string[] InsideTip = {
+      "To place the text inside drawing. \r\n"+
+        "The program does not pay attention to the drawings with complex contours and\r\n"+
+        "place the text inside the rectangle conditional restricted with dimensions of drawing.\r\n"+
+        "If you turn on the rendering mode filled faces of solids, you will not see the headers,\r\n"+
+        "as texts will be below solids.",
+      "Разместить текст внутри чертежа.\r\n"+
+        "Программа не обращает внимания, что перекроет заголовком важные контуры, \r\n"+
+        "и размещает текст внутри условного прямоугольника ограничивающего габариты чертежа.\r\n"+
+        "Если вы включите режим визуализации с заливкой граней твердых тел,\r\n"+
+        "то вы не увидите заголовки, т.к. тексты окажутся под солидами.",
+      "Per posizionare il testo all'interno del disegno.\r\n"+
+        "Il programma non presta attenzione ai disegni con contorni complessi e\r\n"+
+        "posiziona il testo all'interno del rettangolo condizionale limitato dalle dimensioni del disegno.\r\n"+
+        "Se si attiva la modalità di rendering delle facce piene dei solidi, non si vedranno le intestazioni,\r\n"+
+        "poiché i testi saranno sotto i solidi.",
+      "Um den Text innerhalb der Zeichnung zu platzieren.\r\n"+
+        "Das Programm achtet nicht auf Zeichnungen mit komplexen Konturen und\r\n"+
+        "platziert den Text innerhalb des bedingten Rechtecks, das durch die Abmessungen der Zeichnung eingeschränkt ist.\r\n"+
+        "Wenn Sie den Render-Modus für gefüllte Flächen von Solids einschalten, sehen Sie die Überschriften nicht,\r\n"+
+        "da die Texte unter den Solids liegen.",
+      "将文字放置在图纸内部。\r\n"+
+        "程序不考虑复杂轮廓的图纸，\r\n"+
+        "并将文字放置在由图纸尺寸限定的矩形区域内。\r\n"+
+        "如果你开启实体填充面的渲染模式，\r\n"+
+        "你将看不到标题，因为文字会在实体下面。",
+      "Para colocar el texto dentro del dibujo.\r\n"+
+        "El programa no presta atención a los dibujos con contornos complejos y\r\n"+
+        "coloca el texto dentro del rectángulo condicional restringido por las dimensiones del dibujo.\r\n"+
+        "Si activa el modo de renderizado de caras rellenas de sólidos, no verá los encabezados,\r\n"+
+        "ya que los textos estarán debajo de los sólidos.",          // ES
+      "Pour placer le texte à l'intérieur du dessin.\r\n"+
+        "Le programme ne fait pas attention aux dessins avec des contours complexes et\r\n"+
+        "place le texte à l'intérieur du rectangle conditionnel restreint par les dimensions du dessin.\r\n"+
+        "Si vous activez le mode de rendu des faces remplies des solides, vous ne verrez pas les en-têtes,\r\n"+
+        "car les textes seront sous les solides.",                    // FR
+      "Metni çizimin içine yerleştirmek için.\r\n"+
+        "Program, karmaşık konturlara sahip çizimlere dikkat etmez ve\r\n"+
+        "metni çizimin boyutlarıyla sınırlanan koşullu dikdörtgenin içine yerleştirir.\r\n"+
+        "Katıların dolu yüzlerinin renderleme modunu açarsanız başlıkları görmezsiniz,\r\n"+
+        "çünkü metinler katıların altında olacaktır."};              // TR
+
+    public static readonly string[] Below = {
+      "Below",
+      "Под",
+      "Sotto",
+      "Unter",
+      "在下面",
+      "Debajo",                                        // ES
+      "En dessous",                                    // FR
+      "Aşağıda" };                                     // TR
+
+    public static readonly string[] BelowTip = {
+      "Place the title below the drawing.",
+      "Разместить заголовок ниже под чертежом.",
+      "Posiziona il titolo sotto il disegno.",
+      "Platzieren Sie den Titel unter der Zeichnung.",
+      "将标题放置在图纸下方。",
+      "Colocar el título debajo del dibujo.",         // ES
+      "Placer le titre en dessous du dessin.",        // FR
+      "Başlığı çizimin altına yerleştir."};          // TR
+
+    public static readonly string[] BlockNameTip = {
+      "The name of the block that will be created for the header.\r\n" +
+        "The block must already exist in the drawing or DWT template.\r\n" +
+        "This must be a 2D block with visible, editable attributes.",
+      "Имя блока, который будет создан для заголовка.\r\n" +
+        "Блок должен уже существовать в чертеже или в DWT шаблоне.\r\n" +
+        "Это должен быть 2D блок с видимыми изменяемыми атрибутами.",
+      "Il nome del blocco che verrà creato per l'intestazione.\r\n" +
+        "Il blocco deve già esistere nel disegno o nel modello DWT.\r\n" +
+        "Deve essere un blocco 2D con attributi visibili e modificabili.",
+      "Der Name des Blocks, der für die Kopfzeile erstellt wird.\r\n" +
+        "Der Block muss bereits in der Zeichnung oder der DWT-Vorlage vorhanden sein.\r\n" +
+        "Dies muss ein 2D-Block mit sichtbaren, bearbeitbaren Attributen sein.",
+      "将为标题创建的块的名称。\r\n" +
+        "该块必须已存在于图纸或DWT模板中。\r\n" +
+        "这必须是一个具有可见、可编辑属性的2D块。",
+      "El nombre del bloque que se creará para el encabezado.\r\n" +
+        "El bloque ya debe existir en el dibujo o en la plantilla DWT.\r\n" +
+        "Debe ser un bloque 2D con atributos visibles y editables.",    // ES
+      "Le nom du bloc qui sera créé pour l'en-tête.\r\n" +
+        "Le bloc doit déjà exister dans le dessin ou le modèle DWT.\r\n" +
+        "Il doit s'agir d'un bloc 2D avec des attributs visibles et modifiables.", // FR
+      "Başlık için oluşturulacak bloğun adı.\r\n" +
+        "Blok, çizimde veya DWT şablonunda zaten var olmalıdır.\r\n" +
+        "Bu, görünür, düzenlenebilir özniteliklere sahip bir 2D blok olmalıdır."}; // TR
+
+    public static readonly string[] TitleSpace = {
+      "Title space",
+      "Отступ заголовка",
+      "Rientro dell'intestazione",
+      "Überschrift Einzug",
+      "标题缩进",
+      "Espacio de título",                                       // ES
+      "Espace de titre",                                         // FR
+      "Başlık boşluğu"};                                         // TR
+
+    public static readonly string[] TitleSpaceTip = {
+      "Space between the title and the drawing.\r\n" +
+        "Set to 0 to use an indent equal to the title text height.\r\n" +
+        "Only works when the title is placed at the top, not in the center.",
+      "Свободное место между заголовком и чертежом. \r\n" +
+        "Назначьте 0, чтоб использовать отступ равный высоте текста заголовка.\r\n" +
+        "Срабатывает только когда заголовок размещается сверху, а не в центре.",
+      "Spazio tra il titolo e il disegno.\r\n" +
+        "Impostare su 0 per utilizzare un rientro pari all'altezza del testo del titolo.\r\n" +
+        "Funziona solo quando il titolo è posizionato in alto, non al centro.",
+      "Platz zwischen dem Titel und der Zeichnung.\r\n" +
+        "Auf 0 setzen, um einen Einzug in Höhe des Titeltextes zu verwenden.\r\n" +
+        "Funktioniert nur, wenn der Titel oben und nicht in der Mitte platziert ist.",
+      "标题和图纸之间的间距。\r\n" +
+        "设为0以使用等于标题文字高度的缩进。\r\n" +
+        "仅当标题放置在顶部时有效，居中时无效。",
+      "Espacio entre el título y el dibujo.\r\n" +
+        "Establezca en 0 para usar una sangría igual a la altura del texto del título.\r\n" +
+        "Solo funciona cuando el título se coloca en la parte superior, no en el centro.", // ES
+      "Espace entre le titre et le dessin.\r\n" +
+        "Définir sur 0 pour utiliser un retrait égal à la hauteur du texte du titre.\r\n" +
+        "Ne fonctionne que lorsque le titre est placé en haut, pas au centre.",              // FR
+      "Başlık ile çizim arasındaki boşluk.\r\n" +
+        "Başlık metin yüksekliğine eşit bir girinti kullanmak için 0 olarak ayarlayın.\r\n" +
+        "Başlık üstte yerleştirildiğinde çalışır, merkezde değil."};                      // TR
+
+
+  }
+}
