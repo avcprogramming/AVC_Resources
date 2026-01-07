@@ -332,6 +332,49 @@ namespace AVC
         "Başlık metin yüksekliğine eşit bir girinti kullanmak için 0 olarak ayarlayın.\r\n" +
         "Başlık üstte yerleştirildiğinde çalışır, merkezde değil."};                      // TR
 
+    public static readonly string[] BlockHeight = {
+      "Block Height",
+      "Высота блока",
+      "Altezza del blocco",
+      "Blockhöhe",
+      "块高度",
+      "Altura del bloque",                                      // ES
+      "Hauteur du bloc",                                        // FR
+      "Blok Yüksekliği" };                                      // TR
+  
+    public static readonly string[] BlockHeightTip = {
+      "The Y position for the title block. \r\n" +
+        "If the program doesn't correctly determine the height of the title block,\r\n" +
+        "you can set it manually here.\r\n" +
+        "Set it to 0 to have the program measure the block's height automatically.",
+      "Место по Y для блока-заголовка. \r\n" +
+        "На случай, если программа не верно определит высоту блока заголовка,\r\n" +
+        "вы можете задать ее вручную здесь.\r\n" +
+        "Назначьте 0, чтоб программа сама померила высоту блока.",
+      "La posizione Y per il blocco del titolo.\r\n" +
+        "Se il programma non determina correttamente l'altezza del blocco del titolo,\r\n" +
+        "è possibile impostarla manualmente qui.\r\n" +
+        "Impostare su 0 per far misurare automaticamente l'altezza del blocco dal programma.",
+      "Die Y-Position für den Titelblock.\r\n" +
+        "Wenn das Programm die Höhe des Titelblocks nicht korrekt bestimmt,\r\n" +
+        "können Sie sie hier manuell einstellen.\r\n" +
+        "Auf 0 setzen, damit das Programm die Blockhöhe automatisch misst.",
+      "标题块的Y位置。\r\n" +
+        "如果程序无法正确确定标题块的高度，\r\n" +
+        "您可以在此手动设置。\r\n" +
+        "设为0以让程序自动测量块的高度。",
+      "La posición Y para el bloque de título.\r\n" +
+        "Si el programa no determina correctamente la altura del bloque de título,\r\n" +
+        "puede configurarla manualmente aquí.\r\n" +
+        "Establezca en 0 para que el programa mida automáticamente la altura del bloque.", // ES
+      "La position Y pour le bloc de titre.\r\n" +
+        "Si le programme ne détermine pas correctement la hauteur du bloc de titre,\r\n" +
+        "vous pouvez la définir manuellement ici.\r\n" +
+        "Définir sur 0 pour que le programme mesure automatiquement la hauteur du bloc.", // FR
+      "Başlık bloğu için Y konumu.\r\n" +
+        "Program başlık bloğunun yüksekliğini doğru şekilde belirleyemezse,\r\n" +
+        "burada manuel olarak ayarlayabilirsiniz.\r\n" +
+        "Blok yüksekliğini programın otomatik olarak ölçmesi için 0 olarak ayarlayın."}; // TR
 
   }
 }

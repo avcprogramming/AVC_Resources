@@ -445,35 +445,80 @@ namespace AVC
       "TNT komutunu (montaj patlaması) çağırın ve her montajın ayrıntılarını uzayda patlayın." };  // TR
 
     public static readonly string[] ManualStep = {
-      "",
+      "Manual step adjustment",
       "Ручная настройка шага",
-    };
+      "Regolazione manuale del passo",
+      "Manuelle Schrittanpassung" ,
+      "手动步进调整",
+      "Ajuste de paso manual",                        // ES
+      "Ajustement manuel de l'étape",                 // FR
+      "Manuel adım ayarı"};                           // TR
 
     public static readonly string[] ManualStepTip = {
-      "",
+      "You can set any distances between exposed assemblies along each coordinate axis.",
       "Вы можете настроить любые расстояния между выставленными сборками по каждой оси координат.",
-    };
+      "È possibile impostare qualsiasi distanza tra gli assiemi esposti lungo ogni asse di coordinate.",
+      "Sie können beliebige Abstände zwischen exponierten Baugruppen entlang jeder Koordinatenachse einstellen." ,
+      "您可以沿每个坐标轴设置暴露组件之间的任何距离。",
+      "Puede establecer cualquier distancia entre ensamblajes expuestos a lo largo de cada eje de coordenadas.",  // ES
+      "Vous pouvez définir n'importe quelle distance entre les assemblages exposés le long de chaque axe de coordonnées.",  // FR
+      "Her koordinat ekseni boyunca açığa çıkarılan montajlar arasında herhangi bir mesafe ayarlayabilirsiniz." };
 
     public static readonly string[] AutoStepAlongX = {
-      "",
-      "Шаг вдоль X"
-    };
+      "Step along X",
+      "Шаг вдоль X",
+      "Passo lungo X",
+      "Schritt entlang X" ,
+      "沿X步进",
+      "Paso a lo largo de X",                          // ES
+      "Pas le long de X",                              // FR
+      "X boyunca adım"};                               // TR
 
     public static readonly string[] AutoStepAlongXTip = {
-      "",
-      "Программа сама подберет расстояния между сборками изходя из размеров сборки. Сборки располагаются вдоль оси X."
-    };
+      "The assemblies will be aligned along the X-axis. \r\n" +
+        "The program will automatically calculate the distances between the assemblies based on the assembly dimensions.",
+      "Сборки будут выставлены в линию вдоль оси X. \r\n" +
+        "Программа сама подберет расстояния между сборками исходя из размеров сборки.",
+      "Gli assiemi saranno allineati lungo l'asse X. \r\n" +
+        "Il programma calcolerà automaticamente le distanze tra gli assiemi in base alle dimensioni dell'assieme.",
+      "Die Baugruppen werden entlang der X-Achse ausgerichtet. \r\n" +
+        "Das Programm berechnet automatisch die Abstände zwischen den Baugruppen basierend auf den Abmessungen der Baugruppe." ,
+      "组件将沿X轴对齐。 \r\n" +
+        "程序将根据组件尺寸自动计算组件之间的距离。",
+      "Los ensamblajes se alinearán a lo largo del eje X. \r\n" +  // ES
+        "El programa calculará automáticamente las distancias entre los ensamblajes en función de las dimensiones del ensamblaje.",
+      "Les assemblages seront alignés le long de l'axe X. \r\n" +  // FR
+        "Le programme calculera automatiquement les distances entre les assemblages en fonction des dimensions de l'assemblage.",
+      "Montajlar X ekseni boyunca hizalanacaktır. \r\n" +  // TR
+        "Program, montaj boyutlarına göre montajlar arasındaki mesafeleri otomatik olarak hesaplayacaktır." };
 
     public static readonly string[] AutoStepXYZ = {
-      "",
-      "Шаг по XYZ"
-    };
+      "Step by XYZ",
+      "Шаг по XYZ",
+      "Passo per XYZ",
+      "Schritt für XYZ" ,
+      "按XYZ步进",
+      "Paso por XYZ",                                 // ES
+      "Pas par XYZ",                                   // FR
+      "XYZ ile adım"};                                 // TR
 
     public static readonly string[] AutoStepXYZTip = {
-      "",
-      "Программа сама подберет расстояния между сборками изходя из размеров сборки. \r\n" +
-        "Сборки располагаются со сдвигом по всем трем осям координат в сторону +X, -Y, +Z."
-    };
+      "The assemblies will be arranged diagonally in the +X, -Y, and +Z directions. \r\n" +
+        "The program will automatically calculate the distances between the assemblies based on the assembly dimensions.",
+      "Сборки будут выставлены по диагонали в сторону +X, -Y, +Z. \r\n" +
+        "Программа сама подберет расстояния между сборками исходя из размеров сборки. ",
+      "Gli assiemi saranno disposti diagonalmente nelle direzioni +X, -Y e +Z. \r\n" +
+        "Il programma calcolerà automaticamente le distanze tra gli assiemi in base alle dimensioni dell'assieme.",
+      "Die Baugruppen werden diagonal in den Richtungen +X, -Y und +Z angeordnet. \r\n" +
+        "Das Programm berechnet automatisch die Abstände zwischen den Baugruppen basierend auf den Abmessungen der Baugruppe." ,
+      "组件将沿+X、-Y和+Z方向对角线排列。 \r\n" +
+        "程序将根据组件尺寸自动计算组件之间的距离。",
+      "Los ensamblajes se dispondrán en diagonal en las direcciones +X, -Y y +Z. \r\n" +  // ES
+        "El programa calculará automáticamente las distancias entre los ensamblajes en función de las dimensiones del ensamblaje.",
+      "Les assemblages seront disposés en diagonale dans les directions +X, -Y et +Z. \r\n" +  // FR
+        "Le programme calculera automatiquement les distances entre les assemblages en fonction des dimensions de l'assemblage.",
+      "Montajlar +X, -Y ve +Z yönlerinde çapraz olarak düzenlenecektir. \r\n" +  // TR
+        "Program, montaj boyutlarına göre montajlar arasındaki mesafeleri otomatik olarak hesaplayacaktır." };
 
 
   }
