@@ -72,6 +72,23 @@
       "PLACEestilo",
       "PLACEstyle (FR)",
       "PLACEstil (TR)" };
+    public static readonly string[] DefViewTemplate = { 
+      "#%index% %direction% %isometric:{0} %VIEW\r\n" +
+        "Scale: %scale%",
+      "№%index% ВИД %direction%%isometric: {0}%\r\n" +
+        "Масштаб: %scale%",
+      "#%index% VISTA %direction%%isometric: {0}%\r\n" +
+        "Scala: %scale%",
+      "#%index% %direction%%isometric%ANSICHT\r\n" +
+        "Skala: %scale%",
+      "#%index% %direction%%isometric%视图\r\n" +
+        "规模: %scale%",
+      "#%index% VISTA %direction%%isometric: {0}%\r\n" +
+        "Escala: %scale%",
+      "#%index% VUE %direction%%isometric: {0}%\r\n" +
+        "Échelle : %scale%",
+      "#%index% GÖRÜNÜM %direction%%isometric: {0}%\r\n" +
+        "Ölçek: %scale%" };
     public static readonly string[] DefViewAttributes = { // взято у 1220
       "#=%index%\r\n" +
         "VIEWNAME=%direction% %isometric:{0} %VIEW\r\n" +
@@ -110,7 +127,6 @@
         "ПРОВЕРИЛ=\r\n" +
         "ПРОЕКТ=%<\\AcVar Filename \\f \"%fn2\">%\r\n" +
         "ЗАКАЗЧИК=%<\\AcVar Subject>%" };
-
     public static readonly string[] CreatingViewports = {
       "There are no viewports on sheet {0}. The program will create viewports to accommodate {1} assemblies.",
       "На листе {0} нет ни одного вьюпорта (видового экрана). Программа создаст вьюпорты для размещения {1} сборок.",
@@ -193,40 +209,6 @@
       "Creando viewports y anotaciones",
       "Création des viewports et des annotations",
       "Viewport ve açıklamaların oluşturulması" };
-    public static readonly string[] BlockExtentsErr = {
-      "Unable to measure the dimensions of block '{0}'. The block will be overlaid on the drawing.",
-      "Не удалось измерить размеры блока '{0}'. Блок будет наложен на чертеж.",
-      "Impossibile misurare le dimensioni del blocco '{0}'. Il blocco verrà sovrapposto al disegno.",
-      "Die Abmessungen des Blocks '{0}' konnten nicht gemessen werden. Der Block wird auf die Zeichnung gelegt.",
-      "无法测量块“{0}”的尺寸。该块将覆盖在图纸上。",
-      "No se pueden medir las dimensiones del bloque «{0}». Se superpondrá al dibujo.",
-      "Impossible de mesurer les dimensions du bloc « {0} ». Le bloc sera superposé au dessin.",
-      "‘{0}’ bloğunun ölçüleri alınamadı. Blok çizimin üzerine bindirilecek." };
-    public static readonly string[] BlockAttrErr = {
-      "There is no attribute '{1}' in the view name block '{0}'.",
-      "В блоке названия вида '{0}' нет атрибута '{1}'.",
-      "Non esiste l'attributo '{1}' nel blocco del nome della vista '{0}'.",
-      "Im Ansichtsname-Block '{0}' ist kein Attribut '{1}' vorhanden.",
-      "视图名称块“{0}”中没有属性“{1}”。",
-      "No existe el atributo «{1}» en el bloque de nombre de vista «{0}».",
-      "L’attribut « {1} » n’existe pas dans le bloc de nom de vue « {0} ».",
-      "‘{0}’ görünüm adı bloğunda ‘{1}’ özniteliği yok."    };
-    public static readonly string[] NoAttributesErr = {
-      "The view name block '{0}' does not have any attributes to fill. \r\n" +
-        "Reconfigure the attribute list.",
-      "В блоке названия вида '{0}' нет ни одного атрибута для заполнения. \r\n" +
-        "Перенастройте список атрибутов.",
-      "Il blocco del nome della vista '{0}' non dispone di attributi da compilare. \r\n" +
-        "Riconfigurare l'elenco degli attributi.",
-      "Im Ansichtsname-Block '{0}' sind keine Attribute zum Ausfüllen vorhanden. \r\n" +
-        "Konfigurieren Sie die Attributliste neu.",
-      "视图名称块“{0}”没有任何要填写的属性。重新配置属性列表。",
-      "El bloque de nombre de vista «{0}» no tiene atributos que completar. \r\n" +
-        "Vuelva a configurar la lista.",
-      "Le bloc nom de vue « {0} » n’a aucun attribut à renseigner. \r\n" +
-        "Reconfigurez la liste.",
-      "‘{0}’ görünüm adı bloğunda doldurulacak hiçbir öznitelik yok. \r\n" +
-        "Öznitelik listesini yeniden yapılandırın." };
 
     //=============================================== AsmDrawOptionsBox ================================================
     public static readonly string[] DialogTitle = {
@@ -732,57 +714,16 @@
       "Nombres de vista",
       "Noms des vues",
       "Görünüm adları" };
-    public static readonly string[] ViewNamesTip = {
-      "Place a block with the view name under each viewport.",
-      "Помещать блок с названием вида под каждый вьюпорт.",
-      "Posizionare un blocco con il nome della vista in ogni finestra di visualizzazione.",
-      "Platzieren Sie einen Block mit dem Ansichtsname in jedem Ansichtsfenster.",
-      "在每个视口中放置一个带有视图名称的块。",
-      "Coloque un bloque con el nombre de la vista bajo cada viewport.",
-      "Placer un bloc avec le nom de la vue sous chaque viewport.",
-      "Her viewport’un altına görünüm adı bloğu yerleştirin." };
-    public static readonly string[] ViewNamesEnable = {
-      "Insert view name blocks",
-      "Вставить блоки названий видов",
-      "Inserire i blocchi dei nomi delle viste",
-      "Ansichtsname-Blöcke einfügen",
-      "插入视图名称块",
-      "Insertar bloques de nombre de vista",
-      "Insérer des blocs de nom de vue",
-      "Görünüm adı bloklarını ekle" };
-    public static readonly string[] ViewBlockTip = {
-      "Select a block from the drawing or DWT template that has attributes for the view name and scale.",
-      "Выберите блок из чертежа или DWT-шаблона, в котором есть атрибуты для имени и масштаба вида.",
-      "Selezionare un blocco dal disegno o dal modello DWT che abbia attributi per il nome e la scala della vista.",
-      "Wählen Sie einen Block aus der Zeichnung oder DWT-Vorlage, der Attribute für den Ansichtsname und den Maßstab enthält.",
-      "从图纸或 DWT 模板中选择一个块，该块具有视图名称和比例的属性。",
-      "Seleccione un bloque con atributos de nombre y escala de vista.",
-      "Sélectionnez un bloc avec des attributs de nom et d’échelle de vue.",
-      "Görünüm adı ve ölçek öznitelikli bir blok seçin." };
-    public static readonly string[] ViewNameHeight = {
-      "Gap for block",
-      "Зазор для блока",
-      "Spazio per il blocco",
-      "Lücke für Block",
-      "块间​​隙",
-      "Espacio para el bloque",
-      "Espace pour le bloc",
-      "Blok için boşluk" };
-    public static readonly string[] ViewNameHeightTip = {
-      "How much space to leave under the view to place the block. \r\n" +
-        " If 0, the program will measure the height of the block itself.",
-      "Сколько места оставить под видом, для размещения блока. Если 0, то программа сама измерит высоту блока.",
-      "Quanto spazio lasciare sotto la vista per posizionare il blocco. \r\n" +
-        "Se 0, il programma misurerà l'altezza del blocco stesso.",
-      "Wie viel Platz unter der Ansicht zum Platzieren des Blocks gelassen werden soll. \r\n" +
-        "Wenn 0, misst das Programm die Höhe des Blocks selbst.",
-      "在视图下方留出多少空间以放置块。如果为 0，程序将自行测量块的高度。",
-      "Espacio bajo la vista para colocar el bloque.\r\n" +
-        "Si es 0, se medirá automáticamente.",
-      "Espace sous la vue pour placer le bloc.\r\n" +
-        "Si 0, la hauteur du bloc sera mesurée.",
-      "Blok için görünüm altında bırakılacak boşluk.\r\n" +
-        "0 ise program yüksekliği ölçer." };
+    public static readonly string[] ViewNamesSubstitutionsTip = {
+      "Viewport property substitutions are allowed. For example, its number, view direction, and scale.",
+      "Допустимы подстановки свойств вьюпорта. Например, его номер, направление вида, масштаб.",
+      "Sono consentite le sostituzioni delle proprietà della finestra di visualizzazione. Ad esempio, il suo numero, la direzione della vista e la scala.",
+      "Viewport-Eigenschaftsänderungen sind zulässig. Zum Beispiel seine Nummer, Blickrichtung und Maßstab.",
+      "允许进行视口属性替换。例如，其编号、视图方向和比例。",
+      "Se permiten sustituciones de propiedades del viewport. Por ejemplo, su número, dirección de vista y escala.",
+      "Les substitutions de propriétés de viewport sont autorisées. Par exemple, son numéro, sa direction de vue et son échelle.",
+      "Viewport özellik değiştirmeleri desteklenir. Örneğin numarası, görünüm yönü ve ölçeği." };
+
     public static readonly string[] OverallDimensions = {
       "Overall dimensions of the assembly",
       "Габаритные размеры сборки",

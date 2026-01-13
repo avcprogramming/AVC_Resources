@@ -5,17 +5,17 @@ namespace AVC
   public class 
   TitleStyleL
   {
-    public static readonly string[] MakeTitle = {
-      "Title",
-      "Создать",
-      "Titolo",
-      "Titel",
-      "文字设置",
-      "Título",                                                  // ES
-      "Titre",                                                   // FR
-      "Başlık"};                                                 // TR
+    public static readonly string[] TitleOn = {
+      "Make Title",
+      "Создать заголовок",
+      "Crea intestazione",
+      "Titel erstellen",
+      "生成标题",
+      "Crear título",                                          // ES
+      "Créer le titre",                                        // FR
+      "Başlık Oluştur" };                                      // TR
 
-    public static readonly string[] MakeTitleTip = {
+    public static readonly string[] TitleOnTip = {
       "Insert title for each drawing.",
       "Вставить текстовый заголовок для каждого чертежа.",
       "Inserisci il titolo per ogni disegno.",
@@ -24,6 +24,26 @@ namespace AVC
       "Insertar título para cada dibujo.",                      // ES
       "Insérer le titre pour chaque dessin.",                   // FR
       "Her çizim için başlık ekle."};                           // TR
+
+    public static readonly string[] TextTip = {
+      "A Multiline Text (MText) will be created as the title.",
+      "В качестве заголовка будет создан Многострочный текст (MText).",
+      "Verrà creato un Testo Multilinea (MText) come titolo.",
+      "Ein Mehrzeiliger Text (MText) wird als Titel erstellt.",
+      "将创建多行文字（MText）作为标题。",
+      "Se creará un Texto Multilínea (MText) como título.",      // ES
+      "Un Texte Multiligne (MText) sera créé en tant que titre.", // FR
+      "Başlık olarak Çok Satırlı Metin (MText) oluşturulacak."}; // TR
+
+    public static readonly string[] BlockTip = {
+      "An existing 2D block will be inserted as a title.",
+      "В качестве заголовка будет вставлен существующий 2D блок.",
+      "Un blocco 2D esistente verrà inserito come intestazione.",
+      "Ein vorhandener 2D-Block wird als Kopfzeile eingefügt.",
+      "现有的2D块将作为标题插入。",
+      "Se insertará un bloque 2D existente como encabezado.",    // ES
+      "Un bloc 2D existant sera inséré en tant qu'en-tête.",     // FR
+      "Mevcut bir 2D blok başlık olarak eklenecektir." };       // TR
 
     public static readonly string[] TextTemplate = {
       "Text Template",
@@ -101,7 +121,7 @@ namespace AVC
       "Style de texte du titre. Définissez un espace pour utiliser le style actuel.",  // FR
       "Başlık metin stili. Mevcut stili kullanmak için boşluk ayarlayın."};  // TR
 
-    public static readonly string[] HeightTip = {
+    public static readonly string[] TextHeightTip = {
       "Text size. Set to 0 to use the _TextSize system variable.",
       "Размер текста.\r\n"+
         "Назначьте 0, чтоб использовать системную переменную _TextSize.",
@@ -113,14 +133,14 @@ namespace AVC
       "Metin boyutu. _TextSize sistem değişkenini kullanmak için 0 olarak ayarlayın."};  // TR
 
     public static readonly string[] TextFrame = {
-      "Text Frame",
+      "Frame",
       "Рамка",
-      "Cornice di testo",
+      "Cornice",
       "Textrahmen",
       "文字框",
-      "Marco de texto",                                          // ES
-      "Cadre de texte",                                          // FR
-      "Metin çerçevesi"};                                        // TR
+      "Marco",                                                  // ES
+      "Cadre",                                                  // FR
+      "Çerçeve"};                                               // TR
 
     public static readonly string[] TextFrameTip = {
       "Draw a frame around the text.",
@@ -159,12 +179,12 @@ namespace AVC
       "Platzieren Sie den Titel über der Zeichnung.",
       "将标题放置在图纸上方。",
       "Colocar el título encima del dibujo.",          // ES
-      "Placer le titre au-dessus du dessin.",         // FR
-      "Başlığı çizimin üstüne yerleştir."};           // TR
+      "Placer le titre au-dessus du dessin.",          // FR
+      "Başlığı çizimin üstüne yerleştir."};            // TR
 
     public static readonly string[] Center = {
       "Center",
-      "Центр",
+      "По центру",
       "Centro",
       "Center",
       "居中",
@@ -268,10 +288,10 @@ namespace AVC
       "将标题放置在图纸下方。",
       "Colocar el título debajo del dibujo.",         // ES
       "Placer le titre en dessous du dessin.",        // FR
-      "Başlığı çizimin altına yerleştir."};          // TR
+      "Başlığı çizimin altına yerleştir."};           // TR
 
     public static readonly string[] BlockNameTip = {
-      "The name of the block that will be created for the header.\r\n" +
+      "The name of the block that will be created for the title.\r\n" +
         "The block must already exist in the drawing or DWT template.\r\n" +
         "This must be a 2D block with visible, editable attributes.",
       "Имя блока, который будет создан для заголовка.\r\n" +
@@ -296,7 +316,7 @@ namespace AVC
         "Blok, çizimde veya DWT şablonunda zaten var olmalıdır.\r\n" +
         "Bu, görünür, düzenlenebilir özniteliklere sahip bir 2D blok olmalıdır."}; // TR
 
-    public static readonly string[] TitleSpace = {
+    public static readonly string[] TitleGap = {
       "Title space",
       "Отступ заголовка",
       "Rientro dell'intestazione",
@@ -306,31 +326,31 @@ namespace AVC
       "Espace de titre",                                         // FR
       "Başlık boşluğu"};                                         // TR
 
-    public static readonly string[] TitleSpaceTip = {
+    public static readonly string[] TitleGapTip = {
       "Space between the title and the drawing.\r\n" +
         "Set to 0 to use an indent equal to the title text height.\r\n" +
-        "Only works when the title is placed at the top, not in the center.",
+        "The option is not used for titles within the drawing.",
       "Свободное место между заголовком и чертежом. \r\n" +
         "Назначьте 0, чтоб использовать отступ равный высоте текста заголовка.\r\n" +
-        "Срабатывает только когда заголовок размещается сверху, а не в центре.",
+        "Опция не используется для заголовков внутри чертежа.",
       "Spazio tra il titolo e il disegno.\r\n" +
         "Impostare su 0 per utilizzare un rientro pari all'altezza del testo del titolo.\r\n" +
-        "Funziona solo quando il titolo è posizionato in alto, non al centro.",
+        "L'opzione non viene utilizzata per i titoli all'interno del disegno.",
       "Platz zwischen dem Titel und der Zeichnung.\r\n" +
-        "Auf 0 setzen, um einen Einzug in Höhe des Titeltextes zu verwenden.\r\n" +
-        "Funktioniert nur, wenn der Titel oben und nicht in der Mitte platziert ist.",
-      "标题和图纸之间的间距。\r\n" +
+        "Auf 0 setzen, um einen Einzug zu verwenden, der der Höhe des Titeltexts entspricht.\r\n" +
+        "Die Option wird für Titel innerhalb der Zeichnung nicht verwendet.",
+      "标题和图纸之间的空间。\r\n" +
         "设为0以使用等于标题文字高度的缩进。\r\n" +
-        "仅当标题放置在顶部时有效，居中时无效。",
+        "该选项不适用于图纸内的标题。",
       "Espacio entre el título y el dibujo.\r\n" +
         "Establezca en 0 para usar una sangría igual a la altura del texto del título.\r\n" +
-        "Solo funciona cuando el título se coloca en la parte superior, no en el centro.", // ES
+        "La opción no se utiliza para títulos dentro del dibujo.",   // ES
       "Espace entre le titre et le dessin.\r\n" +
         "Définir sur 0 pour utiliser un retrait égal à la hauteur du texte du titre.\r\n" +
-        "Ne fonctionne que lorsque le titre est placé en haut, pas au centre.",              // FR
+        "L'option n'est pas utilisée pour les titres à l'intérieur du dessin.", // FR
       "Başlık ile çizim arasındaki boşluk.\r\n" +
         "Başlık metin yüksekliğine eşit bir girinti kullanmak için 0 olarak ayarlayın.\r\n" +
-        "Başlık üstte yerleştirildiğinde çalışır, merkezde değil."};                      // TR
+        "Seçenek, çizim içindeki başlıklar için kullanılmaz."}; // TR
 
     public static readonly string[] BlockHeight = {
       "Block Height",
@@ -375,6 +395,64 @@ namespace AVC
         "Program başlık bloğunun yüksekliğini doğru şekilde belirleyemezse,\r\n" +
         "burada manuel olarak ayarlayabilirsiniz.\r\n" +
         "Blok yüksekliğini programın otomatik olarak ölçmesi için 0 olarak ayarlayın."}; // TR
+
+    public static readonly string[] BlockExtentsErr = {
+      "Unable to measure the dimensions of block '{0}'. The block will be overlaid on the drawing.",
+      "Не удалось измерить размеры блока '{0}'. Блок будет наложен на чертеж.",
+      "Impossibile misurare le dimensioni del blocco '{0}'. Il blocco verrà sovrapposto al disegno.",
+      "Die Abmessungen des Blocks '{0}' konnten nicht gemessen werden. Der Block wird auf die Zeichnung gelegt.",
+      "无法测量块“{0}”的尺寸。该块将覆盖在图纸上。",
+      "No se pueden medir las dimensiones del bloque «{0}». Se superpondrá al dibujo.",
+      "Impossible de mesurer les dimensions du bloc « {0} ». Le bloc sera superposé au dessin.",
+      "‘{0}’ bloğunun ölçüleri alınamadı. Blok çizimin üzerine bindirilecek." };
+
+    public static readonly string[] TextExtentsErr = {
+      "Unable to get title text dimensions",
+      "Не удалось получить размеры текста заголовка",
+      "Impossibile ottenere le dimensioni del testo del titolo",
+      "Die Abmessungen des Titeltexts konnten nicht ermittelt werden.",
+      "无法获取标题文字的尺寸",
+      "No se pueden obtener las dimensiones del texto del título.",
+      "Impossible d'obtenir les dimensions du texte du titre.",
+      "Başlık metninin ölçüleri alınamadı." };
+
+    public static readonly string[] BlockAttrErr = {
+      "There is no attribute '{1}' in the view name block '{0}'.",
+      "В блоке названия вида '{0}' нет атрибута '{1}'.",
+      "Non esiste l'attributo '{1}' nel blocco del nome della vista '{0}'.",
+      "Im Ansichtsname-Block '{0}' ist kein Attribut '{1}' vorhanden.",
+      "视图名称块“{0}”中没有属性“{1}”。",
+      "No existe el atributo «{1}» en el bloque de nombre de vista «{0}».",
+      "L’attribut « {1} » n’existe pas dans le bloc de nom de vue « {0} ».",
+      "‘{0}’ görünüm adı bloğunda ‘{1}’ özniteliği yok."    };
+
+    public static readonly string[] NoAttributesErr = {
+      "The view name block '{0}' does not have any attributes to fill. \r\n" +
+        "Reconfigure the attribute list.",
+      "В блоке названия вида '{0}' нет ни одного атрибута для заполнения. \r\n" +
+        "Перенастройте список атрибутов.",
+      "Il blocco del nome della vista '{0}' non dispone di attributi da compilare. \r\n" +
+        "Riconfigurare l'elenco degli attributi.",
+      "Im Ansichtsname-Block '{0}' sind keine Attribute zum Ausfüllen vorhanden. \r\n" +
+        "Konfigurieren Sie die Attributliste neu.",
+      "视图名称块“{0}”没有任何要填写的属性。重新配置属性列表。",
+      "El bloque de nombre de vista «{0}» no tiene atributos que completar. \r\n" +
+        "Vuelva a configurar la lista.",
+      "Le bloc nom de vue « {0} » n’a aucun attribut à renseigner. \r\n" +
+        "Reconfigurez la liste.",
+      "‘{0}’ görünüm adı bloğunda doldurulacak hiçbir öznitelik yok. \r\n" +
+        "Öznitelik listesini yeniden yapılandırın." };
+
+    public static readonly string[] SingleAttrErr = {
+      "The program is configured to fill a single block attribute. However, {1} attribute(s) were found in block '{0}'.",
+      "Программа настроена на заполнение единственного атрибута. А в блоке '{0}' обнаружено {1} атрибут(ов).", 
+      "Il programma è configurato per compilare un singolo attributo di blocco. Tuttavia, sono stati trovati {1} attributi nel blocco '{0}'.",
+      "Das Programm ist so konfiguriert, dass ein einzelnes Blockattribut ausgefüllt wird. Im Block '{0}' wurden jedoch {1} Attribute gefunden.",
+      "程序配置为填写单个块属性。但是，在块“{0}”中找到了{1}个属性。",
+      "El programa está configurado para completar un solo atributo de bloque. Sin embargo, se encontraron {1} atributo(s) en el bloque «{0}».",
+      "Le programme est configuré pour remplir un seul attribut de bloc. Cependant, {1} attribut(s) ont été trouvés dans le bloc « {0} ».",
+      "Program tek bir blok özniteliğini dolduracak şekilde yapılandırılmıştır. Ancak, '{0}' bloğunda {1} öznitelik bulundu." };
+
 
   }
 }

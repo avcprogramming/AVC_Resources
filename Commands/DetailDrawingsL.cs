@@ -149,7 +149,7 @@ namespace AVC
 
     public static readonly string[] NeedLayoutWithVP = {
       "There are no viewports on sheet {0}. Select a sheet with viewports.",
-      "На листе {0} нет ни одного видового экрана. Выбелите лист с видовыми экранами.",
+      "На листе {0} нет ни одного видового экрана. Выберите лист с видовыми экранами.",
       "Non ci sono finestre sul foglio {0}. Seleziona un foglio con finestre.",
       "Es gibt keine Darstellungsbereiche auf Blatt {0}. Wählen Sie ein Blatt mit Ansichtsfenstern aus.",
       "布局 {0} 上没有视口。 选择带有视口的布局。",

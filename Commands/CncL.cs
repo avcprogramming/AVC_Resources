@@ -1356,6 +1356,42 @@ namespace AVC
       "Considérer le diamètre de la fraise",  // FR
       "Freze çapını dikkate al"};  // TR
 
+    public static readonly string[] AddToDepth = {
+      "Add to depth",
+      "Добавить к глубине",
+      "Aggiungi alla profondità",
+      "Zur Tiefe hinzufügen",
+      "添加到深度",
+      "Agregar a la profundidad",  // ES
+      "Ajouter à la profondeur",  // FR
+      "Derinliğe ekle" };  // TR
+
+    public static readonly string[] AddToDepthTip = {
+      "Add some depth to through-cut vertical operations (milling, drilling, sawing). \r\n" +
+        "A positive value will ensure that the part is cut through to the substrate. \r\n" +
+        "A negative value (undercut) will prevent damage to the underside of the part.",
+      "Добавить немного глубины к сквозным вертикальным операциям (фрезеровка, сверление, напилка). \r\n" +
+        "Положительная величина позволит гарантировано прорезать деталь насквозь с выходом на подложку. \r\n" +
+        "Отрицательная величина (недорез) позволит не испортить покрытие нижней стороны детали.",
+      "Aggiungi un po' di profondità alle operazioni verticali a tutto spessore (fresatura, foratura, segatura). \r\n" +
+        "Un valore positivo garantirà che il pezzo venga tagliato fino al substrato. \r\n" +
+        "Un valore negativo (sottospessore) impedirà danni al lato inferiore del pezzo.",
+      "Fügen Sie einigen Tiefen zu vertikalen Durchgangsoperationen (Fräsen, Bohren, Sägen) hinzu. \r\n" +
+        "Ein positiver Wert stellt sicher, dass das Teil bis zum Substrat durchtrennt wird. \r\n" +
+        "Ein negativer Wert (Unterschnitt) verhindert Schäden an der Unterseite des Teils.",
+      "为贯穿式垂直操作（铣削、钻孔、锯切）增加一些深度。 \r\n" +
+        "正值将确保零件切割到底材。 \r\n" +
+        "负值（下切）将防止损坏零件的底面。",
+      "Agregue algo de profundidad a las operaciones verticales de corte completo (fresado, perforación, aserrado). \r\n" +  // ES
+        "Un valor positivo asegurará que la pieza se corte hasta el sustrato. \r\n" +
+        "Un valor negativo (subcorte) evitará daños en la parte inferior de la pieza.",
+      "Ajoutez de la profondeur aux opérations verticales de coupe totale (fraisage, perçage, sciage). \r\n" +  // FR
+        "Une valeur positive garantira que la pièce soit coupée jusqu'au substrat. \r\n" +
+        "Une valeur négative (sous-coupe) évitera d'endommager le dessous de la pièce.",
+      "Tam kesim dikey işlemlere biraz derinlik ekleyin (frezeleme, delme, testere). \r\n" +  // TR
+        "Pozitif bir değer, parçanın alt tabakaya kadar kesilmesini sağlar. \r\n" +
+        "Negatif bir değer (alt kesim), parçanın alt tarafına zarar vermesini önler."};
+
     public static readonly string[] ICDirection = {
       "Direction",
       "Направление",
