@@ -213,32 +213,6 @@ namespace AVC
         "Bu seçeneği devre dışı bırakırsanız, en büyük montajdan çok daha büyük bir girinti belirtmeniz gerekecektir.\r\n" +
         "Ancak montajlar düzgün aralıklarla düzenlenecektir."};
 
-    public static readonly string[] TitleSpaceTip = {
-      "Extra padding between header and assembly. \r\n" +
-         "Set to 0 to use a padding equal to the height of the title text.\r\n" +
-         "Only fires when the title is placed above the assembly, not inside its dimensions.",
-      "Дополнительный отступ между заголовком и сборкой. \r\n" +
-        "Назначьте 0, чтоб использовать отступ равный высоте текста заголовка.\r\n" +
-        "Срабатывает только когда заголовок размещается над сборкой, а не внутри ее габаритов.",
-      "Imbottitura extra tra intestazione e assemblaggio. \r\n" +
-         "Imposta a 0 per usare un padding uguale all'altezza del testo del titolo.\r\n" +
-         "Si attiva solo quando l'intestazione è posizionata sopra l'assieme, non all'interno delle sue dimensioni.",
-      "Zusätzliche Polsterung zwischen Header und Baugruppe. \r\n" +
-         "Auf 0 setzen, um eine Auffüllung gleich der Höhe des Titeltextes zu verwenden.\r\n" +
-         "Wird nur ausgelöst, wenn der Header über der Baugruppe platziert wird, nicht innerhalb ihrer Abmessungen." ,
-      "标头和程序集之间的额外填充。 \r\n" +
-         "设置为 0 以使用等于标题文本高度的填充。\r\n" +
-         "仅当标头位于程序集上方而不是其尺寸内时才会触发。",
-      "Relleno adicional entre el encabezado y el ensamblaje. \r\n" +  // ES
-         "Establezca en 0 para usar un relleno igual a la altura del texto del título.\r\n" +
-         "Solo se activa cuando el título se coloca encima del ensamblaje, no dentro de sus dimensiones.",
-      "Remplissage supplémentaire entre l'en-tête et l'assemblage. \r\n" +  // FR
-         "Définissez sur 0 pour utiliser un remplissage égal à la hauteur du texte du titre.\r\n" +
-         "Ne se déclenche que lorsque le titre est placé au-dessus de l'assemblage, pas à l'intérieur de ses dimensions.",
-      "Başlık ve montaj arasında ekstra dolgu. \r\n" +  // TR
-         "Başlık metninin yüksekliğine eşit bir dolgu kullanmak için 0'a ayarlayın.\r\n" +
-         "Yalnızca başlık montajın üzerine yerleştirildiğinde tetiklenir, boyutlarının içinde değil."};
-
     public static readonly string[] ExposeFrame = {
       "Exposition frame",
       "Рамка выставки",

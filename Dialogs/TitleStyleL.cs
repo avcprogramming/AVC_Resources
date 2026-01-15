@@ -328,29 +328,21 @@ namespace AVC
 
     public static readonly string[] TitleGapTip = {
       "Space between the title and the drawing.\r\n" +
-        "Set to 0 to use an indent equal to the title text height.\r\n" +
-        "The option is not used for titles within the drawing.",
+        "Set to 0 to use an indent equal to the standard text height.",
       "Свободное место между заголовком и чертежом. \r\n" +
-        "Назначьте 0, чтоб использовать отступ равный высоте текста заголовка.\r\n" +
-        "Опция не используется для заголовков внутри чертежа.",
+        "Назначьте 0, чтоб использовать отступ равный стандартной высоте текста.",
       "Spazio tra il titolo e il disegno.\r\n" +
-        "Impostare su 0 per utilizzare un rientro pari all'altezza del testo del titolo.\r\n" +
-        "L'opzione non viene utilizzata per i titoli all'interno del disegno.",
-      "Platz zwischen dem Titel und der Zeichnung.\r\n" +
-        "Auf 0 setzen, um einen Einzug zu verwenden, der der Höhe des Titeltexts entspricht.\r\n" +
-        "Die Option wird für Titel innerhalb der Zeichnung nicht verwendet.",
+        "Impostare su 0 per utilizzare un rientro pari all'altezza del testo standard.",
+      "Abstand zwischen dem Titel und der Zeichnung.\r\n" +
+        "Auf 0 setzen, um einen Einzug zu verwenden, der der Standard-Textgröße entspricht.",
       "标题和图纸之间的空间。\r\n" +
-        "设为0以使用等于标题文字高度的缩进。\r\n" +
-        "该选项不适用于图纸内的标题。",
+        "设为0以使用等于标准文字高度的缩进。",
       "Espacio entre el título y el dibujo.\r\n" +
-        "Establezca en 0 para usar una sangría igual a la altura del texto del título.\r\n" +
-        "La opción no se utiliza para títulos dentro del dibujo.",   // ES
+        "Establezca en 0 para usar una sangría igual a la altura del texto estándar.", // ES
       "Espace entre le titre et le dessin.\r\n" +
-        "Définir sur 0 pour utiliser un retrait égal à la hauteur du texte du titre.\r\n" +
-        "L'option n'est pas utilisée pour les titres à l'intérieur du dessin.", // FR
+        "Définir sur 0 pour utiliser un retrait égal à la hauteur de texte standard.", // FR
       "Başlık ile çizim arasındaki boşluk.\r\n" +
-        "Başlık metin yüksekliğine eşit bir girinti kullanmak için 0 olarak ayarlayın.\r\n" +
-        "Seçenek, çizim içindeki başlıklar için kullanılmaz."}; // TR
+        "Standart metin yüksekliğine eşit bir girinti kullanmak için 0 olarak ayarlayın."}; // TR
 
     public static readonly string[] BlockHeight = {
       "Block Height",
@@ -368,7 +360,7 @@ namespace AVC
         "you can set it manually here.\r\n" +
         "Set it to 0 to have the program measure the block's height automatically.",
       "Место по Y для блока-заголовка. \r\n" +
-        "На случай, если программа не верно определит высоту блока заголовка,\r\n" +
+        "На случай, если программа неверно определит высоту блока заголовка,\r\n" +
         "вы можете задать ее вручную здесь.\r\n" +
         "Назначьте 0, чтоб программа сама померила высоту блока.",
       "La posizione Y per il blocco del titolo.\r\n" +
