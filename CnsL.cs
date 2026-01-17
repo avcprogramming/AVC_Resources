@@ -159,14 +159,14 @@ namespace AVC
       "Yükleniyor..."};
 
     public static readonly string[] Loaded = {
-      "Loaded",
-      "Загружено",
-      "Caricato",
-      "Geladen",
-      "已加载",
-      "Cargado",
-      "Chargé",
-      "Yüklendi"};
+      "✅ Loaded",
+      "✅ Загружено",
+      "✅ Caricato",
+      "✅ Geladen",
+      "✅ 已加载",
+      "✅ Cargado",
+      "✅ Chargé",
+      "✅ Yüklendi"};
 
     public static readonly string[] Done = {
       "✅ Done.",
