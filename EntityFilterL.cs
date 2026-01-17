@@ -755,5 +755,16 @@ namespace AVC
       "Objet minuscule filtré",                         // FR
       "Küçük nesne filtrelendi" };                      // TR
 
+    public static readonly string[] MsgExcludeSelected =  {
+      "Filtered out selected assemblies when counting the number of assemblies in the model: {0}",
+      "Отфильтрованы выбранные сборки при подсчете количества сборок в модели: {0}",
+      "Assemblies selezionati filtrati durante il conte ggio del numero di assiemi nel modello: {0}",
+      "Ausgewählte Baugruppen beim Zählen der Anzahl der Baugruppen im Modell herausgefiltert: {0}",
+      "在计算模型中组件数量时过滤掉所选组件：{0}",
+      "Se filtraron los ensamblajes seleccionados al contar el número de ensamblajes en el modelo: {0}",  // ES
+      "Assemblages sélectionnés filtrés lors du comptage du nombre d'assemblages dans le modèle : {0}",  // FR
+      "Modeldeki montaj sayısını sayarken seçilen montajlar filtrelendi: {0}"  };  // TR
+
+
   }
 }
