@@ -29,16 +29,6 @@ namespace AVC
         "3D katıları dışa aktar" } ,                   // TR
       };
 
-    public static readonly string[] TechErr = {
-      "  Perhaps all parts are discarded due to inappropriate manufacturing techniques.",
-      "  Возможно все детали отброшены из-за неподходящих технологий изготовления",
-      "  Forse tutte le parti vengono scartate a causa di tecniche di produzione inadeguate.",
-      "  Möglicherweise werden alle Teile aufgrund ungeeigneter Herstellungstechniken weggeworfen.",
-      "  由于制造技术不当，可能所有零件都被丢弃了。",
-      "  Quizás todas las piezas se descarten debido a técnicas de fabricación inapropiadas.",  // ES
-      "  Peut-être que toutes les pièces sont rejetées en raison de techniques de fabrication inappropriées.",  // FR
-      "  Belki tüm parçalar uygunsuz üretim teknikleri nedeniyle atılmıştır."};  // TR
-
     public static readonly string[] LayErr = {
       "Couldn't lay out any details for DXF file",
       "Не удалось выложить ни одной детали для файла DXF",
@@ -98,14 +88,24 @@ namespace AVC
         "Dxf dosyası oluşturulmayacak. Dosya adı şablonunu özelleştirin. %row% değiştirmesini kullanın"};
 
     public static readonly string[] Nothing = {
-      "  Nothing to export.",
-      "  Нечего экспортировать.",
-      "  Niente da esportare.",
-      "  Nichts zu exportieren.",
-      "  没有什么可出口的。",
-      "  Nada que exportar.",                          // ES
-      "  Rien à exporter.",                            // FR
-      "  Dışa aktarılacak bir şey yok."};              // TR
+      "  ❌ Nothing to export.",
+      "  ❌ Нечего экспортировать.",
+      "  ❌ Niente da esportare.",
+      "  ❌ Nichts zu exportieren.",
+      "  ❌ 没有什么可出口的。",
+      "  ❌ Nada que exportar.",                          // ES
+      "  ❌ Rien à exporter.",                            // FR
+      "  ❌ Dışa aktarılacak bir şey yok."};              // TR
+
+    public static readonly string[] TechErr = {
+      "     Perhaps all parts are discarded due to inappropriate manufacturing techniques. Review previous program messages.",
+      "     Возможно все детали отброшены из-за неподходящих технологий изготовления. Изучите предыдущие сообщения программы.",
+      "     Forse tutte le parti vengono scartate a causa di tecniche di produzione inadeguate. Rivedere i messaggi precedenti del programma.",
+      "     Möglicherweise werden alle Teile aufgrund ungeeigneter Herstellungstechniken weggeworfen. Lesen Sie die vorherigen Programmmeldungen.",
+      "     由于制造技术不当，可能所有零件都被丢弃了。查看之前的节目信息。",
+      "     Quizás todas las piezas se descarten debido a técnicas de fabricación inapropiadas. Revisar mensajes del programa anterior.",  // ES
+      "     Peut-être que toutes les pièces sont rejetées en raison de techniques de fabrication inappropriées. Consultez les messages précédents du programme.",  // FR
+      "     Belki tüm parçalar uygunsuz üretim teknikleri nedeniyle atılmıştır. Önceki program mesajlarını inceleyin."};  // TR
 
     public static readonly string[] SaveWarning = {
       "You must first save the drawing file.",
