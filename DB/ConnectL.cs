@@ -28,34 +28,34 @@ namespace AVC
       "A>V>C> veritabanına bağlanmaya çalışılıyor."};
 
     public static readonly string[] Connected = {
-      "A>V>C> Database connection to server {1} established. {0:0.##}s",
-      "Установлено соединение с базой данных A>V>C> на сервере {1} за {0:0.##}c",
-      "Una connessione al database A>V>C> sul server {1} è stata stabilita in {0:0.##}s.",
-      "Eine Verbindung zur A>V>C>-Datenbank auf Server {1} wurde in {0:0.##}S hergestellt.",
-      "与服务器 {1} 上的 A>V>C>  数据库的连接在 {0:0.##} 秒内建立。",
-      "Conexión a la base de datos A>V>C> en el servidor {1} establecida en {0:0.##}s.",
-      "Connexion à la base de données A>V>C> sur le serveur {1} établie en {0:0.##}s.",
-      "Sunucu {1} üzerinde A>V>C> veritabanı bağlantısı {0:0.##}s içinde kuruldu."};
+      "✅ A>V>C> Database connection to server {1} established. {0:0.##}s",
+      "✅ Установлено соединение с базой данных A>V>C> на сервере {1} за {0:0.##}c",
+      "✅ Una connessione al database A>V>C> sul server {1} è stata stabilita in {0:0.##}s.",
+      "✅ Eine Verbindung zur A>V>C>-Datenbank auf Server {1} wurde in {0:0.##}S hergestellt.",
+      "✅ 与服务器 {1} 上的 A>V>C>  数据库的连接在 {0:0.##} 秒内建立。",
+      "✅ Conexión a la base de datos A>V>C> en el servidor {1} establecida en {0:0.##}s.",
+      "✅ Connexion à la base de données A>V>C> sur le serveur {1} établie en {0:0.##}s.",
+      "✅ Sunucu {1} üzerinde A>V>C> veritabanı bağlantısı {0:0.##}s içinde kuruldu."};
 
     public static readonly string[] NotConnected = {
-      "A>V>C> Database connection has not been established.",
-      "Не установлено соединение с базой данных A>V>C>.",
-      "La connessione al database A>V>C> non è stata stabilita.",
-      "Die Verbindung zur A>V>C>-Datenbank wurde nicht hergestellt.",
-      "A>V>C> 数据库连接尚未建立。",
-      "No se ha establecido conexión con la base de datos A>V>C>.",
-      "La connexion à la base de données A>V>C> n'a pas été établie.",
-      "A>V>C> veritabanı bağlantısı kurulmadı."};
+      "❌ A>V>C> Database connection has not been established.",
+      "❌ Не установлено соединение с базой данных A>V>C>.",
+      "❌ La connessione al database A>V>C> non è stata stabilita.",
+      "❌ Die Verbindung zur A>V>C>-Datenbank wurde nicht hergestellt.",
+      "❌ A>V>C> 数据库连接尚未建立。",
+      "❌ No se ha establecido conexión con la base de datos A>V>C>.",
+      "❌ La connexion à la base de données A>V>C> n'a pas été établie.",
+      "❌ A>V>C> veritabanı bağlantısı kurulmadı."};
 
     public static readonly string[] ConnectionError = {
-      "Connection error. {0}",
-      "Ошибка соединения. {0}",
-      "Errore di connessione. {0}",
-      "Verbindungsfehler. {0}",
-      "连接错误。{0}",
-      "Error de conexión. {0}",
-      "Erreur de connexion. {0}",
-      "Bağlantı hatası. {0}"};
+      "❌ Connection error. {0}",
+      "❌ Ошибка соединения. {0}",
+      "❌ Errore di connessione. {0}",
+      "❌ Verbindungsfehler. {0}",
+      "❌ 连接错误。{0}",
+      "❌ Error de conexión. {0}",
+      "❌ Erreur de connexion. {0}",
+      "❌ Bağlantı hatası. {0}"};
 
     public static readonly string[] LoadPrice = {
       "Loading price list...",
@@ -108,14 +108,14 @@ namespace AVC
       "Kullanıcı verileri yükleniyor {0}..."};
 
     public static readonly string[] NoAccessToServerTip = {
-      "There is no access to the A>V>C> server.",
-      "Нет доступа к серверу A>V>C>.",
-      "Non c'è accesso al server A>V>C>.",
-      "Es besteht kein Zugriff auf den Server A>V>C>.",
-      "无法访问 A>V>C> 服务器。",
-      "No hay acceso al servidor A>V>C>.",
-      "Il n'y a pas d'accès au serveur A>V>C>.",
-      "A>V>C> sunucusuna erişim yok."};
+      "❌ There is no access to the A>V>C> server.",
+      "❌ Нет доступа к серверу A>V>C>.",
+      "❌ Non c'è accesso al server A>V>C>.",
+      "❌ Es besteht kein Zugriff auf den Server A>V>C>.",
+      "❌ 无法访问 A>V>C> 服务器。",
+      "❌ No hay acceso al servidor A>V>C>.",
+      "❌ Il n'y a pas d'accès au serveur A>V>C>.",
+      "❌ A>V>C> sunucusuna erişim yok."};
 
     public static readonly string[] NoAccessSoonBlockedTip = {
       "There is no access to the A>V>C> server.\r\n" +
@@ -226,14 +226,14 @@ namespace AVC
       "Kullanıcı {0} A>V>C> veritabanında kayıtlı."};
 
     public static readonly string[] ClientUpdated = {
-      "Updated user data {0}.",
-      "Обновлены данные пользователя {0}.",
-      "Dati utente aggiornati {0}",
-      "Aktualisierte Benutzerdaten {0}.",
-      "更新了用户数据 {0}。",
-      "Datos de usuario actualizados {0}.",
-      "Données utilisateur mises à jour {0}.",
-      "Kullanıcı verileri güncellendi {0}."};
+      "✅ Updated user data {0}.",
+      "✅ Обновлены данные пользователя {0}.",
+      "✅ Dati utente aggiornati {0}",
+      "✅ Aktualisierte Benutzerdaten {0}.",
+      "✅ 更新了用户数据 {0}。",
+      "✅ Datos de usuario actualizados {0}.",
+      "✅ Données utilisateur mises à jour {0}.",
+      "✅ Kullanıcı verileri güncellendi {0}."};
 
     public static readonly string[] ActivationError = {
       "Error in the activation process",
