@@ -51,6 +51,26 @@ namespace AVC
       "Gratuit",
       "Ücretsiz"};
 
+    public static readonly string[] LicenseMultiuser =    {
+      "Multi-user",
+      "Многопользовательская",
+      "Multi-utente",
+      "Mehrbenutzer",
+      "多用户",
+      "Multiusuario",
+      "Multi-utilisateur",
+      "Çok kullanıcılı"    };
+
+    public static readonly string[] LicenseMaxPlaces = {
+      "Number of work places per license",
+      "Количество рабочих мест",
+      "Numero di postazioni per licenza",
+      "Anzahl der Arbeitsplätze pro Lizenz",
+      "每个许可证的工作场所数量",
+      "Número de puestos de trabajo por licencia",
+      "Nombre de postes de travail par licence",
+      "Lisans başına çalışma yeri sayısı" };
+
     public static readonly string[] LicenseTrialTip = {
       "Free use of the program {0} days. " +
         "You can use this type of license only once and cannot be canceled. " +
@@ -137,6 +157,16 @@ namespace AVC
       "EUR {0:0}. Programın mevcut sürümünü zaman sınırı olmadan kullanma. " +
         "Tüm yeni sürümler bir yıl boyunca kullanılabilir. Etkinleştirme iptal edilebilir ve başka bir bilgisayara aktarılabilir. " +
         "Ev bilgisayarınızı etkinleştirmek ücretsizdir!"};
+
+    public static readonly string[] LicenseMultiuserTip = {
+      "{0:0} EUR per seat. Annual license for a large company. A single license for all seats simplifies payment and deadline management.",
+      "{0:0} EUR за место. Годовая лицензия на крупную фирму. Единая лицензия на все рабочие места упрощает оплату и контроль сроков.",
+      "{0:0} EUR per postazione. Licenza annuale per una grande azienda. Una singola licenza per tutte le postazioni semplifica il pagamento e la gestione delle scadenze.",
+      "{0:0} EUR pro Arbeitsplatz. Jahreslizenz für ein großes Unternehmen. Eine einzige Lizenz für alle Arbeitsplätze vereinfacht die Zahlung und das Fristenmanagement.",
+      "{0:0} 欧元/座。 大型公司的年度许可证。 所有座位的单一许可证简化了付款和截止日期管理。",
+      "{0:0} EUR por asiento. Licencia anual para una gran empresa. Una sola licencia para todos los asientos simplifica el pago y la gestión de plazos.",
+      "{0:0} EUR par poste. Licence annuelle pour une grande entreprise. Une licence unique pour tous les postes simplifie le paiement et la gestion des délais.",
+      "{0:0} EUR oturma başına. Büyük bir şirket için yıllık lisans. Tüm oturumlar için tek bir lisans, ödeme ve son tarih yönetimini basitleştirir."};
 
     // =========================== License and Activation ===========================================
     public static readonly string[] RequestFile = {
