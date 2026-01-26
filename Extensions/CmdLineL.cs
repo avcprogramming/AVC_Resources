@@ -555,6 +555,19 @@ namespace AVC
       "OFF", "ОТКлючить", "DISattivare", "DEAKTivieren", "禁用(OFF)",
       "DESACTIVAR", "DÉSACTIVER", "KAPAT"};
 
+    /// <summary>
+    /// Только для командной строки - без ✅
+    /// </summary>
+    public static readonly string[] OkKW = {
+      "Ok",
+      "ОК",
+      "Ok",
+      "OK",
+      "确定(Ok)",
+      "Aceptar",
+      "OK",
+      "Tamam"};
+
     public static readonly string[] CancelKW = {
       "Cancel", "ОТмена", "Annulla", "Stornieren", "取消(C)",
       "Cancelar", "Annuler", "İptal"};

@@ -61,30 +61,30 @@ namespace AVC
       "Sorgu"};
 
     /// <summary>
-    /// И для кнопок и для командной строки ✅
+    /// Только для кнопок и сообщений ✅. Для опций команд есть CmdLineL.OkKW
     /// </summary>
     public static readonly string[] Ok = {
-      "Ok",
-      "ОК",
-      "Ok",
-      "OK",
-      "确定(Ok)",
-      "Aceptar",
-      "OK",
-      "Tamam"};
+      "✅ Ok",
+      "✅ ОК",
+      "✅ Ok",
+      "✅ OK",
+      "✅ 确定",
+      "✅ Aceptar",
+      "✅ OK",
+      "✅ Tamam"};
 
     /// <summary>
     /// Для кнопок. Для опций команд есть CmdLineL.Cancel ❌
     /// </summary>
     public static readonly string[] Cancel = {
-      "Cancel",
-      "Отменить",
-      "Annulla",
-      "Abgesagt",
-      "取消",
-      "Cancelar",
-      "Annuler",
-      "İptal"};
+      "❌ Cancel",
+      "❌ Отменить",
+      "❌ Annulla",
+      "❌ Abgesagt",
+      "❌ 取消",
+      "❌ Cancelar",
+      "❌ Annuler",
+      "❌ İptal"};
 
     /// <summary>
     /// Для кнопок и подстановок. Для командной строки есть другой вариант в CndLineL
