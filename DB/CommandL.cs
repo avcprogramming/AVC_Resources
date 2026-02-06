@@ -60,7 +60,7 @@ namespace AVC
       "Nouvel assemblage",
       "Yeni montaj" };
     public static readonly string[] AsmDraw = {
-      "Assembly drawings",
+      "Assembly Drawings",
       "Сборочные чертежи",
       "Disegni di assemblaggio",
       "Montagezeichnungen",
