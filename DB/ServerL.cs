@@ -214,6 +214,16 @@ namespace AVC
       "Pas d'accès pour supprimer l'activation. Mot de passe incorrect.",
       "Etkinleştirmeyi kaldırmak için erişim yok. Yanlış şifre."};
 
+    public static readonly string[] PasswordRequest = {
+    "You`ve already requested a password. Please wait for the server`s response.",
+    "Вы уже запрашивали пароль. Пожалуйста, дождитесь ответа сервера.",
+    "Hai già richiesto una password. Attendi la risposta del server.",
+    "Sie haben bereits ein Passwort angefordert. Bitte warten Sie auf die Antwort des Servers.",
+    "您已经请求了密码。 请等待服务器的响应。",
+    "Ya ha solicitado una contraseña. Espere la respuesta del servidor.",
+    "Vous avez déjà demandé un mot de passe. Veuillez attendre la réponse du serveur.",
+    "Zaten bir şifre talep ettiniz. Lütfen sunucunun yanıtını bekleyin."};
+
     public static List<string[]>
     Messages = new();
 
