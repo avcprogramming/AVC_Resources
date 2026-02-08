@@ -359,5 +359,23 @@ namespace AVC
       "Program çevrimdışı alındı. Birçok fonksiyon engellenecek. " +
         "Çevrimiçi mod mümkün olan en kısa sürede otomatik olarak etkinleştirilecek."};
 
+    public static readonly string[] ConnectionLabelTip = {
+      "Connection status with the A>V>C> server. \r\n" +
+        "Click to reload all data.",
+      "Состояние подключения с серверу A>V>C>. \r\n" +
+        "Кликни для перезагрузки всех данных.",
+      "Stato della connessione con il server A>V>C>. \r\n" +
+        "Fare clic per ricaricare tutti i dati.",
+      "Verbindungsstatus mit dem A>V>C>-Server.\r\n" +
+        "Klicken Sie hier, um alle Daten neu zu laden.",
+      "与服务器 A>V>C> 的连接状态。\r\n" +
+        " 单击以重新加载所有数据。",
+      "Estado de conexión con el servidor A>V>C>. \r\n" +
+        "Haga clic para recargar todos los datos.",
+      "État de connexion avec le serveur A>V>C>. \r\n" +
+        "Cliquez pour recharger toutes les données.",
+      "A>V>C> sunucusuyla bağlantı durumu. \r\n" +
+        "Tüm verileri yeniden yüklemek için tıklayın."};
+
   }
 }

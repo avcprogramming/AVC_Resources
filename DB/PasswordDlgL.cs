@@ -9,14 +9,14 @@ namespace AVC
   PasswordDlgL
   {
     public static readonly string[] PasswordTitle = {
-      "A>V>C> Password",
-      "Замена пароля",
-      "Cambio di password",
-      "Passwortänderung",
-      "密码更改",
-      "Cambio de contraseña",
-      "Changement de mot de passe",
-      "Şifre değişikliği"};
+      "🔑 A>V>C> Password",
+      "🔑 Замена пароля",
+      "🔑 Cambio di password",
+      "🔑 Passwortänderung",
+      "🔑 密码更改",
+      "🔑 Cambio de contraseña",
+      "🔑 Changement de mot de passe",
+      "🔑 Şifre değişikliği"};
 
     public static readonly string[] PasswordGenerate = {
       "Generate",
@@ -27,6 +27,84 @@ namespace AVC
       "Generar",
       "Générer",
       "Oluştur"};
+
+    public static readonly string[] Reset = {
+      "🔑 Reset password",
+      "🔑 Сброс пароля",
+      "🔑 Reimpostare la password",
+      "🔑 Zurücksetzen des Passworts",
+      "🔑 重置密码",
+      "🔑 Reiniciar contraseña",
+      "🔑 Réinitialiser",
+      "🔑 Sıfırla"};
+
+    public static readonly string[] ResetTip = {
+      "Submit a password reset request. \r\n" +
+        "The A>V>C> server will generate a new password for your account and send it to you by email.",
+      "Отправить запрос на сброс пароля. \r\n" +
+        "Сервер A>V>C> придумает новый пароль для вашего аккаунта и пришлет его вам на почту.",
+      "Invia una richiesta di reimpostazione della password. \r\n" +
+        "Il server A>V>C> genererà una nuova password per il tuo account e te la invierà via email.",
+      "Senden Sie eine Anfrage zum Zurücksetzen des Passworts. \r\n" +
+        "Der A>V>C>-Server generiert ein neues Passwort für Ihr Konto und sendet es Ihnen per E-Mail.",
+      "提交密码重置请求。 \r\n" +
+        "A>V>C> 服务器将为您的帐户生成一个新密码，并通过电子邮件发送给您。",
+      "Envíe una solicitud de restablecimiento de contraseña. \r\n" +
+        "El servidor A>V>C> generará una nueva contraseña para su cuenta y se la enviará por correo electrónico.",
+      "Envoyez une demande de réinitialisation de mot de passe. \r\n" +
+        "Le serveur A>V>C> générera un nouveau mot de passe pour votre compte et vous l'enverra par e-mail.",
+      "Şifre sıfırlama isteği gönderin. \r\n" +
+        "A>V>C> sunucusu hesabınız için yeni bir şifre oluşturacak ve size e-posta ile gönderecektir." };
+
+    public static readonly string[] Reseted = {
+      "A password reset request has been sent to the A>V>C> server." +
+        "A new password will be emailed to you in a few minutes.\r\n" +
+        "If the password doesn't arrive within an hour: \r\n" +
+        "  🔑 Check that the specified account matches your real email,\r\n" +
+        "  🔑 Check your Spam folder, \r\n" +
+        "  🔑 Submit a request to A>V>C> technical support.",
+      "На сервер A>V>C> был отправлен запрос на сброс пароля. \r\n" +
+        "Через несколько минут новый пароль будет отправлен вам на почту.\r\n" +
+        "Если пароль не придет в течение часа: \r\n" +
+        "  🔑 проверьте, что указанный аккаунт соответсует вашему реальному eMail, \r\n" +
+        "  🔑 проверьте папку Спам, \r\n" +
+        "  🔑 напишите запрос в техподдержку A>V>C>.",
+      "È stata inviata una richiesta di reimpostazione della password al server A>V>C>. \r\n" +
+        "Una nuova password ti sarà inviata via email tra pochi minuti.\r\n" +
+        "Se la password non arriva entro un'ora: \r\n" +
+        "  🔑 Controlla che l'account specificato corrisponda alla tua email reale, \r\n" +
+        "  🔑 Controlla la cartella Spam, \r\n" +
+        "  🔑 Invia una richiesta al supporto tecnico A>V>C>.",
+      "Eine Anfrage zum Zurücksetzen des Passworts wurde an den A>V>C>-Server gesendet. \r\n" +
+        "Ein neues Passwort wird Ihnen in wenigen Minuten per E-Mail zugesandt.\r\n" +
+        "Wenn das Passwort nicht innerhalb einer Stunde ankommt: \r\n" +
+        "  🔑 Überprüfen Sie, ob das angegebene Konto Ihrer echten E-Mail entspricht, \r\n" +
+        "  🔑 Überprüfen Sie Ihren Spam-Ordner, \r\n" +
+        "  🔑 Senden Sie eine Anfrage an den technischen Support von A>V>C>.",
+      "已向 A>V>C> 服务器发送密码重置请求。 \r\n" +
+        "几分钟后，您将通过电子邮件收到一个新密码。\r\n" +
+        "如果密码在一小时内没有到达： \r\n" +
+        "  🔑 检查指定的帐户是否与您的真实电子邮件匹配， \r\n" +
+        "  🔑 检查您的垃圾邮件文件夹， \r\n" +
+        "  🔑 向 A>V>C> 技术支持提交请求。",
+      "Se ha enviado una solicitud de restablecimiento de contraseña al servidor A>V>C>. \r\n" +
+        "Una nueva contraseña se le enviará por correo electrónico en unos minutos.\r\n" +
+        "Si la contraseña no llega dentro de una hora: \r\n" +
+        "  🔑 Verifique que la cuenta especificada coincida con su correo electrónico real, \r\n" +
+        "  🔑 Verifique su carpeta de Spam, \r\n" +
+        "  🔑 Envíe una solicitud al soporte técnico de A>V>C>.",
+      "Une demande de réinitialisation de mot de passe a été envoyée au serveur A>V>C>. \r\n" +
+        "Un nouveau mot de passe vous sera envoyé par e-mail dans quelques minutes.\r\n" +
+        "Si le mot de passe n'arrive pas dans une heure: \r\n" +
+        "  🔑 Vérifiez que le compte spécifié correspond à votre e-mail réel, \r\n" +
+        "  🔑 Vérifiez votre dossier Spam, \r\n" +
+        "  🔑 Envoyez une demande au support technique de A>V>C>.",
+      "A>V>C> sunucusuna bir şifre sıfırlama isteği gönderildi. \r\n" +
+        "Yeni bir şifre size birkaç dakika içinde e-posta ile gönderilecektir.\r\n" +
+        "Şifre bir saat içinde gelmezse: \r\n" +
+        "  🔑 Belirtilen hesabın gerçek e-postanızla eşleştiğini kontrol edin, \r\n" +
+        "  🔑 Spam klasörünüzü kontrol edin, \r\n" +
+        "  🔑 A>V>C> teknik desteğine bir istek gönderin."};
 
     public static readonly string[] PasswordAccount = {
       "A>V>C> Account",
@@ -85,51 +163,31 @@ namespace AVC
       "Le mot de passe doit contenir au moins huit caractères.",
       "Şifre en az sekiz karakter içermelidir."};
 
-    public static readonly string[] ConnectionLabelTip = {
-      "Connection status with the A>V>C> server. \r\n" +
-        "Click to reload all data.",
-      "Состояние подключения с серверу A>V>C>. \r\n" +
-        "Кликни для перезагрузки всех данных.",
-      "Stato della connessione con il server A>V>C>. \r\n" +
-        "Fare clic per ricaricare tutti i dati.",
-      "Verbindungsstatus mit dem A>V>C>-Server.\r\n" +
-        "Klicken Sie hier, um alle Daten neu zu laden.",
-      "与服务器 A>V>C> 的连接状态。\r\n" +
-        " 单击以重新加载所有数据。",
-      "Estado de conexión con el servidor A>V>C>. \r\n" +
-        "Haga clic para recargar todos los datos.",
-      "État de connexion avec le serveur A>V>C>. \r\n" +
-        "Cliquez pour recharger toutes les données.",
-      "A>V>C> sunucusuyla bağlantı durumu. \r\n" +
-        "Tüm verileri yeniden yüklemek için tıklayın."};
-
-    public static readonly string[] PasswordReset = {
-      "Write it down in a safe place. " +
-        "If you forgot your password, write a password reset request to avc.programming@gmail.com From your mail {0}. " +
+    public static readonly string[] PasswordRequest = {
+      "If you don't receive a new password from the A>V>C> server, \r\n" +
+        "then send a password reset request to avc.programming@gmail.com from your email address {0}.\r\n" +
         "Recovering a lost password can take several days.",
-      "Запишите его в надежном месте. " +
-        "Если вы забыли пароль, напишите запрос на сброс пароля на avc.programming@gmail.com с вашей почты {0}. " +
+      "Если не приходит новый пароль от сервера A>V>C>, \r\n" +
+        "то напишите запрос на сброс пароля на avc.programming@gmail.com с вашей почты {0}. \r\n" +
         "Восстановление утерянного пароля может занять несколько дней.",
-      "Scrivilo in un luogo sicuro. " +
-        "Se hai dimenticato la password, scrivi una richiesta di reimpostazione " +
-        "della password a avc.programming@gmail.com dalla tua posta {0}. " +
+      "Se non ricevi una nuova password dal server A>V>C>, \r\n" +
+        "invia una richiesta di reimpostazione della password a avc.programming@gmail.com dalla tua email {0}.\r\n" +
         "Il recupero di una password persa può richiedere diversi giorni.",
-      "Schreiben Sie es an einem sicheren Ort auf. " +
-        "Wenn Sie Ihr Passwort vergessen haben, schreiben Sie eine Anfrage zum Zurücksetzen " +
-        "des Passworts an avc.programming@gmail.com aus Ihrer E-Mail {0}. " +
-        "Das Wiederherstellen eines verlorenen Passworts kann mehrere Tage dauern.",
-      "把它写在一个安全的地方。 " +
-         "如果您忘记了密码，请从您的邮件 {0} 向 avc.programming@gmail.com 发送密码重置请求。" +
-         "恢复丢失的密码可能需要几天时间。",
-      "Escríbalo en un lugar seguro. " +
-        "Si olvidó su contraseña, escriba una solicitud de restablecimiento de contraseña a avc.programming@gmail.com desde su correo {0}. " +
+      "Wenn Sie kein neues Passwort vom A>V>C>-Server erhalten, \r\n" +
+        "senden Sie eine Anfrage zum Zurücksetzen des Passworts an avc.programming@gmail.com von Ihrer E-Mail-Adresse {0}.\r\n" +
+        "Die Wiederherstellung eines verlorenen Passworts kann mehrere Tage dauern.",
+      "如果您没有收到来自 A>V>C> 服务器的新密码，\r\n" +
+        "请从您的电子邮件地址 {0} 向 avc.programming@gmail.com 发送密码重置请求。\r\n" +
+        "恢复丢失的密码可能需要几天时间。",
+      "Si no recibe una nueva contraseña del servidor A>V>C>, \r\n" +
+        "envíe una solicitud de restablecimiento de contraseña a avc.programming@gmail.com desde su correo electrónico {0}.\r\n" +
         "Recuperar una contraseña perdida puede llevar varios días.",
-      "Écrivez-le dans un endroit sûr. " +
-        "Si vous avez oublié votre mot de passe, écrivez une demande de réinitialisation de mot de passe à avc.programming@gmail.com depuis votre courrier {0}. " +
+      "Si no recibe una nueva contraseña del servidor A>V>C>, \r\n" +
+        "envoyez une demande de réinitialisation de mot de passe à avc.programming@gmail.com depuis votre adresse e-mail {0}.\r\n" +
         "La récupération d'un mot de passe perdu peut prendre plusieurs jours.",
-      "Güvenli bir yere yazın. " +
-        "Şifrenizi unuttuysanız, {0} postanızdan avc.programming@gmail.com'a şifre sıfırlama isteği yazın. " +
-        "Kayıp bir şifreyi kurtarmak birkaç gün sürebilir."};
+      "A>V>C> sunucusundan yeni bir şifre almazsanız, \r\n" +
+        "e-posta adresiniz {0} üzerinden avc.programming@gmail.com adresine şifre sıfırlama talebi gönderin.\r\n" +
+        "Kayıp bir şifrenin kurtarılması birkaç gün sürebilir."};
 
     public static readonly string[] PasswordEmptyOrErr = {
       "The password saved on the computer is empty or does not match the password in the A>V>C> database. " +
