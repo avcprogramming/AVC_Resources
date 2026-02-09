@@ -215,14 +215,24 @@ namespace AVC
       "Etkinleştirmeyi kaldırmak için erişim yok. Yanlış şifre."};
 
     public static readonly string[] PasswordRequest = {
-    "You`ve already requested a password. Please wait for the server`s response.",
-    "Вы уже запрашивали пароль. Пожалуйста, дождитесь ответа сервера.",
-    "Hai già richiesto una password. Attendi la risposta del server.",
-    "Sie haben bereits ein Passwort angefordert. Bitte warten Sie auf die Antwort des Servers.",
-    "您已经请求了密码。 请等待服务器的响应。",
-    "Ya ha solicitado una contraseña. Espere la respuesta del servidor.",
-    "Vous avez déjà demandé un mot de passe. Veuillez attendre la réponse du serveur.",
-    "Zaten bir şifre talep ettiniz. Lütfen sunucunun yanıtını bekleyin."};
+      "You`ve already requested a password. Please wait for the server`s response.",
+      "Вы уже запрашивали пароль. Пожалуйста, дождитесь ответа сервера.",
+      "Hai già richiesto una password. Attendi la risposta del server.",
+      "Sie haben bereits ein Passwort angefordert. Bitte warten Sie auf die Antwort des Servers.",
+      "您已经请求了密码。 请等待服务器的响应。",
+      "Ya ha solicitado una contraseña. Espere la respuesta del servidor.",
+      "Vous avez déjà demandé un mot de passe. Veuillez attendre la réponse du serveur.",
+      "Zaten bir şifre talep ettiniz. Lütfen sunucunun yanıtını bekleyin."};
+
+    public static readonly string[] ManagerNotExists =  {
+      "There is no such manager account registered yet",
+      "Такой учетной записи руководителя еще не зарегистрировано",
+      "Non esiste ancora un account manager registrato",
+      "Es gibt noch kein solches Manager-Konto registriert",
+      "尚未注册这样的经理帐户",
+      "Aún no se ha registrado una cuenta de gerente de este tipo",
+      "Il n'existe pas encore de compte de gestionnaire de ce type enregistré",
+      "Henüz böyle bir yönetici hesabı kayıtlı değil" };
 
     public static List<string[]>
     Messages = new();

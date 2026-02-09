@@ -1581,6 +1581,60 @@ namespace AVC
       "Hachage du mot de passe",
       "Şifre hash'i"};
 
+    public static readonly string[] Manager = {
+      "Manager",
+      "Руководитель",
+      "Manager",
+      "Manager",
+      "经理",
+      "Gerente",
+      "Manager",
+      "Yönetici"};
+
+    public static readonly string[] ManagerTip = {
+      "Your project team leader or system administrator.\r\n" +
+        "Please enter an email address that is already registered on the A>V>C> server.\r\n" +
+        "WARNING! Your manager can transfer funds and licenses from your account! ",
+      "Руководитель вашей проектной группы или системный администратор. \r\n" +
+        "Укажите e-mail, который уже зарегестрирован на сервере A>V>C>.\r\n" +
+        "ВНИМАНИЕ! Руководитель может перемещать деньги и лицензии вашего аккаунта!",
+      "Il tuo team leader di progetto o amministratore di sistema. \r\n" +
+        "Si prega di inserire un indirizzo e-mail che è già registrato sul server A>V>C>.\r\n" +
+        "ATTENZIONE! Il tuo manager può trasferire fondi e licenze dal tuo account!",
+      "Ihr Projektteamleiter oder Systemadministrator. \r\n" +
+        "Bitte geben Sie eine E-Mail-Adresse ein, die bereits auf dem A>V>C>-Server registriert ist.\r\n" +
+        "WARNUNG! Ihr Manager kann Gelder und Lizenzen von Ihrem Konto übertragen!",
+      "您的项目团队负责人或系统管理员。 \r\n" +
+        "请输入一个已经在 A>V>C> 服务器上注册的电子邮件地址。\r\n" +
+        "警告！您的经理可以从您的帐户转移资金和许可证！",
+      "El líder de su equipo de proyecto o administrador del sistema. \r\n" +
+        "Ingrese una dirección de correo electrónico que ya esté registrada en el servidor A>V>C>.\r\n" +
+        "¡ADVERTENCIA! ¡Su gerente puede transferir fondos y licencias de su cuenta!",
+      "Votre chef d'équipe de projet ou administrateur système. \r\n" +
+        "Veuillez entrer une adresse e-mail qui est déjà enregistrée sur le serveur A>V>C>.\r\n" +
+        "ATTENTION! Votre manager peut transférer des fonds et des licences de votre compte!",
+      "Proje takım lideriniz veya sistem yöneticiniz. \r\n" +
+        "Lütfen A>V>C> sunucusunda zaten kayıtlı olan bir e-posta adresi girin.\r\n" +
+        "UYARI! Yöneticiniz hesabınızdaki fonları ve lisansları transfer edebilir!"};
+
+    public static readonly string[] ManagerHint = {
+      "You can delegate the management of your balance and licenses to another A>V>C> user.\r\n" +
+        "Enter your manager's email or leave the field blank.",
+      "Вы можете доверить управление вашим балансом и лицензиями другому пользователю A>V>C>.\r\n" +
+        "Укажите email вашего руководителя или оставьте поле пустым.",
+      "Puoi delegare la gestione del tuo saldo e delle tue licenze a un altro utente A>V>C>.\r\n" +
+        "Inserisci l'e-mail del tuo manager o lascia il campo vuoto.",
+      "Sie können die Verwaltung Ihres Guthabens und Ihrer Lizenzen an einen anderen A>V>C>-Benutzer delegieren.\r\n" +
+        "Geben Sie die E-Mail-Adresse Ihres Managers ein oder lassen Sie das Feld leer.",
+      "您可以将您的余额和许可证的管理权限委托给另一个 A>V>C> 用户。\r\n" +
+        "输入您经理的电子邮件或将该字段留空。",
+      "Puede delegar la gestión de su saldo y licencias a otro usuario de A>V>C>.\r\n" +
+        "Ingrese el correo electrónico de su gerente o deje el campo en blanco.",
+      "Vous pouvez déléguer la gestion de votre solde et de vos licences à un autre utilisateur A>V>C>.\r\n" +
+        "Entrez l'e-mail de votre manager ou laissez le champ vide.",
+      "Bakiye ve lisanslarınızın yönetimini başka bir A>V>C> kullanıcısına devredebilirsiniz.\r\n" +
+        "Yöneticinizin e-postasını girin veya alanı boş bırakın."};
+
     public static readonly string[] Country = {
       "Country",
       "Страна",
