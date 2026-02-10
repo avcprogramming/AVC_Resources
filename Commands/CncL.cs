@@ -996,6 +996,17 @@ namespace AVC
       "Plusieurs contours extérieurs de la pièce trouvés",  // FR
       "Parçanın birkaç dış konturu bulundu"};  // TR
 
+    public static readonly string[] DDLClosedErr =
+    {
+      "Program works only with open contours - the edges of the dadoes inside the part contour.",
+      "Программа работает только с незамкнутыми контурами - краями пазов внутри контура детали.",
+      "Il programma funziona solo con contorni aperti - i bordi delle scanalature all'interno del contorno della parte.",
+      "Das Programm arbeitet nur mit offenen Konturen - den Kanten der Nuten innerhalb der Kontur des Teils.",
+      "程序仅适用于开放轮廓 - 零件轮廓内的凹槽边缘。",
+      "El programa funciona solo con contornos abiertos: los bordes de las ranuras dentro del contorno de la pieza.",  // ES
+      "Le programme ne fonctionne qu'avec des contours ouverts - les bords des rainures à l'intérieur du contour de la pièce.",  // FR
+      "Program yalnızca açık konturlarla çalışır - parçanın konturu içindeki yuvaların kenarları."};  // TR
+
     public static readonly string[] CloseErr = {
       "Unable to determine the part of main (outside) contour to close this loop.\r\n" +
         "Check the points of intersection",
