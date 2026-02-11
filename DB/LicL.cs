@@ -1715,6 +1715,24 @@ namespace AVC
       "L'utilisateur {0} est absent de la base de données.",
       "Kullanıcı {0} veritabanında eksik."};
 
+    public static readonly string[] ManagerEqMail = {
+      "Please enter the email address of another employee in your organization, not your personal email address.\r\n" +
+        "If you use the same account for everyone, don't specify the manager's email address at all.",
+      "Укажите почту другого сотрудника вашей организации, а не вашу личную. \r\n" +
+        "Если вы используете один аккаунт на всех, то не указывайте руководителя вообще.",
+      "Si prega di inserire l'indirizzo e-mail di un altro dipendente della tua organizzazione, non il tuo indirizzo e-mail personale.\r\n" +
+        "Se usi lo stesso account per tutti, non specificare affatto l'indirizzo e-mail del manager.",
+      "Bitte geben Sie die E-Mail-Adresse eines anderen Mitarbeiters in Ihrer Organisation ein, nicht Ihre persönliche E-Mail-Adresse.\r\n" +
+        "Wenn Sie dasselbe Konto für alle verwenden, geben Sie die E-Mail-Adresse des Managers überhaupt nicht an.",
+      "请输入您组织中另一位员工的电子邮件地址，而不是您的个人电子邮件地址。\r\n" +
+        "如果您为每个人使用同一个帐户，请完全不要指定经理的电子邮件地址。",
+      "Ingrese la dirección de correo electrónico de otro empleado en su organización, no su dirección de correo electrónico personal.\r\n" +
+        "Si usa la misma cuenta para todos, no especifique la dirección de correo electrónico del gerente en absoluto.",
+      "Veuillez entrer l'adresse e-mail d'un autre employé de votre organisation, pas votre adresse e-mail personnelle.\r\n" +
+        "Si vous utilisez le même compte pour tout le monde, ne spécifiez pas du tout l'adresse e-mail du manager.",
+      "Lütfen kişisel e-posta adresiniz değil, kuruluşunuzdaki başka bir çalışanın e-posta adresini girin.\r\n" +
+        "Herkes için aynı hesabı kullanıyorsanız, yönetici e-posta adresini hiç belirtmeyin."};
+
     public static readonly string[] NotEnoughFunds = {
       "There are not enough funds in your account.\r\n" +
         "Refill your account with EUR {0:0}.\r\n" +

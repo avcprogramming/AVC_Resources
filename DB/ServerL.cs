@@ -234,6 +234,16 @@ namespace AVC
       "Il n'existe pas encore de compte de gestionnaire de ce type enregistré",
       "Henüz böyle bir yönetici hesabı kayıtlı değil" };
 
+    public static readonly string[] ManagerLikeMail = {
+      "The manager`s email matched the account.",
+      "Почта руководителя совпала с учетной записью.",
+      "La mail del manager ha corrisposto all'account.",
+      "Die E-Mail des Managers stimmte mit dem Konto überein.",
+      "经理的电子邮件与帐户匹配。",
+      "El correo electrónico del gerente coincidió con la cuenta.",
+      "Le mail du manager a correspondu au compte.",
+      "Yöneticinin e-postası hesapla eşleşti." };
+
     public static List<string[]>
     Messages = new();
 
