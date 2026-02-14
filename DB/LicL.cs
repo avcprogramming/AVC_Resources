@@ -625,6 +625,36 @@ namespace AVC
       "Désactiver tout",
       "Tümünü devre dışı bırak"};
 
+    public static readonly string[] ReloadTip = {
+      "Reload the license list from the server",
+      "Перезагрузить список лицензий с сервера",
+      "Ricarica l'elenco delle licenze dal server",
+      "Laden Sie die Liste der Lizenzen vom Server neu",
+      "从服务器重新加载许可证列表",
+      "Recargar la lista de licencias desde el servidor",
+      "Recharger la liste des licences depuis le serveur",
+      "Sunucudan lisans listesini yeniden yükle"};
+
+    public static readonly string[] MoveLicense = {
+      "Move license",
+      "Перенести лицензию",
+      "Sposta licenza",
+      "Lizenz verschieben",
+      "移动许可证",
+      "Mover licencia",
+      "Déplacer la licence",
+      "Lisansı taşı"};
+
+    public static readonly string[] MoveMoney = {
+      "Move money",
+      "Перевести деньги",
+      "Sposta soldi",
+      "Geld verschieben",
+      "转移资金",
+      "Mover dinero",
+      "Déplacer l'argent",
+      "Parayı taşı"};
+
     public static readonly string[] Activation = {
       "Activation",
       "Активация",
@@ -860,6 +890,16 @@ namespace AVC
       "Este lugar de trabajo",
       "Ce lieu de travail",
       "Bu işyeri"};
+
+    public static readonly string[] ShowExpiredLicenses = {
+      "Show expired licenses",
+      "Показать просроченные лицензии",
+      "Mostra le licenze scadute",
+      "Abgelaufene Lizenzen anzeigen",
+      "显示过期的许可证",
+      "Mostrar licencias expiradas",
+      "Afficher les licences expirées",
+      "Süresi dolmuş lisansları göster"};
 
     public static readonly string[] ActivationSite = {
       "More about activation",

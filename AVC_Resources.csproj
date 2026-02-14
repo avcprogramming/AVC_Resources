@@ -28,7 +28,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
-	<DebugSymbols>false</DebugSymbols>
+    <DebugSymbols>false</DebugSymbols>
     <Optimize>true</Optimize>
     <OutputPath>C:\Users\avc72\appdata\Roaming\Autodesk\ApplicationPlugins\AVC_Pro.bundle\Contents\Windows\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -63,6 +63,7 @@
     <Compile Include="Commands\DrillL.cs" />
     <Compile Include="Commands\DwgTreeL.cs" />
     <Compile Include="Commands\DxfExportL.cs" />
+    <Compile Include="Dialogs\MoveMoneyL.cs" />
     <Compile Include="Dialogs\TitleStyleL.cs" />
     <Compile Include="EMailL.cs" />
     <Compile Include="EntityFilterL.cs" />
