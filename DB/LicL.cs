@@ -1631,6 +1631,16 @@ namespace AVC
       "Manager",
       "Yönetici"};
 
+    public static readonly string[] Subordinates = {
+      "Subordinates",
+      "Подчиненные",
+      "Subordinati",
+      "Untergebene",
+      "下属",
+      "Subordinados",
+      "Subordonnés",
+      "Astlar"};
+
     public static readonly string[] ManagerTip = {
       "Your project team leader or system administrator.\r\n" +
         "Please enter an email address that is already registered on the A>V>C> server.\r\n" +

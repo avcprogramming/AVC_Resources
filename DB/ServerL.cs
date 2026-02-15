@@ -244,6 +244,37 @@ namespace AVC
       "Le mail du manager a correspondu au compte.",
       "Yöneticinin e-postası hesapla eşleşti." };
 
+    public static readonly string[] AmountErr = {
+    "The account balance is less than the amount specified for transfer.",
+    "Баланс аккаунта меньше указанной суммы для перевода.",
+    "Il saldo del conto è inferiore all'importo specificato per il trasferimento.",
+    "Der Kontostand ist geringer als der für die Überweisung angegebene Betrag.",
+    "帐户余额小于指定的转账金额。",
+    "El saldo de la cuenta es menor que el monto especificado para la transferencia.",
+    "Le solde du compte est inférieur au montant spécifié pour le transfert.",
+    "Hesap bakiyesi, transfer için belirtilen tutardan az." };
+
+    public static readonly string[] LicenseIdErr = {
+    "License does not exist or does not belong to the specified client",
+    "Лицензия не существует или не принадлежит указанному клиенту",
+    "La licenza non esiste o non appartiene al cliente specificato",
+    "Die Lizenz existiert nicht oder gehört nicht zum angegebenen Kunden",
+    "许可证不存在或不属于指定客户",
+    "La licencia no existe o no pertenece al cliente especificado",
+    "La licence n'existe pas ou n'appartient pas au client spécifié",
+    "Lisans mevcut değil veya belirtilen müşteriye ait değil" };
+
+    public static readonly string[] NoLicense = {
+    "No active licenses found to transfer",
+    "Не найдено активных лицензий для переноса"        ,
+    "Nessuna licenza attiva trovata da trasferire",
+    "Keine aktiven Lizenzen zum Übertragen gefunden",
+    "未找到要转移的活动许可证",
+    "No se encontraron licencias activas para transferir",
+    "Aucune licence active trouvée à transférer",
+    "Transfer edilecek aktif lisans bulunamadı" };
+
+
     public static List<string[]>
     Messages = new();
 
