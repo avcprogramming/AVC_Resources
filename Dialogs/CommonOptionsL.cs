@@ -31,16 +31,6 @@ namespace AVC
       "Modèle",
       "Şablon"};
 
-    public static readonly string[] ChooseTemplate = {
-      "Choose a template for layers, materials, blocks and styles",
-      "Выберите шаблон для слоев, материалов, блоков и стилей",
-      "Scegli un modello per livelli, materiali, blocchi e stili",
-      "Wählen Sie eine Vorlage für Ebenen, Materialien, Blöcke und Stile.",
-      "为图层、材质、块和样式选择模板",
-      "Elija una plantilla para capas, materiales, bloques y estilos",
-      "Choisissez un modèle pour les calques, les matériaux, les blocs et les styles",
-      "Katmanlar, malzemeler, bloklar ve stiller için bir şablon seçin"};
-
     public static readonly string[] ReloadCUIX = {
       "Reload menu",
       "Перезагрузить меню",
