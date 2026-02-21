@@ -38,6 +38,16 @@ namespace AVC
       "La définition du bloc \"{0}\" est manquante dans le fichier :\n\r\"{1}\"",
       "Blok tanımı \"{0}\" dosyada eksik :\n\r\"{1}\""};
 
+    public static readonly string[] BlockMissingInFiles = {
+      "No replacement blocks were found in any of the files: \n{0}",
+      "Ни в одном из файлов не найдена замена для блоков: \n{0}",
+      "Nessun blocco di sostituzione è stato trovato in nessuno dei file: \n{0}",
+      "In keinem der Dateien wurden Ersatzblöcke gefunden: \n{0}",
+      "在任何文件中都没有找到替换块: \n{0}",
+      "No se encontraron bloques de reemplazo en ninguno de los archivos: \n{0}",
+      "Aucun bloc de remplacement n'a été trouvé dans aucun des fichiers : \n{0}",
+      "Hiçbir dosyada blok değiştirme bulunamadı: \n{0}"};
+
     public static readonly string[] CannotExplode = {
       "Can't explode block {0}: {1}",
       "Невозможно взорвать блок {0}: {1}",
