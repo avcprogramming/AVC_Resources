@@ -179,7 +179,7 @@ namespace AVC
       "✅ Tamamlandı."};
 
     public static readonly string[] ProcessCompleted = {
-      "   ✅ Process completed: {0}..",
+      "   ✅ Process completed: {0}.",
       "   ✅ Закончен процесс: {0}.",
       "   ✅ Processo completato: {0}.",
       "   ✅ Prozess abgeschlossen: {0}.",

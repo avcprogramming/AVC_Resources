@@ -4365,6 +4365,43 @@ namespace AVC
         "Ağırlık merkezinin üç eksen boyunca kaymasının yönünü gösterir.\r\n" +
         "Parçaların birbirlerine göre aynalılığını hesaplamak için kullanılır."};
 
+    public static readonly string[] VertexHash = {
+      "Vertex Hash",
+      "Код вершин",
+      "Hash dei vertici",
+      "Vertex-Hash",
+      "顶点哈希",
+      "Hash de vértice",   // ES
+      "Hash de vertex",    // FR
+      "Köşe Hash'i"};      // TR
+
+    public static readonly string[] VertexHashTip = {
+      "The hash code for the solid's vertex coordinates. Used to identify identical parts.\r\n" +
+        "Any change to the solid's geometry changes this code.\r\n" +
+        "Vertices on splines are not taken into account.",
+      "Хэш-код координат вершин солида. Используется для идентификации одинаковых деталей.\r\n" +
+        "Любое изменение геометрии солида вызывает изменение этого кода.\r\n" +
+        "Вершины на сплайнах не учитываются.",
+      "Il codice hash per le coordinate dei vertici del solido. Usato per identificare parti identiche.\r\n" +
+        "Qualsiasi modifica alla geometria del solido cambia questo codice.\r\n" +
+        "I vertici sulle spline non sono presi in considerazione.",
+      "Der Hash-Code für die Vertex-Koordinaten des Volumenkörpers. \r\n" +
+        "Wird verwendet, um identische Teile zu identifizieren.\r\n" +
+        "Jede Änderung der Geometrie des Volumenkörpers ändert diesen Code.\r\n" +
+        "Vertices auf Splines werden nicht berücksichtigt.",
+      "实体顶点坐标的哈希代码。用于识别相同的零件。\r\n" +
+         "对实体几何形状的任何更改都会更改此代码。\r\n" +
+         "不考虑样条线上的顶点。",
+      "El código hash para las coordenadas de los vértices del sólido. Se utiliza para identificar partes idénticas.\r\n" +
+        "Cualquier cambio en la geometría del sólido cambia este código.\r\n" +
+        "Los vértices en las splines no se tienen en cuenta.",
+      "Le code de hachage pour les coordonnées des sommets du solide. Utilisé pour identifier les pièces identiques.\r\n" +
+        "Tout changement de la géométrie du solide change ce code.\r\n" +
+        "Les sommets sur les splines ne sont pas pris en compte.",
+      "Katının köşe koordinatları için hash kodu. Aynı parçaları tanımlamak için kullanılır.\r\n" +
+        "Katının geometrisindeki herhangi bir değişiklik bu kodu değiştirir.\r\n" +
+        "Spline üzerindeki köşeler dikkate alınmaz."};
+
     public static readonly string[] Bandings = {
       "Edge Bandings",
       "Кромки на торцы",

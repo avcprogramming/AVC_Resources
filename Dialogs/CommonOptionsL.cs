@@ -267,6 +267,42 @@ namespace AVC
         "Bu devre dışı bırakılırsa, fayda en uzun çizgi veya yaya sahip olacaktır.\r\n" +
         "LAY, SAW ve Smart Leader komutlarını yapılandırmanıza olanak tanır."};
 
+    public static readonly string[] CheckVertices = {
+      "Check vertices",
+      "Проверить вершины",
+      "Controlla vertici",
+      "Ecken überprüfen",
+      "检查顶点",
+      "Verificar vértices",
+      "Vérifier les sommets",
+      "Köşeleri kontrol et"};
+
+    public static readonly string[] CheckVerticesTip = {
+      "Check that all solid vertices match to prevent different solids from being included in the same part.\r\n"+
+        "This option may significantly reduce measurement performance.\r\n" +
+        "Some nearly identical solids will be considered separate parts.",
+      "Проверить совпадение всех вершин солидов, чтоб исключить попдание разных солидов в одну деталь.\r\n" +
+        "Опция может резко снизить производительность обмера.\r\n " +
+        "Некоторые почти одинаковые солиды будут считаться отдельными деталями.",
+      "Controlla che tutti i vertici del solido corrispondano per evitare che solidi diversi vengano inclusi nella stessa parte.\r\n" +
+        "Questa opzione può ridurre significativamente le prestazioni di misurazione.\r\n" +
+        "Alcuni solidi quasi identici saranno considerati parti separate.",
+      "Überprüfen Sie, ob alle Solidecken übereinstimmen, um zu verhindern, dass verschiedene Solids in dasselbe Teil aufgenommen werden.\r\n" +
+         "Diese Option kann die Messleistung erheblich reduzieren.\r\n" +
+         "Einige fast identische Solids werden als separate Teile betrachtet.",
+      "检查所有实体顶点是否匹配，以防止不同的实体被包含在同一零件中。\r\n" +
+          "此选项可能会显著降低测量性能。\r\n" +
+          "一些几乎相同的实体将被视为单独的零件。",
+      "Verifique que todos los vértices del sólido coincidan para evitar que diferentes sólidos se incluyan en la misma pieza.\r\n" +
+        "Esta opción puede reducir significativamente el rendimiento de la medición.\r\n" +
+        "Algunos sólidos casi idénticos se considerarán piezas separadas.",
+      "Vérifiez que tous les sommets solides correspondent pour éviter que différents solides ne soient inclus dans la même pièce.\r\n" +
+        "Cette option peut réduire considérablement les performances de mesure.\r\n" +
+        "Certains solides presque identiques seront considérés comme des pièces séparées.",
+      "Farklı katıların aynı parçaya dahil edilmesini önlemek için tüm katı köşelerinin eşleştiğini kontrol edin.\r\n" +
+        "Bu seçenek ölçüm performansını önemli ölçüde azaltabilir.\r\n" +
+        "Bazı neredeyse özdeş katılar ayrı parçalar olarak kabul edilecektir."};
+
     public static readonly string[] Reduce = {
       "Reduce size by bandings",
       "Уменьшить габарит на кромки",
