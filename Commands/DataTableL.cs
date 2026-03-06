@@ -285,14 +285,14 @@ namespace AVC
 
     public static readonly string[]
     Grouping = {
-      "Row grouping",
-      "Группировка строк",
-      "Raggruppamento di righe",
-      "Zeilengruppierung",
-      "行分组",
-      "Agrupación de filas",                                     // ES
-      "Regroupement de lignes",                                  // FR
-      "Satır gruplama"};                                         // TR
+      "  Row grouping",
+      "  Группировка строк",
+      "  Raggruppamento di righe",
+      "  Zeilengruppierung",
+      "  行分组",
+      "  Agrupación de filas",                                     // ES
+      "  Regroupement de lignes",                                  // FR
+      "  Satır gruplama"};                                         // TR
 
     public static readonly string[]
     Creating = {
