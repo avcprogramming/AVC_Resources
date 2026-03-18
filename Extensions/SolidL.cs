@@ -332,6 +332,16 @@ namespace AVC
       "Impossible d'attribuer le matériau au solide {0}",
       "Katıya malzeme atanamadı {0}"};
 
+    public static readonly string[] MaterialCreateErr = {
+      "Failed to create content {0}. Error: {1}",
+      "Не удалось создать материал {0}. Ошибка: {1}",
+      "Impossibile creare il contenuto {0}. Errore: {1}",
+      "Fehler beim Erstellen des Inhalts {0}. Fehler: {1}",
+      "无法创建内容 {0}。错误：{1}",
+      "No se pudo crear el contenido {0}. Error: {1}",
+      "Impossible de créer le contenu {0}. Erreur: {1}",
+      "İçerik oluşturulamadı {0}. Hata: {1}"};
+
     public static readonly string[] SeparateErr = {
       "Failed to split multisolids into separate bodies. Error: {0}",
       "Не удалось разделить мультисолид на отдельные тела. Ошибка: {0}",

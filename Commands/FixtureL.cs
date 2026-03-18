@@ -644,20 +644,45 @@ namespace AVC
       "KKS'yi yoksay"};  // TR
 
     public static readonly string[] IgnoreUCSTip = {
-      "Check the directions of the joints and the top of the part not in the current user coordinate system, \r\n" +
-        "but in the world one.",
-      "Проверять направления стыков и верх детали не в текущей пользовательской системе координат, а в мировой.",
-      "Controlla le direzioni dei giunti e della parte superiore della parte \r\n" +
-        "non nel sistema di coordinate utente corrente, ma in quello mondiale.",
-      "Überprüfen Sie die Richtungen der Verbindungen und der Oberseite des Teils \r\n" +
-        "nicht im aktuellen Benutzerkoordinatensystem, sondern im Weltkoordinatensystem.",
-      "检查关节和零件顶部的方向不是在当前用户坐标系中，而是在世界坐标系中。",
-      "Verificar las direcciones de las uniones y la parte superior de la pieza no en el sistema de coordenadas de usuario actual, \r\n" +  // ES
-        "sino en el mundial.",
-      "Vérifier les directions des joints et le haut de la pièce non dans le système de coordonnées utilisateur actuel, \r\n" +  // FR
-        "mais dans le système mondial.",
-      "Bağlantıların ve parçanın üstünün yönlerini mevcut kullanıcı koordinat sisteminde değil, \r\n" +  // TR
-        "dünya koordinat sisteminde kontrol edin."};
+      "Check the directions of the joints and the top of the part \r\n" +
+        "not in the current user coordinate system (UCS) but in the world one (WCS). \r\n" +
+        "The option works with all fasteners, not just the selected one. \r\n" +
+        "In any case, the program ignores how you rotate the model on the screen. \r\n" +
+        "Only the direction of the UCS or WCS coordinate axes matters.",
+      "Проверять направления стыков и верх детали не в текущей пользовательской системе координат (ПСК), \r\n" +
+        "а в мировой (МСК). Опция работает со всеми крепежами, а не только с выбранным. \r\n" +
+        "В любом случае программа игнорирует, как вы развернули модель на экране. \r\n" +
+        "Имеет значения только направление осей координат ПСК (UCS) или МСК (WCS).",
+      "Controlla le direzioni dei giunti e la parte superiore del pezzo \r\n" +
+        "non nel sistema di coordinate utente (UCS) corrente ma in quello mondiale (WCS). \r\n" +
+        "L'opzione funziona con tutti i dispositivi di fissaggio, non solo con quello selezionato. \r\n" +
+        "In ogni caso, il programma ignora come si ruota il modello sullo schermo. \r\n" +
+        "Conta solo la direzione degli assi di coordinate UCS o WCS.",
+      "Überprüfen Sie die Richtungen der Verbindungen und die Oberseite des Teils \r\n" +
+        "nicht im aktuellen Benutzerkoordinatensystem (BKS), sondern im Weltkoordinatensystem (WKS). \r\n" +
+        "Die Option funktioniert mit allen Befestigungselementen, nicht nur mit dem ausgewählten. \r\n" +
+        "In jedem Fall ignoriert das Programm, wie Sie das Modell auf dem Bildschirm drehen. \r\n" +
+        "Nur die Richtung der Koordinatenachsen des BKS oder WKS ist wichtig.",
+      "检查接头的方向和零件的顶部\r\n" +
+        "不在当前用户坐标系 (UCS) 中，而是在世界坐标系 (WCS) 中。\r\n" +
+        "该选项适用于所有紧固件，而不仅仅是所选的那个。\r\n" +
+        "无论如何，程序都会忽略您在屏幕上如何旋转模型。\r\n" +
+        "只有 UCS 或 WCS 坐标轴的方向才重要。",
+      "Verifique las direcciones de las juntas y la parte superior de la pieza \r\n" +  // ES
+        "no en el sistema de coordenadas de usuario (SCP) actual sino en el mundial (SCM). \r\n" +
+        "La opción funciona con todos los herrajes, no solo con el seleccionado. \r\n" +
+        "En cualquier caso, el programa ignora cómo gira el modelo en la pantalla. \r\n" +
+        "Solo importa la dirección de los ejes de coordenadas del SCP o SCM.",
+      "Vérifiez les directions des joints et le haut de la pièce \r\n" +  // FR
+        "pas dans le système de coordonnées utilisateur (SCU) actuel mais dans celui du monde (SCM). \r\n" +
+        "L'option fonctionne avec tous les ferrures, pas seulement avec celui sélectionné. \r\n" +
+        "Dans tous les cas, le programme ignore comment vous faites pivoter le modèle à l'écran. \r\n" +
+        "Seule la direction des axes de coordonnées du SCU ou du SCM compte.",
+      "Eklemelerin ve parçanın üstünün yönlerini kontrol edin \r\n" +  // TR
+        "geçerli kullanıcı koordinat sisteminde (KKS) değil, dünya koordinat sisteminde (DKS). \r\n" +
+        "Seçilenle değil, tüm bağlantı elemanlarıyla seçenek çalışır. \r\n" +
+        "Her durumda, program modelin ekranda nasıl döndürüldüğünü görmezden gelir. \r\n" +
+        "Sadece KKS veya DKS koordinat eksenlerinin yönü önemlidir."};
 
     public static readonly string[] FileText = {
       "Block library file",
@@ -690,30 +715,37 @@ namespace AVC
       "Yalnızca yatay raflar"};  // TR
 
     public static readonly string[] HorizontalTip = {
-      "Place fasteners only if the joint line is horizontal and the joint plane is vertical.\r\n" +
-        "That is, the horizontal shelf fits with its end to the vertical wall.\r\n" +
-        "Suitable for arranging shelf supports.But not for the hinges on the lids.",
-      "Расставлять крепежи только если линия стыка горизонтальна, а плоскость стыка вертикальна. \r\n" +
-        "То есть горизонтальная полка подходит торцем к вертикальной стенке.\r\n" +
+      "Place fasteners only if the joint line is horizontal (in the XY plane) \r\n" +
+        "and the joint line is vertical (along the Z axis in the current UCS coordinate system). \r\n" +
+        "This means that the horizontal shelf fits end-on to the vertical wall. \r\n" +
+        "Use this for placing shelf brackets, but not for lid hinges.",
+      "Расставлять крепежи только если линия стыка горизонтальна (лежит в плоскости XY), \r\n" +
+        "а линия стыка вертикальна (вдоль оси Z в текущей системе координат UCS). \r\n" +
+        "То есть горизонтальная полка подходит торцем к вертикальной стенке. \r\n" +
         "Используйте для расстановки полкодержателей. Но не для петель на крышки.",
-      "Posizionare i fissaggi solo se la linea del giunto è orizzontale e il piano del giunto è verticale.\r\n" +
-         "Cioè, la mensola orizzontale si adatta con la sua estremità alla parete verticale.\r\n" +
-         "Adatto per sistemare i reggipiani. Ma non per le cerniere dei coperchi.",
-      "Befestigungsmittel nur platzieren, wenn die Verbindungslinie horizontal und die Verbindungsebene vertikal ist.\r\n" +
-         "Das heißt, das horizontale Regal passt mit seinem Ende an die vertikale Wand.\r\n" +
-         "Geeignet zum Anordnen von Regalträgern. Nicht jedoch für die Scharniere an den Deckeln.",
-      "仅当连接线水平且连接平面垂直时才放置紧固件。\r\n" +
-         "也就是说，水平架子的末端适合垂直墙。\r\n" +
-         "适用于安排搁板支撑。但不适用于盖子上的铰链。",
-      "Colocar herrajes solo si la línea de unión es horizontal y el plano de unión es vertical.\r\n" +  // ES
-        "Es decir, el estante horizontal encaja con su extremo en la pared vertical.\r\n" +
-        "Adecuado para colocar soportes de estantes. Pero no para bisagras en las tapas.",
-      "Placer les ferrures uniquement si la ligne de joint est horizontale et le plan de joint est vertical.\r\n" +  // FR
-        "C'est-à-dire que l'étagère horizontale s'adapte avec son extrémité au mur vertical.\r\n" +
-        "Convient pour l'agencement des supports d'étagères. Mais pas pour les charnières sur les couvercles.",
-      "Bağlantı elemanlarını yalnızca bağlantı çizgisi yatay ve bağlantı düzlemi dikey ise yerleştirin.\r\n" +  // TR
-        "Yani, yatay raf ucuyla dikey duvara uyar.\r\n" +
-        "Raf destekleri düzenlemek için uygundur. Ancak kapaklar üzerindeki menteşeler için değil."};
+      "Posizionare i dispositivi di fissaggio solo se la linea del giunto è orizzontale (nel piano XY) \r\n" +
+        "e la linea del giunto è verticale (lungo l'asse Z nel sistema di coordinate UCS corrente). \r\n" +
+        "Ciò significa che la mensola orizzontale si adatta alla parete verticale. \r\n" +
+        "Usa questo per posizionare i supporti per mensole, ma non per le cerniere del coperchio.",
+      "Platzieren Sie Befestigungselemente nur, wenn die Verbindungsline horizontal (in der XY-Ebene) \r\n" +
+        "und die Verbindungsline vertikal (entlang der Z-Achse im aktuellen UCS-Koordinatensystem) ist. \r\n" +
+        "Das bedeutet, dass das horizontale Regal end-on zur vertikalen Wand passt. \r\n" +
+        "Verwenden Sie dies für die Platzierung von Regalhaltern, aber nicht für Deckelscharnieren.",
+      "仅当接头线水平（在 XY 平面内）且接头线垂直（沿当前 UCS 坐标系中的 Z 轴）时才放置紧固件。 \r\n" +
+        "这意味着水平货架适合垂直墙壁的端部。 \r\n" +
+        "使用此选项放置货架支架，但不要用于盖铰链。",
+      "Colocar herrajes solo si la línea de la junta es horizontal (en el plano XY) \r\n" +  // ES
+        "y la línea de la junta es vertical (a lo largo del eje Z en el sistema de coordenadas UCS actual). \r\n" +
+        "Esto significa que el estante horizontal se adapta al extremo de la pared vertical. \r\n" +
+        "Use esto para colocar los soportes de estantes, pero no para las bisagras de las tapas.",
+      "Placer les ferrures uniquement si la ligne de joint est horizontale (dans le plan XY) \r\n" +  // FR
+        "et la ligne de joint est verticale (le long de l'axe Z dans le système de coordonnées UCS actuel). \r\n" +
+        "Cela signifie que l'étagère horizontale s'adapte à l'extrémité du mur vertical. \r\n" +
+        "Utilisez ceci pour placer les supports d'étagères, mais pas pour les charnières de couvercles.",
+      "Bağlantı elemanlarını yalnızca eklem hattı yatay (XY düzleminde) ve eklem hattı dikey \r\n" +
+        "(geçerli KKS koordinat sisteminde Z ekseni boyunca) olduğunda yerleştirin. \r\n" +
+        "Bu, yatay rafın dikey duvara ucu uca sığması anlamına gelir. \r\n" +
+        "Bunu raf desteklerini yerleştirmek için kullanın, ancak kapak menteşeleri için kullanmayın."};  // TR
 
     public static readonly string[] OnMidLineText = {
       "On mid-line",
@@ -816,31 +848,30 @@ namespace AVC
         "en yakın 32 mm katına ayarlayın"};
 
     public static readonly string[] VerticalText = {
-      "Vertical joints only",
-      "Только вертикальные",
-      "Solo giunti verticali",
-      "Nur vertikale Fugen",
-      "仅垂直接头",
-      "Solo uniones verticales",  // ES
-      "Joints verticaux uniquement",  // FR
-      "Yalnızca dikey bağlantılar"};  // TR
+      "Vertical joints only (by Z)",
+      "Только вертикальные (по Z)",
+      "Solo giunti verticali (per Z)",
+      "Nur vertikale Fugen (nach Z)",
+      "仅垂直接头 (按 Z)",
+      "Solo uniones verticales (por Z)",  // ES
+      "Joints verticaux uniquement (par Z)",  // FR
+      "Yalnızca dikey bağlantılar (Z)"};  // TR
 
     public static readonly string[] VerticalTip = {
-      "Work only with joints in which the connection line is strictly vertical. \r\n" +
-        "Use for door hinges.",
-      "Работать только со стыками у которых линия соединения расположена строго вертикально.\r\n" +
-        "Используйте для петель на дверки.",
-      "Lavorare solo con giunti in cui la linea di collegamento è rigorosamente verticale.\r\n" +
-         "Utilizzare per i cardini delle porte.",
-      "Arbeiten Sie nur mit Fugen, bei denen die Verbindungslinie streng senkrecht verläuft.\r\n" +
-         "Für Türscharniere verwenden.",
-      "仅使用连接线严格垂直的接头。\r\n" +
-         "用于门铰链。",
-      "Trabajar solo con uniones en las que la línea de conexión es estrictamente vertical. \r\n" +  // ES
-        "Usar para bisagras de puertas.",
-      "Travailler uniquement avec des joints dont la ligne de connexion est strictement verticale. \r\n" +  // FR
-        "Utiliser pour les charnières de porte.",
-      "Yalnızca bağlantı çizgisinin kesinlikle dikey olduğu bağlantılarla çalışın. \r\n" +  // TR
+      "Work only with joints where the connection line is located strictly vertically, \r\n" +
+        "along the Z-axis of the current UCS coordinate system. Use for door hinges.",
+      "Работать только со стыками у которых линия соединения расположена строго вертикально, \r\n" +
+        "по оси Z текущей системы координат UCS. Используйте для петель на дверки.",
+      "Lavorare solo con giunti in cui la linea di connessione è situata verticalmente, \r\n" +
+        "lungo l'asse Z del sistema di coordinate UCS corrente. Usare per le cerniere delle porte.",
+      "Arbeiten Sie nur mit Verbindungen, bei denen die Verbindungsline streng vertikal liegt, \r\n" +
+        "entlang der Z-Achse des aktuellen UCS-Koordinatensystems. Verwenden Sie für Türscharniere.",
+      "仅适用于连接线严格垂直于当前 UCS 坐标系的 Z 轴的接头。用于门铰链。",
+      "Trabajar solo con uniones donde la línea de conexión se encuentra estrictamente vertical, \r\n" +  // ES
+        "a lo largo del eje Z del sistema de coordenadas UCS actual. Use para bisagras de puertas.",
+      "Travailler uniquement avec des joints où la ligne de connexion est située strictement verticalement, \r\n" +  // FR
+        "le long de l'axe Z du système de coordonnées UCS actuel. Utilisez pour les charnières de porte.",
+      "Yalnızca bağlantı çizgisi geçerli KKS koordinat sisteminin Z ekseni boyunca tam dikey olan eklemlerle çalışın. \r\n" +  // TR
         "Kapı menteşeleri için kullanın."};
 
     public static readonly string[] ConnectionText = {
