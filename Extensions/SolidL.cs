@@ -342,15 +342,15 @@ namespace AVC
       "Impossible de créer le contenu {0}. Erreur: {1}",
       "İçerik oluşturulamadı {0}. Hata: {1}"};
 
-    public static readonly string[] SeparateErr = {
-      "Failed to split multisolids into separate bodies. Error: {0}",
-      "Не удалось разделить мультисолид на отдельные тела. Ошибка: {0}",
-      "Impossibile dividere i multisolidi in corpi separati. Errore: {0}",
-      "Multisolids konnten nicht in separate Körper aufgeteilt werden. Fehler: {0}",
-      "无法将多实体分割成单独的部分。错误：{0}",
-      "No se pudieron dividir los multisólidos en cuerpos separados. Error: {0}",
-      "Impossible de diviser les multisolides en corps séparés. Erreur: {0}",
-      "Çoklu katılar ayrı gövdelere bölünemedi. Hata: {0}"};
+    public static readonly string[] SeparateBodyErr = {
+      "Failed to split multisolids #{1} into separate bodies. Error: {0}",
+      "Не удалось разделить мультисолид #{1} на отдельные тела. Ошибка: {0}",
+      "Impossibile dividere i #{1} multisolidi in corpi separati. Errore: {0}",
+      "Multisolids konnten nicht in separate Volumenkörper #{1} aufgeteilt werden. Fehler: {0}",
+      "无法将多实体分割成单独的部分 #{1}。错误：{0}",
+      "No se pudieron dividir los multisólidos #{1} en cuerpos separados. Error: {0}",
+      "Impossible de diviser les multisolides #{1} en corps séparés. Erreur: {0}",
+      "Çoklu katılar ayrı gövdelere bölünemedi #{1}. Hata: {0}"};
 
     public static readonly string[] SubErr = {
       "Failed to perform subtraction. Error: {0}",
@@ -421,5 +421,6 @@ namespace AVC
       "Error al verificar intersecciones de sólidos. {0}",
       "Erreur lors de la vérification des intersections de solides. {0}",
       "Katı kesişimleri kontrol edilirken hata. {0}"};
+
   }
 }

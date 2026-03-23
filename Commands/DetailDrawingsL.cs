@@ -137,6 +137,16 @@ namespace AVC
       "Erreur lors de la création de la mise en page {0}",       // FR
       "Düzen {0} oluşturulurken hata"};                          // TR
 
+    public static readonly string[] LayoutSizeErr = {
+      "The dimensions of sheet {0} are suspiciously small. We'll use the dimensions of a regular sheet of paper.",
+      "Размеры листа {0} подозрительно маленькие. Используем размеры обычного листа бумаги.",
+      "Le dimensioni del foglio {0} sono sospettosamente piccole. Useremo le dimensioni di un normale foglio di carta.",
+      "Die Abmessungen des Blattes {0} sind verdächtig klein. Wir verwenden die Abmessungen eines normalen Papierblatts.",
+      "布局 {0} 的尺寸异常小。我们将使用普通纸张的尺寸。",
+      "Las dimensiones de la hoja {0} son sospechosamente pequeñas. Usaremos las dimensiones de una hoja de papel normal.",  // ES
+      "Les dimensions de la feuille {0} sont suspectes petites. Nous utiliserons les dimensions d'une feuille de papier normale.",  // FR
+      "{0} sayfasının boyutları şüphe uyandıracak kadar küçük. Normal bir kağıt sayfasının boyutlarını kullanacağız."};  // TR
+
     public static readonly string[] EmptyLayoutNameErr = {
       "Layout name pattern '{0}' returned an empty string. The layout will not be renamed.",
       "Шаблон имени листа '{0}' выдал пустую строку. Лист не будет переименован.",

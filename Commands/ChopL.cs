@@ -177,6 +177,16 @@ namespace AVC
       "Entrez une limite sur la longueur maximale autorisée d'une pièce",  // FR
       "Bir parçanın maksimum izin verilen uzunluğu için bir sınır girin"};  // TR
 
+    public static readonly string[] RibThicknessQuery = {
+      "Enter the thickness of the ribs",
+      "Введите толщину ребер",
+      "Inserisci lo spessore delle costole",
+      "Geben Sie die Dicke der Rippen ein",
+      "输入肋骨的厚度",
+      "Ingrese el grosor de las nervaduras",  // ES
+      "Entrez l'épaisseur des nervures",  // FR
+      "Kaburgaların kalınlığını girin" };  // TR
+
     public static readonly string[] MaxLengthInfo = {
       "Solid will chop on {0} pieces length {1}",
       "Солид будет нарезан на {0} долек длиной {1}",
@@ -831,31 +841,33 @@ namespace AVC
 
     public static readonly string[] MakeRibTip = {
       "The solid will not just be cut, but ribs will be placed in those places where the secant planes pass.\r\n" +
-      "The material thickness of the ribs is set in the Rib Thickness field.\r\n" +
-      "This option can be useful for framing a curved structure like an arcuate bar counter.",
+        "The material thickness of the ribs is set in the Rib Thickness field.\r\n" +
+        "This option can be useful for framing a curved structure like an arcuate bar counter.",
       "Солид будет не просто нарезан, а будут расставлены плоские ребра каркаса (нервюры) в тех местах, \r\n" +
-      "где проходят секущие плоскости.\r\n" +
-      "Толщина материала задается в поле Толщина Ребер.\r\n" +
-      "Эта опция может быть удобна для формирования каркаса криволинейной конструкции,\r\n" +
-      "типа дугообразной барной стойки.",
+        "где проходят секущие плоскости.\r\n" +
+        "Толщина материала задается в поле Толщина Ребер.\r\n" +
+        "Эта опция может быть удобна для формирования каркаса криволинейной конструкции,\r\n" +
+        "типа дугообразной барной стойки.",
       "Il solido non verrà solo tagliato, ma verranno posizionate delle nervature nei punti in cui passano i piani di taglio.\r\n" +
-      "Lo spessore del materiale della nervatura è specificato nel campo Spessore nervature.\r\n" +
-      "Questa opzione può essere utile per formare lo scheletro di una struttura curva,\r\n" +
-      "tipo di bancone bar ad arco.",
+        "Lo spessore del materiale della nervatura è specificato nel campo Spessore nervature.\r\n" +
+        "Questa opzione può essere utile per formare lo scheletro di una struttura curva,\r\n" +
+        "tipo di bancone bar ad arco.",
       "Der Körper wird nicht nur geschnitten, sondern es werden Rippen an den Stellen platziert, an denen die Sekanten verlaufen.\r\n" +
-      "Die Materialstärke der Rippen wird im Feld Rippendicke eingestellt.\r\n" +
-      "Diese Option kann nützlich sein, um eine geschwungene Struktur wie eine bogenförmige Bartheke einzurahmen.",
-      "实体不仅会被切割，还会在割线经过的地方放置肋骨。\r\n" +
-      "此选项可用于构建弧形吧台等弯曲结构。",
+        "Die Materialstärke der Rippen wird im Feld Rippendicke eingestellt.\r\n" +
+        "Diese Option kann nützlich sein, um eine geschwungene Struktur wie eine bogenförmige Bartheke einzurahmen.",
+      "实体不会被简单地切割；切割平面经过的地方会放置扁平的框架肋条（肋条）。\r\n" +
+        "材料厚度在‘肋条厚度’字段中指定。\r\n" +
+        "此选项可用于形成曲面结构的框架，\r\n" +
+        "例如拱形吧台。",
       "El sólido no solo se cortará, sino que se colocarán nervaduras en los lugares donde pasan los planos secantes.\r\n" +  // ES
-      "El espesor del material de las nervaduras se establece en el campo Espesor de nervadura.\r\n" +
-      "Esta opción puede ser útil para enmarcar una estructura curva como un mostrador de bar arqueado.",
+        "El espesor del material de las nervaduras se establece en el campo Espesor de nervadura.\r\n" +
+        "Esta opción puede ser útil para enmarcar una estructura curva como un mostrador de bar arqueado.",
       "Le solide ne sera pas seulement coupé, mais des nervures seront placées aux endroits où passent les plans sécants.\r\n" +  // FR
-      "L'épaisseur du matériau des nervures est définie dans le champ Épaisseur de nervure.\r\n" +
-      "Cette option peut être utile pour encadrer une structure incurvée comme un comptoir de bar arqué.",
+        "L'épaisseur du matériau des nervures est définie dans le champ Épaisseur de nervure.\r\n" +
+        "Cette option peut être utile pour encadrer une structure incurvée comme un comptoir de bar arqué.",
       "Katı sadece kesilmeyecek, aynı zamanda kesit düzlemlerinin geçtiği yerlere kaburgalar yerleştirilecektir.\r\n" +  // TR
-      "Kaburga malzeme kalınlığı Kaburga Kalınlığı alanında ayarlanır.\r\n" +
-      "Bu seçenek, kavisli bir bar tezgahı gibi eğri bir yapıyı çerçevelemek için yararlı olabilir."};
+        "Kaburga malzeme kalınlığı Kaburga Kalınlığı alanında ayarlanır.\r\n" +
+        "Bu seçenek, kavisli bir bar tezgahı gibi eğri bir yapıyı çerçevelemek için yararlı olabilir."};
 
     public static readonly string[] SaveGap = {
       "Save Gaps",
@@ -1368,5 +1380,42 @@ namespace AVC
         "veya parçaların maksimum uzunluğunu soracaktır. \r\n" +
         "Bu seçenek devre dışıysa, adım önceden yapılandırılmış Kesme stilinden alınır. \r\n" +
         "Her halükarda, ayarlar iletişim kutusu yapılandırılmışsa hiçbir istek olmayacaktır."};
+
+    public static readonly string[] RibQuery = {
+      "Request rib thickness",
+      "Запрашивать толщину рёбер",
+      "Richiedi lo spessore delle nervature",
+      "Fragen Sie die Dicke der Rippen ab",
+      "请求肋厚度",
+      "Solicitar el grosor de las costillas",        // ES
+      "Demander l'épaisseur des nervures",      // FR
+      "Kaburga kalınlığını iste"};                   // TR
+
+    public static readonly string[] RibQueryTip = {
+      "If you enable this option, you'll be prompted for rib thickness each time the command is called.\r\n" +
+        "If you disable it, the rib thickness will be taken from the Chop style settings.\r\n" +
+        "You won't be prompted in any case if the settings dialog is set to show.",
+      "Если включить эту опцию, то при каждом вызове команды будет запрашиваться толщина рёбер. \r\n" +
+        "Если отключить, то толщина рёбер будет браться из настроек стиля нарезки.\r\n" +
+        "Запроса в любом случае не будет, если настроен показ диалога настроек." ,
+      "Se si abilita questa opzione, verrà richiesto lo spessore del bordo ogni volta che viene chiamato il comando. \r\n" +
+        "Se disabilitato, lo spessore del bordo verrà preso dalle impostazioni dello stile di taglio.\r\n" +
+        "Non ti verrà chiesto in ogni caso se la finestra di dialogo delle impostazioni è configurata per essere mostrata.",
+      "Wenn Sie diese Option aktivieren, werden Sie bei jedem Aufruf des Befehls nach der Dicke der Rippen gefragt. \r\n" +
+        "Wenn Sie sie deaktivieren, wird die Dicke der Rippen aus den Einstellungen des Schnittstils übernommen.\r\n" +
+        "In jedem Fall werden Sie nicht gefragt, wenn der Einstellungsdialog so eingestellt ist, dass er angezeigt wird.",
+      "如果启用此选项，每次调用命令时都会提示您输入边厚。\r\n" +
+        "如果禁用此选项，边厚将取自切片样式设置。\r\n" +
+        "如果设置对话框设置为显示，则不会提示您输入边厚。",
+      "Si habilita esta opción, se le pedirá el grosor del borde cada vez que se llame al comando. \r\n" +
+        "Si desactiva esta opción, el grosor del borde se tomará de la configuración del estilo de corte.\r\n" +
+        "En cualquier caso, no se le pedirá si el cuadro de diálogo de configuración está configurado para mostrarse.",
+      "Si vous activez cette option, l'épaisseur des bords vous sera demandée à chaque appel de la commande.\r\n" +
+        "Si vous la désactivez, l'épaisseur des bords sera définie dans les paramètres de style de découpe.\r\n" +
+        "Vous ne serez de toute façon pas invité à saisir l'épaisseur des bords si la boîte de dialogue des paramètres est configurée pour s'afficher.",
+      "Eğer bu seçeneği etkinleştirirseniz, komut her çağrıldığında kenar kalınlığı istenir. \r\n" +
+         "Eğer devre dışı bırakılırsa, kenar kalınlığı kesme stili ayarlarından alınır.\r\n" +
+         "Her halükarda, ayarlar iletişim kutusu gösterilecek şekilde yapılandırılmışsa size sorulmaz." };
+
   }
 }
