@@ -729,6 +729,42 @@ namespace AVC
       "Çizimdeki nesneleri seçerken, seçilen tüm nesneleri göstermek için ağaç dallarını genişletin. \r\n" +  // TR
           "Ağacın girişiniz olmadan görünümünü değiştirmesini önlemek için bu seçeneği devre dışı bırakın."    };
 
+    public static readonly string[] EditNames = {
+      "Editable names",
+      "Редактируемые имена",
+      "Nomi modificabili",
+      "Bearbeitbare Namen",
+      "可编辑的名称",
+      "Nombres editables",                            // ES
+      "Noms modifiables",                            // FR
+      "Düzenlenebilir adlar"};                      // TR
+
+    public static readonly string[] EditNamesTip = {
+      "Allow editing of object names directly in the drawing tree.\r\n" +
+        "To edit, click the previously selected item again, but do not quickly double-click.\r\n" +
+        "If this object cannot be renamed, you will hear a warning sound.",
+      "Разрешить редактировать имена объектов прямо в дереве чертежа. \r\n" +
+        "Для редактирования нажмите на ранее выбраном пункте повторно, но не делайте быстрый двойной клик. \r\n" +
+        "Если данный объект нельзя переименовывать вы услышите предупреждающий звук.",
+      "Consentire la modifica dei nomi degli oggetti direttamente nell'albero del disegno.\r\n" +
+        "Per modificare, fare clic nuovamente sull'elemento precedentemente selezionato, ma non fare doppio clic rapidamente.\r\n" +
+        "Se questo oggetto non può essere rinominato, sentirai un suono di avviso.",
+      "Ermöglichen Sie die Bearbeitung von Objektnamen direkt im Zeichenbaum.\r\n" +
+        "Um zu bearbeiten, klicken Sie erneut auf das zuvor ausgewählte Element, aber doppelklicken Sie nicht schnell.\r\n" +
+        "Wenn dieses Objekt nicht umbenannt werden kann, hören Sie einen Warnsound.",
+      "允许直接在绘图树中编辑对象名称。\r\n" +
+        "要编辑，请再次单击先前选择的项目，但不要快速双击。\r\n" +
+        "如果无法重命名此对象，您将听到警告声音。",
+      "Permitir la edición de nombres de objetos directamente en el árbol de dibujo.\r\n" +  // ES
+        "Para editar, haga clic nuevamente en el elemento previamente seleccionado, pero no haga doble clic rápidamente.\r\n" +
+        "Si este objeto no se puede renombrar, escuchará un sonido de advertencia.",
+      "Permettre la modification des noms d'objets directement dans l'arbre de dessin.\r\n" +  // FR
+        "Pour modifier, cliquez à nouveau sur l'élément précédemment sélectionné, mais ne double-cliquez pas rapidement.\r\n" +
+        "Si cet objet ne peut pas être renommé, vous entendrez un son d'avertissement.",
+      "Nesne adlarının çizim ağacında doğrudan düzenlenmesine izin verin.\r\n" +  // TR
+        "Düzenlemek için, daha önce seçilen öğeye tekrar tıklayın, ancak hızlıca çift tıklamayın.\r\n" +
+        "Bu nesne yeniden adlandırılamıyorsa, bir uyarı sesi duyacaksınız." };
+
     public static string[] LayerFiltersTip = {
       "You can enable this option so that the list of drawing layers is divided into filters and groups, \r\n" +
         "as configured in the layer manager window. \r\n" +
@@ -769,5 +805,16 @@ namespace AVC
         "Filtreler yalnızca çizim katmanlarında gösterilir, blokların içinde gösterilmez. \r\n" +
         "Filtreleri güncellemek için çizimi kaydetmeniz gerekir. \r\n" +
         "Varsayılan olarak, filtreler devre dışıdır ve tüm katmanlar tek bir listede gösterilir." };
+
+    public static string[] NonEditable = {
+      "The object name '{0}' cannot be edited.",
+      "Имя объекта '{0}' нельзя редактировать.",
+      "Il nome dell'oggetto '{0}' non può essere modificato.",
+      "Der Objektname '{0}' kann nicht bearbeitet werden.",              
+      "对象名称“{0}”无法编辑。",
+      "El nombre del objeto '{0}' no se puede editar.",
+      "Le nom de l'objet '{0}' ne peut pas être modifié.",
+      "'{0}' nesne adı düzenlenemez." };
+
   }
 }
