@@ -19,7 +19,7 @@ namespace AVC
 /* 2 */ CommandL.CHE,
 /* 3 */ new[]{
         "Rib spacing",
-        "Расстановка ребер (нервюр)",
+        "Расстановка рёбер (нервюр)",
         "Spaziatura delle costole",
         "Rippenabstand",
         "肋间距",
@@ -76,7 +76,6 @@ namespace AVC
       "No se puede obtener el plano. Puede que no sea una cara plana",  // ES
       "Impossible d'obtenir le plan. Ce n'est peut-être pas une face plane",  // FR
       "Düzlem alınamıyor. Düz yüzey olmayabilir" };  // TR
-
     public static readonly string[] EdgeSelected = {
       "Solid edge selected",
       "Выбрано ребро солида",
@@ -86,7 +85,6 @@ namespace AVC
       "Borde de sólido seleccionado",  // ES
       "Arête de solide sélectionnée",  // FR
       "Katı kenarı seçildi" };  // TR
-
     public static readonly string[] BaseQuery = {
       "  Select base face of solid",
       "  Выберите базовую плоскость тела",
@@ -96,7 +94,6 @@ namespace AVC
       "  Seleccione la cara base del sólido",  // ES
       "  Sélectionnez la face de base du solide",  // FR
       "  Katının taban yüzeyini seçin"};  // TR
-
     public static readonly string[] StartQuery = {
       "  Pick a point on the edge where the first cut will be made",
       "  Выберите точку на ребре, где будет сделан первый разрез",
@@ -106,7 +103,6 @@ namespace AVC
       "  Elija un punto en el borde donde se realizará el primer corte",  // ES
       "  Choisissez un point sur le bord où la première coupe sera effectuée",  // FR
       "  İlk kesimin yapılacağı kenarda bir nokta seçin"};  // TR
-
     public static readonly string[] CutSolidErr = {
       "Could not cut the solid.",
       "Невозможно разрезать солид.",
@@ -116,7 +112,6 @@ namespace AVC
       "No se pudo cortar el sólido.",  // ES
       "Impossible de couper le solide.",  // FR
       "Katı kesilemedi." };  // TR
-
     public static readonly string[] Piece = {
       "Piece",
       "Дольки",
@@ -179,7 +174,7 @@ namespace AVC
 
     public static readonly string[] RibThicknessQuery = {
       "Enter the thickness of the ribs",
-      "Введите толщину ребер",
+      "Введите толщину рёбер",
       "Inserisci lo spessore delle costole",
       "Geben Sie die Dicke der Rippen ein",
       "输入肋骨的厚度",
@@ -199,7 +194,7 @@ namespace AVC
 
     public static readonly string[] RibErrContinueQuery = {
       "Failed to take into account the thickness of the rib at the alignment of the cut planes. Continue?",
-      "Не удалось учесть толщину ребра при расстановке плоскостей реза. Продолжить?",
+      "Не удалось учесть толщину рёбра при расстановке плоскостей реза. Продолжить?",
       "Impossibile tenere conto dello spessore delle nervature quando si posizionano i piani del taglio. Continuare?",
       "Die Dicke der Rippen konnte beim Platzieren der Schnittebenen nicht berücksichtigt werden. Weiter?",
       "在对齐切割面时未能考虑到肋骨的厚度。继续？",
@@ -242,7 +237,7 @@ namespace AVC
         "As a result, formed the unnecessary pieces/ribs.\n" +
         "It is recommended to divide the solid before.",
       "Тело изогнуто так, что плоскость реза пересекает его дважды.\n" +
-        "В результате образуются лишние дольки/ребра.\n" +
+        "В результате образуются лишние дольки/рёбра.\n" +
         "Рекомендуется разделить солид вручную.",
       "Il solido viene piegato in modo che il piano di taglio lo intersechi due volte.\n" +
         "As risultato, si formano segmenti/bordi extra.\n" +
@@ -461,7 +456,7 @@ namespace AVC
 
     public static readonly string[] TooBigRibErr = {
       "It will not be possible to arrange such thick ribs",
-      "Не получится расставить такие толстые ребра",
+      "Не получится расставить такие толстые рёбра",
       "Non sarà possibile disporre costole così spesse",
       "Es wird nicht möglich sein, so dicke Rippen anzuordnen",
       "无法安排这么厚的肋骨。",
@@ -639,7 +634,7 @@ namespace AVC
 
     public static readonly string[] AlongEdge = {
       "Along Edge",
-      "Вдоль ребра",
+      "Вдоль рёбра",
       "Lungo la costola",
       "Entlang der Rippe",
       "沿边缘",
@@ -717,7 +712,7 @@ namespace AVC
         "Trimmings can only remain if there are parts of the solid outside the given edge.",
       "Разделить солид на заданное количество кусков. \r\n" +
         "Шаг резки будет вычислен. \r\n" +
-        "Обрезки могут остаться, только если есть части солида за пределами заданного ребра.",
+        "Обрезки могут остаться, только если есть части солида за пределами заданного рёбра.",
       "Dividi il solido in un dato numero di pezzi. \r\n" +
         "Verrà calcolato il passo di taglio. \r\n" +
         "I tagli possono rimanere solo se ci sono parti del solido al di fuori del dato bordo.",
@@ -753,7 +748,7 @@ namespace AVC
         "Trimmings can only remain if there are parts of the solid outside the given edge.",
       "Задать количество кусков так, чтоб куски получились не длиннее чем заданное значение. \r\n" +
         "Шаг нарезки вычисляется и будет меньше или равен заданному. \r\n" +
-        "Обрезки могут остаться, только если есть части солида за пределами заданного ребра.",
+        "Обрезки могут остаться, только если есть части солида за пределами заданного рёбра.",
       "Impostare il numero di pezzi in modo che i pezzi non siano più lunghi del valore dato. \r\n" +
         "Il passo di taglio viene calcolato e sarà minore o uguale a quello specificato. \r\n" +
         "I tagli possono rimanere solo se ci sono parti del solido al di fuori del dato bordo.",
@@ -775,7 +770,7 @@ namespace AVC
 
     public static readonly string[] CleanRibs = {
       "Rib cleaning",
-      "Чистка ребер",
+      "Чистка рёбер",
       "Pulire le costole",
       "Rippenreinigung",
       "肋条清除",
@@ -786,7 +781,7 @@ namespace AVC
     public static readonly string[] CleanRibsTip = {
       "Delete unnecessary ribs not contacted with base edge. \r\n" +
         "Recommended for strongly bent edge.",
-      "Удалять ненужные куски ребер, которые не касаются базовой кривой. \r\n" +
+      "Удалять ненужные куски рёбер, которые не касаются базовой кривой. \r\n" +
         "Рекомендуется для сильно изогнутых солидов.",
       "Rimuovere i pezzi di bordo non necessari che non toccano la curva di base. \r\n" +
         "Consigliato per solidi fortemente curvi.",
@@ -843,7 +838,7 @@ namespace AVC
       "The solid will not just be cut, but ribs will be placed in those places where the secant planes pass.\r\n" +
         "The material thickness of the ribs is set in the Rib Thickness field.\r\n" +
         "This option can be useful for framing a curved structure like an arcuate bar counter.",
-      "Солид будет не просто нарезан, а будут расставлены плоские ребра каркаса (нервюры) в тех местах, \r\n" +
+      "Солид будет не просто нарезан, а будут расставлены плоские рёбра каркаса (нервюры) в тех местах, \r\n" +
         "где проходят секущие плоскости.\r\n" +
         "Толщина материала задается в поле Толщина Ребер.\r\n" +
         "Эта опция может быть удобна для формирования каркаса криволинейной конструкции,\r\n" +
@@ -949,7 +944,7 @@ namespace AVC
          "That is, all slanted ends will be cut off.\r\n" +
          "Moreover, they are cut so that the new body will never protrude beyond the original.",
       "При включении этой опции программа будет подменять нарезанные дольки \r\n" +
-        "или ребра на плоские детали с ортогональными торцами.\r\n" +
+        "или рёбра на плоские детали с ортогональными торцами.\r\n" +
         "Т.е. все наклонные торцы будут срезаны.\r\n" +
         "Причем срезаны так, что новое тело нигде не будет выступать за пределы исходного. ",
       "Quando questa opzione è abilitata, il programma sostituirà le fette \r\n" +
@@ -1083,7 +1078,7 @@ namespace AVC
         "or from the nearest end of the specified edge.\r\n" +
         "The stub will remain at the far end of the solid.",
       "Начинать нарезку с крайней точки детали сзади указанной плоскости \r\n" +
-        "или с ближайшего конца указанного ребра.\r\n" +
+        "или с ближайшего конца указанного рёбра.\r\n" +
         "Обрезок останется в дальнем конце солида.",
       "Inizia a tagliare dal punto estremo del solido dietro il piano specificato \r\n" +
         "o dall'estremità più vicina del bordo specificato.\r\n" +
@@ -1118,7 +1113,7 @@ namespace AVC
         "or from the far end of the specified edge.\r\n" +
         "The stub will remain at the near end of the solid.",
       "Начинать нарезку с крайней точки детали перед указанной плоскостью \r\n" +
-        "или с дальнего конца указанного ребра.\r\n" +
+        "или с дальнего конца указанного рёбра.\r\n" +
         "Обрезок останется в ближнем конце солида.",
       "Inizia a tagliare dal punto estremo della parte davanti al piano specificato \r\n" +
         "o dall'estremità più lontana del bordo specificato.\r\n" +
@@ -1153,7 +1148,7 @@ namespace AVC
         "or from the midpoint of the specified edge.\r\n" +
         "The stub will remain at both ends of the solid.",
       "Начинать нарезку с середины детали \r\n" +
-        "или со средней точки указанного ребра." +
+        "или со средней точки указанного рёбра." +
         "Обрезки останутся с обоих концов солида.",
       "Inizia a tagliare dal centro della parte \r\n" +
         "o dal punto medio del bordo specificato.\r\n" +
@@ -1292,7 +1287,7 @@ namespace AVC
 
     public static readonly string[] RibThickness = {
       "Rib thickness",
-      "Толщина ребер",
+      "Толщина рёбер",
       "Spessore nervature",
       "Rippendicke",
       "肋骨厚度",
@@ -1302,7 +1297,7 @@ namespace AVC
 
     public static readonly string[] RibThicknessTip = {
       "Thickness of rib. The thickness should be greater than zero.",
-      "Толщина ребер (нервюр). Должна быть обязательно больше 0.",
+      "Толщина рёбер (нервюр). Должна быть обязательно больше 0.",
       "Lo spessore dei nervature. Deve essere maggiore di 0.",
       "Die Dicke der Rippen. Muss größer als 0 sein.",
       "肋骨的厚度。必须大于 0。",

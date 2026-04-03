@@ -5298,7 +5298,7 @@ namespace AVC
     public static readonly string[] BandingsLength = {
       "The length of the banding.\r\n" +
         "It is calculated by the length of the edge of the front.",
-      "Длина кромки. Рассчитывается по длине ребра фасада.",
+      "Длина кромки. Рассчитывается по длине рёбра фасада.",
       "La lunghezza della fascia.\r\n" +
         "È calcolato dalla lunghezza del bordo anteriore.",
       "Die Länge der Banderole.\r\n" +

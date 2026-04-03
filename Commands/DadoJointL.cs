@@ -333,7 +333,7 @@ namespace AVC
       "Extrude the tenon along the edges or axis of the beam being joined. \r\n" +
         "The option works only on rectangular or round beams that are not connected at a right angle to the second part. \r\n" +
         "If the option is disabled, the tenon is pulled perpendicular to the plane of contact of the parts.",
-      "Вытягивать шип вдоль ребер или оси соединяемой балки. \r\n" +
+      "Вытягивать шип вдоль рёбер или оси соединяемой балки. \r\n" +
         "Опция сработает только на прямоугольных или круглых балках, соединяемых не под прямым углом ко второй детали. \r\n" +
         "Если опция отключена, то вытягивание шипа производится перпендикулярно плоскости контакта деталей.",
       "Tirare il tenone lungo i bordi o l'asse della trave da collegare. \r\n" +

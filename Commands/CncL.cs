@@ -682,7 +682,7 @@ namespace AVC
 
     public static readonly string[] InfoLayerOther = {
       "Other visible ribs and silhouettes of complex surfaces",
-      "Прочие видимые ребра и силуэты сложных поверхностей",
+      "Прочие видимые рёбра и силуэты сложных поверхностей",
       "Altre nervature visibili e sagome di superfici complesse",
       "Andere sichtbare Rippen und Silhouetten komplexer Oberflächen",
       "复杂表面的其他可见筋和轮廓",
@@ -692,7 +692,7 @@ namespace AVC
 
     public static readonly string[] InfoLayerHidden = {
       "Other invisible edges, impassable bottom dadoes and invisible silhouettes of complex surfaces",
-      "Прочие невидимые ребра, непроходимые выборки снизу и невидимые силуэты сложных поверхностей",
+      "Прочие невидимые рёбра, непроходимые выборки снизу и невидимые силуэты сложных поверхностей",
       "Altre nervature invisibili, solchi impraticabili sotto e sagome invisibili di superfici complesse",
       "Andere unsichtbare Rippen, undurchdringliche Rillen darunter und unsichtbare Silhouetten komplexer Oberflächen",
       "其他不可见的边缘、无法通行的裙边和复杂表面的不可见轮廓",

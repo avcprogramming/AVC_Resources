@@ -289,7 +289,7 @@ namespace AVC
     public static readonly string[] ChopTip = {
       "Chop a 3d-solid into many pieces. Make ribs and stair-step.",
       "Нарезка твердых тел на равные дольки. " +
-        "Ступенчатое заполнение сложных форм. Расстановка ребер." ,
+        "Ступенчатое заполнение сложных форм. Расстановка рёбер." ,
       "Tagliare i solidi a fette uguali. " +
         "Riempimento graduale di moduli complessi. Disposizione delle costole.",
       "Volumenkörpers in gleiche Scheiben schneiden. " +
@@ -302,8 +302,8 @@ namespace AVC
 
     public static readonly string[] ChopEdgeTip = {
       "Chop a 3d-solid into many pieces along a curved edge. Make ribs and stair-step.",
-      "Нарезка твердых тел на равные дольки вдоль криволинейного ребра. " +
-        "Ступенчатое заполнение сложных форм. Расстановка ребер." ,
+      "Нарезка твердых тел на равные дольки вдоль криволинейного рёбра. " +
+        "Ступенчатое заполнение сложных форм. Расстановка рёбер." ,
       "Affettare i solidi in fette uguali lungo un bordo curvo. " +
         "Compilazione passo di moduli complessi. Disposizione delle costole.",
       "Schneiden von Festkörpern entlang einer gekrümmten Kante in gleiche Scheiben. " +
@@ -801,7 +801,7 @@ namespace AVC
 
     public static readonly string[] MiterTip = {
       "Cutting the solid along the bisector of the angle of joining of two surfaces.",
-      "Разрезание твердого тела (солида) по биссектрисе угла от линейного ребра" ,
+      "Разрезание твердого тела (солида) по биссектрисе угла от линейного рёбра" ,
       "Taglio del solido 3d lungo la bisettrice dell'angolo di unione di due superfici.",
       "Schneiden des Volumenkörpers entlang der Winkelhalbierenden des Verbindungswinkels zweier Oberflächen.",
       "从直线边沿角平分线切割刚体（实体）",
@@ -1237,7 +1237,7 @@ namespace AVC
       "Measurement of twisted/sweeped solid is similar to SolSize. " +
         "One of the dimensions of the solid is measured along the length of its curved edge.",
       "Измерение искривленного/скрученного твердого тела аналогично SolSize. " +
-        "Один из размеров твердого тела измеряется по длине его криволинейного ребра." ,
+        "Один из размеров твердого тела измеряется по длине его криволинейного рёбра." ,
       "La misurazione del solido contorto/spazzato è simile a SolSize. " +
         "Una delle dimensioni del solido viene misurata lungo la lunghezza del suo bordo curvo.",
       "Die Messung von verdrillten/geschwungenen Festkörpern erfolgt ähnlich wie bei SolSize. " +

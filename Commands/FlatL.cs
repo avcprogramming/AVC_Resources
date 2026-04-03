@@ -62,7 +62,7 @@ namespace AVC
 
     public static string[] HiddenShowQuery = {
       "  Show invisible edges of solids?",
-      "  Показывать невидимые ребра солидов?",
+      "  Показывать невидимые рёбра солидов?",
       "  Mostra bordi invisibili di oggetti solidi?",
       "  Unsichtbare Kanten von Volumenkörpern anzeigen?",
       "  显示隐藏线？",
@@ -72,7 +72,7 @@ namespace AVC
 
     public static string[] ShowTangencyQuery = {
       "  Show tangency edges of solids (imprinted in the plane)?",
-      "  Показывать касательные ребра (впечатанные в плоскость)?",
+      "  Показывать касательные рёбра (впечатанные в плоскость)?",
       "  Se mostrare gli spigoli tangenti (impressi nel piano)?",
       "  Ob tangentiale Kanten (in die Ebene eingeprägt) angezeigt werden sollen?",
       "  是否显示切边（印在平面上）？",
@@ -183,7 +183,7 @@ namespace AVC
 
     public static string[] ShowHidden = {
       "Show invisible edges",
-      "Показывать невидимые ребра",
+      "Показывать невидимые рёбра",
       "Mostra bordi invisibili",
       "Unsichtbare Kanten anzeigen",
       "显示不可见的边缘",
@@ -193,7 +193,7 @@ namespace AVC
 
     public static string[] ShowTangency = {
       "Show tangency edges",
-      "Показывать касательные ребра",
+      "Показывать касательные рёбра",
       "Mostra i bordi di tangenza",
       "Tangentialkanten anzeigen",
       "显示相切边",
@@ -240,7 +240,7 @@ namespace AVC
 
     public static string[] ShowHiddenTip = {
       "Show or hide invisible edges of solids and closed networks",
-      "Показывать или скрыть невидимые ребра солидов и замкнутых сетей",
+      "Показывать или скрыть невидимые рёбра солидов и замкнутых сетей",
       "Mostra o nascondi i bordi invisibili di solidi e reti chiuse",
       "Blenden Sie unsichtbare Kanten von Volumenkörpern und geschlossenen Netzwerken ein oder aus",
       "显示或隐藏实体和封闭网络的不可见边缘",
@@ -250,7 +250,7 @@ namespace AVC
 
     public static string[] ShowTangencyTip = {
       "Show tangency edges of solids (imprinted in the plane)",
-      "Показывать касательные ребра (впечатанные в плоскость)",
+      "Показывать касательные рёбра (впечатанные в плоскость)",
       "Mostra i bordi tangenti dei solidi (impressi nel piano)",
       "Tangentialkanten von Körpern anzeigen (in die Ebene eingeprägt)",
       "显示实体的切线边（印在平面上）",

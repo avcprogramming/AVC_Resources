@@ -187,7 +187,7 @@ namespace AVC
       "Doğra" };
     public static readonly string[] CHE = {
       "Chop Edge",
-      "Нарезка вдоль ребра",
+      "Нарезка вдоль рёбра",
       "Tritare di un bordo",
       "Kante hacken",
       "沿着肋骨切片",
