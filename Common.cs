@@ -105,6 +105,8 @@ namespace AVC
     public static Bitmap Chop80 => LoadPng("Chop80");
     public static Bitmap ChopEdge16 => LoadPng("ChopEdge16");
     public static Bitmap ChopEdge32 => LoadPng("ChopEdge32");
+    public static Bitmap ChopRibs16 => LoadPng("ChopRibs16");
+    public static Bitmap ChopRibs32 => LoadPng("ChopRibs32");
     public static Bitmap Circle32 => LoadPng("Circle32");
     public static Bitmap CNum16 => LoadPng("CNum16");
     public static Bitmap CNum32 => LoadPng("CNum32");

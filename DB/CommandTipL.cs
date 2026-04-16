@@ -301,18 +301,24 @@ namespace AVC
       "3D katıyı birçok parçaya kesme. Kaburga ve basamak yapma."};
 
     public static readonly string[] ChopEdgeTip = {
-      "Chop a 3d-solid into many pieces along a curved edge. Make ribs and stair-step.",
-      "Нарезка твердых тел на равные дольки вдоль криволинейного рёбра. " +
-        "Ступенчатое заполнение сложных форм. Расстановка рёбер." ,
-      "Affettare i solidi in fette uguali lungo un bordo curvo. " +
-        "Compilazione passo di moduli complessi. Disposizione delle costole.",
-      "Schneiden von Festkörpern entlang einer gekrümmten Kante in gleiche Scheiben. " +
-        "Schrittweises Ausfüllen komplexer Formulare. Anordnung der Rippen.",
-      "沿着弯曲的边缘将 3d-solid 切成许多块。 " +
-         "做肋骨和楼梯。",
-      "Cortar un sólido 3D en muchas piezas a lo largo de un borde curvo. Hacer nervaduras y escalones.",
-      "Découper un solide 3D en plusieurs morceaux le long d'un bord incurvé. Créer des nervures et des marches.",
-      "3D katıyı kavisli bir kenar boyunca birçok parçaya kesme. Kaburga ve basamak yapma."};
+      "Cutting 3d-solid into equal slices using planes placed along one curved edge of the solid.",
+      "Нарезка твердых тел на равные дольки плоскостями, расставленными вдоль одного криволинейного рёбра этого тела." ,
+      "Suddividere un solido 3D in fette uguali utilizzando piani posizionati lungo uno dei bordi curvi del solido.",
+      "Zerteilen eines 3D-Körpers in gleiche Scheiben mithilfe von Ebenen, die entlang einer gekrümmten Kante des Körpers platziert werden.",
+      "使用沿着实体的一个曲边放置的平面将 3d-solid 切成相等的切片。",
+      "Cortar un sólido 3D en rebanadas iguales usando planos colocados a lo largo de un borde curvo del sólido.",
+      "Découper un solide 3D en tranches égales à l'aide de plans placés le long d'un bord courbe du solide.",
+      "3D katıyı, katının bir eğri kenarı boyunca yerleştirilen düzlemler kullanarak eşit dilimlere kesme."};
+
+    public static readonly string[] ChopRibsTip = {
+      "Cutting solid bodies into planes and placing thin ribs (frame ribs) on these planes.",
+      "Нарезка твердых тел плоскостями и расстановка на этих плоскостях тонких рёбер (нервюр каркаса).",
+      "Taglio di corpi solidi in piani e posizionamento di sottili nervature (nervature del telaio) su questi piani.",
+      "Zerteilen von Festkörpern in Ebenen und Platzieren dünner Rippen (Rahmenrippen) auf diesen Ebenen.",
+      "将实体切割成平面，并在这些平面上放置薄肋（框架肋）。",
+      "Cortar cuerpos sólidos en planos y colocar delgadas nervaduras (nervaduras de marco) en estos planos.",
+      "Découper des corps solides en plans et placer de fines nervures (nervures de cadre) sur ces plans.",
+      "Katı cisimleri düzlemlere kesme ve bu düzlemlere ince kaburga (çerçeve kaburgaları) yerleştirme."};
 
     public static readonly string[] CNumTip = {
       "Numbering of objects by location along a curve, polyline, or spline.",

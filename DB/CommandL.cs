@@ -187,13 +187,22 @@ namespace AVC
       "Doğra" };
     public static readonly string[] CHE = {
       "Chop Edge",
-      "Нарезка вдоль рёбра",
+      "Нарезка вдоль ребра",
       "Tritare di un bordo",
       "Kante hacken",
       "沿着肋骨切片",
       "Cortar borde",
       "Découper le bord",
       "Kenar kes" };
+    public static readonly string[] CHR = {
+      "Ribs",
+      "Ребра (нервюры)",
+      "Nervatura",
+      "Rippen",
+      "肋骨",
+      "Nervaduras",                                 // ES
+      "Nervures",                                   // FR
+      "Kaburgalar"};                                // TR
     public static readonly string[] CNum = {
       "Numbering on Curve",
       "Нумерация по кривой",

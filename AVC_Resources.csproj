@@ -301,7 +301,7 @@
     <EmbeddedResource Include="Resources\DadoLoop32.png" />
     <EmbeddedResource Include="Resources\DadoLoop80.png" />
     <EmbeddedResource Include="Resources\DataTable16.png" />
-    <EmbeddedResource Include="Resources\DataTable32.PNG" />
+    <EmbeddedResource Include="Resources\DataTable32.png" />
     <EmbeddedResource Include="Resources\DataTable80.png" />
     <EmbeddedResource Include="Resources\DDraw16.png" />
     <EmbeddedResource Include="Resources\DDraw32.png" />
@@ -337,7 +337,7 @@
     <EmbeddedResource Include="Resources\Expose80.png" />
     <EmbeddedResource Include="Resources\Field16.png" />
     <EmbeddedResource Include="Resources\FileCopy.ico" />
-    <EmbeddedResource Include="Resources\Fillet16.PNG" />
+    <EmbeddedResource Include="Resources\Fillet16.png" />
     <EmbeddedResource Include="Resources\Fillet32.png" />
     <EmbeddedResource Include="Resources\Fillet80.png" />
     <EmbeddedResource Include="Resources\Find32.png" />
@@ -383,7 +383,7 @@
     <EmbeddedResource Include="Resources\InsideCorner80.png" />
     <EmbeddedResource Include="Resources\Instances32.png" />
     <EmbeddedResource Include="Resources\Invert16.png" />
-    <EmbeddedResource Include="Resources\Invert32.PNG" />
+    <EmbeddedResource Include="Resources\Invert32.png" />
     <EmbeddedResource Include="Resources\Invert80.png" />
     <EmbeddedResource Include="Resources\K.ico" />
     <EmbeddedResource Include="Resources\Key16.png" />
@@ -450,8 +450,8 @@
     <EmbeddedResource Include="Resources\OK16.png" />
     <EmbeddedResource Include="Resources\OK32.png" />
     <EmbeddedResource Include="Resources\Ole32.png" />
-    <EmbeddedResource Include="Resources\OnEnd80.PNG" />
-    <EmbeddedResource Include="Resources\OnFace80.PNG" />
+    <EmbeddedResource Include="Resources\OnEnd80.png" />
+    <EmbeddedResource Include="Resources\OnFace80.png" />
     <EmbeddedResource Include="Resources\OpenFile16.png" />
     <EmbeddedResource Include="Resources\Other32.png" />
     <EmbeddedResource Include="Resources\Others32.png" />
@@ -593,6 +593,8 @@
     <EmbeddedResource Include="Resources\_3D32.png" />
     <EmbeddedResource Include="Resources\_3DPoly32.png" />
     <EmbeddedResource Include="Resources\_3Ds32.png" />
+    <EmbeddedResource Include="Resources\ChopRibs16.png" />
+    <EmbeddedResource Include="Resources\ChopRibs32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
