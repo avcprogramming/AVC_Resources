@@ -274,6 +274,16 @@ namespace AVC
       "Échec de la mise à jour du bloc {0}",           // FR
       "{0} bloğu güncellenemedi" };                    // TR
 
+    public static readonly string[] TransformErr = {
+      "Failed to transform block {0}",
+      "Не удалось трансформировать блок {0}",
+      "Impossibile trasformare il blocco {0}",
+      "Fehler beim Transformieren des Blocks {0}",
+      "无法转换块 {0}",
+      "No se pudo transformar el bloque {0}",           // ES
+      "Échec de la transformation du bloc {0}",           // FR
+      "{0} bloğu dönüştürülemedi" };                    // TR
+
     public static readonly string[] Updated = {
       "Updated blocks: {0}",
       "Обновлено блоков: {0}",
