@@ -313,7 +313,7 @@ namespace AVC
 
     public static readonly string[] FromEdge = {
       "From part edge",
-      "От ребра детали",
+      "От рёбра детали",
       "Dal bordo parziale",
       "Von Teilkante",
       "从零件边缘",
@@ -324,8 +324,8 @@ namespace AVC
     public static readonly string[] FromEdgeTip = {
       "Search for visible points of the details in the middle of each of its edge. \r\n" +
         "And for long ribs, a pair of points on each edge.",
-      "Искать видимые точки детали в середине каждого ее ребра. \r\n" +
-        "А для длинных ребер еще в паре точек на каждом ребре.",
+      "Искать видимые точки детали в середине каждого ее рёбра. \r\n" +
+        "А для длинных рёбер еще в паре точек на каждом ребре.",
       "Cerca punti visibili dei dettagli nel mezzo di ciascuna delle sue costole. \r\n" +
         "E per le costole lunghe, un paio di punti su ogni bordo.",
       "Wenn der Platz belegt ist, \r\n" +

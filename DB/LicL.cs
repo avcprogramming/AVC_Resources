@@ -625,6 +625,36 @@ namespace AVC
       "Désactiver tout",
       "Tümünü devre dışı bırak"};
 
+    public static readonly string[] ReloadTip = {
+      "Reload the license list from the server",
+      "Перезагрузить список лицензий с сервера",
+      "Ricarica l'elenco delle licenze dal server",
+      "Laden Sie die Liste der Lizenzen vom Server neu",
+      "从服务器重新加载许可证列表",
+      "Recargar la lista de licencias desde el servidor",
+      "Recharger la liste des licences depuis le serveur",
+      "Sunucudan lisans listesini yeniden yükle"};
+
+    public static readonly string[] MoveLicense = {
+      "Move license",
+      "Перенести лицензию",
+      "Sposta licenza",
+      "Lizenz verschieben",
+      "移动许可证",
+      "Mover licencia",
+      "Déplacer la licence",
+      "Lisansı taşı"};
+
+    public static readonly string[] MoveMoney = {
+      "Move money",
+      "Перевести деньги",
+      "Sposta soldi",
+      "Geld verschieben",
+      "转移资金",
+      "Mover dinero",
+      "Déplacer l'argent",
+      "Parayı taşı"};
+
     public static readonly string[] Activation = {
       "Activation",
       "Активация",
@@ -860,6 +890,16 @@ namespace AVC
       "Este lugar de trabajo",
       "Ce lieu de travail",
       "Bu işyeri"};
+
+    public static readonly string[] ShowExpiredLicenses = {
+      "Show expired licenses",
+      "Показать просроченные лицензии",
+      "Mostra le licenze scadute",
+      "Abgelaufene Lizenzen anzeigen",
+      "显示过期的许可证",
+      "Mostrar licencias expiradas",
+      "Afficher les licences expirées",
+      "Süresi dolmuş lisansları göster"};
 
     public static readonly string[] ActivationSite = {
       "More about activation",
@@ -1581,6 +1621,70 @@ namespace AVC
       "Hachage du mot de passe",
       "Şifre hash'i"};
 
+    public static readonly string[] Manager = {
+      "Manager",
+      "Руководитель",
+      "Manager",
+      "Manager",
+      "经理",
+      "Gerente",
+      "Manager",
+      "Yönetici"};
+
+    public static readonly string[] Subordinates = {
+      "Subordinates",
+      "Подчиненные",
+      "Subordinati",
+      "Untergebene",
+      "下属",
+      "Subordinados",
+      "Subordonnés",
+      "Astlar"};
+
+    public static readonly string[] ManagerTip = {
+      "Your project team leader or system administrator.\r\n" +
+        "Please enter an email address that is already registered on the A>V>C> server.\r\n" +
+        "WARNING! Your manager can transfer funds and licenses from your account! ",
+      "Руководитель вашей проектной группы или системный администратор. \r\n" +
+        "Укажите e-mail, который уже зарегестрирован на сервере A>V>C>.\r\n" +
+        "ВНИМАНИЕ! Руководитель может перемещать деньги и лицензии вашего аккаунта!",
+      "Il tuo team leader di progetto o amministratore di sistema. \r\n" +
+        "Si prega di inserire un indirizzo e-mail che è già registrato sul server A>V>C>.\r\n" +
+        "ATTENZIONE! Il tuo manager può trasferire fondi e licenze dal tuo account!",
+      "Ihr Projektteamleiter oder Systemadministrator. \r\n" +
+        "Bitte geben Sie eine E-Mail-Adresse ein, die bereits auf dem A>V>C>-Server registriert ist.\r\n" +
+        "WARNUNG! Ihr Manager kann Gelder und Lizenzen von Ihrem Konto übertragen!",
+      "您的项目团队负责人或系统管理员。 \r\n" +
+        "请输入一个已经在 A>V>C> 服务器上注册的电子邮件地址。\r\n" +
+        "警告！您的经理可以从您的帐户转移资金和许可证！",
+      "El líder de su equipo de proyecto o administrador del sistema. \r\n" +
+        "Ingrese una dirección de correo electrónico que ya esté registrada en el servidor A>V>C>.\r\n" +
+        "¡ADVERTENCIA! ¡Su gerente puede transferir fondos y licencias de su cuenta!",
+      "Votre chef d'équipe de projet ou administrateur système. \r\n" +
+        "Veuillez entrer une adresse e-mail qui est déjà enregistrée sur le serveur A>V>C>.\r\n" +
+        "ATTENTION! Votre manager peut transférer des fonds et des licences de votre compte!",
+      "Proje takım lideriniz veya sistem yöneticiniz. \r\n" +
+        "Lütfen A>V>C> sunucusunda zaten kayıtlı olan bir e-posta adresi girin.\r\n" +
+        "UYARI! Yöneticiniz hesabınızdaki fonları ve lisansları transfer edebilir!"};
+
+    public static readonly string[] ManagerHint = {
+      "You can delegate the management of your balance and licenses to another A>V>C> user.\r\n" +
+        "Enter your manager's email or leave the field blank.",
+      "Вы можете доверить управление вашим балансом и лицензиями другому пользователю A>V>C>.\r\n" +
+        "Укажите email вашего руководителя или оставьте поле пустым.",
+      "Puoi delegare la gestione del tuo saldo e delle tue licenze a un altro utente A>V>C>.\r\n" +
+        "Inserisci l'e-mail del tuo manager o lascia il campo vuoto.",
+      "Sie können die Verwaltung Ihres Guthabens und Ihrer Lizenzen an einen anderen A>V>C>-Benutzer delegieren.\r\n" +
+        "Geben Sie die E-Mail-Adresse Ihres Managers ein oder lassen Sie das Feld leer.",
+      "您可以将您的余额和许可证的管理权限委托给另一个 A>V>C> 用户。\r\n" +
+        "输入您经理的电子邮件或将该字段留空。",
+      "Puede delegar la gestión de su saldo y licencias a otro usuario de A>V>C>.\r\n" +
+        "Ingrese el correo electrónico de su gerente o deje el campo en blanco.",
+      "Vous pouvez déléguer la gestion de votre solde et de vos licences à un autre utilisateur A>V>C>.\r\n" +
+        "Entrez l'e-mail de votre manager ou laissez le champ vide.",
+      "Bakiye ve lisanslarınızın yönetimini başka bir A>V>C> kullanıcısına devredebilirsiniz.\r\n" +
+        "Yöneticinizin e-postasını girin veya alanı boş bırakın."};
+
     public static readonly string[] Country = {
       "Country",
       "Страна",
@@ -1660,6 +1764,24 @@ namespace AVC
       "Falta el usuario {0} en la base de datos.",
       "L'utilisateur {0} est absent de la base de données.",
       "Kullanıcı {0} veritabanında eksik."};
+
+    public static readonly string[] ManagerEqMail = {
+      "Please enter the email address of another employee in your organization, not your personal email address.\r\n" +
+        "If you use the same account for everyone, don't specify the manager's email address at all.",
+      "Укажите почту другого сотрудника вашей организации, а не вашу личную. \r\n" +
+        "Если вы используете один аккаунт на всех, то не указывайте руководителя вообще.",
+      "Si prega di inserire l'indirizzo e-mail di un altro dipendente della tua organizzazione, non il tuo indirizzo e-mail personale.\r\n" +
+        "Se usi lo stesso account per tutti, non specificare affatto l'indirizzo e-mail del manager.",
+      "Bitte geben Sie die E-Mail-Adresse eines anderen Mitarbeiters in Ihrer Organisation ein, nicht Ihre persönliche E-Mail-Adresse.\r\n" +
+        "Wenn Sie dasselbe Konto für alle verwenden, geben Sie die E-Mail-Adresse des Managers überhaupt nicht an.",
+      "请输入您组织中另一位员工的电子邮件地址，而不是您的个人电子邮件地址。\r\n" +
+        "如果您为每个人使用同一个帐户，请完全不要指定经理的电子邮件地址。",
+      "Ingrese la dirección de correo electrónico de otro empleado en su organización, no su dirección de correo electrónico personal.\r\n" +
+        "Si usa la misma cuenta para todos, no especifique la dirección de correo electrónico del gerente en absoluto.",
+      "Veuillez entrer l'adresse e-mail d'un autre employé de votre organisation, pas votre adresse e-mail personnelle.\r\n" +
+        "Si vous utilisez le même compte pour tout le monde, ne spécifiez pas du tout l'adresse e-mail du manager.",
+      "Lütfen kişisel e-posta adresiniz değil, kuruluşunuzdaki başka bir çalışanın e-posta adresini girin.\r\n" +
+        "Herkes için aynı hesabı kullanıyorsanız, yönetici e-posta adresini hiç belirtmeyin."};
 
     public static readonly string[] NotEnoughFunds = {
       "There are not enough funds in your account.\r\n" +

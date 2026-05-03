@@ -5,7 +5,7 @@
 namespace AVC
 {
   /// <summary>
-  /// Локализация диалога AvcPaletteOptionBox и саой палитры свойств
+  /// Локализация диалога AvcPaletteOptionBox и самой палитры свойств
   /// </summary>
   public static class
   AvcPaletteOptionsL
@@ -1106,5 +1106,170 @@ namespace AVC
       "Mostrar campo de Ancho global (análogo al grosor de línea) para polilíneas y polilíneas 2D.",
       "Afficher le champ Largeur globale (analogue à l'épaisseur de ligne) pour les polylignes et polylignes 2D.",
       "Çoklu çizgiler ve 2D çoklu çizgiler için Genel Genişlik alanını göster (çizgi kalınlığına benzer)."};
+
+    public static readonly string[] DefSuggestedCover =      {
+      "Laminate %material:subword3%",
+      "БСП %material:subword3%",
+      "Laminato %material:subword3%",
+      "Laminate %material:subword3%",
+      "贴面 %material:subword3%",
+      "Laminado %material:subword3%",
+      "Couche %material:subword3%",
+      "Kaplama %material:subword3%"};
+
+    public static readonly string[] Suggests = {
+      "Suggest creating materials",
+      "Предлагать создать материалы",
+      "Suggerisci di creare materiali",
+      "Vorschlagen, Materialien zu erstellen",
+      "建议创建材料",
+      "Sugerir crear materiales",
+      "Proposer de créer des matériaux",
+      "Malzemeleri oluşturmayı öner"};
+
+    public static readonly string[] BandingThickness = {
+      "Edge bandings thicknesses",
+      "Толщины кромок",
+      "Spessori delle bande di bordi",
+      "Kantenbiegungsdicken",
+      "边缘带厚度",
+      "Grosor de las bandas de borde",
+      "Épaisseurs des bandes de bord",
+      "Kenar bantlarının kalınlıkları"};
+    public static readonly string[] BandingThicknessTip = {
+      "A list of suggested banding thicknesses. At least one value must be present. \r\n" +
+        "Separated by a semicolon. For inch drawings, enter the thickness in millimeters.",
+      "Список предлагаемых толщин кромки. Должно быть хотя бы одно значение. \r\n" +
+        "Разделитель - точка с запятой. В дюймовых чертежах надо ввести толщину в миллиметрах.",
+      "Un elenco di spessori dei bordi suggeriti. Deve essere presente almeno un valore. \r\n" +
+        "Separati da un punto e virgola. Per i disegni in pollici, inserire lo spessore in millimetri.",
+      "Eine Liste der vorgeschlagenen Kantenstärken. Es muss mindestens ein Wert vorhanden sein. \r\n" +
+        "Getrennt durch ein Semikolon. Für Zollzeichnungen die Dicke in Millimetern eingeben.",
+      "一列建议的边带厚度。必须至少有一个值。 \r\n" +
+        "用分号分隔。对于英寸图纸，请以毫米为单位输入厚度。",
+      "Una lista de grosores de bandas sugeridos. Debe haber al menos un valor. \r\n" +
+        "Separados por un punto y coma. Para dibujos en pulgadas, ingrese el grosor en milímetros.",
+      "Une liste des épaisseurs de bandes suggérées. Au moins une valeur doit être présente. \r\n" +
+        "Séparées par un point-virgule. Pour les dessins en pouces, saisissez l'épaisseur en millimètres.",
+      "Önerilen bant kalınlıklarının bir listesi. En az bir değer olmalıdır. \r\n" +
+        "Noktalı virgülle ayrılmıştır. İnç çizimleri için kalınlığı milimetre cinsinden girin." };
+    public static readonly string[] BandingWidth = {
+      "Edge bandings width",
+      "Ширина кромок",
+      "Larghezza delle bande di bordi",
+      "Kantenbiegungsbreiten",
+      "边缘带宽度",
+      "Ancho de las bandas de borde",
+      "Largeur des bandes de bord",
+      "Kenar bantlarının genişlikleri"};
+    public static readonly string[] BandingWidthTip = {
+      "Edge band width. The program will select a width slightly larger than the part thickness. \r\n" +
+        "You can leave the list empty. Separator: semicolon.",
+      "Ширина кромочной ленты. Программа выберет одну ширину чуть больше толщины детали. \r\n" +
+        "Можно оставить список пустым. Разделитель - точка с запятой.",
+      "Ancho de la banda de borde. El programa seleccionará un ancho ligeramente mayor que el grosor de la pieza. \r\n" +
+        "Puede dejar la lista vacía. Separador: punto y coma.",
+      "Breite der Kantenband. Das Programm wählt eine Breite, die etwas größer als die Dicke des Teils ist. \r\n" +
+        "Sie können die Liste leer lassen. Trennzeichen: Semikolon.",
+      "边带宽度。程序将选择一个略大于零件厚度的宽度。 \r\n" +
+        "您可以将列表留空。分隔符：分号。",
+      "Ancho de la banda de borde. El programa seleccionará un ancho ligeramente mayor que el grosor de la pieza. \r\n" +
+        "Puede dejar la lista vacía. Separador: punto y coma.",
+      "Largeur de la bande de bord. Le programme sélectionnera une largeur légèrement supérieure à l'épaisseur de la pièce. \r\n" +
+        "Vous pouvez laisser la liste vide. Séparateur : point-virgule.",
+      "Kenar bandı genişliği. Program, parçanın kalınlığından biraz daha geniş bir genişlik seçecektir. \r\n" +
+        "Listeyi boş bırakabilirsiniz. Ayırıcı: noktalı virgül."};
+    public static readonly string[] SuggestedBandingTip = {
+      "Suggest creating new edge banding materials using a template based on the part material name.\r\n" +
+        "Multiple banding materials with different thicknesses may be suggested.\r\n" +
+        "The part material must already be assigned and must be a sheet material.",
+      "Предлагать создать новые материалы для кромок по шаблону на основе названия материала детали.\r\n" +
+        "Может быть предложено несколько кромок с разной толщиной.\r\n" +
+        "Материал детали должен быть уже назначен и это должен быть листовой материал.",
+      "Suggerisci di creare nuovi materiali per bordi utilizzando un modello basato sul nome del materiale della parte.\r\n" +
+        "Possono essere suggeriti più materiali di bordi con spessori diversi.\r\n" +
+        "Il materiale della parte deve essere già assegnato e deve essere un materiale per lamina.",
+      "Schlagen Sie vor, neue Kantenbandmaterialien mit einer Vorlage basierend auf dem Namen des Teilsmaterials zu erstellen.\r\n" +
+        "Es können mehrere Banding-Materialien mit unterschiedlichen Stärken vorgeschlagen werden.\r\n" +
+        "Das Material der Teile muss bereits zugewiesen sein und es muss sich um ein Plattenmaterial handeln.",
+      "建议使用基于零件材料名称的模板创建新的边带材料。\r\n" +
+        "可能会建议多个具有不同厚度的边带材料。\r\n" +
+        "必须已经分配零件材料，并且必须是板材。",
+      "Sugerir crear nuevos materiales de bandas de borde utilizando una plantilla basada en el nombre del material de la pieza.\r\n" +
+        "Se pueden sugerir múltiples materiales de bandas con diferentes espesores.\r\n" +
+        "El material de la pieza ya debe estar asignado y debe ser un material de hoja.",
+      "Proposer de créer de nouveaux matériaux de bandes de bord en utilisant un modèle basé sur le nom du matériau de la pièce.\r\n" +
+        "Plusieurs matériaux de bandes avec différentes épaisseurs peuvent être suggérés.\r\n" +
+        "Le matériau de la pièce doit déjà être attribué et doit être un matériau de feuille.",
+      "Parçanın malzeme adına dayalı bir şablon kullanarak yeni kenar bandı malzemeleri oluşturmayı önerin.\r\n" +
+        "Farklı kalınlıklarda birden fazla bant malzemesi önerilebilir.\r\n" +
+        "Parça malzemesi zaten atanmış olmalı ve bir levha malzemesi olmalıdır."};
+    public static readonly string[] SuggestedCoverTip = {
+      "Suggest creating a covering material for all sheet materials in the drawing.",
+      "Предлагать создать материал покрытия для всех листовых материалов чертежа.",
+      "Suggerisci di creare un materiale di rivestimento per tutti i materiali per lamina nel disegno.",
+      "Schlagen Sie vor, ein Beschichtungsmaterial für alle Plattenmaterialien in der Zeichnung zu erstellen.",
+      "建议为图纸中所有板材材料创建覆盖材料。",
+      "Sugerir crear un material de recubrimiento para todos los materiales de hoja en el dibujo.",
+      "Proposer de créer un matériau de revêtement pour tous les matériaux de feuille dans le dessin.",
+      "Çizimdeki tüm levha malzemeleri için bir kaplama malzemesi oluşturmayı önerin."};
+    public static readonly string[] SuggestedSheetTip = {
+      "Suggest creating a new sheet material with the part thickness added to the name. \r\n" +
+        "The program will suggest a version with thickness for all materials in this drawing,\r\n" +
+        "that are designated as sheet material and have a thickness of zero.\r\n" +
+        "The part must be measured first.",
+      "Предлагать создать новый листовой материал с добавлением в название толщины детали. \r\n" +
+        "Программа будет предлагать версию с толщиной для всех материалов данного чертежа,\r\n" +
+        "у которых назначение - листовой, а толщина нулевая.\r\n" +
+        "Требуется предварительно обмерить деталь.",
+      "Suggerisci di creare un nuovo materiale per lamina con lo spessore della parte aggiunto al nome. \r\n" +
+        "Il programma suggerirà una versione con spessore per tutti i materiali in questo disegno,\r\n" +
+        "che sono designati come materiale per lamina e hanno uno spessore di zero.\r\n" +
+        "La parte deve essere misurata prima.",
+      "Schlagen Sie vor, ein neues Plattenmaterial mit der hinzugefügten Teildicke zum Namen zu erstellen. \r\n" +
+        "Das Programm schlägt eine Version mit Dicke für alle Materialien in dieser Zeichnung vor,\r\n" +
+        "die als Plattenmaterial bezeichnet sind und eine Dicke von null haben.\r\n" +
+        "Das Teil muss zuerst vermessen werden.",
+      "建议创建一个新的板材材料，在名称中添加零件厚度。 \r\n" +
+        "程序将为此图纸中的所有材料建议一个带厚度的版本，\r\n" +
+        "这些材料被指定为板材，并且厚度为零。\r\n" +
+        "必须先测量零件。",
+      "Sugerir crear un nuevo material de hoja con el grosor de la pieza agregado al nombre. \r\n" +
+        "El programa sugerirá una versión con grosor para todos los materiales en este dibujo,\r\n" +
+        "que están designados como material de hoja y tienen un grosor de cero.\r\n" +
+        "La pieza debe ser medida primero.",
+      "Proposer de créer un nouveau matériau de feuille avec l'épaisseur de la pièce ajoutée au nom. \r\n" +
+        "Le programme suggérera une version avec épaisseur pour tous les matériaux dans ce dessin,\r\n" +
+        "qui sont désignés comme matériau de feuille et ont une épaisseur de zéro.\r\n" +
+        "La pièce doit être mesurée en premier.",
+      "Parçanın kalınlığının adına eklendiği yeni bir levha malzemesi oluşturmayı önerin. \r\n" +
+        "Program, bu çizimdeki tüm malzemeler için kalınlık içeren bir sürümü önerecektir,\r\n" +
+        "bunlar levha malzemesi olarak atanmış ve kalınlıkları sıfırdır.\r\n" +
+        "Parça önce ölçülmelidir." };
+    public static readonly string[] BandingColor = {
+      "Change the edge banding color based on its thickness",
+      "Менять цвет кромки по ее толщине",
+      "Cambiar el color de la banda de borde según su grosor",
+      "Ändern Sie die Farbe der Kante je nach ihrer Dicke",
+      "根据厚度更改边带颜色",
+      "Cambiar el color de la banda de borde según su grosor",
+      "Changer la couleur de la bande de bord en fonction de son épaisseur",
+      "Kenar bandının rengini kalınlığına göre değiştir" };
+    public static readonly string[] BandingColorTip = {
+      "The new edge banding color will be selected from the standard colors based on the edge thickness.  \r\n" +
+        "Colors are not customizable.",
+      "Цвет новых кромок будет выбран из стандартных в зависимости от толщины кромки. Цвета не настраиваются.",
+      "El nuevo color de la banda de borde se seleccionará de los colores estándar según el grosor del borde.  \r\n" +
+        "Los colores no son personalizables.",
+      "Die neue Farbe der Kante wird aus den Standardfarben basierend auf der Kantenstärke ausgewählt.  \r\n" +
+        "Farben sind nicht anpassbar.",
+      "新的边带颜色将根据边缘厚度从标准颜色中选择。颜色不可自定义。",
+      "El nuevo color de la banda de borde se seleccionará de los colores estándar según el grosor del borde.  \r\n" +
+        "Los colores no son personalizables.",
+      "La nouvelle couleur de la bande de bord sera sélectionnée parmi les couleurs standard en fonction de l'épaisseur du bord.  \r\n" +
+        "Les couleurs ne sont pas personnalisables.",
+      "Yeni kenar bandı rengi, kenar kalınlığına göre standart renklerden seçilecektir.  \r\n" +
+        "Renkler özelleştirilemez." };
+
   }
 }

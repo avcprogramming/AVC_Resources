@@ -60,7 +60,7 @@ namespace AVC
       "Nouvel assemblage",
       "Yeni montaj" };
     public static readonly string[] AsmDraw = {
-      "Assembly drawings",
+      "Assembly Drawings",
       "Сборочные чертежи",
       "Disegni di assemblaggio",
       "Montagezeichnungen",
@@ -194,6 +194,15 @@ namespace AVC
       "Cortar borde",
       "Découper le bord",
       "Kenar kes" };
+    public static readonly string[] CHR = {
+      "Ribs",
+      "Ребра (нервюры)",
+      "Nervatura",
+      "Rippen",
+      "肋骨",
+      "Nervaduras",                                 // ES
+      "Nervures",                                   // FR
+      "Kaburgalar"};                                // TR
     public static readonly string[] CNum = {
       "Numbering on Curve",
       "Нумерация по кривой",

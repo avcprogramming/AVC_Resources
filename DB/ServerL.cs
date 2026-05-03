@@ -214,6 +214,86 @@ namespace AVC
       "Pas d'accès pour supprimer l'activation. Mot de passe incorrect.",
       "Etkinleştirmeyi kaldırmak için erişim yok. Yanlış şifre."};
 
+    public static readonly string[] PasswordRequest = {
+      "You`ve already requested a password. Please wait for the server`s response.",
+      "Вы уже запрашивали пароль. Пожалуйста, дождитесь ответа сервера.",
+      "Hai già richiesto una password. Attendi la risposta del server.",
+      "Sie haben bereits ein Passwort angefordert. Bitte warten Sie auf die Antwort des Servers.",
+      "您已经请求了密码。 请等待服务器的响应。",
+      "Ya ha solicitado una contraseña. Espere la respuesta del servidor.",
+      "Vous avez déjà demandé un mot de passe. Veuillez attendre la réponse du serveur.",
+      "Zaten bir şifre talep ettiniz. Lütfen sunucunun yanıtını bekleyin."};
+
+    public static readonly string[] ManagerNotExists =  {
+      "There is no such manager account registered yet",
+      "Такой учетной записи руководителя еще не зарегистрировано",
+      "Non esiste ancora un account manager registrato",
+      "Es gibt noch kein solches Manager-Konto registriert",
+      "尚未注册这样的经理帐户",
+      "Aún no se ha registrado una cuenta de gerente de este tipo",
+      "Il n'existe pas encore de compte de gestionnaire de ce type enregistré",
+      "Henüz böyle bir yönetici hesabı kayıtlı değil" };
+
+    public static readonly string[] NoAccountOrNotSubordinate = {
+      "The account does not exist or is not your subordinate.",
+      "Аккаунт не существует или не является вашим подчиненным.",
+      "L'account non esiste o non è subordinato a te.",
+      "Das Konto existiert nicht oder ist nicht Ihrem Untergebenen zugeordnet.",
+      "帐户不存在或不是您的下属。",
+      "La cuenta no existe o no es su subordinado.",
+      "Le compte n'existe pas ou n'est pas votre subordonné.",
+      "Hesap mevcut değil veya sizin astınız değil." };
+
+    public static readonly string[] ManagerLikeMail = {
+      "The manager`s email matched the account.",
+      "Почта руководителя совпала с учетной записью.",
+      "La mail del manager ha corrisposto all'account.",
+      "Die E-Mail des Managers stimmte mit dem Konto überein.",
+      "经理的电子邮件与帐户匹配。",
+      "El correo electrónico del gerente coincidió con la cuenta.",
+      "Le mail du manager a correspondu au compte.",
+      "Yöneticinin e-postası hesapla eşleşti." };
+
+    public static readonly string[] AmountErr = {
+      "The account balance is less than the amount specified for transfer.",
+      "Баланс аккаунта меньше указанной суммы для перевода.",
+      "Il saldo del conto è inferiore all'importo specificato per il trasferimento.",
+      "Der Kontostand ist geringer als der für die Überweisung angegebene Betrag.",
+      "帐户余额小于指定的转账金额。",
+      "El saldo de la cuenta es menor que el monto especificado para la transferencia.",
+      "Le solde du compte est inférieur au montant spécifié pour le transfert.",
+      "Hesap bakiyesi, transfer için belirtilen tutardan az." };
+
+    public static readonly string[] LicenseIdErr = {
+      "License does not exist or does not belong to the specified client",
+      "Лицензия не существует или не принадлежит указанному клиенту",
+      "La licenza non esiste o non appartiene al cliente specificato",
+      "Die Lizenz existiert nicht oder gehört nicht zum angegebenen Kunden",
+      "许可证不存在或不属于指定客户",
+      "La licencia no existe o no pertenece al cliente especificado",
+      "La licence n'existe pas ou n'appartient pas au client spécifié",
+      "Lisans mevcut değil veya belirtilen müşteriye ait değil" };
+
+    public static readonly string[] NoLicense = {
+      "No active licenses found to transfer",
+      "Не найдено активных лицензий для переноса"        ,
+      "Nessuna licenza attiva trovata da trasferire",
+      "Keine aktiven Lizenzen zum Übertragen gefunden",
+      "未找到要转移的活动许可证",
+      "No se encontraron licencias activas para transferir",
+      "Aucune licence active trouvée à transférer",
+      "Transfer edilecek aktif lisans bulunamadı" };
+
+    public static readonly string[] BalanceErr = {
+      "Licenses cannot be transferred due to an error in the source account balance.",
+      "Невозможен перенос лицензий из-за ошибки в балансе исходного аккаунта.",
+      "Le transfert des licences est impossible en raison d'une erreur dans le solde du compte source.",
+      "Die Lizenzen können aufgrund eines Fehlers im Kontostand des Quellkontos nicht übertragen werden.",
+      "由于源账户余额错误，无法转移许可证。",
+      "No se pueden transferir licencias debido a un error en el saldo de la cuenta de origen.",
+      "Les licences ne peuvent pas être transférées en raison d'une erreur dans le solde du compte source.",
+      "Kaynak hesap bakiyesindeki bir hata nedeniyle lisanslar aktarılamıyor." };
+
     public static List<string[]>
     Messages = new();
 

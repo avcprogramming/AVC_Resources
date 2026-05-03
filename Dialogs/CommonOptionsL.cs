@@ -31,16 +31,6 @@ namespace AVC
       "Modèle",
       "Şablon"};
 
-    public static readonly string[] ChooseTemplate = {
-      "Choose a template for layers, materials, blocks and styles",
-      "Выберите шаблон для слоев, материалов, блоков и стилей",
-      "Scegli un modello per livelli, materiali, blocchi e stili",
-      "Wählen Sie eine Vorlage für Ebenen, Materialien, Blöcke und Stile.",
-      "为图层、材质、块和样式选择模板",
-      "Elija una plantilla para capas, materiales, bloques y estilos",
-      "Choisissez un modèle pour les calques, les matériaux, les blocs et les styles",
-      "Katmanlar, malzemeler, bloklar ve stiller için bir şablon seçin"};
-
     public static readonly string[] ReloadCUIX = {
       "Reload menu",
       "Перезагрузить меню",
@@ -276,6 +266,42 @@ namespace AVC
       "Katının boyutunu hesaplarken, program onu dik açıyla döndürmelidir. \r\n" +
         "Bu devre dışı bırakılırsa, fayda en uzun çizgi veya yaya sahip olacaktır.\r\n" +
         "LAY, SAW ve Smart Leader komutlarını yapılandırmanıza olanak tanır."};
+
+    public static readonly string[] CheckVertices = {
+      "Check vertices",
+      "Проверить вершины",
+      "Controlla vertici",
+      "Ecken überprüfen",
+      "检查顶点",
+      "Verificar vértices",
+      "Vérifier les sommets",
+      "Köşeleri kontrol et"};
+
+    public static readonly string[] CheckVerticesTip = {
+      "Check that all solid vertices match to prevent different solids from being included in the same part.\r\n"+
+        "This option may significantly reduce measurement performance.\r\n" +
+        "Some nearly identical solids will be considered separate parts.",
+      "Проверить совпадение всех вершин солидов, чтоб исключить попдание разных солидов в одну деталь.\r\n" +
+        "Опция может резко снизить производительность обмера.\r\n " +
+        "Некоторые почти одинаковые солиды будут считаться отдельными деталями.",
+      "Controlla che tutti i vertici del solido corrispondano per evitare che solidi diversi vengano inclusi nella stessa parte.\r\n" +
+        "Questa opzione può ridurre significativamente le prestazioni di misurazione.\r\n" +
+        "Alcuni solidi quasi identici saranno considerati parti separate.",
+      "Überprüfen Sie, ob alle Solidecken übereinstimmen, um zu verhindern, dass verschiedene Solids in dasselbe Teil aufgenommen werden.\r\n" +
+         "Diese Option kann die Messleistung erheblich reduzieren.\r\n" +
+         "Einige fast identische Solids werden als separate Teile betrachtet.",
+      "检查所有实体顶点是否匹配，以防止不同的实体被包含在同一零件中。\r\n" +
+          "此选项可能会显著降低测量性能。\r\n" +
+          "一些几乎相同的实体将被视为单独的零件。",
+      "Verifique que todos los vértices del sólido coincidan para evitar que diferentes sólidos se incluyan en la misma pieza.\r\n" +
+        "Esta opción puede reducir significativamente el rendimiento de la medición.\r\n" +
+        "Algunos sólidos casi idénticos se considerarán piezas separadas.",
+      "Vérifiez que tous les sommets solides correspondent pour éviter que différents solides ne soient inclus dans la même pièce.\r\n" +
+        "Cette option peut réduire considérablement les performances de mesure.\r\n" +
+        "Certains solides presque identiques seront considérés comme des pièces séparées.",
+      "Farklı katıların aynı parçaya dahil edilmesini önlemek için tüm katı köşelerinin eşleştiğini kontrol edin.\r\n" +
+        "Bu seçenek ölçüm performansını önemli ölçüde azaltabilir.\r\n" +
+        "Bazı neredeyse özdeş katılar ayrı parçalar olarak kabul edilecektir."};
 
     public static readonly string[] Reduce = {
       "Reduce size by bandings",

@@ -682,7 +682,7 @@ namespace AVC
 
     public static readonly string[] InfoLayerOther = {
       "Other visible ribs and silhouettes of complex surfaces",
-      "Прочие видимые ребра и силуэты сложных поверхностей",
+      "Прочие видимые рёбра и силуэты сложных поверхностей",
       "Altre nervature visibili e sagome di superfici complesse",
       "Andere sichtbare Rippen und Silhouetten komplexer Oberflächen",
       "复杂表面的其他可见筋和轮廓",
@@ -692,7 +692,7 @@ namespace AVC
 
     public static readonly string[] InfoLayerHidden = {
       "Other invisible edges, impassable bottom dadoes and invisible silhouettes of complex surfaces",
-      "Прочие невидимые ребра, непроходимые выборки снизу и невидимые силуэты сложных поверхностей",
+      "Прочие невидимые рёбра, непроходимые выборки снизу и невидимые силуэты сложных поверхностей",
       "Altre nervature invisibili, solchi impraticabili sotto e sagome invisibili di superfici complesse",
       "Andere unsichtbare Rippen, undurchdringliche Rillen darunter und unsichtbare Silhouetten komplexer Oberflächen",
       "其他不可见的边缘、无法通行的裙边和复杂表面的不可见轮廓",
@@ -995,6 +995,17 @@ namespace AVC
       "Se encontraron varios contornos exteriores de la pieza",  // ES
       "Plusieurs contours extérieurs de la pièce trouvés",  // FR
       "Parçanın birkaç dış konturu bulundu"};  // TR
+
+    public static readonly string[] DDLClosedErr =
+    {
+      "Program works only with open contours - the edges of the dadoes inside the part contour.",
+      "Программа работает только с незамкнутыми контурами - краями пазов внутри контура детали.",
+      "Il programma funziona solo con contorni aperti - i bordi delle scanalature all'interno del contorno della parte.",
+      "Das Programm arbeitet nur mit offenen Konturen - den Kanten der Nuten innerhalb der Kontur des Teils.",
+      "程序仅适用于开放轮廓 - 零件轮廓内的凹槽边缘。",
+      "El programa funciona solo con contornos abiertos: los bordes de las ranuras dentro del contorno de la pieza.",  // ES
+      "Le programme ne fonctionne qu'avec des contours ouverts - les bords des rainures à l'intérieur du contour de la pièce.",  // FR
+      "Program yalnızca açık konturlarla çalışır - parçanın konturu içindeki yuvaların kenarları."};  // TR
 
     public static readonly string[] CloseErr = {
       "Unable to determine the part of main (outside) contour to close this loop.\r\n" +

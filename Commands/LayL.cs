@@ -703,6 +703,16 @@ namespace AVC
       "Écrire <<TEXTURE>> au milieu d'un détail si la texture solide est marquée (dans le sens de la longueur ou de la largeur).",  // FR
       "Katı Doku işaretlenmişse (boydan veya enine) bir detayın ortasına <<TEXTURE>> yazın."};  // TR
 
+    public static readonly string[] TextureMarkTip = {
+      "The text that will be written as a texture label",
+      "Текст, который будет написан в качестве метки текстуры",
+      "Il testo che sarà scritto come etichetta della trama",
+      "Der Text, der als Texturbezeichnung geschrieben wird",
+      "将作为纹理标签写入的文本",
+      "El texto que se escribirá como etiqueta de textura",  // ES
+      "Le texte qui sera écrit comme étiquette de texture",  // FR
+      "Doku etiketi olarak yazılacak metin"};  // TR
+
     public static readonly string[] MakeFlatShot = {
       "Make FlatShot",
       "Плоские контуры",

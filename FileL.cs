@@ -38,7 +38,7 @@ namespace AVC
 
     public static string[] FileDialogTitle = {
       "Open file",
-      "Открыть файла",
+      "Открыть файл",
       "Apri il file",
       "Datei öffnen",
       "打开文件",

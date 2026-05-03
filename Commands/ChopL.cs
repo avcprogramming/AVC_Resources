@@ -19,7 +19,7 @@ namespace AVC
 /* 2 */ CommandL.CHE,
 /* 3 */ new[]{
         "Rib spacing",
-        "Расстановка ребер (нервюр)",
+        "Расстановка рёбер (нервюр)",
         "Spaziatura delle costole",
         "Rippenabstand",
         "肋间距",
@@ -39,44 +39,43 @@ namespace AVC
       "  Parçaların uzunluğunu girin (kesme adımı)"};             // TR
 
     public static readonly string[] NoFace = {
-      "None of selected face",
-      "Нет выбранных поверхностей",
-      "Nessuna superficie selezionata",
-      "Keine Oberflächen ausgewählt",
-      "没有选定的面",
-      "Ninguna cara seleccionada",                                // ES
-      "Aucune face sélectionnée",                                 // FR
-      "Seçili yüz yok"};                                          // TR
+      "❌ None of selected face",
+      "❌ Нет выбранных поверхностей",
+      "❌ Nessuna superficie selezionata",
+      "❌ Keine Oberflächen ausgewählt",
+      "❌ 没有选定的面",
+      "❌ Ninguna cara seleccionada",                                // ES
+      "❌ Aucune face sélectionnée",                                 // FR
+      "❌ Seçili yüz yok"};                                          // TR
 
     public static readonly string[] SurfErr = {
-      "It was necessary to click on the surface of the solid. And you have selected: '{0}'",
-      "Надо было кликать по поверхности солида, а выбран: '{0}'",
-      "È stato necessario fare clic sulla superficie del solido e selezionare: '{0}'",
-      "Es war notwendig, auf die Oberfläche des Volumenkörper zu klicken und Folgendes auszuwählen: '{0}'",
-      "需要点击实体的表面。 并且您选择了：'{0}'",
-      "Era necesario hacer clic en la superficie del sólido. Y ha seleccionado: '{0}'",  // ES
-      "Il était nécessaire de cliquer sur la surface du solide. Et vous avez sélectionné : '{0}'",  // FR
-      "Katının yüzeyine tıklamak gerekiyordu. Ve siz şunu seçtiniz: '{0}'"};  // TR
+      "❌ It was necessary to click on the surface of the solid. And you have selected: '{0}'",
+      "❌ Надо было кликать по поверхности солида, а выбран: '{0}'",
+      "❌ È stato necessario fare clic sulla superficie del solido e selezionare: '{0}'",
+      "❌ Es war notwendig, auf die Oberfläche des Volumenkörper zu klicken und Folgendes auszuwählen: '{0}'",
+      "❌ 需要点击实体的表面。 并且您选择了：'{0}'",
+      "❌ Era necesario hacer clic en la superficie del sólido. Y ha seleccionado: '{0}'",  // ES
+      "❌ Il était nécessaire de cliquer sur la surface du solide. Et vous avez sélectionné : '{0}'",  // FR
+      "❌ Katının yüzeyine tıklamak gerekiyordu. Ve siz şunu seçtiniz: '{0}'"};  // TR
 
     public static readonly string[] FaceSelectErr = {
-      "Can't select face",
-      "Не получилось выбрать поверхность",
-      "Impossibile selezionare la superficie",
-      "Oberfläche konnte nicht ausgewählt werden",
-      "无法选择面",
-      "No se puede seleccionar la cara",                          // ES
-      "Impossible de sélectionner la face",                       // FR
-      "Yüz seçilemiyor"};                                         // TR
+      "❌ Can't select face",
+      "❌ Не получилось выбрать поверхность",
+      "❌ Impossibile selezionare la superficie",
+      "❌ Oberfläche konnte nicht ausgewählt werden",
+      "❌ 无法选择面",
+      "❌ No se puede seleccionar la cara",                          // ES
+      "❌ Impossible de sélectionner la face",                       // FR
+      "❌ Yüz seçilemiyor"};                                         // TR
     public static readonly string[] PlaneErr = {
-      "Can't get plane. May it not flat face",
-      "Плоскость не определена. Возможно это не плоская поверхность",
-      "L'aereo non è definito. Forse non è una superficie piana",
-      "Das Flugzeug ist undefiniert. Vielleicht ist es keine flache Oberfläche",
-      "无法获得平面，可能不是平面面",
-      "No se puede obtener el plano. Puede que no sea una cara plana",  // ES
-      "Impossible d'obtenir le plan. Ce n'est peut-être pas une face plane",  // FR
-      "Düzlem alınamıyor. Düz yüzey olmayabilir" };  // TR
-
+      "❌ Can't get plane. May it not flat face",
+      "❌ Плоскость не определена. Возможно это не плоская поверхность",
+      "❌ L'aereo non è definito. Forse non è una superficie piana",
+      "❌ Das Flugzeug ist undefiniert. Vielleicht ist es keine flache Oberfläche",
+      "❌ 无法获得平面，可能不是平面面",
+      "❌ No se puede obtener el plano. Puede que no sea una cara plana",  // ES
+      "❌ Impossible d'obtenir le plan. Ce n'est peut-être pas une face plane",  // FR
+      "❌ Düzlem alınamıyor. Düz yüzey olmayabilir" };  // TR
     public static readonly string[] EdgeSelected = {
       "Solid edge selected",
       "Выбрано ребро солида",
@@ -86,7 +85,6 @@ namespace AVC
       "Borde de sólido seleccionado",  // ES
       "Arête de solide sélectionnée",  // FR
       "Katı kenarı seçildi" };  // TR
-
     public static readonly string[] BaseQuery = {
       "  Select base face of solid",
       "  Выберите базовую плоскость тела",
@@ -96,7 +94,6 @@ namespace AVC
       "  Seleccione la cara base del sólido",  // ES
       "  Sélectionnez la face de base du solide",  // FR
       "  Katının taban yüzeyini seçin"};  // TR
-
     public static readonly string[] StartQuery = {
       "  Pick a point on the edge where the first cut will be made",
       "  Выберите точку на ребре, где будет сделан первый разрез",
@@ -106,17 +103,15 @@ namespace AVC
       "  Elija un punto en el borde donde se realizará el primer corte",  // ES
       "  Choisissez un point sur le bord où la première coupe sera effectuée",  // FR
       "  İlk kesimin yapılacağı kenarda bir nokta seçin"};  // TR
-
     public static readonly string[] CutSolidErr = {
-      "Could not cut the solid.",
-      "Невозможно разрезать солид.",
-      "Impossibile tagliare le parti",
-      "Teile können nicht geschnitten werden",
-      "无法切割实体.",
-      "No se pudo cortar el sólido.",  // ES
-      "Impossible de couper le solide.",  // FR
-      "Katı kesilemedi." };  // TR
-
+      "❌ Could not cut the solid.",
+      "❌ Невозможно разрезать солид.",
+      "❌ Impossibile tagliare le parti",
+      "❌ Teile können nicht geschnitten werden",
+      "❌ 无法切割实体.",
+      "❌ No se pudo cortar el sólido.",  // ES
+      "❌ Impossible de couper le solide.",  // FR
+      "❌ Katı kesilemedi." };  // TR
     public static readonly string[] Piece = {
       "Piece",
       "Дольки",
@@ -177,6 +172,16 @@ namespace AVC
       "Entrez une limite sur la longueur maximale autorisée d'une pièce",  // FR
       "Bir parçanın maksimum izin verilen uzunluğu için bir sınır girin"};  // TR
 
+    public static readonly string[] RibThicknessQuery = {
+      "Enter the thickness of the ribs",
+      "Введите толщину рёбер",
+      "Inserisci lo spessore delle costole",
+      "Geben Sie die Dicke der Rippen ein",
+      "输入肋骨的厚度",
+      "Ingrese el grosor de las nervaduras",  // ES
+      "Entrez l'épaisseur des nervures",  // FR
+      "Kaburgaların kalınlığını girin" };  // TR
+
     public static readonly string[] MaxLengthInfo = {
       "Solid will chop on {0} pieces length {1}",
       "Солид будет нарезан на {0} долек длиной {1}",
@@ -188,24 +193,24 @@ namespace AVC
       "Katı {0} parçaya kesilecek, uzunluk {1}" };  // TR
 
     public static readonly string[] RibErrContinueQuery = {
-      "Failed to take into account the thickness of the rib at the alignment of the cut planes. Continue?",
-      "Не удалось учесть толщину ребра при расстановке плоскостей реза. Продолжить?",
-      "Impossibile tenere conto dello spessore delle nervature quando si posizionano i piani del taglio. Continuare?",
-      "Die Dicke der Rippen konnte beim Platzieren der Schnittebenen nicht berücksichtigt werden. Weiter?",
-      "在对齐切割面时未能考虑到肋骨的厚度。继续？",
-      "No se pudo tener en cuenta el grosor de la nervadura en la alineación de los planos de corte. ¿Continuar?",  // ES
-      "Impossible de tenir compte de l'épaisseur de la nervure lors de l'alignement des plans de coupe. Continuer ?",  // FR
-      "Kesim düzlemlerinin hizalanmasında kaburga kalınlığı dikkate alınamadı. Devam et?" };  // TR
+      "⚠️ Failed to take into account the thickness of the rib at the alignment of the cut planes. Continue?",
+      "⚠️ Не удалось учесть толщину рёбра при расстановке плоскостей реза. Продолжить?",
+      "⚠️ Impossibile tenere conto dello spessore delle nervature quando si posizionano i piani del taglio. Continuare?",
+      "⚠️ Die Dicke der Rippen konnte beim Platzieren der Schnittebenen nicht berücksichtigt werden. Weiter?",
+      "⚠️ 在对齐切割面时未能考虑到肋骨的厚度。继续？",
+      "⚠️ No se pudo tener en cuenta el grosor de la nervadura en la alineación de los planos de corte. ¿Continuar?",  // ES
+      "⚠️ Impossible de tenir compte de l'épaisseur de la nervure lors de l'alignement des plans de coupe. Continuer ?",  // FR
+      "⚠️ Kesim düzlemlerinin hizalanmasında kaburga kalınlığı dikkate alınamadı. Devam et?" };  // TR
 
     public static readonly string[] Need1RegionErr = {
-      "Only one flat surface needs to be selected",
-      "Требуется выбрать только одну плоскую поверхность",
-      "È necessario selezionare solo una superficie piana",
-      "Es muss nur eine flache Oberfläche ausgewählt werden",
-      "只需选择一个平面",
-      "Solo se necesita seleccionar una superficie plana",  // ES
-      "Une seule surface plane doit être sélectionnée",  // FR
-      "Yalnızca bir düz yüzey seçilmelidir" };  // TR
+      "❌ Only one flat surface needs to be selected",
+      "❌ Требуется выбрать только одну плоскую поверхность",
+      "❌ È necessario selezionare solo una superficie piana",
+      "❌ Es muss nur eine flache Oberfläche ausgewählt werden",
+      "❌ 只需选择一个平面",
+      "❌ Solo se necesita seleccionar una superficie plana",  // ES
+      "❌ Une seule surface plane doit être sélectionnée",  // FR
+      "❌ Yalnızca bir düz yüzey seçilmelidir" };  // TR
 
     public static readonly string[] StStProcess = {
       "Make stair-step solids...",
@@ -218,86 +223,78 @@ namespace AVC
       "Merdiven basamaklı katılar oluşturuluyor..." };  // TR
 
     public static readonly string[] StStErr = {
-      "Failed to make stair-step solid.",
-      "Не получилось сделать ступенчатый солид.",
-      "Non ha funzionato per fare una parte a gradini.",
-      "Es hat nicht geklappt, einen abgestuften Teil zu machen.",
-      "无法制作阶梯实体。",
-      "No se pudo crear el sólido escalonado.",  // ES
-      "Échec de la création du solide en escalier.",  // FR
-      "Merdiven basamaklı katı oluşturulamadı." };  // TR
+      "❌ Failed to make stair-step solid.",
+      "❌ Не получилось сделать ступенчатый солид.",
+      "❌ Non ha funzionato per fare una parte a gradini.",
+      "❌ Es hat nicht geklappt, einen abgestuften Teil zu machen.",
+      "❌ 无法制作阶梯实体。",
+      "❌ No se pudo crear el sólido escalonado.",  // ES
+      "❌ Échec de la création du solide en escalier.",  // FR
+      "❌ Merdiven basamaklı katı oluşturulamadı." };  // TR
 
-    public static readonly string[] TwiceWarning = {
-      "The edge is bent so that it crosses the cutting plane twice.\n" +
-        "As a result, formed the unnecessary pieces/ribs.\n" +
-        "It is recommended to divide the solid before.",
-      "Тело изогнуто так, что плоскость реза пересекает его дважды.\n" +
-        "В результате образуются лишние дольки/ребра.\n" +
-        "Рекомендуется разделить солид вручную.",
-      "Il solido viene piegato in modo che il piano di taglio lo intersechi due volte.\n" +
-        "As risultato, si formano segmenti/bordi extra.\n" +
-        "Si consiglia di dividere il solido manualmente.",
-      "Der Volumenkörper wird so gebogen, dass die Schnittebene ihn zweimal schneidet.\n" +
-        "As als Ergebnis werden zusätzliche Scheiben/Kanten gebildet.\n" +
-        "Es wird empfohlen, den Volumenkörper manuell zu teilen. ",
-      "因为边缘弯曲，使得切割面两次穿过它。\n" +
-        "结果形成了多余的片/边。\n" +
-        "建议手动分割实体。",
-      "El borde está doblado de modo que cruza el plano de corte dos veces.\n" +  // ES
-        "Como resultado, se formaron piezas/nervaduras innecesarias.\n" +
-        "Se recomienda dividir el sólido antes.",
-      "Le bord est plié de sorte qu'il traverse le plan de coupe deux fois.\n" +  // FR
-        "En conséquence, des pièces/nervures inutiles se sont formées.\n" +
-        "Il est recommandé de diviser le solide avant.",
-      "Kenar, kesim düzlemini iki kez geçecek şekilde bükülmüş.\n" +  // TR
-        "Sonuç olarak, gereksiz parçalar/kaburgalar oluştu.\n" +
-        "Katıyı önceden bölmek önerilir."};
+    public static readonly string[] DoubleCrossingWarning = {
+      "⚠️ The edge is bent so that it crosses the cutting plane twice.\r\n" +
+        "As a result, formed the unnecessary pieces/ribs.",
+      "⚠️ Тело изогнуто так, что плоскость реза пересекает его дважды.\r\n" +
+        "В результате образуются лишние дольки/рёбра.",
+      "⚠️ Il solido viene piegato in modo che il piano di taglio lo intersechi due volte.\r\n" +
+        "As risultato, si formano segmenti/bordi extra." ,
+      "⚠️ Der Volumenkörper wird so gebogen, dass die Schnittebene ihn zweimal schneidet.\r\n" +
+        "As als Ergebnis werden zusätzliche Scheiben/Kanten gebildet." ,
+      "⚠️ 因为边缘弯曲，使得切割面两次穿过它。\r\n" +
+        "结果形成了多余的片/边。",
+      "⚠️ El borde está doblado de modo que cruza el plano de corte dos veces.\r\n" +  // ES
+        "Como resultado, se formaron piezas/nervaduras innecesarias." ,
+      "⚠️ Le bord est plié de sorte qu'il traverse le plan de coupe deux fois.\r\n" +  // FR
+        "En conséquence, des pièces/nervures inutiles se sont formées." ,
+      "⚠️ Kenar, kesim düzlemini iki kez geçecek şekilde bükülmüş.\r\n" +  // TR
+        "Sonuç olarak, gereksiz parçalar/kaburgalar oluştu." };
 
     public static readonly string[] Saved = {
-      "Saved {0} new solids.",
-      "Сохранено {0} новых солидов.",
-      "{0} nuovo solido salvato.",
-      "{0} neuer Volumenkörper gespeichert.",
-      "保存了 {0} 个新实体。",
-      "Guardados {0} sólidos nuevos.",  // ES
-      "Enregistré {0} nouveaux solides.",  // FR
-      "{0} yeni katı kaydedildi."};  // TR
+      "✅ Saved {0} new solids.",
+      "✅ Сохранено {0} новых солидов.",
+      "✅ {0} nuovo solido salvato.",
+      "✅ {0} neuer Volumenkörper gespeichert.",
+      "✅ 保存了 {0} 个新实体。",
+      "✅ Guardados {0} sólidos nuevos.",  // ES
+      "✅ Enregistré {0} nouveaux solides.",  // FR
+      "✅ {0} yeni katı kaydedildi."};  // TR
 
-    public static readonly string[] CutErrTwice = {
-      "Could not make the cut.\n" +
+    public static readonly string[] CutTwiceErr = {
+      "❌ Could not make the cut.\n" +
         "The edge is bent so that it crosses the cutting plane twice.\n" +
         "It is recommended to divide the solid before.",
-      "Не удалось сделать разрез.\n" +
+      "❌ Не удалось сделать разрез.\n" +
         "Тело изогнуто так, что плоскость реза пересекает его дважды\n" +
         "Рекомендуется разделить солид вручную.",
-      "Impossibile eseguire un taglio.\n" +
+      "❌ Impossibile eseguire un taglio.\n" +
         "Il corpo è piegato in modo che il piano di taglio lo intersechi due volte\n" +
         "Si consiglia di dividere il solido manualmente.",
-      "Es konnte kein Schnitt ausgeführt werden.\n" +
+      "❌ Es konnte kein Schnitt ausgeführt werden.\n" +
         "Der Volumenkörper ist so gebogen, dass die Schnittebene ihn zweimal schneidet\n" +
         "Es wird empfohlen, den Volumenkörper manuell zu teilen.",
-      "无法进行切割。\n" +
+      "❌ 无法进行切割。\n" +
         "因为边缘弯曲，使得切割面两次穿过它。\n" +
         "建议手动分割实体。",
-      "No se pudo realizar el corte.\n" +  // ES
+      "❌ No se pudo realizar el corte.\n" +  // ES
         "El borde está doblado de modo que cruza el plano de corte dos veces.\n" +
         "Se recomienda dividir el sólido antes.",
-      "Impossible d'effectuer la coupe.\n" +  // FR
+      "❌ Impossible d'effectuer la coupe.\n" +  // FR
         "Le bord est plié de sorte qu'il traverse le plan de coupe deux fois.\n" +
         "Il est recommandé de diviser le solide avant.",
-      "Kesim yapılamadı.\n" +  // TR
+      "❌ Kesim yapılamadı.\n" +  // TR
         "Kenar, kesim düzlemini iki kez geçecek şekilde bükülmüş.\n" +
         "Katıyı önceden bölmek önerilir."};
 
     public static readonly string[] SectionMissing = {
-      "Section {0} missing.",
-      "Сечение {0} пропущено.",
-      "Manca la sezione {0}.",
-      "Abschnitt {0} fehlt.",
-      "缺少第 {0} 节。",
-      "Falta la sección {0}.",  // ES
-      "Section {0} manquante.",  // FR
-      "Bölüm {0} eksik." };  // TR
+      "❌ Section {0} missing.",
+      "❌ Сечение {0} пропущено.",
+      "❌ Manca la sezione {0}.",
+      "❌ Abschnitt {0} fehlt.",
+      "❌ 缺少第 {0} 节。",
+      "❌ Falta la sección {0}.",  // ES
+      "❌ Section {0} manquante.",  // FR
+      "❌ Bölüm {0} eksik." };  // TR
 
     public static readonly string[] SectionErr = {
       "  Section plane outside of base edge.",
@@ -330,24 +327,24 @@ namespace AVC
       "  Bu yerde kesilecek bir şey yok." };  // TR
 
     public static readonly string[] StubErr = {
-      "Could not calculate stub. {0}",
-      "Невозможно вычислить обрезки. {0}",
-      "Impossibile calcolare il ritaglio. {0}",
-      "Ernte kann nicht berechnet werden. {0}",
-      "无法计算残余部分。 {0}",
-      "No se pudo calcular el residuo. {0}",  // ES
-      "Impossible de calculer le reste. {0}",  // FR
-      "Kırpıntı hesaplanamadı. {0}" };  // TR
+      "❌ Could not calculate stub. {0}",
+      "❌ Невозможно вычислить обрезки. {0}",
+      "❌ Impossibile calcolare il ritaglio. {0}",
+      "❌ Ernte kann nicht berechnet werden. {0}",
+      "❌ 无法计算残余部分。 {0}",
+      "❌ No se pudo calcular el residuo. {0}",  // ES
+      "❌ Impossible de calculer le reste. {0}",  // FR
+      "❌ Kırpıntı hesaplanamadı. {0}" };  // TR
 
     public static readonly string[] CutRibErr = {
-      "Failed to cut rib",
-      "Невозможно вырезать ребро.",
-      "Impossibile tagliare le costole.",
-      "Rippe kann nicht geschnitten werden.",
-      "无法切割肋骨",
-      "No se pudo cortar la nervadura",  // ES
-      "Échec de la coupe de la nervure",  // FR
-      "Kaburga kesilemedi" };  // TR
+      "❌ Failed to cut rib",
+      "❌ Невозможно вырезать ребро.",
+      "❌ Impossibile tagliare le costole.",
+      "❌ Rippe kann nicht geschnitten werden.",
+      "❌ 无法切割肋骨",
+      "❌ No se pudo cortar la nervadura",  // ES
+      "❌ Échec de la coupe de la nervure",  // FR
+      "❌ Kaburga kesilemedi" };  // TR
 
     public static readonly string[] PieceNameTemplate = {
       "'Piece'00",
@@ -360,14 +357,14 @@ namespace AVC
       "'Parça'00"};  // TR
 
     public static readonly string[] SectionErrContinueQuery = {
-      "Not possible to arrange all the cutting planes. Continue?",
-      "Не получается расставить все секущие плоскости. Продолжить?",
-      "Non è possibile disporre tutti gli aerei secanti. Continuare?",
-      "Es ist nicht möglich, alle Sekantenebenen anzuordnen. Weiter?",
-      "无法安排所有的切割平面。继续吗？",
-      "No es posible organizar todos los planos de corte. ¿Continuar?",  // ES
-      "Impossible d'organiser tous les plans de coupe. Continuer ?",  // FR
-      "Tüm kesim düzlemlerini düzenlemek mümkün değil. Devam et?" };  // TR
+      "⚠️ Not possible to arrange all the cutting planes. Continue?",
+      "⚠️ Не получается расставить все секущие плоскости. Продолжить?",
+      "⚠️ Non è possibile disporre tutti gli aerei secanti. Continuare?",
+      "⚠️ Es ist nicht möglich, alle Sekantenebenen anzuordnen. Weiter?",
+      "⚠️ 无法安排所有的切割平面。继续吗？",
+      "⚠️ No es posible organizar todos los planos de corte. ¿Continuar?",  // ES
+      "⚠️ Impossible d'organiser tous les plans de coupe. Continuer ?",  // FR
+      "⚠️ Tüm kesim düzlemlerini düzenlemek mümkün değil. Devam et?" };  // TR
 
     public static readonly string[] GapInfo = {
       "  Current settings: Gap = {0}",
@@ -380,104 +377,139 @@ namespace AVC
       "  Geçerli ayarlar: Boşluk = {0}" };  // TR
 
     public static readonly string[] PointOnEdgeErr = {
-      "Start point does not belong to an edge",
-      "Стартовая точка не принадлежит ребру",
-      "Il punto iniziale non appartiene a uno spigolo",
-      "Startpunkt gehört nicht zu einer Kante",
-      "起点不属于边缘。",
-      "El punto de inicio no pertenece a un borde",  // ES
-      "Le point de départ n'appartient pas à un bord",  // FR
-      "Başlangıç noktası bir kenara ait değil" };  // TR
+      "❌ Start point does not belong to an edge",
+      "❌ Стартовая точка не принадлежит ребру",
+      "❌ Il punto iniziale non appartiene a uno spigolo",
+      "❌ Startpunkt gehört nicht zu einer Kante",
+      "❌ 起点不属于边缘。",
+      "❌ El punto de inicio no pertenece a un borde",  // ES
+      "❌ Le point de départ n'appartient pas à un bord",  // FR
+      "❌ Başlangıç noktası bir kenara ait değil" };  // TR
 
     public static readonly string[] TooSmallSolidErr = {
-      "Part or edge too small to cut",
-      "Деталь или ребро слишком маленькое для разрезания",
-      "Parte o bordo troppo piccolo per essere tagliato",
-      "Teil oder Kante zu klein zum Schneiden",
-      "零件或边缘太小,无法切割",
-      "Pieza o borde demasiado pequeño para cortar",  // ES
-      "Pièce ou bord trop petit pour couper",  // FR
-      "Parça veya kenar kesmek için çok küçük" };  // TR
+      "❌ Part or edge too small to cut",
+      "❌ Деталь или ребро слишком маленькое для разрезания",
+      "❌ Parte o bordo troppo piccolo per essere tagliato",
+      "❌ Teil oder Kante zu klein zum Schneiden",
+      "❌ 零件或边缘太小,无法切割",
+      "❌ Pieza o borde demasiado pequeño para cortar",  // ES
+      "❌ Pièce ou bord trop petit pour couper",  // FR
+      "❌ Parça veya kenar kesmek için çok küçük" };  // TR
 
     public static readonly string[] TooManyPiecesErr = {
-      "Too many part cuts configured",
-      "Настроено слишком большое количество разрезов детали",
-      "Troppi tagli di pezzi configurati",
-      "Zu viele Teilschnitte konfiguriert",
-      "配置的零件切割太多",
-      "Demasiados cortes de piezas configurados",  // ES
-      "Trop de coupes de pièces configurées",  // FR
-      "Çok fazla parça kesimi yapılandırıldı" };  // TR
-
+      "❌ Too many part cuts configured",
+      "❌ Настроено слишком большое количество разрезов детали",
+      "❌ Troppi tagli di pezzi configurati",
+      "❌ Zu viele Teilschnitte konfiguriert",
+      "❌ 配置的零件切割太多",
+      "❌ Demasiados cortes de piezas configurados",  // ES
+      "❌ Trop de coupes de pièces configurées",  // FR
+      "❌ Çok fazla parça kesimi yapılandırıldı" };  // TR
     public static readonly string[] TooBigMaxStepErr = {
-      "The maximum allowable step is set greater than the part itself",
-      "Задан максимально допустимый шаг больше чем сама деталь",
-      "Il passo massimo consentito è impostato maggiore del pezzo stesso",
-      "Der maximal zulässige Schritt ist größer eingestellt als das Teil selbst",
-      "最大允许步长设置大于部件本身",
-      "El paso máximo permitido está configurado mayor que la pieza misma",  // ES
-      "Le pas maximal autorisé est défini plus grand que la pièce elle-même",  // FR
-      "Maksimum izin verilen adım parçanın kendisinden daha büyük ayarlanmış" };  // TR
-
+      "❌ The maximum allowable step is set greater than the part itself",
+      "❌ Задан максимально допустимый шаг больше чем сама деталь",
+      "❌ Il passo massimo consentito è impostato maggiore del pezzo stesso",
+      "❌ Der maximal zulässige Schritt ist größer eingestellt als das Teil selbst",
+      "❌ 最大允许步长设置大于部件本身",
+      "❌ El paso máximo permitido está configurado mayor que la pieza misma",  // ES
+      "❌ Le pas maximal autorisé est défini plus grand que la pièce elle-même",  // FR
+      "❌ Maksimum izin verilen adım parçanın kendisinden daha büyük ayarlanmış" };  // TR
     public static readonly string[] TooSmallMaxStepErr = {
-      "Max step too small",
-      "Максимальный шаг слишком мал",
-      "Passo massimo troppo piccolo",
-      "Max. Schritt zu klein",
-      "最大步长太小",
-      "Paso máximo demasiado pequeño",  // ES
-      "Pas maximal trop petit",  // FR
-      "Maksimum adım çok küçük" };  // TR
-
+      "❌ Max step too small",
+      "❌ Максимальный шаг слишком мал",
+      "❌ Passo massimo troppo piccolo",
+      "❌ Max. Schritt zu klein",
+      "❌ 最大步长太小",
+      "❌ Paso máximo demasiado pequeño",  // ES
+      "❌ Pas maximal trop petit",  // FR
+      "❌ Maksimum adım çok küçük" };  // TR
     public static readonly string[] NumberOfPiecesErr = {
-      "The number of pieces must be greater than or equal to two",
-      "Количество долек должно быть больше или равно двум",
-      "Il numero di fette deve essere maggiore o uguale a due",
-      "Die Anzahl der Slices muss größer oder gleich zwei sein",
-      "切片的数量必须大于或等于两个",
-      "El número de piezas debe ser mayor o igual a dos",  // ES
-      "Le nombre de pièces doit être supérieur ou égal à deux",  // FR
-      "Parça sayısı ikiden büyük veya eşit olmalıdır" };  // TR
-
+      "❌ The number of pieces must be greater than or equal to two",
+      "❌ Количество долек должно быть больше или равно двум",
+      "❌ Il numero di fette deve essere maggiore o uguale a due",
+      "❌ Die Anzahl der Slices muss größer oder gleich zwei sein",
+      "❌ 切片的数量必须大于或等于两个",
+      "❌ El número de piezas debe ser mayor o igual a dos",  // ES
+      "❌ Le nombre de pièces doit être supérieur ou égal à deux",  // FR
+      "❌ Parça sayısı ikiden büyük veya eşit olmalıdır" };  // TR
     public static readonly string[] TooBigGapErr = {
-      "You won't be able to make cuts with such a huge gap.",
-      "Не получится сделать разрезы с таким огромным зазором",
-      "Non sarai in grado di fare tagli con un divario così grande.",
-      "Mit einem so großen Abstand werden Sie keine Schnitte machen können.",
-      "这么大的间隙无法进行切割。",
-      "No podrá realizar cortes con un espacio tan grande.",  // ES
-      "Vous ne pourrez pas effectuer de coupes avec un écart aussi important.",  // FR
-      "Bu kadar büyük bir boşlukla kesim yapamazsınız." };  // TR
-
+      "❌ You won't be able to make cuts with such a huge gap.",
+      "❌ Не получится сделать разрезы с таким огромным зазором",
+      "❌ Non sarai in grado di fare tagli con un divario così grande.",
+      "❌ Mit einem so großen Abstand werden Sie keine Schnitte machen können.",
+      "❌ 这么大的间隙无法进行切割。",
+      "❌ No podrá realizar cortes con un espacio tan grande.",  // ES
+      "❌ Vous ne pourrez pas effectuer de coupes avec un écart aussi important.",  // FR
+      "❌ Bu kadar büyük bir boşlukla kesim yapamazsınız." };  // TR
     public static readonly string[] TooBigRibErr = {
-      "It will not be possible to arrange such thick ribs",
-      "Не получится расставить такие толстые ребра",
-      "Non sarà possibile disporre costole così spesse",
-      "Es wird nicht möglich sein, so dicke Rippen anzuordnen",
-      "无法安排这么厚的肋骨。",
-      "No será posible organizar nervaduras tan gruesas",  // ES
-      "Il ne sera pas possible d'organiser des nervures aussi épaisses",  // FR
-      "Bu kadar kalın kaburgaları düzenlemek mümkün olmayacak" };  // TR
+      "❌ It will not be possible to arrange such thick ribs",
+      "❌ Не получится расставить такие толстые рёбра",
+      "❌ Non sarà possibile disporre costole così spesse",
+      "❌ Es wird nicht möglich sein, so dicke Rippen anzuordnen",
+      "❌ 无法安排这么厚的肋骨。",
+      "❌ No será posible organizar nervaduras tan gruesas",  // ES
+      "❌ Il ne sera pas possible d'organiser des nervures aussi épaisses",  // FR
+      "❌ Bu kadar kalın kaburgaları düzenlemek mümkün olmayacak" };  // TR
 
     public static readonly string[] TooShortStepErr = {
-      "With these settings, the cut slices will be too small.",
-      "При таких настройках разрезанные дольки будут слишком мелкие",
-      "Con queste impostazioni, le fette tagliate saranno troppo piccole.",
-      "Mit diesen Einstellungen werden die geschnittenen Scheiben zu klein.",
-      "使用这些设置，切片会太小。",
-      "Con esta configuración, las rebanadas cortadas serán demasiado pequeñas.",  // ES
-      "Avec ces paramètres, les tranches coupées seront trop petites.",  // FR
-      "Bu ayarlarla, kesilen dilimler çok küçük olacak." };  // TR
+      "❌ With these settings, the cut slices will be too small.",
+      "❌ При таких настройках разрезанные дольки будут слишком мелкие",
+      "❌ Con queste impostazioni, le fette tagliate saranno troppo piccole.",
+      "❌ Mit diesen Einstellungen werden die geschnittenen Scheiben zu klein.",
+      "❌ 使用这些设置，切片会太小。",
+      "❌ Con esta configuración, las rebanadas cortadas serán demasiado pequeñas.",  // ES
+      "❌ Avec ces paramètres, les tranches coupées seront trop petites.",  // FR
+      "❌ Bu ayarlarla, kesilen dilimler çok küçük olacak." };  // TR
 
     public static readonly string[] TooBigStepErr = {
-      "Slicing step set too large",
-      "Настроен слишком большой шаг нарезки",
-      "Passo di taglio impostato troppo alto",
-      "Chopping-Pitch zu hoch eingestellt",
-      "切片步长设置过大",
-      "Paso de corte configurado demasiado grande",  // ES
-      "Pas de découpe défini trop grand",  // FR
-      "Kesim adımı çok büyük ayarlanmış" };  // TR
+      "❌ Slicing step set too large",
+      "❌ Настроен слишком большой шаг нарезки",
+      "❌ Passo di taglio impostato troppo alto",
+      "❌ Chopping-Pitch zu hoch eingestellt",
+      "❌ 切片步长设置过大",
+      "❌ Paso de corte configurado demasiado grande",  // ES
+      "❌ Pas de découpe défini trop grand",  // FR
+      "❌ Kesim adımı çok büyük ayarlanmış" };  // TR
+
+    public static readonly string[] Repair = {
+      "Try to repair the solid using the DMAUDIT command",
+      "Попробуйте отремонтировать солид командой DMAUDIT",
+      "Prova a riparare il solido con il DMAUDIT",
+      "Versuchen Sie, den Feststoff mit dem DMAUDIT zu reparieren",
+      "尝试使用 DMAUDIT 命令修复实体",
+      "Intente reparar el sólido usando el comando DMAUDIT",     // ES
+      "Essayez de réparer le solide en utilisant la commande DMAUDIT",  // FR
+      "DMAUDIT komutunu kullanarak katıyı onarmayı deneyin" };  // TR
+
+    public static readonly string[] UnionErr = {
+      "❌ Unable to merge parts on redundant cuts. Error {0}",
+      "❌ Не удалось объединить части на лишних разрезах. Ошибка {0}",
+      "❌ Impossibile unire le parti su tagli ridondanti. Errore {0}",
+      "❌ Fehler beim Zusammenführen von Teilen bei redundanten Schnitten. Fehler {0}",
+      "❌ 无法在冗余切割上合并零件。错误 {0}",
+      "❌ No se pudo fusionar las partes en cortes redundantes. Error {0}",     // ES
+      "❌ Impossible de fusionner les parties sur des coupes redondantes. Erreur {0}",  // FR
+      "❌ Yinelenen kesimlerde parçaları birleştirme başarısız oldu. Hata {0}"};  // TR
+
+    public static readonly string[] FreeSegmentErr = {
+      "❌ The scrap could not be attached to any part.",
+      "❌ Обрезок не удалось присоединить ни к одной части.",
+      "❌ Il ritaglio non è stato possibile allegare a nessuna parte.",
+      "❌ Der Abfall konnte nicht an ein Teil angehängt werden.",
+      "❌ 无法将废料附加到任何部分。",
+      "❌ No se pudo adjuntar el desperdicio a ninguna parte.",  // ES
+      "❌ Impossible de joindre le déchet à une partie.",  // FR
+      "❌ Atık herhangi bir parçaya eklenemedi."};  // TR
+
+    public static readonly string[] CurveLengthErr = {
+      "❌ Unable to measure the edge length. Use a different edge.",
+      "❌ Не удалось померить длину ребра. Используйте другое ребро.",
+      "❌ Impossibile misurare la lunghezza del bordo. Usa un bordo diverso.",
+      "❌ Kantenlänge konnte nicht gemessen werden. Verwenden Sie eine andere Kante.",
+      "❌ 无法测量边缘长度。使用不同的边缘。",
+      "❌ No se pudo medir la longitud del borde. Use un borde diferente.",  // ES
+      "❌ Impossible de mesurer la longueur du bord. Utilisez un bord différent.",  // FR
+      "❌ Kenar uzunluğu ölçülemedi. Farklı bir kenar kullanın."};  // TR
 
     // Далее опции командной строки - без пробелов и не должно совпадать со встроенными опциями соответствующей локализации AutoCAD
     // En: W L C B ALL F WP CP G A R M P U AU SI TRACKING TRACK TK TT END MID CEN G NOD QUA INT EXT INS PER TAN NEA APP PAR NON ZVER ZMID ZCEN ZKNO ZPER ZNEA ZNON
@@ -535,15 +567,7 @@ namespace AVC
       "PLAN",                                        // FR
       "DÜZLEM"};                                     // TR
 
-    public static readonly string[] Repair = {
-      "Try to repair the solid using the DMAUDIT command",
-      "Попробуйте отремонтировать солид командой DMAUDIT",
-      "Prova a riparare il solido con il DMAUDIT",
-      "Versuchen Sie, den Feststoff mit dem DMAUDIT zu reparieren",
-      "尝试使用 DMAUDIT 命令修复实体",
-      "Intente reparar el sólido usando el comando DMAUDIT",     // ES
-      "Essayez de réparer le solide en utilisant la commande DMAUDIT",  // FR
-      "DMAUDIT komutunu kullanarak katıyı onarmayı deneyin" };  // TR
+
 
     // ====================================================================================================================================
     // ==================================================  Options Box ====================================================================
@@ -628,14 +652,14 @@ namespace AVC
         "Düzlem gereklidir. Birçok katıyı aynı anda kesebilirsiniz."};  // TR
 
     public static readonly string[] AlongEdge = {
-      "Along Edge",
-      "Вдоль ребра",
-      "Lungo la costola",
-      "Entlang der Rippe",
-      "沿边缘",
-      "A lo largo del borde",                       // ES
-      "Le long du bord",                            // FR
-      "Kenar boyunca"};                             // TR
+      "Along 3d-solid Edge",
+      "Вдоль ребра солида",
+      "Lungo il bordo solido 3D",
+      "Entlang der 3D-Festkörperkante",
+      "沿三维实体边缘",
+      "A lo largo del borde del sólido 3D",                       // ES
+      "Le long d'un bord solide 3D",                            // FR
+      "3 boyutlu katı kenar boyunca"};                             // TR
 
     public static readonly string[] AlongEdgeTip = {
       "Arrange the cutting planes perpendicular to the edge of the solid. \r\n" +
@@ -707,7 +731,7 @@ namespace AVC
         "Trimmings can only remain if there are parts of the solid outside the given edge.",
       "Разделить солид на заданное количество кусков. \r\n" +
         "Шаг резки будет вычислен. \r\n" +
-        "Обрезки могут остаться, только если есть части солида за пределами заданного ребра.",
+        "Обрезки могут остаться, только если есть части солида за пределами заданного рёбра.",
       "Dividi il solido in un dato numero di pezzi. \r\n" +
         "Verrà calcolato il passo di taglio. \r\n" +
         "I tagli possono rimanere solo se ci sono parti del solido al di fuori del dato bordo.",
@@ -743,7 +767,7 @@ namespace AVC
         "Trimmings can only remain if there are parts of the solid outside the given edge.",
       "Задать количество кусков так, чтоб куски получились не длиннее чем заданное значение. \r\n" +
         "Шаг нарезки вычисляется и будет меньше или равен заданному. \r\n" +
-        "Обрезки могут остаться, только если есть части солида за пределами заданного ребра.",
+        "Обрезки могут остаться, только если есть части солида за пределами заданного рёбра.",
       "Impostare il numero di pezzi in modo che i pezzi non siano più lunghi del valore dato. \r\n" +
         "Il passo di taglio viene calcolato e sarà minore o uguale a quello specificato. \r\n" +
         "I tagli possono rimanere solo se ci sono parti del solido al di fuori del dato bordo.",
@@ -765,7 +789,7 @@ namespace AVC
 
     public static readonly string[] CleanRibs = {
       "Rib cleaning",
-      "Чистка ребер",
+      "Чистка рёбер",
       "Pulire le costole",
       "Rippenreinigung",
       "肋条清除",
@@ -776,7 +800,7 @@ namespace AVC
     public static readonly string[] CleanRibsTip = {
       "Delete unnecessary ribs not contacted with base edge. \r\n" +
         "Recommended for strongly bent edge.",
-      "Удалять ненужные куски ребер, которые не касаются базовой кривой. \r\n" +
+      "Удалять ненужные куски рёбер, которые не касаются базовой кривой. \r\n" +
         "Рекомендуется для сильно изогнутых солидов.",
       "Rimuovere i pezzi di bordo non necessari che non toccano la curva di base. \r\n" +
         "Consigliato per solidi fortemente curvi.",
@@ -789,6 +813,34 @@ namespace AVC
       "Supprimez les nervures inutiles qui ne sont pas en contact avec le bord de base. \r\n" +
         "Recommandé pour les bords fortement courbés.",  // FR
       "Taban kenarıyla temas etmeyen gereksiz kaburga parçalarını silin. \r\n" +
+        "Güçlü şekilde eğilmiş katılar için önerilir."};  // TR
+
+    public static readonly string[] Union = {
+      "Remove excess cuts",
+      "Убирать лишние разрезы",
+      "Rimuovere i tagli in eccesso",
+      "Entfernen Sie überschüssige Schnitte",
+      "删除多余的切割",
+      "Eliminar cortes excesivos" ,  // ES
+      "Supprimer les coupes excessives",  // FR
+      "Fazla kesimleri kaldır"};  // TR
+
+    public static readonly string[] UnionTip = {
+      "Rejoin blue cut parts that don't touch the base curve on the cutting plane.\r\n" +
+      "Recommended for highly curved solids.",
+      "Объединаять обратно сишние отрезанные части, которые не касаются базовой кривой на плоскости реза. \r\n" +
+      "Рекомендуется для сильно изогнутых солидов.",
+      "Riunire le parti tagliate in eccesso che non toccano la curva di base sul piano di taglio. \r\n" +
+        "Consigliato per solidi fortemente curvi.",
+      "Fügen Sie überschüssige geschnittene Teile wieder zusammen, die die Basiskurve auf der Schnittebene nicht berühren. \r\n" +
+        "Empfohlen für stark gekrümmte Volumenkörper.",
+      "重新连接在切割平面上不接触基线的多余切割部分。 \r\n" +
+        "推荐用于高度弯曲的实体。",
+      "Vuelva a unir las partes cortadas en exceso que no tocan la curva base en el plano de corte. \r\n" +
+        "Recomendado para sólidos muy curvados.",  // ES
+      "Rejoignez les parties coupées en excès qui ne touchent pas la courbe de base sur le plan de coupe. \r\n" +
+        "Recommandé pour les solides fortement courbés.",  // FR
+      "Kesme düzleminde temel eğriye temas etmeyen fazla kesilen parçaları yeniden birleştirin. \r\n" +
         "Güçlü şekilde eğilmiş katılar için önerilir."};  // TR
 
     public static readonly string[] Numbering = {
@@ -820,42 +872,44 @@ namespace AVC
         "A>V>C> Özellik Paleti'ni kullanarak katı adlarını görebilirsiniz."};  // TR
 
     public static readonly string[] MakeRib = {
-      "Ribs",
-      "Ребра (нервюры)",
-      "Nervatura",
-      "Rippen",
-      "肋骨",
-      "Nervaduras",                                 // ES
-      "Nervures",                                   // FR
-      "Kaburgalar"};                                // TR
+      "Make Ribs",
+      "Делать Нервюры (Ребра)",
+      "Creare nervature",
+      "Rippen erstellen",
+      "肋骨制作",
+      "Hacer nervaduras" ,                            // ES
+      "Créer des nervures",                            // FR
+      "Kaburga Yapımı" };                          // TR
 
     public static readonly string[] MakeRibTip = {
       "The solid will not just be cut, but ribs will be placed in those places where the secant planes pass.\r\n" +
-      "The material thickness of the ribs is set in the Rib Thickness field.\r\n" +
-      "This option can be useful for framing a curved structure like an arcuate bar counter.",
-      "Солид будет не просто нарезан, а будут расставлены плоские ребра каркаса (нервюры) в тех местах, \r\n" +
-      "где проходят секущие плоскости.\r\n" +
-      "Толщина материала задается в поле Толщина Ребер.\r\n" +
-      "Эта опция может быть удобна для формирования каркаса криволинейной конструкции,\r\n" +
-      "типа дугообразной барной стойки.",
+        "The material thickness of the ribs is set in the Rib Thickness field.\r\n" +
+        "This option can be useful for framing a curved structure like an arcuate bar counter.",
+      "Солид будет не просто нарезан, а будут расставлены плоские рёбра каркаса (нервюры) в тех местах, \r\n" +
+        "где проходят секущие плоскости.\r\n" +
+        "Толщина материала задается в поле Толщина Ребер.\r\n" +
+        "Эта опция может быть удобна для формирования каркаса криволинейной конструкции,\r\n" +
+        "типа дугообразной барной стойки.",
       "Il solido non verrà solo tagliato, ma verranno posizionate delle nervature nei punti in cui passano i piani di taglio.\r\n" +
-      "Lo spessore del materiale della nervatura è specificato nel campo Spessore nervature.\r\n" +
-      "Questa opzione può essere utile per formare lo scheletro di una struttura curva,\r\n" +
-      "tipo di bancone bar ad arco.",
+        "Lo spessore del materiale della nervatura è specificato nel campo Spessore nervature.\r\n" +
+        "Questa opzione può essere utile per formare lo scheletro di una struttura curva,\r\n" +
+        "tipo di bancone bar ad arco.",
       "Der Körper wird nicht nur geschnitten, sondern es werden Rippen an den Stellen platziert, an denen die Sekanten verlaufen.\r\n" +
-      "Die Materialstärke der Rippen wird im Feld Rippendicke eingestellt.\r\n" +
-      "Diese Option kann nützlich sein, um eine geschwungene Struktur wie eine bogenförmige Bartheke einzurahmen.",
-      "实体不仅会被切割，还会在割线经过的地方放置肋骨。\r\n" +
-      "此选项可用于构建弧形吧台等弯曲结构。",
+        "Die Materialstärke der Rippen wird im Feld Rippendicke eingestellt.\r\n" +
+        "Diese Option kann nützlich sein, um eine geschwungene Struktur wie eine bogenförmige Bartheke einzurahmen.",
+      "实体不会被简单地切割；切割平面经过的地方会放置扁平的框架肋条（肋条）。\r\n" +
+        "材料厚度在‘肋条厚度’字段中指定。\r\n" +
+        "此选项可用于形成曲面结构的框架，\r\n" +
+        "例如拱形吧台。",
       "El sólido no solo se cortará, sino que se colocarán nervaduras en los lugares donde pasan los planos secantes.\r\n" +  // ES
-      "El espesor del material de las nervaduras se establece en el campo Espesor de nervadura.\r\n" +
-      "Esta opción puede ser útil para enmarcar una estructura curva como un mostrador de bar arqueado.",
+        "El espesor del material de las nervaduras se establece en el campo Espesor de nervadura.\r\n" +
+        "Esta opción puede ser útil para enmarcar una estructura curva como un mostrador de bar arqueado.",
       "Le solide ne sera pas seulement coupé, mais des nervures seront placées aux endroits où passent les plans sécants.\r\n" +  // FR
-      "L'épaisseur du matériau des nervures est définie dans le champ Épaisseur de nervure.\r\n" +
-      "Cette option peut être utile pour encadrer une structure incurvée comme un comptoir de bar arqué.",
+        "L'épaisseur du matériau des nervures est définie dans le champ Épaisseur de nervure.\r\n" +
+        "Cette option peut être utile pour encadrer une structure incurvée comme un comptoir de bar arqué.",
       "Katı sadece kesilmeyecek, aynı zamanda kesit düzlemlerinin geçtiği yerlere kaburgalar yerleştirilecektir.\r\n" +  // TR
-      "Kaburga malzeme kalınlığı Kaburga Kalınlığı alanında ayarlanır.\r\n" +
-      "Bu seçenek, kavisli bir bar tezgahı gibi eğri bir yapıyı çerçevelemek için yararlı olabilir."};
+        "Kaburga malzeme kalınlığı Kaburga Kalınlığı alanında ayarlanır.\r\n" +
+        "Bu seçenek, kavisli bir bar tezgahı gibi eğri bir yapıyı çerçevelemek için yararlı olabilir."};
 
     public static readonly string[] SaveGap = {
       "Save Gaps",
@@ -937,7 +991,7 @@ namespace AVC
          "That is, all slanted ends will be cut off.\r\n" +
          "Moreover, they are cut so that the new body will never protrude beyond the original.",
       "При включении этой опции программа будет подменять нарезанные дольки \r\n" +
-        "или ребра на плоские детали с ортогональными торцами.\r\n" +
+        "или рёбра на плоские детали с ортогональными торцами.\r\n" +
         "Т.е. все наклонные торцы будут срезаны.\r\n" +
         "Причем срезаны так, что новое тело нигде не будет выступать за пределы исходного. ",
       "Quando questa opzione è abilitata, il programma sostituirà le fette \r\n" +
@@ -1071,7 +1125,7 @@ namespace AVC
         "or from the nearest end of the specified edge.\r\n" +
         "The stub will remain at the far end of the solid.",
       "Начинать нарезку с крайней точки детали сзади указанной плоскости \r\n" +
-        "или с ближайшего конца указанного ребра.\r\n" +
+        "или с ближайшего конца указанного рёбра.\r\n" +
         "Обрезок останется в дальнем конце солида.",
       "Inizia a tagliare dal punto estremo del solido dietro il piano specificato \r\n" +
         "o dall'estremità più vicina del bordo specificato.\r\n" +
@@ -1106,7 +1160,7 @@ namespace AVC
         "or from the far end of the specified edge.\r\n" +
         "The stub will remain at the near end of the solid.",
       "Начинать нарезку с крайней точки детали перед указанной плоскостью \r\n" +
-        "или с дальнего конца указанного ребра.\r\n" +
+        "или с дальнего конца указанного рёбра.\r\n" +
         "Обрезок останется в ближнем конце солида.",
       "Inizia a tagliare dal punto estremo della parte davanti al piano specificato \r\n" +
         "o dall'estremità più lontana del bordo specificato.\r\n" +
@@ -1141,7 +1195,7 @@ namespace AVC
         "or from the midpoint of the specified edge.\r\n" +
         "The stub will remain at both ends of the solid.",
       "Начинать нарезку с середины детали \r\n" +
-        "или со средней точки указанного ребра." +
+        "или со средней точки указанного рёбра." +
         "Обрезки останутся с обоих концов солида.",
       "Inizia a tagliare dal centro della parte \r\n" +
         "o dal punto medio del bordo specificato.\r\n" +
@@ -1280,7 +1334,7 @@ namespace AVC
 
     public static readonly string[] RibThickness = {
       "Rib thickness",
-      "Толщина ребер",
+      "Толщина рёбер",
       "Spessore nervature",
       "Rippendicke",
       "肋骨厚度",
@@ -1290,7 +1344,7 @@ namespace AVC
 
     public static readonly string[] RibThicknessTip = {
       "Thickness of rib. The thickness should be greater than zero.",
-      "Толщина ребер (нервюр). Должна быть обязательно больше 0.",
+      "Толщина рёбер (нервюр). Должна быть обязательно больше 0.",
       "Lo spessore dei nervature. Deve essere maggiore di 0.",
       "Die Dicke der Rippen. Muss größer als 0 sein.",
       "肋骨的厚度。必须大于 0。",
@@ -1368,5 +1422,78 @@ namespace AVC
         "veya parçaların maksimum uzunluğunu soracaktır. \r\n" +
         "Bu seçenek devre dışıysa, adım önceden yapılandırılmış Kesme stilinden alınır. \r\n" +
         "Her halükarda, ayarlar iletişim kutusu yapılandırılmışsa hiçbir istek olmayacaktır."};
+
+    public static readonly string[] RibQuery = {
+      "Request rib thickness",
+      "Запрашивать толщину рёбер",
+      "Richiedi lo spessore delle nervature",
+      "Fragen Sie die Dicke der Rippen ab",
+      "请求肋厚度",
+      "Solicitar el grosor de las costillas",   // ES
+      "Demander l'épaisseur des nervures",      // FR
+      "Kaburga kalınlığını iste"};              // TR
+
+    public static readonly string[] RibQueryTip = {
+      "If you enable this option, you'll be prompted for rib thickness each time the command is called.\r\n" +
+        "If you disable it, the rib thickness will be taken from the Chop style settings.\r\n" +
+        "You won't be prompted in any case if the settings dialog is set to show.",
+      "Если включить эту опцию, то при каждом вызове команды будет запрашиваться толщина рёбер. \r\n" +
+        "Если отключить, то толщина рёбер будет браться из настроек стиля нарезки.\r\n" +
+        "Запроса в любом случае не будет, если настроен показ диалога настроек." ,
+      "Se si abilita questa opzione, verrà richiesto lo spessore del bordo ogni volta che viene chiamato il comando. \r\n" +
+        "Se disabilitato, lo spessore del bordo verrà preso dalle impostazioni dello stile di taglio.\r\n" +
+        "Non ti verrà chiesto in ogni caso se la finestra di dialogo delle impostazioni è configurata per essere mostrata.",
+      "Wenn Sie diese Option aktivieren, werden Sie bei jedem Aufruf des Befehls nach der Dicke der Rippen gefragt. \r\n" +
+        "Wenn Sie sie deaktivieren, wird die Dicke der Rippen aus den Einstellungen des Schnittstils übernommen.\r\n" +
+        "In jedem Fall werden Sie nicht gefragt, wenn der Einstellungsdialog so eingestellt ist, dass er angezeigt wird.",
+      "如果启用此选项，每次调用命令时都会提示您输入边厚。\r\n" +
+        "如果禁用此选项，边厚将取自切片样式设置。\r\n" +
+        "如果设置对话框设置为显示，则不会提示您输入边厚。",
+      "Si habilita esta opción, se le pedirá el grosor del borde cada vez que se llame al comando. \r\n" +
+        "Si desactiva esta opción, el grosor del borde se tomará de la configuración del estilo de corte.\r\n" +
+        "En cualquier caso, no se le pedirá si el cuadro de diálogo de configuración está configurado para mostrarse.",
+      "Si vous activez cette option, l'épaisseur des bords vous sera demandée à chaque appel de la commande.\r\n" +
+        "Si vous la désactivez, l'épaisseur des bords sera définie dans les paramètres de style de découpe.\r\n" +
+        "Vous ne serez de toute façon pas invité à saisir l'épaisseur des bords si la boîte de dialogue des paramètres est configurée pour s'afficher.",
+      "Eğer bu seçeneği etkinleştirirseniz, komut her çağrıldığında kenar kalınlığı istenir. \r\n" +
+         "Eğer devre dışı bırakılırsa, kenar kalınlığı kesme stili ayarlarından alınır.\r\n" +
+         "Her halükarda, ayarlar iletişim kutusu gösterilecek şekilde yapılandırılmışsa size sorulmaz." };
+
+    public static readonly string[] ConjugatedEdges = {
+      "Add conjugated edges",
+      "Добавить сопряжённые рёбра",
+      "Aggiungi bordi coniugati",
+      "Fügen Sie konjugierte Kanten hinzu",
+      "添加共轭边",
+      "Agregar bordes conjugados",                    // ES
+      "Ajouter des arêtes conjuguées",                // FR
+      "Eşlenik kenarlar ekle"};                      // TR
+
+    public static readonly string[] ConjugatedEdgesTip = {
+      "When selecting a solid's guide edge, the program will check the adjacent edges of that solid and, \r\n" +
+        "if they are joined without breaks, then the cutting will be performed along all these edges together, \r\n" +
+        "as if it were a curved line.",
+      "При выборе направляющего ребра солида программа проверит соседние ребра этого солида и, \r\n" +
+        "если они состыкованы без изломов, то нарезка будет производиться вдоль всех этих рёбер вместе, \r\n" +
+        "как будто это она кривая линия.",
+      "Quando si seleziona un bordo guida di un solido, il programma controllerà i bordi adiacenti di quel solido e, \r\n" +
+        "se sono uniti senza interruzioni, allora il taglio verrà eseguito lungo tutti questi bordi insieme, \r\n" +
+        "come se fosse una linea curva.",
+      "Wenn Sie eine Führungs Kante eines Volumenkörpers auswählen, überprüft das Programm die angrenzenden Kanten dieses Volumenkörpers und, \r\n" +
+        "wenn sie ohne Unterbrechungen verbunden sind, wird der Schnitt entlang all dieser Kanten zusammen ausgeführt, \r\n" +
+        "als ob es sich um eine Kurve handeln würde.",
+      "当选择一个实体的引导边时，程序将检查该实体的相邻边，并且如果它们无缝连接，则切割将沿着所有这些边一起进行，就好像它是一条曲线一样。",
+      "Al seleccionar un borde guía de un sólido, el programa verificará los bordes adyacentes de ese sólido y, \r\n" +  // ES
+        "si están unidos sin interrupciones, entonces el corte se realizará a lo largo de todos estos bordes juntos, \r\n" +
+        "como si fuera una línea curva.",
+      "Lors de la sélection d'une arête de guidage d'un solide, le programme vérifiera les arêtes adjacentes de ce solide et, \r\n" +  // FR
+        "si elles sont jointes sans interruption, alors la découpe sera effectuée le long de toutes ces arêtes ensemble, \r\n" +
+        "comme s'il s'agissait d'une ligne courbe.",
+      "Bir katının kılavuz kenarını seçerken, program o katının bitişik kenarlarını kontrol edecek ve, \r\n" +
+        "eğer kesintisiz bir şekilde birleşmişlerse, o zaman kesim tüm bu kenarlar boyunca birlikte yapılacaktır, \r\n" +
+        "sanki bu bir eğri çizgiymiş gibi." };
+
+   
+
   }
 }

@@ -329,7 +329,7 @@ namespace AVC
 
     public static readonly string[] FaceOfSolidQuery ={
       "Do we derive the properties of sub-objects inside solids: surfaces, edges?",
-      "Выводить свойства под-объектов внутри твердых тел: поверхностей, ребер?",
+      "Выводить свойства под-объектов внутри твердых тел: поверхностей, рёбер?",
       "Deriviamo le proprietà dei sotto-oggetti all'interno dei solidi: superfici, bordi?",
       "Leiten wir die Eigenschaften von Unterobjekten innerhalb von Volumenkörpern ab: Oberflächen, Kanten?",
       "显示实体内部子对象的属性：面、边？",
@@ -694,7 +694,7 @@ namespace AVC
         "The rest of the properties will be taken as usual from the solid.\r\n" +
         "Use this option for mark materials of coating, edges, etc.",
       "Выводить свойства подобъектов: \r\n" +
-        "поверхностей, ребер, вершин солида. \r\n" +
+        "поверхностей, рёбер, вершин солида. \r\n" +
         "Каждая грань солида может иметь собственные цвет, материал, площадь и периметр.\r\n" +
         "Остальные свойства будут взяты как обычно у солида. \r\n" +
         "Используйте для маркировки материалов покрытия, кромок и т.п.",

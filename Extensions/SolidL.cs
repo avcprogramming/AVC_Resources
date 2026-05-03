@@ -124,7 +124,7 @@ namespace AVC
 
     public static readonly string[] NoEdge = {
       "None of selected edge.",
-      "Нет выбранных ребер.",
+      "Нет выбранных рёбер.",
       "Nessuno spigolo selezionato.",
       "Keine Rippen ausgewählt.",
       "没有选定的边。",
@@ -224,7 +224,7 @@ namespace AVC
 
     public static string[] EdgeCurveErr = {
       "Can't get Curve from Edge.",
-      "Не удалось получить кривую ребра.",
+      "Не удалось получить кривую рёбра.",
       "Non può ottenere la Curva dal Bordo.",
       "Die Kurve kann nicht von Edge abgerufen werden.",
       "获取边缘曲线失败。",
@@ -234,7 +234,7 @@ namespace AVC
 
     public static string[] EdgeVertexErr = {
       "Can't get Edges from Vertex.",
-      "Не удалось получить ребра вертекса.",
+      "Не удалось получить рёбра вертекса.",
       "Non può ottenere Bordi da Vertice.",
       "Kanten können nicht von Vertex abgerufen werden.",
       "无法获取顶点边。",
@@ -254,7 +254,7 @@ namespace AVC
 
     public static readonly string[] EdgeLoopErr = {
       "Can't get Edges from Loop.",
-      "Не удалось получить ребра петли.",
+      "Не удалось получить рёбра петли.",
       "Non può ottenere Bordi da Anello.",
       "Schleifenränder konnten nicht abgerufen werden.",
       "无法从循环中获取边。",
@@ -264,7 +264,7 @@ namespace AVC
 
     public static readonly string[] LoopErr = {
       "Can't get Loops from Edge. {0}",
-      "Не удалось получить петли ребра. {0}",
+      "Не удалось получить петли рёбра. {0}",
       "Impossibile ottenere Anello da Bordi. {0}",
       "Konnte keine Rippchen bekommen. {0}",
       "无法从 Edge 获取循环。 {0}",
@@ -274,7 +274,7 @@ namespace AVC
 
     public static readonly string[] EdgeLenErr = {
       "The length of the edge could not be calculated. {0}",
-      "Не удалось вычислить длину ребра. {0}",
+      "Не удалось вычислить длину рёбра. {0}",
       "La lunghezza del bordo non può essere calcolata. {0}",
       "Kantenlänge konnte nicht berechnet werden. {0}",
       "无法计算边的长度。 {0}",
@@ -332,15 +332,25 @@ namespace AVC
       "Impossible d'attribuer le matériau au solide {0}",
       "Katıya malzeme atanamadı {0}"};
 
-    public static readonly string[] SeparateErr = {
-      "Failed to split multisolids into separate bodies. Error: {0}",
-      "Не удалось разделить мультисолид на отдельные тела. Ошибка: {0}",
-      "Impossibile dividere i multisolidi in corpi separati. Errore: {0}",
-      "Multisolids konnten nicht in separate Körper aufgeteilt werden. Fehler: {0}",
-      "无法将多实体分割成单独的部分。错误：{0}",
-      "No se pudieron dividir los multisólidos en cuerpos separados. Error: {0}",
-      "Impossible de diviser les multisolides en corps séparés. Erreur: {0}",
-      "Çoklu katılar ayrı gövdelere bölünemedi. Hata: {0}"};
+    public static readonly string[] MaterialCreateErr = {
+      "Failed to create content {0}. Error: {1}",
+      "Не удалось создать материал {0}. Ошибка: {1}",
+      "Impossibile creare il contenuto {0}. Errore: {1}",
+      "Fehler beim Erstellen des Inhalts {0}. Fehler: {1}",
+      "无法创建内容 {0}。错误：{1}",
+      "No se pudo crear el contenido {0}. Error: {1}",
+      "Impossible de créer le contenu {0}. Erreur: {1}",
+      "İçerik oluşturulamadı {0}. Hata: {1}"};
+
+    public static readonly string[] SeparateBodyErr = {
+      "Failed to split multisolids #{1} into separate bodies. Error: {0}",
+      "Не удалось разделить мультисолид #{1} на отдельные тела. Ошибка: {0}",
+      "Impossibile dividere i #{1} multisolidi in corpi separati. Errore: {0}",
+      "Multisolids konnten nicht in separate Volumenkörper #{1} aufgeteilt werden. Fehler: {0}",
+      "无法将多实体分割成单独的部分 #{1}。错误：{0}",
+      "No se pudieron dividir los multisólidos #{1} en cuerpos separados. Error: {0}",
+      "Impossible de diviser les multisolides #{1} en corps séparés. Erreur: {0}",
+      "Çoklu katılar ayrı gövdelere bölünemedi #{1}. Hata: {0}"};
 
     public static readonly string[] SubErr = {
       "Failed to perform subtraction. Error: {0}",
@@ -411,5 +421,6 @@ namespace AVC
       "Error al verificar intersecciones de sólidos. {0}",
       "Erreur lors de la vérification des intersections de solides. {0}",
       "Katı kesişimleri kontrol edilirken hata. {0}"};
+
   }
 }

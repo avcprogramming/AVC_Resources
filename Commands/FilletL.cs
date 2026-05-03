@@ -17,7 +17,7 @@ namespace AVC
 
     public static readonly string[] NoFlatFace = {
       "Faces on this edge is no flat",
-      "Грани для выбранного ребра не являются плоскими",
+      "Грани для выбранного рёбра не являются плоскими",
       "I bordi per i bordi selezionati non sono piatti.",
       "Kanten für ausgewählte Kanten sind nicht flach.",
       "与该边相邻的实体的面不平坦",

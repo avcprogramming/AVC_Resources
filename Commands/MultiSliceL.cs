@@ -908,7 +908,7 @@ namespace AVC
 
     public static readonly string[] CutAlongTip ={
         "  Cutting surfaces along the longest straight edge of a part",
-        "  Отслаивание поверхностей вдоль самого длинного прямого ребра детали",
+        "  Отслаивание поверхностей вдоль самого длинного прямого рёбра детали",
         "  Taglio di superfici lungo il bordo diritto più lungo di una parte",
         "  Abblätternde Oberflächen entlang der längsten geraden Kante des Teils" ,
         "  沿零件最长直边切割表面",
@@ -928,7 +928,7 @@ namespace AVC
 
     public static readonly string[] CutAcrossTip ={
         "  Cutting surfaces across the longest straight edge of the part",
-        "  Отслаивание поверхностей поперек самого длинного прямого ребра детали",
+        "  Отслаивание поверхностей поперек самого длинного прямого рёбра детали",
         "  Taglio di superfici attraverso il bordo rettilineo più lungo della parte",
         "  Abblätternde Oberflächen über die längste gerade Kante des Teils" ,
         "  跨越零件最长直边的切割面",
@@ -1025,8 +1025,8 @@ namespace AVC
       "Set the direction of the faces along one of the linear edges.\r\n" +
         "The program will ask the user to select one of the edges on one solid.\r\n" +
         "On all other solids, the program will look for surfaces located in the same direction.",
-      "Задать направление граней по одному из линейных ребер. \r\n" +
-        "Программа запросит пользователя выбрать одного из ребер на одном солиде.\r\n" +
+      "Задать направление граней по одному из линейных рёбер. \r\n" +
+        "Программа запросит пользователя выбрать одного из рёбер на одном солиде.\r\n" +
         "На всех остальных солидах программа будет искать поверхности располагающиеся в том же направлении.",
       "Impostare la direzione delle facce lungo uno dei bordi lineari.\r\n" +
         "Il programma chiederà all'utente di selezionare uno dei bordi su un solido.\r\n" +

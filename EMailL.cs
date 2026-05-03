@@ -1,6 +1,7 @@
 ﻿namespace AVC
 {
-  internal static class EMailL
+  public static class 
+  EMailL
   {
 
     public static readonly string[] PasswordReset = {

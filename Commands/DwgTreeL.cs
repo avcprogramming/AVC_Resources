@@ -702,32 +702,76 @@ namespace AVC
       "'+' düğmesiyle bir ağaç dalını genişletirken, diğer tüm genişletilmiş dallar otomatik olarak daraltılacaktır." };  // TR
 
     public static readonly string[] ExpandBranches = {
-      "Expand branches with selected",
-      "Разворачивать ветви с выбранными",
+      "Expand tree branches",
+      "Разворачивать ветви дерева",
       "Espandi i rami",
       "Zweige erweitern",
       "展开包含选定对象的分支",
-      "Expandir ramas con seleccionados",               // ES
-      "Développer les branches avec sélectionnés",      // FR
-      "Seçililerle dalları genişlet"    };              // TR
+      "Expandir ramas",               // ES
+      "Développer les branches",      // FR
+      "şubeleri genişletin"    };     // TR
 
     public static readonly string[] ExpandBranchesTip = {
       "When selecting objects in the drawing, expand tree branches to show all selected objects. \r\n" +
-          "Disable this option to prevent the tree from changing its view without your input.",
+        "The program will also expand a branch by clicking on its checkbox. \r\n" +
+        "Disable this option to prevent the tree from changing its view without your input.",
       "При выборе объектов в чертеже, разворачивать ветви дерева, чтоб показать все выбранные объекты. \r\n" +
-          "Отключите опцию, чтоб дерево не меняло свой вид без вашего участия.",
+        "А так же разворачивать ветвь по клику на ее галочке выбора. \r\n" +
+        "Отключите опцию, чтоб дерево не меняло свой вид без вашего участия.",
       "Quando si selezionano oggetti nel disegno, espandere i rami dell'albero per mostrare tutti gli oggetti selezionati. \r\n" +
-          "Disabilitare questa opzione per impedire che l'albero cambi aspetto senza il tuo intervento.",
-      "Beim Auswählen von Objekten in der Zeichnung die Baumzweige erweitern, um alle ausgewählten Objekte anzuzeigen. \r\n" +
-          "Deaktivieren Sie diese Option, damit der Baum seine Ansicht nicht ohne Ihre Eingabe ändert.",
-      "在图形中选择对象时，展开树分支以显示所有选定的对象。 \r\n" +
-          "禁用此选项可防止树在没有您输入的情况下更改其视图。",
-      "Al seleccionar objetos en el dibujo, expandir ramas del árbol para mostrar todos los objetos seleccionados. \r\n" +  // ES
-          "Desactive esta opción para evitar que el árbol cambie su vista sin su entrada.",
-      "Lors de la sélection d'objets dans le dessin, développer les branches de l'arbre pour afficher tous les objets sélectionnés. \r\n" +  // FR
-          "Désactivez cette option pour empêcher l'arbre de changer de vue sans votre intervention.",
-      "Çizimdeki nesneleri seçerken, seçilen tüm nesneleri göstermek için ağaç dallarını genişletin. \r\n" +  // TR
-          "Ağacın girişiniz olmadan görünümünü değiştirmesini önlemek için bu seçeneği devre dışı bırakın."    };
+        "Il programma espanderà un ramo anche facendo clic sulla relativa casella di controllo. \r\n" +
+        "Disabilitare questa opzione per impedire che l'albero modifichi la sua visualizzazione senza l'intervento dell'utente." ,
+      "Wenn Sie Objekte in der Zeichnung auswählen, werden die Zweige des Baums erweitert, um alle ausgewählten Objekte anzuzeigen.\r\n" +
+        "Das Programm erweitert einen Zweig auch durch Klicken auf das zugehörige Kontrollkästchen.\r\n" +
+        "Deaktivieren Sie diese Option, damit sich die Ansicht des Baums nicht ohne Ihre Eingabe ändert.",
+      "“在绘图中选择对象时，展开树状图分支以显示所有选定对象。\r\n" +
+        "单击复选框，程序也会展开分支。\r\n" +
+        "禁用此选项可防止树状图在未经您操作的情况下更改视图。",
+      "Al seleccionar objetos en el dibujo, expanda las ramas del árbol para mostrar todos los objetos seleccionados. \r\n" +
+        "El programa también expandirá una rama al hacer clic en su casilla de verificación. \r\n" +
+        "Desactive esta opción para evitar que el árbol cambie su vista sin su intervención.",
+      "Lors de la sélection d'objets dans le dessin, développez les branches de l'arborescence pour afficher tous les objets sélectionnés.\r\n" +
+        "Le programme développera également une branche en cliquant sur sa case à cocher.\r\n" +
+        "Désactivez cette option pour empêcher l'arborescence de changer d'affichage sans votre intervention.",
+      "Çizimdeki nesneleri seçerken, seçilen tüm nesneleri göstermek için ağaç dallarını genişletin. \r\n" +
+        "Program ayrıca, onay kutusuna tıklayarak bir dalı genişletecektir. \r\n" +
+        "Ağacın görünümünün sizin müdahaleniz olmadan değişmesini önlemek için bu seçeneği devre dışı bırakın." };
+
+    public static readonly string[] EditNames = {
+      "Editable names",
+      "Редактируемые имена",
+      "Nomi modificabili",
+      "Bearbeitbare Namen",
+      "可编辑的名称",
+      "Nombres editables",                          // ES
+      "Noms modifiables",                           // FR
+      "Düzenlenebilir adlar"};                      // TR
+
+    public static readonly string[] EditNamesTip = {
+      "Allow editing of object names directly in the drawing tree.\r\n" +
+        "To edit, click the previously selected item again, but do not quickly double-click.\r\n" +
+        "If this object cannot be renamed, you will hear a warning sound.",
+      "Разрешить редактировать имена объектов прямо в дереве чертежа. \r\n" +
+        "Для редактирования нажмите на ранее выбранном пункте повторно, но не делайте быстрый двойной клик. \r\n" +
+        "Если данный объект нельзя переименовывать вы услышите предупреждающий звук.",
+      "Consentire la modifica dei nomi degli oggetti direttamente nell'albero del disegno.\r\n" +
+        "Per modificare, fare clic nuovamente sull'elemento precedentemente selezionato, ma non fare doppio clic rapidamente.\r\n" +
+        "Se questo oggetto non può essere rinominato, sentirai un suono di avviso.",
+      "Ermöglichen Sie die Bearbeitung von Objektnamen direkt im Zeichenbaum.\r\n" +
+        "Um zu bearbeiten, klicken Sie erneut auf das zuvor ausgewählte Element, aber doppelklicken Sie nicht schnell.\r\n" +
+        "Wenn dieses Objekt nicht umbenannt werden kann, hören Sie einen Warnsound.",
+      "允许直接在绘图树中编辑对象名称。\r\n" +
+        "要编辑，请再次单击先前选择的项目，但不要快速双击。\r\n" +
+        "如果无法重命名此对象，您将听到警告声音。",
+      "Permitir la edición de nombres de objetos directamente en el árbol de dibujo.\r\n" +  // ES
+        "Para editar, haga clic nuevamente en el elemento previamente seleccionado, pero no haga doble clic rápidamente.\r\n" +
+        "Si este objeto no se puede renombrar, escuchará un sonido de advertencia.",
+      "Permettre la modification des noms d'objets directement dans l'arbre de dessin.\r\n" +  // FR
+        "Pour modifier, cliquez à nouveau sur l'élément précédemment sélectionné, mais ne double-cliquez pas rapidement.\r\n" +
+        "Si cet objet ne peut pas être renommé, vous entendrez un son d'avertissement.",
+      "Nesne adlarının çizim ağacında doğrudan düzenlenmesine izin verin.\r\n" +  // TR
+        "Düzenlemek için, daha önce seçilen öğeye tekrar tıklayın, ancak hızlıca çift tıklamayın.\r\n" +
+        "Bu nesne yeniden adlandırılamıyorsa, bir uyarı sesi duyacaksınız." };
 
     public static string[] LayerFiltersTip = {
       "You can enable this option so that the list of drawing layers is divided into filters and groups, \r\n" +
@@ -769,5 +813,16 @@ namespace AVC
         "Filtreler yalnızca çizim katmanlarında gösterilir, blokların içinde gösterilmez. \r\n" +
         "Filtreleri güncellemek için çizimi kaydetmeniz gerekir. \r\n" +
         "Varsayılan olarak, filtreler devre dışıdır ve tüm katmanlar tek bir listede gösterilir." };
+
+    public static string[] NonEditable = {
+      "The object name '{0}' cannot be edited.",
+      "Имя объекта '{0}' нельзя редактировать.",
+      "Il nome dell'oggetto '{0}' non può essere modificato.",
+      "Der Objektname '{0}' kann nicht bearbeitet werden.",              
+      "对象名称“{0}”无法编辑。",
+      "El nombre del objeto '{0}' no se puede editar.",
+      "Le nom de l'objet '{0}' ne peut pas être modifié.",
+      "'{0}' nesne adı düzenlenemez." };
+
   }
 }
