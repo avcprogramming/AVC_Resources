@@ -112,6 +112,15 @@ namespace AVC
       "❌ No se pudo cortar el sólido.",  // ES
       "❌ Impossible de couper le solide.",  // FR
       "❌ Katı kesilemedi." };  // TR
+    public static readonly string[] SurfaceToSmallErr = {
+      "❌ The cutting surface is smaller than the solid surface. It won't cut.",
+      "❌ Габариты режущей поверхности меньше габаритов солида. Разрезать не получится.",
+      "❌ La superficie di taglio è più piccola della superficie del solido. Non taglierà.",
+      "❌ Die Schneidfläche ist kleiner als die Oberfläche des Volumenkörpers. Es wird nicht schneiden.",
+      "❌ 切割面小于实体表面。它不会切割。",
+      "❌ La superficie de corte es más pequeña que la superficie del sólido. No cortará.",  // ES
+      "❌ La surface de coupe est plus petite que la surface du solide. Il ne coupera pas.",  // FR
+      "❌ Kesme yüzeyi, katının yüzeyinden daha küçük. Kesmeyecek." };  // TR
     public static readonly string[] Piece = {
       "Piece",
       "Дольки",
@@ -511,6 +520,37 @@ namespace AVC
       "❌ Impossible de mesurer la longueur du bord. Utilisez un bord différent.",  // FR
       "❌ Kenar uzunluğu ölçülemedi. Farklı bir kenar kullanın."};  // TR
 
+    public static readonly string[] NeedSurfaceErr = {
+      "❌ You need to select an object of type Surface",
+      "❌ Нужно выбрать объект типа Поверхность",
+      "❌ È necessario selezionare un oggetto di tipo Superficie",
+      "❌ Sie müssen ein Objekt vom Typ Oberfläche auswählen",
+      "❌ 您需要选择一个 Surface (表面) 类型的对象。",
+      "❌ Necesita seleccionar un objeto de tipo Superficie",  // ES
+      "❌ Vous devez sélectionner un objet de type Surface",  // FR
+      "❌ Bir Yüzey türünde nesne seçmeniz gerekiyor" };  // TR
+
+    public static readonly string[] SurfaceQuery = {
+      "  Select the cutting surface",
+      "  Выберите режущую поверхность (объект типа Surface)",
+      "  Selezionare una superficie di taglio",
+      "  Wählen Sie die Schneidfläche",
+      "  选择切割面",
+      "  Seleccione la superficie de corte",  // ES
+      "  Sélectionnez la surface de coupe",  // FR
+      "  Kesme yüzeyini seçin" };  // TR
+
+    public static readonly string[] DirectionAlong = {
+      "  for cutting along the {0} axis",
+      "  для нарезки вдоль оси {0}",
+      "  per tagliare lungo l'asse {0}",
+      "  zum Schneiden entlang der {0}-Achse",
+      "  沿 {0} 轴切割",
+      "  para cortar a lo largo del eje {0}",  // ES
+      "  pour couper le long de l'axe {0}",  // FR
+      "  {0} ekseni boyunca kesmek için" };  // TR
+
+
     // Далее опции командной строки - без пробелов и не должно совпадать со встроенными опциями соответствующей локализации AutoCAD
     // En: W L C B ALL F WP CP G A R M P U AU SI TRACKING TRACK TK TT END MID CEN G NOD QUA INT EXT INS PER TAN NEA APP PAR NON ZVER ZMID ZCEN ZKNO ZPER ZNEA ZNON
     // Ru: Р П С БОКС В Л РМ СМ Г Д И Н Т О А Е СЛ ОТС ТО КОН СЕР ЦЕН Г УЗЕ КВА ПЕР ПРО ТВС НОР КАС БЛИ К ПАР НИЧ ZВЕР ZСЕР ZЦЕН ZУЗЕ ZНОР ZБЛИ ZНИЧ
@@ -526,7 +566,6 @@ namespace AVC
       "LONgitudMáxima",                              // ES
       "LONgueurMaximale",                            // FR
       "MAKsimumUzunluk" };                           // TR
-
     public static readonly string[] FixStepKW = {
       "FIXedStep",
       "ФИКСированныйШаг",
@@ -536,7 +575,6 @@ namespace AVC
       "PasoFIJO",                                    // ES
       "PasFIXe",                                     // FR
       "SABitAdım"};                                  // TR
-
     public static readonly string[] KW3point = {
       "3points",
       "3точки",
@@ -546,7 +584,6 @@ namespace AVC
       "3puntos",                                     // ES
       "3points",                                     // FR
       "3nokta"};                                     // TR
-
     public static readonly string[] EdgeKW = {
       "EDGE",
       "РЕБРО",
@@ -556,7 +593,6 @@ namespace AVC
       "BORDE",                                       // ES
       "ARÊTE",                                       // FR
       "KENAR"};                                      // TR
-
     public static readonly string[] PlaneKW = {
       "PLANE",
       "ПЛОСКОСТЬ",
@@ -566,7 +602,42 @@ namespace AVC
       "PLANO",                                       // ES
       "PLAN",                                        // FR
       "DÜZLEM"};                                     // TR
-
+    public static readonly string[] DirectionKW = {
+      "DIRection",
+      "НАПРавление",
+      "DIRezione",
+      "RICHtung",
+      "方向(DIR)",
+      "DIRección",
+      "DIRection",
+      "YÖN" };
+    public static readonly string[] DirectionStartPointQuery = {
+      "Specify the starting point for the cutting direction",
+      "Укажите стартовую точку для направления нарезки",
+      "Seleziona il punto di partenza per la direzione",
+      "Wählen Sie den Startpunkt für die Richtung",
+      "选择方向的起点",
+      "Seleccione el punto de inicio para la dirección",  // ES
+      "Sélectionnez le point de départ pour la direction",  // FR
+      "Yön için başlangıç noktasını seçin" };  // TR
+    public static readonly string[] DirectionEndPointQuery = {
+      "Select the end point",
+      "Укажите конечную точку",
+      "Seleziona il punto finale",
+      "Wählen Sie den Endpunkt",
+      "选择方向的终点",
+      "Seleccione el punto final",  // ES
+      "Sélectionnez le point d'arrivée",  // FR
+      "Yön için bitiş noktasını seçin" };  // TR
+    public static readonly string[] NeedSurfaceAndNot = {
+      "Need surface. And you have selected: {0}",
+      "Нужна поверхность. А вы вместо этого выбрали: {0}",
+      "Hai bisogno di superficie. E hai selezionato: {0}",
+      "Brauchen Oberfläche. Und Sie haben ausgewählt: {0}",
+      "需要表面。 您已选择：{0}",
+      "Se necesita una superficie. Y ha seleccionado: {0}",
+      "Un solide est nécessaire. Et vous avez sélectionné: {0}",
+      "Katı gerekli. Ve siz şunu seçtiniz: {0}"};
 
 
     // ====================================================================================================================================
@@ -660,6 +731,33 @@ namespace AVC
       "A lo largo del borde del sólido 3D",                       // ES
       "Le long d'un bord solide 3D",                            // FR
       "3 boyutlu katı kenar boyunca"};                             // TR
+
+    public static readonly string[] Surface = {
+      "Chop by surface",
+      "Нарезка поверхностью",
+      "Taglio con superficie",
+      "Zerschneiden mit Oberfläche",
+      "用表面切割",
+      "Cortar por superficie",                       // ES
+      "Couper par surface",                       // FR
+      "Yüzeye göre kes" };                       // TR
+
+    public static readonly string[] SurfaceTip = {
+      "To slice a single solid into multiple curved surfaces, you'll need to select a Surface object. \r\n" +
+        "This surface will act as a knife.",
+      "Нарезать один солид множеством кривых поверхностей.\r\n" +
+        "Потребуется выбрать объект типа Surface. Эта поверхность будет использоваться как нож.",
+      "Taglia un solido con molte superfici curve. " +
+        "È necessario selezionare un oggetto di tipo Superficie. Questa superficie sarà usata come coltello.",
+      "Schneiden Sie einen Festkörper mit vielen gekrümmten Oberflächen. \r\n" +
+        "Es ist erforderlich, ein Objekt vom Typ Oberfläche auszuwählen. Diese Oberfläche wird als Messer verwendet.",
+      "用许多曲面切割一个实体。 需要选择一个 Surface (表面) 类型的对象。 这个表面将被用作刀具。",
+      "Corte un sólido con muchas superficies curvas. \r\n" +
+        "Es necesario seleccionar un objeto de tipo Superficie. Esta superficie se usará como cuchillo.",  // ES
+      "Coupez un solide avec de nombreuses surfaces courbes. \r\n" +
+        "Il est nécessaire de sélectionner un objet de type Surface. Cette surface sera utilisée comme couteau.",  // FR
+      "Bir katıyı birçok eğri yüzeyle kesin. \r\n" +
+        "Bir Yüzey türünde nesne seçmeniz gerekiyor. Bu yüzey bıçak olarak kullanılacak." }; // TR
 
     public static readonly string[] AlongEdgeTip = {
       "Arrange the cutting planes perpendicular to the edge of the solid. \r\n" +

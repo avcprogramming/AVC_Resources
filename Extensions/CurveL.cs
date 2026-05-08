@@ -77,17 +77,17 @@ namespace AVC
       "Imposible convertir a curva",
       "Impossible de convertir en courbe",
       "Eğriye dönüştürme imkansız"};
-    
-    public static readonly string[] CurveExtentsErr = {
-      "Failed to get curve dimensions",
-      "Не удалось получить габариты кривой",
-      "Impossibile ottenere le dimensioni della curva",
-      "Kurvenabmessungen konnten nicht abgerufen werden",
-      "无法获取曲线尺寸",
-      "No se pudieron obtener las dimensiones de la curva",
-      "Impossible d'obtenir les dimensions de la courbe",
-      "Eğri boyutları alınamadı"};
-    
+
+    public static readonly string[] ExtentsErr = {
+      "Failed to get the extents of the curve {0}",
+      "Не удалось получить габариты кривой {0}",
+      "Impossibile ottenere le dimensioni della curva {0}",
+      "Die Abmessungen der Kurve {0} konnten nicht ermittelt werden",
+      "无法获取曲线 {0} 的范围",
+      "No se pudieron obtener las extensiones de la curva {0}",  // ES
+      "Échec de l'obtention des étendues de la courbe {0}",  // FR
+      "{0} eğrisinin sınırları alınamadı" };  // TR
+
     public static readonly string[] Required3point = {
       "At least 3 points required",
       "Требуется хотя бы 3 точки",

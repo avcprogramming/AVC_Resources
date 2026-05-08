@@ -173,16 +173,6 @@ namespace AVC
       "Échec de la sélection du meilleur point médian pour la courbe {0}",  // FR
       "{0} eğrisi için en iyi orta nokta seçilemedi" };  // TR
 
-    public static readonly string[] ExtentsError = {
-      "Failed to get the extents of the curve {0}",
-      "Не удалось получить габариты кривой {0}",
-      "Impossibile ottenere le dimensioni della curva {0}",
-      "Die Abmessungen der Kurve {0} konnten nicht ermittelt werden",
-      "无法获取曲线 {0} 的范围",
-      "No se pudieron obtener las extensiones de la curva {0}",  // ES
-      "Échec de l'obtention des étendues de la courbe {0}",  // FR
-      "{0} eğrisinin sınırları alınamadı" };  // TR
-
     public static readonly string[] DirectionError = {
       "Failed to determine the direction of the curve {0}",
       "Не удалось определить направление кривой {0}",
