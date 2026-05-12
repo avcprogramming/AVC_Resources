@@ -179,14 +179,14 @@ namespace AVC
       "✅ Tamamlandı."};
 
     public static readonly string[] ProcessCompleted = {
-      "   ✅ Process completed: {0}.",
-      "   ✅ Закончен процесс: {0}.",
-      "   ✅ Processo completato: {0}.",
-      "   ✅ Prozess abgeschlossen: {0}.",
-      "   ✅ 进程完成：{0}。",
-      "   ✅ Proceso completado: {0}.",
-      "   ✅ Processus terminé: {0}.",
-      "   ✅ İşlem tamamlandı: {0}."};
+      "✅ Process completed: {0}.",
+      "✅ Закончен процесс: {0}.",
+      "✅ Processo completato: {0}.",
+      "✅ Prozess abgeschlossen: {0}.",
+      "✅ 进程完成：{0}。",
+      "✅ Proceso completado: {0}.",
+      "✅ Processus terminé: {0}.",
+      "✅ İşlem tamamlandı: {0}."};
 
     public static readonly string[] All = {
       "All",
@@ -326,14 +326,14 @@ namespace AVC
       "Dize bir boyut olarak tanınamıyor"};
 
     public static readonly string[] CommandCancel = {
-      "\r\n  ❌ Command canceled",
-      "\r\n  ❌ Команда отменена",
-      "\r\n  ❌ Comando annullato",
-      "\r\n  ❌ Vorgang abgebrochen",
-      "\r\n  ❌ 命令已取消",
-      "\r\n  ❌ Comando cancelado",
-      "\r\n  ❌ Commande annulée",
-      "\r\n  ❌ Komut iptal edildi"};
+      "\r\n❌ Command canceled",
+      "\r\n❌ Команда отменена",
+      "\r\n❌ Comando annullato",
+      "\r\n❌ Vorgang abgebrochen",
+      "\r\n❌ 命令已取消",
+      "\r\n❌ Comando cancelado",
+      "\r\n❌ Commande annulée",
+      "\r\n❌ Komut iptal edildi"};
 
     public static readonly string[] Sorry = {
       "Sorry\r\n\r\n----  Under construction ----\r\n",
@@ -386,34 +386,34 @@ namespace AVC
       "İşleniyor"};
 
     public static readonly string[] ProcessedParts = {
-      "✅   Processed {0} parts in {1}s",
-      "✅   Обработано {0} деталей за {1}с",
-      "✅   {0} parti elaborate in {1}s",
-      "✅   Verarbeitete {0} Teile in {1} Sekunden",
-      "✅   在 {1} 秒内处理了 {0} 个对象",
-      "✅   Procesadas {0} piezas en {1}s",
-      "✅   {0} pièces traitées en {1}s",
-      "✅   {1} saniyede {0} parça işlendi"};
+      "✅ Processed {0} parts in {1}s",
+      "✅ Обработано {0} деталей за {1}с",
+      "✅ {0} parti elaborate in {1}s",
+      "✅ Verarbeitete {0} Teile in {1} Sekunden",
+      "✅ 在 {1} 秒内处理了 {0} 个对象",
+      "✅ Procesadas {0} piezas en {1}s",
+      "✅ {0} pièces traitées en {1}s",
+      "✅ {1} saniyede {0} parça işlendi"};
 
     public static readonly string[] ProcessedObjects = {
-      "✅   Processed {0} objects in {1}s",
-      "✅   Обработано {0} объектов за {1}с",
-      "✅   {0} oggetti elaborati in {1} s",
-      "✅   Verarbeitete {0} Objekte in {1}s",
-      "✅   在 {1} 秒内处理了 {0} 个对象",
-      "✅   Procesados {0} objetos en {1}s",
-      "✅   {0} objets traités en {1}s",
-      "✅   {1} saniyede {0} nesne işlendi"};
+      "✅ Processed {0} objects in {1}s",
+      "✅ Обработано {0} объектов за {1}с",
+      "✅ {0} oggetti elaborati in {1} s",
+      "✅ Verarbeitete {0} Objekte in {1}s",
+      "✅ 在 {1} 秒内处理了 {0} 个对象",
+      "✅ Procesados {0} objetos en {1}s",
+      "✅ {0} objets traités en {1}s",
+      "✅ {1} saniyede {0} nesne işlendi"};
 
     public static readonly string[] CreatedObjects = {
-      "✅   {0} objects created in {1}s",
-      "✅   Создано {0} объектов(а) за {1}с",
-      "✅   {0} oggetti creati in {1} secondi",
-      "✅   {0} Objekte in {1} Sekunden erstellt",
-      "✅   {1} 秒内创建 {0} 个对象",
-      "✅   {0} objetos creados en {1}s",
-      "✅   {0} objets créés en {1}s",
-      "✅   {1} saniyede {0} nesne oluşturuldu"};
+      "✅ {0} objects created in {1}s",
+      "✅ Создано {0} объектов(а) за {1}с",
+      "✅ {0} oggetti creati in {1} secondi",
+      "✅ {0} Objekte in {1} Sekunden erstellt",
+      "✅ {1} 秒内创建 {0} 个对象",
+      "✅ {0} objetos creados en {1}s",
+      "✅ {0} objets créés en {1}s",
+      "✅ {1} saniyede {0} nesne oluşturuldu"};
 
     public static readonly string[] Saving = {
       "Saving changes",

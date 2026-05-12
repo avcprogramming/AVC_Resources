@@ -37,7 +37,6 @@ namespace AVC
       "  Ingrese la longitud de las piezas (paso de corte)",      // ES
       "  Entrez la longueur des pièces (pas de coupe)",           // FR
       "  Parçaların uzunluğunu girin (kesme adımı)"};             // TR
-
     public static readonly string[] NoFace = {
       "❌ None of selected face",
       "❌ Нет выбранных поверхностей",
@@ -47,7 +46,6 @@ namespace AVC
       "❌ Ninguna cara seleccionada",                                // ES
       "❌ Aucune face sélectionnée",                                 // FR
       "❌ Seçili yüz yok"};                                          // TR
-
     public static readonly string[] SurfErr = {
       "❌ It was necessary to click on the surface of the solid. And you have selected: '{0}'",
       "❌ Надо было кликать по поверхности солида, а выбран: '{0}'",
@@ -57,7 +55,6 @@ namespace AVC
       "❌ Era necesario hacer clic en la superficie del sólido. Y ha seleccionado: '{0}'",  // ES
       "❌ Il était nécessaire de cliquer sur la surface du solide. Et vous avez sélectionné : '{0}'",  // FR
       "❌ Katının yüzeyine tıklamak gerekiyordu. Ve siz şunu seçtiniz: '{0}'"};  // TR
-
     public static readonly string[] FaceSelectErr = {
       "❌ Can't select face",
       "❌ Не получилось выбрать поверхность",
@@ -112,6 +109,15 @@ namespace AVC
       "❌ No se pudo cortar el sólido.",  // ES
       "❌ Impossible de couper le solide.",  // FR
       "❌ Katı kesilemedi." };  // TR
+    public static readonly string[] CutErr = {
+      "❌ Failed to make cut number #{0}.",
+      "❌ Не удалось сделать разрез номер {0}.",
+      "❌ Impossibile eseguire il taglio numero #{0}.",
+      "❌ Fehler beim Ausführen des Schnitts Nummer #{0}.",
+      "❌ 无法进行第 #{0} 次切割。",
+      "❌ No se pudo realizar el corte número #{0}.",  // ES
+      "❌ Impossible d'effectuer la coupe numéro #{0}.",  // FR
+      "❌ #{0} numaralı kesim yapılamadı." };  // TR
     public static readonly string[] SurfaceToSmallErr = {
       "❌ The cutting surface is smaller than the solid surface. It won't cut.",
       "❌ Габариты режущей поверхности меньше габаритов солида. Разрезать не получится.",
@@ -258,16 +264,6 @@ namespace AVC
         "En conséquence, des pièces/nervures inutiles se sont formées." ,
       "⚠️ Kenar, kesim düzlemini iki kez geçecek şekilde bükülmüş.\r\n" +  // TR
         "Sonuç olarak, gereksiz parçalar/kaburgalar oluştu." };
-
-    public static readonly string[] Saved = {
-      "✅ Saved {0} new solids.",
-      "✅ Сохранено {0} новых солидов.",
-      "✅ {0} nuovo solido salvato.",
-      "✅ {0} neuer Volumenkörper gespeichert.",
-      "✅ 保存了 {0} 个新实体。",
-      "✅ Guardados {0} sólidos nuevos.",  // ES
-      "✅ Enregistré {0} nouveaux solides.",  // FR
-      "✅ {0} yeni katı kaydedildi."};  // TR
 
     public static readonly string[] CutTwiceErr = {
       "❌ Could not make the cut.\n" +
