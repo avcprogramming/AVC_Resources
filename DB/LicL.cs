@@ -2198,6 +2198,15 @@ namespace AVC
       "Responsabilité légale",
       "Yasal sorumluluk"};
 
-
+    public static readonly string[] BalanceInfoUnavailable = {
+      "Unavailable",
+      "Неизвестно",
+      "Non disponibile",
+      "Nicht verfügbar",
+      "不可用",
+      "No disponible",
+      "Indisponible",
+      "Kullanılamıyor" };
+    
   }
 }

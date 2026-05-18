@@ -510,37 +510,21 @@ namespace AVC
 
     public static string[] FirstRun = {
       "{0} first launched on this computer.\r\n" +
-        "Version {1} is working.\r\nHappy use!\r\n\r\n" +
-        "If you have an old REG file with A>V>C> settings, you can restore the settings right now.\r\n\r\n" +
-         "Restore settings?",
+        "Version {1} is working.\r\nHappy use!",
       "{0} впервые запущен на этом компьютере.\r\n" +
-        "Работает версия {1}.\r\nСчастливого использования!\r\n\r\n" +
-        "Если у вас есть старый REG-файл с настройками A>V>C>, то вы можете восстановить настройки прямо сейчас.\r\n\r\n" +
-        "Восстановить настройки?",
+        "Работает версия {1}.\r\nСчастливого использования!",
       "{0} avviato per la prima volta su questo computer.\r\n" +
-        "La versione {1} funziona.\r\nBuon utilizzo!\r\n\r\n" +
-        "Se hai un vecchio file REG con impostazioni A>V>C>, puoi ripristinare le impostazioni adesso.\r\n\r\n" +
-         "Ripristinare le impostazioni?",
+        "La versione {1} funziona.\r\nBuon utilizzo!",
       "{0} wurde zuerst auf diesem Computer gestartet.\r\n" +
-        "Version {1} funktioniert.\r\nViel Spaß beim Gebrauch!\r\n\r\n" +
-        "Wenn Sie eine alte REG-Datei mit A>V>C>-Einstellungen haben, können Sie die Einstellungen sofort wiederherstellen.\r\n\r\n" +
-         "Einstellungen zurücksetzen?",
+        "Version {1} funktioniert.\r\nViel Spaß beim Gebrauch!",
       "{0} 首次在此计算机上启动。\r\n" +
-        "版本 {1} 正在运行。\r\n祝您使用愉快！\r\n\r\n" +
-        "如果你有一个带有 A>V>C> 设置的旧 REG 文件，你可以立即恢复设置。\r\n\r\n" +
-         "恢复设置？",
+        "版本 {1} 正在运行。\r\n祝您使用愉快！",
       "{0} iniciado por primera vez en esta computadora.\r\n" +  // ES
-        "La versión {1} está funcionando.\r\n¡Feliz uso!\r\n\r\n" +
-        "Si tiene un archivo REG antiguo con configuración A>V>C>, puede restaurar la configuración ahora mismo.\r\n\r\n" +
-         "¿Restaurar configuración?",
+        "La versión {1} está funcionando.\r\n¡Feliz uso!",
       "{0} lancé pour la première fois sur cet ordinateur.\r\n" +  // FR
-        "La version {1} fonctionne.\r\nBonne utilisation !\r\n\r\n" +
-        "Si vous avez un ancien fichier REG avec des paramètres A>V>C>, vous pouvez restaurer les paramètres maintenant.\r\n\r\n" +
-         "Restaurer les paramètres ?",
+        "La version {1} fonctionne.\r\nBonne utilisation !",
       "{0} bu bilgisayarda ilk kez başlatıldı.\r\n" +  // TR
-        "Sürüm {1} çalışıyor.\r\nİyi kullanımlar!\r\n\r\n" +
-        "A>V>C> ayarlarına sahip eski bir REG dosyanız varsa, ayarları hemen geri yükleyebilirsiniz.\r\n\r\n" +
-         "Ayarları geri yükle?"};
+        "Sürüm {1} çalışıyor.\r\nİyi kullanımlar!"};
 
     public static string[] NewVersion = {
       "New version launched {0} {1}",

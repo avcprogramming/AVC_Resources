@@ -5,6 +5,16 @@ namespace AVC
   public static class
   ChopL
   {
+    public static readonly string[] Surface = {
+      "Chop by surface",
+      "Нарезка поверхностью",
+      "Taglio con superficie",
+      "Zerschneiden mit Oberfläche",
+      "用表面切割",
+      "Cortar por superficie",                       // ES
+      "Couper par surface",                       // FR
+      "Yüzeye göre kes" };                       // TR
+
     public static readonly string[][] ChopStyleNames = {
 /* 0 */ CommandL.CH,
 /* 1 */ new[]{
@@ -26,6 +36,7 @@ namespace AVC
         "Espaciado de nervaduras",         // ES
         "Espacement des nervures",         // FR
         "Kaburga aralığı"},                // TR
+/* 4 */ Surface // надо разместить в коде раньше ChopStyleNames потому что инициализация идет по порядку
     };
 
     public static readonly string[] PieceLengthQuery = {
@@ -727,16 +738,6 @@ namespace AVC
       "A lo largo del borde del sólido 3D",                       // ES
       "Le long d'un bord solide 3D",                            // FR
       "3 boyutlu katı kenar boyunca"};                             // TR
-
-    public static readonly string[] Surface = {
-      "Chop by surface",
-      "Нарезка поверхностью",
-      "Taglio con superficie",
-      "Zerschneiden mit Oberfläche",
-      "用表面切割",
-      "Cortar por superficie",                       // ES
-      "Couper par surface",                       // FR
-      "Yüzeye göre kes" };                       // TR
 
     public static readonly string[] SurfaceTip = {
       "To slice a single solid into multiple curved surfaces, you'll need to select a Surface object. \r\n" +
