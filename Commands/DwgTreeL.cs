@@ -62,6 +62,18 @@ namespace AVC
       "Hata! Çizim Ağacında nesneler bulunamadı - {0}"};  // TR
 
     //==========================================================================================================================================================================
+    // DwgTreeOptionsBox
+
+    public static readonly string[] Branches = {
+      "Tree branches (folders)",
+      "Ветви дерева (папки)",
+      "Rami dell'albero (cartelle)",
+      "Baumzweige (Ordner)",
+      "树分支（文件夹）",
+      "Ramas del árbol (carpetas)",
+      "Branches de l'arbre (dossiers)",
+      "Ağaç dalları (klasörler)"};
+
     public static readonly string[] StyleNameTip = {
       "The name for this Drawing Tree style (set of settings). Not used in the program. Only for convenience of choice.",
       "Название для этого стиля дерева чертежа. Не используется в работе программы. Только для удобства выбора.",
@@ -124,115 +136,123 @@ namespace AVC
       "Ağaçta açık tüm çizimleri göster" };            // TR
 
     public static readonly string[] AssembliesTip = {
-      "Show a group with block references representing assemblies in the model and in other blocks. \r\n" +
-        "All blocks that are allowed to explode, except annotative ones, are considered assemblies.",
-      "Показывать группу с ссылками на блоки изображающие сборки в модели и в других блоках. \r\n" +
-        "Сборками считаются все блоки, которые разрешено взрывать, кроме аннотативных.",
-      "Mostra un gruppo con riferimenti a blocchi che rappresentano gli assemblaggi nel modello e in altri blocchi. \r\n" +
-        "Tutti i blocchi che possono esplodere, ad eccezione di quelli annotativi, sono considerati assemblaggi.",
-      "Zeigen Sie eine Gruppe mit Blockverweisen an, die Baugruppen im Modell und in anderen Blöcken darstellen. \r\n" +
-        "Alle Blöcke, die explodieren dürfen, mit Ausnahme der Beschriftungsblöcke, gelten als Baugruppen.",
-      "显示具有表示模型和其他块中的装配体的块引用的组。\r\n" +
-        "除注释性块外，所有允许爆炸的块都被视为组件。",
-      "Mostrar un grupo con referencias de bloques que representan ensamblajes en el modelo y en otros bloques. \r\n" +  // ES
-        "Todos los bloques que se pueden explotar, excepto los anotativos, se consideran ensamblajes.",
-      "Afficher un groupe avec des références de blocs représentant des assemblages dans le modèle et dans d'autres blocs. \r\n" +  // FR
-        "Tous les blocs qui peuvent être explosés, sauf les annotatifs, sont considérés comme des assemblages.",
-      "Modelde ve diğer bloklarda montajları temsil eden blok referanslarını içeren bir grup göster. \r\n" +  // TR
-        "Açıklamalı olanlar dışında patlatılmasına izin verilen tüm bloklar montaj olarak kabul edilir." };
+      "Show a drawing tree branch with block references representing assemblies in the model and in other blocks. \r\n" +
+        "By default, assemblies are considered to be all blocks that are allowed to explode, except for annotative ones.",
+      "Показывать ветвь дерева чертежа со ссылками на блоки, изображающие сборки в модели и в других блоках. \r\n" +
+        "Сборками по-умолчанию считаются все блоки, которые разрешено взрывать, кроме аннотативных.",
+      "Mostra un ramo dell'albero del disegno con riferimenti di blocco che rappresentano le assiemi nel modello e in altri blocchi. \r\n" +
+        "Per impostazione predefinita, le assiemi sono considerate tutti i blocchi che è consentito esplodere, ad eccezione di quelli annotativi.",
+      "Zeigen Sie einen Zweig des Zeichenbaums mit Blockreferenzen an, die Baugruppen im Modell und in anderen Blöcken darstellen. \r\n" +
+        "Standardmäßig werden Baugruppen als alle Blöcke betrachtet, die explodiert werden dürfen, mit Ausnahme von Anmerkungsblöcken.",
+      "显示一个绘图树分支，其中包含表示模型和其他块中装配的块引用。 \r\n" +
+        "默认情况下，装配被认为是所有允许爆炸的块，除了注释块。",
+      "Mostrar una rama del árbol de dibujo con referencias de bloque que representan ensamblajes en el modelo y en otros bloques. \r\n" +  // ES
+        "De forma predeterminada, los ensamblajes se consideran todos los bloques que se pueden explotar, excepto los anotativos.",
+      "Afficher une branche de l'arbre de dessin avec des références de bloc représentant des assemblages dans le modèle et dans d'autres blocs. \r\n" +  // FR
+        "Par défaut, les assemblages sont considérés comme tous les blocs qui peuvent être explosés, à l'exception de ceux annotatifs.",
+      "Modelde ve diğer bloklarda montajları temsil eden blok referansları içeren bir çizim ağacı dalı gösterin. \r\n" +  // TR
+        "Varsayılan olarak, montajlar, patlayabilecek tüm bloklar olarak kabul edilir, açıklamalı bloklar hariç." };
 
     public static readonly string[] ProductsTip = {
-      "Show group with non-explosive block references (purchasable items, products)",
-      "Показывать группу с невзрываемыми ссылками на блоки (покупными изделиями)",
-      "Mostra gruppo con blocchi non esplosivi (oggetti acquistabili)",
-      "Gruppe mit nicht-explosiven Blöcken anzeigen (käufliche Artikel)",
-      "显示非爆炸块组（可购买物品）",
-      "Mostrar grupo con referencias de bloques no explosivos (artículos comprables, productos)",  // ES
-      "Afficher le groupe avec des références de blocs non explosifs (articles achetables, produits)",  // FR
-      "Patlayıcı olmayan blok referanslarını içeren grubu göster (satın alınabilir öğeler, ürünler)" };  // TR
+      "Show the blueprint tree branch with links to product blocks. \r\n" +
+        "By default, all blocks that cannot be exploded are included.",
+      "Показывать ветвь дерева чертежа ссылками на блоки-изделия. \r\n" +
+        "По-умолчанию считаются все блоки, которые запрещено взрывать.",
+      "Mostra il ramo dell'albero del disegno con i collegamenti ai blocchi dei prodotti. \r\n" +
+        "Per impostazione predefinita, sono inclusi tutti i blocchi che non possono essere esplosi.",
+      "Zeigen Sie den Zweig des Zeichenbaums mit Links zu Produktblöcken an. \r\n" +
+        "Standardmäßig sind alle Blöcke enthalten, die nicht explodiert werden können.",
+      "显示一个绘图树分支，其中包含指向产品块的链接。 \r\n" +
+        "默认情况下，包含所有不能被爆炸的块。",
+      "Mostrar la rama del árbol de dibujo con enlaces a bloques de productos. \r\n" +  // ES
+        "De forma predeterminada, se incluyen todos los bloques que no se pueden explotar.",
+      "Afficher la branche de l'arbre de dessin avec des liens vers les blocs de produits. \r\n" +  // FR
+        "Par défaut, tous les blocs qui ne peuvent pas être explosés sont inclus.",
+      "Ürün bloklarına bağlantılar içeren çizim ağacı dalını gösterin. \r\n" +  // TR
+        "Varsayılan olarak, patlayamayan tüm bloklar dahil edilir." };
 
     public static readonly string[] ArraysTip = {
-      "Show group with dynamic arrays",
-      "Показывать группу с динамическими массивами",
-      "Mostra gruppo con array dinamici",
-      "Gruppe mit dynamischen Arrays anzeigen",
-      "显示具有动态数组的组",
-      "Mostrar grupo con matrices dinámicas",          // ES
-      "Afficher le groupe avec des tableaux dynamiques",  // FR
-      "Dinamik dizileri olan grubu göster" };          // TR
+      "Show drawing tree branch with dynamic arrays",
+      "Показывать ветвь дерева чертежа с динамическими массивами",
+      "Mostra il ramo dell'albero del disegno con array dinamici",
+      "Zweig des Zeichenbaums mit dynamischen Arrays anzeigen",
+      "显示包含动态数组的绘图树分支",
+      "Mostrar rama del árbol de dibujo con matrices dinámicas",          // ES
+      "Afficher la branche de l'arbre de dessin avec des tableaux dynamiques",  // FR
+      "Dinamik dizileri içeren çizim ağacı dalını göster" };          // TR
 
     public static readonly string[] DetailsTip = {
-      "Show group for 3d-solids (details, parts). \r\n" +
-        "Otherwise solids will be in the 3D group.",
-      "Показывать группу для солидов (деталей). \r\n" +
-        "Иначе солиды будут в группе 3D.",
-      "Mostra gruppo per solidi 3d (dettagli, parti). \r\n" +
-        "Altrimenti i solidi saranno nel gruppo 3D.",
-      "Gruppe für 3D-Solids (Details, Teile) anzeigen. \r\n" +
-        "Andernfalls befinden sich Volumenkörper in der 3D-Gruppe.",
-      "显示 3d 实体组（细节、零件）。否则实体将属于 3D 组。",
-      "Mostrar grupo para sólidos 3d (detalles, piezas). \r\n" +  // ES
-        "De lo contrario, los sólidos estarán en el grupo 3D.",
-      "Afficher le groupe pour les solides 3d (détails, pièces). \r\n" +  // FR
-        "Sinon, les solides seront dans le groupe 3D.",
-      "3d katılar için grubu göster (detaylar, parçalar). \r\n" +  // TR
-        "Aksi takdirde katılar 3D grubunda olacaktır." };
+      "Show drawing tree branch for 3d-solids (details, parts). \r\n" +
+        "Otherwise solids will be in the 3D branch.",
+      "Показывать ветвь дерева чертежа для солидов (деталей). \r\n" +
+        "Иначе солиды будут в ветви дерева 3D.",
+      "Mostra il ramo dell'albero del disegno per i solidi 3d (dettagli, parti). \r\n" +
+        "Altrimenti i solidi saranno nel ramo 3D.",
+      "Zweig des Zeichenbaums für 3D-Solids (Details, Teile) anzeigen. \r\n" +
+        "Andernfalls befinden sich Volumenkörper im 3D-Zweig.",
+      "显示3D实体（细节、零件）的绘图树分支。否则实体将属于3D分支。",
+      "Mostrar rama del árbol de dibujo para sólidos 3d (detalles, piezas). \r\n" +  // ES
+        "De lo contrario, los sólidos estarán en la rama 3D.",
+      "Afficher la branche de l'arbre de dessin pour les solides 3d (détails, pièces). \r\n" +  // FR
+        "Sinon, les solides seront dans la branche 3D.",
+      "3d katılar için çizim ağacı dalını göster (detaylar, parçalar). \r\n" +  // TR
+        "Aksi takdirde katılar 3D dalında olacaktır." };
 
     public static readonly string[] CurvesTip = {
-      "Show group with lines and curves (2D and 3D)",
-      "Показывать группу с линиями и кривыми (2D и 3D)",
-      "Mostra gruppo con linee e curve (2D e 3D)",
-      "Gruppe mit Linien und Kurven anzeigen (2D und 3D)",
-      "显示直线和曲线组（2D 和 3D）",
-      "Mostrar grupo con líneas y curvas (2D y 3D)",   // ES
-      "Afficher le groupe avec des lignes et des courbes (2D et 3D)",  // FR
-      "Çizgiler ve eğrilerle grubu göster (2D ve 3D)" };  // TR
+      "Show drawing tree branch with lines and curves (2D and 3D)",
+      "Показывать ветвь дерева чертежа с линиями и кривыми (2D и 3D)",
+      "Mostra il ramo dell'albero del disegno con linee e curve (2D e 3D)",
+      "Zweig des Zeichenbaums mit Linien und Kurven anzeigen (2D und 3D)",
+      "显示包含直线和曲线的绘图树分支（2D和3D）",
+      "Mostrar rama del árbol de dibujo con líneas y curvas (2D y 3D)",   // ES
+      "Afficher la branche de l'arbre de dessin avec des lignes et des courbes (2D et 3D)",  // FR
+      "Çizgiler ve eğriler içeren çizim ağacı dalını göster (2D ve 3D)" };  // TR
 
     public static readonly string[] _3DTip = {
-      "Show group with other 3D objects (except 3d-solids): meshes, surfaces, 3D curves",
-      "Показывать группу с прочими трехмерными объектами (кроме солидов): \r\n" +
+      "Show drawing tree branch with other 3D objects (except 3d-solids): meshes, surfaces, 3D curves",
+      "Показывать ветвь дерева чертежа с прочими трёхмерными объектами (кроме солидов): \r\n" +
         "сетями, поверхностями, 3D-кривыми",
-      "Mostra gruppo con altri oggetti 3D (tranne i solidi 3D): mesh, superfici, curve 3D",
-      "Gruppe mit anderen 3D-Objekten anzeigen (außer 3D-Solids): Netze, Flächen, 3D-Kurven",
-      "显示与其他 3D 对象（3D 实体除外）的组：网格、曲面、3D 曲线",
-      "Mostrar grupo con otros objetos 3D (excepto sólidos 3d): mallas, superficies, curvas 3D",  // ES
-      "Afficher le groupe avec d'autres objets 3D (sauf les solides 3d) : maillages, surfaces, courbes 3D",  // FR
-      "Diğer 3D nesnelerle grubu göster (3d katılar hariç): ağlar, yüzeyler, 3D eğriler" };  // TR
+      "Mostra il ramo dell'albero del disegno con altri oggetti 3D (tranne i solidi 3D): mesh, superfici, curve 3D",
+      "Zweig des Zeichenbaums mit anderen 3D-Objekten anzeigen (außer 3D-Solids): Netze, Flächen, 3D-Kurven",
+      "显示包含其他3D对象的绘图树分支（3D实体除外）：网格、曲面、3D曲线",
+      "Mostrar rama del árbol de dibujo con otros objetos 3D (excepto sólidos 3d): mallas, superficies, curvas 3D",  // ES
+      "Afficher la branche de l'arbre de dessin avec d'autres objets 3D (sauf les solides 3d) : maillages, surfaces, courbes 3D",  // FR
+      "Diğer 3D nesneleri içeren çizim ağacı dalını göster (3d katılar hariç): ağlar, yüzeyler, 3D eğriler" };  // TR
 
     public static readonly string[] AnnotationsTip = {
-      "Show group with drawing annotations: \r\n" +
+      "Show drawing tree branch with drawing annotations: \r\n" +
         "texts, dimensions, leaders, hatching, tables, annotative blocks",
-      "Показывать группу с аннотациями чертежа: \r\n" +
+      "Показывать ветвь дерева чертежа с аннотациями чертежа: \r\n" +
         "тексты, размеры, выноски, штриховки, таблицы, аннотативные блоки",
-      "Mostra gruppo con annotazioni disegno: \r\n" +
+      "Mostra il ramo dell'albero del disegno con annotazioni: \r\n" +
         "testi, quote, didascalie, tratteggi, tabelle, blocchi annotativi",
-      "Gruppe mit Zeichnungsanmerkungen anzeigen: \r\n" +
+      "Zweig des Zeichenbaums mit Zeichnungsanmerkungen anzeigen: \r\n" +
         "Texte, Bemaßungen, Beschriftungen, Schraffuren, Tabellen, Anmerkungsblöcke",
-      "显示带有绘图注释的组：\r\n" +
+      "显示包含绘图注释的绘图树分支：\r\n" +
         "文本、尺寸、标注、剖面线、表格、注释块",
-      "Mostrar grupo con anotaciones de dibujo: \r\n" +  // ES
+      "Mostrar rama del árbol de dibujo con anotaciones de dibujo: \r\n" +  // ES
         "textos, dimensiones, directrices, sombreados, tablas, bloques anotativos",
-      "Afficher le groupe avec des annotations de dessin : \r\n" +  // FR
+      "Afficher la branche de l'arbre de dessin avec des annotations de dessin : \r\n" +  // FR
         "textes, dimensions, lignes de repère, hachures, tableaux, blocs annotatifs",
-      "Çizim açıklamalarıyla grubu göster: \r\n" +  // TR
+      "Çizim açıklamalarını içeren çizim ağacı dalını göster: \r\n" +  // TR
         "metinler, boyutlar, işaret çizgileri, taramalar, tablolar, açıklamalı bloklar" };
 
     public static readonly string[] OthersTip = {
-      "Show a group with objects that do not belong to any other group: \r\n" +
+      "Show a drawing tree branch with objects that do not belong to any other branch: \r\n" +
         "viewports, OLE, images, proxy objects",
-      "Показывать группу с объектами, не относящимися ни к одной другой группе: \r\n" +
+      "Показывать ветвь дерева чертежа с объектами, не относящимися ни к одной другой ветви дерева: \r\n" +
         "вьюпорты, OLE, картинки, прокси-объекты",
-      "Mostra un gruppo con oggetti che non appartengono a nessun altro gruppo: \r\n" +
+      "Mostra un ramo dell'albero del disegno con oggetti che non appartengono a nessun altro ramo: \r\n" +
         "viewport, OLE, immagini, oggetti proxy",
-      "Zeigen Sie eine Gruppe mit Objekten an, die zu keiner anderen Gruppe gehören: \r\n" +
+      "Zeigen Sie einen Zweig des Zeichenbaums mit Objekten an, die zu keinem anderen Zweig gehören: \r\n" +
         "Ansichtsfenster, OLE, Bilder, Proxy-Objekte",
-      "显示包含不属于任何其他组的对象的组：\r\n" +
+      "显示包含不属于任何其他分支的对象的绘图树分支：\r\n" +
         "视口、OLE、图像、代理对象",
-      "Mostrar un grupo con objetos que no pertenecen a ningún otro grupo: \r\n" +  // ES
+      "Mostrar una rama del árbol de dibujo con objetos que no pertenecen a ninguna otra rama: \r\n" +  // ES
         "ventanas gráficas, OLE, imágenes, objetos proxy",
-      "Afficher un groupe avec des objets qui n'appartiennent à aucun autre groupe : \r\n" +  // FR
+      "Afficher une branche de l'arbre de dessin avec des objets qui n'appartiennent à aucune autre branche : \r\n" +  // FR
         "fenêtres, OLE, images, objets proxy",
-      "Başka hiçbir gruba ait olmayan nesnelerle bir grup göster: \r\n" +  // TR
+      "Başka hiçbir dala ait olmayan nesneleri içeren çizim ağacı dalını göster: \r\n" +  // TR
         "görünümler, OLE, resimler, proxy nesneler" };
 
     public static readonly string[] Namesake = {
@@ -246,123 +266,123 @@ namespace AVC
       "Adaş" };                                        // TR
 
     public static readonly string[] NamesakeTip = {
-      "Create subgroups for objects with the same name. \r\n" +
-        "The subgroup will get the same name as the objects in it, only in brackets <>. \r\n" +
+      "Create sub-branches for objects with the same name. \r\n" +
+        "The sub-branch will get the same name as the objects in it, only in brackets <>. \r\n" +
         "The program does not check for geometric differences, but only looks at the name of the object.\r\n" +
-        "A subgroup is not created if it is the only one in the parent group, \r\n" +
+        "A sub-branch is not created if it is the only one in the parent branch, \r\n" +
         "that is, if all objects in the list have the same name. \r\n" +
-        "A subgroup is not created if it contains only one object.",
-      "Создавать подгруппы для объектов с одинаковыми именами. \r\n" +
-        "Подгруппа получит такое же имя как у объектов в ней, но в скобках <>. \r\n" +
+        "A sub-branch is not created if it contains only one object.",
+      "Создавать подветви для объектов с одинаковыми именами. \r\n" +
+        "Подветвь получит такое же имя как у объектов в ней, но в скобках <>. \r\n" +
         "Программа не проверяет геометрические различия, а смотрит только на имя объекта.\r\n" +
-        "Подгруппа не создается если она одна в вышестоящей группе, то есть если все объекты списка одноименные. \r\n" +
-        "Подгруппа не создается если в нее входит только один объект.",
-      "Creare sottogruppi per oggetti con lo stesso nome. \r\n" +
-        "Il sottogruppo avrà lo stesso nome degli oggetti in esso contenuti, solo tra parentesi <>. \r\n" +
+        "Подветвь не создаётся, если она одна в вышестоящей ветви, то есть если все объекты списка одноименные. \r\n" +
+        "Подветвь не создаётся, если в неё входит только один объект.",
+      "Creare sotto-rami per oggetti con lo stesso nome. \r\n" +
+        "Il sotto-ramo avrà lo stesso nome degli oggetti in esso contenuti, solo tra parentesi <>. \r\n" +
         "Il programma non controlla le differenze geometriche, ma guarda solo il nome dell'oggetto.\r\n" +
-        "Un sottogruppo non viene creato se è l'unico nel gruppo principale, \r\n" +
+        "Un sotto-ramo non viene creato se è l'unico nel ramo principale, \r\n" +
         "cioè se tutti gli oggetti nell'elenco hanno lo stesso nome. \r\n" +
-        "Un sottogruppo non viene creato se contiene un solo oggetto.",
-      "Erstellen Sie Untergruppen für Objekte mit demselben Namen. \r\n" +
-        "Die Untergruppe erhält denselben Namen wie die darin enthaltenen Objekte, nur in Klammern <>. \r\n" +
+        "Un sotto-ramo non viene creato se contiene un solo oggetto.",
+      "Erstellen Sie Unterzweige für Objekte mit demselben Namen. \r\n" +
+        "Der Unterzweig erhält denselben Namen wie die darin enthaltenen Objekte, nur in Klammern <>. \r\n" +
         "Das Programm prüft nicht auf geometrische Unterschiede, sondern schaut nur auf den Namen des Objekts.\r\n" +
-        "Eine Untergruppe wird nicht erstellt, wenn sie die einzige in der übergeordneten Gruppe ist, \r\n" +
+        "Ein Unterzweig wird nicht erstellt, wenn er der einzige im übergeordneten Zweig ist, \r\n" +
         "d. h. wenn alle Objekte in der Liste denselben Namen haben. \r\n" +
-        "Eine Untergruppe wird nicht erstellt, wenn sie nur ein Objekt enthält.",
-      "为具有相同名称的对象创建子组。 \r\n" +
-        "子组将获得与其中的对象相同的名称，只是在方括号 <> 中。\r\n" +
+        "Ein Unterzweig wird nicht erstellt, wenn er nur ein Objekt enthält.",
+      "为具有相同名称的对象创建子分支。 \r\n" +
+        "子分支将获得与其中对象相同的名称，只是在方括号 <> 中。\r\n" +
         " 该程序不检查几何差异，而仅查看对象的名称。\r\n" +
-        "如果子组是父组中唯一的子组，即列表中的所有对象都具有相同的名称，则不会创建子组。 \r\n" +
-        "如果子组仅包含一个对象，则不会创建子组。",
-      "Crear subgrupos para objetos con el mismo nombre. \r\n" +  // ES
-        "El subgrupo obtendrá el mismo nombre que los objetos en él, solo entre corchetes <>. \r\n" +
+        "如果子分支是父分支中唯一的子分支，即列表中的所有对象都具有相同的名称，则不会创建子分支。 \r\n" +
+        "如果子分支仅包含一个对象，则不会创建子分支。",
+      "Crear sub-ramas para objetos con el mismo nombre. \r\n" +  // ES
+        "La sub-rama obtendrá el mismo nombre que los objetos en ella, solo entre corchetes <>. \r\n" +
         "El programa no verifica diferencias geométricas, sino que solo mira el nombre del objeto.\r\n" +
-        "No se crea un subgrupo si es el único en el grupo principal, \r\n" +
+        "No se crea una sub-rama si es la única en la rama principal, \r\n" +
         "es decir, si todos los objetos de la lista tienen el mismo nombre. \r\n" +
-        "No se crea un subgrupo si contiene solo un objeto.",
-      "Créer des sous-groupes pour les objets portant le même nom. \r\n" +  // FR
-        "Le sous-groupe portera le même nom que les objets qu'il contient, uniquement entre crochets <>. \r\n" +
+        "No se crea una sub-rama si contiene solo un objeto.",
+      "Créer des sous-branches pour les objets portant le même nom. \r\n" +  // FR
+        "La sous-branche portera le même nom que les objets qu'elle contient, uniquement entre crochets <>. \r\n" +
         "Le programme ne vérifie pas les différences géométriques, mais ne regarde que le nom de l'objet.\r\n" +
-        "Un sous-groupe n'est pas créé s'il est le seul dans le groupe parent, \r\n" +
+        "Une sous-branche n'est pas créée si elle est la seule dans la branche parente, \r\n" +
         "c'est-à-dire si tous les objets de la liste ont le même nom. \r\n" +
-        "Un sous-groupe n'est pas créé s'il ne contient qu'un seul objet.",
-      "Aynı ada sahip nesneler için alt gruplar oluşturun. \r\n" +  // TR
-        "Alt grup, içindeki nesnelerle aynı adı alacaktır, sadece <> parantezleri içinde. \r\n" +
+        "Une sous-branche n'est pas créée si elle ne contient qu'un seul objet.",
+      "Aynı ada sahip nesneler için alt dallar oluşturun. \r\n" +  // TR
+        "Alt dal, içindeki nesnelerle aynı adı alacaktır, sadece <> parantezleri içinde. \r\n" +
         "Program geometrik farklılıkları kontrol etmez, sadece nesnenin adına bakar.\r\n" +
-        "Üst grupta tek başına ise, yani listedeki tüm nesneler aynı ada sahipse alt grup oluşturulmaz. \r\n" +
-        "Yalnızca bir nesne içeriyorsa alt grup oluşturulmaz." };
+        "Üst dalda tek başına ise, yani listedeki tüm nesneler aynı ada sahipse alt dal oluşturulmaz. \r\n" +
+        "Yalnızca bir nesne içeriyorsa alt dal oluşturulmaz." };
 
     public static readonly string[] LayersTip = {
-      "Show a group with a list of layers in the drawing and in all blocks. \r\n" +
+      "Show a drawing tree branch with a list of layers in the drawing and in all blocks. \r\n" +
         "Even unused layers will be shown in the drawing",
-      "Показывать группу со списком слоев в чертеже и во всех блоках. \r\n" +
+      "Показывать ветвь дерева чертежа со списком слоёв в чертеже и во всех блоках. \r\n" +
         "В чертеже будут показаны даже неиспользованные слои",
-      "Mostra un gruppo con un elenco di layer nel disegno e in tutti i blocchi. \r\n" +
+      "Mostra un ramo dell'albero del disegno con un elenco di layer nel disegno e in tutti i blocchi. \r\n" +
         "Anche i livelli inutilizzati verranno visualizzati nel disegno",
-      "Zeigen Sie eine Gruppe mit einer Liste der Layer in der Zeichnung und in allen Blöcken an. \r\n" +
+      "Zeigen Sie einen Zweig des Zeichenbaums mit einer Liste der Layer in der Zeichnung und in allen Blöcken an. \r\n" +
         "Auch nicht verwendete Ebenen werden in der Zeichnung angezeigt",
-      "显示图形和所有块中包含图层列表的组。 \r\n" +
+      "显示包含图形和所有块中图层列表的绘图树分支。 \r\n" +
         "即使未使用的图层也会显示在绘图中",
-      "Mostrar un grupo con una lista de capas en el dibujo y en todos los bloques. \r\n" +  // ES
+      "Mostrar una rama del árbol de dibujo con una lista de capas en el dibujo y en todos los bloques. \r\n" +  // ES
         "Incluso las capas no utilizadas se mostrarán en el dibujo",
-      "Afficher un groupe avec une liste de calques dans le dessin et dans tous les blocs. \r\n" +  // FR
+      "Afficher une branche de l'arbre de dessin avec une liste de calques dans le dessin et dans tous les blocs. \r\n" +  // FR
         "Même les calques non utilisés seront affichés dans le dessin",
-      "Çizimde ve tüm bloklarda katman listesi içeren bir grup göster. \r\n" +  // TR
+      "Çizimde ve tüm bloklarda katman listesi içeren bir çizim ağacı dalı göster. \r\n" +  // TR
         "Kullanılmayan katmanlar bile çizimde gösterilecektir" };
 
     public static readonly string[] GroupsTip = {
-      "Show named and unnamed groups in drawing branches.",
-      "Показывать именованные и безымянные группы в ветви чертежа",
-      "Mostra gruppi con nome e senza nome in un ramo del disegno.",
-      "Zeigen Sie benannte und unbenannte Gruppen in einem Zeichnungszweig an.",
-      "在绘图分支中显示已命名和未命名的组。",
-      "Mostrar grupos con nombre y sin nombre en ramas de dibujo.",  // ES
-      "Afficher les groupes nommés et non nommés dans les branches de dessin.",  // FR
-      "Çizim dallarında adlandırılmış ve adlandırılmamış grupları göster." };  // TR
+      "Show co-selection groups: named and unnamed.",
+      "Показывать группы совместного выбора: именованные и безымянные.",
+      "Mostra gruppi di selezione congiunta: nominati e non nominati.",
+      "Zeigen Sie Gruppen der gemeinsamen Auswahl an: benannte und unbenannte.",
+      "显示共同选择组：命名和未命名。",
+      "Mostrar grupos de selección conjunta: nombrados y sin nombre",  // ES
+      "Afficher les groupes de sélection conjointe : nommés et non nommés",  // FR
+      "Ortak seçim gruplarını göster: adlandırılmış ve adlandırılmamış" };  // TR
 
     public static readonly string[] MaterialsTip = {
-      "Show a group with a list of materials in the drawing and in all blocks. \r\n" +
+      "Show a drawing tree branch with a list of materials in the drawing and in all blocks. \r\n" +
         "Even unused materials will be shown in the drawing",
-      "Показывать группу со списком материалов в чертеже и во всех блоках. \r\n" +
+      "Показывать ветвь дерева чертежа со списком материалов в чертеже и во всех блоках. \r\n" +
         "В чертеже будут показаны даже неиспользованные материалы",
-      "Mostra un gruppo con un elenco di materiali nel disegno e in tutti i blocchi. \r\n" +
+      "Mostra un ramo dell'albero del disegno con un elenco di materiali nel disegno e in tutti i blocchi. \r\n" +
         "Anche i materiali non utilizzati verranno mostrati nel disegno",
-      "Zeigen Sie eine Gruppe mit einer Liste von Materialien in der Zeichnung und in allen Blöcken an. \r\n" +
+      "Zeigen Sie einen Zweig des Zeichenbaums mit einer Liste von Materialien in der Zeichnung und in allen Blöcken an. \r\n" +
         "Auch unbenutzte Materialien werden in der Zeichnung angezeigt",
-      "显示图形和所有块中包含材料列表的组。 \r\n" +
+      "显示包含图形和所有块中材料列表的绘图树分支。 \r\n" +
         "即使未使用的材料也会显示在图纸中",
-      "Mostrar un grupo con una lista de materiales en el dibujo y en todos los bloques. \r\n" +  // ES
+      "Mostrar una rama del árbol de dibujo con una lista de materiales en el dibujo y en todos los bloques. \r\n" +  // ES
         "Incluso los materiales no utilizados se mostrarán en el dibujo",
-      "Afficher un groupe avec une liste de matériaux dans le dessin et dans tous les blocs. \r\n" +  // FR
+      "Afficher une branche de l'arbre de dessin avec une liste de matériaux dans le dessin et dans tous les blocs. \r\n" +  // FR
         "Même les matériaux non utilisés seront affichés dans le dessin",
-      "Çizimde ve tüm bloklarda malzeme listesi içeren bir grup göster. \r\n" +  // TR
+      "Çizimde ve tüm bloklarda malzeme listesi içeren bir çizim ağacı dalı göster. \r\n" +  // TR
         "Kullanılmayan malzemeler bile çizimde gösterilecektir" };
 
     public static readonly string[] MaterialGroups = {
-      "Material groups",
-      "Группы материалов",
-      "Gruppi materiali",
-      "Materialgruppen",
-      "材料组",
-      "Grupos de materiales",                          // ES
-      "Groupes de matériaux",                          // FR
-      "Malzeme grupları" };                            // TR
+      "Material branches",
+      "Ветви материалов",
+      "Rami di materiali",
+      "Materialzweige",
+      "材料分支",
+      "Ramas de materiales",                           // ES
+      "Branches de matériaux",                         // FR
+      "Malzeme dalları" };                             // TR
 
     public static readonly string[] MaterialGroupsTip = {
-      "Divide the list of materials into groups according to their purpose: \r\n" +
+      "Divide the list of materials into branches according to their purpose: \r\n" +
         "sheets, coatings, edge bandings...",
-      "Дробить список материалов на группы по их назначению: \r\n" +
+      "Дробить список материалов на ветви по их назначению: \r\n" +
         "листовые, покрытия, кромки...",
-      "Dividi l'elenco dei materiali in gruppi in base alla loro destinazione: \r\n" +
+      "Dividi l'elenco dei materiali in rami in base alla loro destinazione: \r\n" +
         "lamiere, rivestimenti, bordature...",
-      "Teilen Sie die Materialliste entsprechend ihrem Verwendungszweck in Gruppen ein: \r\n" +
+      "Teilen Sie die Materialliste entsprechend ihrem Verwendungszweck in Zweige ein: \r\n" +
         "Bleche, Beschichtungen, Kantenumleimer ...",
-      "根据材料的用途将材料列表分为几组：板材、涂层、封边...",
-      "Dividir la lista de materiales en grupos según su propósito: \r\n" +  // ES
+      "根据材料的用途将材料列表划分为分支：板材、涂层、封边...",
+      "Dividir la lista de materiales en ramas según su propósito: \r\n" +  // ES
         "hojas, recubrimientos, cantos...",
-      "Diviser la liste des matériaux en groupes selon leur objectif : \r\n" +  // FR
+      "Diviser la liste des matériaux en branches selon leur objectif : \r\n" +  // FR
         "feuilles, revêtements, chants...",
-      "Malzeme listesini amaçlarına göre gruplara ayırın: \r\n" +  // TR
+      "Malzeme listesini amaçlarına göre dallara ayırın: \r\n" +  // TR
         "levhalar, kaplamalar, kenar bantları..." };
 
     public static readonly string[] BlockDefinitionsTip = {
@@ -447,14 +467,14 @@ namespace AVC
         "blok örneklerine referanslar her zaman eklenir." };
 
     public static readonly string[] LayoutsTip = {
-      "Show a group with all sheets (layouts) of the drawing",
-      "Показать группу со всеми листами (лейаутами) чертежа",
-      "Mostra un gruppo con tutti i fogli (layout) del disegno",
-      "Zeigen Sie eine Gruppe mit allen Blättern (Layouts) der Zeichnung an",
-      "显示包含绘图的所有图纸（布局）的组",
-      "Mostrar un grupo con todas las hojas (presentaciones) del dibujo",  // ES
-      "Afficher un groupe avec toutes les feuilles (présentations) du dessin",  // FR
-      "Çizimin tüm sayfalarını (düzenler) içeren bir grup göster" };  // TR
+      "Show a drawing tree branch with all sheets (layouts) of the drawing",
+      "Показывать ветвь дерева чертежа со всеми листами (лейаутами) чертежа",
+      "Mostra un ramo dell'albero del disegno con tutti i fogli (layout) del disegno",
+      "Zeigen Sie einen Zweig des Zeichenbaums mit allen Blättern (Layouts) der Zeichnung an",
+      "显示包含绘图所有图纸（布局）的绘图树分支",
+      "Mostrar una rama del árbol de dibujo con todas las hojas (presentaciones) del dibujo",  // ES
+      "Afficher une branche de l'arbre de dessin avec toutes les feuilles (présentations) du dessin",  // FR
+      "Çizimin tüm sayfalarını (düzenler) içeren bir çizim ağacı dalı göster" };  // TR
 
     public static readonly string[] Highlight = {
       "Highlight objects",
@@ -580,14 +600,14 @@ namespace AVC
       "3D'de katı delikler" };                         // TR
 
     public static readonly string[] HolesTo3dTip = {
-      "Show Holes layer solids in 3D group instead of Details group",
-      "Показывать солиды слоя Отверстия в группе 3D, а не в группе Детали",
-      "Mostra Solidi del layer Fori nel gruppo 3D invece che nel gruppo Parti",
-      "Zeigen Sie Volumenkörper der Ebene 'Löcher' in der 3D-Gruppe anstelle der Teilegruppe an",
-      "在 3D 组而不是零件组中显示孔层实体",
-      "Mostrar sólidos de capa Agujeros en grupo 3D en lugar de grupo Detalles",  // ES
-      "Afficher les solides du calque Trous dans le groupe 3D au lieu du groupe Détails",  // FR
-      "Delikler katmanı katılarını Detaylar grubu yerine 3D grubunda göster" };  // TR
+      "Show Holes layer solids in 3D branch instead of Details branch",
+      "Показывать солиды слоя Отверстия в ветви дерева 3D, а не в ветви дерева Детали",
+      "Mostra Solidi del layer Fori nel ramo 3D invece che nel ramo Parti",
+      "Zeigen Sie Volumenkörper der Ebene 'Löcher' im 3D-Zweig anstelle des Detail-Zweigs an",
+      "在3D分支而不是零件分支中显示孔层实体",
+      "Mostrar sólidos de capa Agujeros en rama 3D en lugar de rama Detalles",  // ES
+      "Afficher les solides du calque Trous dans la branche 3D au lieu de la branche Détails",  // FR
+      "Delikler katmanı katılarını Detaylar dalı yerine 3D dalında göster" };  // TR
 
     public static readonly string[] UpdateMetrics = {
       "Update all solid metrics",

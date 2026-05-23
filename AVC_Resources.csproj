@@ -50,6 +50,7 @@
     <Compile Include="Commands\AutoAnnL.cs" />
     <Compile Include="Commands\AutoLngL.cs" />
     <Compile Include="Commands\BlockMetricL.cs" />
+    <Compile Include="Commands\BlockUseL.cs" />
     <Compile Include="Commands\BoxFromTableL.cs" />
     <Compile Include="Commands\BubenL.cs" />
     <Compile Include="Commands\BUpdateL.cs" />

@@ -1323,6 +1323,16 @@ namespace AVC
       "Assemblage",
       "Montaj"};
 
+    public static readonly string[] IsAssembly = {
+      "Assembly",
+      "Сборка",
+      "Assemblee",
+      "Montage",
+      "集会",
+      "Ensamblaje",
+      "Assemblage",
+      "Montaj"};
+
     public static readonly string[] Assemblies = {
       "Assemblies",
       "Сборки",
@@ -1332,6 +1342,16 @@ namespace AVC
       "Ensamblajes",
       "Assemblages",
       "Montajlar"};
+
+    public static readonly string[] IsProduct = {
+      "Product",
+      "Изделие",
+      "Prodotto",
+      "Produkt",
+      "产品",
+      "Producto",
+      "Produit",
+      "Ürün"};
 
     public static readonly string[] BlockInstance = {
       "Block Instance",
@@ -1352,6 +1372,74 @@ namespace AVC
       "Instancias de bloque",
       "Instances de bloc",
       "Blok örnekleri"};
+
+    public static readonly string[] IsAssemblyTip = {
+      "The block will be used as an assembly. AVC programs will search it for parts and other assemblies. \r\n" +
+        "However, the block itself does not need to be written to the product or procurement table. \r\n" +
+        "By default, all exploding blocks are considered assemblies. \r\n" +
+        "You can mark any block as an assembly, and the program will save this setting in the constant 'Use' attribute.",
+      "Блок будет использоваться как сборка. Программы AVC будут искать в нем детали и другие сборки. \r\n" +
+        "Но в таблицу изделий или закупок сам блок записывать не надо. \r\n" +
+        "По-умолчанию все взрываемые блоки считаются сборками. \r\n" +
+        "Вы можете пометить любой блок как сборку, и программа сохранит эту настройку в константном атрибуте Use.",
+      "Il blocco sarà usato come un assemblaggio. I programmi AVC lo cercheranno per parti e altri assemblaggi. \r\n" +
+        "Tuttavia, il blocco stesso non deve essere scritto nella tabella dei prodotti o degli acquisti. \r\n" +
+        "Per impostazione predefinita, tutti i blocchi esplodibili sono considerati assemblaggi. \r\n" +
+        "Puoi contrassegnare qualsiasi blocco come un assemblaggio e il programma salverà questa impostazione nell'attributo costante 'Use'.",
+      "Der Block wird als Baugruppe verwendet. AVC-Programme suchen darin nach Teilen und anderen Baugruppen. \r\n" +
+        "Der Block selbst muss jedoch nicht in die Produkt- oder Einkaufstabelle geschrieben werden. \r\n" +
+        "Standardmäßig werden alle explodierbaren Blöcke als Baugruppen betrachtet. \r\n" +
+        "Sie können jeden Block als Baugruppe markieren, und das Programm speichert diese Einstellung im konstanten Attribut 'Use'.",
+      "该块将用作组件。 AVC 程序将搜索其中的零件和其他组件。 \r\n" +
+         "但是，块本身不需要写入产品或采购表中。 \r\n" +
+         "默认情况下，所有可爆炸的块都被视为组件。 \r\n" +
+         "您可以将任何块标记为组件，程序将把此设置保存在常量属性“Use”中。",
+      "El bloque se usará como un ensamblaje. Los programas AVC lo buscarán para partes y otros ensamblajes. \r\n" +
+        "Sin embargo, el bloque en sí no necesita ser escrito en la tabla de productos o compras. \r\n" +
+        "De forma predeterminada, todos los bloques explotables se consideran ensamblajes. \r\n" +
+        "Puede marcar cualquier bloque como un ensamblaje y el programa guardará esta configuración en el atributo constante 'Use'.",
+      "Le bloc sera utilisé comme un assemblage. Les programmes AVC le rechercheront pour les pièces et les autres assemblages. \r\n" +
+        "Cependant, le bloc lui-même n'a pas besoin d'être écrit dans la table des produits ou des achats. \r\n" +
+        "Par défaut, tous les blocs explosables sont considérés comme des assemblages. \r\n" +
+        "Vous pouvez marquer n'importe quel bloc comme un assemblage et le programme enregistrera ce paramètre dans l'attribut constant 'Use'.",
+      "Blok bir montaj olarak kullanılacaktır. AVC programları, parçalar ve diğer montajlar için onu arayacaktır. \r\n" +
+        "Ancak, blokun kendisi ürün veya satın alma tablosuna yazılmasına gerek yoktur. \r\n" +
+        "Varsayılan olarak, tüm patlayıcı bloklar montaj olarak kabul edilir. \r\n" +
+        "Herhangi bir bloğu montaj olarak işaretleyebilirsiniz ve program bu ayarı 'Use' sabit özniteliğinde saklayacaktır."};
+
+    public static readonly string[] IsProductTip = {
+      "The block will be used as a Product, for accounting in product, parts, or procurement tables. \r\n" +
+        "But the contents of this block are irrelevant; there is no need to extract nested blocks and parts. \r\n" +
+        "By default, all blocks that are prohibited from being exploded are considered Products. \r\n" +
+        "But you can mark any block as a Product, and the program will save this setting in the 'Use' constant attribute.",
+      "Блок будет использоваться как Изделие, для учета в таблицах изделий, деталей или закупок. \r\n" +
+        "Но содержимое этого блока не имеет значения, извлекать вложенные блоки и детали не надо. \r\n" +
+        "По-умолчанию изделиями считаются все блоки, которые запрещено взрывать. \r\n" +
+        "Но вы можете пометить любой блок как изделие, и программа сохранит эту настройку в константном атрибуте 'Use'.",
+      "Il blocco sarà usato come un Prodotto, per la contabilizzazione in tabelle di prodotti, parti o acquisti. \r\n" +
+        "Ma il contenuto di questo blocco è irrilevante, non è necessario estrarre blocchi e parti nidificati. \r\n" +
+        "Per impostazione predefinita, tutti i blocchi a cui è vietato esplodere sono considerati Prodotti. \r\n" +
+        "Ma puoi contrassegnare qualsiasi blocco come Prodotto e il programma salverà questa impostazione nell'attributo costante 'Use'.",
+      "Der Block wird als Produkt verwendet, für die Buchhaltung in Produkt-, Teile- oder Einkaufstabellen. \r\n" +
+        "Aber der Inhalt dieses Blocks ist irrelevant, es ist nicht notwendig, verschachtelte Blöcke und Teile zu extrahieren. \r\n" +
+        "Standardmäßig werden alle Blöcke, die nicht explodiert werden dürfen, als Produkte betrachtet. \r\n" +
+        "Aber Sie können jeden Block als Produkt markieren und das Programm speichert diese Einstellung im konstanten Attribut 'Use'.",
+      "该块将用作产品，用于在产品、零件或采购表中进行会计处理。 \r\n" +
+         "但这个块的内容无关紧要，不需要提取嵌套的块和零件。 \r\n" +
+         "默认情况下，所有禁止爆炸的块都被视为产品。 \r\n" +
+         "但您可以将任何块标记为产品，程序将把此设置保存在“Use”常量属性中。",
+      "El bloque se usará como un Producto, para la contabilidad en tablas de productos, partes o compras. \r\n" +
+        "Pero el contenido de este bloque es irrelevante, no es necesario extraer bloques y partes anidados. \r\n" +
+        "De forma predeterminada, todos los bloques a los que se prohíbe explotar se consideran Productos. \r\n" +
+        "Pero puede marcar cualquier bloque como un Producto y el programa guardará esta configuración en el atributo constante 'Use'.",
+      "Le bloc sera utilisé comme un Produit, pour la comptabilité dans les tableaux de produits, pièces ou achats. \r\n" +
+        "Mais le contenu de ce bloc est sans importance, il n'est pas nécessaire d'extraire les blocs et les pièces imbriqués. \r\n" +
+        "Par défaut, tous les blocs auxquels il est interdit d'exploser sont considérés comme des Produits. \r\n" +
+        "Mais vous pouvez marquer n'importe quel bloc comme un Produit et le programme enregistrera ce paramètre dans l'attribut constant 'Use'.",
+      "Blok, ürün, parçalar veya satın alma tablolarında muhasebe için bir Ürün olarak kullanılacaktır. \r\n" +
+        "Ancak, bu bloğun içeriği önemsizdir, iç içe geçmiş blokları ve parçaları çıkarmak gerekli değildir. \r\n" +
+        "Varsayılan olarak, patlaması yasak olan tüm bloklar Ürün olarak kabul edilir. \r\n" +
+        "Ancak, herhangi bir bloğu Ürün olarak işaretleyebilirsiniz ve program bu ayarı 'Use' sabit özniteliğinde saklayacaktır."};
 
     public static readonly string[] BlockNameTip = {
       "Name of selected block.\r\n" +
@@ -1410,10 +1498,10 @@ namespace AVC
     public static readonly string[] AnnotativeTip = {
       "The block is annotative, that is, it is some kind of symbol, icon, label, and not an object of the real world.\r\n"+
          "In model space, such blocks can be automatically scaled depending on the print settings.\r\n" +
-         "AVC programs ignore such blocks, do not consider them as assemblies or purchased items.",
+         "AVC programs ignore such blocks, do not consider them as assemblies or products.",
       "Блок аннотативный, то есть это какое-то условное обозначение, значок, метка, а не предмет реального мира.\r\n" +
         "В пространстве модели, такие блоки могут автоматически масштабироваться в зависимости от настроек печати.\r\n" +
-        "Программы AVC игнорирую такие блоки, не считают их ни сборками, ни покупными изделиями.",
+        "Программы AVC игнорирую такие блоки, не считают их ни сборками, ни изделиями.",
       "Il blocco è annotativo, cioè è una sorta di simbolo, icona, etichetta e non un oggetto del mondo reale.\r\n" +
         "Nello spazio modello, tali blocchi possono essere ridimensionati automaticamente \r\n" +
         "a seconda delle impostazioni di stampa.\r\n" +
@@ -1448,11 +1536,11 @@ namespace AVC
       "This block can be exploded into separate parts.\r\n" +
         "In AVC programs, such blocks are considered as assemblies, \r\n" +
         "and you can work with parts inside such blocks.\r\n" +
-         "If the block is non-explosive, then AVC programs treat it as a purchased product \r\n" +
+        "If the block is non-explosive, then AVC programs treat it as a product \r\n" +
         "and do not attempt to work with the parts inside it.",
       "Данный блок можно взорвать на отдельные детали.\r\n" +
         "В программах AVC такие блоки считаются сборками и можно работать с деталями внутри таких блоков.\r\n" +
-        "Если блок невзрываемый, то программы AVC считают его покупным изделием \r\n" +
+        "Если блок невзрываемый, то программы AVC считают его изделием \r\n" +
         "и не пытаются работать с деталями внутри него.",
       "Questo blocco può essere esploso in parti separate.\r\n" +
         "Nei programmi AVC, tali blocchi sono considerati come assiemi \r\n" +

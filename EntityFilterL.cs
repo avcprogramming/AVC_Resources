@@ -157,22 +157,14 @@ namespace AVC
       "Montaj içinde"};                                 // TR
 
     public static readonly string[] InsideAssemblyTip = {
-      "Read object data inside assembly blocks and arrays.\r\n" +
-        "Assemblies are considered simple explodable blocks - not annotative and not dynamic.",
-      "Вытаскивать объекты из блоков-сборок.\r\n" +
-        "Сборками считаются все простые взрываемые блоки - не аннотативные и не динамические.",
-      "Leggere i dati degli oggetti all'interno di blocchi e matrici di assieme.\r\n" +
-        "Gli assiemi sono considerati blocchi semplici - non annotativi e non dinamici.",
-      "Objektdaten in Assembly-Blöcken und Arrays lesen.\r\n" +
-         "Baugruppen werden als einfache explodierbare Blöcke betrachtet – nicht beschriftet und nicht dynamisch.",
-      "读取装配块和数组中的对象数据。\r\n" +
-         "组件被认为是简单的可爆炸块 - 不是注释性的，也不是动态的。",
-      "Leer datos de objetos dentro de bloques y matrices de ensamblaje.\r\n" +  // ES
-        "Los ensamblajes se consideran bloques simples explotables - no anotativos y no dinámicos.",
-      "Lire les données d'objets à l'intérieur de blocs et de tableaux d'assemblage.\r\n" +  // FR
-        "Les assemblages sont considérés comme des blocs simples explosibles - non annotatifs et non dynamiques.",
-      "Montaj blokları ve dizileri içindeki nesne verilerini okuyun.\r\n" +  // TR
-        "Montajlar basit patlatılabilir bloklar olarak kabul edilir - açıklamalı değil ve dinamik değil."};
+      "Extract objects from arrays and blocks marked as Assembly.",
+      "Вытаскивать объекты из массивов и блоков помеченных как Сборка.",
+      "Estrarre oggetti da array e blocchi contrassegnati come Assemblaggio.",
+      "Objekte aus Arrays und Blöcken extrahieren, die als Montage gekennzeichnet sind.",
+      "从标记为装配的阵列和块中提取对象。",
+      "Extraer objetos de matrices y bloques marcados como Ensamblaje.",  // ES
+      "Extraire des objets de matrices et de blocs marqués comme Assemblage.",  // FR
+      "Montaj olarak işaretlenmiş dizilerden ve bloklardan nesneleri çıkarın."};  // TR
 
     public static readonly string[] NotAnnotations = {
       "Not Annotations",
