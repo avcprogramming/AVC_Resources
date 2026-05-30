@@ -701,6 +701,34 @@ namespace AVC
         "Metrikleri oluşturduktan sonra, çizim ağacında ve özellikler paletinde katıların (parçaların) boyutlarını göreceksiniz.\r\n" +
         " Ancak, ölçüm işlemi yavaşlamalara ve hatta ölümcül çökmelere neden olabilir." };
 
+    public static readonly string[] HomeView = {
+      "Home view",
+      "Исходный вид",
+      "Vista iniziale",
+      "Ausgangsansicht",
+      "主视图",
+      "Vista de inicio",                               // ES
+      "Vue d'accueil",                                 // FR
+      "Ana görünüm" };                                 // TR
+
+    public static readonly string[] HomeViewTip = {
+      "Collapse the tree to its home (initial) view. \r\n" +
+        "Shows the contents of the model of the current drawing.",
+      "Свернуть дерево до исходного (домашнего) вида. \r\n" +
+        "Показывает содержимое модели текущего чертежа.",
+      "Comprimi l'albero alla visualizzazione iniziale. \r\n" +
+        "Mostra il contenuto del modello del disegno corrente.",
+      "Baum auf die Ausgangsansicht reduzieren. \r\n" +
+        "Zeigt den Inhalt des Modells der aktuellen Zeichnung.",
+      "将树折叠到主（初始）视图。\r\n" +
+        "显示当前图形的模型内容。",
+      "Contraer el árbol a la vista de inicio (inicial). \r\n" +    // ES
+        "Muestra el contenido del modelo del dibujo actual.",
+      "Réduire l'arbre à la vue d'accueil (initiale). \r\n" +       // FR
+        "Affiche le contenu du modèle du dessin actuel.",
+      "Ağacı ana (başlangıç) görünümüne daralt. \r\n" +             // TR
+        "Geçerli çizimin modeli içeriğini gösterir." };
+
     public static readonly string[] Collapse = {
       "Collapse tree branches",
       "Сворачивать ветви дерева",
@@ -792,6 +820,26 @@ namespace AVC
       "Nesne adlarının çizim ağacında doğrudan düzenlenmesine izin verin.\r\n" +  // TR
         "Düzenlemek için, daha önce seçilen öğeye tekrar tıklayın, ancak hızlıca çift tıklamayın.\r\n" +
         "Bu nesne yeniden adlandırılamıyorsa, bir uyarı sesi duyacaksınız." };
+
+    public static readonly string[] Mirrored = {
+      "Mirrored blocks",
+      "Зеркальные блоки",
+      "Blocchi speculari",
+      "Gespiegelte Blöcke",
+      "镜像块",
+      "Bloques espejados",                        // ES
+      "Blocs miroir",                             // FR
+      "Aynalanmış bloklar" };                     // TR
+
+    public static readonly string[] MirroredTip = {
+      "Show a special mirror icon for mirrored assemblies and add <Mirror> after the name of all mirrored blocks.",
+      "Показывать специальный зеркальный значок у отзеркаленных сборок и всем отзеркаленным блокам добавлять после имени <Зеркальный>.",
+      "Mostra un'icona a specchio speciale per gli assemblaggi speculari e aggiungi <Mirror> dopo il nome di tutti i blocchi speculari.",
+      "Zeigen Sie ein spezielles Spiegel-Symbol für gespiegelte Baugruppen an und fügen Sie <Mirror> nach dem Namen aller gespiegelten Blöcke hinzu.",
+      "为镜像组件显示一个特殊的镜像图标，并在所有镜像块的名称后添加<Mirror>。",
+      "Mostrar un icono de espejo especial para ensamblajes espejados y agregar <Mirror> después del nombre de todos los bloques espejados.",  // ES
+      "Afficher une icône de miroir spéciale pour les assemblages en miroir et ajouter <Mirror> après le nom de tous les blocs en miroir.",  // FR
+      "Aynalanmış montajlar için özel bir ayna simgesi gösterin ve tüm aynalanmış blokların adından sonra <Mirror> ekleyin." };  // TR
 
     public static string[] LayerFiltersTip = {
       "You can enable this option so that the list of drawing layers is divided into filters and groups, \r\n" +

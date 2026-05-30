@@ -4166,6 +4166,36 @@ namespace AVC
       "Paramètres",
       "Parametreler"};
 
+    public static readonly string[] ParamNames = {
+      "Parameters with names",
+      "Параметры с именами",
+      "Parametri con nomi",
+      "Parameter mit Namen",
+      "带名称的参数",
+      "Parámetros con nombres",
+      "Paramètres avec noms",
+      "Adlı parametreler"};
+
+    public static readonly string[] ParamString = {
+      "Parameters Strings",
+      "Параметры Текстовые",
+      "Parametri con stringhe",
+      "Parameter mit Zeichenfolgen",
+      "带字符串的参数",
+      "Parámetros con cadenas",
+      "Paramètres avec chaînes",
+      "Dize parametreler"};
+
+    public static readonly string[] ParamDistance = {
+      "Parameters Distance",
+      "Параметры длинны",
+      "Parametri con distanze",
+      "Parameter mit Abständen",
+      "带距离的参数",
+      "Parámetros con distancias",
+      "Paramètres avec distances",
+      "Mesafe parametreleri"};
+
     public static readonly string[] Value = {
       "Value",
       "Значение",

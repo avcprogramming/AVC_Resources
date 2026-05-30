@@ -1270,6 +1270,32 @@ namespace AVC
         "Les couleurs ne sont pas personnalisables.",
       "Yeni kenar bandı rengi, kenar kalınlığına göre standart renklerden seçilecektir.  \r\n" +
         "Renkler özelleştirilemez." };
+    public static readonly string[] EditorBorders = {
+      "Editing field boundaries",
+      "Границы полей редактирования",
+      "Confini dei campi di modifica",
+      "Grenzen der Bearbeitungsfelder",
+      "编辑字段边界",
+      "Edición de los límites del campo",
+      "Modification des limites de champ",
+      "Düzenleme alanı sınırları" };
+
+    public static readonly string[] EditorBordersTip = {
+      "Show borders around input fields.   \r\n" +
+        "Disabling this option will allow you to fit many more properties on the screen.",
+      "Показывать рамки вокруг полей ввода.  \r\n " +
+        "При отключении опции на экране поместится гораздо больше свойств.",
+      "Show borders around input fields. Disabling this option will allow you to fit many more properties on the screen.",
+      "Rahmen um Eingabefelder anzeigen.   \r\n" +
+        "Durch Deaktivieren dieser Option können Sie deutlich mehr Eigenschaften auf dem Bildschirm darstellen.",
+      "在输入字段周围显示边框。禁用此选项后，屏幕上可以显示更多属性。",
+      "Mostrar bordes alrededor de los campos de entrada.   \r\n" +
+        "Desactivar esta opción permitirá mostrar muchas más propiedades en la pantalla.",
+      "Afficher les bordures des champs de saisie.   \r\n" +
+        "Désactiver cette option vous permettra d'afficher davantage de propriétés à l'écran.",
+      "Giriş alanlarının etrafına kenarlık ekleyin.   \r\n" +
+        "Bu seçeneği devre dışı bırakmak, ekrana çok daha fazla özellik sığdırmanıza olanak tanır." };
+
 
   }
 }
