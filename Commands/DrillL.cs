@@ -317,7 +317,7 @@ namespace AVC
     public static readonly string[] DeleteHolesTip = {
       "Select whether to remove solid-holes at the end of the Drill program.\r\n" +
          "Solids inside the blocks will remain in any case. The GAP command always preserves subtracted solids.",
-      "Выбелите удалять ли солиды-отверстия в конце работы программы сверления DRI.\r\n" +
+      "Выберите удалять ли солиды-отверстия в конце работы программы сверления DRI.\r\n" +
         "Солиды внутри блоков в любом случае сохранятся. Команда GAP всегда сохраняет вычитаемые солиды.",
       "Seleziona se rimuovere i taglienti alla fine del DRI programma.\r\n" +
          "I solidi all'interno dei blocchi rimarranno comunque. Il comando GAP preserva sempre i solidi sottratti.",

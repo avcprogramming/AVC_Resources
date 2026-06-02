@@ -886,7 +886,7 @@ namespace AVC
       "The object name '{0}' cannot be edited.",
       "Имя объекта '{0}' нельзя редактировать.",
       "Il nome dell'oggetto '{0}' non può essere modificato.",
-      "Der Objektname '{0}' kann nicht bearbeitet werden.",              
+      "Der Objektname '{0}' kann nicht bearbeitet werden.",
       "对象名称“{0}”无法编辑。",
       "El nombre del objeto '{0}' no se puede editar.",
       "Le nom de l'objet '{0}' ne peut pas être modifié.",
