@@ -36,7 +36,7 @@ namespace AVC
         "Espaciado de nervaduras",         // ES
         "Espacement des nervures",         // FR
         "Kaburga aralığı"},                // TR
-/* 4 */ Surface // надо разместить в коде раньше ChopStyleNames потому что инициализация идет по порядку
+/* 4 */ Surface // Surface надо разместить в коде раньше ChopStyleNames потому что инициализация идет по порядку
     };
 
     public static readonly string[] PieceLengthQuery = {
