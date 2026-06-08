@@ -202,16 +202,6 @@ namespace AVC
       "Impossible d'obtenir BRep du solide.",
       "Katıdan BRep alınamıyor."};
 
-    public static readonly string[] ExtentsErr = {
-      "Failed to get the extents of the solid.",
-      "Не удалось получить габариты солида.",
-      "Impossibile ottenere le dimensioni del solido.",
-      "Die Abmessungen des Körpers konnten nicht ermittelt werden",
-      "无法获取三维实体的范围",
-      "No se pudieron obtener las extensiones del sólido.",  // ES
-      "Échec de l'obtention des étendues de la courbe {0}",  // FR
-      "{0} eğrisinin sınırları alınamadı" };  // TR
-
     public static readonly string[] FaceErr = {
       "Can't get Faces from solid.",
       "Не удалось получить грани солида.",

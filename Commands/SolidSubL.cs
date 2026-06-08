@@ -354,22 +354,8 @@ namespace AVC
       "Birleştirme komutu temas eden yüzey ve bölge gruplarını arayacak ve her gruptan bir katı oluşturmaya çalışacaktır.\r\n" +  // TR
         "Mevcut bir katı grupla kesişirse, yeni katının oluşturulmasına da katılacaktır.\r\n" +
         "Bir katı oluşturmak mümkünse, grupla temas eden tüm nesneler silinecektir.\r\n" +
-        "Standart _SurfSculpt komutu benzer şekilde çalışır." };
-
-    public static readonly string[] HideWhenHoleSelecting = {
-      "Hide when selecting subtrahends",
-      "Скрытие при выборе вычитаемых",
-      "Nascondi la prima selezione", };
-
-    public static readonly string[] HideWhenHoleSelectingTip = {
-      "After selecting the source objects, they will become temporarily invisible to make it easier to select the objects to be subtracted.",
-      "После выбора исходных объектов, они станут временно невидимыми для удобства выбора вычитаемых объектов.",
-      "Dopo aver selezionato gli oggetti di origine, diventeranno temporaneamente invisibili per facilitare la selezione degli oggetti da sottrarre.",
-      "Nach der Auswahl der Quellobjekte werden diese vorübergehend unsichtbar, um die Auswahl der zu subtrahierenden Objekte zu erleichtern.",
-      "选择源对象后，它们将变得暂时不可见，以便更容易选择要减去的对象。",
-      "Después de seleccionar los objetos de origen, se volverán temporalmente invisibles para facilitar la selección de los objetos a restar.",  // ES
-      "Après avoir sélectionné les objets source, ils deviendront temporairement invisibles pour faciliter la sélection des objets à soustraire.",  // FR
-      "Kaynak nesneleri seçtikten sonra, çıkarılacak nesneleri seçmeyi kolaylaştırmak için geçici olarak görünmez hale gelirler." };  // TR
+        "Standart _SurfSculpt komutu benzer şekilde çalışır."
+    };
 
     public static readonly string[] FromLargest = {
       "Properties from largest",
