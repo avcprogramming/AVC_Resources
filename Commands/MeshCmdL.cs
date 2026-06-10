@@ -26,54 +26,54 @@ namespace AVC
       "Dönüştürülüyor" };                              // TR
 
     public static string[] Converted = {
-      "  Meshes converted: {0}",
-      "  Преобразовано сетей: {0}",
-      "  Le maglie si sono convertite: {0}",
-      "  Netze konvertiert: {0}",
-      "  转换的网格：{0}",
-      "  Mallas convertidas: {0}",                     // ES
-      "  Maillages convertis : {0}",                   // FR
-      "  Dönüştürülen ağlar: {0}" };                   // TR
+      "✔ Meshes converted: {0}",
+      "✔ Преобразовано сетей: {0}",
+      "✔ Le maglie si sono convertite: {0}",
+      "✔ Netze konvertiert: {0}",
+      "✔ 转换的网格：{0}",
+      "✔ Mallas convertidas: {0}",                     // ES
+      "✔ Maillages convertis : {0}",                   // FR
+      "✔ Dönüştürülen ağlar: {0}" };                   // TR
 
     public static string[] SolidCount = {
-      "  Solids created: {0}",
-      "  Создано солидов: {0}",
-      "  Solido creato: {0}",
-      "  Erstellt von Volumenkörpern: {0}",
-      "  创建的实体：{0}",
-      "  Sólidos creados: {0}",                        // ES
-      "  Solides créés : {0}",                         // FR
-      "  Oluşturulan katılar: {0}" };                  // TR
+      "✔ Solids created: {0}",
+      "✔ Создано солидов: {0}",
+      "✔ Solido creato: {0}",
+      "✔ Erstellt von Volumenkörpern: {0}",
+      "✔ 创建的实体：{0}",
+      "✔ Sólidos creados: {0}",                        // ES
+      "✔ Solides créés : {0}",                         // FR
+      "✔ Oluşturulan katılar: {0}" };                  // TR
 
     public static string[] NoMesh = {
-      "  No mesh. Command canceled",
-      "  Нет сетей. Команда отменена.",
-      "  Nessun Mesh. Comando annullato.",
-      "  Kein Netz. Befehl abgebrochen",
-      "  没有网格。 命令已取消",
-      "  Sin malla. Comando cancelado",                // ES
-      "  Aucun maillage. Commande annulée",            // FR
-      "  Ağ yok. Komut iptal edildi" };                // TR
+      "❌ No mesh. Command canceled",
+      "❌ Нет сетей. Команда отменена.",
+      "❌ Nessun Mesh. Comando annullato.",
+      "❌ Kein Netz. Befehl abgebrochen",
+      "❌ 没有网格。 命令已取消",
+      "❌ Sin malla. Comando cancelado",                // ES
+      "❌ Aucun maillage. Commande annulée",            // FR
+      "❌ Ağ yok. Komut iptal edildi" };                // TR
 
     public static string[] NotConverted = {
-      "  Mesh cannot be converted",
-      "  Не-а! Эту сеть автокад конвертировать не может",
-      "  L'oggetto non può essere convertito",
-      "  Netz kann nicht konvertiert werden!",
-      "  网格无法转换",
-      "  La malla no se puede convertir",              // ES
-      "  Le maillage ne peut pas être converti",       // FR
-      "  Ağ dönüştürülemiyor" };                       // TR
+      "❌  Mesh cannot be converted",
+      "❌  Не-а! Эту сеть автокад конвертировать не может",
+      "❌  L'oggetto non può essere convertito",
+      "❌  Netz kann nicht konvertiert werden!",
+      "❌  网格无法转换",
+      "❌  La malla no se puede convertir",              // ES
+      "❌  Le maillage ne peut pas être converti",       // FR
+      "❌  Ağ dönüştürülemiyor" };                       // TR
 
     public static string[] NotClosed = {
-      "  Mesh is not closed or cannot be converted",
-      "  Сеть не замкнута или невозможно конвертировать",
-      "  La Mesh non è chiusa o non può essere convertita",
-      "  Das Netz ist nicht geschlossen oder kann nicht konvertiert werden",
-      "  网格未闭合或无法转换",
-      "  La malla no está cerrada o no se puede convertir",  // ES
-      "  Le maillage n'est pas fermé ou ne peut pas être converti",  // FR
-      "  Ağ kapalı değil veya dönüştürülemiyor" };    // TR
+      "❌  Mesh is not closed or cannot be converted",
+      "❌  Сеть не замкнута или невозможно конвертировать",
+      "❌  La Mesh non è chiusa o non può essere convertita",
+      "❌  Das Netz ist nicht geschlossen oder kann nicht konvertiert werden",
+      "❌  网格未闭合或无法转换",
+      "❌  La malla no está cerrada o no se puede convertir",  // ES
+      "❌  Le maillage n'est pas fermé ou ne peut pas être converti",  // FR
+      "❌  Ağ kapalı değil veya dönüştürülemiyor" };    // TR
 
     public static string[] Merge = {
       "Merge meshes",
@@ -86,14 +86,14 @@ namespace AVC
       "Ağları birleştir" };                            // TR
 
     public static string[] NotCombined = {
-      "Failed to join polygon mesh",
-      "Не удалось присоединить полигональную сеть",
-      "Impossibile unire la mesh poligonale",
-      "Polygonnetz konnte nicht verbunden werden",
-      "无法加入多边形网格",
-      "No se pudo unir la malla poligonal",            // ES
-      "Échec de la jonction du maillage polygonal",    // FR
-      "Çokgen ağı birleştirilemedi" };                 // TR
+      "❌ Failed to join polygon mesh",
+      "❌ Не удалось присоединить полигональную сеть",
+      "❌ Impossibile unire la mesh poligonale",
+      "❌ Polygonnetz konnte nicht verbunden werden",
+      "❌ 无法加入多边形网格",
+      "❌ No se pudo unir la malla poligonal",            // ES
+      "❌ Échec de la jonction du maillage polygonal",    // FR
+      "❌ Çokgen ağı birleştirilemedi" };                 // TR
 
     // =============================================== MeshToSolidOptionsBox ============================================================
 

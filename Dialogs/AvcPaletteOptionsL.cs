@@ -33,6 +33,16 @@ namespace AVC
       "Un double-clic ne laissera sélectionné que ce type d'objet",
       "Çift tıklama yalnızca o nesne türünü seçili bırakır"};
 
+    public static readonly string[] ZoomTip = {
+      "Remove all object types from the selection except these. And, if configured, zoom the screen to the remaining objects.",
+      "Удалить из выбора все типы объектов, кроме этих. И, если настроено, то сделать зум экрана на оставшиеся объекты.",
+      "Rimuove dalla selezione tutti i tipi di oggetti tranne questi. E, se configurato, esegue lo zoom sugli oggetti rimanenti.",
+      "Entfernt alle Objekttypen außer diesen aus der Auswahl. Und, wenn eingestellt, wird auf die verbleibenden Objekte gezoomt.",
+      "从选择中删除除这些以外的所有对象类型。并且，如果设置了，则对剩余对象进行缩放。",
+      "Elimina de la selección todos los tipos de objetos excepto estos. Y, si está configurado, hace zoom en los objetos restantes.",
+      "Supprime de la sélection tous les types d'objets sauf ceux-ci. Et, si configuré, effectue un zoom sur les objets restants.",
+      "Bu nesne türleri hariç tüm nesne türlerini seçimden kaldırır. Ve, yapılandırılmışsa, kalan nesnelere yakınlaştırır."};
+
     public static readonly string[] DuplicateKeyErr = {
       "The name {0} has already been used.",
       "Имя {0} уже использовано.",

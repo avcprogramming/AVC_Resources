@@ -64,14 +64,14 @@ namespace AVC
     /// Только для кнопок и сообщений ✅. Для опций команд есть CmdLineL.OkKW
     /// </summary>
     public static readonly string[] Ok = {
-      "✅ Ok",
-      "✅ ОК",
-      "✅ Ok",
-      "✅ OK",
-      "✅ 确定",
-      "✅ Aceptar",
-      "✅ OK",
-      "✅ Tamam"};
+      "✔ Ok",
+      "✔ ОК",
+      "✔ Ok",
+      "✔ OK",
+      "✔ 确定",
+      "✔ Aceptar",
+      "✔ OK",
+      "✔ Tamam"};
 
     /// <summary>
     /// Для кнопок. Для опций команд есть CmdLineL.Cancel ❌
@@ -159,34 +159,34 @@ namespace AVC
       "Yükleniyor..."};
 
     public static readonly string[] Loaded = {
-      "✅ Loaded",
-      "✅ Загружено",
-      "✅ Caricato",
-      "✅ Geladen",
-      "✅ 已加载",
-      "✅ Cargado",
-      "✅ Chargé",
-      "✅ Yüklendi"};
+      "✔ Loaded",
+      "✔ Загружено",
+      "✔ Caricato",
+      "✔ Geladen",
+      "✔ 已加载",
+      "✔ Cargado",
+      "✔ Chargé",
+      "✔ Yüklendi"};
 
     public static readonly string[] Done = {
-      "✅ Done.",
-      "✅ Готово.",
-      "✅ Fatto.",
-      "✅ Getan.",
-      "✅ 完成。",
-      "✅ Hecho.",
-      "✅ Terminé.",
-      "✅ Tamamlandı."};
+      "✔ Done.",
+      "✔ Готово.",
+      "✔ Fatto.",
+      "✔ Getan.",
+      "✔ 完成。",
+      "✔ Hecho.",
+      "✔ Terminé.",
+      "✔ Tamamlandı."};
 
     public static readonly string[] ProcessCompleted = {
-      "✅ Process completed: {0}.",
-      "✅ Закончен процесс: {0}.",
-      "✅ Processo completato: {0}.",
-      "✅ Prozess abgeschlossen: {0}.",
-      "✅ 进程完成：{0}。",
-      "✅ Proceso completado: {0}.",
-      "✅ Processus terminé: {0}.",
-      "✅ İşlem tamamlandı: {0}."};
+      "✔ Process completed: {0}.",
+      "✔ Закончен процесс: {0}.",
+      "✔ Processo completato: {0}.",
+      "✔ Prozess abgeschlossen: {0}.",
+      "✔ 进程完成：{0}。",
+      "✔ Proceso completado: {0}.",
+      "✔ Processus terminé: {0}.",
+      "✔ İşlem tamamlandı: {0}."};
 
     public static readonly string[] All = {
       "All",
@@ -385,35 +385,45 @@ namespace AVC
       "Traitement",
       "İşleniyor"};
 
+    public static readonly string[] Distribution = {
+      "Distribution of primitives by types",
+      "Распределение примитивов по типам",
+      "Distribuzione delle primitive per tipi",
+      "Verteilung der Primitives nach Typen",
+      "按类型分布的原始数据",
+      "Distribución de primitivas por tipos",
+      "Distribution des primitives par types",
+      "Türlere göre primitiflerin dağılımı"};
+
     public static readonly string[] ProcessedParts = {
-      "✅ Processed {0} parts in {1}s",
-      "✅ Обработано {0} деталей за {1}с",
-      "✅ {0} parti elaborate in {1}s",
-      "✅ Verarbeitete {0} Teile in {1} Sekunden",
-      "✅ 在 {1} 秒内处理了 {0} 个对象",
-      "✅ Procesadas {0} piezas en {1}s",
-      "✅ {0} pièces traitées en {1}s",
-      "✅ {1} saniyede {0} parça işlendi"};
+      "✔ Processed {0} parts in {1}s",
+      "✔ Обработано {0} деталей за {1}с",
+      "✔ {0} parti elaborate in {1}s",
+      "✔ Verarbeitete {0} Teile in {1} Sekunden",
+      "✔ 在 {1} 秒内处理了 {0} 个对象",
+      "✔ Procesadas {0} piezas en {1}s",
+      "✔ {0} pièces traitées en {1}s",
+      "✔ {1} saniyede {0} parça işlendi"};
 
     public static readonly string[] ProcessedObjects = {
-      "✅ Processed {0} objects in {1}s",
-      "✅ Обработано {0} объектов за {1}с",
-      "✅ {0} oggetti elaborati in {1} s",
-      "✅ Verarbeitete {0} Objekte in {1}s",
-      "✅ 在 {1} 秒内处理了 {0} 个对象",
-      "✅ Procesados {0} objetos en {1}s",
-      "✅ {0} objets traités en {1}s",
-      "✅ {1} saniyede {0} nesne işlendi"};
+      "✔ Processed {0} objects in {1}s",
+      "✔ Обработано {0} объектов за {1}с",
+      "✔ {0} oggetti elaborati in {1} s",
+      "✔ Verarbeitete {0} Objekte in {1}s",
+      "✔ 在 {1} 秒内处理了 {0} 个对象",
+      "✔ Procesados {0} objetos en {1}s",
+      "✔ {0} objets traités en {1}s",
+      "✔ {1} saniyede {0} nesne işlendi"};
 
     public static readonly string[] CreatedObjects = {
-      "✅ {0} objects created in {1}s",
-      "✅ Создано {0} объектов(а) за {1}с",
-      "✅ {0} oggetti creati in {1} secondi",
-      "✅ {0} Objekte in {1} Sekunden erstellt",
-      "✅ {1} 秒内创建 {0} 个对象",
-      "✅ {0} objetos creados en {1}s",
-      "✅ {0} objets créés en {1}s",
-      "✅ {1} saniyede {0} nesne oluşturuldu"};
+      "✔ {0} objects created in {1}s",
+      "✔ Создано {0} объектов(а) за {1}с",
+      "✔ {0} oggetti creati in {1} secondi",
+      "✔ {0} Objekte in {1} Sekunden erstellt",
+      "✔ {1} 秒内创建 {0} 个对象",
+      "✔ {0} objetos creados en {1}s",
+      "✔ {0} objets créés en {1}s",
+      "✔ {1} saniyede {0} nesne oluşturuldu"};
 
     public static readonly string[] Saving = {
       "Saving changes",

@@ -112,32 +112,32 @@ namespace AVC
       "  Choisissez un point sur le bord où la première coupe sera effectuée",  // FR
       "  İlk kesimin yapılacağı kenarda bir nokta seçin"};  // TR
     public static readonly string[] CutSolidErr = {
-      "❌ Could not cut the solid.",
-      "❌ Невозможно разрезать солид.",
-      "❌ Impossibile tagliare le parti",
-      "❌ Teile können nicht geschnitten werden",
-      "❌ 无法切割实体.",
-      "❌ No se pudo cortar el sólido.",  // ES
-      "❌ Impossible de couper le solide.",  // FR
-      "❌ Katı kesilemedi." };  // TR
+      "⚠️ Could not cut the solid.",
+      "⚠️ Невозможно разрезать солид.",
+      "⚠️ Impossibile tagliare le parti",
+      "⚠️ Teile können nicht geschnitten werden",
+      "⚠️ 无法切割实体.",
+      "⚠️ No se pudo cortar el sólido.",  // ES
+      "⚠️ Impossible de couper le solide.",  // FR
+      "⚠️ Katı kesilemedi." };  // TR
     public static readonly string[] CutErr = {
-      "❌ Failed to make cut number #{0}.",
-      "❌ Не удалось сделать разрез номер {0}.",
-      "❌ Impossibile eseguire il taglio numero #{0}.",
-      "❌ Fehler beim Ausführen des Schnitts Nummer #{0}.",
-      "❌ 无法进行第 #{0} 次切割。",
-      "❌ No se pudo realizar el corte número #{0}.",  // ES
-      "❌ Impossible d'effectuer la coupe numéro #{0}.",  // FR
-      "❌ #{0} numaralı kesim yapılamadı." };  // TR
+      "⚠️ Failed to make cut number #{0}.",
+      "⚠️ Не удалось сделать разрез номер {0}.",
+      "⚠️ Impossibile eseguire il taglio numero #{0}.",
+      "⚠️ Fehler beim Ausführen des Schnitts Nummer #{0}.",
+      "⚠️ 无法进行第 #{0} 次切割。",
+      "⚠️ No se pudo realizar el corte número #{0}.",  // ES
+      "⚠️ Impossible d'effectuer la coupe numéro #{0}.",  // FR
+      "⚠️ #{0} numaralı kesim yapılamadı." };  // TR
     public static readonly string[] SurfaceToSmallErr = {
-      "❌ The cutting surface is smaller than the solid surface. It won't cut.",
-      "❌ Габариты режущей поверхности меньше габаритов солида. Разрезать не получится.",
-      "❌ La superficie di taglio è più piccola della superficie del solido. Non taglierà.",
-      "❌ Die Schneidfläche ist kleiner als die Oberfläche des Volumenkörpers. Es wird nicht schneiden.",
-      "❌ 切割面小于实体表面。它不会切割。",
-      "❌ La superficie de corte es más pequeña que la superficie del sólido. No cortará.",  // ES
-      "❌ La surface de coupe est plus petite que la surface du solide. Il ne coupera pas.",  // FR
-      "❌ Kesme yüzeyi, katının yüzeyinden daha küçük. Kesmeyecek." };  // TR
+      "⚠️ The cutting surface is smaller than the solid surface. It won't cut.",
+      "⚠️ Габариты режущей поверхности меньше габаритов солида. Разрезать не получится.",
+      "⚠️ La superficie di taglio è più piccola della superficie del solido. Non taglierà.",
+      "⚠️ Die Schneidfläche ist kleiner als die Oberfläche des Volumenkörpers. Es wird nicht schneiden.",
+      "⚠️ 切割面小于实体表面。它不会切割。",
+      "⚠️ La superficie de corte es más pequeña que la superficie del sólido. No cortará.",  // ES
+      "⚠️ La surface de coupe est plus petite que la surface du solide. Il ne coupera pas.",  // FR
+      "⚠️ Kesme yüzeyi, katının yüzeyinden daha küçük. Kesmeyecek." };  // TR
     public static readonly string[] Piece = {
       "Piece",
       "Дольки",
@@ -249,14 +249,14 @@ namespace AVC
       "Merdiven basamaklı katılar oluşturuluyor..." };  // TR
 
     public static readonly string[] StStErr = {
-      "❌ Failed to make stair-step solid.",
-      "❌ Не получилось сделать ступенчатый солид.",
-      "❌ Non ha funzionato per fare una parte a gradini.",
-      "❌ Es hat nicht geklappt, einen abgestuften Teil zu machen.",
-      "❌ 无法制作阶梯实体。",
-      "❌ No se pudo crear el sólido escalonado.",  // ES
-      "❌ Échec de la création du solide en escalier.",  // FR
-      "❌ Merdiven basamaklı katı oluşturulamadı." };  // TR
+      "⚠️ Failed to make stair-step solid.",
+      "⚠️ Не получилось сделать ступенчатый солид.",
+      "⚠️ Non ha funzionato per fare una parte a gradini.",
+      "⚠️ Es hat nicht geklappt, einen abgestuften Teil zu machen.",
+      "⚠️ 无法制作阶梯实体。",
+      "⚠️ No se pudo crear el sólido escalonado.",  // ES
+      "⚠️ Échec de la création du solide en escalier.",  // FR
+      "⚠️ Merdiven basamaklı katı oluşturulamadı." };  // TR
 
     public static readonly string[] DoubleCrossingWarning = {
       "⚠️ The edge is bent so that it crosses the cutting plane twice.\r\n" +
@@ -277,28 +277,28 @@ namespace AVC
         "Sonuç olarak, gereksiz parçalar/kaburgalar oluştu." };
 
     public static readonly string[] CutTwiceErr = {
-      "❌ Could not make the cut.\n" +
+      "⚠️ Could not make the cut.\n" +
         "The edge is bent so that it crosses the cutting plane twice.\n" +
         "It is recommended to divide the solid before.",
-      "❌ Не удалось сделать разрез.\n" +
+      "⚠️ Не удалось сделать разрез.\n" +
         "Тело изогнуто так, что плоскость реза пересекает его дважды\n" +
         "Рекомендуется разделить солид вручную.",
-      "❌ Impossibile eseguire un taglio.\n" +
+      "⚠️ Impossibile eseguire un taglio.\n" +
         "Il corpo è piegato in modo che il piano di taglio lo intersechi due volte\n" +
         "Si consiglia di dividere il solido manualmente.",
-      "❌ Es konnte kein Schnitt ausgeführt werden.\n" +
+      "⚠️ Es konnte kein Schnitt ausgeführt werden.\n" +
         "Der Volumenkörper ist so gebogen, dass die Schnittebene ihn zweimal schneidet\n" +
         "Es wird empfohlen, den Volumenkörper manuell zu teilen.",
-      "❌ 无法进行切割。\n" +
+      "⚠️ 无法进行切割。\n" +
         "因为边缘弯曲，使得切割面两次穿过它。\n" +
         "建议手动分割实体。",
-      "❌ No se pudo realizar el corte.\n" +  // ES
+      "⚠️ No se pudo realizar el corte.\n" +  // ES
         "El borde está doblado de modo que cruza el plano de corte dos veces.\n" +
         "Se recomienda dividir el sólido antes.",
-      "❌ Impossible d'effectuer la coupe.\n" +  // FR
+      "⚠️ Impossible d'effectuer la coupe.\n" +  // FR
         "Le bord est plié de sorte qu'il traverse le plan de coupe deux fois.\n" +
         "Il est recommandé de diviser le solide avant.",
-      "❌ Kesim yapılamadı.\n" +  // TR
+      "⚠️ Kesim yapılamadı.\n" +  // TR
         "Kenar, kesim düzlemini iki kez geçecek şekilde bükülmüş.\n" +
         "Katıyı önceden bölmek önerilir."};
 
@@ -343,24 +343,24 @@ namespace AVC
       "  Bu yerde kesilecek bir şey yok." };  // TR
 
     public static readonly string[] StubErr = {
-      "❌ Could not calculate stub. {0}",
-      "❌ Невозможно вычислить обрезки. {0}",
-      "❌ Impossibile calcolare il ritaglio. {0}",
-      "❌ Ernte kann nicht berechnet werden. {0}",
-      "❌ 无法计算残余部分。 {0}",
-      "❌ No se pudo calcular el residuo. {0}",  // ES
-      "❌ Impossible de calculer le reste. {0}",  // FR
-      "❌ Kırpıntı hesaplanamadı. {0}" };  // TR
+      "⚠️ Could not calculate stub. {0}",
+      "⚠️ Невозможно вычислить обрезки. {0}",
+      "⚠️ Impossibile calcolare il ritaglio. {0}",
+      "⚠️ Ernte kann nicht berechnet werden. {0}",
+      "⚠️ 无法计算残余部分。 {0}",
+      "⚠️ No se pudo calcular el residuo. {0}",  // ES
+      "⚠️ Impossible de calculer le reste. {0}",  // FR
+      "⚠️ Kırpıntı hesaplanamadı. {0}" };  // TR
 
     public static readonly string[] CutRibErr = {
-      "❌ Failed to cut rib",
-      "❌ Невозможно вырезать ребро.",
-      "❌ Impossibile tagliare le costole.",
-      "❌ Rippe kann nicht geschnitten werden.",
-      "❌ 无法切割肋骨",
-      "❌ No se pudo cortar la nervadura",  // ES
-      "❌ Échec de la coupe de la nervure",  // FR
-      "❌ Kaburga kesilemedi" };  // TR
+      "⚠️ Failed to cut rib",
+      "⚠️ Невозможно вырезать ребро.",
+      "⚠️ Impossibile tagliare le costole.",
+      "⚠️ Rippe kann nicht geschnitten werden.",
+      "⚠️ 无法切割肋骨",
+      "⚠️ No se pudo cortar la nervadura",  // ES
+      "⚠️ Échec de la coupe de la nervure",  // FR
+      "⚠️ Kaburga kesilemedi" };  // TR
 
     public static readonly string[] PieceNameTemplate = {
       "'Piece'00",
@@ -393,99 +393,99 @@ namespace AVC
       "  Geçerli ayarlar: Boşluk = {0}" };  // TR
 
     public static readonly string[] PointOnEdgeErr = {
-      "❌ Start point does not belong to an edge",
-      "❌ Стартовая точка не принадлежит ребру",
-      "❌ Il punto iniziale non appartiene a uno spigolo",
-      "❌ Startpunkt gehört nicht zu einer Kante",
-      "❌ 起点不属于边缘。",
-      "❌ El punto de inicio no pertenece a un borde",  // ES
-      "❌ Le point de départ n'appartient pas à un bord",  // FR
-      "❌ Başlangıç noktası bir kenara ait değil" };  // TR
+      "⚠️ Start point does not belong to an edge",
+      "⚠️ Стартовая точка не принадлежит ребру",
+      "⚠️ Il punto iniziale non appartiene a uno spigolo",
+      "⚠️ Startpunkt gehört nicht zu einer Kante",
+      "⚠️ 起点不属于边缘。",
+      "⚠️ El punto de inicio no pertenece a un borde",  // ES
+      "⚠️ Le point de départ n'appartient pas à un bord",  // FR
+      "⚠️ Başlangıç noktası bir kenara ait değil" };  // TR
 
     public static readonly string[] TooSmallSolidErr = {
-      "❌ Part or edge too small to cut",
-      "❌ Деталь или ребро слишком маленькое для разрезания",
-      "❌ Parte o bordo troppo piccolo per essere tagliato",
-      "❌ Teil oder Kante zu klein zum Schneiden",
-      "❌ 零件或边缘太小,无法切割",
-      "❌ Pieza o borde demasiado pequeño para cortar",  // ES
-      "❌ Pièce ou bord trop petit pour couper",  // FR
-      "❌ Parça veya kenar kesmek için çok küçük" };  // TR
+      "⚠️ Part or edge too small to cut",
+      "⚠️ Деталь или ребро слишком маленькое для разрезания",
+      "⚠️ Parte o bordo troppo piccolo per essere tagliato",
+      "⚠️ Teil oder Kante zu klein zum Schneiden",
+      "⚠️ 零件或边缘太小,无法切割",
+      "⚠️ Pieza o borde demasiado pequeño para cortar",  // ES
+      "⚠️ Pièce ou bord trop petit pour couper",  // FR
+      "⚠️ Parça veya kenar kesmek için çok küçük" };  // TR
 
     public static readonly string[] TooManyPiecesErr = {
-      "❌ Too many part cuts configured",
-      "❌ Настроено слишком большое количество разрезов детали",
-      "❌ Troppi tagli di pezzi configurati",
-      "❌ Zu viele Teilschnitte konfiguriert",
-      "❌ 配置的零件切割太多",
-      "❌ Demasiados cortes de piezas configurados",  // ES
-      "❌ Trop de coupes de pièces configurées",  // FR
-      "❌ Çok fazla parça kesimi yapılandırıldı" };  // TR
+      "⚠️ Too many part cuts configured",
+      "⚠️ Настроено слишком большое количество разрезов детали",
+      "⚠️ Troppi tagli di pezzi configurati",
+      "⚠️ Zu viele Teilschnitte konfiguriert",
+      "⚠️ 配置的零件切割太多",
+      "⚠️ Demasiados cortes de piezas configurados",  // ES
+      "⚠️ Trop de coupes de pièces configurées",  // FR
+      "⚠️ Çok fazla parça kesimi yapılandırıldı" };  // TR
     public static readonly string[] TooBigMaxStepErr = {
-      "❌ The maximum allowable step is set greater than the part itself",
-      "❌ Задан максимально допустимый шаг больше чем сама деталь",
-      "❌ Il passo massimo consentito è impostato maggiore del pezzo stesso",
-      "❌ Der maximal zulässige Schritt ist größer eingestellt als das Teil selbst",
-      "❌ 最大允许步长设置大于部件本身",
-      "❌ El paso máximo permitido está configurado mayor que la pieza misma",  // ES
-      "❌ Le pas maximal autorisé est défini plus grand que la pièce elle-même",  // FR
-      "❌ Maksimum izin verilen adım parçanın kendisinden daha büyük ayarlanmış" };  // TR
+      "⚠️ The maximum allowable step is set greater than the part itself",
+      "⚠️ Задан максимально допустимый шаг больше чем сама деталь",
+      "⚠️ Il passo massimo consentito è impostato maggiore del pezzo stesso",
+      "⚠️ Der maximal zulässige Schritt ist größer eingestellt als das Teil selbst",
+      "⚠️ 最大允许步长设置大于部件本身",
+      "⚠️ El paso máximo permitido está configurado mayor que la pieza misma",  // ES
+      "⚠️ Le pas maximal autorisé est défini plus grand que la pièce elle-même",  // FR
+      "⚠️ Maksimum izin verilen adım parçanın kendisinden daha büyük ayarlanmış" };  // TR
     public static readonly string[] TooSmallMaxStepErr = {
-      "❌ Max step too small",
-      "❌ Максимальный шаг слишком мал",
-      "❌ Passo massimo troppo piccolo",
-      "❌ Max. Schritt zu klein",
-      "❌ 最大步长太小",
-      "❌ Paso máximo demasiado pequeño",  // ES
-      "❌ Pas maximal trop petit",  // FR
-      "❌ Maksimum adım çok küçük" };  // TR
+      "⚠️ Max step too small",
+      "⚠️ Максимальный шаг слишком мал",
+      "⚠️ Passo massimo troppo piccolo",
+      "⚠️ Max. Schritt zu klein",
+      "⚠️ 最大步长太小",
+      "⚠️ Paso máximo demasiado pequeño",  // ES
+      "⚠️ Pas maximal trop petit",  // FR
+      "⚠️ Maksimum adım çok küçük" };  // TR
     public static readonly string[] NumberOfPiecesErr = {
-      "❌ The number of pieces must be greater than or equal to two",
-      "❌ Количество долек должно быть больше или равно двум",
-      "❌ Il numero di fette deve essere maggiore o uguale a due",
-      "❌ Die Anzahl der Slices muss größer oder gleich zwei sein",
-      "❌ 切片的数量必须大于或等于两个",
-      "❌ El número de piezas debe ser mayor o igual a dos",  // ES
-      "❌ Le nombre de pièces doit être supérieur ou égal à deux",  // FR
-      "❌ Parça sayısı ikiden büyük veya eşit olmalıdır" };  // TR
+      "⚠️ The number of pieces must be greater than or equal to two",
+      "⚠️ Количество долек должно быть больше или равно двум",
+      "⚠️ Il numero di fette deve essere maggiore o uguale a due",
+      "⚠️ Die Anzahl der Slices muss größer oder gleich zwei sein",
+      "⚠️ 切片的数量必须大于或等于两个",
+      "⚠️ El número de piezas debe ser mayor o igual a dos",  // ES
+      "⚠️ Le nombre de pièces doit être supérieur ou égal à deux",  // FR
+      "⚠️ Parça sayısı ikiden büyük veya eşit olmalıdır" };  // TR
     public static readonly string[] TooBigGapErr = {
-      "❌ You won't be able to make cuts with such a huge gap.",
-      "❌ Не получится сделать разрезы с таким огромным зазором",
-      "❌ Non sarai in grado di fare tagli con un divario così grande.",
-      "❌ Mit einem so großen Abstand werden Sie keine Schnitte machen können.",
-      "❌ 这么大的间隙无法进行切割。",
-      "❌ No podrá realizar cortes con un espacio tan grande.",  // ES
-      "❌ Vous ne pourrez pas effectuer de coupes avec un écart aussi important.",  // FR
-      "❌ Bu kadar büyük bir boşlukla kesim yapamazsınız." };  // TR
+      "⚠️ You won't be able to make cuts with such a huge gap.",
+      "⚠️ Не получится сделать разрезы с таким огромным зазором",
+      "⚠️ Non sarai in grado di fare tagli con un divario così grande.",
+      "⚠️ Mit einem so großen Abstand werden Sie keine Schnitte machen können.",
+      "⚠️ 这么大的间隙无法进行切割。",
+      "⚠️ No podrá realizar cortes con un espacio tan grande.",  // ES
+      "⚠️ Vous ne pourrez pas effectuer de coupes avec un écart aussi important.",  // FR
+      "⚠️ Bu kadar büyük bir boşlukla kesim yapamazsınız." };  // TR
     public static readonly string[] TooBigRibErr = {
-      "❌ It will not be possible to arrange such thick ribs",
-      "❌ Не получится расставить такие толстые рёбра",
-      "❌ Non sarà possibile disporre costole così spesse",
-      "❌ Es wird nicht möglich sein, so dicke Rippen anzuordnen",
-      "❌ 无法安排这么厚的肋骨。",
-      "❌ No será posible organizar nervaduras tan gruesas",  // ES
-      "❌ Il ne sera pas possible d'organiser des nervures aussi épaisses",  // FR
-      "❌ Bu kadar kalın kaburgaları düzenlemek mümkün olmayacak" };  // TR
+      "⚠️ It will not be possible to arrange such thick ribs",
+      "⚠️ Не получится расставить такие толстые рёбра",
+      "⚠️ Non sarà possibile disporre costole così spesse",
+      "⚠️ Es wird nicht möglich sein, so dicke Rippen anzuordnen",
+      "⚠️ 无法安排这么厚的肋骨。",
+      "⚠️ No será posible organizar nervaduras tan gruesas",  // ES
+      "⚠️ Il ne sera pas possible d'organiser des nervures aussi épaisses",  // FR
+      "⚠️ Bu kadar kalın kaburgaları düzenlemek mümkün olmayacak" };  // TR
 
     public static readonly string[] TooShortStepErr = {
-      "❌ With these settings, the cut slices will be too small.",
-      "❌ При таких настройках разрезанные дольки будут слишком мелкие",
-      "❌ Con queste impostazioni, le fette tagliate saranno troppo piccole.",
-      "❌ Mit diesen Einstellungen werden die geschnittenen Scheiben zu klein.",
-      "❌ 使用这些设置，切片会太小。",
-      "❌ Con esta configuración, las rebanadas cortadas serán demasiado pequeñas.",  // ES
-      "❌ Avec ces paramètres, les tranches coupées seront trop petites.",  // FR
-      "❌ Bu ayarlarla, kesilen dilimler çok küçük olacak." };  // TR
+      "⚠️ With these settings, the cut slices will be too small.",
+      "⚠️ При таких настройках разрезанные дольки будут слишком мелкие",
+      "⚠️ Con queste impostazioni, le fette tagliate saranno troppo piccole.",
+      "⚠️ Mit diesen Einstellungen werden die geschnittenen Scheiben zu klein.",
+      "⚠️ 使用这些设置，切片会太小。",
+      "⚠️ Con esta configuración, las rebanadas cortadas serán demasiado pequeñas.",  // ES
+      "⚠️ Avec ces paramètres, les tranches coupées seront trop petites.",  // FR
+      "⚠️ Bu ayarlarla, kesilen dilimler çok küçük olacak." };  // TR
 
     public static readonly string[] TooBigStepErr = {
-      "❌ Slicing step set too large",
-      "❌ Настроен слишком большой шаг нарезки",
-      "❌ Passo di taglio impostato troppo alto",
-      "❌ Chopping-Pitch zu hoch eingestellt",
-      "❌ 切片步长设置过大",
-      "❌ Paso de corte configurado demasiado grande",  // ES
-      "❌ Pas de découpe défini trop grand",  // FR
-      "❌ Kesim adımı çok büyük ayarlanmış" };  // TR
+      "⚠️ Slicing step set too large",
+      "⚠️ Настроен слишком большой шаг нарезки",
+      "⚠️ Passo di taglio impostato troppo alto",
+      "⚠️ Chopping-Pitch zu hoch eingestellt",
+      "⚠️ 切片步长设置过大",
+      "⚠️ Paso de corte configurado demasiado grande",  // ES
+      "⚠️ Pas de découpe défini trop grand",  // FR
+      "⚠️ Kesim adımı çok büyük ayarlanmış" };  // TR
 
     public static readonly string[] Repair = {
       "Try to repair the solid using the DMAUDIT command",
@@ -498,44 +498,44 @@ namespace AVC
       "DMAUDIT komutunu kullanarak katıyı onarmayı deneyin" };  // TR
 
     public static readonly string[] UnionErr = {
-      "❌ Unable to merge parts on redundant cuts. Error {0}",
-      "❌ Не удалось объединить части на лишних разрезах. Ошибка {0}",
-      "❌ Impossibile unire le parti su tagli ridondanti. Errore {0}",
-      "❌ Fehler beim Zusammenführen von Teilen bei redundanten Schnitten. Fehler {0}",
-      "❌ 无法在冗余切割上合并零件。错误 {0}",
-      "❌ No se pudo fusionar las partes en cortes redundantes. Error {0}",     // ES
-      "❌ Impossible de fusionner les parties sur des coupes redondantes. Erreur {0}",  // FR
-      "❌ Yinelenen kesimlerde parçaları birleştirme başarısız oldu. Hata {0}"};  // TR
+      "⚠️ Unable to merge parts on redundant cuts. Error {0}",
+      "⚠️ Не удалось объединить части на лишних разрезах. Ошибка {0}",
+      "⚠️ Impossibile unire le parti su tagli ridondanti. Errore {0}",
+      "⚠️ Fehler beim Zusammenführen von Teilen bei redundanten Schnitten. Fehler {0}",
+      "⚠️ 无法在冗余切割上合并零件。错误 {0}",
+      "⚠️ No se pudo fusionar las partes en cortes redundantes. Error {0}",     // ES
+      "⚠️ Impossible de fusionner les parties sur des coupes redondantes. Erreur {0}",  // FR
+      "⚠️ Yinelenen kesimlerde parçaları birleştirme başarısız oldu. Hata {0}"};  // TR
 
     public static readonly string[] FreeSegmentErr = {
-      "❌ The scrap could not be attached to any part.",
-      "❌ Обрезок не удалось присоединить ни к одной части.",
-      "❌ Il ritaglio non è stato possibile allegare a nessuna parte.",
-      "❌ Der Abfall konnte nicht an ein Teil angehängt werden.",
-      "❌ 无法将废料附加到任何部分。",
-      "❌ No se pudo adjuntar el desperdicio a ninguna parte.",  // ES
-      "❌ Impossible de joindre le déchet à une partie.",  // FR
-      "❌ Atık herhangi bir parçaya eklenemedi."};  // TR
+      "⚠️ The scrap could not be attached to any part.",
+      "⚠️ Обрезок не удалось присоединить ни к одной части.",
+      "⚠️ Il ritaglio non è stato possibile allegare a nessuna parte.",
+      "⚠️ Der Abfall konnte nicht an ein Teil angehängt werden.",
+      "⚠️ 无法将废料附加到任何部分。",
+      "⚠️ No se pudo adjuntar el desperdicio a ninguna parte.",  // ES
+      "⚠️ Impossible de joindre le déchet à une partie.",  // FR
+      "⚠️ Atık herhangi bir parçaya eklenemedi."};  // TR
 
     public static readonly string[] CurveLengthErr = {
-      "❌ Unable to measure the edge length. Use a different edge.",
-      "❌ Не удалось померить длину ребра. Используйте другое ребро.",
-      "❌ Impossibile misurare la lunghezza del bordo. Usa un bordo diverso.",
-      "❌ Kantenlänge konnte nicht gemessen werden. Verwenden Sie eine andere Kante.",
-      "❌ 无法测量边缘长度。使用不同的边缘。",
-      "❌ No se pudo medir la longitud del borde. Use un borde diferente.",  // ES
-      "❌ Impossible de mesurer la longueur du bord. Utilisez un bord différent.",  // FR
-      "❌ Kenar uzunluğu ölçülemedi. Farklı bir kenar kullanın."};  // TR
+      "⚠️ Unable to measure the edge length. Use a different edge.",
+      "⚠️ Не удалось померить длину ребра. Используйте другое ребро.",
+      "⚠️ Impossibile misurare la lunghezza del bordo. Usa un bordo diverso.",
+      "⚠️ Kantenlänge konnte nicht gemessen werden. Verwenden Sie eine andere Kante.",
+      "⚠️ 无法测量边缘长度。使用不同的边缘。",
+      "⚠️ No se pudo medir la longitud del borde. Use un borde diferente.",  // ES
+      "⚠️ Impossible de mesurer la longueur du bord. Utilisez un bord différent.",  // FR
+      "⚠️ Kenar uzunluğu ölçülemedi. Farklı bir kenar kullanın."};  // TR
 
     public static readonly string[] NeedSurfaceErr = {
-      "❌ You need to select an object of type Surface",
-      "❌ Нужно выбрать объект типа Поверхность",
-      "❌ È necessario selezionare un oggetto di tipo Superficie",
-      "❌ Sie müssen ein Objekt vom Typ Oberfläche auswählen",
-      "❌ 您需要选择一个 Surface (表面) 类型的对象。",
-      "❌ Necesita seleccionar un objeto de tipo Superficie",  // ES
-      "❌ Vous devez sélectionner un objet de type Surface",  // FR
-      "❌ Bir Yüzey türünde nesne seçmeniz gerekiyor" };  // TR
+      "⚠️ You need to select an object of type Surface",
+      "⚠️ Нужно выбрать объект типа Поверхность",
+      "⚠️ È necessario selezionare un oggetto di tipo Superficie",
+      "⚠️ Sie müssen ein Objekt vom Typ Oberfläche auswählen",
+      "⚠️ 您需要选择一个 Surface (表面) 类型的对象。",
+      "⚠️ Necesita seleccionar un objeto de tipo Superficie",  // ES
+      "⚠️ Vous devez sélectionner un objet de type Surface",  // FR
+      "⚠️ Bir Yüzey türünde nesne seçmeniz gerekiyor" };  // TR
 
     public static readonly string[] SurfaceQuery = {
       "  Select the cutting surface",
