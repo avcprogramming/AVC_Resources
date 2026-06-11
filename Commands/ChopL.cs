@@ -1554,7 +1554,7 @@ namespace AVC
          "Eğer devre dışı bırakılırsa, kenar kalınlığı kesme stili ayarlarından alınır.\r\n" +
          "Her halükarda, ayarlar iletişim kutusu gösterilecek şekilde yapılandırılmışsa size sorulmaz." };
 
-    public static readonly string[] ConjugatedEdges = {
+    public static readonly string[] ContiguousEdges = {
       "Add conjugated edges",
       "Добавить сопряжённые рёбра",
       "Aggiungi bordi coniugati",
@@ -1562,33 +1562,31 @@ namespace AVC
       "添加共轭边",
       "Agregar bordes conjugados",                    // ES
       "Ajouter des arêtes conjuguées",                // FR
-      "Eşlenik kenarlar ekle"};                      // TR
+      "Eşlenik kenarlar ekle"};                       // TR
 
-    public static readonly string[] ConjugatedEdgesTip = {
+    public static readonly string[] ContiguousEdgesTip = {
       "When selecting a solid's guide edge, the program will check the adjacent edges of that solid and, \r\n" +
         "if they are joined without breaks, then the cutting will be performed along all these edges together, \r\n" +
-        "as if it were a curved line.",
+        "as if it were one curved line.",
       "При выборе направляющего ребра солида программа проверит соседние ребра этого солида и, \r\n" +
         "если они состыкованы без изломов, то нарезка будет производиться вдоль всех этих рёбер вместе, \r\n" +
-        "как будто это она кривая линия.",
+        "как будто это одна кривая линия.",
       "Quando si seleziona un bordo guida di un solido, il programma controllerà i bordi adiacenti di quel solido e, \r\n" +
         "se sono uniti senza interruzioni, allora il taglio verrà eseguito lungo tutti questi bordi insieme, \r\n" +
         "come se fosse una linea curva.",
       "Wenn Sie eine Führungs Kante eines Volumenkörpers auswählen, überprüft das Programm die angrenzenden Kanten dieses Volumenkörpers und, \r\n" +
-        "wenn sie ohne Unterbrechungen verbunden sind, wird der Schnitt entlang all dieser Kanten zusammen ausgeführt, \r\n" +
-        "als ob es sich um eine Kurve handeln würde.",
-      "当选择一个实体的引导边时，程序将检查该实体的相邻边，并且如果它们无缝连接，则切割将沿着所有这些边一起进行，就好像它是一条曲线一样。",
-      "Al seleccionar un borde guía de un sólido, el programa verificará los bordes adyacentes de ese sólido y, \r\n" +  // ES
+        "wenn sie ohne Unterbrechungen verbunden sind, wird die Schneidarbeit entlang all dieser Kanten zusammen ausgeführt, \r\n" +
+        "als ob es sich um eine einzige Kurvenlinie handeln würde.",
+      "选择实体的引导边时，程序将检查该实体的相邻边，并且如果它们无缝连接，则切割将沿着所有这些边一起进行，就好像它是一条曲线一样。",
+      "Al seleccionar un borde guía de un sólido, el programa verificará los bordes adyacentes de ese sólido y, \r\n" +
         "si están unidos sin interrupciones, entonces el corte se realizará a lo largo de todos estos bordes juntos, \r\n" +
-        "como si fuera una línea curva.",
-      "Lors de la sélection d'une arête de guidage d'un solide, le programme vérifiera les arêtes adjacentes de ce solide et, \r\n" +  // FR
+        "como si fuera una sola línea curva.",
+      "Lors de la sélection d'une arête de guidage d'un solide, le programme vérifiera les arêtes adjacentes de ce solide et, \r\n" +
         "si elles sont jointes sans interruption, alors la découpe sera effectuée le long de toutes ces arêtes ensemble, \r\n" +
-        "comme s'il s'agissait d'une ligne courbe.",
+        "comme s'il s'agissait d'une seule ligne courbe.",
       "Bir katının kılavuz kenarını seçerken, program o katının bitişik kenarlarını kontrol edecek ve, \r\n" +
         "eğer kesintisiz bir şekilde birleşmişlerse, o zaman kesim tüm bu kenarlar boyunca birlikte yapılacaktır, \r\n" +
-        "sanki bu bir eğri çizgiymiş gibi." };
-
-   
+        "sanki tek bir eğri çizgiymiş gibi."};   
 
   }
 }

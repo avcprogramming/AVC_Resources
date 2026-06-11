@@ -1221,6 +1221,34 @@ namespace AVC
       "Se utiliza el valor promedio entre las longitudes de ambos lados de la pieza",
       "La valeur moyenne entre les longueurs des deux côtés de la pièce est utilisée",
       "Parçanın her iki tarafının uzunlukları arasındaki ortalama değer kullanılır"};
+
+    public static readonly string[] SweepExpand = {
+      "Extend the sides to a straight cut",
+      "Удлинять стороны до прямого реза",
+      "Estendere i lati a un taglio dritto",
+      "Die Seiten auf einen geraden Schnitt erweitern",
+      "将侧面延伸到直切",
+      "Extender los lados a un corte recto",
+      "Étendre les côtés à une coupe droite",
+      "Tarafları düz bir kesime genişlet" };
+
+    public static readonly string[] SweepExpandTip = {
+      "If the ends of the part are not cut at a right angle, then before measuring the length of the curved side, \r\n" +
+        "extend it as if the part was made without tilting the saw.",
+      "Если торцы детали срезаны не под прямым углом, то перед измерением длины изогнутой стороны удлинить так, \r\n" +
+        "как будто деталь изготовлена без наклона пилы.",
+      "Se le estremità della parte non sono tagliate ad angolo retto, allora prima di misurare la lunghezza del lato curvo, \r\n" +
+        "estenderlo come se la parte fosse realizzata senza inclinare la sega.",
+      "Wenn die Enden des Teils nicht rechtwinklig geschnitten sind, \r\n" +
+        "verlängern Sie es vor der Messung der Länge der gebogenen Seite so, \r\n" +
+        "als ob das Teil ohne Neigung der Säge hergestellt wurde.",
+      "如果零件的末端没有以直角切割，那么在测量弯曲侧的长度之前，将其延伸，就好像零件是在没有倾斜锯的情况下制造的一样。",
+      "Si los extremos de la pieza no están cortados en ángulo recto, entonces antes de medir la longitud del lado curvo, \r\n" +
+        "extiéndalo como si la pieza se hubiera fabricado sin inclinar la sierra.",
+      "Si les extrémités de la pièce ne sont pas coupées à angle droit, alors avant de mesurer la longueur du côté courbe, \r\n" +
+        "étendez-le comme si la pièce avait été fabriquée sans incliner la scie.",
+      "Parçanın uçları dik açıyla kesilmemişse, o zaman eğri tarafın uzunluğunu ölçmeden önce, \r\n" +
+        "parçanın eğik testere olmadan yapılmış gibi uzatın." };
+
   }
 }
-
