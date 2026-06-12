@@ -48,5 +48,16 @@ namespace AVC
       "Para obtener las últimas actualizaciones, descargue el instalador de Autodesk App Store",
       "Pour les dernières mises à jour, téléchargez le programme d'installation depuis Autodesk App Store",
       "En son güncellemeler için yükleyiciyi Autodesk App Store'dan indirin"};
+
+    public static readonly string[] AutocadCheck = {
+      "Checking if AutoCAD or BricsCAD is running...",
+      "Проверка, не запущен ли AutoCAD или BricsCAD...",
+      "Controllo se AutoCAD o BricsCAD è in esecuzione...",
+      "Überprüfen, ob AutoCAD oder BricsCAD ausgeführt wird...",
+      "正在检查 AutoCAD 或 BricsCAD 是否正在运行...",
+      "Comprobando si AutoCAD o BricsCAD se está ejecutando...",
+      "Vérification si AutoCAD ou BricsCAD est en cours d'exécution...",
+      "AutoCAD veya BricsCAD'in çalışıp çalışmadığını kontrol et..."};
+
   }
 }
