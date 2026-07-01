@@ -4131,6 +4131,16 @@ namespace AVC
       "Pièces",
       "Parçalar"};
 
+    public static readonly string[] PiecesCeiling = {
+      "Pieces (ceiling)",
+      "Кусков (целых)",
+      "Pezzi (arrotondati per eccesso)",
+      "Stücke (aufgerundet)",
+      "件（向上取整）",
+      "Piezas (redondeadas hacia arriba)",
+      "Pièces (arrondies vers le haut)",
+      "Parçalar (yukarı yuvarlanmış)"};
+
     public static readonly string[] Weight = {
       "Weight",
       "Вес",
