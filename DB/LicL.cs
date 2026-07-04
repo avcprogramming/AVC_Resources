@@ -614,6 +614,15 @@ namespace AVC
       "Activar",
       "Activer",
       "Etkinleştir"};
+    public static readonly string[] ActivateTip = {
+      "Activate the selected license on this computer. This will only work if not all activations are used.",
+      "Активировать выбранную лицензию на данном компьютере. Сработает только если не все активации использованы.",
+      "Attivare la licenza selezionata su questo computer. Funzionerà solo se non tutte le attivazioni sono utilizzate.",
+      "Aktivieren Sie die ausgewählte Lizenz auf diesem Computer. Dies funktioniert nur, wenn nicht alle Aktivierungen verwendet werden.",
+      "在此计算机上激活所选许可证。 仅当未使用所有激活时，此操作才有效。",
+      "Activar la licencia seleccionada en esta computadora. Esto solo funcionará si no se utilizan todas las activaciones.",
+      "Activez la licence sélectionnée sur cet ordinateur. Cela ne fonctionnera que si toutes les activations ne sont pas utilisées.",
+      "Seçili lisansı bu bilgisayarda etkinleştirin. Bu, tüm etkinleştirmeler kullanılmadığında çalışacaktır."};
 
     public static readonly string[] Deactivate = {
       "Deactivate all",
@@ -624,6 +633,49 @@ namespace AVC
       "Desactivar todo",
       "Désactiver tout",
       "Tümünü devre dışı bırak"};
+    public static readonly string[] DeactivateTip = {
+      "Deactivate all licenses currently activated on this computer. \r\n" +
+        "Licenses will remain and can be reactivated.",
+      "Деактивировать все лицензии, которые сейчас активированы на этом компьютере. \r\n" +
+        "Лицензии сохранятся, и их можно будет активировать повторно.",
+      "Disattivare tutte le licenze attualmente attivate su questo computer. \r\n" +
+        "Le licenze rimarranno e potranno essere riattivate.",
+      "Deaktivieren Sie alle Lizenzen, die derzeit auf diesem Computer aktiviert sind. \r\n" +
+        "Lizenzen bleiben erhalten und können erneut aktiviert werden.",
+      "停用当前在此计算机上激活的所有许可证。 \r\n" +
+         "许可证将保留并可以重新激活。",
+      "Desactive todas las licencias actualmente activadas en esta computadora. \r\n" +
+        "Las licencias permanecerán y se podrán reactivar.",
+      "Désactivez toutes les licences actuellement activées sur cet ordinateur. \r\n" +
+        "Les licences resteront et pourront être réactivées.",
+      "Bu bilgisayarda şu anda etkinleştirilen tüm lisansları devre dışı bırakın. \r\n" +
+        "Lisanslar kalacak ve yeniden etkinleştirilebilir."};
+
+    public static readonly string[] DeleteTip = {
+      "Deleting the selected activation. \r\n" +
+        "You are not deleting the license (!!), but only deactivating it on one computer. Your license will not be affected. \r\n" +
+        "After deactivation, you can immediately reactivate this or another computer with the same license.",
+      "Удаление выбранной активации. \r\n" +
+        "Вы не удаляете лицензию(!!), а только деактивируете ее на одном из компьютеров. Ваша лицензия не пострадает. \r\n" +
+        "После деактивации, вы сразу же можете снова активировать этот или другой компьютер этой же лицензией.",
+      "Eliminazione dell'attivazione selezionata. \r\n" +
+        "Non stai eliminando la licenza (!!), ma solo disattivandola su un computer. La tua licenza non sarà influenzata. \r\n" +
+        "Dopo la disattivazione, puoi immediatamente riattivare questo o un altro computer con la stessa licenza.",
+      "Löschen der ausgewählten Aktivierung. \r\n" +
+        "Sie löschen die Lizenz nicht (!!), sondern deaktivieren sie nur auf einem Computer. Ihre Lizenz wird nicht beeinträchtigt. \r\n" +
+        "Nach der Deaktivierung können Sie diesen oder einen anderen Computer sofort mit derselben Lizenz erneut aktivieren.",
+      "删除所选激活。 \r\n" +
+         "您没有删除许可证(!!)，而只是停用它在一台计算机上。 您的许可证不会受到影响。 \r\n" +
+         "停用后，您可以立即使用相同的许可证重新激活此计算机或另一台计算机。",
+      "Eliminando la activación seleccionada. \r\n" +
+        "No estás eliminando la licencia (!!), sino solo desactivándola en un equipo. Tu licencia no se verá afectada. \r\n" +
+        "Después de la desactivación, puedes reactivar inmediatamente este u otro equipo con la misma licencia.",
+      "Suppression de l'activation sélectionnée. \r\n" +
+        "Vous ne supprimez pas la licence (!!), mais vous la désactivez uniquement sur un ordinateur. Votre licence ne sera pas affectée. \r\n" +
+        "Après la désactivation, vous pouvez réactiver immédiatement cet ordinateur ou un autre avec la même licence.",
+      "Seçilen etkinleştirme kaldırıldı.\r\n" +
+        "Lisansı kaldırmıyorsunuz (!!), sadece bir bilgisayarda devre dışı bırakıyorsunuz. Lisansınız etkilenmeyecektir.\r\n" +
+        "Devre dışı bırakma işleminden sonra, bu bilgisayarı veya aynı lisansa sahip başka bir bilgisayarı hemen yeniden etkinleştirebilirsiniz." };
 
     public static readonly string[] ReloadTip = {
       "Reload the license list from the server",
@@ -645,6 +697,16 @@ namespace AVC
       "Déplacer la licence",
       "Lisansı taşı"};
 
+    public static readonly string[] MoveLicenseTip = {
+      "Take the selected license away from its owner and transfer it to another member of your project team.",
+      "Отнять выбранную лицензию у ее владельца и передать другому сотруднику вашей проектной группы.",
+      "Ritira la licenza selezionata dal suo proprietario e trasferiscila a un altro membro del tuo team di progetto.",
+      "Nehmen Sie dem Inhaber die ausgewählte Lizenz weg und übertragen Sie sie an ein anderes Mitglied Ihres Projektteams.",
+      "将选定的许可证从其所有者手中收回，并将其转让给项目团队的另一位成员。",
+      "Quítele la licencia seleccionada a su propietario y transfiérala a otro miembro de su equipo de proyecto.",
+      "Retirez la licence sélectionnée à son propriétaire et transférez-la à un autre membre de votre équipe projet.",
+      "Seçilen lisansı sahibinden alın ve proje ekibinizin başka bir üyesine devredin." };
+
     public static readonly string[] MoveMoney = {
       "Move money",
       "Перевести деньги",
@@ -654,6 +716,17 @@ namespace AVC
       "Mover dinero",
       "Déplacer l'argent",
       "Parayı taşı"};
+
+    public static readonly string[] MoveMoneyTip = {
+      "Take all or part of the money from the balance of the selected account and transfer it to another member of your project team.",
+      "Взять все или часть денег с баланса выбранного аккаунта и передать их другому сотруднику вашей проектной группы.",
+      "Prendi tutto o parte del denaro dal saldo del conto selezionato e trasferiscilo a un altro membro del tuo team di progetto.",
+      "Nehmen Sie das gesamte oder einen Teil des Geldes vom Guthaben des ausgewählten Kontos \r\n" +
+        "und übertragen Sie es an ein anderes Mitglied Ihres Projektteams.",
+      "从所选帐户的余额中提取全部或部分资金，并将其转移给项目团队的另一位成员。",
+      "Toma la totalidad o parte del dinero del saldo de la cuenta seleccionada y transfiérelo a otro miembro de tu equipo de proyecto.",
+      "Prélevez tout ou partie de la somme disponible sur le compte sélectionné et transférez-la à un autre membre de votre équipe projet.",
+      "Seçilen hesaptaki bakiyenin tamamını veya bir kısmını alıp proje ekibinizin başka bir üyesine aktarın."};
 
     public static readonly string[] Activation = {
       "Activation",
