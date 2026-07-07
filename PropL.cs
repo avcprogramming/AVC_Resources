@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Viewports Nameds Dwg Bandings Asymmetry Uniscale Asym CNC CCW Plottable Linetype
+// Ignore Spelling: Viewports Nameds Dwg Bandings Asymmetry Uniscale Asym CNC CCW Plottable Linetype Chirality
 
 using System;
 using System.Collections.Generic;
@@ -4529,6 +4529,41 @@ namespace AVC
       "Katının köşe koordinatları için hash kodu. Aynı parçaları tanımlamak için kullanılır.\r\n" +
         "Katının geometrisindeki herhangi bir değişiklik bu kodu değiştirir.\r\n" +
         "Spline üzerindeki köşeler dikkate alınmaz."};
+
+    public static readonly string[] Chirality = {
+      "Chirality",
+      "Хиральность",
+      "Chiralità",
+      "Chiralität",
+      "手性",
+      "Quiralidad",
+      "Chiralité",
+      "Kiralılık"};
+    public static readonly string[] ChiralityTip = {
+      "Chiral parts are solids whose mirror image cannot be obtained by rotation, such as right and left hand.\r\n" +
+        "When calculating chirality, the coatings on the six primary faces of the solid are taken into account.\r\n" +
+        "However, the measurement program may make errors.",
+      "Хиральные детали - это солиды, зеркальное отражение которых нельзя получить поворотами, как правая и левая рука.\r\n" +
+        "При вычислении хиральности учитываются покрытия на шести основных поверхностях солида.\r\n" +
+        "Однако программа обмера может ошибаться.",
+      "Le parti chirali sono solidi la cui immagine speculare non può essere ottenuta mediante rotazione, come la mano destra e sinistra.\r\n" +
+        "Quando si calcola la chiralità, vengono presi in considerazione i rivestimenti sulle sei facce principali del solido.\r\n" +
+        "Tuttavia, il programma di misurazione può commettere errori.",
+      "Chirale Teile sind Körper, deren Spiegelbild nicht durch Rotation, wie z. B. Rechts- oder Linksdrehung, erzeugt werden kann.\r\n" +
+        "Bei der Berechnung der Chiralität werden die Beschichtungen auf den sechs primären Oberflächen des Körpers berücksichtigt.\r\n" +
+        "Das Messprogramm kann jedoch Fehler verursachen.",
+      "手性零件是其镜像无法通过旋转获得的实体，例如右手和左手。\r\n" +
+        "在计算手性时，会考虑固体六个主要面的涂层。\r\n" +
+        "但是，测量程序可能会出错。",
+      "Las piezas quirales son sólidos cuya imagen especular no se puede obtener mediante rotación, como la mano derecha y la izquierda.\r\n" +
+        "Al calcular la quiralidad, se tienen en cuenta los recubrimientos en las seis caras principales del sólido.\r\n" +
+        "Sin embargo, el programa de medición puede cometer errores.",
+      "Les pièces chirales sont des solides dont l'image miroir ne peut pas être obtenue par rotation, comme la main droite et la main gauche.\r\n" +
+        "Lors du calcul de la chiralité, les revêtements sur les six faces principales du solide sont pris en compte.\r\n" +
+        "Cependant, le programme de mesure peut faire des erreurs.",
+      "Kiral parçalar, sağ ve sol el gibi, ayna görüntüsü döndürme ile elde edilemeyen katılardır.\r\n" +
+        "Kiralite hesaplanırken, katının altı birincil yüzeyindeki kaplamalar dikkate alınır.\r\n" +
+        "Ancak ölçüm programı hata yapabilir."};
 
     public static readonly string[] Bandings = {
       "Edge Bandings",

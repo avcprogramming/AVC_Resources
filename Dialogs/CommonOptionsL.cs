@@ -1,6 +1,6 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-// Ignore Spelling: Multisolid Cuix Popup
+// Ignore Spelling: Multisolid Cuix Popup Chirality
 
 namespace AVC
 {
@@ -1204,14 +1204,13 @@ namespace AVC
 
     public static readonly string[] MiddleLine = {
       "Middle line",
-      "Средняя линия",
+      "Средняя линия", 
       "Linea di mezzo",
       "Mittellinie",
       "中线",
       "Línea media",
       "Ligne médiane",
       "Orta çizgi"};
-
     public static readonly string[] MiddleLineTip = {
       "The average value between the lengths of both sides of the part is used",
       "Используется среднее значение между длинами обоих сторон детали",
@@ -1231,7 +1230,6 @@ namespace AVC
       "Extender los lados a un corte recto",
       "Étendre les côtés à une coupe droite",
       "Tarafları düz bir kesime genişlet" };
-
     public static readonly string[] SweepExpandTip = {
       "If the ends of the part are not cut at a right angle, then before measuring the length of the curved side, \r\n" +
         "extend it as if the part was made without tilting the saw.",
@@ -1250,5 +1248,56 @@ namespace AVC
       "Parçanın uçları dik açıyla kesilmemişse, o zaman eğri tarafın uzunluğunu ölçmeden önce, \r\n" +
         "parçanın eğik testere olmadan yapılmış gibi uzatın." };
 
+    public static readonly string[] CheckChirality = {
+      "Check Chirality",
+      "Проверять хиральность",
+      "Controlla la chiralità",
+      "Überprüfen Sie die Chiralität",
+      "检查手性",
+      "Comprobar la quiralidad",
+      "Vérifier la chiralité",
+      "Orta çizgiyi kontrol et" };
+    public static readonly string[] CheckChiralityTip = {
+      "Consider part chirality when assigning 'mirror' property to parts in mirrored blocks.\r\n" +
+        "Chiral parts are solids whose mirror image cannot be obtained by rotation, such as right and left hand.\r\n" +
+        "When calculating chirality, the coatings on the six primary faces of the solid are taken into account.\r\n" +
+        "However, the measurement program may make errors.\r\n" +
+        "When disabling this option, all parts in mirrored blocks will be marked as mirrored, even simple boxes.",
+      "Учитывать хиральность деталей при назначении зеркальности деталям в отзеркаленных блоках.\r\n" +
+        "Хиральные детали - это солиды, зеркальное отражение которых нельзя получить поворотами, как правая и левая рука.\r\n" +
+        "При вычислении хиральности учитываются покрытия на шести основных поверхностях солида.\r\n" +
+        "Однако программа обмера может ошибаться.\r\n" +
+        "При отключении данной опции все детали зеркальных блоков будут помечаться как зеркальные, даже простые боксы.",
+      "Considerare la chiralità delle parti quando si assegna la proprietà 'specchio' alle parti nei blocchi specchiati.\r\n" +
+        "Le parti chirali sono solidi la cui immagine speculare non può essere ottenuta mediante rotazione, come la mano destra e sinistra.\r\n" +
+        "Quando si calcola la chiralità, vengono presi in considerazione i rivestimenti sulle sei facce principali del solido.\r\n" +
+        "Tuttavia, il programma di misurazione può commettere errori.\r\n" +
+        "Disabilitando questa opzione, tutte le parti nei blocchi specchiati saranno contrassegnate come specchiate, anche semplici scatole.",
+      "Berücksichtigen Sie die Chiralität von Teilen, wenn Sie ihnen in gespiegelten Blöcken ein Spiegelbild zuweisen.\r\n" +
+        "Chirale Teile sind Körper, deren Spiegelbild nicht durch Rotation, wie z. B. Rechts- oder Linksdrehung, erzeugt werden kann.\r\n" +
+        "Bei der Berechnung der Chiralität werden die Beschichtungen auf den sechs primären Oberflächen des Körpers berücksichtigt.\r\n" +
+        "Das Messprogramm kann jedoch Fehler verursachen.\r\n" +
+        "Wenn diese Option deaktiviert ist, werden alle Teile in gespiegelten Blöcken als gespiegelt markiert, selbst einfache Quader.",
+      "在为镜像块中的零件分配“镜像”属性时，请考虑零件的手性。\r\n" +
+        "手性零件是其镜像无法通过旋转获得的实体，例如右手和左手。\r\n" +
+        "在计算手性时，会考虑固体六个主要面的涂层。\r\n" +
+        "但是，测量程序可能会出错。\r\n" +
+        "禁用此选项后，镜像块中的所有零件都将被标记为镜像，即使是简单的盒子。",
+      "Considere la quiralidad de las piezas al asignar la propiedad 'espejo' a las piezas en bloques espejados.\r\n" +
+        "Las piezas quirales son sólidos cuya imagen especular no se puede obtener mediante rotación, como la mano derecha y la izquierda.\r\n" +
+        "Al calcular la quiralidad, se tienen en cuenta los recubrimientos en las seis caras principales del sólido.\r\n" +
+        "Sin embargo, el programa de medición puede cometer errores.\r\n" +
+        "Al deshabilitar esta opción, todas las piezas en bloques espejados se marcarán como espejadas, incluso cajas simples.",
+      "Considérez la chiralité des pièces lors de l'attribution de la propriété 'miroir' aux pièces dans les blocs miroir.\r\n" +
+        "Les pièces chirales sont des solides dont l'image miroir ne peut pas être obtenue par rotation, comme la main droite et la main gauche.\r\n" +
+        "Lors du calcul de la chiralité, les revêtements sur les six faces principales du solide sont pris en compte.\r\n" +
+        "Cependant, le programme de mesure peut faire des erreurs.\r\n" +
+        "Lorsque cette option est désactivée, toutes les pièces dans les blocs miroir seront marquées comme miroir, même les boîtes simples.",
+      "Aynalanmış bloklardaki parçalara 'ayna' özelliği atarken parça kirliliğini dikkate alın.\r\n" +
+        "Kiral parçalar, sağ ve sol el gibi, ayna görüntüsü döndürme ile elde edilemeyen katılardır.\r\n" +
+        "Kiralite hesaplanırken, katının altı birincil yüzeyindeki kaplamalar dikkate alınır.\r\n" +
+        "Ancak ölçüm programı hata yapabilir.\r\n" +
+        "Bu seçenek devre dışı bırakıldığında, aynalanmış bloklardaki tüm parçalar basit kutular olsa bile aynalanmış olarak işaretlenecektir." };
+    
   }
 }
