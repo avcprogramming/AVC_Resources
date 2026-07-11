@@ -65,6 +65,7 @@
     <Compile Include="Commands\DrillL.cs" />
     <Compile Include="Commands\DwgTreeL.cs" />
     <Compile Include="Commands\DxfExportL.cs" />
+    <Compile Include="Commands\NestingL.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Dialogs\MoveMoneyL.cs" />
     <Compile Include="Dialogs\TitleStyleL.cs" />

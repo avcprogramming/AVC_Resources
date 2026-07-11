@@ -563,6 +563,15 @@ namespace AVC
       "Preparación CNC",
       "Préparation CNC",
       "CNC hazırlık" };
+    public static readonly string[] Nesting = {
+      "Nesting",
+      "Раскладка",
+      "Disposizione",
+      "Nesting",
+      "平铺",
+      "Disposición",
+      "Disposition",
+      "Döşeme"};
     public static readonly string[] Numbering = {
       "Numbering",
       "Нумерация",
