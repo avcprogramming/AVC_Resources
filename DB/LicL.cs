@@ -1228,122 +1228,122 @@ namespace AVC
     public static readonly string[] OfferBuy1 = {
       "Your license for {0} is no longer valid.\r\n" +
         "But you have money on your account to buy a new license.\r\n\r\n" +
-        "Pay {1} ?",
+        "Pay {1:0} euro?",
       "Ваша лицензия на программу {0} уже не действительна.\r\n" +
         "Но у вас есть деньги на аккаунте для покупки новой лицензии.\r\n\r\n" +
-        "Оплатить {1} ?",
+        "Оплатить {1:0} евро ?",
       "La tua licenza per {0} non è più valida.\r\n" +
         "Ma hai soldi sul tuo conto per acquistare una nuova licenza.\r\n\r\n" +
-        "Pagare {1} ?",
+        "Pagare {1:0} euro?",
       "Ihre Lizenz für {0} ist nicht mehr gültig.\r\n" +
         "Aber Sie haben Geld auf Ihrem Konto, um eine neue Lizenz zu kaufen.\r\n\r\n" +
-        "Zahle {1} ?",
+        "Zahle {1:0} Euro?",
       "您的 {0} 许可证不再有效。\r\n" +
         "但是您帐户上有钱购买新许可证。\r\n\r\n" +
-        "支付{1}？",
+        "支付{1:0}？",
       "Su licencia para {0} ya no es válida.\r\n" +
         "Pero tiene dinero en su cuenta para comprar una nueva licencia.\r\n\r\n" +
-        "¿Pagar {1}?",
+        "¿Pagar {1:0} euros?",
       "Votre licence pour {0} n'est plus valide.\r\n" +
         "Mais vous avez de l'argent sur votre compte pour acheter une nouvelle licence.\r\n\r\n" +
-        "Payer {1}?",
+        "Payer {1:0} euros?",
       "{0} için lisansınız artık geçerli değil.\r\n" +
         "Ancak yeni bir lisans satın almak için hesabınızda para var.\r\n\r\n" +
-        "{1} öde?"};
+        "{1:0} euro öde?"};
 
     public static readonly string[] OfferBuyMany = {
       "You had A>V>C> program licenses:\r\n" +
         "{0}.\r\n" +
         "But they are no longer valid.\r\n" +
         "You can use your account balance to purchase new licenses.\r\n\r\n" +
-        "Pay {1} ?",
+        "Pay {1:0} euro?",
       "У вас были лицензии на программы A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Но все они уже не действительны.\r\n" +
         "Вы можете использовать баланс вашего аккаунта для покупки новых лицензий.\r\n\r\n" +
-        "Оплатить {1} ?",
+        "Оплатить {1:0} евро ?",
       "Avevi le licenze del programma A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Ma non sono più validi.\r\n" +
         "Puoi utilizzare il saldo del tuo account per acquistare nuove licenze.\r\n\r\n" +
-        "Pagare {1} ?",
+        "Pagare {1:0} euro?",
       "Sie hatten A>V>C>-Programmlizenzen:\r\n" +
         "{0}.\r\n" +
         "Aber sie sind nicht mehr gültig.\r\n" +
         "Sie können Ihr Kontoguthaben verwenden, um neue Lizenzen zu erwerben.\r\n\r\n" +
-        "Zahle {1} ?",
+        "Zahle {1:0} Euro?",
       "您拥有程序 A>V>C> 的许可证：\r\n" +
         "{0}。\r\n" +
         "但它们不再有效。\r\n" +
         "您可以使用您的帐户余额购买新的许可证。\r\n\r\n" +
-        "支付{1}？",
+        "支付{1:0}？",
       "Tenía licencias de programas A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Pero ya no son válidas.\r\n" +
         "Puede usar el saldo de su cuenta para comprar nuevas licencias.\r\n\r\n" +
-        "¿Pagar {1}?",
+        "¿Pagar {1:0} euros?",
       "Vous aviez des licences de programmes A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Mais elles ne sont plus valides.\r\n" +
         "Vous pouvez utiliser le solde de votre compte pour acheter de nouvelles licences.\r\n\r\n" +
-        "Payer {1}?",
+        "Payer {1:0} euros?",
       "A>V>C> program lisanslarınız vardı:\r\n" +
         "{0}.\r\n" +
         "Ancak artık geçerli değiller.\r\n" +
         "Yeni lisanslar satın almak için hesap bakiyenizi kullanabilirsiniz.\r\n\r\n" +
-        "{1} öde?"};
+        "{1:0} euro öde?"};
 
     public static readonly string[] OfferPay1 = {
       "Your license for {0} is no longer valid.\r\n" +
-        "To buy a new license you need to top up your account with {1}",
+        "To buy a new license you need to top up your account with {1:0} euro",
       "Ваша лицензия на программу {0} уже не действительна.\r\n" +
-        "Чтоб купить новую лицензию вам надо пополнить ваш аккаунт на {1}",
+        "Чтоб купить новую лицензию вам надо пополнить ваш аккаунт на {1:0} евро",
       "La tua licenza per {0} non è più valida.\r\n" +
-        "Per acquistare una nuova licenza devi ricaricare il tuo account con {1}",
+        "Per acquistare una nuova licenza devi ricaricare il tuo account con {1:0} euro",
       "Ihre Lizenz für {0} ist nicht mehr gültig.\r\n" +
-        "Um eine neue Lizenz zu kaufen, müssen Sie Ihr Konto mit {1} aufladen.",
+        "Um eine neue Lizenz zu kaufen, müssen Sie Ihr Konto mit {1:0} Euro aufladen.",
       "您的 {0} 许可证不再有效。\r\n" +
-        "要购买新许可证，您需要使用 {1} 为您的帐户充值",
+        "要购买新许可证，您需要使用 {1:0} 欧元为您的帐户充值",
       "Su licencia para {0} ya no es válida.\r\n" +
-        "Para comprar una nueva licencia necesita recargar su cuenta con {1}",
+        "Para comprar una nueva licencia necesita recargar su cuenta con {1:0} euros",
       "Votre licence pour {0} n'est plus valide.\r\n" +
-        "Pour acheter une nouvelle licence, vous devez recharger votre compte avec {1}",
+        "Pour acheter une nouvelle licence, vous devez recharger votre compte avec {1:0} euros",
       "{0} için lisansınız artık geçerli değil.\r\n" +
-        "Yeni bir lisans satın almak için hesabınızı {1} ile doldurmanız gerekiyor"};
+        "Yeni bir lisans satın almak için hesabınızı {1:0} euro ile doldurmanız gerekiyor"};
 
     public static readonly string[] OfferPayMany = {
       "You had licenses for A>V>C> programs:\r\n" +
         "{0}.\r\n" +
         "But they are no longer valid.\r\n" +
-        "To buy new licenses you need to top up your account with {1} euro",
+        "To buy new licenses you need to top up your account with {1:0} euro",
       "У вас были лицензии на программы A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Но все они уже не действительны.\r\n" +
-        "Чтоб купить новые лицензии вам надо пополнить ваш аккаунт на {1} евро",
+        "Чтоб купить новые лицензии вам надо пополнить ваш аккаунт на {1:0} евро",
       "Avevi licenze per i programmi A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Ma non sono più validi.\r\n" +
-        "Per acquistare nuove licenze devi ricaricare il tuo account con {1} euro.",
+        "Per acquistare nuove licenze devi ricaricare il tuo account con {1:0} euro.",
       "Sie hatten Lizenzen für die A>V>C>-Programme:\r\n" +
         "{0}.\r\n" +
         "Aber sie sind nicht mehr gültig.\r\n" +
-        "Um neue Lizenzen zu kaufen, müssen Sie Ihr Konto mit {1} Euro aufladen.",
+        "Um neue Lizenzen zu kaufen, müssen Sie Ihr Konto mit {1:0} Euro aufladen.",
       "您拥有程序 A>V>C> 的许可证：\r\n" +
         "{0}。\r\n" +
         "但它们不再有效。\r\n" +
-        "要购买新的许可证，您需要为您的帐户充值 {1} 欧元。",
+        "要购买新的许可证，您需要为您的帐户充值 {1:0} 欧元。",
       "Tenía licencias para programas A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Pero ya no son válidas.\r\n" +
-        "Para comprar nuevas licencias necesita recargar su cuenta con {1} euros",
+        "Para comprar nuevas licencias necesita recargar su cuenta con {1:0} euros",
       "Vous aviez des licences pour les programmes A>V>C>:\r\n" +
         "{0}.\r\n" +
         "Mais elles ne sont plus valides.\r\n" +
-        "Pour acheter de nouvelles licences, vous devez recharger votre compte avec {1} euros",
+        "Pour acheter de nouvelles licences, vous devez recharger votre compte avec {1:0} euros",
       "A>V>C> programları için lisanslarınız vardı:\r\n" +
         "{0}.\r\n" +
         "Ancak artık geçerli değiller.\r\n" +
-        "Yeni lisanslar satın almak için hesabınızı {1} euro ile doldurmanız gerekiyor"};
+        "Yeni lisanslar satın almak için hesabınızı {1:0} euro ile doldurmanız gerekiyor"};
 
     //============================================= Programs =======================================
     //public static readonly string[] Paid = { "Paid", "Оплачено", "Pagato", "Bezahlt" };

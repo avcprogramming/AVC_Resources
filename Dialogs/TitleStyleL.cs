@@ -56,20 +56,20 @@ namespace AVC
       "Metin Şablonu"};                                        // TR
 
     public static readonly string[] TextTemplateTip = {
-      "Title template with substitutions for drawing object properties." +
+      "Title template with substitutions for drawing object properties.\r\n" +
         "Line breaks and text formatting codes are allowed.",
-      "Шаблон заголовка с подстановками свойств объектов чертежа. " +
+      "Шаблон заголовка с подстановками свойств объектов чертежа. \r\n" +
         "Допустимы переносы строк и коды форматирования теста. ",
-      "Modello di titolo con sostituzioni per le proprietà degli oggetti di disegno." +
+      "Modello di titolo con sostituzioni per le proprietà degli oggetti di disegno.\r\n" +
         "Sono consentiti interruzioni di linea e codici di formattazione del testo.",
-      "Titelvorlage mit Ersetzungen für Zeichenobjekteigenschaften." +
+      "Titelvorlage mit Ersetzungen für Zeichenobjekteigenschaften.\r\n" +
         "Zeilenumbrüche und Textformatierungscodes sind zulässig.",
       "带有绘图对象属性替代的标题模板。允许换行和文本格式代码。",
-      "Plantilla de título con sustituciones para las propiedades del objeto de dibujo." +
+      "Plantilla de título con sustituciones para las propiedades del objeto de dibujo.\r\n" +
         "Se permiten saltos de línea y códigos de formato de texto.",        // ES
-      "Modèle de titre avec substitutions pour les propriétés des objets de dessin." +
+      "Modèle de titre avec substitutions pour les propriétés des objets de dessin.\r\n" +
         "Les sauts de ligne et les codes de formatage de texte sont autorisés.", // FR
-      "Çizim nesnesi özellikleri için ikamelerle başlık şablonu." +
+      "Çizim nesnesi özellikleri için ikamelerle başlık şablonu.\r\n" +
         "Satır sonları ve metin biçimlendirme kodlarına izin verilir."};      // TR
 
     public static readonly string[] BlockAttributes = {

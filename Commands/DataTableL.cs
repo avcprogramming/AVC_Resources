@@ -295,6 +295,17 @@ namespace AVC
       "  Satır gruplama"};                                         // TR
 
     public static readonly string[]
+    GroupProcessing = {
+      "Processing group {0}",
+      "Обрабатывается группа {0}",
+      "Elaborazione del gruppo {0}",
+      "Verarbeitung der Gruppe {0}",
+      "处理组 {0}",
+      "Procesando grupo {0}",                                     // ES
+      "Traitement du groupe {0}",                                 // FR
+      "Grup {0} işleniyor"};                                       // TR
+
+    public static readonly string[]
     Creating = {
       "Creating a table",
       "Создание таблицы",

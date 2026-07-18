@@ -867,6 +867,16 @@ namespace AVC
         "Katman adlarında işleme parametreleri ile CNC'de frezeleme, kesme, delme için poliçizgiler. " +
         "Boyutlar programını çağırma."};
 
+    public static readonly string[] NestingTip = {
+      "Place the parts (3D solids) on sheets of material for filing or milling.",
+      "Расположить детали (3d-солиды) на листы материала для напилки или фрезеровки. Нестинг.",
+      "Posizionare i pezzi (solidi 3D) su fogli di materiale per la limatura o la fresatura. Nesting.",
+      "Die Teile (3D-Volumenkörper) werden zum Feilen oder Fräsen auf Materialplatten gelegt. Nesting.",
+      "将零件（3D实体）放置在材料板上进行锉削或铣削。Nesting。",
+      "Colocar las piezas (sólidos 3D) en hojas de material para limado o fresado. Nesting.",
+      "Placer les pièces (solides 3D) sur des feuilles de matériau pour le limage ou le fraisage. Nesting.",
+      "Parçaları (3D katılar) tıraşlama veya frezeleme için malzeme levhalarına yerleştirme. Nesting."};
+
     public static readonly string[] NumberingTip = {
       "Name the drawing objects as sequential numbers.",
       "Дать объектам чертежа имена как номера по порядку. " +

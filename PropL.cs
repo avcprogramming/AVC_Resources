@@ -3772,13 +3772,13 @@ namespace AVC
 
     public static readonly string[] GrainTip = {
       "The material has a noticeable surface pattern (grain/texture) in a certain direction (usually along the sheet) \r\n" +
-        "and for parts it is desirable to indicate the direction of this texture.",
+        "and for parts it is desirable to indicate the direction of this texture: along or across.",
       "Материал имеет заметный рисунок на поверхности (зернистость/текстуру) в определенном направлении (обычно вдоль листа) \r\n" +
-        "и для деталей желательно указать направление этой текстуры.",
+        "и для деталей желательно указать направление этой текстуры: вдоль или поперек.",
       "Il materiale presenta una struttura superficiale (grana/struttura) evidente in una determinata direzione (solitamente lungo la lamiera) \r\n" +
-        "e per i pezzi è opportuno indicare la direzione di questa struttura.",
+        "e per i pezzi è opportuno indicare la direzione di questa struttura: lungo o trasversale.",
       "Das Material weist ein erkennbares Oberflächenmuster (Maserung/Textur) in einer bestimmten Richtung (normalerweise entlang der Platte) auf \r\n" +
-        "und bei Teilen ist es wünschenswert, die Richtung dieser Textur anzugeben.",
+        "und bei Teilen ist es wünschenswert, die Richtung dieser Textur anzugeben: entlang oder quer.",
       "该材料在某个方向（通常沿着板材）具有明显的表面图案（颗粒/纹理），\r\n" +
         "对于零件来说，需要指示该纹理的方向。",
       "El material tiene un patrón de superficie notable (grano/textura) en una dirección determinada (generalmente a lo largo de la lámina) \r\n" +

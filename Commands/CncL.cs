@@ -1101,6 +1101,16 @@ namespace AVC
       "  Le style LAY sera utilisé : {0}",  // FR
       "  LAY stili kullanılacak: {0}"};  // TR
 
+    public static readonly string[] NestingStyle = {
+      "  Nesting-style will be used: {0}",
+      "  Будет использован стиль Нестинга: {0}",
+      "  Nesting-stile sarà usato: {0}",
+      "  Der Nesting-stil wird verwendet: {0}",
+      "  将使用嵌套(Nesting)样式：{0}",
+      "  Se utilizará el estilo Nesting: {0}",  // ES
+      "  Le style Nesting sera utilisé : {0}",  // FR
+      "  Nesting stili kullanılacak: {0}"};  // TR
+
     public static readonly string[] CncStyle = {
       "  CNC-style will be used: {0}",
       "  Будет использован стиль ЧПУ: {0}",

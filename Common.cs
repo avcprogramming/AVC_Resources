@@ -1,9 +1,18 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
+
 using System.Drawing;
 using System.IO;
 using System.Reflection;
 namespace AVC
 {
+
+  /// <summary>
+  /// Для добавления картинки в библиотеку:
+  /// Закинуть xxx.PNG в папку Resources через VS (не через проводник), 
+  /// Открыть свойства файла в VS (не в проводнике). Установить Build Action = Embedded Resource (в свойстве "Действия при сборке" поменять "Содержимое" на "Встроенный ресурс")
+  /// Создать строку в классе Common: public static Bitmap xxx => LoadPng("xxx");
+  /// Для картинок программ добавить в ProgramsBox:  il.Images.Add("xxx.png", Common.xxx);
+  /// </summary>
   public static class 
   Common
   {
@@ -280,6 +289,8 @@ namespace AVC
     public static Bitmap NCPrepare16 => LoadPng("NCPrepare16");
     public static Bitmap NCPrepare32 => LoadPng("NCPrepare32");
     public static Bitmap NCPrepare80 => LoadPng("NCPrepare80");
+    public static Bitmap Nesting16 => LoadPng("Nesting16");
+    public static Bitmap Nesting32 => LoadPng("Nesting32");
     public static Bitmap OffsetMany16 => LoadPng("OffsetMany16");
     public static Bitmap OffsetMany32 => LoadPng("OffsetMany32");
     public static Bitmap OffsetMany80 => LoadPng("OffsetMany80");
@@ -427,6 +438,8 @@ namespace AVC
     public static Bitmap Zone32 => LoadPng("Zone32");
     public static Bitmap Zone80 => LoadPng("Zone80");
 
+    /// 120x120 pixel bitmap image
+
     public static Bitmap ASimp120 => LoadPng("ASimp120");
     public static Bitmap AsmDraw120 => LoadPng("AsmDraw120");
     public static Bitmap Assembly120 => LoadPng("Assembly120");
@@ -470,6 +483,7 @@ namespace AVC
     public static Bitmap MNum120 => LoadPng("MNum120");
     public static Bitmap MultiSlice120 => LoadPng("MultiSlice120");
     public static Bitmap NCPrepare120 => LoadPng("NCPrepare120");
+    public static Bitmap Nesting120 => LoadPng("Nesting120");
     public static Bitmap OffsetMany120 => LoadPng("OffsetMany120");
     public static Bitmap OutsideLoop120 => LoadPng("OutsideLoop120");
     public static Bitmap PageNo120 => LoadPng("PageNo120");
