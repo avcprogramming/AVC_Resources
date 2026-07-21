@@ -17,7 +17,7 @@ namespace AVC
 
     public static readonly string[] StyleSelected = {
       "  Nesting style '{0}' selected",
-      "  Выбран стиль нестинга '{0}'",
+      "  Выбран стиль раскроя '{0}'",
       "  Nesting-Stile '{0}' selezionato",
       "  Nesting-Stil '{0}' ausgewählt",
       "  选择的嵌套样式为：'{0}'",
@@ -27,13 +27,13 @@ namespace AVC
 
     public static readonly string[] StyleNameTip = {
       "Name of the current nesting style",
-      "Имя текущего стиля нестинга",
-      "Nome dello stile di nesting corrente",
-      "Name des aktuellen Nesting-Stils",
-      "当前嵌套样式的名称",
-      "Nombre del estilo Nesting actual",
-      "Nom du style Nesting actuel",
-      "Geçerli nesting stilinin adı"};
+      "Имя текущего стиля раскроя",
+      "Nome dello stile di taglio corrente",
+      "Name des aktuellen Schnittstils",
+      "当前裁剪样式的名称",
+      "Nombre del estilo de corte actual",
+      "Nom du style de découpe actuel",
+      "Geçerli kesim stilinin adı"};
 
     public static readonly string[] Grouping = {
       "Grouping by materials",
@@ -46,31 +46,38 @@ namespace AVC
       "Malzemelere göre gruplama"};
 
     public static readonly string[] GroupTip = {
-      "Mask for the group title. Parts with the same group value are laid out on separate sheets.\r\n" +
+      "Grouping template. The group's parts are laid out together on a single sheet.\r\n" +
         "It's very important that only parts made of the same material are included in a single group.\r\n" +
+        "Use substitutions of the properties of the solid, its material, its owner (assembly block) and the drawing.\r\n" +
         "It's recommended to use the %mat% substitution.\"",
-      "Маска заголовка группы. Детали с одинаковым значением группы раскладываются на отдельных листах.\r\n" +
-        "Очень важно, чтоб в одну группу попали только детали из одинакового материала.\r\n" +
+      "Шаблон группировки. Детали группы раскладываются совместно на одном листе.\r\n" +
+        "Очень важно, чтобы в одну группу попали только детали из одинакового материала.\r\n" +
+        "Используйте подстановки свойств солида, его материала, его владельца (блока-сборки) и чертежа. \r\n" +
         "Рекомендуется использовать подстановку %mat%",
-      "Maschera per il titolo del gruppo. Le parti con lo stesso valore di gruppo vengono disposte su fogli separati.\r\n" +
+      "Modello di raggruppamento. Le parti del gruppo sono disposte insieme su un unico foglio.\r\n" +
         "È molto importante che solo le parti realizzate con lo stesso materiale siano incluse in un unico gruppo.\r\n" +
-        "Si consiglia di utilizzare la sostituzione %mat%",
-      "Maske für den Gruppentitel. Teile mit demselben Gruppenwert werden auf separaten Blättern angeordnet.\r\n" +
-        "Es ist sehr wichtig, dass nur Teile aus demselben Material in eine Gruppe aufgenommen werden.\r\n" +
-        "Es wird empfohlen, die Substitution %mat% zu verwenden.",
-      "组标题的掩码。具有相同组值的零件布置在单独的板材上。\r\n" +
+        "Utilizzare le sostituzioni delle proprietà del solido, del suo materiale, del suo proprietario (blocco di assemblaggio) e del disegno.\r\n" +
+        "Si consiglia di utilizzare la sostituzione %mat%.",
+      "Gruppierungsvorlage. Die Teile der Gruppe werden zusammen auf einem einzigen Blatt angeordnet.\r\n" +
+        "Es ist sehr wichtig, dass nur Teile aus demselben Material in einer einzigen Gruppe enthalten sind.\r\n" +
+        "Verwenden Sie die Ersetzungen der Eigenschaften des Volumenkörpers, seines Materials, seines Besitzers (Montageblock) und der Zeichnung.\r\n" +
+        "Es wird empfohlen, die Ersetzung %mat% zu verwenden.",
+      "分组模板。组的零件一起放置在单个板材上。\r\n" +
         "非常重要的是，只有由相同材料制成的零件才包含在一个组中。\r\n" +
-        "建议使用 %mat% 替换。",
-      "Máscara para el título del grupo. Las piezas con el mismo valor de grupo se colocan en hojas separadas.\r\n" +
+        "使用固体、其材料、其所有者（装配块）和图纸属性的替代。\r\n" +
+        "建议使用 %mat% 替代。",
+      "Plantilla de agrupación. Las piezas del grupo se colocan juntas en una sola hoja.\r\n" +
         "Es muy importante que solo las piezas hechas del mismo material se incluyan en un solo grupo.\r\n" +
-        "Se recomienda utilizar la sustitución %mat%",
-      "Masque pour le titre du groupe. Les pièces ayant la même valeur de groupe sont disposées sur des feuilles séparées.\r\n" +
+        "Utilice sustituciones de las propiedades del sólido, su material, su propietario (bloque de ensamblaje) y el dibujo.\r\n" +
+        "Se recomienda utilizar la sustitución %mat%.",
+      "Modèle de regroupement. Les pièces du groupe sont disposées ensemble sur une seule feuille.\r\n" +
         "Il est très important que seules les pièces fabriquées dans le même matériau soient incluses dans un seul groupe.\r\n" +
-        "Il est recommandé d'utiliser la substitution %mat%",
-      "Grup başlığı için maske. Aynı grup değerine sahip parçalar ayrı levhalara yerleştirilir.\r\n" +
-        "Sadece aynı malzemeden yapılmış parçaların tek bir gruba dahil edilmesi çok önemlidir.\r\n" +
-        "%mat% ikamesini kullanmanız önerilir."};
-
+        "Utilisez les substitutions des propriétés du solide, de son matériau, de son propriétaire (bloc d'assemblage) et du dessin.\r\n" +
+        "Il est recommandé d'utiliser la substitution %mat%.",
+      "Gruplama şablonu. Grubun parçaları tek bir levha üzerinde birlikte yerleştirilir.\r\n" +
+        "Aynı malzemeden yapılmış parçaların yalnızca tek bir gruba dahil edilmesi çok önemlidir.\r\n" +
+        "Katının, malzemesinin, sahibinin (montaj bloğu) ve çizimin özelliklerinin yerine koymalarını kullanın.\r\n" +
+        "%mat% yerine koymayı kullanmanız önerilir."};
     public static readonly string[] PartLable = {
       "Part label",
       "Метка детали",
@@ -109,14 +116,21 @@ namespace AVC
         "Satır sonları ve metin biçimlendirme kodlarına izin verilir."};
 
     public static readonly string[] PartGapTip = {
-      "Gap between parts on the sheet",
-      "Зазор между деталями на листе",
-      "Distanza tra le parti sul foglio",
-      "Abstand zwischen den Teilen auf dem Blatt",
-      "板材上零件之间的间距",
-      "Espacio entre las piezas en la hoja",
-      "Espace entre les pièces sur la feuille",
-      "Levha üzerindeki parçalar arasındaki boşluk"};
+      "Gap between parts on the sheet. Set this parameter to the saw blade thickness or cutter diameter. \r\n" +
+        "Zero clearance is acceptable.",
+      "Зазор между деталями на листе. Настройте на толщину пилы или диаметр фрезы. Можно ноль.",
+      "Distanza tra le parti sul foglio. Impostare questo parametro sullo spessore della lama della sega o sul diametro della fresa. \r\n" +
+        "È accettabile un gioco nullo.",
+      "Abstand zwischen den Teilen auf dem Blatt. Stellen Sie diesen Parameter auf die Dicke der Sägeblatt oder den Durchmesser des Fräsers ein. \r\n" +
+        "Null Spiel ist akzeptabel.",
+      "板材上零件之间的间距。将此参数设置为锯片厚度或铣刀直径。 \r\n" +
+        "零间隙是可以接受的。",
+      "Espacio entre las piezas en la hoja. Configure este parámetro al grosor de la hoja de sierra o al diámetro del cortador. \r\n" +
+        "Se acepta un espacio cero.",
+      "Espace entre les pièces sur la feuille. Réglez ce paramètre sur l'épaisseur de la lame de scie ou le diamètre de la fraise. \r\n" +
+        "Un jeu nul est acceptable.",
+      "Levha üzerindeki parçalar arasındaki boşluk. Bu parametreyi testere bıçağı kalınlığı veya freze çapına ayarlayın. \r\n" +
+        "Sıfır boşluk kabul edilebilir."};
 
     public static readonly string[] SheetGap = {
       "Sheet border gap",
@@ -129,14 +143,14 @@ namespace AVC
       "Levha kenar boşluğu"};
 
     public static readonly string[] SheetGapTip = {
-      "The gap between the parts and the edge of the sheet on all sides of the sheet of material.",
-      "Отступ между деталями и краем листа со всех сторон листа материала.",
-      "La distanza tra le parti e il bordo del foglio su tutti i lati del foglio di materiale.",
-      "Der Abstand zwischen den Teilen und dem Blattrand auf allen Seiten des Materialblatts.",
-      "材料板所有边缘上零件与板材边缘之间的间距。",
-      "La distancia entre las piezas y el borde de la hoja en todos los lados de la hoja de material.",
-      "L'écart entre les pièces et le bord de la feuille sur tous les côtés de la feuille de matériau.",
-      "Malzeme levhasının tüm kenarlarında parçalar ile levha kenarı arasındaki boşluk."};
+      "Indent from the sheet edge on all four sides. Use if the sheet edge has defects or chips.",
+      "Отступ от края листа со всех 4х сторон. Используйте если край листа имеет дефекты, сколы.",
+      "Praticare un'incisione dal bordo del foglio su tutti e quattro i lati. Utilizzare se il bordo del foglio presenta difetti o scheggiature.",
+      "Abstand vom Blattrand auf allen vier Seiten. Verwenden Sie, wenn der Blattrand Defekte oder Absplitterungen aufweist.",
+      "从板材边缘的四个边上进行缩进。如果板材边缘有缺陷或碎片，请使用。",
+      "Sangría desde el borde de la hoja en los cuatro lados. Úselo si el borde de la hoja tiene defectos o astillas.",
+      "Indentation depuis le bord de la feuille sur les quatre côtés. Utilisez-le si le bord de la feuille présente des défauts ou des éclats.",
+      "Levha kenarından dört tarafta girinti. Levha kenarında kusurlar veya kırıklar varsa kullanın."};
 
     public static readonly string[] SheetSpace = {
       "Sheet space",
@@ -149,14 +163,14 @@ namespace AVC
       "Levhalar arası boşluk"};
 
     public static readonly string[] SheetSpaceTip = {
-      "Space between sheets and groups on the layout.",
-      "Отступ между листами и группами на раскладке.",
-      "Spazio tra fogli e gruppi nel layout.",
-      "Abstand zwischen Blättern und Gruppen im Layout.",
-      "布局中板材与组之间的间距。",
-      "Espacio entre hojas y grupos en el diseño.",
-      "Espace entre les feuilles et les groupes dans la mise en page.",
-      "Düzendeki levhalar ve gruplar arasındaki boşluk."};
+      "Decorative indentation between sheets and groups on the cutting map.",
+      "Декоративный отступ между листами и группами на карте раскроя.",
+      "Rientro decorativo tra fogli e gruppi sulla mappa di taglio.",
+      "Dekorativer Abstand zwischen Blättern und Gruppen auf der Schnittkarte.",
+      "切割图上板材和组之间的装饰性缩进。",
+      "Sangría decorativa entre hojas y grupos en el mapa de corte.",
+      "Retrait décoratif entre les feuilles et les groupes sur la carte de coupe.",
+      "Kesme haritasındaki levhalar ve gruplar arasındaki dekoratif girinti."};
 
     public static readonly string[] DefaultSheetSize = {
       "Default sheet",
@@ -189,7 +203,7 @@ namespace AVC
       "The material has a noticeable surface pattern (grain/texture) along the sheet.\r\n" +
         "This setting is only used when the solid material is not specified or configured.",
       "Материал имеет заметный рисунок на поверхности (зернистость/текстуру) вдоль листа. \r\n" +
-        "Настройка используется только для случая, когда материал солида не задан или не настроен",
+        "Настройка используется только для случая, когда материал солида не задан или не настроен.",
       "Il materiale ha un motivo superficiale evidente (grana/struttura) lungo il foglio.\r\n" +
         "Questa impostazione viene utilizzata solo quando il materiale solido non è specificato o configurato.",
       "Das Material hat ein auffälliges Oberflächenmuster (Korn/Textur) entlang des Blattes.\r\n" +
@@ -290,14 +304,14 @@ namespace AVC
       "Konturlar (NC Prepare)"};
 
     public static readonly string[] ContouringTip = {
-      "Run the contour retrieval procedure for all parts (NC Prepare) at the end of the layout.",
-      "Запускать процедуру получения контуров всех деталей (NC Prepare) в конце раскладки.",
-      "Esegui la procedura di recupero dei contorni per tutte le parti (NC Prepare) al termine del layout.",
-      "Führen Sie am Ende des Layouts die Konturerfassung für alle Teile (NC Prepare) aus.",
-      "在布局结束时对所有零件运行轮廓获取程序（NC Prepare）。",
-      "Ejecutar el procedimiento de obtención de contornos para todas las piezas (NC Prepare) al final del diseño.",
-      "Exécuter la procédure de récupération des contours pour toutes les pièces (NC Prepare) à la fin de la mise en page.",
-      "Düzenin sonunda tüm parçalar için kontur alma prosedürünü (NC Prepare) çalıştırın."};
+      "Run the contour retrieval procedure for all parts (NC Prepare) at the end of the layout. A separate license is required.",
+      "Запускать процедуру получения контуров всех деталей (NC Prepare) в конце раскладки. Требуется отдельная лицензия.",
+      "Eseguire la procedura di recupero dei contorni per tutte le parti (NC Prepare) alla fine del layout. È richiesta una licenza separata.",
+      "Führen Sie am Ende des Layouts das Konturabrufverfahren für alle Teile (NC Prepare) aus. Eine separate Lizenz ist erforderlich.",
+      "在布局结束时运行所有零件的轮廓检索过程（NC Prepare）。需要单独的许可证。",
+      "Ejecute el procedimiento de recuperación de contornos para todas las piezas (NC Prepare) al final del diseño. Se requiere una licencia separada.",
+      "Exécutez la procédure de récupération des contours pour toutes les pièces (NC Prepare) à la fin de la disposition. Une licence distincte est requise.",
+      "Düzenin sonunda tüm parçalar için kontur alma prosedürünü (NC Prepare) çalıştırın. Ayrı bir lisans gereklidir."};
 
     public static readonly string[] DeleteSources = {
       "Delete source solids",
@@ -310,23 +324,22 @@ namespace AVC
       "Kaynak katıları sil"};
 
     public static readonly string[] DeleteSourcesTip = {
-      "Delete the original parts' bodies after nesting is complete.\r\n" +
+      "Delete original solids that have been successfully laid out on the cutting map.\r\n" +
         "This will only happen for model space solids, not blocks.",
-      "Удалять исходные тела деталей после завершения раскладки. \r\n" +
-        "Удаление произойдет только для солидов пространства модели, но не из блоков.",
-      "Elimina i corpi delle parti originali dopo che il nesting è completo. \r\n" +
+      "Удалять исходные солиды, успешно разложенные на карте раскроя. \r\n" +
+        "Будут удалены только солиды из пространства модели, но не из блоков.",
+      "Elimina i solidi originali che sono stati correttamente disposti sulla mappa di taglio. \r\n" +
         "Questo avverrà solo per i solidi dello spazio modello, non per i blocchi.",
-      "Löschen Sie die Originalkörper der Teile, nachdem das Nesting abgeschlossen ist. \r\n" +
-        "Dies geschieht nur für Volumenkörper im Modellbereich, nicht für Blöcke.",
-      "在嵌套完成后删除原始零件的实体。 \r\n" +
-         "这只会发生在模型空间的实体上，而不会发生在块上。",
-      "Eliminar los cuerpos de las piezas originales después de que se complete el nesting. \r\n" +
+      "Löschen Sie die ursprünglichen Volumenkörper, die erfolgreich auf der Schnittkarte angeordnet wurden. \r\n" +
+        "Dies wird nur für Volumenkörper im Modellbereich geschehen, nicht für Blöcke.",
+      "删除已成功放置在切割图上的原始实体。 \r\n" +
+        "这只会发生在模型空间实体上，而不会发生在块上。",
+      "Eliminar sólidos originales que se hayan colocado correctamente en el mapa de corte. \r\n" +
         "Esto solo ocurrirá para los sólidos del espacio modelo, no para los bloques.",
-      "Supprimez les corps des pièces originales une fois le nesting terminé. \r\n" +
+      "Supprimez les solides originaux qui ont été correctement disposés sur la carte de coupe. \r\n" +
         "Cela ne se produira que pour les solides de l'espace modèle, pas pour les blocs.",
-      "Nesting tamamlandıktan sonra orijinal parçaların gövdelerini silin. \r\n" +
+      "Kesme haritasına başarıyla yerleştirilen orijinal katıları silin. \r\n" +
         "Bu yalnızca model alanı katıları için geçerli olacak, bloklar için değil."};
-
     public static readonly string[] Method = {
       "Nesting method",
       "Метод нестинга",
@@ -406,21 +419,29 @@ namespace AVC
 
     public static readonly string[] FindWindowsTip =  {
       "Search for through-holes and cutouts in parts to nest small parts. \r\n" +
-        "This search can significantly slow down nesting, so it's recommended to disable this option if parts don't have any holes.",
+        "This search can significantly slow down nesting. \r\n" +
+        "Disable this option if your parts do not have windows and if you need through cuts across the entire sheet.",
       "Искать сквозные окна и вырезы в деталях для раскладки в них мелких деталей. \r\n" +
-        "Процедура поиска может сильно замедлить нестинг, поэтому рекомендуется отключать эту опцию, если у деталей нет окон.",
-      "Cerca fori passanti e ritagli nelle parti per nidificare piccole parti. \r\n" +
-        "Questa ricerca può rallentare significativamente il nesting, quindi si consiglia di disabilitare questa opzione se le parti non hanno fori.",
-      "Suchen Sie nach Durchgangslöchern und Ausschnitten in Teilen, um kleine Teile zu verschachteln. \r\n" +
-        "Diese Suche kann das Nesting erheblich verlangsamen, daher wird empfohlen, diese Option zu deaktivieren, wenn Teile keine Löcher haben.",
-      "在零件中搜索通孔和切口以嵌套小零件。 \r\n" +
-        "此搜索可能会显著减慢嵌套速度，因此如果零件没有孔，建议禁用此选项。",
-      "Buscar orificios pasantes y recortes en piezas para anidar piezas pequeñas. \r\n" +  // ES
-        "Esta búsqueda puede ralentizar significativamente el anidamiento, por lo que se recomienda desactivar esta opción si las piezas no tienen orificios.",
-      "Rechercher des trous traversants et des découpes dans les pièces pour imbriquer de petites pièces. \r\n" +  // FR
-        "Cette recherche peut ralentir considérablement l'imbrication, il est donc recommandé de désactiver cette option si les pièces n'ont pas de trous.",
-      "Küçük parçaları yerleştirmek için parçalardaki geçiş deliklerini ve kesmeleri arayın. \r\n" +  // TR
-        "Bu arama, yerleştirmeyi önemli ölçüde yavaşlatabilir, bu nedenle parçaların delikleri yoksa bu seçeneği devre dışı bırakmanız önerilir." };
+        "Поиск может сильно замедлить программу. \r\n" +
+        "Отключать эту опцию, если у деталей нет окон, и если вам нужны сквозные пропилы через весь лист.",
+      "Cerca fori passanti e ritagli nelle parti per annidare piccole parti. \r\n" +
+        "Questa ricerca può rallentare significativamente l'annidamento. \r\n" +
+        "Disabilita questa opzione se le tue parti non hanno finestre e se hai bisogno di tagli passanti su tutto il foglio.",
+      "Suchen Sie nach Durchgangslöchern und Ausschnitten in den Teilen, um kleine Teile zu verschachteln. \r\n" +
+        "Diese Suche kann das Nesting erheblich verlangsamen. \r\n" +
+        "Deaktivieren Sie diese Option, wenn Ihre Teile keine Fenster haben und wenn Sie Durchschnitte über das gesamte Blatt benötigen.",
+      "搜索零件中的通孔和切口以嵌套小零件。 \r\n" +
+        "此搜索可能会显著减慢嵌套速度。 \r\n" +
+        "如果您的零件没有窗口，并且如果您需要跨整个板材的通孔，请禁用此选项。",
+      "Buscar orificios pasantes y recortes en las piezas para anidar piezas pequeñas. \r\n" +
+        "Esta búsqueda puede ralentizar significativamente el anidamiento. \r\n" +
+        "Desactive esta opción si sus piezas no tienen ventanas y si necesita cortes a través de toda la hoja.",
+      "Rechercher des trous traversants et des découpes dans les pièces pour imbriquer de petites pièces. \r\n" +
+        "Cette recherche peut ralentir considérablement l'imbrication. \r\n" +
+        "Désactivez cette option si vos pièces n'ont pas de fenêtres et si vous avez besoin de coupes à travers toute la feuille.",
+      "Parçalarda küçük parçaları yerleştirmek için geçiş delikleri ve kesitler arayın. \r\n" +
+        "Bu arama, yerleştirmeyi önemli ölçüde yavaşlatabilir. \r\n" +
+        "Parçalarınızda pencere yoksa ve tüm levha boyunca geçiş kesitlerine ihtiyacınız varsa bu seçeneği devre dışı bırakın."};
 
     public static readonly string[] BaseCorner = {
       "Start corner",

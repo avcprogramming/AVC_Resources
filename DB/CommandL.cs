@@ -565,13 +565,13 @@ namespace AVC
       "CNC hazırlık" };
     public static readonly string[] Nesting = {
       "Nesting",
-      "Раскладка",
-      "Disposizione",
-      "Nesting",
-      "平铺",
-      "Disposición",
-      "Disposition",
-      "Döşeme"};
+      "Раскрой",
+      "Apertura",
+      "Öffnung",
+      "开场",
+      "Apertura",
+      "Ouverture",
+      "Açılış"};
     public static readonly string[] Numbering = {
       "Numbering",
       "Нумерация",

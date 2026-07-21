@@ -868,14 +868,14 @@ namespace AVC
         "Boyutlar programını çağırma."};
 
     public static readonly string[] NestingTip = {
-      "Place the parts (3D solids) on sheets of material for filing or milling.",
-      "Расположить детали (3d-солиды) на листы материала для напилки или фрезеровки. Нестинг.",
-      "Posizionare i pezzi (solidi 3D) su fogli di materiale per la limatura o la fresatura. Nesting.",
-      "Die Teile (3D-Volumenkörper) werden zum Feilen oder Fräsen auf Materialplatten gelegt. Nesting.",
-      "将零件（3D实体）放置在材料板上进行锉削或铣削。Nesting。",
-      "Colocar las piezas (sólidos 3D) en hojas de material para limado o fresado. Nesting.",
-      "Placer les pièces (solides 3D) sur des feuilles de matériau pour le limage ou le fraisage. Nesting.",
-      "Parçaları (3D katılar) tıraşlama veya frezeleme için malzeme levhalarına yerleştirme. Nesting."};
+      "Place the parts (3D solids) on sheets of material for filing or milling. Cutting maps.",
+      "Расположить детали (3d-солиды) на листы материала для напилки или фрезеровки. Карты раскроя. Нестинг.",
+      "Posizionare i pezzi (solidi 3D) su fogli di materiale per la limatura o la fresatura. Ritagliare mappe. Annidare. Nesting.",
+      "Die Teile (3D-Volumenkörper) werden zum Feilen oder Fräsen auf Materialplatten gelegt. Kartenzuschnitt. Verschachtelung.",
+      "将零件（3D实体）放置在材料板上进行锉削或铣削。裁剪地图。嵌套。",
+      "Colocar las piezas (sólidos 3D) en hojas de material para limado o fresado. Recortar mapas. Anidar.",
+      "Placer les pièces (solides 3D) sur des feuilles de matériau pour le limage ou le fraisage. Découpe de cartes. Nesting.",
+      "Parçaları (3D katılar) tıraşlama veya frezeleme için malzeme levhalarına yerleştirme. Haritaları kesmek. İç içe yerleştirmek."};
 
     public static readonly string[] NumberingTip = {
       "Name the drawing objects as sequential numbers.",
@@ -883,11 +883,10 @@ namespace AVC
         "Сэкономит время при работе с командами Выкладка, Таблица напилки, Маркировка, Умная выноска.",
       "Assegna un nome agli oggetti di disegno come numeri sequenziali.",
       "Benennen Sie die Zeichnungsobjekte als fortlaufende Nummern." ,
-      "将绘图对象名称作为序号。" +
-         "在使用布局、锯床、标记、智能引线命令时节省时间。",
+      "将绘图对象名称作为序号。在使用布局、锯床、标记、智能引线命令时节省时间",
       "Nombrar los objetos de dibujo como números secuenciales.",
-      "Nommer les objets de dessin comme numéros séquentiels.",
-      "Çizim nesnelerini sıralı numaralar olarak adlandırma."};
+      "Nommer les objets de dessin comme numéros séquentiels. ",
+      "Çizim nesnelerini sıralı numaralar olarak adlandırma. "};
 
     public static readonly string[] OffsetManyTip = {
       "A thousand displaced curves in 1 click. " +

@@ -3050,5 +3050,16 @@ namespace AVC
       "Le diamètre de la fraise est trop petit",        // FR
       "Freze çapı çok küçük"};                          // TR
 
+    public static readonly string[] NoLicense = {
+      "You are not licensed to use the NC Prepare command. The option will be disabled.",
+      "У вас нет лицензии на использование команды ЧПУ Подготовка. Опция будет отключена.",
+      "Non sei autorizzato a utilizzare il comando NC Prepare. L'opzione sarà disabilitata.",
+      "Sie sind nicht lizenziert, den NC Prepare-Befehl zu verwenden. Die Option wird deaktiviert.",
+      "您没有使用NC Prepare命令的许可。 该选项将被禁用。",
+      "No tiene licencia para usar el comando NC Prepare. La opción se deshabilitará.",  // ES
+      "Vous n'êtes pas autorisé à utiliser la commande NC Prepare. L'option sera désactivée.",  // FR
+      "NC Prepare komutunu kullanma yetkiniz yok. Bu seçenek devre dışı bırakılacaktır." };  // TR
+
+
   }
 }
