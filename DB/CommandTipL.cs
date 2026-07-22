@@ -868,14 +868,14 @@ namespace AVC
         "Boyutlar programını çağırma."};
 
     public static readonly string[] NestingTip = {
-      "Place the parts (3D solids) on sheets of material for filing or milling. Cutting maps.",
+      "Place the parts (3D solids) on sheets of material for sawing or milling. Cutting maps.",
       "Расположить детали (3d-солиды) на листы материала для напилки или фрезеровки. Карты раскроя. Нестинг.",
-      "Posizionare i pezzi (solidi 3D) su fogli di materiale per la limatura o la fresatura. Ritagliare mappe. Annidare. Nesting.",
-      "Die Teile (3D-Volumenkörper) werden zum Feilen oder Fräsen auf Materialplatten gelegt. Kartenzuschnitt. Verschachtelung.",
-      "将零件（3D实体）放置在材料板上进行锉削或铣削。裁剪地图。嵌套。",
-      "Colocar las piezas (sólidos 3D) en hojas de material para limado o fresado. Recortar mapas. Anidar.",
-      "Placer les pièces (solides 3D) sur des feuilles de matériau pour le limage ou le fraisage. Découpe de cartes. Nesting.",
-      "Parçaları (3D katılar) tıraşlama veya frezeleme için malzeme levhalarına yerleştirme. Haritaları kesmek. İç içe yerleştirmek."};
+      "Posizionare le parti (solidi 3D) su fogli di materiale per segatura o fresatura. Mappe di taglio.",
+      "Platzieren Sie die Teile (3D-Volumenkörper) auf Materialplatten zum Sägen oder Fräsen. Schneidkarten.",
+      "将零件（3D 实体）放置在材料板上以进行锯切或铣削。 切割图。",
+      "Colocar las piezas (sólidos 3D) en hojas de material para aserrado o fresado. Mapas de corte.",
+      "Placer les pièces (solides 3D) sur des feuilles de matériau pour le sciage ou le fraisage. Cartes de coupe.",
+      "Parçaları (3D katılar) testereleme veya frezeleme için malzeme levhalarına yerleştirme. Kesim haritaları."};
 
     public static readonly string[] NumberingTip = {
       "Name the drawing objects as sequential numbers.",

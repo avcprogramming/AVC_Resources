@@ -396,24 +396,24 @@ namespace AVC
       "Türlere göre primitiflerin dağılımı"};
 
     public static readonly string[] ProcessedParts = {
-      "✔ Processed {0} parts in {1}s",
-      "✔ Обработано {0} деталей за {1}с",
-      "✔ {0} parti elaborate in {1}s",
-      "✔ Verarbeitete {0} Teile in {1} Sekunden",
-      "✔ 在 {1} 秒内处理了 {0} 个对象",
-      "✔ Procesadas {0} piezas en {1}s",
-      "✔ {0} pièces traitées en {1}s",
-      "✔ {1} saniyede {0} parça işlendi"};
+      "✔ Processed {0} parts in {1:0.##}s",
+      "✔ Обработано {0} деталей за {1:0.##}с",
+      "✔ {0} parti elaborate in {1:0.##}s",
+      "✔ Verarbeitete {0} Teile in {1:0.##} Sekunden",
+      "✔ 在 {1:0.##} 秒内处理了 {0} 个对象",
+      "✔ Procesadas {0} piezas en {1:0.##}s",
+      "✔ {0} pièces traitées en {1:0.##}s",
+      "✔ {1:0.##} saniyede {0} parça işlendi"};
 
     public static readonly string[] ProcessedObjects = {
-      "✔ Processed {0} objects in {1}s",
-      "✔ Обработано {0} объектов за {1}с",
-      "✔ {0} oggetti elaborati in {1} s",
-      "✔ Verarbeitete {0} Objekte in {1}s",
-      "✔ 在 {1} 秒内处理了 {0} 个对象",
-      "✔ Procesados {0} objetos en {1}s",
-      "✔ {0} objets traités en {1}s",
-      "✔ {1} saniyede {0} nesne işlendi"};
+      "✔ Processed {0} objects in {1:0.##}s",
+      "✔ Обработано {0} объектов за {1:0.##}с",
+      "✔ {0} oggetti elaborati in {1:0.##} s",
+      "✔ Verarbeitete {0} Objekte in {1:0.##}s",
+      "✔ 在 {1:0.##} 秒内处理了 {0} 个对象",
+      "✔ Procesados {0} objetos en {1:0.##}s",
+      "✔ {0} objets traités en {1:0.##}s",
+      "✔ {1:0.##} saniyede {0} nesne işlendi"};
 
     public static readonly string[] CreatedObjects = {
       "✔ {0} objects created in {1}s",
