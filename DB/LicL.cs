@@ -541,6 +541,17 @@ namespace AVC
           "Bakiyenizi yenilemeye dikkat edin. " +
           "Program fiyatı: {2}"};
 
+    public static readonly string[] EndSoonTitle = {
+      "A>V>C> {0} days left!",
+      "A>V>C> осталось {0} дней(я)!",
+      "A>V>C> rimangono {0} giorno/i!",
+      "A>V>C> verbleibende {0} Tage!",
+      "A>V>C> 剩余 {0} 天！",
+      "A>V>C> ¡Quedan {0} días!",
+      "A>V>C> reste {0} jour(s)!",
+      "A>V>C> {0} gün kaldı!"};
+
+
     public static readonly string[] ActivationTitle = {
       "Activation A>V>C>",
       "Активация A>V>C>",
