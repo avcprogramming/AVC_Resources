@@ -996,8 +996,7 @@ namespace AVC
       "Plusieurs contours extérieurs de la pièce trouvés",  // FR
       "Parçanın birkaç dış konturu bulundu"};  // TR
 
-    public static readonly string[] DDLClosedErr =
-    {
+    public static readonly string[] DDLClosedErr = {
       "Program works only with open contours - the edges of the dadoes inside the part contour.",
       "Программа работает только с незамкнутыми контурами - краями пазов внутри контура детали.",
       "Il programma funziona solo con contorni aperti - i bordi delle scanalature all'interno del contorno della parte.",
@@ -1028,7 +1027,7 @@ namespace AVC
     public static readonly string[] NotPass = {
       "It looks like dado does not pass a given cutter!\r\n" +
         "Check it. The circuit in red.",
-      "Похоже паз не проходим заданной фрезой!\r\n" +
+      "Похоже паз непроходим заданной фрезой!\r\n" +
         "Проверьте. Контур выделен красным.",
       "Sembra che la scanalatura non passi attraverso la fresa data!\r\n" +
         "Dai un'occhiata. Il contorno è evidenziato in rosso.",
@@ -3051,15 +3050,24 @@ namespace AVC
       "Freze çapı çok küçük"};                          // TR
 
     public static readonly string[] NoLicense = {
-      "You are not licensed to use the NC Prepare command. The option will be disabled.",
-      "У вас нет лицензии на использование команды ЧПУ Подготовка. Опция будет отключена.",
-      "Non sei autorizzato a utilizzare il comando NC Prepare. L'opzione sarà disabilitata.",
-      "Sie sind nicht lizenziert, den NC Prepare-Befehl zu verwenden. Die Option wird deaktiviert.",
-      "您没有使用NC Prepare命令的许可。 该选项将被禁用。",
-      "No tiene licencia para usar el comando NC Prepare. La opción se deshabilitará.",  // ES
-      "Vous n'êtes pas autorisé à utiliser la commande NC Prepare. L'option sera désactivée.",  // FR
-      "NC Prepare komutunu kullanma yetkiniz yok. Bu seçenek devre dışı bırakılacaktır." };  // TR
+      "❌ You are not licensed to use the NC Prepare command. The option will be disabled.",
+      "❌ У вас нет лицензии на использование команды ЧПУ Подготовка. Опция будет отключена.",
+      "❌ Non sei autorizzato a utilizzare il comando NC Prepare. L'opzione sarà disabilitata.",
+      "❌ Sie sind nicht lizenziert, den NC Prepare-Befehl zu verwenden. Die Option wird deaktiviert.",
+      "❌ 您没有使用NC Prepare命令的许可。 该选项将被禁用。",
+      "❌ No tiene licencia para usar el comando NC Prepare. La opción se deshabilitará.",  // ES
+      "❌ Vous n'êtes pas autorisé à utiliser la commande NC Prepare. L'option sera désactivée.",  // FR
+      "❌ NC Prepare komutunu kullanma yetkiniz yok. Bu seçenek devre dışı bırakılacaktır." };  // TR
 
+    public static readonly string[] ContouringErr = {
+      "⚠️ Failed to create NC contours for part {0}",
+      "⚠️ Не удалось создать ЧПУ-контуры для детали {0}",
+      "⚠️ Impossibile creare contorni NC per la parte {0}",
+      "⚠️ Fehler beim Erstellen von NC-Konturen für Teil {0}",
+      "⚠️ 无法为零件 {0} 创建 NC 轮廓",
+      "⚠️ No se pudieron crear contornos NC para la pieza {0}",  // ES
+      "⚠️ Impossible de créer des contours NC pour la pièce {0}",  // FR
+      "⚠️ {0} parçası için NC konturları oluşturulamadı." };
 
   }
 }

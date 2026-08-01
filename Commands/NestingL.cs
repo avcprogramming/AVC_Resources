@@ -571,6 +571,16 @@ namespace AVC
       "✔ Solides source supprimés: {0}",
       "✔ Kaynak katıları silindi: {0}" };
 
+    public static readonly string[] NoSheetsInGroup = {
+      "No sheets have been created in group {0}",
+      "Не создано ни одного листа в группе {0}",
+      "Nessun foglio è stato creato nel gruppo {0}",
+      "Es wurden keine Blätter in der Gruppe {0} erstellt",
+      "在组 {0} 中未创建任何板材",
+      "No se han creado hojas en el grupo {0}",
+      "Aucun feuille n'a été créé dans le groupe {0}",
+      "Grup {0} içinde levha oluşturulmadı" };
+
 
   }
 }
