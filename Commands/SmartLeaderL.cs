@@ -178,14 +178,14 @@ namespace AVC
       "Smart Leader KAPALI" };                         // TR
 
     public static readonly string[] NoObject ={
-      "No object under leader found",
+      "There are no matching objects under the MLeader",
       "Под выноской нет подходящих объектов",
-      "Nessun oggetto trovato sotto la freccia",
-      "Kein Objekt unter Pfeil gefunden",
-      "标注箭头下没有匹配的对象",
-      "No se encontró ningún objeto bajo la directriz",  // ES
-      "Aucun objet trouvé sous la ligne de repère",   // FR
-      "Açıklama çizgisi altında nesne bulunamadı" };  // TR
+      "Non ci sono oggetti corrispondenti sotto il MLeader",
+      "Unter dem MLeader befinden sich keine passenden Objekte",
+      "MLeader 下没有匹配的对象",
+      "No hay objetos coincidentes debajo del MLeader",  // ES
+      "Il n'y a pas d'objets correspondants sous le MLeader",  // FR
+      "MLeader'ın altında eşleşen nesne yok" };        // TR
 
     public static readonly string[] NotWork ={
       "Smart Leader did not work",
