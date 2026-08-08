@@ -28,6 +28,16 @@ namespace AVC
       "mm",
       "mm"};
 
+    public static readonly string[] Centimeter = {
+      "cm",
+      "см",
+      "cm",
+      "cm",
+      "厘米",
+      "cm",
+      "cm",
+      "cm"};
+
     public static readonly string[] Inch = {
       "in",
       "дюйм",

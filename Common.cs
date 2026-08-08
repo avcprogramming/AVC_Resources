@@ -74,6 +74,7 @@ namespace AVC
     public static Bitmap AutoSnap16 => LoadPng("AutoSnap16");
     public static Bitmap AutoSnap32 => LoadPng("AutoSnap32");
     public static Icon AVC => LoadIcon("AVC");
+    public static Bitmap AVCLogo => LoadPng("AVC");
     public static Bitmap AVC16 => LoadPng("AVC16");
     public static Bitmap AvcMessage16 => LoadPng("AvcMessage16");
     public static Bitmap AvcMessage32 => LoadPng("AvcMessage32");

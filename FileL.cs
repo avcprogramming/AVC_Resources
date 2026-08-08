@@ -26,6 +26,26 @@ namespace AVC
       "Dossier",
       "Klasör"};
 
+    public static readonly string[] PluginFile = {
+      "Main plugin file:",
+      "Главный файл плагина:",
+      "File principale del plugin:",
+      "Haupt-Plugin-Datei:",
+      "插件主文件：",
+      "Archivo principal del complemento:",
+      "Fichier principal du plugin :",
+      "Ana eklenti dosyası:"};
+
+    public static readonly string[] MenuFile = {
+      "Menu file:",
+      "Файл меню:",
+      "File del menu:",
+      "Menüdatei:",
+      "菜单文件：",
+      "Archivo de menú:",
+      "Fichier de menu :",
+      "Menü dosyası:"};
+
     public static readonly string[] MkDir = {
       "Creating the directory '{0}'",
       "Создается каталог '{0}'",

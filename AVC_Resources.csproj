@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -233,6 +233,7 @@
     <EmbeddedResource Include="Resources\AutoSnap16.png" />
     <EmbeddedResource Include="Resources\AutoSnap32.png" />
     <EmbeddedResource Include="Resources\AVC.ico" />
+    <EmbeddedResource Include="Resources\AVC.png" />
     <EmbeddedResource Include="Resources\AVC16.png" />
     <EmbeddedResource Include="Resources\AvcMessage16.png" />
     <EmbeddedResource Include="Resources\AvcMessage32.png" />

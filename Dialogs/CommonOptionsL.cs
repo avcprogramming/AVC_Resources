@@ -680,36 +680,61 @@ namespace AVC
         "Dikkatli değiştirin!"};
 
     public static readonly string[] LinearTip = {
-      "The maximum allowable deviation.\r\n" +
+      "The maximum allowable deviation and quantization step of sizes.\r\n" +
         "It is used to compare the distances between points to define linearity and plane.\r\n" +
         "It uses current drawing units (mm or inch).\r\n" +
+        "⚠️ All dimensions will be rounded to this increment, \r\n" +
+        "regardless of the format settings in the 'Convert number to string' section. \r\n" +
+        "Be sure to change this setting when changing drawing units (inches to mm, etc.).\r\n" +
         "Change with caution!",
-      "Максимально допустимое отклонение.\r\n" +
+      "Максимально допустимое отклонение и шаг квантования размеров.\r\n" +
         "В единицах текущего чертежа (мм или дюймы).\r\n" +
         "Используется для сравнения расстояний между точками, для определения линейности и плоскости.\r\n" +
+        "⚠️ Все размеры будут округлены с этим шагом не зависимо от настроек формата в разделе 'Число к строке'. \r\n" +
+        "Обязательно меняйте эту настройку при смене единиц чертежа (дюймы на мм и так далее). \r\n" +
         "Изменять с осторожностью!",
-      "La deviazione massima consentita.\r\n" +
-        "Nelle unità di disegno correnti (mm o pollici).\r\n" +
-        "Viene utilizzato per confrontare le distanze tra i punti, per definire linearità e area.\r\n" +
+      "La deviazione massima consentita e il passo di quantizzazione delle dimensioni.\r\n" +
+        "Viene utilizzato per confrontare le distanze tra i punti per definire linearità e piano.\r\n" +
+        "Utilizza le unità di disegno correnti (mm o pollici).\r\n" +
+        "⚠️ Tutte le dimensioni saranno arrotondate a questo incremento, \r\n" +
+        "indipendentemente dalle impostazioni del formato nella sezione 'Converti numero in stringa'. \r\n" +
+        "Assicurati di modificare questa impostazione quando cambi le unità di disegno (pollici in mm, ecc.). \r\n" +
         "Modificare con cautela!",
-      "Die maximal zulässige Abweichung. In den aktuellen Zeichnungseinheiten (mm oder Zoll).\r\n" +
+      "Die maximal zulässige Abweichung und Quantisierungsschritt der Größen.\r\n" +
          "Es wird verwendet, um die Abstände zwischen Punkten zu vergleichen, um Linearität und Ebene zu definieren.\r\n" +
+         "Es verwendet aktuelle Zeichnungseinheiten (mm oder Zoll).\r\n" +
+         "⚠️ Alle Abmessungen werden auf dieses Inkrement gerundet, \r\n" +
+         "unabhängig von den Formateinstellungen im Abschnitt 'Zahl in Zeichenfolge konvertieren'. \r\n" +
+         "Ändern Sie diese Einstellung unbedingt beim Ändern der Zeichnungseinheiten (Zoll in mm usw.). \r\n" +
          "Umsteigen mit Vorsicht!",
-      "最大允许偏差。 以当前的绘图单位（毫米或英寸）。\r\n" +
-         "它用于比较点之间的距离，用于定义线性和平面。\r\n" +
-         "谨慎改变！",
-      "La desviación máxima permitida.\r\n" +
-        "Se utiliza para comparar las distancias entre puntos para definir linealidad y plano.\r\n" +
-        "Utiliza unidades de dibujo actuales (mm o pulgadas).\r\n" +
+      "尺寸的最大允许偏差和量化步长。\r\n" +
+          "用于比较点之间的距离以定义线性和平面。\r\n" +
+          "它使用当前的绘图单位（毫米或英寸）。\r\n" +
+          "⚠️ 所有尺寸都将四舍五入到此增量，\r\n" +
+          "无论“将数字转换为字符串”部分中的格式设置如何。\r\n" +
+          "更改绘图单位（英寸到毫米等）时，请务必更改此设置。\r\n" +
+          "谨慎改变！",
+      "La desviación máxima permitida y el paso de cuantización de los tamaños.\r\n" +
+        "Se utiliza para comparar las distancias entre puntos para definir la linealidad y el plano.\r\n" +
+        "Utiliza las unidades de dibujo actuales (mm o pulgadas).\r\n" +
+        "⚠️ Todas las dimensiones se redondearán a este incremento, \r\n" +
+        "independientemente de la configuración del formato en la sección 'Convertir número a cadena'. \r\n" +
+        "Asegúrese de cambiar esta configuración al cambiar las unidades de dibujo (pulgadas a mm, etc.). \r\n" +
         "¡Cambie con precaución!",
-      "L'écart maximal autorisé.\r\n" +
-        "Il est utilisé pour comparer les distances entre les points pour définir la linéarité et le plan.\r\n" +
+      "La déviation maximale autorisée et le pas de quantification des tailles.\r\n" +
+        "Il est utilisé pour comparer les distances entre les points afin de définir la linéarité et le plan.\r\n" +
         "Il utilise les unités de dessin actuelles (mm ou pouces).\r\n" +
+        "⚠️ Toutes les dimensions seront arrondies à cet incrément, \r\n" +
+        "indépendamment des paramètres de format dans la section 'Convertir le nombre en chaîne'. \r\n" +
+        "Assurez-vous de modifier ce paramètre lors du changement des unités de dessin (pouces en mm, etc.). \r\n" +
         "Changez avec prudence!",
-      "İzin verilen maksimum sapma.\r\n" +
-        "Doğrusallık ve düzlemi tanımlamak için noktalar arasındaki mesafeleri karşılaştırmak için kullanılır.\r\n" +
-        "Geçerli çizim birimlerini kullanır (mm veya inç).\r\n" +
-        "Dikkatli değiştirin!"};
+      "Boyutların izin verilen maksimum sapması ve niceleme adımı.\r\n" +
+        "Doğrusallığı ve düzlemi tanımlamak için noktalar arasındaki mesafeleri karşılaştırmak için kullanılır.\r\n" +
+        "Mevcut çizim birimlerini (mm veya inç) kullanır.\r\n" +
+        "⚠️ Tüm boyutlar bu artışa yuvarlanacaktır,\r\n" +
+        "'Sayıyı dizeye dönüştür' bölümündeki biçim ayarlarından bağımsız olarak.\r\n" +
+        "Çizim birimlerini (inçten mm'ye vb.) değiştirirken bu ayarı değiştirdiğinizden emin olun.\r\n" +
+        "Dikkatli değiştirin!" };      
 
     public static readonly string[] MarkingColorTip = {
       "The color index used to mark the front side. From 1 to 255.\r\n" +
