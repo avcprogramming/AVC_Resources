@@ -115,7 +115,7 @@ namespace AVC
 
     public static readonly string[] ClickStartQuery = {
       "Click on the curve to set the starting point",
-      "Кликните по кривой выбора точки старта",
+      "Кликните по кривой в новой точке старта",
       "Fare clic sulla curva per impostare il punto di inizio",
       "Klicken Sie auf die Kurve, um den Startpunkt festzulegen",
       "点击曲线以设置起点",

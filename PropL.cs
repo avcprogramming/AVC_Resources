@@ -3571,6 +3571,178 @@ namespace AVC
         "Ve farklı çizimlerde aynı malzemelerle eşleşmelidir,\r\n" +
         "malzemenin adında biraz yanılsanız bile."};
 
+    public static readonly string[] MaterialKindTip = {
+      "Kind, type of material. \r\n" +
+        "For grouping materials in the purchasing tables.",
+      "Тип, сорт, вид материала. \r\n" +
+        "Для группировки материалов в таблицах закупок.",
+      "Tipo, tipo di materiale. \r\n" +
+        "Per raggruppare i materiali nelle tabelle degli acquisti.",
+      "Art, Materialart. \r\n" +
+        "Zur Gruppierung von Materialien in Einkaufstabellen.",
+      "材料的种类、类型。 \r\n" +
+         "用于在采购表中对材料进行分组。",
+      "Tipo de material. \r\n" +
+        "Para agrupar materiales en las tablas de compras.",
+      "Type de matériau. \r\n" +
+        "Pour regrouper les matériaux dans les tableaux d'achat.",
+      "Malzeme türü. \r\n" +
+        "Satın alma tablolarında malzemeleri gruplamak için."};
+
+    public static readonly string[] MaterialHyperlinkTip = {
+      "The address of the material page on the manufacturer's or supplier's website on the Internet.\r\n" +
+        "The hyperlink can be used in Excel for the HYPERLINK function.",
+      "Адрес странички материала на сайте производителя или поставщика в Интернете.\r\n" +
+        "Гиперссылка может использоваться в Excel для функции HYPERLINK.",
+      "L'indirizzo della pagina del materiale sul sito Web del produttore o del fornitore su Internet.\r\n" +
+        "Il collegamento ipertestuale può essere utilizzato in Excel per la funzione HYPERLINK.",
+      "Die Adresse der Materialseite auf der Website des Herstellers oder Lieferanten im Internet.\r\n" +
+        "Der Hyperlink kann in Excel für die HYPERLINK-Funktion verwendet werden.",
+      "材料页面在互联网上制造商或供应商网站的地址。\r\n" +
+         "超链接可以在 Excel 中用于 HYPERLINK 函数。",
+      "La dirección de la página del material en el sitio web del fabricante o proveedor en Internet.\r\n" +
+        "El hipervínculo se puede usar en Excel para la función HYPERLINK.",
+      "L'adresse de la page du matériau sur le site Web du fabricant ou du fournisseur sur Internet.\r\n" +
+        "Le lien hypertexte peut être utilisé dans Excel pour la fonction HYPERLINK.",
+      "Malzeme sayfasının İnternet'teki üreticinin veya tedarikçinin web sitesindeki adresi.\r\n" +
+        "Köprü, Excel'de HYPERLINK işlevi için kullanılabilir."};
+
+    public static readonly string[] Supplier = {
+      "Supplier",
+      "Поставщик",
+      "Fornitore",
+      "Lieferant",
+      "供应商",
+      "Proveedor",
+      "Fournisseur",
+      "Tedarikçi"};
+
+    public static readonly string[] SupplierTip = {
+      "Supplier or manufacturer of the material.",
+      "Поставщик или производитель материала.",
+      "Fornitore o produttore del materiale.",
+      "Lieferant oder Hersteller des Materials.",
+      "材料的供应商或制造商。",
+      "Proveedor o fabricante del material.",
+      "Fournisseur ou fabricant du matériau.",
+      "Malzemenin tedarikçisi veya üreticisi."};
+
+    public static readonly string[] ImagePath = {
+      "Image",
+      "Изображение",
+      "Immagine",
+      "Bild",
+      "图片",
+      "Imagen",
+      "Image",
+      "Görüntü"};
+
+    public static readonly string[] ImagePathTip = {
+      "A path to a file containing a material image or an image URL on the internet. \r\n" +
+        "Can be used in Excel for the IMAGE function. However, this is not a texture for rendering.",
+      "Путь к файлу с картинкой материала или URL картинки в интернете. \r\n" +
+        "Можно использовать в Excel для функции IMAGE. Но это не текстура для рендера.",
+      "Un percorso a un file contenente un'immagine del materiale o un URL dell'immagine su Internet. \r\n" +
+        "Può essere utilizzato in Excel per la funzione IMMAGINE. Tuttavia, questa non è una texture per il rendering.",
+      "Ein Pfad zu einer Datei, die ein Materialbild oder eine Bild-URL im Internet enthält. \r\n" +
+        "Kann in Excel für die IMAGE-Funktion verwendet werden. Dies ist jedoch keine Textur für das Rendering.",
+      "包含材料图像的文件路径或互联网上的图像 URL。 \r\n" +
+        "可以在 Excel 中用于 IMAGE 函数。但是，这不是渲染纹理。",
+      "Una ruta a un archivo que contiene una imagen del material o una URL de imagen en Internet. \r\n" +
+        "Puede utilizarse en Excel para la función IMAGEN. Sin embargo, esto no es una textura para renderizar.",
+      "Un chemin vers un fichier contenant une image de matériau ou une URL d'image sur Internet. \r\n" +
+        "Peut être utilisé dans Excel pour la fonction IMAGE. Cependant, ce n'est pas une texture pour le rendu.",
+      "Malzeme görüntüsü içeren bir dosyaya veya internetteki bir görüntü URL'sine giden bir yol. \r\n" +
+        "Excel'de IMAGE fonksiyonu için kullanılabilir. Ancak, bu, render için bir doku değildir."};
+
+    public static readonly string[] LengthMargin = {
+      "Length margin",
+      "Припуск по длине",
+      "Margine lunghezza",
+      "Längenzugabe",
+      "长度余量",
+      "Margen de longitud",
+      "Marge de longueur",
+      "Uzunluk payı"};
+
+    public static readonly string[] LengthMarginTip = {
+      "An additional allowance for the length of each part made of this material.\r\n" +
+        "Added to the part length, this gives the blank size for sawing.\r\n" +
+        "Used to secure the blank on the machine for subsequent finish milling.\r\n" +
+        "The blank length of a part with an allowance can be obtained in tables using the %lengthmargin% substitution.",
+      "Дополнительный припуск к длине каждой детали из этого материала.\r\n" +
+        "В сумме с длиной детали дает размер заготовки для напилки.\r\n" +
+        "Используется для закрепления заготовки на станке и дальнейшей чистовой фрезеровки детали.\r\n" +
+        "Длину заготовки детали с припуском можно получить в таблицах с помощью подстановки %lengthmargin%",
+      "Un'ulteriore tolleranza per la lunghezza di ogni parte realizzata con questo materiale.\r\n" +
+        "Aggiunto alla lunghezza della parte, questo dà la dimensione del grezzo per la segatura.\r\n" +
+        "Utilizzato per fissare il grezzo sulla macchina per la successiva fresatura di finitura.\r\n" +
+        "La lunghezza del grezzo di una parte con tolleranza può essere ottenuta nelle tabelle utilizzando la sostituzione %lengthmargin%.",
+      "Eine zusätzliche Zugabe für die Länge jedes Teils aus diesem Material.\r\n" +
+        "Zusätzlich zur Teilelänge ergibt dies die Rohlinggröße für das Sägen.\r\n" +
+        "Wird verwendet, um den Rohling auf der Maschine für die anschließende Endbearbeitung zu sichern.\r\n" +
+        "Die Rohlinglänge eines Teils mit Zugabe kann in Tabellen mit der Substitution %lengthmargin% erhalten werden.",
+      "对由此材料制成的每个零件的长度的额外公差。\r\n" +
+         "加上零件长度，这给出了锯切的毛坯尺寸。\r\n" +
+         "用于在机器上固定毛坯以进行后续精加工铣削。\r\n" +
+         "使用 %lengthmargin% 替换可以在表中获得带有余量的零件毛坯长度。",
+      "Una tolerancia adicional para la longitud de cada pieza hecha de este material.\r\n" +
+        "Agregado a la longitud de la pieza, esto da el tamaño en bruto para el aserrado.\r\n" +
+        "Se utiliza para asegurar la pieza en bruto en la máquina para el posterior fresado de acabado.\r\n" +
+        "La longitud en bruto de una pieza con una tolerancia se puede obtener en tablas utilizando la sustitución %lengthmargin%.",
+      "Une tolérance supplémentaire pour la longueur de chaque pièce fabriquée à partir de ce matériau.\r\n" +
+        "Ajouté à la longueur de la pièce, cela donne la taille brute pour le classement.\r\n" +
+        "Utilisé pour sécuriser la pièce brute sur la machine pour le fraisage de finition ultérieur.\r\n" +
+        "La longueur brute d'une pièce avec une tolérance peut être obtenue dans les tableaux en utilisant la substitution %lengthmargin%.",
+      "Bu malzemeden yapılmış her parçanın uzunluğu için ek bir tolerans.\r\n" +
+        "Parça uzunluğuna eklenmiş, bu dosyalama için ham boyutu verir.\r\n" +
+        "Sonraki bitirme frezeleme için makinede boşluğu güvence altına almak için kullanılır.\r\n" +
+        "Bir toleransa sahip bir parçanın ham uzunluğu, %lengthmargin% ikamesi kullanılarak tablolarla elde edilebilir."};
+
+    public static readonly string[] WidthMargin = {
+      "Width margin",
+      "Припуск по ширине",
+      "Margine larghezza",
+      "Breitenzugabe",
+      "宽度余量",
+      "Margen de ancho",
+      "Marge de largeur",
+      "Genişlik payı"};
+
+    public static readonly string[] WidthMarginTip = {
+      "An additional allowance for the width of each part made of this material.\r\n" +
+        "Added to the part width, this gives the blank size for sawing.\r\n" +
+        "Used to secure the blank on the machine for subsequent finish milling.\r\n" +
+        "The blank width of a part with an allowance can be obtained in tables using the %widthmargin% substitution.",
+      "Дополнительный припуск к ширине каждой детали из этого материала.\r\n" +
+        "В сумме с шириной детали дает размер заготовки для распила.\r\n" +
+        "Используется для закрепления заготовки на станке и дальнейшей чистовой фрезеровки детали.\r\n" +
+        "Ширину заготовки детали с припуском можно получить в таблицах с помощью подстановки %widthmargin%",
+      "Un'ulteriore tolleranza per la larghezza di ogni parte realizzata con questo materiale.\r\n" +
+        "Aggiunto alla larghezza della parte, questo dà la dimensione del grezzo per la segatura.\r\n" +
+        "Utilizzato per fissare il grezzo sulla macchina per la successiva fresatura di finitura.\r\n" +
+        "La larghezza del grezzo di una parte con tolleranza può essere ottenuta nelle tabelle utilizzando la sostituzione %widthmargin%.",
+      "Eine zusätzliche Zugabe für die Breite jedes Teils aus diesem Material.\r\n" +
+        "Zusätzlich zur Teilebreite ergibt dies die Rohlinggröße für das Sägen.\r\n" +
+        "Wird verwendet, um den Rohling auf der Maschine für die anschließende Endbearbeitung zu sichern.\r\n" +
+        "Die Rohlingbreite eines Teils mit Zugabe kann in Tabellen mit der Substitution %widthmargin% erhalten werden.",
+      "对由此材料制成的每个零件的宽度的额外公差。\r\n" +
+         "加上零件宽度，这给出了锯切的毛坯尺寸。\r\n" +
+         "用于在机器上固定毛坯以进行后续精加工铣削。\r\n" +
+         "使用 %widthmargin% 替换可以在表中获得带有余量的零件毛坯宽度。",
+      "Una tolerancia adicional para el ancho de cada pieza hecha de este material.\r\n" +
+        "Agregado al ancho de la pieza, esto da el tamaño en bruto para el aserrado.\r\n" +
+        "Se utiliza para asegurar la pieza en bruto en la máquina para el posterior fresado de acabado.\r\n" +
+        "El ancho en bruto de una pieza con una tolerancia se puede obtener en tablas utilizando la sustitución %widthmargin%.",
+      "Une tolérance supplémentaire pour la largeur de chaque pièce fabriquée à partir de ce matériau.\r\n" +
+        "Ajouté à la largeur de la pièce, cela donne la taille brute pour le sciage.\r\n" +
+        "Utilisé pour sécuriser la pièce brute sur la machine pour le fraisage de finition ultérieur.\r\n" +
+        "La largeur brute d'une pièce avec une tolérance peut être obtenue dans les tableaux en utilisant la substitution %widthmargin%.",
+      "Bu malzemeden yapılmış her parçanın genişliği için ek bir tolerans.\r\n" +
+        "Parça genişliğine eklenmiş, bu testere için ham boyutu verir.\r\n" +
+        "Sonraki bitirme frezeleme için makinede boşluğu güvence altına almak için kullanılır.\r\n" +
+        "Bir toleransa sahip bir parçanın ham genişliği, %widthmargin% ikamesi kullanılarak tablolarla elde edilebilir."};
+    
     public static readonly string[] MaterialColor = {
       "Material Color",
       "Материал - Цвет",
@@ -4017,6 +4189,16 @@ namespace AVC
       "Material - Uso",
       "Matériau - Utilisation",
       "Malzeme - Kullanım"};
+
+    public static readonly string[] MaterialUseAbc = {
+      "Material Use alphabetically",
+      "Материал - Использование по алфавиту",
+      "Materiale - Utilizzare in ordine alfabetico",
+      "Material verwenden alphabetisch",
+      "材料-按字母顺序使用",
+      "Material - Uso alfabéticamente",
+      "Matériau - Utilisation par ordre alphabétique",
+      "Malzeme - Alfabetik olarak kullanım"};
 
     public static readonly string[] UseTip = {
       "The purpose of this type of material",
@@ -4653,6 +4835,16 @@ namespace AVC
       "Longueur,mm",      // FR
       "Uzunluk,mm"};      // TR
 
+    public static readonly string[] LengthWithMargin = {
+      "Length with margin",
+      "Длина с припуском",
+      "Lunghezza con margine",
+      "Länge mit Rand",
+      "带边距的长度",
+      "Longitud con margen",  // ES
+      "Longueur avec marge",  // FR
+      "Marj ile uzunluk"};     // TR
+
     // общее свойство Material для солида требует отдельной подсказки
     public static readonly string[] SolidMaterialTip = {
       "Material of which the part is made.\r\n" +
@@ -4879,6 +5071,16 @@ namespace AVC
       "Ancho,mm",         // ES
       "Largeur,mm",       // FR
       "Genişlik,mm"};     // TR
+
+    public static readonly string[] WidthWithMargin = {
+      "Width with margin",
+      "Ширина с припуском",
+      "Larghezza con margine",
+      "Breite mit Rand",
+      "带边距的宽度",
+      "Ancho con margen",  // ES
+      "Largeur avec marge", // FR
+      "Marj ile genişlik"};  // TR
 
     public static readonly string[] Slopes = {
       "Slope ends",
