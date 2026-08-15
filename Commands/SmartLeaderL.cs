@@ -198,14 +198,14 @@ namespace AVC
       "Smart Leader çalışmadı" };                      // TR
 
     public static readonly string[] SubstitutionInfo ={
-      "Substitution performed for object #{0:X} to leader #{1:X}",
-      "Подстановки выполнены для объекта #{0:X} в выноске #{1:X}",
-      "Sostituzioni eseguite per l'oggetto #{0: X} al leader #{1: X}",
-      "Ersetzungen für Objekt #{0: X} in Führungslinien#{1: X} durchgeführt",
-      "在标注 #{1:X} 中对对象 #{0:X} 进行了替换",
-      "Sustitución realizada para el objeto #{0:X} en la directriz #{1:X}",  // ES
-      "Substitution effectuée pour l'objet #{0:X} dans la ligne de repère #{1:X}",  // FR
-      "#{0:X} nesnesi için #{1:X} açıklama çizgisinde ikame yapıldı" };  // TR
+      "Substitution performed for object #{0:X}",
+      "Подстановки выполнены для объекта #{0:X}",
+      "Sostituzioni eseguite per l'oggetto #{0:X}",
+      "Substitutionen für Objekt #{0:X} durchgeführt",
+      "对象 #{0:X} 执行了替换",
+      "Sustitución realizada para el objeto #{0:X}",    // ES
+      "Substitution effectuée pour l'objet #{0:X}",    // FR
+      "Nesne #{0:X} için ikame gerçekleştirildi" };     // TR
 
     public static readonly string[] LeaderCount = {
       "Found smart leaders: {0}",

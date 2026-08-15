@@ -3669,35 +3669,35 @@ namespace AVC
       "An additional allowance for the length of each part made of this material.\r\n" +
         "Added to the part length, this gives the blank size for sawing.\r\n" +
         "Used to secure the blank on the machine for subsequent finish milling.\r\n" +
-        "The blank length of a part with an allowance can be obtained in tables using the %lengthmargin% substitution.",
+        "The blank length of a part with an allowance can be obtained in tables using the %blanklength% substitution.",
       "Дополнительный припуск к длине каждой детали из этого материала.\r\n" +
         "В сумме с длиной детали дает размер заготовки для напилки.\r\n" +
         "Используется для закрепления заготовки на станке и дальнейшей чистовой фрезеровки детали.\r\n" +
-        "Длину заготовки детали с припуском можно получить в таблицах с помощью подстановки %lengthmargin%",
+        "Длину заготовки детали с припуском можно получить в таблицах с помощью подстановки %blanklength%",
       "Un'ulteriore tolleranza per la lunghezza di ogni parte realizzata con questo materiale.\r\n" +
         "Aggiunto alla lunghezza della parte, questo dà la dimensione del grezzo per la segatura.\r\n" +
         "Utilizzato per fissare il grezzo sulla macchina per la successiva fresatura di finitura.\r\n" +
-        "La lunghezza del grezzo di una parte con tolleranza può essere ottenuta nelle tabelle utilizzando la sostituzione %lengthmargin%.",
+        "La lunghezza del grezzo di una parte con tolleranza può essere ottenuta nelle tabelle utilizzando la sostituzione %blanklength%.",
       "Eine zusätzliche Zugabe für die Länge jedes Teils aus diesem Material.\r\n" +
         "Zusätzlich zur Teilelänge ergibt dies die Rohlinggröße für das Sägen.\r\n" +
         "Wird verwendet, um den Rohling auf der Maschine für die anschließende Endbearbeitung zu sichern.\r\n" +
-        "Die Rohlinglänge eines Teils mit Zugabe kann in Tabellen mit der Substitution %lengthmargin% erhalten werden.",
+        "Die Rohlinglänge eines Teils mit Zugabe kann in Tabellen mit der Substitution %blanklength% erhalten werden.",
       "对由此材料制成的每个零件的长度的额外公差。\r\n" +
          "加上零件长度，这给出了锯切的毛坯尺寸。\r\n" +
          "用于在机器上固定毛坯以进行后续精加工铣削。\r\n" +
-         "使用 %lengthmargin% 替换可以在表中获得带有余量的零件毛坯长度。",
+         "使用 %blanklength% 替换可以在表中获得带有余量的零件毛坯长度。",
       "Una tolerancia adicional para la longitud de cada pieza hecha de este material.\r\n" +
         "Agregado a la longitud de la pieza, esto da el tamaño en bruto para el aserrado.\r\n" +
         "Se utiliza para asegurar la pieza en bruto en la máquina para el posterior fresado de acabado.\r\n" +
-        "La longitud en bruto de una pieza con una tolerancia se puede obtener en tablas utilizando la sustitución %lengthmargin%.",
+        "La longitud en bruto de una pieza con una tolerancia se puede obtener en tablas utilizando la sustitución %blanklength%.",
       "Une tolérance supplémentaire pour la longueur de chaque pièce fabriquée à partir de ce matériau.\r\n" +
         "Ajouté à la longueur de la pièce, cela donne la taille brute pour le classement.\r\n" +
         "Utilisé pour sécuriser la pièce brute sur la machine pour le fraisage de finition ultérieur.\r\n" +
-        "La longueur brute d'une pièce avec une tolérance peut être obtenue dans les tableaux en utilisant la substitution %lengthmargin%.",
+        "La longueur brute d'une pièce avec une tolérance peut être obtenue dans les tableaux en utilisant la substitution %blanklength%.",
       "Bu malzemeden yapılmış her parçanın uzunluğu için ek bir tolerans.\r\n" +
         "Parça uzunluğuna eklenmiş, bu dosyalama için ham boyutu verir.\r\n" +
         "Sonraki bitirme frezeleme için makinede boşluğu güvence altına almak için kullanılır.\r\n" +
-        "Bir toleransa sahip bir parçanın ham uzunluğu, %lengthmargin% ikamesi kullanılarak tablolarla elde edilebilir."};
+        "Bir toleransa sahip bir parçanın ham uzunluğu, %blanklength% ikamesi kullanılarak tablolarla elde edilebilir."};
 
     public static readonly string[] WidthMargin = {
       "Width margin",
@@ -3713,35 +3713,35 @@ namespace AVC
       "An additional allowance for the width of each part made of this material.\r\n" +
         "Added to the part width, this gives the blank size for sawing.\r\n" +
         "Used to secure the blank on the machine for subsequent finish milling.\r\n" +
-        "The blank width of a part with an allowance can be obtained in tables using the %widthmargin% substitution.",
+        "The blank width of a part with an allowance can be obtained in tables using the %blankwidth% substitution.",
       "Дополнительный припуск к ширине каждой детали из этого материала.\r\n" +
         "В сумме с шириной детали дает размер заготовки для распила.\r\n" +
         "Используется для закрепления заготовки на станке и дальнейшей чистовой фрезеровки детали.\r\n" +
-        "Ширину заготовки детали с припуском можно получить в таблицах с помощью подстановки %widthmargin%",
+        "Ширину заготовки детали с припуском можно получить в таблицах с помощью подстановки %blankwidth%",
       "Un'ulteriore tolleranza per la larghezza di ogni parte realizzata con questo materiale.\r\n" +
         "Aggiunto alla larghezza della parte, questo dà la dimensione del grezzo per la segatura.\r\n" +
         "Utilizzato per fissare il grezzo sulla macchina per la successiva fresatura di finitura.\r\n" +
-        "La larghezza del grezzo di una parte con tolleranza può essere ottenuta nelle tabelle utilizzando la sostituzione %widthmargin%.",
+        "La larghezza del grezzo di una parte con tolleranza può essere ottenuta nelle tabelle utilizzando la sostituzione %blankwidth%.",
       "Eine zusätzliche Zugabe für die Breite jedes Teils aus diesem Material.\r\n" +
         "Zusätzlich zur Teilebreite ergibt dies die Rohlinggröße für das Sägen.\r\n" +
         "Wird verwendet, um den Rohling auf der Maschine für die anschließende Endbearbeitung zu sichern.\r\n" +
-        "Die Rohlingbreite eines Teils mit Zugabe kann in Tabellen mit der Substitution %widthmargin% erhalten werden.",
+        "Die Rohlingbreite eines Teils mit Zugabe kann in Tabellen mit der Substitution %blankwidth% erhalten werden.",
       "对由此材料制成的每个零件的宽度的额外公差。\r\n" +
          "加上零件宽度，这给出了锯切的毛坯尺寸。\r\n" +
          "用于在机器上固定毛坯以进行后续精加工铣削。\r\n" +
-         "使用 %widthmargin% 替换可以在表中获得带有余量的零件毛坯宽度。",
+         "使用 %blankwidth% 替换可以在表中获得带有余量的零件毛坯宽度。",
       "Una tolerancia adicional para el ancho de cada pieza hecha de este material.\r\n" +
         "Agregado al ancho de la pieza, esto da el tamaño en bruto para el aserrado.\r\n" +
         "Se utiliza para asegurar la pieza en bruto en la máquina para el posterior fresado de acabado.\r\n" +
-        "El ancho en bruto de una pieza con una tolerancia se puede obtener en tablas utilizando la sustitución %widthmargin%.",
+        "El ancho en bruto de una pieza con una tolerancia se puede obtener en tablas utilizando la sustitución %blankwidth%.",
       "Une tolérance supplémentaire pour la largeur de chaque pièce fabriquée à partir de ce matériau.\r\n" +
         "Ajouté à la largeur de la pièce, cela donne la taille brute pour le sciage.\r\n" +
         "Utilisé pour sécuriser la pièce brute sur la machine pour le fraisage de finition ultérieur.\r\n" +
-        "La largeur brute d'une pièce avec une tolérance peut être obtenue dans les tableaux en utilisant la substitution %widthmargin%.",
+        "La largeur brute d'une pièce avec une tolérance peut être obtenue dans les tableaux en utilisant la substitution %blankwidth%.",
       "Bu malzemeden yapılmış her parçanın genişliği için ek bir tolerans.\r\n" +
         "Parça genişliğine eklenmiş, bu testere için ham boyutu verir.\r\n" +
         "Sonraki bitirme frezeleme için makinede boşluğu güvence altına almak için kullanılır.\r\n" +
-        "Bir toleransa sahip bir parçanın ham genişliği, %widthmargin% ikamesi kullanılarak tablolarla elde edilebilir."};
+        "Bir toleransa sahip bir parçanın ham genişliği, %blankwidth% ikamesi kullanılarak tablolarla elde edilebilir."};
     
     public static readonly string[] MaterialColor = {
       "Material Color",
@@ -4835,15 +4835,25 @@ namespace AVC
       "Longueur,mm",      // FR
       "Uzunluk,mm"};      // TR
 
-    public static readonly string[] LengthWithMargin = {
-      "Length with margin",
-      "Длина с припуском",
-      "Lunghezza con margine",
-      "Länge mit Rand",
-      "带边距的长度",
-      "Longitud con margen",  // ES
-      "Longueur avec marge",  // FR
-      "Marj ile uzunluk"};     // TR
+    public static readonly string[] BlankLength = {
+      "Blank length with margin",
+      "Длина заготовки с припуском",
+      "Lunghezza del pezzo con margine",
+      "Länge des Werkstücks mit Toleranz",
+      "带余量的毛坯长度",
+      "Longitud de la pieza en bruto con margen",
+      "Longueur de la pièce brute avec marge",
+      "Marj ile boş uzunluk"};
+
+    public static readonly string[] BlankSize = {
+      "Blank size",
+      "Размер заготовки",
+      "Dimensione del pezzo",
+      "Größe des Werkstücks",
+      "毛坯尺寸",
+      "Tamaño de la pieza en bruto",
+      "Taille de la pièce brute",
+      "Boş boyut"};
 
     // общее свойство Material для солида требует отдельной подсказки
     public static readonly string[] SolidMaterialTip = {
@@ -5072,15 +5082,15 @@ namespace AVC
       "Largeur,mm",       // FR
       "Genişlik,mm"};     // TR
 
-    public static readonly string[] WidthWithMargin = {
-      "Width with margin",
-      "Ширина с припуском",
-      "Larghezza con margine",
-      "Breite mit Rand",
-      "带边距的宽度",
-      "Ancho con margen",  // ES
-      "Largeur avec marge", // FR
-      "Marj ile genişlik"};  // TR
+    public static readonly string[] BlankWidth = {
+      "Blank width with margin",
+      "Ширина заготовки с припуском",
+      "Larghezza del grezzo con margine",
+      "Breite des Rohlings mit Rand",
+      "带边距的毛坯宽度",
+      "Ancho del blanco con margen",  // ES
+      "Largeur du brut avec marge",      // FR
+      "Marj ile boş genişlik"};          // TR
 
     public static readonly string[] Slopes = {
       "Slope ends",

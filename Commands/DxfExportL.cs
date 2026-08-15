@@ -479,28 +479,28 @@ namespace AVC
       "Dosya adları"};                                 // TR
 
     public static readonly string[] FileNamesTip = {
-      "String for you own file name mask.You can use substitutions of detail, drawing and time.\r\n" +
+      "String for you own file name mask.You can use substitutions of part, material, drawing and time.\r\n" +
         "Input space string for returning to default file name mask.\r\n" +
         "Program selects a default mask according to the lay sorting setting",
       "Строка для вашей собственной маски имени файла. \r\n" +
-        "Вы можете использовать подстановки со свойствами деталей, чертежа и времени. \r\n" +
+        "Вы можете использовать подстановки со свойствами деталей, материала, чертежа и времени. \r\n" +
         "Введите пустую строку для возврата к маске имени файла по умолчанию. Программа выбирает маску по умолчанию в соответствии с настройкой сортировки команды Вкладки (Lay).",
       "La stringa per la tua maschera nome file. \r\n" +
-        "È possibile utilizzare le sostituzioni con le parti, il disegno e le proprietà del tempo. \r\n" +
+        "È possibile utilizzare le sostituzioni con le parti, il materiale, il disegno e le proprietà del tempo. \r\n" +
         "Immettere una riga vuota per tornare alla maschera del nome file predefinita. Il programma seleziona la maschera predefinita secondo con l'impostazione delle schede di comando di ordinamento (Lay).",
       "Zeichenfolge für Ihre eigene Dateinamensmaske. \r\n" +
-        "Sie können Ersetzungen von Details, Zeichnungen und Zeiten verwenden. \r\n" +
+        "Sie können Ersetzungen von Details, Material, Zeichnungen und Zeiten verwenden. \r\n" +
         "Geben Sie eine Leerzeichenfolge ein, um zur Standard-Dateinamensmaske zurückzukehren. Das Programm wählt eine Standardmaske gemäß der Lay-Sortiereinstellung aus",
       "您自己的文件名掩码的字符串。\r\n" +
-        "您可以使用细节，图纸和时间的替换。输入空格字符串以返回默认文件名掩码。\r\n" +
+        "您可以使用细节，材料，图纸和时间的替换。输入空格字符串以返回默认文件名掩码。\r\n" +
         "程序根据布局排序设置选择默认掩码",
-      "Cadena para su propia máscara de nombre de archivo. Puede usar sustituciones de detalle, dibujo y tiempo.\r\n" +  // ES
+      "Cadena para su propia máscara de nombre de archivo. Puede usar sustituciones de detalle, material, dibujo y tiempo.\r\n" +  // ES
         "Ingrese cadena de espacio para volver a la máscara de nombre de archivo predeterminada.\r\n" +
         "El programa selecciona una máscara predeterminada según la configuración de clasificación de lay",
-      "Chaîne pour votre propre masque de nom de fichier. Vous pouvez utiliser des substitutions de détail, dessin et temps.\r\n" +  // FR
+      "Chaîne pour votre propre masque de nom de fichier. Vous pouvez utiliser des substitutions de détail, matériau, dessin et temps.\r\n" +  // FR
         "Saisissez une chaîne d'espace pour revenir au masque de nom de fichier par défaut.\r\n" +
         "Le programme sélectionne un masque par défaut selon le paramètre de tri lay",
-      "Kendi dosya adı maskeniz için dize. Detay, çizim ve zaman değiştirmelerini kullanabilirsiniz.\r\n" +  // TR
+      "Kendi dosya adı maskeniz için dize. Detay, malzeme, çizim ve zaman değiştirmelerini kullanabilirsiniz.\r\n" +  // TR
         "Varsayılan dosya adı maskesine dönmek için boşluk dizesi girin.\r\n" +
         "Program, lay sıralama ayarına göre varsayılan bir maske seçer"};
 

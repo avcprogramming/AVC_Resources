@@ -340,6 +340,162 @@ namespace AVC
         "Cela ne se produira que pour les solides de l'espace modèle, pas pour les blocs.",
       "Kesme haritasına başarıyla yerleştirilen orijinal katıları silin. \r\n" +
         "Bu yalnızca model alanı katıları için geçerli olacak, bloklar için değil."};
+
+    public static readonly string[] SourceFileList = {
+      "Extract parts from DWG files",
+      "Брать детали из DWG-файлов",
+      "Extraer piezas de archivos DWG",
+      "Extraire des pièces à partir de fichiers DWG",
+      "从 DWG 文件中提取零件",
+      "DWG dosyalarından parçaları çıkar",
+      "Estrarre parti dai file DWG",
+      "DWG-Dateien extrahieren"};
+
+    public static readonly string[] SourceFileListTip = {
+      "Instead of requesting the selection of parts from the current drawing, \r\n" +
+        "request the selection of DWG files and compose the nesting for all files at once.",
+      "Вместо запроса выбора деталей из текущего чертежа, \r\n" +
+        "запрашивать выбор DWG-файлов и составлять раскрой по всем файлам сразу.",
+      "Invece di richiedere la selezione delle parti dal disegno corrente, \r\n" +
+        "richiedi la selezione dei file DWG e componi il nesting per tutti i file contemporaneamente.",
+      "Anstatt die Auswahl von Teilen aus der aktuellen Zeichnung anzufordern, \r\n" +
+        "fordern Sie die Auswahl von DWG-Dateien an und erstellen Sie das Nesting für alle Dateien gleichzeitig.",
+      "不是从当前图纸中选择零件，而是选择 DWG 文件并一次性为所有文件排样。",
+      "En lugar de solicitar la selección de piezas del dibujo actual, \r\n" +
+        "solicite la selección de archivos DWG y componga el anidamiento para todos los archivos a la vez.",
+      "Au lieu de demander la sélection de pièces du dessin actuel, \r\n" +
+        "demandez la sélection de fichiers DWG et composez l'imbrication pour tous les fichiers à la fois.",
+      "Geçerli çizimden parça seçimi istemek yerine, \r\n" +
+        "DWG dosyalarının seçimini isteyin ve tüm dosyalar için yerleşimi aynı anda oluşturun."};
+
+    public static readonly string[] PartSizeWithMargins = {
+      "Part size with margins",
+      "Размеры с припусками",
+      "Dimensioni della parte con margini",
+      "Teilgröße mit Zugaben",
+      "带余量的零件尺寸",
+      "Tamaño de pieza con márgenes",
+      "Taille de pièce avec marges",
+      "Kenar boşluklu parça boyutu"};
+
+    public static readonly string[] PartSizeWithMarginsTip = {
+      "Use larger sizes of parts (blank size) with margins on the layout. \r\n" +
+        "Margins are specified in the material properties. \r\n" +
+        "The actual part will be placed in the middle of the blank field.",
+      "Использовать на раскрое увеличенные размеры деталей с припуском - размеры заготовок. \r\n" +
+        "Припуски задаются в свойствах материала. \r\n" +
+        "Реальная деталь будет размещена в середине поля заготовки.",
+      "Utilizzare dimensioni maggiori delle parti con margine sul layout. \r\n" +
+        "Se sono necessari contorni, spostare i contorni al centro della dimensione della parte con margini.",
+      "Verwenden Sie auf dem Layout größere Größen von Teilen mit Zugabe. \r\n" +
+        "Wenn Konturen erforderlich sind, verschieben Sie die Konturen in die Mitte der Teilgröße mit Zugaben.",
+      "在布局中使用带余量的零件较大尺寸。 \r\n" +
+        "如果需要轮廓，请将轮廓移到带余量的零件尺寸的中间。",
+      "Utilice tamaños más grandes de piezas con margen en el diseño. \r\n" +
+        "Si se requieren contornos, desplace los contornos hacia el centro del tamaño de la pieza con márgenes.",
+      "Utilisez des tailles plus grandes de pièces avec marge sur la disposition. \r\n" +
+        "Si des contours sont nécessaires, déplacez les contours vers le centre de la taille de la pièce avec marges.",
+      "Yerleşimde kenar boşluklu parçaların daha büyük boyutlarını kullanın. \r\n" +
+        "Konturlar gerekiyorsa, konturları kenar boşluklu parça boyutunun ortasına kaydırın."};
+
+    public static readonly string[] GroupForResults = {
+      "Group results",
+      "Группировать результаты",
+      "Raggruppa i risultati",
+      "Ergebnisse gruppieren",
+      "对结果分组",
+      "Agrupar los resultados",
+      "Regrouper les résultats",
+      "Sonuçları grupla"};
+
+    public static readonly string[] GroupForResultsTip = {
+      "Combine the laid out solid or its contours with the part label into a group.",
+      "Объединять выложенный солид (или его контуры) и метку детали в группу.",
+      "Combina il solido disposto o i suoi contorni con il titolo in un gruppo.",
+      "Kombinieren Sie den ausgelegten Volumenkörper oder seine Konturen mit dem Titel zu einer Gruppe.",
+      "将放置的实体或其轮廓与标题组合成一个组。",
+      "Combine el sólido colocado o sus contornos con el título en un grupo.",
+      "Combinez le solide disposé ou ses contours avec le titre en un groupe.",
+      "Yerleştirilen katıyı veya konturlarını başlıkla bir grupta birleştirin."};
+
+    public static readonly string[] DXFExport = {
+      "Export to DXF",
+      "Экспорт в DXF",
+      "Esporta in DXF",
+      "Export nach DXF",
+      "导出为 DXF",
+      "Exportar a DXF",
+      "Exporter vers DXF",
+      "DXF'e aktar"};
+
+    public static readonly string[] DXFExportTip = {
+      "Save the result to a DXF file. \r\n" +
+        "The insertion point is not requested, and all sheets, solids or contours are saved to a separate file or a set of files.",
+      "Сохранять результат в DXF-файл. \r\n" +
+        "Точка вставки не запрашивается, а все листы, солиды или контуры сохраняются в отдельный DXF-файл или множество файлов.",
+      "Salva il risultato in un file DXF. \r\n" +
+        "Il punto di inserimento non viene richiesto e tutti i fogli, solidi o contorni vengono salvati in un file separato o in un set di file.",
+      "Speichern Sie das Ergebnis in einer DXF-Datei. \r\n" +
+        "Der Einfügepunkt wird nicht angefordert, und alle Blätter, \r\n" +
+        "Volumenkörper oder Konturen werden in einer separaten Datei oder einem Satz von Dateien gespeichert.",
+      "将结果保存到 DXF 文件中。 \r\n" +
+        "不请求插入点，所有板材、实体或轮廓都保存到单独的文件或一组文件中。",
+      "Guarde el resultado en un archivo DXF. \r\n" +
+        "No se solicita el punto de inserción y todas las hojas, sólidos o contornos se guardan en un archivo separado o en un conjunto de archivos.",
+      "Enregistrez le résultat dans un fichier DXF. \r\n" +
+        "Le point d'insertion n'est pas demandé et toutes les feuilles, \r\n" +
+        "solides ou contours sont enregistrés dans un fichier séparé ou un ensemble de fichiers.",
+      "Sonucu bir DXF dosyasına kaydedin. \r\n" +
+        "Ekleme noktası istenmez ve tüm levhalar, katılar veya konturlar ayrı bir dosyaya veya bir dizi dosyaya kaydedilir."};
+
+    public static readonly string[] MultiSheets = {
+      "Multi sheets",
+      "Много листов",
+      "Fogli multipli",
+      "Mehrere Blätter",
+      "多张板材",
+      "Múltiples hojas",
+      "Feuilles multiples",
+      "Çoklu levha"};
+
+    public static readonly string[] MultiSheetsTip = {
+      "Write all sheets of the group in one dxf-file. One material = one file. \r\n" +
+        "If grouping is turned off, then you will get 1 dxf file for the entire layout.",
+      "Скидывать все листы группы в один dxf-файл. Один материал = один файл. \r\n" +
+        "Если выключена группировка, то получится 1 файл dxf на весь раскрой.",
+      "Scrivi tutti i fogli del gruppo in un file dxf. Un materiale = un file. \r\n" +
+        "Se il raggruppamento è disattivato, otterrai 1 file dxf per l'intero nesting.",
+      "Schreiben Sie alle Blätter der Gruppe in eine dxf-Datei. Ein Material = eine Datei. \r\n" +
+        "Wenn die Gruppierung deaktiviert ist, erhalten Sie 1 dxf-Datei für das gesamte Nesting.",
+      "将组的所有板材写入一个 dxf 文件。一个材料 = 一个文件。 \r\n" +
+        "如果关闭分组，则整个布局将获得 1 个 dxf 文件。",
+      "Escriba todas las hojas del grupo en un archivo dxf. Un material = un archivo. \r\n" +
+        "Si la agrupación está desactivada, obtendrá 1 archivo dxf para todo el anidamiento.",
+      "Écrivez toutes les feuilles du groupe dans un fichier dxf. Un matériau = un fichier. \r\n" +
+        "Si le regroupement est désactivé, vous obtiendrez 1 fichier dxf pour l'ensemble de l'imbrication.",
+      "Grubun tüm levhalarını bir dxf dosyasına yazın. Bir malzeme = bir dosya. \r\n" +
+        "Gruplama kapalıysa, tüm yerleşim için 1 dxf dosyası alırsınız."};
+
+    public static readonly string[] MaterialFolders = {
+      "Folders for materials",
+      "Папки для материалов",
+      "Cartelle per materiali",
+      "Ordner für Materialien",
+      "材料文件夹",
+      "Carpetas para materiales",
+      "Dossiers pour matériaux",
+      "Malzemeler için klasörler"};
+
+    public static readonly string[] MaterialFoldersTip = {
+      "The program can create folders and subfolders for each substitution from the grouping settings.",
+      "Программа может создать папки и подпапки для каждой подстановки из настроек группировки.",
+      "Il programma può creare cartelle e sottocartelle per ogni sostituzione dalle impostazioni di raggruppamento.",
+      "Das Programm kann Ordner und Unterordner für jede Ersetzung aus den Gruppierungseinstellungen erstellen.",
+      "程序可以根据分组设置为每个替换创建文件夹和子文件夹。",
+      "El programa puede crear carpetas y subcarpetas para cada sustitución de la configuración de agrupación.",
+      "Le programme peut créer des dossiers et sous-dossiers pour chaque substitution des paramètres de regroupement.",
+      "Program, gruplama ayarlarından her değiştirme için klasörler ve alt klasörler oluşturabilir."};
+
     public static readonly string[] Method = {
       "Nesting method",
       "Метод нестинга",
