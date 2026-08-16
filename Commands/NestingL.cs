@@ -12,8 +12,7 @@ namespace AVC
     public static readonly string[][] NestingStyleNames = {
 /* 0 */ CommandL.Nesting,
 /* 1 */ CommandL.Nesting,
-                                      
-    };
+/* 2 */ CommandL.DXFExport };
 
     public static readonly string[] StyleSelected = {
       "  Nesting style '{0}' selected",
@@ -487,14 +486,22 @@ namespace AVC
       "Malzemeler için klasörler"};
 
     public static readonly string[] MaterialFoldersTip = {
-      "The program can create folders and subfolders for each substitution from the grouping settings.",
-      "Программа может создать папки и подпапки для каждой подстановки из настроек группировки.",
-      "Il programma può creare cartelle e sottocartelle per ogni sostituzione dalle impostazioni di raggruppamento.",
-      "Das Programm kann Ordner und Unterordner für jede Ersetzung aus den Gruppierungseinstellungen erstellen.",
-      "程序可以根据分组设置为每个替换创建文件夹和子文件夹。",
-      "El programa puede crear carpetas y subcarpetas para cada sustitución de la configuración de agrupación.",
-      "Le programme peut créer des dossiers et sous-dossiers pour chaque substitution des paramètres de regroupement.",
-      "Program, gruplama ayarlarından her değiştirme için klasörler ve alt klasörler oluşturabilir."};
+      "The program can create folders for each group of sheets (sheets are typically grouped by material). \r\n" +
+        "If the grouping setting contains \\ characters or line breaks between substitutions, subfolders will be created.",
+      "Программа может создать папки для каждой группы листов (обычно листы группируют по материалу). \r\n" +
+        "Если в настройке группировки есть символы \\ или переносы строки между подстановками, то будут созданы подпапки.",
+      "Il programma può creare cartelle per ogni gruppo di fogli (i fogli sono generalmente raggruppati per materiale). \r\n" +
+        "Se l'impostazione di raggruppamento contiene caratteri \\ o interruzioni di riga tra le sostituzioni, verranno create sottocartelle.",
+      "Das Programm kann Ordner für jede Gruppe von Blättern erstellen (Blätter werden normalerweise nach Material gruppiert). \r\n" +
+        "Wenn die Gruppierungseinstellung \\-Zeichen oder Zeilenumbrüche zwischen den Ersetzungen enthält, werden Unterordner erstellt.",
+      "程序可以为每组板材创建文件夹（通常按材料对板材进行分组）。 \r\n" +
+        "如果分组设置在替换之间包含 \\ 字符或换行符，则将创建子文件夹。",
+      "El programa puede crear carpetas para cada grupo de hojas (las hojas generalmente se agrupan por material). \r\n" +
+        "Si la configuración de agrupación contiene caracteres \\ o saltos de línea entre sustituciones, se crearán subcarpetas.",
+      "Le programme peut créer des dossiers pour chaque groupe de feuilles (les feuilles sont généralement regroupées par matériau). \r\n" +
+        "Si le paramètre de regroupement contient des caractères \\ ou des sauts de ligne entre les substitutions, des sous-dossiers seront créés.",
+      "Program, her levha grubu için klasörler oluşturabilir (levhalar genellikle malzemeye göre gruplanır). \r\n" +
+        "Gruplama ayarı, ikame karakterleri arasında \\ karakterleri veya satır sonları içeriyorsa, alt klasörler oluşturulacaktır."};
 
     public static readonly string[] Method = {
       "Nesting method",
