@@ -367,6 +367,40 @@ namespace AVC
       "Geçerli çizimden parça seçimi istemek yerine, \r\n" +
         "DWG dosyalarının seçimini isteyin ve tüm dosyalar için yerleşimi aynı anda oluşturun."};
 
+    public static readonly string[] MultiplyRequestTip = {
+      "Multiply the number of parts by an integer.\r\n" +
+        "This will help fill the table for making a large series of identical products.\r\n" +
+        "If you disable the request, the multiplier will be taken from the current drawing settings.\r\n" +
+        "And when nesting by file list, the multiplier will be taken from each file.",
+      "Запрашивать число, на которое будет умножено количество объектов.\r\n" +
+        "Используйте для вычисления количества деталей в партии.\r\n" +
+        "Если запрос отключить, то множитель будет взят из настроек текущего чертежа.\r\n" +
+        "А при раскрое по списку файлов множитель будет взят из каждого файла.",
+      "Moltiplica il numero di parti per un intero.\r\n" +
+        "Questo aiuterà a riempire la tabella per realizzare una grande serie di prodotti identici.\r\n" +
+        "Se disabiliti la richiesta, il moltiplicatore verrà preso dalle impostazioni del disegno corrente.\r\n" +
+        "E quando si esegue il nesting per elenco di file, il moltiplicatore verrà preso da ciascun file.",
+      "Multiplizieren Sie die Anzahl der Teile mit einer ganzen Zahl.\r\n" +
+        "Dies hilft, die Tabelle für die Herstellung einer großen Serie identischer Produkte zu füllen.\r\n" +
+        "Wenn Sie die Anforderung deaktivieren, wird der Multiplikator aus den aktuellen Zeichnungseinstellungen übernommen.\r\n" +
+        "Und beim Nesting nach Dateiliste wird der Multiplikator aus jeder Datei übernommen.",
+      "将零件数量乘以整数。 \r\n" +
+        "这将有助于填写用于制造大量相同产品的表格。 \r\n" +
+        "如果禁用请求，则乘数将从当前图纸设置中获取。 \r\n" +
+        "在按文件列表进行排样时，乘数将从每个文件中获取。",
+      "Multiplica el número de piezas por un número entero.\r\n" +
+        "Esto ayudará a llenar la tabla para hacer una gran serie de productos idénticos.\r\n" +
+        "Si desactiva la solicitud, el multiplicador se tomará de la configuración del dibujo actual.\r\n" +
+        "Y al anidar por lista de archivos, el multiplicador se tomará de cada archivo.",
+      "Multipliez le nombre de pièces par un entier.\r\n" +
+        "Cela aidera à remplir le tableau pour fabriquer une grande série de produits identiques.\r\n" +
+        "Si vous désactivez la demande, le multiplicateur sera pris dans les paramètres du dessin actuel.\r\n" +
+        "Et lors de l'imbrication par liste de fichiers, le multiplicateur sera pris dans chaque fichier.",
+      "Parça sayısını bir tam sayı ile çarpın. \r\n" +
+        "Bu, büyük bir dizi özdeş ürün yapmak için tabloyu doldurmaya yardımcı olacaktır. \r\n" +
+        "İsteği devre dışı bırakırsanız, çarpan geçerli çizim ayarlarından alınacaktır. \r\n" +
+        "Ve dosya listesine göre yerleştirme yaparken, çarpan her dosyadan alınacaktır."};
+
     public static readonly string[] PartSizeWithMargins = {
       "Part size with margins",
       "Размеры с припусками",
@@ -744,6 +778,15 @@ namespace AVC
       "Aucun feuille n'a été créé dans le groupe {0}",
       "Grup {0} içinde levha oluşturulmadı" };
 
+    public static readonly string[] SelectFile = {
+      "Select drawings for joint nesting",
+      "Выберите чертежи для совместного раскроя",
+      "Seleziona i disegni per il taglio congiunto",
+      "Wählen Sie Zeichnungen für das gemeinsame Schneiden aus",
+      "选择用于联合切割的图纸",
+      "Seleccione dibujos para el corte conjunto",  // ES
+      "Sélectionnez des dessins pour le découpage conjoint",  // FR
+      "Model nesnelerinden veri çıkarmak için çizimleri seçin"};  // TR
 
   }
 }

@@ -336,6 +336,154 @@ namespace AVC
       "Impossible de créer le raccourci",
       "Kısayol oluşturulamadı"};
 
+    public static readonly string[] SelectFiles = {
+      "Select files",
+      "Выбор файлов",
+      "Seleziona file",
+      "Dateien auswählen",
+      "选择文件",
+      "Seleccionar archivos",
+      "Sélectionner des fichiers",
+      "Dosya seç"};
+
+    public static readonly string[] CurrentDrawing = {
+      "Current drawing",
+      "Текущий чертеж",
+      "Disegno corrente",
+      "Aktuelle Zeichnung",
+      "当前图形",
+      "Dibujo actual",
+      "Dessin courant",
+      "Geçerli çizim"};
+
+    public static readonly string[] CurrentDrawingTip = {
+      "Add the current drawing to the list",
+      "Добавить текущий чертеж в список",
+      "Aggiungi il disegno corrente all'elenco",
+      "Fügen Sie die aktuelle Zeichnung zur Liste hinzu",
+      "将当前图形添加到列表中",
+      "Agregar el dibujo actual a la lista",
+      "Ajouter le dessin courant à la liste",
+      "Geçerli çizimi listeye ekle"};
+
+    public static readonly string[] OpenDrawings = {
+      "Open drawings",
+      "Открытые чертежи",
+      "Disegni aperti",
+      "Geöffnete Zeichnungen",
+      "已打开图形",
+      "Dibujos abiertos",
+      "Dessins ouverts",
+      "Açık çizimler"};
+
+    public static readonly string[] OpenDrawingsTip = {
+      "Add to list all saved drawings that are currently open in CAD",
+      "Добавить в список все сохраненные чертежи, открытые в CAD",
+      "Aggiungi tutti i disegni salvati attualmente aperti in CAD",
+      "Alle gespeicherten aktuell in CAD geöffneten Zeichnungen hinzufügen",
+      "添加 CAD 中当前打开的所有已保存图形",
+      "Agregar todos los dibujos guardados abiertos actualmente en CAD",
+      "Ajouter tous les dessins enregistrés actuellement ouverts dans CAD",
+      "CAD'de açık olan tüm kaydedilmiş çizimleri ekle"};
+
+    public static readonly string[] AddFiles = {
+      "Add files",
+      "Добавить файлы",
+      "Aggiungi file",
+      "Dateien hinzufügen",
+      "添加文件",
+      "Agregar archivos",
+      "Ajouter des fichiers",
+      "Dosya ekle"};
+
+    public static readonly string[] AddFilesTip = {
+      "Adding files to the list. Select drawings using the standard file selection dialog. \r\n" +
+        "You can select multiple files at once: use CTRL and SHIFT.",
+      "Добавление файлов к списку. Выбрать чертежи через обычный диалог выбора файлов. \r\n" +
+        "Можно выбрать сразу несколько файлов: используйте CTRL и SHIFT.",
+      "Aggiunta di file all'elenco. Seleziona i disegni utilizzando la finestra di dialogo standard di selezione dei file. \r\n" +
+        "È possibile selezionare più file contemporaneamente: utilizzare CTRL e SHIFT.",
+      "Hinzufügen von Dateien zur Liste. Wählen Sie Zeichnungen über den Standard-Dateiauswahldialog aus. \r\n" +
+        "Sie können mehrere Dateien gleichzeitig auswählen: Verwenden Sie STRG und UMSCHALT.",
+      "将文件添加到列表中。 使用标准文件选择对话框选择图形。 \r\n" +
+        "您可以一次选择多个文件：使用 CTRL 和 SHIFT。",
+      "Agregar archivos a la lista. Seleccione dibujos utilizando el cuadro de diálogo de selección de archivos estándar. \r\n" +
+        "Puede seleccionar varios archivos a la vez: use CTRL y SHIFT.",
+      "Ajout de fichiers à la liste. Sélectionnez les dessins à l'aide de la boîte de dialogue standard de sélection de fichiers. \r\n" +
+        "Vous pouvez sélectionner plusieurs fichiers à la fois : utilisez CTRL et MAJ.",
+      "Dosyaları listeye ekleme. Standart dosya seçme iletişim kutusunu kullanarak çizimleri seçin. \r\n" +
+        "Birden fazla dosya seçebilirsiniz: CTRL ve SHIFT'i kullanın."};
+
+    public static readonly string[] RemoveSelected = {
+      "Remove selected",
+      "Удалить выбранные",
+      "Rimuovi selezionati",
+      "Ausgewählte entfernen",
+      "删除所选",
+      "Eliminar seleccionados",
+      "Supprimer la sélection",
+      "Seçileni kaldır"};
+
+    public static readonly string[] RemoveSelectedTip = {
+      "Remove selected files from the list",
+      "Убрать выбранные файлы из списка",
+      "Rimuovi i file selezionati dall'elenco",
+      "Ausgewählte Dateien aus der Liste entfernen",
+      "从列表中删除所选文件",
+      "Eliminar los archivos seleccionados de la lista",
+      "Supprimer les fichiers sélectionnés de la liste",
+      "Seçilen dosyaları listeden kaldır"};
+
+    public static readonly string[] SaveFileList = {
+      "Save list",
+      "Сохранить список",
+      "Salva elenco",
+      "Liste speichern",
+      "保存列表",
+      "Guardar lista",
+      "Enregistrer la liste",
+      "Listeyi kaydet"};
+
+    public static readonly string[] SaveFileListTip = {
+      "Save the file list near the current drawing",
+      "Сохранить список файлов рядом с текущим чертежом",
+      "Salva l'elenco file accanto al disegno corrente",
+      "Dateiliste neben der aktuellen Zeichnung speichern",
+      "在当前图形旁边保存文件列表",
+      "Guardar la lista de archivos junto al dibujo actual",
+      "Enregistrer la liste des fichiers à côté du dessin courant",
+      "Dosya listesini geçerli çizimin yanına kaydet"};
+
+    public static readonly string[] LoadFileList = {
+      "Load list",
+      "Загрузить список",
+      "Carica elenco",
+      "Liste laden",
+      "加载列表",
+      "Cargar lista",
+      "Charger la liste",
+      "Listeyi yükle"};
+
+    public static readonly string[] LoadFileListTip = {
+      "Load a file list from text file",
+      "Загрузить список файлов из текстового файла",
+      "Carica un elenco file da un file di testo",
+      "Dateiliste aus einer Textdatei laden",
+      "从文本文件加载文件列表",
+      "Cargar una lista de archivos desde un archivo de texto",
+      "Charger une liste de fichiers depuis un fichier texte",
+      "Metin dosyasından dosya listesi yükle"};
+
+    public static readonly string[] SelectListFile = {
+      "Select file list",
+      "Выберите файл списка",
+      "Seleziona elenco file",
+      "Dateiliste auswählen",
+      "选择文件列表",
+      "Seleccionar lista de archivos",
+      "Sélectionner la liste de fichiers",
+      "Dosya listesini seç"};
+
     public static readonly string[] FilesProcessed = {
       "Files are being processed",
       "Обрабатываются файлы",
@@ -355,5 +503,6 @@ namespace AVC
       "  Procesados {0} archivos en {1}s",
       "  {0} fichiers traités en {1}s",
       "  {1} saniyede {0} dosya işlendi"};
+
   }
 }
