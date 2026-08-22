@@ -315,22 +315,29 @@ namespace AVC
 
     public static readonly string[] ReduceTip = {
       "Subtract the edge-banding thicknesses from the length and width of the part.\r\n" +
-        "This will only work for simple rectangular parts.",
+        "This will only work for simple rectangular parts.\r\n" +
+        "And from the thickness of the solid, subtract the thickness of the Fromt and Rear coverings.",
       "Вычесть из длины и ширины детали толщины кромок.\r\n" +
-        "Это сработает только для простых прямоугольных деталей.",
-      "Sottrai gli spessori della bordatura dalla lunghezza e dalla larghezza della parte.\r\n" +
-        "Funzionerà solo per parti rettangolari semplici.",
-      "Ziehen Sie die Kantenbandstärken von der Länge und Breite des Teils ab.\r\n" +
-         "Das funktioniert nur bei einfachen rechteckigen Teilen.",
-      "从零件的长度和宽度中减去封边带的厚度。\r\n" +
-         "这仅适用于简单的矩形零件。",
-      "Restar los espesores de los cantos de la longitud y el ancho de la pieza.\r\n" +
-        "Esto solo funcionará para piezas rectangulares simples.",
-      "Soustraire les épaisseurs des chants de la longueur et de la largeur de la pièce.\r\n" +
-        "Cela ne fonctionnera que pour les pièces rectangulaires simples.",
-      "Kenar bantı kalınlıklarını parçanın uzunluğundan ve genişliğinden çıkarın.\r\n" +
-        "Bu yalnızca basit dikdörtgen parçalar için çalışacaktır."};
-
+        "Это сработает только для простых прямоугольных деталей.\r\n" +
+        "А из толщины солида вычесть толщину покрытий фасада и тыла.",
+      "Sottrarre gli spessori dei bordi dalla lunghezza e dalla larghezza della parte.\r\n" +
+        "Questo funzionerà solo per parti rettangolari semplici.\r\n" +
+        "E dallo spessore del solido, sottrarre lo spessore dei rivestimenti anteriori e posteriori.",
+      "Subtrahieren Sie die Kantenbandstärken von der Länge und Breite des Teils.\r\n" +
+         "Dies funktioniert nur für einfache rechteckige Teile.\r\n" +
+         "Und von der Dicke des Solids die Dicke der Vorder- und Rückseitenabdeckungen abziehen.",
+      "从零件的长度和宽度中减去封边厚度。\r\n" +
+          "这只适用于简单的矩形零件。\r\n" +
+          "并从固体的厚度中减去前后覆盖物的厚度。",
+      "Reste los espesores de los cantos del largo y ancho de la pieza.\r\n" +
+        "Esto solo funcionará para piezas rectangulares simples.\r\n" +
+        "Y del grosor del sólido, reste el grosor de los recubrimientos frontal y trasero.",
+      "Soustrayez les épaisseurs des chants de la longueur et de la largeur de la pièce.\r\n" +
+        "Cela ne fonctionnera que pour des pièces rectangulaires simples.\r\n" +
+        "Et de l'épaisseur du solide, soustrayez l'épaisseur des revêtements avant et arrière.",
+      "Parçanın uzunluğundan ve genişliğinden kenar bantlarının kalınlıklarını çıkarın.\r\n" +
+        "Bu sadece basit dikdörtgen parçalar için çalışacaktır.\r\n" +
+        "Ve katının kalınlığından, Ön ve Arka kaplamaların kalınlığını çıkarın."};
     public static readonly string[] RodTip = {
       "Additive to the length to account for the margin for the cut from two ends of the part.\r\n" +
         "Used to calculate the price of molded materials (bar, rod, pipes).\r\n" +
