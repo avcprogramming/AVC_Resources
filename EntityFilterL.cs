@@ -268,6 +268,16 @@ namespace AVC
       "Calques ignorés",                                // FR
       "Yoksayılan katmanlar"};                          // TR
 
+    public static readonly string[] IgnoredNames = {
+      "Ignored names",
+      "Игнорируемые имена",
+      "Nomi ignorati",
+      "Ignorierte Namen",
+      "忽略的名称",
+      "Nombres ignorados",                           // ES
+      "Noms ignorés",                                // FR
+      "Yoksayılan isimler"};                         // TR
+
     public static readonly string[] Material = {
       "Material filter",
       "Материалы",
@@ -307,16 +317,104 @@ namespace AVC
         "Liste boşsa, tüm nesneler işlenecektir."};
 
     public static readonly string[] IgnoredLayersTip = {
-      "List of ignored layer (auxiliary). Comma separated.",
+      "List of ignored layer (auxiliary). " +
+        "All objects from these layers will be excluded from processing.\r\n" +
+        "The list separator is a semicolon." +
+        "Use wildcards:\r\n" +
+        "  * - any character can appear here.\r\n" +
+        "  ? - any single character can appear here.",
       "Список игнорируемых слоев (вспомогательных).\r\n" +
-      "Все объекты с этих слоев, будут исключены из обработки.\r\n" +
-      "Разделитель списка - точка с запятой.",
-      "Elenco aggiuntivo del layer ignorato (ausiliario). Separato da virgola.",
-      "Liste der ignorierten Layer (Hilfslayer). Komma getrennt.",
-      "忽略层列表（辅助）。 逗号分隔。",
-      "Lista de capas ignoradas (auxiliares). Separadas por comas.",  // ES
-      "Liste des calques ignorés (auxiliaires). Séparés par des virgules.",  // FR
-      "Yoksayılan katman listesi (yardımcı). Virgülle ayrılmış."};  // TR
+        "Все объекты с этих слоев, будут исключены из обработки.\r\n" +
+        "Разделитель списка - точка с запятой.\r\n" +
+        "Используйте символы-заменители:\r\n" +
+        "  * - в этом месте могут быть любые символы.\r\n" +
+        "  ? - в этом месте может быть один любой символ.",
+      "Elenco dei layer ignorati (ausiliari).\r\n" +
+        "Tutti gli oggetti di questi layer saranno esclusi dall'elaborazione.\r\n" +
+        "Il separatore dell'elenco è un punto e virgola.\r\n" +
+        "Usa i caratteri jolly:\r\n" +
+        "  * - qualsiasi carattere può apparire qui.\r\n" +
+        "  ? - qui può apparire un solo carattere qualsiasi.",
+      "Liste der ignorierten Ebenen (Hilfsebenen).\r\n" +
+         "Alle Objekte von diesen Ebenen werden von der Verarbeitung ausgeschlossen.\r\n" +
+         "Der Listentrennzeichen ist ein Semikolon.\r\n" +
+         "Verwenden Sie Platzhalter:\r\n" +
+         "  * - hier kann jedes Zeichen erscheinen.\r\n" +
+         "  ? - hier kann ein beliebiges einzelnes Zeichen erscheinen.",
+      "忽略图层列表（辅助）。\r\n" +
+         "这些图层的所有对象都将被排除在处理之外。\r\n" +
+         "列表分隔符是分号。\r\n" +
+         "使用通配符：\r\n" +
+         "  * - 这里可以出现任何字符。\r\n" +
+         "  ? - 这里可以出现任何单个字符。",
+      "Lista de capas ignoradas (auxiliar). \r\n" +  // ES
+        "Todos los objetos de estas capas se excluirán del procesamiento.\r\n" +
+        "El separador de lista es un punto y coma.\r\n" +
+        "Usar comodines:\r\n" +
+        "  * - cualquier carácter puede aparecer aquí.\r\n" +
+        "  ? - cualquier carácter único puede aparecer aquí.",
+      "Liste des calques ignorés (auxiliaires). \r\n" +  // FR
+        "Tous les objets de ces calques seront exclus du traitement.\r\n" +
+        "Le séparateur de liste est un point-virgule.\r\n" +
+        "Utiliser des caractères génériques :\r\n" +
+        "  * - n'importe quel caractère peut apparaître ici.\r\n" +
+        "  ? - n'importe quel caractère unique peut apparaître ici.",
+      "Yoksayılan katmanların listesi (yardımcı). \r\n" +  // TR
+        "Bu katmanlardaki tüm nesneler işleme dahil edilmeyecektir.\r\n" +
+        "Liste ayırıcı noktalı virgüldür.\r\n" +
+        "Joker karakterleri kullanın:\r\n" +
+        "  * - burada herhangi bir karakter görünebilir.\r\n" +
+        "  ? - burada herhangi bir tek karakter görünebilir."};
+
+    public static readonly string[] IgnoredNamesTip = {
+      "List of ignored names. \r\n" +
+        "Blocks, 3d-solids, curves with these names will be excluded from processing.\r\n" +
+        "The list separator is a semicolon.\r\n" +
+        "Use wildcards:\r\n" +
+        "  * - any character can appear here.\r\n" +
+        "  ? - any single character can appear here.",
+      "Список игнорируемых имен. \r\n" +
+        "Блоки, солиды, кривые с такими именами будут исключены из обработки.\r\n" +
+        "Разделитель списка - точка с запятой.\r\n" +
+        "Используйте символы-заменители:\r\n" +
+        "  * - в этом месте могут быть любые символы.\r\n" +
+        "  ? - в этом месте может быть один любой символ.",
+      "Elenco dei nomi ignorati. \r\n" +
+        "Blocchi, solidi 3D, curve con questi nomi saranno esclusi dall'elaborazione.\r\n" +
+        "Il separatore dell'elenco è un punto e virgola.\r\n" +
+        "Usa i caratteri jolly:\r\n" +
+        "  * - qualsiasi carattere può apparire qui.\r\n" +
+        "  ? - qui può apparire un solo carattere qualsiasi.",
+      "Liste der ignorierten Namen. \r\n" +
+         "Blöcke, 3D-Körper, Kurven mit diesen Namen werden von der Verarbeitung ausgeschlossen.\r\n" +
+         "Der Listentrennzeichen ist ein Semikolon.\r\n" +
+         "Verwenden Sie Platzhalter:\r\n" +
+         "  * - hier kann jedes Zeichen erscheinen.\r\n" +
+         "  ? - hier kann ein beliebiges einzelnes Zeichen erscheinen.",
+      "忽略名称列表。 \r\n" +
+          "具有这些名称的块、3D 实体、曲线将被排除在处理之外。\r\n" +
+          "列表分隔符是分号。\r\n" +
+          "使用通配符：\r\n" +
+          "  * - 这里可以出现任何字符。\r\n" +
+          "  ? - 这里可以出现任何单个字符。",
+      "Lista de nombres ignorados. \r\n" +  // ES
+        "Los bloques, sólidos 3D y curvas con estos nombres se excluirán del procesamiento.\r\n" +
+        "El separador de lista es un punto y coma.\r\n" +
+        "Usar comodines:\r\n" +
+        "  * - cualquier carácter puede aparecer aquí.\r\n" +
+        "  ? - cualquier carácter único puede aparecer aquí.",
+      "Liste des noms ignorés. \r\n" +  // FR
+        "Les blocs, solides 3D et courbes portant ces noms seront exclus du traitement.\r\n" +
+        "Le séparateur de liste est un point-virgule.\r\n" +
+        "Utiliser des caractères génériques :\r\n" +
+        "  * - n'importe quel caractère peut apparaître ici.\r\n" +
+        "  ? - n'importe quel caractère unique peut apparaître ici.",
+      "Yoksayılan adların listesi. \r\n" +  // TR
+        "Bu adlara sahip bloklar, 3D katılar ve eğriler işleme dahil edilmeyecektir.\r\n" +
+        "Liste ayırıcı noktalı virgüldür.\r\n" +
+        "Joker karakterleri kullanın:\r\n" +
+        "  * - burada herhangi bir karakter görünebilir.\r\n" +
+        "  ? - burada herhangi bir tek karakter görünebilir."};
 
     public static readonly string[] MaterialTip = {
       "You can limit the list of materials by appointment.",
@@ -558,6 +656,17 @@ namespace AVC
       "Objetos filtrados de capas ignoradas",           // ES
       "Objets filtrés de calques ignorés",              // FR
       "Yoksayılan katmanlardan nesneler filtrelendi"};  // TR
+
+    public static readonly string[] MsgName ={
+      "Filtered objects with ignored names",
+      "Отфильтрованы объекты c игнорируемыми именами",
+      "Oggetti filtrati con nomi ignorati",
+      "Gefilterte Objekte mit ignorierten Namen",
+      "具有被忽略名称的过滤对象",
+      "Objetos filtrados con nombres ignorados",       // ES
+      "Objets filtrés avec des noms ignorés",          // FR
+      "Yoksayılan isimlere sahip nesneler filtrelendi" // TR
+    };
 
     public static readonly string[] MsgAnnotation = {
       "Filtered annotation objects",

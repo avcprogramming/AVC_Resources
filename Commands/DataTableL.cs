@@ -720,14 +720,14 @@ namespace AVC
       "Mevcut Kesim Tablosu stilinden tüm ayarları kopyala" };   // TR
 
     public static readonly string[] DelColumnText = {
-      "Delete",
-      "Удалить",
-      "Elimina",
-      "Löschen",
-      "删除",
-      "Eliminar",                                                // ES
-      "Supprimer",                                               // FR
-      "Sil" };                                                   // TR
+      "🗑 Delete",
+      "🗑 Удалить",
+      "🗑 Elimina",
+      "🗑 Löschen",
+      "🗑 删除",
+      "🗑 Eliminar",                                                // ES
+      "🗑 Supprimer",                                               // FR
+      "🗑 Sil" };                                                   // TR
 
     public static readonly string[] DelColumnTip = {
       "Delete current column",
