@@ -1811,6 +1811,26 @@ namespace AVC
         "Malzemenin belirtildiği parçaların ağırlığı, \r\n" +
         "ve malzeme için yoğunluk belirtilir."};
 
+    public static readonly string[] Package = {
+      "Package",
+      "Упаковка",
+      "Pacchetto",
+      "Paket",
+      "包装",
+      "Paquete",
+      "Paquet",
+      "Paket" };
+
+    public static readonly string[] PackageTip = {
+      "The number of products in a store package. To calculate the number of packages in the Purchasing Table (MatTable)",
+      "Количество изделий в магазинной упаковке. Для вычисления количества упаковок в Таблице Закупок (MatTable)",
+      "Il numero di prodotti in un pacchetto del negozio. Per calcolare il numero di pacchetti nella Tabella degli acquisti (MatTable)",
+      "Die Anzahl der Produkte in einer Store-Packung. Um die Anzahl der Pakete in der Einkaufstabelle (MatTable) zu berechnen",
+      "商店包装中的产品数量。 要计算采购表 (MatTable) 中的包裹数量",
+      "El número de productos en un paquete de tienda. Para calcular el número de paquetes en la Tabla de compras (MatTable)",
+      "Le nombre de produits dans un paquet de magasin. Pour calculer le nombre de colis dans le tableau des achats (MatTable)",
+      "Mağaza paketindeki ürün sayısı. Satın Alma Tablosunda (MatTable) paket sayısını hesaplamak için" };
+
     public static readonly string[] BlockNameExistsErr = {
       "This block name already exists in the drawing: {0}",
       "Такое имя блока уже есть в чертеже: {0}",
@@ -3519,16 +3539,6 @@ namespace AVC
       "Article",
       "Ürün Kodu"};
 
-    public static readonly string[] MaterialArticle = {
-      "Material Article",
-      "Материал - Артикул",
-      "Materiale - Articolo",
-      "Materialcode",
-      "材料-代码",
-      "Material - Artículo",
-      "Matériau - Article",
-      "Malzeme - Ürün Kodu"};
-
     public static readonly string[] ArticleTip = {
       "Long digital code of the material.\r\n" +
         "Use for procurement and for link with databases.\r\n" +
@@ -4061,16 +4071,6 @@ namespace AVC
       "Precio",
       "Prix",
       "Fiyat"};
-
-    public static readonly string[] MaterialPrice = {
-      "Material Price",
-      "Материал - Цена",
-      "Materiale - Prezzo",
-      "Materialpreis",
-      "材料-价格",
-      "Material - Precio",
-      "Matériau - Prix",
-      "Malzeme - Fiyat"};
 
     public static readonly string[] PriceTip = {
       "Cost per unit of material. \r\n" +

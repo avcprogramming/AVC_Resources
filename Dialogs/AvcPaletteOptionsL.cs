@@ -989,6 +989,16 @@ namespace AVC
       "Attributs de bloc constant virtuel",
       "Sanal sabit blok öznitelikleri"};
 
+    public static readonly string[] VirtualProductAttributes = {
+      "Virtual block-product attributes",
+      "Виртуальные атрибуты блоков-изделий",
+      "Attributi del blocco prodotto virtuale",
+      "Virtuelle Blockattribute des Produkts",
+      "虚拟产品块属性",
+      "Atributos de bloque de producto virtual",
+      "Attributs de bloc de produit virtuel",
+      "Sanal ürün blok öznitelikleri"};
+
     public static readonly string[] VirtualAttributesTip = {
       "Always show virtual attributes in block properties, even if the block does not have them. \r\n" +
         "Write a list of one attribute per line.\r\n" +
@@ -1025,22 +1035,41 @@ namespace AVC
         "Açıklama blokları için değil."};
 
     public static readonly string[] VirtualConstAttributesTip = {
-      "Always show virtual constant attributes in block definition properties, even if the block does not have them. " +
-        "Not for annotative blocks.",
-      "Всегда показывать в свойствах определения блока виртуальные константные атрибуты, даже если у блока их нет. " +
-        "Не для аннотативных блоков.",
-      "Mostra sempre gli attributi costanti virtuali nelle proprietà di definizione del blocco, anche se il blocco non li dispone. " +
-        "Non per i blocchi annotativi.",
-      "Zeigen Sie virtuelle Konstantenattribute immer in den Blockdefinitionseigenschaften an, auch wenn der Block sie nicht hat. " +
-        "Nicht für Anmerkungsblöcke.",
-      "始终在块定义属性中显示虚拟常量属性，即使该块没有这些属性。" +
-        "不适用于注释性块。",
-      "Mostrar siempre atributos constantes virtuales en las propiedades de definición de bloque, incluso si el bloque no los tiene. " +
-        "No para bloques anotativos.",
-      "Toujours afficher les attributs constants virtuels dans les propriétés de définition de bloc, même si le bloc ne les a pas. " +
-        "Pas pour les blocs annotatifs.",
-      "Blok tanımı özelliklerinde her zaman sanal sabit öznitelikleri göster, blokta olmasa bile. " +
-        "Açıklama blokları için değil."};
+      "Always show virtual constant attributes in block definition properties, \r\n" +
+        "even if the block does not have them. \r\n" +
+        "Not for annotative blocks. Not for block-products.",
+      "Всегда показывать в свойствах определения блока виртуальные константные атрибуты, даже если у блока их нет. \r\n" +
+        "Не для аннотативных блоков. Не для блоков-изделий.",
+      "Mostra sempre gli attributi costanti virtuali nelle proprietà di definizione del blocco, anche se il blocco non li dispone. \r\n" +
+        "Non per i blocchi annotativi. Non per i blocchi-prodotto.",
+      "Zeigen Sie virtuelle Konstantenattribute immer in den Blockdefinitionseigenschaften an, auch wenn der Block sie nicht hat. \r\n" +
+        "Nicht für Anmerkungsblöcke. Nicht für Blockprodukte.",
+      "始终在块定义属性中显示虚拟常量属性，即使该块没有这些属性。\r\n" +
+        "不适用于注释性块。不适用于块产品。",
+      "Mostrar siempre atributos constantes virtuales en las propiedades de definición de bloque, incluso si el bloque no los tiene. \r\n" +
+        "No para bloques anotativos. No para bloques de productos.",
+      "Toujours afficher les attributs constants virtuels dans les propriétés de définition de bloc, même si le bloc ne les a pas. \r\n" +
+        "Pas pour les blocs annotatifs. Pas pour les blocs de produits.",
+      "Blok tanımı özelliklerinde her zaman sanal sabit öznitelikleri göster, blokta olmasa bile. \r\n" +
+        "Açıklama blokları için değil. Blok-ürünler için değil."};
+
+    public static readonly string[] VirtualProductAttributesTip = {
+      "Always show virtual constant attributes in block-product definition properties, even if the block does not have them. \r\n" +
+        "Only for blocks marked as Product.",
+      "Всегда показывать в свойствах блока-изделия виртуальные константные атрибуты, даже если у блока их нет. \r\n" +
+        "Только для блоков помеченных как Изделие.",
+      "Mostra sempre gli attributi costanti virtuali nelle proprietà di definizione del blocco-prodotto, anche se il blocco non li dispone. \r\n" +
+        "Solo per i blocchi contrassegnati come Prodotto.",
+      "Zeigen Sie virtuelle Konstantenattribute immer in den Block-Produkdefinitionseigenschaften an, auch wenn der Block sie nicht hat. \r\n" +
+        "Nur für Blöcke, die als Produkt gekennzeichnet sind.",
+      "始终在块产品定义属性中显示虚拟常量属性，即使该块没有这些属性。\r\n" +
+        "仅适用于标记为产品的块。",
+      "Mostrar siempre atributos constantes virtuales en las propiedades de definición de bloque-producto, incluso si el bloque no los tiene. \r\n" +
+        "Solo para bloques marcados como Producto.",
+      "Toujours afficher les attributs constants virtuels dans les propriétés de définition de bloc-produit, même si le bloc ne les a pas. \r\n" +
+        "Uniquement pour les blocs marqués comme Produit.",
+      "Blok-ürün tanımı özelliklerinde her zaman sanal sabit öznitelikleri göster, blokta olmasa bile. \r\n" +
+        "Sadece Ürün olarak işaretlenmiş bloklar için."};
 
     public static readonly string[] UserProperties = {
       "User properties",
