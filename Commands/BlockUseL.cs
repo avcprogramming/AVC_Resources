@@ -61,15 +61,39 @@ namespace AVC
         "Bu özelliği düzenlemeyin; bunun yerine, A>V>C> Özellikler Paletindeki blok amacı onay kutularını değiştirin." };
 
     //========================================================= BlockUseStyleBox =======================================================================================
-    public static readonly string[] DefaultUse = {
-      "Default block use",
-      "Использование блоков по умолчанию",
-      "Uso predefinito del blocco",
-      "Standardmäßige Blockverwendung",
-      "默认块用途",
-      "Uso predeterminado del bloque",
-      "Utilisation par défaut du bloc",
-      "Varsayılan blok kullanımı" };
+    public static readonly string[] BlockUseHint = {
+      "For many A>V>C> commands, how exactly a block should be used is important. \r\n" +
+        "Parts will be searched in Assemblies. Products will go to the Purchasing Table. \r\n" +
+        "In the A>V>C> Properties Palette, there are checkboxes for Assembly and Product for each block. \r\n" +
+        "To avoid configuring each block, it's important to set up default block usage.",
+      "Для многих команд A>V>C> важно как именно следует использовать блок. \r\n" +
+        "В Сборках будет производиться поиск деталей. Изделия пойдут в Таблицу Закупок. \r\n" +
+        "В Палитре Свойств A>V>C> есть галочки Сборка и Изделие у каждого блока. \r\n" +
+        "Чтоб не настраивать каждый блок, важно настроить использование блоков по умолчанию.",
+      "Per molti comandi A>V>C> è importante come esattamente un blocco dovrebbe essere utilizzato. \r\n" +
+        "Le parti saranno ricercate negli Assemblaggi. I Prodotti andranno alla Tabella Acquisti. \r\n" +
+        "Nella tavolozza Proprietà A>V>C> ci sono caselle di controllo per Assemblaggio e Prodotto per ciascun blocco. \r\n" +
+        "Per evitare di configurare ogni blocco, è importante impostare l'uso predefinito del blocco.",
+      "Für viele A>V>C> Befehle ist es wichtig, wie genau ein Block verwendet werden soll. \r\n" +
+        "Teile werden in Baugruppen gesucht. Produkte gehen in die Einkaufstabelle. \r\n" +
+        "In der A>V>C> Eigenschaftenpalette gibt es Kontrollkästchen für Baugruppe und Produkt für jeden Block. \r\n" +
+        "Um die Konfiguration jedes Blocks zu vermeiden, ist es wichtig, die Standardblockverwendung einzurichten.",
+      "对于许多 A>V>C> 命令，块的确切使用方式很重要。 \r\n" +
+        "零件将在装配体中搜索。产品将进入采购表。 \r\n" +
+        "在 A>V>C> 属性面板中，每个块都有装配体和产品的复选框。 \r\n" +
+        "为了避免配置每个块，设置默认块使用方式很重要。",
+      "Para muchos comandos A>V>C>, es importante cómo exactamente se debe usar un bloque. \r\n" +
+        "Las piezas se buscarán en los Ensamblajes. Los Productos irán a la Tabla de Compras. \r\n" +
+        "En la Paleta de Propiedades A>V>C> hay casillas de verificación para Ensamblaje y Producto para cada bloque. \r\n" +
+        "Para evitar configurar cada bloque, es importante configurar el uso predeterminado del bloque.",
+      "Pour de nombreuses commandes A>V>C>, il est important de savoir comment exactement un bloc doit être utilisé. \r\n" +
+        "Les pièces seront recherchées dans les Assemblages. Les Produits iront au Tableau d'Achat. \r\n" +
+        "Dans la palette Propriétés A>V>C>, il y a des cases à cocher pour Assemblage et Produit pour chaque bloc. \r\n" +
+        "Pour éviter de configurer chaque bloc, il est important de configurer l'utilisation par défaut du bloc.",
+      "Birçok A>V>C> komutu için bir bloğun tam olarak nasıl kullanılacağı önemlidir. \r\n" +
+        "Parçalar Montajlarda aranacaktır. Ürünler Satın Alma Tablosuna gidecektir. \r\n" +
+        "A>V>C> Özellikler Paletinde, her blok için Montaj ve Ürün onay kutuları vardır. \r\n" +
+        "Her bloğu yapılandırmaktan kaçınmak için varsayılan blok kullanımını ayarlamak önemlidir." };
 
     public static readonly string[] AssemblyGroupTip = {
       "Default conditions for recognizing a block as an Assembly when it has no 'Use' attribute.\n" +

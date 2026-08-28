@@ -969,6 +969,32 @@ namespace AVC
       "Kullanıcıya en son kullanılan sekmeyi göstermek için palet sekmesi değiştirme geçmişini kaydet. \r\n" +
         "Seçenek devre dışıysa, ilk kullanılabilir sekme açılacaktır."};
 
+    public static readonly string[] VirtualAttributesHint = {
+      "Virtual attributes eliminate the need to create invisible attributes in every block. \r\n" +
+        "They will be visible in the AVC Properties Palette even if they don't actually exist in the block. \r\n" +
+        "And substitutions in tables and in MLeaders will never return N/A.",
+      "Виртуальные атрибуты позволят вам не создавать невидимые атрибуты в каждом блоке. \r\n" +
+        "Они будут видны в Палитре Свойств AVC даже если их на самом деле нет в блоке. \r\n" +
+        "А подстановки в таблицах и выносках никогда не будут возвращать Н/Д.",
+      "Gli attributi virtuali ti permettono di non creare attributi invisibili in ogni blocco. \r\n" +
+        "Saranno visibili nella Palette delle Proprietà AVC anche se non sono effettivamente presenti nel blocco. \r\n" +
+        "E le sostituzioni nelle tabelle e nei riferimenti non restituiranno mai N/D.",
+      "Virtuelle Attribute ermöglichen es Ihnen, in jedem Block keine unsichtbaren Attribute zu erstellen. \r\n" +
+        "Sie werden in der AVC-Eigenschaftspalette angezeigt, auch wenn sie im Block tatsächlich nicht vorhanden sind. \r\n" +
+        "Und Platzhalter in Tabellen und Beschriftungen geben niemals N/V zurück.",
+      "虚拟属性允许您不在每个块中创建不可见属性。 \r\n" +
+        "即使块中实际上没有这些属性，它们也会在 AVC 属性面板中显示。 \r\n" +
+        "并且表格和标注中的替代不会返回 N/D。",
+      "Los atributos virtuales te permiten no crear atributos invisibles en cada bloque. \r\n" +
+        "Serán visibles en la Paleta de Propiedades de AVC incluso si no están realmente en el bloque. \r\n" +
+        "Y las sustituciones en tablas y anotaciones nunca devolverán N/D.",
+      "Les attributs virtuels vous permettent de ne pas créer d'attributs invisibles dans chaque bloc. \r\n" +
+        "Ils seront visibles dans la Palette des Propriétés AVC même s'ils ne sont pas réellement dans le bloc. \r\n" +
+        "Et les substitutions dans les tableaux et les annotations ne renverront jamais N/D.",
+      "Sanal öznitelikler, her blokta görünmez öznitelik oluşturmamanıza olanak tanır. \r\n" +
+        "Blokta gerçekten olmasalar bile AVC Özellikler Paletinde görüneceklerdir. \r\n" +
+        "Ve tablolar ve açıklamalardaki yer tutucular asla N/D döndürmezler."};
+
     public static readonly string[] VirtualAttributes = {
       "Virtual block attributes",
       "Виртуальные атрибуты блоков",

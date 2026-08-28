@@ -1737,6 +1737,55 @@ namespace AVC
       "Configuration de l'affichage et de l'envoi de messages depuis les programmes A>V>C>",
       "A>V>C> programlarından mesaj görüntüleme ve gönderme ayarları"};
 
+    public static readonly string[] VirtualAttributes = {
+      "Virtual Attributes",
+      "Виртуальные атрибуты",
+      "Attributi virtuali",
+      "Virtuelle Attribute",
+      "虚拟属性",
+      "Atributos virtuales",
+      "Attributs virtuels",
+      "Sanal Özellikler"};
+
+    public static readonly string[] VirtualAttributesTip = {
+      "Configure virtual block attributes for easy extraction of assembly and product data.",
+      "Настройка виртуальных атрибутов блоков для легкого извлечения данных о сборках и изделиях.",
+      "Configurare gli attributi virtuali dei blocchi per facilitare l'estrazione dei dati di assemblaggio e prodotto.",
+      "Konfigurieren Sie virtuelle Blockattribute, um die Extraktion von Baugruppen- und Produktdaten zu erleichtern.",
+      "配置虚拟块属性以便轻松提取装配和产品数据。",
+      "Configurar atributos de bloque virtuales para facilitar la extracción de datos de ensamblaje y producto.",
+      "Configurer les attributs de bloc virtuels pour faciliter l'extraction des données d'assemblage et de produit.",
+      "Montaj ve ürün verilerinin kolayca çıkarılması için sanal blok özniteliklerini yapılandırma."};
+
+    public static readonly string[] BlockUse = {
+      "Using blocks",
+      "Использование блоков",
+      "Utilizzo dei blocchi",
+      "Verwendung von Blöcken",
+      "使用块",
+      "Uso de bloques",
+      "Utilisation des blocs",
+      "Blokları kullanma"};
+
+    public static readonly string[] BlockUseTip = {
+      "Setting up the use of blocks in A>V>C> plugins.\r\n" +
+        "Automatic recognition of blocks as Assemblies or as Products.",
+      "Настройка использования блоков в плагинах A>V>C>. \r\n" +
+        "Автоматическое распознавание блоков как Сборок или как Изделий.",
+      "Impostazione dell'uso dei blocchi nei plugin A>V>C>. \r\n" +
+        "Riconoscimento automatico dei blocchi come Assemblaggi o come Prodotti.",
+      "Einrichten der Verwendung von Blöcken in A>V>C>-Plugins. \r\n" +
+        "Automatische Erkennung von Blöcken als Baugruppen oder als Produkte.",
+      "在 A>V>C> 插件中设置块的使用。\r\n" +
+        "自动将块识别为装配体或产品。",
+      "Configuración del uso de bloques en complementos A>V>C>. \r\n" +
+        "Reconocimiento automático de bloques como ensamblajes o como productos.",
+      "Configuration de l'utilisation des blocs dans les plug-ins A>V>C>. \r\n" +
+        "Reconnaissance automatique des blocs en tant qu'assemblages ou en tant que produits.",
+      "A>V>C> eklentilerinde blokların kullanımını ayarlama. \r\n" +
+        "Blokların Montaj veya Ürün olarak otomatik tanınması."};
+
+
     public static readonly string[] Client = {
       "Account A>V>C>",
       "Учетная запись",

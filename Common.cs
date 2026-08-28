@@ -92,6 +92,8 @@ namespace AVC
     public static Bitmap BlockMetric16 => LoadPng("BlockMetric16");
     public static Bitmap BlockMetric32 => LoadPng("BlockMetric32");
     public static Bitmap BlockMetric80 => LoadPng("BlockMetric80");
+    public static Bitmap BlockUse16 => LoadPng("BlockUse16");
+    public static Bitmap BlockUse32 => LoadPng("BlockUse32");
     public static Bitmap BlockPreview32 => LoadPng("BlockPreview32");
     public static Bitmap BlockRef32 => LoadPng("BlockRef32");
     public static Bitmap Blocks32 => LoadPng("Blocks32");
@@ -504,6 +506,8 @@ namespace AVC
     public static Bitmap TextHeight120 => LoadPng("TextHeight120");
     public static Bitmap TNT120 => LoadPng("TNT120");
     public static Bitmap Unpack120 => LoadPng("Unpack120");
+    public static Bitmap VirtualAttr16 => LoadPng("VirtualAttr16");
+    public static Bitmap VirtualAttr32 => LoadPng("VirtualAttr32");
     public static Bitmap Zone120 => LoadPng("Zone120");
   }
 }

@@ -606,5 +606,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Nesting120.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BlockUse16.png" />
+    <EmbeddedResource Include="Resources\BlockUse32.png" />
+    <EmbeddedResource Include="Resources\VirtualAttr16.png" />
+    <EmbeddedResource Include="Resources\VirtualAttr32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

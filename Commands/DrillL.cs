@@ -245,7 +245,6 @@ namespace AVC
       "Delik katmanı olarak özel '0' katmanını kullanmak kabul edilemez"};  // TR
 
     // ================ Command Line options ==================================================
-    // ================ Command Line options ==================================================
     public static readonly string[] GapKW = {
       "GAp",
       "Зазор",

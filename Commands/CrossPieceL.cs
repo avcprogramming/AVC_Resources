@@ -5,6 +5,11 @@ namespace AVC
   public static class
   CrossPieceL
   {
+    public static readonly string[][] CrossPieceStyleNames = {
+/* 0 */ CommandL.CRS,
+/* 1 */ CommandL.CRS };
+
+
     public static readonly string[] Select = {
       "  Select crossed solids ",
       "  Выберите пересекающиеся детали типа 3DSolid ",
@@ -238,7 +243,7 @@ namespace AVC
       "LUFT",
       "深化(BA)",
       "HOlgura",                                                  // ES
-      "JEu",                                                      // FR
+      "RATtrapage",                                               // FR
       "BOşluk"};                                                  // TR
 
 
@@ -246,6 +251,126 @@ namespace AVC
     // Ru: Р П С БОКС В Л РМ СМ Г Д И Н Т О А Е СЛ ОТС ТО КОН СЕР ЦЕН Г УЗЕ КВА ПЕР ПРО ТВС НОР КАС БЛИ К ПАР НИЧ ZВЕР ZСЕР ZЦЕН ZУЗЕ ZНОР ZБЛИ ZНИЧ
     // It: F U I R T NT FP IP G AG E M P A AU SI SU O PUNTAMENTO PUNTA PU TT TU FIN MED CEN CE NOD QUA UNT EST INS PER TAN VIC APP PAR N ZVER ZMED ZCEN ZNOD ZPER ZVIC ZNES
     // Ge: F L K QUADER ALLE ZA FP KP G H E M V ZU AU EI SPUR SPU SP TT ENDP MIT M G PUN QUAD SCH HIL BAS LOT TAN NÄC ANP PAR KEI ZSC ZMIT ZZEN ZKNOT ZLOT ZNÄH ZKEI
+
+
+    //======================= Dialog Box =============================================================
+
+    public static readonly string[] Gap = {
+      "Gap",
+      "Зазор",
+      "Gap",
+      "Spalt",
+      "间隙",
+      "Espacio",
+      "Jeu",
+      "Boşluk"};
+
+    public static readonly string[] GapTip = {
+      "Gap for free sliding of parts. The value is applied on each side of both parts.\r\n" +
+        "So the slot becomes wider by double gap.\r\n" +
+        "No gap is made at the stop point in insertion direction; use Backlash for that.",
+      "Зазор для свободного скольжения деталей. Значение применяется с каждой стороны обеих деталей.\r\n" +
+        "Поэтому паз становится шире на двойной зазор.\r\n" +
+        "В точке упора по направлению вставки зазор не делается — для этого используйте Люфт.",
+      "Gap per lo scorrimento libero delle parti. Il valore viene applicato su ciascun lato di entrambe le parti.\r\n" +
+        "Quindi la fessura diventa più ampia di doppio gap.\r\n" +
+        "Nessun gap viene effettuato nel punto di arresto nella direzione di inserimento; usa Backlash per quello.",
+      "Spalt für freies Gleiten der Teile. Der Wert wird auf jeder Seite beider Teile angewendet.\r\n" +
+        "Daher wird der Schlitz um das Doppelte des Spalts breiter.\r\n" +
+        "Kein Spalt wird am Anschlagpunkt in Einfügerichtung gemacht; Verwenden Sie dafür Backlash.",
+      "零件自由滑动的间隙。该值应用于两部分的每一侧。\r\n" +
+        "因此，槽变宽了两倍。\r\n" +
+        "在插入方向的止点处不产生间隙；为此使用 Backlash。",
+      "Espacio para el deslizamiento libre de las piezas. El valor se aplica a cada lado de ambas piezas.\r\n" +
+        "Por lo tanto, la ranura se ensancha al doble del espacio.\r\n" +
+        "No se hace ningún espacio en el punto de parada en la dirección de inserción; use Backlash para eso.",  // ES
+      "Jeu pour le glissement libre des pièces. La valeur est appliquée de chaque côté des deux pièces.\r\n" +
+        "Ainsi, la fente devient plus large du double du jeu.\r\n" +
+        "Aucun jeu n'est fait au point d'arrêt dans le sens de l'insertion ; utilisez Backlash pour cela.",  // FR
+      "Parçaların serbest kayması için boşluk. Değer, her iki parçanın her iki tarafına uygulanır.\r\n" +
+        "Bu nedenle, yuva çift boşlukla daha geniş hale gelir.\r\n" +
+        "Ekleme yönünde durma noktasında boşluk yapılmaz; bunun için Backlash kullanın."};  // TR
+
+    public static readonly string[] Backlash = {
+      "Backlash",
+      "Люфт",
+      "Backlash",
+      "Luft",
+      "凹槽",
+      "Holgura",
+      "Rattrapage",
+      "Gevşeklik"};
+
+    public static readonly string[] BacklashTip = {
+      "Additional gap only at slot ends where parts abut each other in insertion direction.\r\n" +
+        "Helps to slide parts deeper into the cross.\r\n" +
+        "Useful to compensate CNC cutter diameter deviations.",
+      "Дополнительный зазор только в торцах выборок, где детали упираются друг в друга по направлению вставки.\r\n" +
+        "Помогает задвигать детали глубже в крестовину.\r\n" +
+        "Обычно используется для компенсации диаметра фрезы на ЧПУ.",
+      "Spazio aggiuntivo solo alle estremità della fessura dove i pezzi si uniscono nella direzione di inserimento.\r\n" + 
+        "Aiuta a far scorrere i pezzi più in profondità nella traversa.\r\n" + 
+        "Utile per compensare le deviazioni del diametro della fresa CNC.",
+      "Zusätzlicher Spalt nur an den Enden des Schlitzes, wo die Teile in Einfügerichtung aneinanderstoßen.\r\n" +
+        "Hilft, die Teile tiefer in das Kreuz zu schieben.\r\n" +
+        "Nützlich, um Abweichungen des CNC-Fräserdurchmessers auszugleichen.",
+      "仅在零件在插入方向上相互接触的槽端处有额外间隙。\r\n" +
+        "有助于将零件更深地滑入十字架。\r\n" +
+        "用于补偿 CNC 切削刀直径偏差。",
+      "Espacio adicional solo en los extremos de la ranura donde las piezas se apoyan entre sí en la dirección de inserción.\r\n" +
+        "Ayuda a deslizar las piezas más profundamente en la cruz.\r\n" +
+        "Útil para compensar las desviaciones del diámetro del cortador CNC.",  // ES
+      "Jeu supplémentaire uniquement aux extrémités de la fente où les pièces se touchent dans le sens de l'insertion.\r\n" +
+        "Aide à faire glisser les pièces plus profondément dans la croix.\r\n" +
+        "Utile pour compenser les écarts de diamètre de la fraise CNC.",  // FR
+      "Ek parça, parçaların ekleme yönünde birbirine dayandığı yuva uçlarında.\r\n" +
+        "Parçaların daha derin bir şekilde çapraz olarak kaymasına yardımcı olur.\r\n" +
+        "CNC kesici çap sapmalarını telafi etmek için yararlıdır."};  // TR
+
+    public static readonly string[] Inverse = {
+      "Inverse",
+      "Наоборот",
+      "Inverti",
+      "Umkehren",
+      "反之亦然",
+      "Inverso",                                                  // ES
+      "Inverse",                                                  // FR
+      "Ters"};                                                    // TR
+
+    public static readonly string[] InverseTip = {
+      "Changes the direction of pulling out parts from the slot.\r\n" +
+        "Select parts in pairs, and if the next joint is the wrong way,\r\n" +
+        "then cancel the command and enable the Reverse option.\r\n" +
+        "The option is reset each time the command ends.",
+      "Меняет направление выдвижения деталей из паза.\r\n" +
+        "Выбирайте детали парами и если очередной стык получился не в ту сторону,\r\n" +
+        "то отмените команду и включите опцию Наоборот.\r\n" +
+        "Опция сбрасывается каждый раз после окончания команды.",
+      "Cambia la dirección de extracción de las piezas de la ranura.\r\n" +
+        "Seleccione las piezas en pares, y si la siguiente junta es del lado equivocado,\r\n" +
+        "cancele el comando y habilite la opción Inverti.\r\n" +
+        "La opción se restablece cada vez que finaliza el comando.",
+      "Ändert die Richtung, in der die Teile aus dem Schlitz herausgezogen werden.\r\n" +
+        "Wählen Sie die Teile paarweise aus, und wenn die nächste Verbindung falsch ist,\r\n" +
+        "dann brechen Sie den Befehl ab und aktivieren Sie die Option Umkehren.\r\n" +
+        "Die Option wird jedes Mal zurückgesetzt, wenn der Befehl endet.",
+      "更改从槽中拉出零件的方向。\r\n" +
+        "成对选择零件，如果下一个接头方向错误，\r\n" +
+        "则取消命令并启用反向选项。\r\n" +
+        "每次命令结束时都会重置该选项。",
+      "Cambia la dirección de extracción de las piezas de la ranura.\r\n" +
+        "Seleccione las piezas en pares, y si la siguiente junta es del lado equivocado,\r\n" +
+        "cancele el comando y habilite la opción Inverso.\r\n" +
+        "La opción se restablece cada vez que finaliza el comando.",  // ES
+      "Change la direction d'extraction des pièces de la fente.\r\n" +
+        "Sélectionnez les pièces par paires, et si le joint suivant est du mauvais côté,\r\n" +
+        "annulez la commande et activez l'option Inverse.\r\n" +
+        "L'option est réinitialisée à chaque fois que la commande se termine.",  // FR
+      "Parçaların yuvasından çekilme yönünü değiştirir.\r\n" +
+        "Parçaları çiftler halinde seçin ve bir sonraki ek yanlış taraftaysa,\r\n" +
+        "komutu iptal edin ve Ters seçeneğini etkinleştirin.\r\n" +
+        "Seçenek, komut her bittiğinde sıfırlanır."};  // TR
+
 
   }
 }
