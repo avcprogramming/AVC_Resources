@@ -2101,15 +2101,5 @@ namespace AVC
       "  Le maillage est trop complexe (plus de {0} faces)",
       "  Ağ çok karmaşık ({0}'den fazla yüz)"};
 
-    public static readonly string[] SolidTooHardErr = {
-      "  The solid has too many faces (more than {0}). Coatings and colors will not be processed.",
-      "  У солида слишком много граней (более {0}). Покрытия и расцветка не будут обрабатываться.",
-      "  Il solido ha troppe facce (più di {0}). Non verranno elaborati rivestimenti e colori.",
-      "  Der Volumenkörper hat zu viele Flächen (mehr als {0}). Lacke und Farben werden nicht verarbeitet.",
-      "  实体的面太多（超过 {0} 个）。 不会处理涂层和颜色。",
-      "  El sólido tiene demasiadas caras (más de {0}). Los recubrimientos y colores no se procesarán.",
-      "  Le solide a trop de faces (plus de {0}). Les revêtements et couleurs ne seront pas traités.",
-      "  Katı çok fazla yüze sahip ({0}'den fazla). Kaplamalar ve renkler işlenmeyecek."};
-
   }
 }

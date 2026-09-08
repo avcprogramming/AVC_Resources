@@ -353,7 +353,7 @@ namespace AVC
 
     public static readonly string[] LateralDrillPositions = {
       "Lateral drill positions",
-      "Позиции торцевых",
+      "Позиции торцевых сверлений",
       "Dimensioni d.foratura laterale",
       "Seitliche Bohrpositionen",
       "侧钻位置",
@@ -378,6 +378,60 @@ namespace AVC
         "Pour une paire de trous avec un pas de 32, une seule taille est apposée.",
       "Parçanın köşesinden yanal deliklere kadar bir ölçü zinciri yerleştirin.\r\n" +  // TR
         "32 aralıklı bir çift delik için yalnızca bir boyut eklenir."};
+
+    public static readonly string[] LateralMillingPositions = {
+      "Lateral milling positions",
+      "Позиции торцевых фрезеровок",
+      "Posizioni fresature laterali",
+      "Seitliche Fräspositionen",
+      "侧铣位置",
+      "Posiciones de fresado lateral",                 // ES
+      "Positions de fraisage latéral",                 // FR
+      "Yanal frezeleme pozisyonları"};                 // TR
+
+    public static readonly string[] LateralMillingPositionsTip = {
+      "Put down a chain of measurements from the corner of the part to the milled contours\r\n" +
+        "on the lateral and sloped faces (internal loops).",
+      "Проставить цепочку размеров от угла детали до фрезерованных контуров\r\n" +
+        "на торцевых и наклонных поверхностях (внутренних петель).",
+      "Metti giù una catena di misure dall'angolo della parte ai contorni fresati\r\n" +
+        "sulle facce laterali e inclinate (anelli interni).",
+      "Legen Sie eine Maßkette von der Ecke des Teils bis zu den gefrästen Konturen\r\n" +
+        "an den seitlichen und geneigten Flächen (Innenschleifen) an.",
+      "放置从零件角到侧面和斜面上铣削轮廓（内环）的尺寸链。",
+      "Coloque una cadena de medidas desde la esquina de la pieza hasta los contornos fresados\r\n" +  // ES
+        "en las caras laterales e inclinadas (bucles internos).",
+      "Placez une chaîne de mesures depuis le coin de la pièce jusqu'aux contours fraisés\r\n" +  // FR
+        "sur les faces latérales et inclinées (boucles internes).",
+      "Parçanın köşesinden yanal ve eğimli yüzeylerdeki frezelenmiş konturlara\r\n" +  // TR
+        "(iç ilmekler) bir ölçü zinciri yerleştirin."};
+
+    public static readonly string[] LateralMillingCenterOnly = {
+      "Only to the center",
+      "Только до центра",
+      "Solo al centro",
+      "Nur bis zur Mitte",
+      "仅到中心",
+      "Sólo hasta el centro",                          // ES
+      "Uniquement jusqu'au centre",                    // FR
+      "Yalnızca merkeze kadar"};                       // TR
+
+    public static readonly string[] LateralMillingCenterOnlyTip = {
+      "Affix one dimension to the center of the milled contour\r\n" +
+        "instead of two dimensions to its edges.",
+      "Проставить один размер до центра фрезерованного контура\r\n" +
+        "вместо двух размеров до его краев.",
+      "Applicare una sola quota al centro del contorno fresato\r\n" +
+        "invece di due quote ai suoi bordi.",
+      "Ein Maß bis zur Mitte der gefrästen Kontur anbringen\r\n" +
+        "statt zwei Maßen bis zu ihren Rändern.",
+      "在铣削轮廓的中心标注一个尺寸，而不是在其边缘标注两个尺寸。",
+      "Fije una cota al centro del contorno fresado\r\n" +  // ES
+        "en lugar de dos cotas a sus bordes.",
+      "Apposez une cote au centre du contour fraisé\r\n" +  // FR
+        "au lieu de deux cotes à ses bords.",
+      "Kenarlarına iki ölçü yerine frezelenmiş konturun\r\n" +  // TR
+        "merkezine tek bir ölçü ekleyin."};
 
     public static readonly string[] OverallDimensions = {
       "Overall dimensions",

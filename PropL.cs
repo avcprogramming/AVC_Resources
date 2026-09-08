@@ -5004,6 +5004,76 @@ namespace AVC
       "Épaisseur,mm",     // FR
       "Kalınlık,mm"};     // TR
 
+    public static readonly string[] FrontProcessing = {
+      "Front processing",
+      "Обработка лицевой стороны",
+      "Lavorazione del lato anteriore",
+      "Bearbeitung der Vorderseite",
+      "正面加工",
+      "Procesamiento frontal",  // ES
+      "Traitement frontal",     // FR
+      "Ön işleme"};             // TR
+
+    public static readonly string[] RearProcessing = {
+      "Rear processing",
+      "Обработка задней стороны",
+      "Lavorazione del lato posteriore",
+      "Bearbeitung der Rückseite",
+      "背面加工",
+      "Procesamiento trasero",  // ES
+      "Traitement arrière",     // FR
+      "Arka işleme"};           // TR
+
+    public static readonly string[] TopProcessing = {
+      "Top processing",
+      "Обработка верхней стороны",
+      "Lavorazione del lato superiore",
+      "Bearbeitung der Oberseite",
+      "顶部加工",
+      "Procesamiento superior",  // ES
+      "Traitement supérieur",    // FR
+      "Üst işleme"};             // TR
+
+    public static readonly string[] BottomProcessing = {
+      "Bottom processing",
+      "Обработка нижней стороны",
+      "Lavorazione del lato inferiore",
+      "Bearbeitung der Unterseite",
+      "底部加工",
+      "Procesamiento inferior",  // ES
+      "Traitement inférieur",    // FR
+      "Alt işleme"};             // TR
+
+    public static readonly string[] LateralProcessing = {
+      "Lateral processing",
+      "Обработка боковой стороны",
+      "Lavorazione del lato laterale",
+      "Bearbeitung der Seitenfläche",
+      "侧面加工",
+      "Procesamiento lateral",  // ES
+      "Traitement latéral",     // FR
+      "Yan işleme"};            // TR
+
+    public static readonly string[] LeftProcessing = {
+      "Left processing",
+      "Обработка левой стороны",
+      "Lavorazione del lato sinistro",
+      "Bearbeitung der linken Seite",
+      "左侧加工",
+      "Procesamiento izquierdo", // ES
+      "Traitement gauche",       // FR
+      "Sol işleme"};             // TR
+
+    public static readonly string[] RightProcessing = {
+      "Right processing",
+      "Обработка правой стороны",
+      "Lavorazione del lato destro",
+      "Bearbeitung der rechten Seite",
+      "右侧加工",
+      "Procesamiento derecho",  // ES
+      "Traitement droit",       // FR
+      "Sağ işleme"};            // TR
+
     public static readonly string[] TwoSideProcessing = {
       "Double-sided processing ",
       "Двусторонняя обработка ",
@@ -5013,6 +5083,26 @@ namespace AVC
       "Procesamiento de doble cara ",
       "Traitement double face ",
       "Çift taraflı işleme "};
+
+    public static readonly string[] HasSlopes = {
+      "Has slopes",
+      "Спил",
+      "Ha pendenze",
+      "Hat Neigungen",
+      "有斜坡",
+      "Tiene pendientes",  // ES
+      "A des pentes",      // FR
+      "Eğimleri var"};     // TR}
+
+    public static readonly string[] Problems = {
+      "Problems",
+      "Проблемы",
+      "Problemi",
+      "Probleme",
+      "问题",
+      "Problemas",         // ES
+      "Problèmes",         // FR
+      "Sorunlar"};         // TR
 
     public static readonly string[] Volume = {
       "Volume",
