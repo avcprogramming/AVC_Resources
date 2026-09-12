@@ -74,7 +74,7 @@ namespace AVC
       "✔ Tamam"};
 
     /// <summary>
-    /// Для кнопок. Для опций команд есть CmdLineL.Cancel ❌
+    /// Для кнопок ❌. Для опций команд есть CmdLineL.Cancel 
     /// </summary>
     public static readonly string[] Cancel = {
       "❌ Cancel",

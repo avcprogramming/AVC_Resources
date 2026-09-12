@@ -4001,21 +4001,21 @@ namespace AVC
       "Malzeme - Uzunluk"};
 
     public static readonly string[] MaterialLengthTip = {
-      "The length of the original piece of material, blank, sheet, roll, whip.\r\n" +
+      "The length of the original piece of material, blank, sheet, roll, rod.\r\n" +
         "The field has a built-in calculator for calculating mathematical expressions.",
-      "Длина исходного куска материала, заготовки, листа, рулона, хлыста.\r\n" +
+      "Длина исходного куска материала, заготовки, листа, рулона, хлыста, погонажа.\r\n" +
         "В поле встроен калькулятор для вычисления математических выражений.",
-      "La lunghezza del pezzo di materiale originale, bianco, foglio, rotolo, frusta.\r\n" +
+      "La lunghezza del pezzo di materiale originale, bianco, foglio, rotolo, barra.\r\n" +
         "Il campo ha una calcolatrice incorporata per il calcolo delle espressioni matematiche.",
-      "Die Länge des ursprünglichen Materialstücks, Zuschnitt, Bogen, Rolle, Peitsche.\r\n" +
+      "Die Länge des ursprünglichen Materialstücks, Zuschnitt, Bogen, Rolle, Stange.\r\n" +
         "Das Feld verfügt über einen integrierten Taschenrechner zur Berechnung mathematischer Ausdrücke.",
-      "原始材料的长度，坯料、片材、卷材、鞭子。\r\n" +
+      "原始材料的长度，坯料、片材、卷材、线材。\r\n" +
          "该领域有一个用于计算数学表达式的内置计算器。",
-      "La longitud de la pieza original de material, en blanco, lámina, rollo, látigo.\r\n" +
+      "La longitud de la pieza original de material, en blanco, lámina, rollo, barra.\r\n" +
         "El campo tiene una calculadora integrada para calcular expresiones matemáticas.",
-      "La longueur du morceau de matériau d'origine, ébauche, feuille, rouleau, fouet.\r\n" +
+      "La longueur du morceau de matériau d'origine, ébauche, feuille, rouleau, barre.\r\n" +
         "Le champ dispose d'une calculatrice intégrée pour calculer des expressions mathématiques.",
-      "Orijinal malzeme parçasının uzunluğu, ham, levha, rulo, kırbaç.\r\n" +
+      "Orijinal malzeme parçasının uzunluğu, ham, levha, rulo, boy.\r\n" +
         "Alan, matematiksel ifadeleri hesaplamak için yerleşik bir hesap makinesine sahiptir."};
 
     public static readonly string[] MaterialNameTip = {
@@ -4221,21 +4221,21 @@ namespace AVC
       "Malzeme - Genişlik"};
 
     public static readonly string[] MaterialWidthTip = {
-      "The width of the original piece of material, billet, sheet, roll, whip.\r\n" +
+      "The width of the original piece of material, billet, sheet, roll, rod.\r\n" +
         "The field has a built-in calculator for calculating mathematical expressions.",
-      "Ширина исходного куска материала, заготовки, листа, рулона, хлыста.\r\n" +
+      "Ширина исходного куска материала, заготовки, листа, рулона, погонажа.\r\n" +
         "В поле встроен калькулятор для вычисления математических выражений.",
-      "La larghezza del pezzo di materiale originale, billetta, foglio, rotolo, frusta.\r\n" +
+      "La larghezza del pezzo di materiale originale, billetta, foglio, rotolo, barra.\r\n" +
         "Il campo ha una calcolatrice incorporata per il calcolo delle espressioni matematiche.",
-      "Die Breite des ursprünglichen Stoffstücks, Knüppel, Blech, Walze, Peitsche.\r\n" +
+      "Die Breite des ursprünglichen Stoffstücks, Knüppel, Blech, Walze, Stange.\r\n" +
         "Das Feld verfügt über einen integrierten Taschenrechner zur Berechnung mathematischer Ausdrücke.",
-      "原片材、坯料、片材、卷材、鞭子的宽度。\r\n" +
+      "原片材、坯料、片材、卷材、线材的宽度。\r\n" +
          "该领域有一个用于计算数学表达式的内置计算器。",
-      "El ancho de la pieza original de material, palanquilla, lámina, rollo, látigo.\r\n" +
+      "El ancho de la pieza original de material, palanquilla, lámina, rollo, barra.\r\n" +
         "El campo tiene una calculadora integrada para calcular expresiones matemáticas.",
-      "La largeur du morceau de matériau d'origine, billette, feuille, rouleau, fouet.\r\n" +
+      "La largeur du morceau de matériau d'origine, billette, feuille, rouleau, barre.\r\n" +
         "Le champ dispose d'une calculatrice intégrée pour calculer des expressions mathématiques.",
-      "Orijinal malzeme parçasının genişliği, kütük, levha, rulo, kırbaç.\r\n" +
+      "Orijinal malzeme parçasının genişliği, kütük, levha, rulo, boy.\r\n" +
         "Alan, matematiksel ifadeleri hesaplamak için yerleşik bir hesap makinesine sahiptir."};
 
     // MatUse (типы использования материала)
@@ -4262,12 +4262,12 @@ namespace AVC
     public static readonly string[] Rod = {
       "Rod",
       "Погонаж",
-      "Asta",
+      "Barra",
       "Stange",
       "线材",
-      "Varilla",
-      "Tige",
-      "Çubuk"};
+      "Barra",
+      "Barre",
+      "Boy"};
 
     public static readonly string[] Banding = {
       "Banding",
@@ -4313,15 +4313,25 @@ namespace AVC
       "Pièces",
       "Parçalar"};
 
-    public static readonly string[] PiecesCeiling = {
-      "Pieces (ceiling)",
-      "Кусков (целых)",
-      "Pezzi (arrotondati per eccesso)",
-      "Stücke (aufgerundet)",
-      "件（向上取整）",
-      "Piezas (redondeadas hacia arriba)",
-      "Pièces (arrondies vers le haut)",
-      "Parçalar (yukarı yuvarlanmış)"};
+    //public static readonly string[] PiecesCeiling = {
+    //  "Pieces (ceiling)",
+    //  "Кусков (целых)",
+    //  "Pezzi (arrotondati per eccesso)",
+    //  "Stücke (aufgerundet)",
+    //  "件（向上取整）",
+    //  "Piezas (redondeadas hacia arriba)",
+    //  "Pièces (arrondies vers le haut)",
+    //  "Parçalar (yukarı yuvarlanmış)"};
+
+    public static readonly string[] PiecesBuy = {
+      "Buy (sheets,rods,packs)",
+      "Купить (лист.,хлыст.,уп.)",
+      "Acq.(fogli,barre,conf.)",
+      "Kauf (Bl.,Stg.,Pck.)",
+      "购买（片材、线材、包装）",
+      "Comprar (hojas, barras, paq.)",
+      "Achat (feuilles, barres, paq.)",
+      "Alım (levha, boy, pk.)"};
 
     public static readonly string[] Weight = {
       "Weight",

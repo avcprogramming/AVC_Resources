@@ -889,6 +889,17 @@ namespace AVC
       "Mostrar invertidos",
       "Afficher inversés",
       "Ters çevrilenleri göster" };
+
+    public static readonly string[] Unfold = {
+      "Unfold",
+      "Развертка",
+      "Aprire",
+      "Entfalten",
+      "展",
+      "Desplegar",
+      "Déplier",
+      "Aç" };
+
     public static readonly string[] UnfoldRect = {
       "Unfold Rectangle",
       "Прямоугольник развертки",
