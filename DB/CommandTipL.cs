@@ -1370,6 +1370,16 @@ namespace AVC
       "Actualiser les blocs qui ont été explosés par la commande TNT.",
       "TNT komutuyla patlatılmış blokları yenileme."};
 
+    public static readonly string[] UnfoldTip = {
+      "Unfold/unbend a bent 3D solid into a planar contour.",
+      "Развернуть согнутое твердое тело (3D sold) в контур на плоскости.",
+      "Svolgimento di corpi solidi piegati in un contorno planare.",
+      "Entfaltung von gebogenen Festkörpern in eine ebene Kontur.",
+      "将弯曲的实体展开为平面轮廓。",
+      "Despliegue de cuerpos sólidos doblados en un contorno plano.",
+      "Dépliage de corps solides pliés en un contour plan.",
+      "Bükülmüş katı cisimlerin düzlemsel bir kontura açılması."};
+
     public static readonly string[] UnhideInvertedTip = {
       "Make all drawing objects visible - " +
         "both those that were hidden by the Invert command and those that were hidden by the usual " +
