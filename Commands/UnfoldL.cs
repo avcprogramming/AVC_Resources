@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AVC
+﻿namespace AVC
 {
   public static class UnfoldL
   {
@@ -169,6 +163,30 @@ namespace AVC
       "Dibuja líneas de unión entre caras contiguas.", 
       "Dessine les lignes de joint entre faces contiguës.", 
       "Bitişik yüzler arasında birleşim çizgileri çizer." };
+
+    public static readonly string[] IgnoreUcsTip = {
+      "Determine the top of the part in the World Coordinate System (WCS) \r\n" +
+        "rather than the current User Coordinate System (UCS). \r\n" +
+        "Lay out the flat pattern contours in the XY plane of the World Coordinate System.",
+      "Определять верх детали в Мировой системе координат (WCS) \r\n" +
+        "а не в текущей Пользовательской системе координат (UCS). \r\n" +
+        "Размещать контуры плоской развертки в плоскости XY Мировой системы координат.",
+      "Determinare la parte superiore del pezzo nel Sistema di Coordinate Mondiale (WCS) \r\n" +
+        "piuttosto che nel Sistema di Coordinate Utente (UCS) corrente. \r\n" +
+        "Disporre i contorni del modello piatto nel piano XY del Sistema di Coordinate Mondiale.",
+      "Bestimmen Sie die Oberseite des Teils im Weltkoordinatensystem (WCS) \r\n" +
+        "anstatt im aktuellen Benutzerkoordinatensystem (UCS). \r\n" +
+        "Legen Sie die Konturen des Flachmusters in der XY-Ebene des Weltkoordinatensystems an.",
+      "在世界坐标系 (WCS) 中确定零件的顶部，而不是在当前用户坐标系 (UCS) 中。 \r\n" +
+        "在世界坐标系的 XY 平面中布置平面图案轮廓。",
+      "Determine la parte superior de la pieza en el Sistema de Coordenadas Mundial (WCS) \r\n" +
+        "en lugar del Sistema de Coordenadas de Usuario (UCS) actual. \r\n" +
+        "Coloque los contornos del patrón plano en el plano XY del Sistema de Coordenadas Mundial.",
+      "Déterminez le haut de la pièce dans le Système de Coordonnées Mondial (WCS) \r\n" +
+        "plutôt que dans le Système de Coordonnées Utilisateur (UCS) actuel. \r\n" +
+        "Disposez les contours du motif plat dans le plan XY du Système de Coordonnées Mondial.",
+      "Parçanın üstünü Mevcut Kullanıcı Koordinat Sistemi (UCS) yerine Dünya Koordinat Sistemi'nde (WCS) belirleyin. \r\n" +
+        "Düz desen konturlarını Dünya Koordinat Sistemi'nin XY düzleminde yerleştirin." };
 
     #endregion
   }
