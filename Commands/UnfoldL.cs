@@ -59,6 +59,17 @@
     // ==================================================  Dialog  ==========================================================================================================
     #region Dialog
 
+    public static readonly string[] StyleNameTip = {
+      "The name for this unfold-style (set of settings). Not used in the program. Only for convenience of choice.",
+      "Название для этого стиля развертки. Не используется в работе программы. Только для удобства выбора.",
+      "Il nome di questo stile di sviluppo (set di impostazioni). Non utilizzato nel programma. Solo per comodità di scelta.",
+      "Der Name für diesen Abwicklungs-Stil (Satz von Einstellungen). Wird im Programm nicht verwendet.\r\n" +
+        "Nur zur Bequemlichkeit der Wahl.",
+      "此展开式（设置集）的名称。程序中不使用，仅为便于选择而设。",
+      "El nombre de este estilo de desarrollo (conjunto de configuraciones). No se usa en el programa. Solo por conveniencia de elección.",  // ES
+      "Le nom de ce style de développement (ensemble de paramètres). Non utilisé dans le programme. Seulement pour la commodité du choix.",  // FR
+      "Bu geliştirme stili için ad (ayarlar kümesi). Programda kullanılmaz. Sadece seçim kolaylığı için."};  // TR
+
     public static readonly string[] UnfoldOptions = { 
       "Unfold options", 
       "Параметры развертки", 

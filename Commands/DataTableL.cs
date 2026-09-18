@@ -114,14 +114,14 @@ namespace AVC
           "Tabla de materiales",                                 // ES
           "Tableau des matériaux",                               // FR
           "Malzeme tablosu" },                                   // TR
-/*1*/   new []{ "Material Table",
-          "Таблица материалов",
-          "Tabella dei materiali",
-          "Materialtabelle",
-          "材料表",
-          "Tabla de materiales",                                 // ES
-          "Tableau des matériaux",                               // FR
-          "Malzeme tablosu"},                                    // TR
+/*1*/   new []{ "Procurement Table",
+          "Таблица закупок",
+          "Tabella di approvvigionamento",
+          "Beschaffungstabelle",
+          "采购表",
+          "Tabla de adquisiciones",                              // ES
+          "Tableau d'approvisionnement",                         // FR
+          "Satın alma tablosu" },                                // TR
 /*2*/   new []{ "Material Indexes",
           "Индексы материалов",
           "Indici materiali",

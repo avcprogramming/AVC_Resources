@@ -613,5 +613,12 @@
     <EmbeddedResource Include="Resources\VirtualAttr16.png" />
     <EmbeddedResource Include="Resources\VirtualAttr32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Unfold16.png" />
+    <EmbeddedResource Include="Resources\Unfold32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Unfold120.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

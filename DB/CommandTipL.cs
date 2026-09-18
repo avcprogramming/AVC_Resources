@@ -1371,14 +1371,14 @@ namespace AVC
       "TNT komutuyla patlatılmış blokları yenileme."};
 
     public static readonly string[] UnfoldTip = {
-      "Unfold/unbend a bent 3D solid into a planar contour.",
-      "Развернуть согнутое твердое тело (3D sold) в контур на плоскости.",
-      "Svolgimento di corpi solidi piegati in un contorno planare.",
-      "Entfaltung von gebogenen Festkörpern in eine ebene Kontur.",
-      "将弯曲的实体展开为平面轮廓。",
-      "Despliegue de cuerpos sólidos doblados en un contorno plano.",
-      "Dépliage de corps solides pliés en un contour plan.",
-      "Bükülmüş katı cisimlerin düzlemsel bir kontura açılması."};
+      "Create a flat contour on the curved face of a 3D solid. Unroll cylindrical, conical, and extruded surfaces into a flat plane.",
+      "Сделать плоский контур по изогнутой поверхности 3д-солида. Развернуть в плоскость цилиндрические и конусные поверхности, поверхности вытягивания.",
+      "Crea un contorno piatto sulla superficie curva di un solido 3D. Srotolare superfici cilindriche, coniche ed estruse in un piano piatto.",
+      "Erstellen Sie einen flachen Umriss auf der gekrümmten Fläche eines Volumenkörpers. Rollen Sie zylindrische, konische und extrudierte Flächen in eine flache Ebene ab.",
+      "在 3D 实体的曲面上创建平面轮廓。将圆柱形、圆锥形和挤压表面展开为平面。",
+      "Crea un contorno plano en la cara curva de un sólido 3D. Desenrollar superficies cilíndricas, cónicas y extruidas en un plano plano.",
+      "Créer un contour plat sur la face courbe d'un solide 3D. Dérouler les surfaces cylindriques, coniques et extrudées dans un plan plat.",
+      "3D katının kavisli yüzeyinde düz bir kontur oluşturma. Silindirik, konik ve ekstrüde yüzeyleri düz bir düzleme açma."};
 
     public static readonly string[] UnhideInvertedTip = {
       "Make all drawing objects visible - " +

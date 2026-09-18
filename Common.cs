@@ -418,6 +418,8 @@ namespace AVC
     public static Icon U => LoadIcon("U.ico");
     public static Bitmap Undo => LoadPng("Undo");
     public static Bitmap Undo32 => LoadPng("Undo32");
+    public static Bitmap Unfold16 => LoadPng("Unfold16");
+    public static Bitmap Unfold32 => LoadPng("Unfold32");
     public static Bitmap UnfoldRect16 => LoadPng("UnfoldRect16");
     public static Bitmap UnfoldRect32 => LoadPng("UnfoldRect32");
     public static Bitmap Unpack16 => LoadPng("Unpack16");
@@ -505,6 +507,7 @@ namespace AVC
     public static Bitmap TabSlot120 => LoadPng("TabSlot120");
     public static Bitmap TextHeight120 => LoadPng("TextHeight120");
     public static Bitmap TNT120 => LoadPng("TNT120");
+    public static Bitmap Unfold120 => LoadPng("Unfold120");
     public static Bitmap Unpack120 => LoadPng("Unpack120");
     public static Bitmap VirtualAttr16 => LoadPng("VirtualAttr16");
     public static Bitmap VirtualAttr32 => LoadPng("VirtualAttr32");
