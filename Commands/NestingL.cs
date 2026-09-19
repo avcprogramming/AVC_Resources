@@ -272,6 +272,26 @@ namespace AVC
       "Créer un objet MText avec un titre pour chaque groupe de feuilles.",
       "Her levha grubu için başlıklı bir MText nesnesi oluşturun."};
 
+    public static readonly string[] SheetTitle = {
+      "Sheet number",
+      "Номер листа",
+      "Numero del foglio",
+      "Blattnummer",
+      "板材编号",
+      "Número de hoja",
+      "Numéro de feuille",
+      "Levha numarası"};
+
+    public static readonly string[] SheetTitleTip = {
+      "Create an MText object with the sheet number above each sheet.",
+      "Создавать объект MText с номером листа над каждым листом.",
+      "Crea un oggetto MText con il numero del foglio sopra ogni foglio.",
+      "Erstellen Sie ein MText-Objekt mit der Blattnummer über jedem Blatt.",
+      "在每张板材上方创建带有板材编号的 MText 对象。",
+      "Crea un objeto MText con el número de hoja encima de cada hoja.",
+      "Créer un objet MText avec le numéro de feuille au-dessus de chaque feuille.",
+      "Her levhanın üzerinde levha numarasını içeren bir MText nesnesi oluşturun."};
+
     public static readonly string[] GroupFrame = {
       "Group frame",
       "Рамка группы",

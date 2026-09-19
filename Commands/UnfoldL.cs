@@ -37,14 +37,14 @@
       "  Oluşturulan eğriler: {0}"};  // TR
 
     public static readonly string[] AreaDiff = {
-      "  Face area {0}, unfolded area {1}, difference {2} ({3}%)",
-      "  Площадь поверхности {0}, площадь развертки {1}, отличие {2} ({3}%)",
-      "  Area della faccia {0}, area dello sviluppo {1}, differenza {2} ({3}%)",
-      "  Flächeninhalt {0}, Abwicklungsfläche {1}, Abweichung {2} ({3}%)",
-      "  面面积 {0}，展开面积 {1}，差值 {2}（{3}%）",
-      "  Área de la cara {0}, área desarrollada {1}, diferencia {2} ({3}%)",  // ES
-      "  Aire de la face {0}, aire du développement {1}, écart {2} ({3}%)",  // FR
-      "  Yüzey alanı {0}, açılım alanı {1}, fark {2} ({3}%)"};  // TR
+      "  Face area {0}, unfolded area {1}, difference {2} ({3:0.#}%)",
+      "  Площадь поверхности {0}, площадь развертки {1}, отличие {2} ({3:0.#}%)",
+      "  Area della faccia {0}, area dello sviluppo {1}, differenza {2} ({3:0.#}%)",
+      "  Flächeninhalt {0}, Abwicklungsfläche {1}, Abweichung {2} ({3:0.#}%)",
+      "  面面积 {0}，展开面积 {1}，差值 {2}（{3:0.#}%）",
+      "  Área de la cara {0}, área desarrollada {1}, diferencia {2} ({3:0.#}%)",  // ES
+      "  Aire de la face {0}, aire du développement {1}, écart {2} ({3:0.#}%)",  // FR
+      "  Yüzey alanı {0}, açılım alanı {1}, fark {2} ({3:0.#}%)"};  // TR
 
     public static readonly string[] FaceNotSupported = {
       "  This face can not be unfolded. Only planar and cylindrical faces are supported.",
