@@ -1301,5 +1301,25 @@ namespace AVC
         "o zaman bu malzemeyi soyulan dilime atayın. \r\n" +
          "Birkaç bitişik yüzey aynı anda soyulursa, o zaman aynı malzemeye sahip olmalıdırlar."};
 
+    public static readonly string[] HideSlice = {
+      "Hide Slice",
+      "Скрыть дольку",
+      "Nascondi fetta",
+      "Scheibe ausblenden",
+      "隐藏切片",
+      "Ocultar rebanada",                         // ES
+      "Masquer la tranche",                  // FR
+      "Dilimi gizle"};                       // TR
+
+    public static readonly string[] HideSliceTip = {
+      "Hide the cut segment until the command ends to facilitate subsequent detachment from the same surface.",
+      "Скрыть отрезанную дольку до окончания команды для удобства повторного отслоения с той же поверхности.",
+      "Nascondi il segmento tagliato fino al termine del comando per facilitare il successivo distacco dalla stessa superficie.",
+      "Die geschnittene Scheibe bis zum Ende des Befehls ausblenden, um das anschließende Ablösen von derselben Fläche zu erleichtern.",
+      "在命令结束之前隐藏切割的部分，以便于随后从同一表面分离。",
+      "Ocultar el segmento cortado hasta que finalice el comando para facilitar el posterior desprendimiento de la misma superficie.",  // ES
+      "Masquer le segment coupé jusqu'à la fin de la commande pour faciliter le détachement ultérieur de la même surface.",  // FR
+      "Kesilen segmenti komut bitene kadar gizle, aynı yüzeyden sonraki ayrılmayı kolaylaştırmak için."};  // TR
+
   }
 }
