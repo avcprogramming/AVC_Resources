@@ -25,7 +25,7 @@ namespace AVC
       "Les faces de l'arête sélectionnée ne sont pas planes",  // FR
       "Seçilen kenarın yüzleri düz değildir" };  // TR
 
-    public static readonly string[] NeedInsideCorner ={
+    public static readonly string[] NeedInsideCorner = {
       "It's outside corner. Required to select edge of inside corner",
       "Наружный угол. Необходимо выбрать ребро внутреннего угла",
       "Angolo esterno Devi selezionare il bordo dell'angolo interno",
@@ -34,6 +34,16 @@ namespace AVC
       "Es una esquina exterior. Debe seleccionar el borde de la esquina interior",  // ES
       "C'est un coin extérieur. Vous devez sélectionner l'arête du coin intérieur",  // FR
       "Bu bir dış köşedir. İç köşenin kenarını seçmelisiniz" };  // TR
+
+    public static readonly string[] SegmentNotAlongZ = {
+      "An edge not aligned with the Z-axis was selected (for the part after LAY).",
+      "Выбрано ребро не по оси Z (для выложенной детали).",
+      "È stato selezionato un bordo non allineato con l'asse Z (per la parte dopo LAY).",
+      "Es wurde eine Kante ausgewählt, die nicht mit der Z-Achse ausgerichtet ist (für den Teil nach LAY).",
+      "选择了未与 Z 轴对齐的边（用于 LAY 之后的零件）。",
+      "Se seleccionó un borde que no está alineado con el eje Z (para la parte después de LAY).",  // ES
+      "Un bord non aligné avec l'axe Z a été sélectionné (pour la partie après LAY).",  // FR
+      "Z ekseniyle hizalanmamış bir kenar seçildi (LAY'den sonraki parça için)." };  // TR
 
     public static readonly string[] InvalidVertexNo = {
       "Incorrect polyline vertex number in the corner processing procedure",

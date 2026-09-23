@@ -1312,7 +1312,7 @@ namespace AVC
       "Dilimi gizle"};                       // TR
 
     public static readonly string[] HideSliceTip = {
-      "Hide the cut segment until the command ends to facilitate subsequent detachment from the same surface.",
+      "Hide the slice until the command ends to facilitate subsequent slicing from the same face.",
       "Скрыть отрезанную дольку до окончания команды для удобства повторного отслоения с той же поверхности.",
       "Nascondi il segmento tagliato fino al termine del comando per facilitare il successivo distacco dalla stessa superficie.",
       "Die geschnittene Scheibe bis zum Ende des Befehls ausblenden, um das anschließende Ablösen von derselben Fläche zu erleichtern.",

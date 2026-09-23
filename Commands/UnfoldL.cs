@@ -117,34 +117,6 @@
       "Continuez à sélectionner des solides et leurs surfaces pour de nouveaux développements jusqu'à ce que vous appuyiez sur ESC.",
       "Yeni açılımlar için katı cisimleri ve yüzeylerini seçmeye devam edin, ESC tuşuna basana kadar." };
 
-    public static string[] Optimize =    {
-      "Optimize curves",
-      "Оптимизировать кривые",
-      "Ottimizzare le curve",
-      "Optimieren der Kurven",
-      "优化 曲线",
-      "Optimizar curvas",
-      "Optimiser les courbes",
-      "Katları optimize et"    };
-
-    public static string[] OptimizeTip = {
-      "Invoke the Outer Contour (OSL) command to convert unfolding contours into an optimal polyline. \r\n" +
-        "A separate license is required.",
-      "Вызвать команду Внешний Контур (OSL) для преобразования контуров развертки в оптимальную полилинию. \r\n" +
-        "Требуется отдельная лицензия.",
-      "Invocare il comando Contorno Esterno (OSL) per convertire i contorni di sviluppo in una polilinea ottimale. \r\n" +
-        "È richiesta una licenza separata.",
-      "Rufen Sie den Befehl Äußerer Umriss (OSL) auf, um Abwicklungsumrisse in eine optimale Polylinie umzuwandeln. \r\n" +
-        "Eine separate Lizenz ist erforderlich.",
-      "调用外轮廓 (OSL) 命令将展开轮廓转换为最佳折线。\r\n" +
-        "需要单独的许可证。",
-      "Invocar el comando Contorno Externo (OSL) para convertir los contornos desplegados en una polilínea óptima. \r\n" +
-        "Se requiere una licencia separada.",
-      "Invoquer la commande Contour Extérieur (OSL) pour convertir les contours développés en une polyligne optimale. \r\n" +
-        "Une licence séparée est requise.",
-      "Açılmış konturları optimal bir poliliniye dönüştürmek için Dış Kontur (OSL) komutunu çağırın. \r\n" +
-        "Ayrı bir lisans gereklidir." };
-
     public static readonly string[] ManageLayersTip = { 
       "Assign layers from the current CNC style to unfolded curves.", 
       "Назначать кривым развертки слои из текущего стиля ЧПУ.", 

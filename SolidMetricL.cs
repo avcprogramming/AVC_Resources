@@ -145,13 +145,23 @@ namespace AVC
 
     public static readonly string[] NoFlatFace = {
       "⚠️ Solid without flat face.",
-      "⚠️ Тело без плоских граней.",
+      "⚠️ Солид без плоских граней.",
       "⚠️ Solido senza faccia piatta.",
       "⚠️ Volumenkörper ohne flache Kanten.",
       "⚠️ 身体没有平坦的边缘。",
       "⚠️ Sólido sin cara plana.",
       "⚠️ Solide sans face plane.",
       "⚠️ Düz yüzü olmayan katı."};
+
+    public static readonly string[] PipeMetricErr =    {
+      "⚠️ Failed to measure the solid as a round pipe.",
+      "⚠️ Не удалось померить солид как круглую трубу.",
+      "⚠️ Impossibile misurare il solido come tubo rotondo.",
+      "⚠️ Der Volumenkörper konnte nicht als Rundrohr gemessen werden.",
+      "⚠️ 无法将实体测量为圆管。",
+      "⚠️ No se pudo medir el sólido como una tubería redonda.",
+      "⚠️ Impossible de mesurer le solide comme un tuyau rond.",
+      "⚠️ Katıyı yuvarlak boru olarak ölçmek başarısız oldu." };
 
     public static readonly string[] NoPlane = {
       "⚠️ Not found the reference plane for measurement solid. Failed solid highlighted in red.",
