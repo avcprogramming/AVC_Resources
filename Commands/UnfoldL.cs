@@ -47,14 +47,14 @@
       "  Yüzey alanı {0}, açılım alanı {1}, fark {2} ({3:0.#}%)"};  // TR
 
     public static readonly string[] FaceNotSupported = {
-      "  This face can not be unfolded. Only planar and cylindrical faces are supported.",
-      "  Эту поверхность развернуть невозможно. Поддерживаются только плоские и цилиндрические поверхности.",
-      "  Questa faccia non può essere sviluppata. Sono supportate solo facce piane e cilindriche.",
-      "  Diese Fläche kann nicht abgewickelt werden. Nur ebene und zylindrische Flächen werden unterstützt.",
-      "  无法展开此面。仅支持平面和圆柱面。",
-      "  Esta cara no se puede desarrollar. Solo se admiten caras planas y cilíndricas.",  // ES
-      "  Cette face ne peut pas être développée. Seules les faces planes et cylindriques sont prises en charge.",  // FR
-      "  Bu yüzey açılamıyor. Yalnızca düzlemsel ve silindirik yüzeyler desteklenir."};  // TR
+      "This surface cannot be unfolded. Only cylinders, cones, and extruded surfaces are permissible.",
+      "Эту поверхность развернуть невозможно. Допустимы только цилиндры, конусы и поверхности вытягивания.",
+      "Questa superficie non può essere sviluppata. Sono ammissibili solo cilindri, coni e superfici estruse.",
+      "Diese Fläche kann nicht abgewickelt werden. Nur Zylinder, Kegel und extrudierte Flächen sind zulässig.",
+      "此曲面无法展开。仅允许使用圆柱体、圆锥体和挤压曲面。",
+      "Esta superficie no se puede desplegar. Solo se permiten cilindros, conos y superficies extruidas.",
+      "Cette surface ne peut pas être développée. Seuls les cylindres, les cônes et les surfaces extrudées sont autorisés.",
+      "Bu yüzey açılılamaz. Sadece silindirler, koniler ve ekstrüde yüzeyler izin verilir." };
 
     // ==================================================  Dialog  ==========================================================================================================
     #region Dialog
@@ -107,6 +107,57 @@
       "Seçilen yüzeylere bitişik olanları otomatik olarak ekleyin,\r\n" +
         "yani kırılma olmadan eşlenik (teğetler arasında 0,1 dereceden fazla kırılma yok)." };
 
+    public static readonly string[] StripTriangulation = {
+      "Approximate unfolding of ruled surfaces",
+      "Примерные развертки линейчатых поверхностей",
+      "Sviluppo approssimativo di superfici regolate",
+      "Ungefähres Abwickeln von geregelten Flächen",
+      "近似展开的规则曲面",
+      "Desplegado aproximado de superficies regladas",
+      "Développement approximatif de surfaces réglées",
+      "Yaklaşık olarak düzenlenmiş yüzeylerin açılması" };
+
+    public static readonly string[] StripTriangulationTip = {
+      "Unfold ruled surfaces that cannot be unfolded exactly. \r\n" +
+        "The LOFT command creates ruled surfaces by connecting two arbitrary curves with lines. \r\n" +
+        "For example, a twisted ribbon — a helicoid. \r\n" +
+        "An approximate unfolding will require stretching the material. \r\n" +
+        "The program will issue a warning if the stretching is significant.",
+      "Разворачивать линейчатые поверхности, которые невозможно развернуть точно. \r\n" +
+        "Линейчатые поверхности образует команда LOFT соединяя линиями две произвольные кривые. \r\n" +
+        "Например скрученная винтом лента - геликоид. \r\n" +
+        "Приближенная развертка потребует растягивать материал. \r\n" +
+        "Программа предупредит, если растягивание будет слишком заметным.",
+      "Sviluppare superfici regolate che non possono essere sviluppate esattamente. \r\n" +
+        "Le superfici regolate sono create dal comando LOFT collegando due curve arbitrarie con linee. \r\n" +
+        "Ad esempio, un nastro attorcigliato: un elicoide. \r\n" +
+        "Uno sviluppo approssimativo richiederà di allungare il materiale. \r\n" +
+        "Il programma emetterà un avviso se l'allungamento è significativo.",
+      "Entwickeln Sie geregelte Flächen, die nicht genau entwickelt werden können. \r\n" +
+        "Die LOFT-Befehle erzeugen geregelte Flächen, indem sie zwei beliebige Kurven mit Linien verbinden. \r\n" +
+        "Zum Beispiel ein verdrehtes Band - ein Helicoid. \r\n" +
+        "Eine ungefähre Abwicklung erfordert das Dehnen des Materials. \r\n" +
+        "Das Programm gibt eine Warnung aus, wenn die Dehnung erheblich ist.",
+      "展开无法精确展开的规则曲面。 \r\n" +
+        "LOFT 命令通过用线连接两条任意曲线来创建规则曲面。 \r\n" +
+        "例如，扭曲的带子——螺旋面。 \r\n" +
+        "近似展开将需要拉伸材料。 \r\n" +
+        "如果拉伸很明显，程序将发出警告。",
+      "Desplegar superficies regladas que no se pueden desplegar exactamente. \r\n" +
+        "El comando LOFT crea superficies regladas conectando dos curvas arbitrarias con líneas. \r\n" +
+        "Por ejemplo, una cinta retorcida: un helicoide. \r\n" +
+        "Un desplegado aproximado requerirá estirar el material. \r\n" +
+        "El programa emitirá una advertencia si el estiramiento es significativo.",
+      "Développez des surfaces réglées qui ne peuvent pas être développées exactement. \r\n" +
+        "La commande LOFT crée des surfaces réglées en reliant deux courbes arbitraires avec des lignes. \r\n" +
+        "Par exemple, un ruban torsadé : un hélicoïde. \r\n" +
+        "Un développement approximatif nécessitera d'étirer le matériau. \r\n" +
+        "Le programme émettra un avertissement si l'étirement est important.",
+      "Tam olarak açılmayan yönlendirilmiş yüzeyleri açın. \r\n" +
+        "LOFT komutu, iki rastgele eğriyi çizgilerle bağlayarak yönlendirilmiş yüzeyler oluşturur. \r\n" +
+        "Örneğin, bükülmüş bir şerit - bir helikoid. \r\n" +
+        "Yaklaşık açma, malzemeyi germeyi gerektirir. \r\n" +
+        "Germenin önemli olması durumunda program bir uyarı verecektir." };
     public static readonly string[] CyclicallyTip ={
       "Continue selecting solids and their surfaces for new unfolds until you press ESC.",
       "Зациклить - продолжать выбор солидов и их поверхностей для новых разверток до нажатия ESC.",
