@@ -56,6 +56,163 @@
       "Cette surface ne peut pas être développée. Seuls les cylindres, les cônes et les surfaces extrudées sont autorisés.",
       "Bu yüzey açılılamaz. Sadece silindirler, koniler ve ekstrüde yüzeyler izin verilir." };
 
+    public static readonly string[] RuledNeedsStretch = {
+      "You have selected a ruled surface that can only be unfolded with stretching. " +
+        "Enable the \"Approximate unfolding of ruled surfaces\" option in the unfold settings.",
+      "Вы выбрали линейчатую поверхность, которую можно развернуть только с растяжением. " +
+        "Включите опцию \"Примерные развертки линейчатых поверхностей\" в настройках развертки.",
+      "Hai selezionato una superficie rigata che può essere sviluppata solo con stiramento. " +
+        "Attiva l'opzione \"Sviluppo approssimativo di superfici regolate\" nelle impostazioni di sviluppo.",
+      "Sie haben eine Regelfläche gewählt, die nur mit Dehnung abgewickelt werden kann. " +
+        "Aktivieren Sie die Option \"Ungefähres Abwickeln von geregelten Flächen\" in den Abwicklungseinstellungen.",
+      "您选择的是只能通过拉伸展开的直纹曲面。请在展开设置中启用“近似展开的规则曲面”选项。",
+      "Ha seleccionado una superficie reglada que solo se puede desplegar con estiramiento. " +
+        "Active la opción \"Desplegado aproximado de superficies regladas\" en la configuración de desplegado.",  // ES
+      "Vous avez sélectionné une surface réglée qui ne peut être développée qu'avec étirement. " +
+        "Activez l'option \"Développement approximatif de surfaces réglées\" dans les paramètres de développement.",  // FR
+      "Yalnızca germe ile açılabilen bir regle yüzey seçtiniz. " +
+        "Açılım ayarlarında \"Yaklaşık olarak düzenlenmiş yüzeylerin açılması\" seçeneğini etkinleştirin." };  // TR
+
+    public static readonly string[] MethodsInfo = {
+      "  Unfolding methods applied: {0}",
+      "  Применены методы развертки: {0}",
+      "  Metodi di sviluppo applicati: {0}",
+      "  Angewandte Abwicklungsmethoden: {0}",
+      "  已应用的展开方法：{0}",
+      "  Métodos de desplegado aplicados: {0}",  // ES
+      "  Méthodes de développement appliquées : {0}",  // FR
+      "  Uygulanan açılım yöntemleri: {0}"};  // TR
+
+    public static readonly string[] FacesJoined = {
+      "  Adjacent faces joined into one unfold: {0} of {1}",
+      "  Смежных поверхностей склеено в одну развертку: {0} из {1}",
+      "  Facce adiacenti unite in un unico sviluppo: {0} su {1}",
+      "  Zu einer Abwicklung verbundene Nachbarflächen: {0} von {1}",
+      "  已拼接为一个展开的相邻面：{0} / {1}",
+      "  Caras adyacentes unidas en un desplegado: {0} de {1}",  // ES
+      "  Faces adjacentes assemblées en un développement : {0} sur {1}",  // FR
+      "  Tek açılımda birleştirilen komşu yüzeyler: {0} / {1}"};  // TR
+
+    public static readonly string[] MethodPlane = {
+      "plane", "плоскость", "piano", "Ebene", "平面", "plano", "plan", "düzlem" };
+
+    public static readonly string[] MethodCylinder = {
+      "cylinder", "цилиндр", "cilindro", "Zylinder", "圆柱", "cilindro", "cylindre", "silindir" };
+
+    public static readonly string[] MethodCone = {
+      "cone", "конус", "cono", "Kegel", "圆锥", "cono", "cône", "koni" };
+
+    public static readonly string[] MethodExtrusion = {
+      "extrusion", "вытягивание", "estrusione", "Extrusion", "拉伸", "extrusión", "extrusion", "ekstrüzyon" };
+
+    public static readonly string[] MethodStrip = {
+      "approximate strip triangulation", "приближенная триангуляция полосы", "triangolazione approssimata a strisce",
+      "näherungsweise Streifentriangulation", "近似条带三角剖分", "triangulación aproximada por franjas",
+      "triangulation approximative par bandes", "yaklaşık şerit üçgenleme" };
+
+    public static readonly string[] MethodOther = {
+      "other", "другой", "altro", "andere", "其他", "otro", "autre", "diğer" };
+
+    public static readonly string[] OrientAxis = {
+      "  Orientation: cylinder/extrusion axis along Y",
+      "  Ориентация: ось цилиндра/вытягивания вдоль Y",
+      "  Orientamento: asse del cilindro/estrusione lungo Y",
+      "  Ausrichtung: Zylinder-/Extrusionsachse entlang Y",
+      "  方向：圆柱/拉伸轴沿 Y",
+      "  Orientación: eje del cilindro/extrusión a lo largo de Y",  // ES
+      "  Orientation : axe du cylindre/de l'extrusion selon Y",  // FR
+      "  Yönlendirme: silindir/ekstrüzyon ekseni Y boyunca"};  // TR
+
+    public static readonly string[] OrientRightAngle = {
+      "  Orientation: longest side of a right angle along X",
+      "  Ориентация: длинная сторона прямого угла вдоль X",
+      "  Orientamento: lato più lungo dell'angolo retto lungo X",
+      "  Ausrichtung: längste Seite eines rechten Winkels entlang X",
+      "  方向：直角最长边沿 X",
+      "  Orientación: lado más largo del ángulo recto a lo largo de X",  // ES
+      "  Orientation : plus long côté d'un angle droit selon X",  // FR
+      "  Yönlendirme: dik açının en uzun kenarı X boyunca"};  // TR
+
+    public static readonly string[] OrientMinY = {
+      "  Orientation: minimum size along Y",
+      "  Ориентация: минимизация размера по Y",
+      "  Orientamento: dimensione minima lungo Y",
+      "  Ausrichtung: minimale Größe entlang Y",
+      "  方向：Y 向尺寸最小",
+      "  Orientación: tamaño mínimo a lo largo de Y",  // ES
+      "  Orientation : taille minimale selon Y",  // FR
+      "  Yönlendirme: Y boyunca minimum boyut"};  // TR
+
+    public static readonly string[] OrientNone = {
+      "  Orientation: unchanged",
+      "  Ориентация: без поворота",
+      "  Orientamento: invariato",
+      "  Ausrichtung: unverändert",
+      "  方向：不旋转",
+      "  Orientación: sin cambios",  // ES
+      "  Orientation : inchangée",  // FR
+      "  Yönlendirme: değiştirilmedi"};  // TR
+
+    public static readonly string[] FacesFailed = {
+      "  Faces that could not be unfolded: {0}",
+      "  Не удалось развернуть поверхностей: {0}",
+      "  Facce non sviluppate: {0}",
+      "  Nicht abgewickelte Flächen: {0}",
+      "  无法展开的面：{0}",
+      "  Caras que no se pudieron desplegar: {0}",  // ES
+      "  Faces non développées : {0}",  // FR
+      "  Açılamayan yüzeyler: {0}"};  // TR
+
+    public static readonly string[] FreeSegments = {
+      "  Unconnected segments left after merging outer contours: {0}. The outer contour may be incomplete.",
+      "  После объединения наружных контуров остались несвязанные сегменты: {0}. Наружный контур может быть неполным.",
+      "  Segmenti non collegati dopo l'unione dei contorni esterni: {0}. Il contorno esterno potrebbe essere incompleto.",
+      "  Nach dem Zusammenführen der Außenkonturen verbleiben unverbundene Segmente: {0}. Die Außenkontur ist evtl. unvollständig.",
+      "  合并外轮廓后剩余未连接线段：{0}。外轮廓可能不完整。",
+      "  Segmentos sin conectar tras unir los contornos exteriores: {0}. El contorno exterior puede estar incompleto.",  // ES
+      "  Segments non reliés après fusion des contours extérieurs : {0}. Le contour extérieur peut être incomplet.",  // FR
+      "  Dış konturlar birleştirildikten sonra bağlantısız segmentler kaldı: {0}. Dış kontur eksik olabilir."};  // TR
+
+    public static readonly string[] BoundaryFailed = {
+      "  Failed to build a common outer contour of adjacent faces.",
+      "  Не удалось построить общий наружный контур смежных поверхностей.",
+      "  Impossibile costruire un contorno esterno comune delle facce adiacenti.",
+      "  Gemeinsame Außenkontur der Nachbarflächen konnte nicht erstellt werden.",
+      "  无法构建相邻面的公共外轮廓。",
+      "  No se pudo construir un contorno exterior común de las caras adyacentes.",  // ES
+      "  Impossible de construire un contour extérieur commun des faces adjacentes.",  // FR
+      "  Komşu yüzeylerin ortak dış konturu oluşturulamadı."};  // TR
+
+    public static readonly string[] OutsideEmpty = {
+      "  The unfold has no outer contour.",
+      "  У развертки нет наружного контура.",
+      "  Lo sviluppo non ha un contorno esterno.",
+      "  Die Abwicklung hat keine Außenkontur.",
+      "  展开没有外轮廓。",
+      "  El desplegado no tiene contorno exterior.",  // ES
+      "  Le développement n'a pas de contour extérieur.",  // FR
+      "  Açılımın dış konturu yok."};  // TR
+
+    public static readonly string[] OutsideNotClosed = {
+      "  The outer contour of the unfold is not closed.",
+      "  Наружный контур развертки не замкнут.",
+      "  Il contorno esterno dello sviluppo non è chiuso.",
+      "  Die Außenkontur der Abwicklung ist nicht geschlossen.",
+      "  展开的外轮廓未闭合。",
+      "  El contorno exterior del desplegado no está cerrado.",  // ES
+      "  Le contour extérieur du développement n'est pas fermé.",  // FR
+      "  Açılımın dış konturu kapalı değil."};  // TR
+
+    public static readonly string[] OpenInside = {
+      "  Open inner contours moved to the Other layer: {0}",
+      "  Незамкнутых внутренних контуров перенесено в слой Other: {0}",
+      "  Contorni interni aperti spostati nel layer Other: {0}",
+      "  Offene Innenkonturen in den Layer Other verschoben: {0}",
+      "  移至 Other 图层的未闭合内轮廓：{0}",
+      "  Contornos interiores abiertos movidos a la capa Other: {0}",  // ES
+      "  Contours intérieurs ouverts déplacés vers le calque Other : {0}",  // FR
+      "  Other katmanına taşınan açık iç konturlar: {0}"};  // TR
+
     // ==================================================  Dialog  ==========================================================================================================
     #region Dialog
 
