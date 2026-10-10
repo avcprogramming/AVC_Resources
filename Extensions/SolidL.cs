@@ -143,34 +143,34 @@ namespace AVC
       "Katının kenarına tıklamak gerekli. Ve siz şunu seçtiniz: {0}"};
 
     public static readonly string[] PairErr = {
-      "Not found a pair of identical surfaces",
-      "Не найдено ни одной пары одинаковых поверхностей",
-      "Non trovato una coppia di superfici identiche",
-      "Keine passenden Paare gefunden",
-      "未找到一对相同的面",
-      "No se encontró un par de superficies idénticas",
-      "Aucune paire de surfaces identiques trouvée",
-      "Özdeş yüzey çifti bulunamadı"};
+      "⚠️ Not found a pair of identical surfaces",
+      "⚠️ Не найдено ни одной пары одинаковых поверхностей",
+      "⚠️ Non trovato una coppia di superfici identiche",
+      "⚠️ Keine passenden Paare gefunden",
+      "⚠️ 未找到一对相同的面",
+      "⚠️ No se encontró un par de superficies idénticas",
+      "⚠️ Aucune paire de surfaces identiques trouvée",
+      "⚠️ Özdeş yüzey çifti bulunamadı"};
 
     public static readonly string[] IsNotSweepErr = {
-      "There are no curved faces. The solid cannot be measured as a sweep.",
-      "Нет изогнутых поверхностей. Солид нельзя измерить как развертку.",
-      "Non ci sono facce curve. Il solido non può essere misurato come uno sweep.",
-      "Es gibt keine gekrümmten Flächen. Der Körper kann nicht als Sweep vermessen werden.",
-      "该实体没有曲面。因此，不能用扫描的方式来测量该实体。",
-      "No hay caras curvas. El sólido no se puede medir como un barrido.",
-      "Il n'y a pas de faces courbes. Le solide ne peut pas être mesuré comme un balayage.",
-      "Kavisli yüz yok. Katı bir süpürme olarak ölçülemez."};
+      "⚠️ No surfaces suitable for measurement as a sweep were found on the solid.",
+      "⚠️ У солида не найдено поверхностей пригодных для обмера как развертки.",
+      "⚠️ Non sono state trovate superfici adatte alla misurazione come sweep sul solido.",
+      "⚠️ Es wurden keine für die Messung als Sweep geeigneten Oberflächen am Volumenkörper gefunden.",
+      "⚠️ 在三维实体上未找到适合测量为扫描的表面。",
+      "⚠️ No se encontraron superficies adecuadas para la medición como barrido en el sólido.",
+      "⚠️ Aucune surface appropriée pour la mesure en tant que balayage n'a été trouvée sur le solide.",
+      "⚠️ Katıda tarama olarak ölçüm için uygun yüzeyler bulunamadı."};
 
     public static readonly string[] Unsupported = {
-      "Unsupported solid type",
-      "Не поддерживаемый вид солида",
-      "Questo tipo di solido non è supportato",
-      "Nicht unterstützter Körpervolumen-Typ",
-      "不支持的实体类型",
-      "Tipo de sólido no compatible",
-      "Type de solide non pris en charge",
-      "Desteklenmeyen katı türü"};
+      "⚠️ Unsupported solid type",
+      "⚠️ Не поддерживаемый вид солида",
+      "⚠️ Questo tipo di solido non è supportato",
+      "⚠️ Nicht unterstützter Körpervolumen-Typ",
+      "⚠️ 不支持的实体类型",
+      "⚠️ Tipo de sólido no compatible",
+      "⚠️ Type de solide non pris en charge",
+      "⚠️ Desteklenmeyen katı türü"};
 
     public static readonly string[] ContinueQuery = {
       "\r\nDo you want to try to continue?",
@@ -193,14 +193,14 @@ namespace AVC
       "\r\nKatılardan biri geçerli değil. Bu başarısızlığın nedeni olabilir. İçe aktarma hatası olabilir. Yeniden modelleme önerilir."};
 
     public static readonly string[] BrepErr = {
-      "Can't get BRep from solid.",
-      "Не удалось снять BRep с солида.",
-      "Impossibile ottenere BRep da solido.",
-      "BRep kann nicht von Körpervolumen erhalten.",
-      "无法从三维实体中获取 BRep。",
-      "No se puede obtener BRep del sólido.",
-      "Impossible d'obtenir BRep du solide.",
-      "Katıdan BRep alınamıyor."};
+      "⚠️ Can't get BRep from solid.",
+      "⚠️ Не удалось снять BRep с солида.",
+      "⚠️ Impossibile ottenere BRep da solido.",
+      "⚠️ BRep kann nicht von Körpervolumen erhalten.",
+      "⚠️ 无法从三维实体中获取 BRep。",
+      "⚠️ No se puede obtener BRep del sólido.",
+      "⚠️ Impossible d'obtenir BRep du solide.",
+      "⚠️ Katıdan BRep alınamıyor."};
 
     public static readonly string[] ExtentsErr = {
       "Failed to get the extents of the solid.",
@@ -213,84 +213,84 @@ namespace AVC
       "{0} eğrisinin sınırları alınamadı" };  // TR
 
     public static readonly string[] FaceErr = {
-      "Can't get Faces from solid.",
-      "Не удалось получить грани солида.",
-      "Impossibile ottenere i volti dal solido.",
-      "Ich kann keine Gesichter von Körpervolumen bekommen.",
-      "无法从三维实体中获取面。",
-      "No se pueden obtener caras del sólido.",
-      "Impossible d'obtenir les faces du solide.",
-      "Katıdan yüzler alınamıyor."};
+      "⚠️ Can't get Faces from solid.",
+      "⚠️ Не удалось получить грани солида.",
+      "⚠️ Impossibile ottenere i volti dal solido.",
+      "⚠️ Ich kann keine Gesichter von Körpervolumen bekommen.",
+      "⚠️ 无法从三维实体中获取面。",
+      "⚠️ No se pueden obtener caras del sólido.",
+      "⚠️ Impossible d'obtenir les faces du solide.",
+      "⚠️ Katıdan yüzler alınamıyor."};
 
     public static readonly string[] SweepErr = {
-      "Measurement Sweep failed. ",
-      "Обмер развертки не удался. ",
-      "Scansione di misura failed. ",
-      "Messablauf fehlgeschlagen.",
-      "测量扫描失败。",
-      "Error en el barrido de medición. ",
-      "Échec du balayage de mesure. ",
-      "Ölçüm taraması başarısız. "};
+      "⚠️ Measurement Sweep failed. ",
+      "⚠️ Обмер развертки не удался. ",
+      "⚠️ Scansione di misura failed. ",
+      "⚠️ Messablauf fehlgeschlagen.",
+      "⚠️ 测量扫描失败。",
+      "⚠️ Error en el barrido de medición. ",
+      "⚠️ Échec du balayage de mesure. ",
+      "⚠️ Ölçüm taraması başarısız. "};
 
     public static string[] EdgeCurveErr = {
-      "Can't get Curve from Edge.",
-      "Не удалось получить кривую рёбра.",
-      "Non può ottenere la Curva dal Bordo.",
-      "Die Kurve kann nicht von Edge abgerufen werden.",
-      "获取边缘曲线失败。",
-      "No se puede obtener la curva de la arista.",
-      "Impossible d'obtenir la courbe de l'arête.",
-      "Kenardan eğri alınamıyor."};
+      "⚠️ Can't get Curve from Edge.",
+      "⚠️ Не удалось получить кривую рёбра.",
+      "⚠️ Non può ottenere la Curva dal Bordo.",
+      "⚠️ Die Kurve kann nicht von Edge abgerufen werden.",
+      "⚠️ 获取边缘曲线失败。",
+      "⚠️ No se puede obtener la curva de la arista.",
+      "⚠️ Impossible d'obtenir la courbe de l'arête.",
+      "⚠️ Kenardan eğri alınamıyor."};
 
     public static string[] EdgeVertexErr = {
-      "Can't get Edges from Vertex.",
-      "Не удалось получить рёбра вертекса.",
-      "Non può ottenere Bordi da Vertice.",
-      "Kanten können nicht von Vertex abgerufen werden.",
-      "无法获取顶点边。",
-      "No se pueden obtener aristas del vértice.",
-      "Impossible d'obtenir les arêtes du sommet.",
-      "Köşeden kenarlar alınamıyor."};
+      "⚠️ Can't get Edges from Vertex.",
+      "⚠️ Не удалось получить рёбра вертекса.",
+      "⚠️ Non può ottenere Bordi da Vertice.",
+      "⚠️ Kanten können nicht von Vertex abgerufen werden.",
+      "⚠️ 无法获取顶点边。",
+      "⚠️ No se pueden obtener aristas del vértice.",
+      "⚠️ Impossible d'obtenir les arêtes du sommet.",
+      "⚠️ Köşeden kenarlar alınamıyor."};
 
     public static readonly string[] VertexErr = {
-      "Can't get Vertexes from Loop.",
-      "Не удалось получить вершины на петле.",
-      "Non può ottenere Vertici da Anello.",
-      "Schleifenscheitel konnten nicht abgerufen werden.",
-      "无法从循环中获取顶点。",
-      "No se pueden obtener vértices del bucle.",
-      "Impossible d'obtenir les sommets de la boucle.",
-      "Döngüden köşeler alınamıyor."};
+      "⚠️ Can't get Vertexes from Loop.",
+      "⚠️ Не удалось получить вершины на петле.",
+      "⚠️ Non può ottenere Vertici da Anello.",
+      "⚠️ Schleifenscheitel konnten nicht abgerufen werden.",
+      "⚠️ 无法从循环中获取顶点。",
+      "⚠️ No se pueden obtener vértices del bucle.",
+      "⚠️ Impossible d'obtenir les sommets de la boucle.",
+      "⚠️ Döngüden köşeler alınamıyor."};
 
     public static readonly string[] EdgeLoopErr = {
-      "Can't get Edges from Loop.",
-      "Не удалось получить рёбра петли.",
-      "Non può ottenere Bordi da Anello.",
-      "Schleifenränder konnten nicht abgerufen werden.",
-      "无法从循环中获取边。",
-      "No se pueden obtener aristas del bucle.",
-      "Impossible d'obtenir les arêtes de la boucle.",
-      "Döngüden kenarlar alınamıyor."};
+      "⚠️ Can't get Edges from Loop.",
+      "⚠️ Не удалось получить рёбра петли.",
+      "⚠️ Non può ottenere Bordi da Anello.",
+      "⚠️ Schleifenränder konnten nicht abgerufen werden.",
+      "⚠️ 无法从循环中获取边。",
+      "⚠️ No se pueden obtener aristas del bucle.",
+      "⚠️ Impossible d'obtenir les arêtes de la boucle.",
+      "⚠️ Döngüden kenarlar alınamıyor."};
 
     public static readonly string[] LoopErr = {
-      "Can't get Loops from Edge. {0}",
-      "Не удалось получить петли рёбра. {0}",
-      "Impossibile ottenere Anello da Bordi. {0}",
-      "Konnte keine Rippchen bekommen. {0}",
-      "无法从 Edge 获取循环。 {0}",
-      "No se pueden obtener bucles de la arista. {0}",
-      "Impossible d'obtenir les boucles de l'arête. {0}",
-      "Kenardan döngüler alınamıyor. {0}"};
+      "⚠️ Can't get Loops from Edge. {0}",
+      "⚠️ Не удалось получить петли рёбра. {0}",
+      "⚠️ Impossibile ottenere Anello da Bordi. {0}",
+      "⚠️ Konnte keine Rippchen bekommen. {0}",
+      "⚠️ 无法从 Edge 获取循环。 {0}",
+      "⚠️ No se pueden obtener bucles de la arista. {0}",
+      "⚠️ Impossible d'obtenir les boucles de l'arête. {0}",
+      "⚠️ Kenardan döngüler alınamıyor. {0}"};
 
     public static readonly string[] EdgeLenErr = {
-      "The length of the edge could not be calculated. {0}",
-      "Не удалось вычислить длину рёбра. {0}",
-      "La lunghezza del bordo non può essere calcolata. {0}",
-      "Kantenlänge konnte nicht berechnet werden. {0}",
-      "无法计算边的长度。 {0}",
-      "No se pudo calcular la longitud de la arista. {0}",
-      "La longueur de l'arête n'a pas pu être calculée. {0}",
-      "Kenar uzunluğu hesaplanamadı. {0}"};
+      "⚠️ The length of the edge could not be calculated. {0}",
+      "⚠️ Не удалось вычислить длину рёбра. {0}",
+      "⚠️ La lunghezza del bordo non può essere calcolata. {0}",
+      "⚠️ Kantenlänge konnte nicht berechnet werden. {0}",
+      "⚠️ 无法计算边的长度。 {0}",
+      "⚠️ No se pudo calcular la longitud de la arista. {0}",
+      "⚠️ La longueur de l'arête n'a pas pu être calculée. {0}",
+      "⚠️ Kenar uzunluğu hesaplanamadı. {0}"};
 
     public static readonly string[] EdgeLinearErr = {
       "The edge must be linear.",
@@ -302,7 +302,7 @@ namespace AVC
       "L'arête doit être linéaire.",
       "Kenar doğrusal olmalıdır."};
 
-    public static readonly string[] CantCut = {
+    public static readonly string[] CouldNotCut = {
       "Could not cut solid by miter",
       "Не удалось разрезать солид под ус",
       "Impossibile tagliare il solido",
@@ -323,114 +323,114 @@ namespace AVC
       "\nSeçiminiz yanlış. '{0}' seçildi ve '{1}' gerekliydi.\n"};
 
     public static readonly string[] SetSubentityPropertyErr = {
-      "Error in assigning solid surface properties: {0}",
-      "Ошибка назначения свойства поверхности солида: {0}",
-      "Errore nell'assegnazione delle proprietà della superficie solida: {0}",
-      "Fehler beim Zuweisen von Solid-Surface-Eigenschaften: {0}",
-      "指定实体表面属性时出错：{0}",
-      "Error al asignar propiedades de superficie de sólido: {0}",
-      "Erreur lors de l'attribution des propriétés de surface du solide: {0}",
-      "Katı yüzey özellikleri atanırken hata: {0}"};
+      "⚠️ Error in assigning solid surface properties: {0}",
+      "⚠️ Ошибка назначения свойства поверхности солида: {0}",
+      "⚠️ Errore nell'assegnazione delle proprietà della superficie solida: {0}",
+      "⚠️ Fehler beim Zuweisen von Solid-Surface-Eigenschaften: {0}",
+      "⚠️ 指定实体表面属性时出错：{0}",
+      "⚠️ Error al asignar propiedades de superficie de sólido: {0}",
+      "⚠️ Erreur lors de l'attribution des propriétés de surface du solide: {0}",
+      "⚠️ Katı yüzey özellikleri atanırken hata: {0}"};
 
     public static readonly string[] MaterialErr = {
-      "Failed to assign material to solid {0}",
-      "Не удалось присвоить солиду материал {0}",
-      "Impossibile assegnare il materiale al solido {0}",
-      "Das Material konnte dem Volumenkörper {0} nicht zugewiesen werden.",
-      "无法将材料分配给实体 {0}",
-      "No se pudo asignar material al sólido {0}",
-      "Impossible d'attribuer le matériau au solide {0}",
-      "Katıya malzeme atanamadı {0}"};
+      "⚠️ Failed to assign material to solid {0}",
+      "⚠️ Не удалось присвоить солиду материал {0}",
+      "⚠️ Impossibile assegnare il materiale al solido {0}",
+      "⚠️ Das Material konnte dem Volumenkörper {0} nicht zugewiesen werden.",
+      "⚠️ 无法将材料分配给实体 {0}",
+      "⚠️ No se pudo asignar material al sólido {0}",
+      "⚠️ Impossible d'attribuer le matériau au solide {0}",
+      "⚠️ Katıya malzeme atanamadı {0}"};
 
     public static readonly string[] MaterialCreateErr = {
-      "Failed to create content {0}. Error: {1}",
-      "Не удалось создать материал {0}. Ошибка: {1}",
-      "Impossibile creare il contenuto {0}. Errore: {1}",
-      "Fehler beim Erstellen des Inhalts {0}. Fehler: {1}",
-      "无法创建内容 {0}。错误：{1}",
-      "No se pudo crear el contenido {0}. Error: {1}",
-      "Impossible de créer le contenu {0}. Erreur: {1}",
-      "İçerik oluşturulamadı {0}. Hata: {1}"};
+      "⚠️ Failed to create content {0}. Error: {1}",
+      "⚠️ Не удалось создать материал {0}. Ошибка: {1}",
+      "⚠️ Impossibile creare il contenuto {0}. Errore: {1}",
+      "⚠️ Fehler beim Erstellen des Inhalts {0}. Fehler: {1}",
+      "⚠️ 无法创建内容 {0}。错误：{1}",
+      "⚠️ No se pudo crear el contenido {0}. Error: {1}",
+      "⚠️ Impossible de créer le contenu {0}. Erreur: {1}",
+      "⚠️ İçerik oluşturulamadı {0}. Hata: {1}"};
 
     public static readonly string[] SeparateBodyErr = {
-      "Failed to split multisolids #{1} into separate bodies. Error: {0}",
-      "Не удалось разделить мультисолид #{1} на отдельные тела. Ошибка: {0}",
-      "Impossibile dividere i #{1} multisolidi in corpi separati. Errore: {0}",
-      "Multisolids konnten nicht in separate Volumenkörper #{1} aufgeteilt werden. Fehler: {0}",
-      "无法将多实体分割成单独的部分 #{1}。错误：{0}",
-      "No se pudieron dividir los multisólidos #{1} en cuerpos separados. Error: {0}",
-      "Impossible de diviser les multisolides #{1} en corps séparés. Erreur: {0}",
-      "Çoklu katılar ayrı gövdelere bölünemedi #{1}. Hata: {0}"};
+      "⚠️ Failed to split multisolids #{1} into separate bodies. Error: {0}",
+      "⚠️ Не удалось разделить мультисолид #{1} на отдельные тела. Ошибка: {0}",
+      "⚠️ Impossibile dividere i #{1} multisolidi in corpi separati. Errore: {0}",
+      "⚠️ Multisolids konnten nicht in separate Volumenkörper #{1} aufgeteilt werden. Fehler: {0}",
+      "⚠️ 无法将多实体分割成单独的部分 #{1}。错误：{0}",
+      "⚠️ No se pudieron dividir los multisólidos #{1} en cuerpos separados. Error: {0}",
+      "⚠️ Impossible de diviser les multisolides #{1} en corps séparés. Erreur: {0}",
+      "⚠️ Çoklu katılar ayrı gövdelere bölünemedi #{1}. Hata: {0}"};
 
     public static readonly string[] SubErr = {
-      "Failed to perform subtraction. Error: {0}",
-      "Не удалось выполнить вычитание. Ошибка: {0}",
-      "Impossibile eseguire la sottrazione. Errore: {0}",
-      "Subtraktion konnte nicht durchgeführt werden. Fehler: {0}",
-      "无法执行减法。错误：{0}",
-      "No se pudo realizar la resta. Error: {0}",
-      "Impossible d'effectuer la soustraction. Erreur: {0}",
-      "Çıkarma işlemi gerçekleştirilemedi. Hata: {0}"};
+      "⚠️ Failed to perform subtraction. Error: {0}",
+      "⚠️ Не удалось выполнить вычитание. Ошибка: {0}",
+      "⚠️ Impossibile eseguire la sottrazione. Errore: {0}",
+      "⚠️ Subtraktion konnte nicht durchgeführt werden. Fehler: {0}",
+      "⚠️ 无法执行减法。错误：{0}",
+      "⚠️ No se pudo realizar la resta. Error: {0}",
+      "⚠️ Impossible d'effectuer la soustraction. Erreur: {0}",
+      "⚠️ Çıkarma işlemi gerçekleştirilemedi. Hata: {0}"};
 
     public static readonly string[] IntErr = {
-      "Failed to perform intersection. Error: {0}",
-      "Не удалось выполнить пересечение. Ошибка: {0}",
-      "Impossibile eseguire l'intersezione. Errore: {0}",
-      "Schnitt konnte nicht durchgeführt werden. Fehler: {0}",
-      "无法执行交集。错误：{0}",
-      "No se pudo realizar la intersección. Error: {0}",
-      "Impossible d'effectuer l'intersection. Erreur: {0}",
-      "Kesişim gerçekleştirilemedi. Hata: {0}"};
+      "⚠️ Failed to perform intersection. Error: {0}",
+      "⚠️ Не удалось выполнить пересечение. Ошибка: {0}",
+      "⚠️ Impossibile eseguire l'intersezione. Errore: {0}",
+      "⚠️ Schnitt konnte nicht durchgeführt werden. Fehler: {0}",
+      "⚠️ 无法执行交集。错误：{0}",
+      "⚠️ No se pudo realizar la intersección. Error: {0}",
+      "⚠️ Impossible d'effectuer l'intersection. Erreur: {0}",
+      "⚠️ Kesişim gerçekleştirilemedi. Hata: {0}"};
 
     public static readonly string[] UnionErr = {
-      "Failed to perform union. Error: {0}",
-      "Не удалось выполнить объединение. Ошибка: {0}",
-      "Impossibile eseguire l'unione. Errore: {0}",
-      "Vereinigung konnte nicht durchgeführt werden. Fehler: {0}",
-      "无法执行联合操作。错误：{0}",
-      "No se pudo realizar la unión. Error: {0}",
-      "Impossible d'effectuer l'union. Erreur: {0}",
-      "Birleştirme gerçekleştirilemedi. Hata: {0}"};
+      "⚠️ Failed to perform union. Error: {0}",
+      "⚠️ Не удалось выполнить объединение. Ошибка: {0}",
+      "⚠️ Impossibile eseguire l'unione. Errore: {0}",
+      "⚠️ Vereinigung konnte nicht durchgeführt werden. Fehler: {0}",
+      "⚠️ 无法执行联合操作。错误：{0}",
+      "⚠️ No se pudo realizar la unión. Error: {0}",
+      "⚠️ Impossible d'effectuer l'union. Erreur: {0}",
+      "⚠️ Birleştirme gerçekleştirilemedi. Hata: {0}"};
 
     public static readonly string[] OffsetBodyErr = {
-      "Failed to expand solid. Error: {0}",
-      "Не удалось расширить солид. Ошибка: {0}",
-      "Impossibile espandere il solido. Errore: {0}",
-      "Die Volumenkörpererweiterung ist fehlgeschlagen. Fehler: {0}",
-      "未能扩展实体。错误：{0}",
-      "No se pudo expandir el sólido. Error: {0}",
-      "Impossible d'étendre le solide. Erreur: {0}",
-      "Katı genişletilemedi. Hata: {0}"};
+      "⚠️ Failed to expand solid. Error: {0}",
+      "⚠️ Не удалось расширить солид. Ошибка: {0}",
+      "⚠️ Impossibile espandere il solido. Errore: {0}",
+      "⚠️ Die Volumenkörpererweiterung ist fehlgeschlagen. Fehler: {0}",
+      "⚠️ 未能扩展实体。错误：{0}",
+      "⚠️ No se pudo expandir el sólido. Error: {0}",
+      "⚠️ Impossible d'étendre le solide. Erreur: {0}",
+      "⚠️ Katı genişletilemedi. Hata: {0}"};
 
     public static readonly string[] EmptySolidErr = {
-      "Failed to check for an empty object. {0}",
-      "Сбой при проверке на объект-пустышку. {0}",
-      "Errore durante il controllo di un solido vuoto. {0}",
-      "Fehler bei der Überprüfung auf einen leeren Volumenkörper. {0}",
-      "检查空实体失败。错误：{0}",
-      "No se pudo verificar si hay un objeto vacío. {0}",
-      "Impossible de vérifier la présence d'un objet vide. {0}",
-      "Boş nesne kontrolü başarısız. {0}"};
+      "⚠️ Failed to check for an empty object. {0}",
+      "⚠️ Сбой при проверке на объект-пустышку. {0}",
+      "⚠️ Errore durante il controllo di un solido vuoto. {0}",
+      "⚠️ Fehler bei der Überprüfung auf einen leeren Volumenkörper. {0}",
+      "⚠️ 检查空实体失败。错误：{0}",
+      "⚠️ No se pudo verificar si hay un objeto vacío. {0}",
+      "⚠️ Impossible de vérifier la présence d'un objet vide. {0}",
+      "⚠️ Boş nesne kontrolü başarısız. {0}"};
 
     public static readonly string[] SizeErr = {
-      "Failed to calculate the size of the object. {0}",
-      "Сбой при вычислении размера объекта. {0}",
-      "Errore durante il calcolo delle dimensioni dell'oggetto. {0}",
-      "Fehler bei der Berechnung der Objektgröße. {0}",
-      "计算对象大小失败。错误：{0}",
-      "No se pudo calcular el tamaño del objeto. {0}",
-      "Impossible de calculer la taille de l'objet. {0}",
-      "Nesne boyutu hesaplanamadı. {0}"};
+      "⚠️ Failed to calculate the size of the object. {0}",
+      "⚠️ Сбой при вычислении размера объекта. {0}",
+      "⚠️ Errore durante il calcolo delle dimensioni dell'oggetto. {0}",
+      "⚠️ Fehler bei der Berechnung der Objektgröße. {0}",
+      "⚠️ 计算对象大小失败。错误：{0}",
+      "⚠️ No se pudo calcular el tamaño del objeto. {0}",
+      "⚠️ Impossible de calculer la taille de l'objet. {0}",
+      "⚠️ Nesne boyutu hesaplanamadı. {0}"};
 
     public static readonly string[] CheckInterferenceErr = {
-      "Error checking solid intersections. {0}",
-      "Сбой при проверке пересечений солидов. {0}",
-      "Errore durante il controllo delle intersezioni continue. {0}",
-      "Fehler beim Prüfen von festen Schnittpunkten. {0}",
-      "检查实体交叉点时出错。错误：{0}",
-      "Error al verificar intersecciones de sólidos. {0}",
-      "Erreur lors de la vérification des intersections de solides. {0}",
-      "Katı kesişimleri kontrol edilirken hata. {0}"};
+      "⚠️ Error checking solid intersections. {0}",
+      "⚠️ Сбой при проверке пересечений солидов. {0}",
+      "⚠️ Errore durante il controllo delle intersezioni continue. {0}",
+      "⚠️ Fehler beim Prüfen von festen Schnittpunkten. {0}",
+      "⚠️ 检查实体交叉点时出错。错误：{0}",
+      "⚠️ Error al verificar intersecciones de sólidos. {0}",
+      "⚠️ Erreur lors de la vérification des intersections de solides. {0}",
+      "⚠️ Katı kesişimleri kontrol edilirken hata. {0}"};
 
   }
 }

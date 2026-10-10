@@ -763,6 +763,34 @@ namespace AVC
         "Seçenek devre dışıysa, program katının rengini ve katmanını kullanacak \r\n" +
         "ve gizli çizgi rengini yeşil olarak ayarlayacaktır."};
 
+    public static readonly string[] Unfold = {
+      "Unfold contours",
+      "Контуры Развертки",
+      "Sviluppo contorni",
+      "Konturen entfalten",
+      "展开轮廓",
+      "Desplegar contornos",                                             // ES
+      "Déplier les contours",                                            // FR
+      "Konturları Aç"};                                                  // TR
+
+    public static readonly string[] UnfoldTip = {
+      "Invoke the Unfold command to generate outlines for parts marked as Sweep.\r\n" +
+        "A separate license is required.",
+      "Вызвать команду Развертка для получения контуров деталей, помеченных как Развертка.\r\n" +
+        "Требуется отдельная лицензия.",
+      "Invocare il comando Unfold per generare contorni per le parti contrassegnate come Sweep.\r\n" +
+        "È richiesta una licenza separata.",
+      "Rufen Sie den Befehl Unfold auf, um Umrisse für Teile zu erstellen, die als Sweep markiert sind.\r\n" +
+        "Eine separate Lizenz ist erforderlich.",
+      "调用展开命令以生成标记为 Sweep 的零件的轮廓。\r\n" +
+        "需要单独的许可证。",
+      "Invocar el comando Unfold para generar contornos para las piezas marcadas como Sweep.\r\n" +  // ES
+        "Se requiere una licencia separada.",
+      "Invoquer la commande Unfold pour générer des contours pour les pièces marquées comme Sweep.\r\n" +  // FR
+        "Une licence séparée est requise.",
+      "İşaretlenmiş parçalar için konturlar oluşturmak üzere Unfold komutunu çağırın.\r\n" +  // TR
+        "Ayrı bir lisans gereklidir."};
+
     public static readonly string[] GroupFrame = {
       "Frame around the group",
       "Рамка вокруг группы",

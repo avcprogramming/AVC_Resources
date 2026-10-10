@@ -27,14 +27,14 @@
       "Açılım konturunun ekleme noktası"};  // TR
 
     public static readonly string[] Result = {
-      "  Curves created: {0}",
-      "  Создано кривых: {0}",
-      "  Curve create: {0}",
-      "  Erstellte Kurven: {0}",
-      "  已创建曲线：{0}",
-      "  Curvas creadas: {0}",  // ES
-      "  Courbes créées : {0}",  // FR
-      "  Oluşturulan eğriler: {0}"};  // TR
+      "  Curves created: {0} in {1:0.0}sec.",
+      "  Создано кривых: {0} за {1:0.0}сек.",
+      "  Curve create: {0} in {1:0.0}sec.",
+      "  Erstellte Kurven: {0} in {1:0.0}sec.",
+      "  已创建曲线：{0} 在 {1:0.0}秒内",
+      "  Curvas creadas: {0} en {1:0.0}seg.",  // ES
+      "  Courbes créées : {0} en {1:0.0}sec.",  // FR
+      "  Oluşturulan eğriler: {0} {1:0.0}sn içinde"};  // TR
 
     public static readonly string[] AreaDiff = {
       "  Face area {0}, unfolded area {1}, difference {2} ({3:0.#}%)",
@@ -47,14 +47,14 @@
       "  Yüzey alanı {0}, açılım alanı {1}, fark {2} ({3:0.#}%)"};  // TR
 
     public static readonly string[] FaceNotSupported = {
-      "This surface cannot be unfolded. Only cylinders, cones, and extruded surfaces are permissible.",
-      "Эту поверхность развернуть невозможно. Допустимы только цилиндры, конусы и поверхности вытягивания.",
-      "Questa superficie non può essere sviluppata. Sono ammissibili solo cilindri, coni e superfici estruse.",
-      "Diese Fläche kann nicht abgewickelt werden. Nur Zylinder, Kegel und extrudierte Flächen sind zulässig.",
-      "此曲面无法展开。仅允许使用圆柱体、圆锥体和挤压曲面。",
-      "Esta superficie no se puede desplegar. Solo se permiten cilindros, conos y superficies extruidas.",
-      "Cette surface ne peut pas être développée. Seuls les cylindres, les cônes et les surfaces extrudées sont autorisés.",
-      "Bu yüzey açılılamaz. Sadece silindirler, koniler ve ekstrüde yüzeyler izin verilir." };
+      "This surface cannot be unfolded. Only cylinders, cones, extruded surfaces, and ruled surfaces are permitted.",
+      "Эту поверхность развернуть невозможно. Допустимы только цилиндры, конусы, поверхности вытягивания, линейчатые поверхности.",
+      "Questa superficie non può essere sviluppata. Sono ammissibili solo cilindri, coni, superfici estruse e superfici rigate.",
+      "Diese Fläche kann nicht abgewickelt werden. Nur Zylinder, Kegel, extrudierte Flächen und Regelflächen sind zulässig.",
+      "此曲面无法展开。仅允许使用圆柱体、圆锥体、挤压曲面和直纹曲面。",
+      "Esta superficie no se puede desplegar. Solo se permiten cilindros, conos, superficies extruidas y superficies regladas.",  // ES
+      "Cette surface ne peut pas être développée. Seuls les cylindres, les cônes, les surfaces extrudées et les surfaces réglées sont autorisés.",  // FR
+      "Bu yüzey açılamaz. Sadece silindirler, koniler, ekstrüde yüzeyler ve germe yüzeyler izin verilir." };  // TR
 
     public static readonly string[] RuledNeedsStretch = {
       "You have selected a ruled surface that can only be unfolded with stretching. " +
@@ -72,6 +72,26 @@
         "Activez l'option \"Développement approximatif de surfaces réglées\" dans les paramètres de développement.",  // FR
       "Yalnızca germe ile açılabilen bir regle yüzey seçtiniz. " +
         "Açılım ayarlarında \"Yaklaşık olarak düzenlenmiş yüzeylerin açılması\" seçeneğini etkinleştirin." };  // TR
+
+    public static readonly string[] ContiguousFaceNotSupported = {
+      "  Face {0} skipped: it cannot be unfolded.",
+      "  Поверхность {0} отброшена как неразворачиваемая.",
+      "  Faccia {0} esclusa: non può essere sviluppata.",
+      "  Fläche {0} übersprungen: sie kann nicht abgewickelt werden.",
+      "  面 {0} 已跳过：无法展开。",
+      "  Cara {0} descartada: no se puede desplegar.",  // ES
+      "  Face {0} ignorée : elle ne peut pas être développée.",  // FR
+      "  Yüzey {0} atlandı: açılamaz." };  // TR
+
+    public static readonly string[] ContiguousFaceRuledSkipped = {
+      "  Face {0} skipped: it is a ruled surface and approximate unfolding of ruled surfaces is disabled.",
+      "  Поверхность {0} отброшена как линейчатая: примерные развертки линейчатых поверхностей отключены.",
+      "  Faccia {0} esclusa: è una superficie rigata e lo sviluppo approssimativo è disattivato.",
+      "  Fläche {0} übersprungen: Regelfläche, ungefähres Abwickeln ist deaktiviert.",
+      "  面 {0} 已跳过：它是直纹曲面，且近似展开已禁用。",
+      "  Cara {0} descartada: es una superficie reglada y el desplegado aproximado está desactivado.",  // ES
+      "  Face {0} ignorée : surface réglée, le développement approximatif est désactivé.",  // FR
+      "  Yüzey {0} atlandı: regle yüzey ve yaklaşık açılım devre dışı." };  // TR
 
     public static readonly string[] MethodsInfo = {
       "  Unfolding methods applied: {0}",
@@ -103,12 +123,24 @@
       "cone", "конус", "cono", "Kegel", "圆锥", "cono", "cône", "koni" };
 
     public static readonly string[] MethodExtrusion = {
-      "extrusion", "вытягивание", "estrusione", "Extrusion", "拉伸", "extrusión", "extrusion", "ekstrüzyon" };
+      "extrusion", 
+      "вытягивание", 
+      "estrusione", 
+      "Extrusion", 
+      "拉伸", 
+      "extrusión", 
+      "extrusion", 
+      "ekstrüzyon" };
 
     public static readonly string[] MethodStrip = {
-      "approximate strip triangulation", "приближенная триангуляция полосы", "triangolazione approssimata a strisce",
-      "näherungsweise Streifentriangulation", "近似条带三角剖分", "triangulación aproximada por franjas",
-      "triangulation approximative par bandes", "yaklaşık şerit üçgenleme" };
+      "approximate strip triangulation", 
+      "приближенная триангуляция полосы", 
+      "triangolazione approssimata a strisce",
+      "näherungsweise Streifentriangulation", 
+      "近似条带三角剖分", 
+      "triangulación aproximada por franjas",
+      "triangulation approximative par bandes", 
+      "yaklaşık şerit üçgenleme" };
 
     public static readonly string[] MethodOther = {
       "other", "другой", "altro", "andere", "其他", "otro", "autre", "diğer" };
@@ -282,7 +314,7 @@
         "The program will issue a warning if the stretching is significant.",
       "Разворачивать линейчатые поверхности, которые невозможно развернуть точно. \r\n" +
         "Линейчатые поверхности образует команда LOFT соединяя линиями две произвольные кривые. \r\n" +
-        "Например скрученная винтом лента - геликоид. \r\n" +
+        "Например, скрученная винтом лента - геликоид. \r\n" +
         "Приближенная развертка потребует растягивать материал. \r\n" +
         "Программа предупредит, если растягивание будет слишком заметным.",
       "Sviluppare superfici regolate che non possono essere sviluppate esattamente. \r\n" +
@@ -378,6 +410,26 @@
         "Disposez les contours du motif plat dans le plan XY du Système de Coordonnées Mondial.",
       "Parçanın üstünü Mevcut Kullanıcı Koordinat Sistemi (UCS) yerine Dünya Koordinat Sistemi'nde (WCS) belirleyin. \r\n" +
         "Düz desen konturlarını Dünya Koordinat Sistemi'nin XY düzleminde yerleştirin." };
+
+    public static readonly string[] FrontDown = {
+      "Turn front down",
+      "Перевернуть лицом вниз",
+      "Girare in basso",
+      "Drehen Sie die Vorderseite nach unten",
+      "向下翻转正面",
+      "Girar hacia abajo el frente",
+      "Tourner vers le bas",
+      "Ön aşağı çevir" };
+
+    public static readonly string[] FrontDownTip = {
+      "Rotate the finished flat pattern so that the face normal pointing outward from the solid faces downwards along the Z-axis.",
+      "Повернуть готовую развертку так, чтобы направление поверхности наружу солида развернулось вниз по оси Z",
+      "Ruotare il modello piatto finito in modo che la normale alla superficie rivolta verso l'esterno dalle facce solide punti verso il basso lungo l'asse Z.",
+      "Drehen Sie das fertige Flachmuster so, dass die nach außen von den festen Flächen zeigende Flächennormale nach unten entlang der Z-Achse zeigt.",
+      "将完成的平面图案旋转，使从实体面向外的表面法线沿 Z 轴向下。",
+      "Gire el patrón plano terminado de manera que la normal de la superficie que apunta hacia afuera desde las caras sólidas apunte hacia abajo a lo largo del eje Z.",
+      "Faites pivoter le motif plat fini de manière à ce que la normale à la surface pointant vers l'extérieur des faces solides pointe vers le bas le long de l'axe Z.",
+      "Bitmiş düz deseni, katı yüzeylerden dışa doğru işaret eden yüzey normali Z ekseni boyunca aşağıya bakacak şekilde döndürün." };
 
     #endregion
   }

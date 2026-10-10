@@ -1253,6 +1253,42 @@ namespace AVC
       "La valeur moyenne entre les longueurs des deux côtés de la pièce est utilisée",
       "Parçanın her iki tarafının uzunlukları arasındaki ortalama değer kullanılır"};
 
+    public static readonly string[] SweepUnfold = {
+      "Call the Unfold command when measuring",
+      "Вызывать команду Развертка (Unfold) при обмере",
+      "Chiamare il comando Unfold durante la misurazione",
+      "Rufen Sie den Befehl Unfold beim Messen auf",
+      "测量时调用展开命令",
+      "Llamar al comando Unfold al medir",
+      "Appeler la commande Unfold lors de la mesure",
+      "Ölçerken Unfold komutunu çağır" };
+
+    public static readonly string[] SweepUnfoldTip = {
+      "If the part cannot be quickly measured as a Sweep, invoke the Unfold command to generate the contours. \r\n" +
+        "Then measure these contours. The thickness will be derived from the material properties. \r\n" +
+        "A separate license is required for the Unfold command.",
+      "Если не удается быстро измерить деталь как развертку, то вызвать команду Unfold для построения контуров. \r\n" +
+        "И померить эти контуры. Толщина будет взята из свойств материала. \r\n" +
+        "Требуется отдельная лицензия на команду Unfold.",
+      "Se la parte non può essere misurata rapidamente come Sweep, invocare il comando Unfold per generare i contorni. \r\n" +
+        "Quindi misurare questi contorni. Lo spessore sarà derivato dalle proprietà del materiale. \r\n" +
+        "È necessaria una licenza separata per il comando Unfold.",
+      "Wenn das Teil nicht schnell als Sweep gemessen werden kann, rufen Sie den Befehl Unfold auf, um die Konturen zu erzeugen. \r\n" +
+        "Messen Sie dann diese Konturen. Die Dicke wird aus den Materialeigenschaften abgeleitet. \r\n" +
+        "Für den Befehl Unfold ist eine separate Lizenz erforderlich.",
+      "如果无法快速将零件测量为 Sweep，请调用 Unfold 命令以生成轮廓。 \r\n" +
+        "然后测量这些轮廓。 厚度将从材料属性中得出。 \r\n" +
+        "Unfold 命令需要单独的许可证。",
+      "Si la pieza no se puede medir rápidamente como Sweep, invoque el comando Unfold para generar los contornos. \r\n" +
+        "Luego mida estos contornos. El grosor se derivará de las propiedades del material. \r\n" +
+        "Se requiere una licencia separada para el comando Unfold.",
+      "Si la pièce ne peut pas être mesurée rapidement comme Sweep, invoquez la commande Unfold pour générer les contours. \r\n" +
+        "Ensuite, mesurez ces contours. L'épaisseur sera dérivée des propriétés du matériau. \r\n" +
+        "Une licence distincte est requise pour la commande Unfold.",
+      "Parça hızlı bir şekilde Sweep olarak ölçülemezse, konturları oluşturmak için Unfold komutunu çağırın. \r\n" +
+        "Daha sonra bu konturları ölçün. Kalınlık, malzeme özelliklerinden türetilecektir. \r\n" +
+        "Unfold komutu için ayrı bir lisans gereklidir." };
+
     public static readonly string[] SweepExpand = {
       "Extend the sides to a straight cut",
       "Удлинять стороны до прямого реза",

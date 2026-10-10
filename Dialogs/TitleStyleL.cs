@@ -399,24 +399,34 @@ namespace AVC
       "‘{0}’ bloğunun ölçüleri alınamadı. Blok çizimin üzerine bindirilecek." };
 
     public static readonly string[] TextExtentsErr = {
-      "Unable to get title text dimensions",
-      "Не удалось получить размеры текста заголовка",
-      "Impossibile ottenere le dimensioni del testo del titolo",
-      "Die Abmessungen des Titeltexts konnten nicht ermittelt werden.",
-      "无法获取标题文字的尺寸",
-      "No se pueden obtener las dimensiones del texto del título.",
-      "Impossible d'obtenir les dimensions du texte du titre.",
-      "Başlık metninin ölçüleri alınamadı." };
+      "⚠️ Unable to get title text dimensions",
+      "⚠️ Не удалось получить размеры текста заголовка",
+      "⚠️ Impossibile ottenere le dimensioni del testo del titolo",
+      "⚠️ Die Abmessungen des Titeltexts konnten nicht ermittelt werden.",
+      "⚠️ 无法获取标题文字的尺寸",
+      "⚠️ No se pueden obtener las dimensiones del texto del título.",
+      "⚠️ Impossible d'obtenir les dimensions du texte du titre.",
+      "⚠️ Başlık metninin ölçüleri alınamadı." };
+
+    public static readonly string[] EmptyTextErr = {
+      "⚠️ The title text is empty. The title will not be created.",
+      "⚠️ Текст заголовка пуст. Заголовок не будет создан.",
+      "⚠️ Il testo del titolo è vuoto. Il titolo non verrà creato.",
+      "⚠️ Der Titeltext ist leer. Der Titel wird nicht erstellt.",
+      "⚠️ 标题文字为空。标题将不会被创建。",
+      "⚠️ El texto del título está vacío. El título no se creará.",
+      "⚠️ Le texte du titre est vide. Le titre ne sera pas créé.",
+      "⚠️ Başlık metni boş. Başlık oluşturulmayacak."    };
 
     public static readonly string[] BlockAttrErr = {
-      "There is no attribute '{1}' in the view name block '{0}'.",
-      "В блоке названия вида '{0}' нет атрибута '{1}'.",
-      "Non esiste l'attributo '{1}' nel blocco del nome della vista '{0}'.",
-      "Im Ansichtsname-Block '{0}' ist kein Attribut '{1}' vorhanden.",
-      "视图名称块“{0}”中没有属性“{1}”。",
-      "No existe el atributo «{1}» en el bloque de nombre de vista «{0}».",
-      "L’attribut « {1} » n’existe pas dans le bloc de nom de vue « {0} ».",
-      "‘{0}’ görünüm adı bloğunda ‘{1}’ özniteliği yok."    };
+      "⚠️ There is no attribute '{1}' in the view name block '{0}'.",
+      "⚠️ В блоке названия вида '{0}' нет атрибута '{1}'.",
+      "⚠️ Non esiste l'attributo '{1}' nel blocco del nome della vista '{0}'.",
+      "⚠️ Im Ansichtsname-Block '{0}' ist kein Attribut '{1}' vorhanden.",
+      "⚠️ 视图名称块“{0}”中没有属性“{1}”。",
+      "⚠️ No existe el atributo «{1}» en el bloque de nombre de vista «{0}».",
+      "⚠️ L’attribut « {1} » n’existe pas dans le bloc de nom de vue « {0} ».",
+      "⚠️ ‘{0}’ görünüm adı bloğunda ‘{1}’ özniteliği yok."    };
 
     public static readonly string[] NoAttributesErr = {
       "The view name block '{0}' does not have any attributes to fill. \r\n" +
