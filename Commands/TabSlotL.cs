@@ -440,5 +440,37 @@ namespace AVC
       "Eki her zaman tek sayıda adıma bölün. \r\n" +  // TR
         "O zaman ekin her iki ucunda iki durak kalacaktır. \r\n" +
         "Ve 'Zıvana ile başla' ayarlanırsa, her iki uçta da zıvanalar ve yuvalar yapılacaktır."};
+
+    //======================= Picture =============================================================
+
+    public static readonly string[] ContactLength = {
+      "Contact length",
+      "Длина контакта",
+      "Lunghezza di contatto",
+      "Kontaktlänge",
+      "接触长度",
+      "Longitud de contacto",                          // ES
+      "Longueur de contact",                           // FR
+      "Temas uzunluğu" };                              // TR
+
+    public static readonly string[] PartThickness = {
+      "Part thickness",
+      "Толщина детали",
+      "Spessore parte",
+      "Teiledicke",
+      "零件厚度",
+      "Espesor de pieza",                              // ES
+      "Épaisseur de pièce",                            // FR
+      "Parça kalınlığı" };                             // TR
+
+    public static readonly string[] DepthThrough = {
+      "through",
+      "насквозь",
+      "passante",
+      "durchgehend",
+      "贯穿",
+      "pasante",                                       // ES
+      "traversant",                                    // FR
+      "boydan boya" };                                 // TR
   }
 }

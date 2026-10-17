@@ -58,16 +58,6 @@ namespace AVC
       "Impossible d'exploser le bloc {0}: {1}",
       "Blok patlatılamıyor {0}: {1}"};
 
-    public static readonly string[] MechanicalCompErr = {
-      "Failed to get Mechanical component properties.\n{0}",
-      "Не удалось получить свойства компонента Mechanical.\n{0}",
-      "Impossibile ottenere le proprietà dei componenti Meccanici.\n{0}",
-      "Mechanische Komponenteneigenschaften konnten nicht ermittelt werden.\n{0}",
-      "无法获取机械组件属性。\n{0}",
-      "No se pudieron obtener las propiedades del componente Mechanical.\n{0}",
-      "Impossible d'obtenir les propriétés du composant Mechanical.\n{0}",
-      "Mekanik bileşen özellikleri alınamadı.\n{0}"};
-
     public static readonly string[] CreateBlock = {
       "  Creating a block {0}...",
       "  Создание блока {0}...",
@@ -139,14 +129,14 @@ namespace AVC
       "{0}\nBlok dosyaya yazılamadı {1}. Dosya başka bir pencerede açık mı?"};
 
     public static readonly string[] ParameterValueErr = {
-      "The value {0} is not suitable for parameter {1}",
-      "Значение {0} не подходит для параметра {1}",
-      "Il valore {0} non è adatto per il parametro {1}.",
-      "Der Wert {0} ist für Parameter {1} nicht geeignet.",
-      "值 {0} 不适用于参数 {1}",
-      "El valor {0} no es adecuado para el parámetro {1}",
-      "La valeur {0} ne convient pas pour le paramètre {1}",
-      "Değer {0}, {1} parametresi için uygun değil"};
+      "⚠️ The value {0} is not suitable for parameter {1}",
+      "⚠️ Значение {0} не подходит для параметра {1}",
+      "⚠️ Il valore {0} non è adatto per il parametro {1}.",
+      "⚠️ Der Wert {0} ist für Parameter {1} nicht geeignet.",
+      "⚠️ 值 {0} 不适用于参数 {1}",
+      "⚠️ El valor {0} no es adecuado para el parámetro {1}",
+      "⚠️ La valeur {0} ne convient pas pour le paramètre {1}",
+      "⚠️ Değer {0}, {1} parametresi için uygun değil"};
 
     public static readonly string[] BlockNotFound = {
       "Block '{0}' not found ",
@@ -169,14 +159,14 @@ namespace AVC
       "Uzaydaki tüm nesneler okunuyor {0}"};
 
     public static readonly string[] BlockNotInserted = {
-      "Block '{0}' was not inserted into the drawing",
-      "Блок '{0}' не был вставлен в чертеж",
-      "Il blocco '{0}' non è stato inserito nel disegno",
-      "Block '{0}' wurde nicht in die Zeichnung eingefügt",
-      "块'{0}'未插入到图形中",
-      "El bloque '{0}' no se insertó en el dibujo",
-      "Le bloc '{0}' n'a pas été inséré dans le dessin",
-      "Blok '{0}' çizime eklenmedi"};
+      "⚠️ Block '{0}' was not inserted into the drawing",
+      "⚠️ Блок '{0}' не был вставлен в чертеж",
+      "⚠️ Il blocco '{0}' non è stato inserito nel disegno",
+      "⚠️ Block '{0}' wurde nicht in die Zeichnung eingefügt",
+      "⚠️ 块'{0}'未插入到图形中",
+      "⚠️ El bloque '{0}' no se insertó en el dibujo",
+      "⚠️ Le bloc '{0}' n'a pas été inséré dans le dessin",
+      "⚠️ Blok '{0}' çizime eklenmedi"};
 
   }
 }

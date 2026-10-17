@@ -51,14 +51,14 @@ namespace AVC
       "Sunucuya istek gönderilirken hata oluştu.\r\n{0}"};       // TR
 
     public static readonly string[] ZeroBoxDataError = {
-      "Received empty parts list for wall {0}",
-      "Получен пустой список деталей для стены {0}",
-      "Ricevuto elenco delle parti vuoto per il muro {0}",
-      "Leere Teileliste für Wand {0} erhalten",
-      "收到牆 {0} 的空零件清單",
-      "Se recibió lista de piezas vacía para el muro {0}",       // ES
-      "Liste de pièces vide reçue pour le mur {0}",              // FR
-      "Duvar {0} için boş parça listesi alındı"};                // TR
+      "⚠️ Received empty parts list for wall {0}",
+      "⚠️ Получен пустой список деталей для стены {0}",
+      "⚠️ Ricevuto elenco delle parti vuoto per il muro {0}",
+      "⚠️ Leere Teileliste für Wand {0} erhalten",
+      "⚠️ 收到牆 {0} 的空零件清單",
+      "⚠️ Se recibió lista de piezas vacía para el muro {0}",       // ES
+      "⚠️ Liste de pièces vide reçue pour le mur {0}",              // FR
+      "⚠️ Duvar {0} için boş parça listesi alındı"};                // TR
 
     public static readonly string[] BoxDataReceived = {
       "Data received from the server to create {0} parts for wall {1}",
@@ -81,34 +81,34 @@ namespace AVC
       "Çizim {0} oluşturmak için sunucudan veri alındı"};        // TR
 
     public static readonly string[] ZeroSolidListError = {
-      "Failed to create one wall {0} - failed to create any parts",
-      "Не удалось создать одну стену {0} - не получилось создать ни одной детали",
-      "Impossibile creare un muro {0} - impossibile creare nessuna parte",
-      "Eine Wand {0} konnte nicht erstellt werden – es konnten keine Teile erstellt werden",
-      "無法建立一堵牆 {0} - 無法建立任何部分",
-      "Error al crear un muro {0}: no se pudo crear ninguna pieza",  // ES
-      "Échec de la création d'un mur {0} - impossible de créer des pièces",  // FR
-      "Bir duvar {0} oluşturulamadı - hiçbir parça oluşturulamadı"};  // TR
+      "⚠️ Failed to create one wall {0} - failed to create any parts",
+      "⚠️ Не удалось создать одну стену {0} - не получилось создать ни одной детали",
+      "⚠️ Impossibile creare un muro {0} - impossibile creare nessuna parte",
+      "⚠️ Eine Wand {0} konnte nicht erstellt werden – es konnten keine Teile erstellt werden",
+      "⚠️ 無法建立一堵牆 {0} - 無法建立任何部分",
+      "⚠️ Error al crear un muro {0}: no se pudo crear ninguna pieza",  // ES
+      "⚠️ Échec de la création d'un mur {0} - impossible de créer des pièces",  // FR
+      "⚠️ Bir duvar {0} oluşturulamadı - hiçbir parça oluşturulamadı"};  // TR
 
     public static readonly string[] ZeroPlanError = {
-      "Failed to create drawing {0} - failed to create any objects",
-      "Не удалось создать чертеж {0} - не получилось создать ни одного объекта",
-      "Impossibile creare il disegno {0}: impossibile creare alcun oggetto",
-      "Zeichnung {0} konnte nicht erstellt werden – es konnten keine Objekte erstellt werden",
-      "未能建立繪圖 {0} - 未能建立任何對象",
-      "Error al crear el dibujo {0}: no se pudo crear ningún objeto",  // ES
-      "Échec de la création du dessin {0} - impossible de créer des objets",  // FR
-      "Çizim {0} oluşturulamadı - hiçbir nesne oluşturulamadı"};  // TR
+      "⚠️ Failed to create drawing {0} - failed to create any objects",
+      "⚠️ Не удалось создать чертеж {0} - не получилось создать ни одного объекта",
+      "⚠️ Impossibile creare il disegno {0}: impossibile creare alcun oggetto",
+      "⚠️ Zeichnung {0} konnte nicht erstellt werden – es konnten keine Objekte erstellt werden",
+      "⚠️ 未能建立繪圖 {0} - 未能建立任何對象",
+      "⚠️ Error al crear el dibujo {0}: no se pudo crear ningún objeto",  // ES
+      "⚠️ Échec de la création du dessin {0} - impossible de créer des objets",  // FR
+      "⚠️ Çizim {0} oluşturulamadı - hiçbir nesne oluşturulamadı"};  // TR
 
     public static readonly string[] ColumnReadError = {
-      "Failed to read data in column {0}",
-      "Не удалось прочитать данные в столбце {0}",
-      "Impossibile leggere i dati nella colonna {0}",
-      "Daten in Spalte {0} konnten nicht gelesen werden",
-      "无法读取第 {0} 列中的数据",
-      "Error al leer datos en la columna {0}",                   // ES
-      "Échec de la lecture des données dans la colonne {0}",     // FR
-      "Sütun {0}'daki veriler okunamadı"};                       // TR
+      "⚠️ Failed to read data in column {0}",
+      "⚠️ Не удалось прочитать данные в столбце {0}",
+      "⚠️ Impossibile leggere i dati nella colonna {0}",
+      "⚠️ Daten in Spalte {0} konnten nicht gelesen werden",
+      "⚠️ 无法读取第 {0} 列中的数据",
+      "⚠️ Error al leer datos en la columna {0}",                   // ES
+      "⚠️ Échec de la lecture des données dans la colonne {0}",     // FR
+      "⚠️ Sütun {0}'daki veriler okunamadı"};                       // TR
 
     public static readonly string[] BoxToWallResult = {
       "Managed to create walls {0}",
@@ -151,64 +151,94 @@ namespace AVC
       "Duvara uyacak katı kutular veya hazır duvar blokları seçin."};  // TR
 
     public static readonly string[] LineWeightErr = {
-      "Specified non-existent line weight {0}",
-      "Задан несуществующий вес линий {0}",
-      "Spessore di linea inesistente specificato {0}",
-      "Angegebene nicht vorhandene Linienstärke {0}",
-      "指定的不存在的線寬 {0}",
-      "Se especificó un grosor de línea inexistente {0}",        // ES
-      "Épaisseur de ligne inexistante spécifiée {0}",            // FR
-      "Var olmayan çizgi kalınlığı belirtildi {0}"};             // TR
+      "⚠️ Specified non-existent line weight {0}",
+      "⚠️ Задан несуществующий вес линий {0}",
+      "⚠️ Spessore di linea inesistente specificato {0}",
+      "⚠️ Angegebene nicht vorhandene Linienstärke {0}",
+      "⚠️ 指定的不存在的線寬 {0}",
+      "⚠️ Se especificó un grosor de línea inexistente {0}",        // ES
+      "⚠️ Épaisseur de ligne inexistante spécifiée {0}",            // FR
+      "⚠️ Var olmayan çizgi kalınlığı belirtildi {0}"};             // TR
 
     public static readonly string[] LineTypeErr = {
-      "Specified non-existent linetype {0}",
-      "Задан несуществующий тип линий {0}",
-      "Tipo di linea {0} inesistente specificato",
-      "Angegebener nicht vorhandener Linientyp {0}",
-      "指定的不存在線型 {0}",
-      "Se especificó un tipo de línea inexistente {0}",          // ES
-      "Type de ligne inexistant spécifié {0}",                   // FR
-      "Var olmayan çizgi tipi belirtildi {0}"};                  // TR
+      "⚠️ Specified non-existent linetype {0}",
+      "⚠️ Задан несуществующий тип линий {0}",
+      "⚠️ Tipo di linea {0} inesistente specificato",
+      "⚠️ Angegebener nicht vorhandener Linientyp {0}",
+      "⚠️ 指定的不存在線型 {0}",
+      "⚠️ Se especificó un tipo de línea inexistente {0}",          // ES
+      "⚠️ Type de ligne inexistant spécifié {0}",                   // FR
+      "⚠️ Var olmayan çizgi tipi belirtildi {0}"};                  // TR
 
     public static readonly string[] ColorErr = {
-      "Failed to recognize color {0}",
-      "Не удалось распознать цвет {0}",
-      "Impossibile riconoscere il colore {0}",
-      "Farbe {0} konnte nicht erkannt werden",
-      "無法辨識顏色{0}",
-      "No se pudo reconocer el color {0}",                       // ES
-      "Impossible de reconnaître la couleur {0}",                // FR
-      "Renk {0} tanınamadı"};                                    // TR
+      "⚠️ Failed to recognize color {0}",
+      "⚠️ Не удалось распознать цвет {0}",
+      "⚠️ Impossibile riconoscere il colore {0}",
+      "⚠️ Farbe {0} konnte nicht erkannt werden",
+      "⚠️ 無法辨識顏色{0}",
+      "⚠️ No se pudo reconocer el color {0}",                       // ES
+      "⚠️ Impossible de reconnaître la couleur {0}",                // FR
+      "⚠️ Renk {0} tanınamadı"};                                    // TR
+
+    public static readonly string[] SourceDwgNotFound = {
+      "⚠️ Drawing {0} not found, the template is used",
+      "⚠️ Чертеж {0} не найден, используется шаблон",
+      "⚠️ Disegno {0} non trovato, viene utilizzato il modello",
+      "⚠️ Zeichnung {0} nicht gefunden, die Vorlage wird verwendet",
+      "⚠️ 找不到圖面 {0}，使用樣板",
+      "⚠️ No se encontró el dibujo {0}, se usa la plantilla",         // ES
+      "⚠️ Dessin {0} introuvable, le gabarit est utilisé",             // FR
+      "⚠️ {0} çizimi bulunamadı, şablon kullanılıyor"};               // TR
+
+    public static readonly string[] DynParamNotFound = {
+      "⚠️ Block {0} has no suitable parameter for value {1}",
+      "⚠️ В блоке {0} нет подходящего параметра для значения {1}",
+      "⚠️ Il blocco {0} non ha un parametro adatto per il valore {1}",
+      "⚠️ Block {0} hat keinen passenden Parameter für den Wert {1}",
+      "⚠️ 圖塊 {0} 沒有適合值 {1} 的參數",
+      "⚠️ El bloque {0} no tiene un parámetro adecuado para el valor {1}", // ES
+      "⚠️ Le bloc {0} n'a pas de paramètre adapté à la valeur {1}",    // FR
+      "⚠️ {0} bloğunda {1} değeri için uygun parametre yok"};          // TR
+
+    public static readonly string[] DynParamErr = {
+      "⚠️ Failed to assign parameter {0} = {1}",
+      "⚠️ Не удалось назначить параметр {0} = {1}",
+      "⚠️ Impossibile assegnare il parametro {0} = {1}",
+      "⚠️ Parameter {0} = {1} konnte nicht zugewiesen werden",
+      "⚠️ 無法指定參數 {0} = {1}",
+      "⚠️ No se pudo asignar el parámetro {0} = {1}",                  // ES
+      "⚠️ Impossible d'attribuer le paramètre {0} = {1}",              // FR
+      "⚠️ {0} = {1} parametresi atanamadı"};                           // TR
 
     public static readonly string[] DimScaleErr = {
-      "Failed to set dimension scale {0}",
-      "Не удалось настроить масштаб размера {0}",
-      "Impossibile impostare la scala delle dimensioni {0}",
-      "Größenskala konnte nicht festgelegt werden {0}",
-      "无法设置尺寸比例 {0}",
-      "Error al establecer escala de dimensión {0}",             // ES
-      "Échec de la définition de l'échelle de dimension {0}",    // FR
-      "Boyut ölçeği ayarlanamadı {0}"};                          // TR
+      "⚠️ Failed to set dimension scale {0}",
+      "⚠️ Не удалось настроить масштаб размера {0}",
+      "⚠️ Impossibile impostare la scala delle dimensioni {0}",
+      "⚠️ Größenskala konnte nicht festgelegt werden {0}",
+      "⚠️ 无法设置尺寸比例 {0}",
+      "⚠️ Error al establecer escala de dimensión {0}",             // ES
+      "⚠️ Échec de la définition de l'échelle de dimension {0}",    // FR
+      "⚠️ Boyut ölçeği ayarlanamadı {0}"};                          // TR
 
     public static readonly string[] PLineConversionErr = {
-      "It was not possible to construct a polyline from the given points",
-      "Не удалось построить полилинию по заданным точкам",
-      "Non è stato possibile costruire una polilinea utilizzando i punti indicati",
-      "Es war nicht möglich, aus den angegebenen Punkten eine Polylinie zu konstruieren",
-      "無法從給定點構造折線",
-      "No fue posible construir una polilínea a partir de los puntos dados",  // ES
-      "Il n'a pas été possible de construire une polyligne à partir des points donnés",  // FR
-      "Verilen noktalardan çoklu çizgi oluşturulamadı"};         // TR
+      "⚠️ It was not possible to construct a polyline from the given points",
+      "⚠️ Не удалось построить полилинию по заданным точкам",
+      "⚠️ Non è stato possibile costruire una polilinea utilizzando i punti indicati",
+      "⚠️ Es war nicht möglich, aus den angegebenen Punkten eine Polylinie zu konstruieren",
+      "⚠️ 無法從給定點構造折線",
+      "⚠️ No fue posible construir una polilínea a partir de los puntos dados",  // ES
+      "⚠️ Il n'a pas été possible de construire une polyligne à partir des points donnés",  // FR
+      "⚠️ Verilen noktalardan çoklu çizgi oluşturulamadı"};         // TR
 
     public static readonly string[] NullPlanError = {
-      "Received empty wall plan {0}",
-      "Получен пустой план стены {0}",
-      "Ricevuta una planimetria vuota {0}",
-      "Leeren Wandplan {0} erhalten",
-      "收到空牆平面圖 {0}",
-      "Se recibió plano de muro vacío {0}",                      // ES
-      "Plan de mur vide reçu {0}",                               // FR
-      "Boş duvar planı alındı {0}"};                             // TR
+      "⚠️ Received empty wall plan {0}",
+      "⚠️ Получен пустой план стены {0}",
+      "⚠️ Ricevuta una planimetria vuota {0}",
+      "⚠️ Leeren Wandplan {0} erhalten",
+      "⚠️ 收到空牆平面圖 {0}",
+      "⚠️ Se recibió plano de muro vacío {0}",                      // ES
+      "⚠️ Plan de mur vide reçu {0}",                               // FR
+      "⚠️ Boş duvar planı alındı {0}"};                             // TR
 
     public static readonly string[] RequestTime = {
       "The request to the server was processed in {0}s",
@@ -221,44 +251,44 @@ namespace AVC
       "Sunucuya yapılan istek {0}s içinde işlendi"};             // TR
 
     public static readonly string[] PageNotExists = {
-      "Page {0} is missing in Excel file",
-      "Страница {0} отсутствует в Excel-файле",
-      "La pagina {0} manca nel file Excel",
-      "Seite {0} fehlt in der Excel-Datei",
-      "Excel 文件中缺少第 {0} 页",
-      "Falta la página {0} en el archivo de Excel",              // ES
-      "La page {0} est manquante dans le fichier Excel",         // FR
-      "Excel dosyasında {0} sayfası eksik"};                     // TR
+      "⚠️ Page {0} is missing in Excel file",
+      "⚠️ Страница {0} отсутствует в Excel-файле",
+      "⚠️ La pagina {0} manca nel file Excel",
+      "⚠️ Seite {0} fehlt in der Excel-Datei",
+      "⚠️ Excel 文件中缺少第 {0} 页",
+      "⚠️ Falta la página {0} en el archivo de Excel",              // ES
+      "⚠️ La page {0} est manquante dans le fichier Excel",         // FR
+      "⚠️ Excel dosyasında {0} sayfası eksik"};                     // TR
 
     public static readonly string[] SkipsLine = {
-      "Skips the line Shape = {0}",
-      "Пропускает строку Shape = {0}",
-      "Salta la riga Shape = {0}",
-      "Überspringt die Zeile Shape = {0}",
-      "跳过行 Shape = {0}",
-      "Omite la línea Shape = {0}",                              // ES
-      "Ignore la ligne Shape = {0}",                             // FR
-      "Shape = {0} satırını atlar"};                             // TR
+      "⚠️ Skips the line Shape = {0}",
+      "⚠️ Пропускает строку Shape = {0}",
+      "⚠️ Salta la riga Shape = {0}",
+      "⚠️ Überspringt die Zeile Shape = {0}",
+      "⚠️ 跳过行 Shape = {0}",
+      "⚠️ Omite la línea Shape = {0}",                              // ES
+      "⚠️ Ignore la ligne Shape = {0}",                             // FR
+      "⚠️ Shape = {0} satırını atlar"};                             // TR
 
     public static readonly string[] ZeroSizeSolidError = {
-      "An attempt to create a size zero solid. Let's skip it.",
-      "Попытка создать солид нулевого размера. Пропускаем.",
-      "Un tentativo di creare un solido di dimensione zero. Saltiamolo.",
-      "Ein Versuch, einen Körper der Größe Null zu erstellen. Lass es uns überspringen.",
-      "嘗試建立零尺寸實體。讓我們跳過它。",
-      "Intento de crear un sólido de tamaño cero. Lo omitiremos.",  // ES
-      "Tentative de créer un solide de taille zéro. Ignorons-le.",  // FR
-      "Sıfır boyutlu katı oluşturma girişimi. Atlayalım."};      // TR
+      "⚠️ An attempt to create a size zero solid. Let's skip it.",
+      "⚠️ Попытка создать солид нулевого размера. Пропускаем.",
+      "⚠️ Un tentativo di creare un solido di dimensione zero. Saltiamolo.",
+      "⚠️ Ein Versuch, einen Körper der Größe Null zu erstellen. Lass es uns überspringen.",
+      "⚠️ 嘗試建立零尺寸實體。讓我們跳過它。",
+      "⚠️ Intento de crear un sólido de tamaño cero. Lo omitiremos.",  // ES
+      "⚠️ Tentative de créer un solide de taille zéro. Ignorons-le.",  // FR
+      "⚠️ Sıfır boyutlu katı oluşturma girişimi. Atlayalım."};      // TR
 
     public static readonly string[] BoxIsNull = {
-      "Trying to create a block without a name",
-      "Попытка создать блок без имени",
-      "Tentativo di creare un blocco senza nome",
-      "Ich versuche, einen Block ohne Namen zu erstellen",
-      "尝试创建一个没有名称的块",
-      "Intentando crear un bloque sin nombre",                   // ES
-      "Tentative de créer un bloc sans nom",                     // FR
-      "İsimsiz bir blok oluşturmaya çalışılıyor"};               // TR
+      "⚠️ Trying to create a block without a name",
+      "⚠️ Попытка создать блок без имени",
+      "⚠️ Tentativo di creare un blocco senza nome",
+      "⚠️ Ich versuche, einen Block ohne Namen zu erstellen",
+      "⚠️ 尝试创建一个没有名称的块",
+      "⚠️ Intentando crear un bloque sin nombre",                   // ES
+      "⚠️ Tentative de créer un bloc sans nom",                     // FR
+      "⚠️ İsimsiz bir blok oluşturmaya çalışılıyor"};               // TR
 
     public static readonly string[] TableRowCount = {
       "  A table of {0} rows has been read. Objects received {1}.",

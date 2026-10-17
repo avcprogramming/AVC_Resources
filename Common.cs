@@ -415,7 +415,7 @@ namespace AVC
     public static Bitmap TNT80 => LoadPng("TNT80");
     public static Bitmap TNTUpdate16 => LoadPng("TNTUpdate16");
     public static Bitmap TNTUpdate32 => LoadPng("TNTUpdate32");
-    public static Icon U => LoadIcon("U.ico");
+    public static Icon U => LoadIcon("U");
     public static Bitmap Undo => LoadPng("Undo");
     public static Bitmap Undo32 => LoadPng("Undo32");
     public static Bitmap Unfold16 => LoadPng("Unfold16");
@@ -427,7 +427,7 @@ namespace AVC
     public static Bitmap Unpack80 => LoadPng("Unpack80");
     public static Bitmap UpdateColor16 => LoadPng("UpdateColor16");
     public static Bitmap UpdateColor32 => LoadPng("UpdateColor32");
-    public static Icon Updater => LoadIcon("Updater.ico");
+    public static Icon Updater => LoadIcon("Updater");
     public static Bitmap Updater16 => LoadPng("Updater16");
     public static Bitmap Updater32 => LoadPng("Updater32");
     public static Bitmap Url32 => LoadPng("Url32");

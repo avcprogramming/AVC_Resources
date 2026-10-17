@@ -54,6 +54,7 @@
     <Compile Include="Commands\BoxFromTableL.cs" />
     <Compile Include="Commands\BubenL.cs" />
     <Compile Include="Commands\BUpdateL.cs" />
+    <Compile Include="Commands\CatalogImportL.cs" />
     <Compile Include="Commands\ChopL.cs" />
     <Compile Include="Commands\CncL.cs" />
     <Compile Include="Commands\CrossPieceL.cs" />

@@ -130,6 +130,36 @@ namespace AVC
       "NETtoyerCorps",                                            // FR
       "TEMizleGövde"};                                            // TR
 
+    public static readonly string[] LayersKW = {
+      "LAYers",
+      "СЛОИ",
+      "LIVelli",
+      "EBEnen",
+      "图层(LAY)",
+      "CAPas",                                                    // ES
+      "CALques",                                                  // FR
+      "KATmanlar"};                                               // TR
+
+    public static readonly string[] LayersQuery = {
+      "Turn off all visible layers, regenerate and turn them on again?",
+      "Отключить все видимые слои, выполнить регенерацию и снова включить их?",
+      "Disattivare tutti i livelli visibili, rigenerare e riattivarli?",
+      "Alle sichtbaren Ebenen ausschalten, regenerieren und wieder einschalten?",
+      "关闭所有可见图层，重生成后再重新打开？",
+      "¿Desactivar todas las capas visibles, regenerar y volver a activarlas?",  // ES
+      "Désactiver tous les calques visibles, régénérer et les réactiver ?",  // FR
+      "Tüm görünür katmanlar kapatılsın, yeniden oluşturulsun ve tekrar açılsın mı?"};  // TR
+
+    public static readonly string[] LayersToggled = {
+      "Layers turned off and on again: {0}",
+      "Слоев отключено и снова включено: {0}",
+      "Livelli disattivati e riattivati: {0}",
+      "Ebenen aus- und wieder eingeschaltet: {0}",
+      "已关闭并重新打开的图层：{0}",
+      "Capas desactivadas y reactivadas: {0}",                    // ES
+      "Calques désactivés puis réactivés : {0}",                  // FR
+      "Kapatılıp yeniden açılan katmanlar: {0}"};                 // TR
+
     public static readonly string[] Acad2017Query = {
       "Adjust the scale of mirror blocks? (only helps in AutoCAD 2017)",
       "Подправить масштаб зеркальных блоков ? (помогает только в AutoCAD 2017)",

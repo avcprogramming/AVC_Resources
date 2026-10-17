@@ -1243,6 +1243,7 @@ namespace AVC
       "Línea media",
       "Ligne médiane",
       "Orta çizgi"};
+
     public static readonly string[] MiddleLineTip = {
       "The average value between the lengths of both sides of the part is used",
       "Используется среднее значение между длинами обоих сторон детали",

@@ -3647,6 +3647,36 @@ namespace AVC
       "Image",
       "Görüntü"};
 
+    public static readonly string[] ImportBadClipboard = {
+      "The clipboard does not contain catalog data: a line of {0} Tab-separated fields is expected.",
+      "Буфер обмена не содержит данных каталога: ожидается строка из {0} полей, разделенных Tab.",
+      "Gli appunti non contengono dati di catalogo: è prevista una riga di {0} campi separati da Tab.",
+      "Die Zwischenablage enthält keine Katalogdaten: erwartet wird eine Zeile mit {0} durch Tab getrennten Feldern.",
+      "剪贴板不包含目录数据：需要一行由 Tab 分隔的 {0} 个字段。",
+      "El portapapeles no contiene datos de catálogo: se espera una línea de {0} campos separados por Tab.",
+      "Le presse-papiers ne contient pas de données de catalogue : une ligne de {0} champs séparés par Tab est attendue.",
+      "Pano katalog verisi içermiyor: Tab ile ayrılmış {0} alandan oluşan bir satır bekleniyor."};
+
+    public static readonly string[] ImportBadValue = {
+      "⚠️ Import: field {0} ({1}) - cannot convert the value \"{2}\". The old value is kept.",
+      "⚠️ Импорт: поле {0} ({1}) - не удалось преобразовать значение \"{2}\". Оставлено старое значение.",
+      "⚠️ Importazione: campo {0} ({1}) - impossibile convertire il valore \"{2}\". Il vecchio valore viene mantenuto.",
+      "⚠️ Import: Feld {0} ({1}) - der Wert \"{2}\" kann nicht konvertiert werden. Der alte Wert bleibt erhalten.",
+      "⚠️ 导入：字段 {0}（{1}）- 无法转换值 \"{2}\"。保留旧值。",
+      "⚠️ Importación: campo {0} ({1}) - no se puede convertir el valor \"{2}\". Se conserva el valor anterior.",
+      "⚠️ Importation : champ {0} ({1}) - impossible de convertir la valeur \"{2}\". L'ancienne valeur est conservée.",
+      "⚠️ İçe aktarma: alan {0} ({1}) - \"{2}\" değeri dönüştürülemiyor. Eski değer korunuyor."};
+
+    public static readonly string[] ImportImageFailed = {
+      "⚠️ Import: the image could not be loaded \"{0}\". {1}",
+      "⚠️ Импорт: не удалось загрузить картинку \"{0}\". {1}",
+      "⚠️ Importazione: impossibile caricare l'immagine \"{0}\". {1}",
+      "⚠️ Import: das Bild \"{0}\" konnte nicht geladen werden. {1}",
+      "⚠️ 导入：无法加载图片 \"{0}\"。{1}",
+      "⚠️ Importación: no se pudo cargar la imagen \"{0}\". {1}",
+      "⚠️ Importation : impossible de charger l'image \"{0}\". {1}",
+      "⚠️ İçe aktarma: \"{0}\" görüntüsü yüklenemedi. {1}"};
+
     public static readonly string[] ImagePathTip = {
       "A path to a file containing a material image or an image URL on the internet. \r\n" +
         "Can be used in Excel for the IMAGE function. However, this is not a texture for rendering.",
