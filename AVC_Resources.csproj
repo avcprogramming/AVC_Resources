@@ -40,9 +40,6 @@
     <NoWarn>AD0001</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\AVC_Plugin\AVC_Plugin_Ac25\GlobalSuppressions.cs">
-      <Link>GlobalSuppressions.cs</Link>
-    </Compile>
     <Compile Include="CadProcessL.cs" />
     <Compile Include="CnsL.cs" />
     <Compile Include="Commands\AssemblyDrawingsL.cs" />
