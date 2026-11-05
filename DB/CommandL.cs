@@ -772,6 +772,15 @@ namespace AVC
       "Tamaño del sólido",
       "Taille du solide",
       "Katı boyutu" };
+    public static readonly string[] SPack = {
+      "Pack solids",
+      "Упаковка солидов",
+      "Impacchetta solidi",
+      "Volumenkörper packen",
+      "将实体打包",
+      "Empaquetar sólidos",
+      "Empaqueter les solides",
+      "Katıları paketle" };
     public static readonly string[] SweepSize = {
       "Size of Sweep",
       "Размер развертки",  

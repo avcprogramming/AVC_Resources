@@ -6,12 +6,10 @@ using System.Runtime.InteropServices;
 // связанные со сборкой.
 [assembly: AssemblyTitle("Common resources for A>V>C> plugins and utilities")]
 [assembly: AssemblyDescription("A>V>C> Plug-in for AutoCAD: strings and images")]
-[assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("AVC")]
-[assembly: AssemblyProduct("AVC_Resources")]
-[assembly: AssemblyCopyright("Alexandr Chernishev A>V>C>")]
-[assembly: AssemblyTrademark("A>V>C>")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyProduct("A>V>C> Plugins")]
+[assembly: AssemblyCopyright("Copyright © 2014–2026 Alexander Chernyshev. All rights reserved.")]
+[assembly: AssemblyTrademark("A>V>C>; A>V>C> Programming; A>V>C> Plugins; AC1032")]
 
 // Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
 // для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
@@ -31,5 +29,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номер построения и номер редакции по умолчанию, 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2026.10.03")]
-[assembly: AssemblyFileVersion("2026.10.03")]
+[assembly: AssemblyVersion("2026.10.04")]
+[assembly: AssemblyFileVersion("2026.10.04")]

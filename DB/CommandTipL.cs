@@ -1,6 +1,5 @@
 ﻿// A>V>C> avc.programming@gmail.com https://sites.google.com/site/avcplugins/
 
-
 // Ignore Spelling: Dwg Ortho Poly Simp Snn Unhide Det CNC Prg
 
 namespace AVC
@@ -1197,6 +1196,23 @@ namespace AVC
         "Les dimensions résultantes sont envoyées à la ligne de commande.",
       "Uzaydaki konumundan bağımsız olarak katının ölçümü. " +
         "Elde edilen boyutlar komut satırına çıktılanır."};
+
+    public static readonly string[] SPackTip = {
+      "Wrapping each 3D solid into an individual block for export to other programs, " +
+        "while preserving the solid's name and metrics within the block attributes.",
+      "Запаковка каждого 3д-солида в отдельный блок для экспорта в другие программы " +
+        "с сохранением имен и метрики солида в атрибутах блоков.",
+      "Imballaggio di ogni solido 3D in un blocco individuale per l'esportazione in altri programmi, " +
+        "mantenendo il nome del solido e le metriche all'interno degli attributi del blocco.",
+      "Verpacken jedes 3D-Volumenkörpers in einen einzelnen Block zum Export in andere Programme, " +
+        "während der Name und die Metriken des Volumenkörpers innerhalb der Blockattribute erhalten bleiben.",
+      "将每个 3D 实体包装到单独的块中以导出到其他程序，同时保留块属性中的实体名称和度量。",
+      "Empaquetado de cada sólido 3D en un bloque individual para exportar a otros programas, " +
+        "mientras se conserva el nombre del sólido y las métricas dentro de los atributos del bloque.",
+      "Emballage de chaque solide 3D dans un bloc individuel pour l'exportation vers d'autres programmes, " +
+        "tout en conservant le nom du solide et les métriques dans les attributs du bloc.",
+      "Her 3D katıyı diğer programlara aktarmak için ayrı bir blok içine paketleme, " +
+        "blok öznitelikleri içinde katının adını ve ölçümlerini korurken."};
 
     public static readonly string[] SolidSubTip = {
       "Subtraction of solids without a gap, preserving face coloring, preserving the subtrahend.",

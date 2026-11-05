@@ -374,6 +374,9 @@ namespace AVC
     public static Bitmap SolidMetric32 => LoadPng("SolidMetric32");
     public static Bitmap SolidMetricMirror32 => LoadPng("SolidMetricMirror32");
     public static Bitmap SolidMirror32 => LoadPng("SolidMirror32");
+    public static Bitmap SPack16 => LoadPng("SPack16");
+    public static Bitmap SPack32 => LoadPng("SPack32");
+    public static Bitmap SPack120 => LoadPng("SPack120");
     public static Bitmap SolidSub16 => LoadPng("SolidSub16");
     public static Bitmap SolidSub32 => LoadPng("SolidSub32");
     public static Bitmap SolidSub80 => LoadPng("SolidSub80");
