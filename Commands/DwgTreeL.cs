@@ -62,6 +62,139 @@ namespace AVC
       "Hata! Çizim Ağacında nesneler bulunamadı - {0}"};  // TR
 
     //==========================================================================================================================================================================
+    // Context menu
+
+    public static readonly string[] MenuRename = {
+      "Rename",
+      "Переименовать",
+      "Rinomina",
+      "Umbenennen",
+      "重命名",
+      "Renombrar",                                      // ES
+      "Renommer",                                       // FR
+      "Yeniden adlandır"};                              // TR
+
+    public static readonly string[] MenuRenameTip = {
+      "Edit the name of the object in the tree branch",
+      "Изменить имя объекта в ветви дерева",
+      "Modifica il nome dell'oggetto nel ramo dell'albero",
+      "Den Namen des Objekts im Baumzweig bearbeiten",
+      "编辑树分支中对象的名称",
+      "Editar el nombre del objeto en la rama del árbol",   // ES
+      "Modifier le nom de l'objet dans la branche de l'arbre",  // FR
+      "Ağaç dalındaki nesnenin adını düzenle"};            // TR
+
+    public static readonly string[] MenuExpand = {
+      "Expand",
+      "Развернуть",
+      "Espandi",
+      "Erweitern",
+      "展开",
+      "Expandir",                                       // ES
+      "Développer",                                     // FR
+      "Genişlet"};                                      // TR
+
+    public static readonly string[] MenuExpandTip = {
+      "Expand the branch and all nested grouping branches. Do not, however, expand the branches for drawing objects.",
+      "Развернуть ветвь и все вложенные группировочные ветви. Но не разворачивать ветви обьектов чертежа.",
+      "Espandi il ramo e tutti i rami di raggruppamento nidificati. Tuttavia, non espandere i rami per gli oggetti di disegno.",
+      "Erweitern Sie den Zweig und alle verschachtelten Gruppierungszweige. Erweitern Sie jedoch nicht die Zweige für Zeichenobjekte.",
+      "展开分支和所有嵌套的分组分支。但是，不要展开绘图对象的分支。",
+      "Expandir la rama y todas las ramas de agrupación anidadas. Sin embargo, no expanda las ramas para los objetos de dibujo.",  // ES
+      "Développez la branche et toutes les branches de regroupement imbriquées. Cependant, n'étendez pas les branches pour les objets de dessin.",  // FR
+      "Dal ve tüm iç içe gruplama dallarını genişletin. Ancak, çizim nesneleri için dalları genişletmeyin." };  // TR
+
+    public static readonly string[] MenuCheckAll = {
+      "Check all",
+      "Отметить все",
+      "Seleziona tutto",
+      "Alle markieren",
+      "全部勾选",
+      "Marcar todo",                                    // ES
+      "Tout cocher",                                     // FR
+      "Tümünü işaretle"};                              // TR
+
+    public static readonly string[] MenuCheckAllTip = {
+      "Check all nested branches of this branch",
+      "Отметить галочками все вложенные ветви этой ветви",
+      "Seleziona tutti i rami nidificati di questo ramo",
+      "Alle verschachtelten Zweige dieses Zweigs markieren",
+      "勾选此分支的所有嵌套分支",
+      "Marcar todas las ramas anidadas de esta rama",    // ES
+      "Cocher toutes les branches imbriquées de cette branche", // FR
+      "Bu dalın tüm iç dallarını işaretle" };           // TR
+
+    public static readonly string[] MenuUncheckAll = {
+      "Uncheck all",
+      "Снять отметки",
+      "Deseleziona tutto",
+      "Alle Markierungen entfernen",
+      "全部取消勾选",
+      "Desmarcar todo",                                  // ES
+      "Tout décocher",                                   // FR
+      "Tüm işaretleri kaldır"};                         // TR
+
+    public static readonly string[] MenuUncheckAllTip = {
+      "Uncheck all nested branches of this branch",
+      "Снять отметки (галочки) со всех вложенных ветвей этой ветви",
+      "Deseleziona tutti i rami nidificati di questo ramo",
+      "Markierungen aller verschachtelten Zweige dieses Zweigs entfernen",
+      "取消勾选此分支的所有嵌套分支",
+      "Desmarcar todas las ramas anidadas de esta rama", // ES
+      "Décocher toutes les branches imbriquées de cette branche", // FR
+      "Bu dalın tüm iç dallarının işaretini kaldır" };  // TR
+
+    public static readonly string[] MenuCollapseAll = {
+      "Collapse all",
+      "Свернуть все",
+      "Comprimi tutto",
+      "Alle reduzieren",
+      "全部折叠",
+      "Contraer todo",                                  // ES
+      "Tout réduire",                                   // FR
+      "Tümünü daralt"};                                 // TR
+
+    public static readonly string[] MenuCollapseAllTip = {
+      "Collapse all branches of the Drawing Tree",
+      "Свернуть все ветви дерева чертежа",
+      "Comprimi tutti i rami dell'albero del disegno",
+      "Alle Zweige des Zeichnungsbaums reduzieren",
+      "折叠绘图树的所有分支",
+      "Contraer todas las ramas del árbol de dibujo",   // ES
+      "Réduire toutes les branches de l'arbre de dessin",  // FR
+      "Çizim Ağacının tüm dallarını daralt"};           // TR
+
+    public static readonly string[] MenuOpenFile = {
+      "Open drawing...",
+      "Открыть чертеж...",
+      "Apri disegno...",
+      "Zeichnung öffnen...",
+      "打开图形...",
+      "Abrir dibujo...",                                 // ES
+      "Ouvrir un dessin...",                             // FR
+      "Çizim aç..."};                                    // TR
+
+    public static readonly string[] MenuOpenFileTip = {
+      "Select and open a drawing file from this folder",
+      "Выбрать и открыть файл чертежа из этой папки",
+      "Seleziona e apri un file di disegno da questa cartella",
+      "Eine Zeichnungsdatei aus diesem Ordner auswählen und öffnen",
+      "从此文件夹选择并打开图形文件",
+      "Seleccionar y abrir un archivo de dibujo de esta carpeta",          // ES
+      "Sélectionner et ouvrir un fichier de dessin de ce dossier",         // FR
+      "Bu klasörden bir çizim dosyası seç ve aç"};                        // TR
+
+    public static readonly string[] MenuUserCommands = {
+      "User commands",
+      "Пользовательские команды",
+      "Comandi utente",
+      "Benutzerbefehle",
+      "用户命令",
+      "Comandos de usuario",                              // ES
+      "Commandes utilisateur",                            // FR
+      "Kullanıcı komutları"};                             // TR
+
+    //==========
     // DwgTreeOptionsBox
 
     public static readonly string[] Branches = {

@@ -23,7 +23,7 @@
     <LangVersion>preview</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <NoWarn>IDE0180;IDE0251;AD0001</NoWarn>
+    <NoWarn>IDE0180;IDE0251;AD0001;IDE0300</NoWarn>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
-    <NoWarn>AD0001</NoWarn>
+    <NoWarn>IDE0180;IDE0251;AD0001;IDE0300</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CadProcessL.cs" />
@@ -53,6 +53,7 @@
     <Compile Include="Commands\BUpdateL.cs" />
     <Compile Include="Commands\CatalogImportL.cs" />
     <Compile Include="Commands\ChopL.cs" />
+    <Compile Include="Commands\AEraseL.cs" />
     <Compile Include="Commands\CncL.cs" />
     <Compile Include="Commands\CrossPieceL.cs" />
     <Compile Include="Commands\CurveSubL.cs" />
@@ -623,6 +624,12 @@
     <EmbeddedResource Include="Resources\SPack120.png" />
     <EmbeddedResource Include="Resources\SPack16.png" />
     <EmbeddedResource Include="Resources\SPack32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AErase16.png" />
+    <EmbeddedResource Include="Resources\AErase32.png" />
+    <EmbeddedResource Include="Resources\AZoom16.png" />
+    <EmbeddedResource Include="Resources\AZoom32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

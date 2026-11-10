@@ -951,6 +951,25 @@ namespace AVC
       "Bir DWG dosyasında çizim sayfalarının numaralandırılması. " +
         "İçindekiler tablosu oluşturma."};
 
+    public static readonly string[] AEraseTip = {
+      "Erase selected objects from the drawing: entities, layers, groups, block definitions, layouts, materials...",
+      "Удалить из чертежа выбранные объекты: примитивы, слои, группы, определения блоков, листы, материалы...",
+      "Cancella dal disegno gli oggetti selezionati: entità, layer, gruppi, definizioni di blocchi, layout, materiali...",
+      "Ausgewählte Objekte aus der Zeichnung löschen: Elemente, Layer, Gruppen, Blockdefinitionen, Layouts, Materialien...",
+      "从图形中删除所选对象：图元、图层、组、块定义、布局、材质...",
+      "Borrar del dibujo los objetos seleccionados: entidades, capas, grupos, definiciones de bloques, presentaciones, materiales...",
+      "Effacer du dessin les objets sélectionnés : entités, calques, groupes, définitions de blocs, présentations, matériaux...",
+      "Seçili nesneleri çizimden sil: varlıklar, katmanlar, gruplar, blok tanımları, düzenler, malzemeler..." };
+
+    public static readonly string[] AZoomTip = {
+      "Switch to the layout or model of the selected objects and zoom the view to them",
+      "Переключиться на лист или в модель выбранных объектов и показать их во весь экран",
+      "Passa al layout o al modello degli oggetti selezionati e adatta la vista ad essi",
+      "Zum Layout oder Modell der ausgewählten Objekte wechseln und auf sie zoomen",
+      "切换到所选对象的布局或模型并缩放到它们",
+      "Cambiar a la presentación o modelo de los objetos seleccionados y ajustar la vista a ellos",
+      "Basculer vers la présentation ou le modèle des objets sélectionnés et zoomer sur eux",
+      "Seçili nesnelerin düzenine veya modeline geç ve onlara yakınlaştır" };
     public static readonly string[] PaletteTip = {
       "New property panel. The NAME property for all objects. " +
         "Creating layers. Size of solids, editing covers and edge bandings. " +

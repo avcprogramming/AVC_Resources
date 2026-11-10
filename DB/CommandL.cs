@@ -617,6 +617,33 @@ namespace AVC
       "Numeración de páginas",
       "Numérotation des pages",
       "Sayfa numaralandırma" };
+    public static readonly string[] AErase = {
+      "Erase",
+      "Удалить",
+      "Cancella",
+      "Löschen",
+      "删除",
+      "Borrar",
+      "Effacer",
+      "Sil" };
+    public static readonly string[] AZoom = {
+      "Zoom to objects",
+      "Показать объекты",
+      "Zoom sugli oggetti",
+      "Auf Objekte zoomen",
+      "缩放到对象",
+      "Zoom a los objetos",
+      "Zoomer sur les objets",
+      "Nesnelere yakınlaştır" };
+    public static readonly string[] UpdateColor = {
+      "Set color by material",
+      "Цвет солида по материалу",
+      "Colore in base al materiale",
+      "Farbe nach Material einstellen",
+      "按材质设置实体颜色",
+      "Establecer color por material",
+      "Définir la couleur par matériau",
+      "Malzemeye göre renk ayarla" };
     public static readonly string[] Palette = {
       "A>V>C> Properties Palette",
       "Палитра Свойств A>V>C>",

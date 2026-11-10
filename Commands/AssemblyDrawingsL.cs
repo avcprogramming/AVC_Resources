@@ -1,6 +1,6 @@
 ﻿namespace AVC
 {
-  public class
+  public static class
   AssemblyDrawingsL
   {
 
@@ -444,7 +444,7 @@
       "Ubique las vistas con proyección de tercer ángulo (EE. UU./Japón).",
       "Placer les vues selon la projection du troisième angle (ANSI/ASME/CSA/JIS).",
       "Görünümleri Üçüncü açı izdüşümü ile yerleştirin (ANSI/ASME/CSA/JIS)." };
-    public static readonly string[] PlaceRearViewRight ={
+    public static readonly string[] PlaceRearViewRight = {
       "Place the rear view to the right",
       "Размещать вид сзади правее.",
       "Posizionare la vista posteriore a destra.",

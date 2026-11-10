@@ -40,6 +40,8 @@ namespace AVC
     public static Bitmap _3D32 => LoadPng("_3D32");
     public static Bitmap _3DPoly32 => LoadPng("_3DPoly32");
     public static Bitmap _3Ds32 => LoadPng("_3Ds32");
+    public static Bitmap AErase16 => LoadPng("AErase16");
+    public static Bitmap AErase32 => LoadPng("AErase32");
     public static Bitmap About16 => LoadPng("About16");
     public static Bitmap About32 => LoadPng("About32");
     public static Bitmap Annotation32 => LoadPng("Annotation32");
@@ -86,6 +88,8 @@ namespace AVC
     public static Bitmap AvcOptions32 => LoadPng("AvcOptions32");
     public static Bitmap AvcUpdate16 => LoadPng("AvcUpdate16");
     public static Bitmap AvcUpdate32 => LoadPng("AvcUpdate32");
+    public static Bitmap AZoom16 => LoadPng("AZoom16");
+    public static Bitmap AZoom32 => LoadPng("AZoom32");
     public static Bitmap Block32 => LoadPng("Block32");
     public static Bitmap BlockDyn32 => LoadPng("BlockDyn32");
     public static Bitmap BlockEditor32 => LoadPng("BlockEditor32");
