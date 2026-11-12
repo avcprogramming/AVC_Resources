@@ -862,6 +862,35 @@ namespace AVC
       "Ağacı ana (başlangıç) görünümüne daralt. \r\n" +             // TR
         "Geçerli çizimin modeli içeriğini gösterir." };
 
+    public static readonly string[] Refresh = {
+      "Refresh tree",
+      "Обновить дерево",
+      "Aggiorna albero",
+      "Baum aktualisieren",
+      "刷新树",
+      "Actualizar árbol",                              // ES
+      "Actualiser l'arbre",                            // FR
+      "Ağacı yenile" };                                // TR
+
+    public static readonly string[] RefreshTip = {
+      "Reset all data and re-read the properties of all drawing objects. \r\n" +
+        "Use this if the tree has failed to track all changes and is not displaying what it should.",
+      "Сбросить все данные и прочитать свойства всех объектов чертежа заново. \r\n" +
+        "Используйте если дерево не смогло отследить все изменения и не показывает то что надо.",
+      "Reimposta tutti i dati e rileggi le proprietà di tutti gli oggetti del disegno. \r\n" +
+        "Usa questo se l'albero non è riuscito a tenere traccia di tutte le modifiche e non visualizza ciò che dovrebbe.",
+      "Setzen Sie alle Daten zurück und lesen Sie die Eigenschaften aller Zeichenobjekte erneut. \r\n" +
+        "Verwenden Sie dies, wenn der Baum nicht alle Änderungen verfolgen konnte und nicht das anzeigt, was er sollte.",
+      "重置所有数据并重新读取所有绘图对象的属性。 \r\n" +
+        "如果树无法跟踪所有更改并且未显示应显示的内容，请使用此选项。",
+      "Restablecer todos los datos y volver a leer las propiedades de todos los objetos de dibujo. \r\n" +  // ES
+        "Use esto si el árbol no ha podido rastrear todos los cambios y no muestra lo que debería.",
+      "Réinitialisez toutes les données et relisez les propriétés de tous les objets de dessin. \r\n" +  // FR
+        "Utilisez ceci si l'arbre n'a pas réussi à suivre tous les changements et n'affiche pas ce qu'il devrait.",
+      "Tüm verileri sıfırlayın ve tüm çizim nesnelerinin özelliklerini yeniden okuyun. \r\n" +  // TR
+        "Ağaç tüm değişiklikleri takip edemediğinde ve olması gerektiği gibi görüntülemiyorsa bunu kullanın." };
+
+
     public static readonly string[] Collapse = {
       "Collapse tree branches",
       "Сворачивать ветви дерева",
