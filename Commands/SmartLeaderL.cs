@@ -218,14 +218,14 @@ namespace AVC
       "Bulunan Smart Leader: {0}" };                   // TR
 
     public static readonly string[] NoLeader = {
-      "Smart leaders not found",
-      "Не найдено ни одной Умной Выноски",
-      "Nessun Smart Leader trovato",
-      "Keine Smart Leader gefunden",
-      "未找到智能标注",
-      "No se encontraron Smart Leaders",               // ES
-      "Aucun Smart Leader trouvé",                     // FR
-      "Smart Leader bulunamadı" };                     // TR
+      "Smart leaders not found for update",
+      "Не найдено ни одной Умной Выноски для обновления",
+      "Nessun Smart Leader trovato per l'aggiornamento",
+      "Keine Smart Leaders für die Aktualisierung gefunden",
+      "未找到可更新的智能标注",
+      "No se encontraron Smart Leaders para actualizar",  // ES
+      "Aucun Smart Leader trouvé pour la mise à jour",  // FR
+      "Güncelleme için Smart Leader bulunamadı" };      // TR
 
     public static readonly string[] LeaderUpdatedCount = {
       "Updated leaders: {0}",

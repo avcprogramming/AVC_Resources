@@ -205,6 +205,66 @@ namespace AVC
       "\r\nVérifiez votre connexion Internet. Désactivez votre pare-feu. Vérifiez l'heure système. Rechargez le programme.",
       "\r\nİnternet bağlantınızı kontrol edin. Güvenlik duvarınızı devre dışı bırakın. Sistem saatini kontrol edin. Programı yeniden yükleyin."};
 
+    public static readonly string[] NoDns = {
+      "\r\nServer names cannot be resolved (DNS). Check your DNS, VPN or proxy settings.",
+      "\r\nНе удается определить адреса серверов (DNS). Проверьте настройки DNS, VPN или прокси.",
+      "\r\nImpossibile risolvere i nomi dei server (DNS). Controlla le impostazioni DNS, VPN o proxy.",
+      "\r\nServernamen können nicht aufgelöst werden (DNS). Überprüfen Sie Ihre DNS-, VPN- oder Proxy-Einstellungen.",
+      "\r\n无法解析服务器名称 (DNS)。请检查 DNS、VPN 或代理设置。",
+      "\r\nNo se pueden resolver los nombres de los servidores (DNS). Verifique la configuración de DNS, VPN o proxy.",
+      "\r\nImpossible de résoudre les noms des serveurs (DNS). Vérifiez vos paramètres DNS, VPN ou proxy.",
+      "\r\nSunucu adları çözümlenemiyor (DNS). DNS, VPN veya proxy ayarlarınızı kontrol edin."};
+
+    public static readonly string[] FailDns = {
+      "{0}: server name not found (DNS)",
+      "{0}: имя сервера не найдено (DNS)",
+      "{0}: nome del server non trovato (DNS)",
+      "{0}: Servername nicht gefunden (DNS)",
+      "{0}: 未找到服务器名称 (DNS)",
+      "{0}: nombre del servidor no encontrado (DNS)",
+      "{0}: nom du serveur introuvable (DNS)",
+      "{0}: sunucu adı bulunamadı (DNS)"};
+
+    public static readonly string[] FailDnsTimeout = {
+      "{0}: DNS did not respond in time",
+      "{0}: DNS не ответил вовремя",
+      "{0}: il DNS non ha risposto in tempo",
+      "{0}: DNS hat nicht rechtzeitig geantwortet",
+      "{0}: DNS 未及时响应",
+      "{0}: el DNS no respondió a tiempo",
+      "{0}: le DNS n'a pas répondu à temps",
+      "{0}: DNS zamanında yanıt vermedi"};
+
+    public static readonly string[] FailPort = {
+      "{0}: server does not respond (port closed or blocked)",
+      "{0}: сервер не отвечает (порт закрыт или заблокирован)",
+      "{0}: il server non risponde (porta chiusa o bloccata)",
+      "{0}: Server antwortet nicht (Port geschlossen oder blockiert)",
+      "{0}: 服务器无响应（端口关闭或被阻止）",
+      "{0}: el servidor no responde (puerto cerrado o bloqueado)",
+      "{0}: le serveur ne répond pas (port fermé ou bloqué)",
+      "{0}: sunucu yanıt vermiyor (port kapalı veya engellenmiş)"};
+
+    public static readonly string[] FailProxy = {
+      "{0}: proxy error. {1}",
+      "{0}: ошибка прокси. {1}",
+      "{0}: errore del proxy. {1}",
+      "{0}: Proxy-Fehler. {1}",
+      "{0}: 代理错误。{1}",
+      "{0}: error del proxy. {1}",
+      "{0}: erreur du proxy. {1}",
+      "{0}: proxy hatası. {1}"};
+
+    public static readonly string[] FailSql = {
+      "{0}: the server responds, but the database connection failed. {1}",
+      "{0}: сервер отвечает, но подключение к базе данных не удалось. {1}",
+      "{0}: il server risponde, ma la connessione al database non è riuscita. {1}",
+      "{0}: Der Server antwortet, aber die Datenbankverbindung ist fehlgeschlagen. {1}",
+      "{0}: 服务器有响应，但数据库连接失败。{1}",
+      "{0}: el servidor responde, pero la conexión a la base de datos falló. {1}",
+      "{0}: le serveur répond, mais la connexion à la base de données a échoué. {1}",
+      "{0}: sunucu yanıt veriyor, ancak veritabanı bağlantısı başarısız oldu. {1}"};
+
     public static readonly string[] NewClient = {
       "User {0} is not registered in the database A>V>C>.\r\nDo you want to register a new user?",
       "Пользователь {0} не зарегистрирован в базе данных A>V>C>.\r\nЗарегистрировать нового пользователя?",

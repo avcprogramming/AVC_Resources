@@ -960,10 +960,9 @@ namespace AVC
       "Borrar del dibujo los objetos seleccionados: entidades, capas, grupos, definiciones de bloques, presentaciones, materiales...",
       "Effacer du dessin les objets sélectionnés : entités, calques, groupes, définitions de blocs, présentations, matériaux...",
       "Seçili nesneleri çizimden sil: varlıklar, katmanlar, gruplar, blok tanımları, düzenler, malzemeler..." };
-
     public static readonly string[] AZoomTip = {
       "Switch to the layout or model of the selected objects and zoom the view to them",
-      "Переключиться на лист или в модель выбранных объектов и показать их во весь экран",
+      "Показ выбранных объектов с переключением листов и показом объектов во весь экран",
       "Passa al layout o al modello degli oggetti selezionati e adatta la vista ad essi",
       "Zum Layout oder Modell der ausgewählten Objekte wechseln und auf sie zoomen",
       "切换到所选对象的布局或模型并缩放到它们",
@@ -1469,6 +1468,32 @@ namespace AVC
       "Yalnızca bir parçanın paketlendiği blokları arama (katı, poliçizgi...). " +
         "Bu blokları patlama. Bloğun adını ve özniteliklerini parçaya aktarma."};
 
+    public static readonly string[] UpdateColorTip = {
+      "Find all solids in the drawing and replace their color with the material color.\r\n" +
+        "There is no color change for the Global material.\r\n" +
+        "For materials ByLayer and ByBlock, the color is changed to ByLayer and ByBlock.",
+      "Найти все солиды чертежа и заменить их цвет на цвет материала.\r\n" +
+        "Для материала Global замена цвета не производится.\r\n" +
+        "Для материалов ByLayer и ByBlock производится замена цвета на ByLayer и ByBlock.",
+      "Trova tutti i solidi nel disegno e sostituisci il loro colore con il colore del materiale.\r\n" +
+        "Non vi è alcun cambiamento di colore per il materiale Global.\r\n" +
+        "Per i materiali PerLayer e PerBlocco, il colore viene modificato in PerLayer e PerBlocco.",
+      "Suchen Sie alle Volumenkörper in der Zeichnung und ersetzen Sie ihre Farbe durch die Materialfarbe.\r\n" +
+        "Für das globale Material gibt es keine Farbänderung.\r\n" +
+        "Für Materialien VonLayer und ByBlock wird die Farbe in ByLayer und ByBlock geändert.",
+      "查找所有蓝图实体并将其颜色替换为材质颜色。\r\n" +
+         "全局材质没有颜色替换。\r\n" +
+         "对于 ByLayer 和 ByBlock 材质，颜色更改为 ByLayer 和 ByBlock。",
+      "Encontrar todos los sólidos en el dibujo y reemplazar su color con el color del material.\r\n" +
+        "No hay cambio de color para el material Global.\r\n" +
+        "Para materiales PorCapa y PorBloque, el color se cambia a PorCapa y PorBloque.",
+      "Trouver tous les solides dans le dessin et remplacer leur couleur par la couleur du matériau.\r\n" +
+        "Il n'y a pas de changement de couleur pour le matériau Global.\r\n" +
+        "Pour les matériaux ParCalque et ParBloc, la couleur est changée en ParCalque et ParBloc.",
+      "Çizimdeki tüm katıları bul ve renklerini malzeme rengiyle değiştir.\r\n" +
+        "Global malzeme için renk değişikliği yok.\r\n" +
+        "Katmana Göre ve Bloğa Göre malzemeler için renk Katmana Göre ve Bloğa Göre olarak değiştirilir."};
+
     public static readonly string[] UserPaletteTip = {
       "Open or close individual palettes to edit each custom (user) property",
       "Открыть или закрыть отдельные палитры для редактирования каждого заказного пользовательского свойства",
@@ -1692,32 +1717,6 @@ namespace AVC
       "Configuración de paleta",
       "Paramètres de palette",
       "Palet ayarları"};
-
-    public static readonly string[] MatUpdateTip = {
-      "Find all solids in the drawing and replace their color with the material color.\r\n" +
-        "There is no color change for the Global material.\r\n" +
-        "For materials ByLayer and ByBlock, the color is changed to ByLayer and ByBlock.",
-      "Найти все солиды чертежа и заменить их цвет на цвет материала.\r\n" +
-        "Для материала Global замена цвета не производится.\r\n" +
-        "Для материалов ByLayer и ByBlock производится замена цвета на ByLayer и ByBlock.",
-      "Trova tutti i solidi nel disegno e sostituisci il loro colore con il colore del materiale.\r\n" +
-        "Non vi è alcun cambiamento di colore per il materiale Global.\r\n" +
-        "Per i materiali PerLayer e PerBlocco, il colore viene modificato in PerLayer e PerBlocco.",
-      "Suchen Sie alle Volumenkörper in der Zeichnung und ersetzen Sie ihre Farbe durch die Materialfarbe.\r\n" +
-        "Für das globale Material gibt es keine Farbänderung.\r\n" +
-        "Für Materialien VonLayer und ByBlock wird die Farbe in ByLayer und ByBlock geändert.",
-      "查找所有蓝图实体并将其颜色替换为材质颜色。\r\n" +
-         "全局材质没有颜色替换。\r\n" +
-         "对于 ByLayer 和 ByBlock 材质，颜色更改为 ByLayer 和 ByBlock。",
-      "Encontrar todos los sólidos en el dibujo y reemplazar su color con el color del material.\r\n" +
-        "No hay cambio de color para el material Global.\r\n" +
-        "Para materiales PorCapa y PorBloque, el color se cambia a PorCapa y PorBloque.",
-      "Trouver tous les solides dans le dessin et remplacer leur couleur par la couleur du matériau.\r\n" +
-        "Il n'y a pas de changement de couleur pour le matériau Global.\r\n" +
-        "Pour les matériaux ParCalque et ParBloc, la couleur est changée en ParCalque et ParBloc.",
-      "Çizimdeki tüm katıları bul ve renklerini malzeme rengiyle değiştir.\r\n" +
-        "Global malzeme için renk değişikliği yok.\r\n" +
-        "Katmana Göre ve Bloğa Göre malzemeler için renk Katmana Göre ve Bloğa Göre olarak değiştirilir."};
 
     // =============================================================================================================
     // Option Tabs =================================================================================================

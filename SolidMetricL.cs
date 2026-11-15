@@ -300,6 +300,16 @@ namespace AVC
       "Taille du balayage: {0} x {1} x {2}",
       "Süpürme boyutu: {0} x {1} x {2}"};
 
+    public static readonly string[] NoSolidForMeasure = {
+      "No solids available for measurement",
+      "Нет солидов для обмера",
+      "Nessun solido disponibile per la misurazione",
+      "Keine Volumenkörper für die Messung verfügbar",
+      "没有可用于测量的实体",
+      "No hay sólidos disponibles para la medición",
+      "Aucun solide disponible pour la mesure",
+      "Ölçüm için mevcut katı yok"};
+
     public static readonly string[] NothingMeasure = {
       "❌ Nothing to measure",
       "❌ Нечего обмерять",
