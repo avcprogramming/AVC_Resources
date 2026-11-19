@@ -1367,6 +1367,27 @@ namespace AVC
         "Kiralite hesaplanırken, katının altı birincil yüzeyindeki kaplamalar dikkate alınır.\r\n" +
         "Ancak ölçüm programı hata yapabilir.\r\n" +
         "Bu seçenek devre dışı bırakıldığında, aynalanmış bloklardaki tüm parçalar basit kutular olsa bile aynalanmış olarak işaretlenecektir." };
-    
+
+    public static readonly string[] ContextMenu = {
+      "Show context menus",
+      "Показывать контекстные меню",
+      "Mostra menu contestuali",
+      "Kontextmenüs anzeigen",
+      "显示上下文菜单",
+      "Mostrar menús contextuales",
+      "Afficher les menus contextuels",
+      "Bağlam menülerini göster" };
+
+    public static readonly string[] ContextMenuTip = {
+      "Show relevant A>V>C> commands in the context menus of drawing objects",
+      "В контекстных меню объектов чертежа показывать подходящие команды A>V>C>",
+      "Mostra i comandi A>V>C> pertinenti nei menu contestuali degli oggetti di disegno",
+      "Zeigen Sie relevante A>V>C>-Befehle in den Kontextmenüs von Zeichenobjekten an",
+      "在绘图对象的上下文菜单中显示相关的 A>V>C> 命令",
+      "Mostrar los comandos A>V>C> relevantes en los menús contextuales de los objetos de dibujo",
+      "Afficher les commandes A>V>C> pertinentes dans les menus contextuels des objets de dessin",
+      "Çizim nesnelerinin bağlam menülerinde ilgili A>V>C> komutlarını göster" };
+
+
   }
 }
